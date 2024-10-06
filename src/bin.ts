@@ -2,27 +2,32 @@
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import { runAgent } from './find-routes';
+import { executeGraph } from './chatgptExample'
 
 yargs(hideBin(process.argv))
-  .scriptName("npm run arc")
+  .scriptName('npm run arc')
   .usage('$0 <cmd> [args]')
-  .command('generate [name]', 'generate a new route', (yargs) => {
-    return yargs.positional('name', {
-      type: 'string',
-      demand: true,
-      describe: 'The name of the route'
-    }).option('context', {
-      alias: 'c',
-      type: 'string',
-      demand: true,
-      describe: 'Adds context to the request'
-    });
-  }, (argv) => {
-    console.log(argv);
-     runAgent().then(() => {
-      process.exit(0)
-     })
+  .command(
+    'create [name]',
+    'create a new route',
+    function (yargs) {
+      return yargs.positional('name', {
+        type: 'string',
+        demand: true,
+        describe: 'The name of the route',
+      })
+    },
+    (argv) => {
+      console.log(argv)
+      runAgent({
+        question: argv.name,
+      }).then(() => {
+        process.exit(0)
+      })
+    }
+  )
+  .command('example', 'run the example', async () => {
+    await executeGraph()
   })
   .help()
-  .alias('help', 'h')
-  .argv;
+  .alias('help', 'h').argv
