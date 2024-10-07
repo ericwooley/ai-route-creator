@@ -1,6 +1,6 @@
 import { ChatOpenAI } from '@langchain/openai'
-import { agentTools } from './agentTools'
-import { cache } from './chatgptExample'
+import { agentTools } from './toolNode'
+import { cache } from './cache'
 
 export const agentModel = new ChatOpenAI({
   maxConcurrency: 2,
