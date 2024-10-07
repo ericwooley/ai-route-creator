@@ -1,80 +1,15 @@
-import { TavilySearchResults } from '@langchain/community/tools/tavily_search'
-
-import { ChatOpenAI } from '@langchain/openai'
-import { MemorySaver, StateGraph, NodeInterrupt } from '@langchain/langgraph'
-import { HumanMessage } from '@langchain/core/messages'
-import { RedisCache } from '@langchain/community/caches/ioredis'
-import { Redis } from 'ioredis'
-import { Annotation, MessagesAnnotation } from '@langchain/langgraph'
+import { StateGraph } from '@langchain/langgraph'
 import { PromptTemplate } from '@langchain/core/prompts'
-import { ToolNode } from '@langchain/langgraph/prebuilt'
 import { z } from 'zod'
-import zodToJsonSchema from 'zod-to-json-schema'
-import { StringOutputParser, StructuredOutputParser } from '@langchain/core/output_parsers'
-
-function flattenState(state: typeof StateAnnotation.State) {
-  const { theme, ...restState } = state
-  return {
-    ...restState,
-    messages: state.messages.map((message) => `- ${message.content}`).join('\n\n'),
-    themeName: theme.name,
-    themeDescription: theme.description,
-    themePrimaryColor: theme.primaryColor,
-    themeSecondaryColor: theme.secondaryColor,
-    stepsLength: state.steps.length,
-    steps: state.steps.map((step) => `${step.name} - ${step.distance} km`).join('\n'),
-  }
-}
-// Define interfaces for type safety
-interface Theme {
-  name: string
-  description: string
-  primaryColor: string
-  secondaryColor: string
-}
-
-interface RouteDetails {
-  name: string
-  distance: number
-}
-
-interface Itinerary {
-  theme: Theme
-  route: string
-  steps: RouteDetails[]
-}
-
-// Initialize Redis cache
-const cache = new RedisCache(
-  new Redis({
-    host: 'localhost',
-    port: 6379,
-    db: 0,
-  })
-)
-
-// Define the theme
-const theme: Theme = {
-  name: 'Winter Wonderland',
-  description: 'A snowy landscape...',
-  primaryColor: '#0288D1',
-  secondaryColor: '#E0F7FA',
-}
-const StateAnnotation = Annotation.Root({
-  ...MessagesAnnotation.spec,
-  theme: Annotation<Theme>({
-    reducer: (state: Theme) => state,
-    default: () => theme,
-  }), // Add your specific state fields here
-  route: Annotation<string>({
-    default: () => '',
-    reducer: (state: string, action: string) => action,
-  }),
-  steps: Annotation({
-    default: () => [],
-    reducer: (state: RouteDetails[], action: RouteDetails[]) => action,
-  }),
-})
+import { StructuredOutputParser } from '@langchain/core/output_parsers'
+import { flattenState } from './flattenState'
+import { StateAnnotation } from './StateAnnotation'
+import { theme } from './theme'
+import { agentModel } from './agentModel'
+import { llm } from './llm'
+import { toolNode } from './toolNode'
+import { background } from './background'
+import { checkpointer } from './checkpointer'
 
 const responseStructure = z.object({
   route: z.string().describe('The name of the route'),
@@ -88,29 +23,6 @@ const responseStructure = z.object({
   ),
 })
 
-const checkpointer = new MemorySaver()
-// Define the tools for the agent to use
-const agentTools = [new TavilySearchResults({ maxResults: 20, verbose: true })]
-const agentModel = new ChatOpenAI({ maxConcurrency: 2, temperature: 0, cache: cache, model: 'gpt-4o-mini' }).bindTools(
-  agentTools
-)
-const llm = new ChatOpenAI({ maxConcurrency: 2, temperature: 0, cache: cache, model: 'gpt-4o-mini' })
-const toolNode = new ToolNode(agentTools)
-const background = `
-You are a researcher who's job is to find the itineraries for famous routes, fiction or non-fiction. With an emphasis on places
-people would love to go, but might not know about. We want to find routes based on a specific theme, to give
-people a tailored experience to their interests. The theme for this route is {themeName}. {themeDescription}.
-
-For example, if the theme is "Island Jungle", the route could be "The Road to Hana, starting from Laheina".
-
-If the theme is "Dark Fantasy" the route could be "King's landing to the Wall".
-
-
-Here is all the research so far.
-~~~
-{messages}
-~~~
-`
 const routePrompt = PromptTemplate.fromTemplate(
   `
 ${background}
