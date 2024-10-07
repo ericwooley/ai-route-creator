@@ -4,6 +4,10 @@ import { theme } from './theme'
 
 export const StateAnnotation = Annotation.Root({
   ...MessagesAnnotation.spec,
+  itinerary: Annotation<string[]>({
+    default: () => [],
+    reducer: (state: string[], action: string[]) => [...state, ...action],
+  }),
   theme: Annotation<Theme>({
     reducer: (state: Theme) => state,
     default: () => theme,
