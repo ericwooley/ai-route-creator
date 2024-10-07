@@ -1,13 +1,12 @@
 import { PromptTemplate } from '@langchain/core/prompts'
 import { background } from './backgroundPrompt'
-import { flattenState } from '../flattenState'
+import { flattenState as llmState } from '../flattenState'
 import { StateAnnotation } from '../StateAnnotation'
 import { agentModel } from '../agentModel'
 
 export const routePrompt = PromptTemplate.fromTemplate(
   `
 ${background}
-
 You must determine the route that fits this theme. Use the theme name and colors to perform a search,
 which will give you a list of routes to pick from. After the search, you will pick a route name from the results.
 
@@ -21,11 +20,16 @@ If the theme is "Dark Fantasy" you could search for "Most popular routes in dark
 
 No words from the theme itself should appear in your query.
 
-Try to find a mix of fiction and non-fiction.
+{routeIdea}
+
+{fictional}
+
 `.trim()
 )
 export const searchRouteNode = async (state: typeof StateAnnotation.State) => {
-  const response = await routePrompt.pipe(agentModel).invoke({ ...flattenState(state) })
+  const response = await routePrompt.pipe(agentModel).invoke({
+    ...llmState(state),
+  })
   return {
     messages: [response],
   }

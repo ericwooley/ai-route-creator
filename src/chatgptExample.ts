@@ -62,8 +62,8 @@ const builder = new StateGraph(StateAnnotation)
 const graph = builder.compile({ checkpointer })
 
 // Execute the graph
-export const executeGraph = async () => {
-  const state = { theme }
+export const generateRoute = async ({ routeIdea, fictional }: { routeIdea?: string; fictional?: boolean } = {}) => {
+  const state = { theme, routeIdea, fictional }
   const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' } })
   console.log(itinerary)
   console.log('Thanks for using the chatgptExample')

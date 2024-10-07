@@ -4,6 +4,14 @@ import { theme } from './theme'
 
 export const StateAnnotation = Annotation.Root({
   ...MessagesAnnotation.spec,
+  fictional: Annotation<boolean>({
+    default: () => false,
+    reducer: (state: boolean, action: boolean) => action,
+  }),
+  routeIdea: Annotation<string>({
+    default: () => '',
+    reducer: (state: string, action: string) => action,
+  }),
   itinerary: Annotation<string[]>({
     default: () => [],
     reducer: (state: string[], action: string[]) => [...state, ...action],
