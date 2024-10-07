@@ -20,7 +20,7 @@ here is the itinerary:
 So far you have the following steps, add more steps to complete the route. You need at least 5 steps, so far you have {stepsLength} steps:
 {steps}
 
-Search for the distance on foot to the next step. The distance must be in kilometers.
+Find for the distance on foot to the next step, if possible, by car, train or boat otherwise. The distance must be in kilometers.
 
 `.trim()
 )

@@ -32,7 +32,7 @@ export const summarizeSteps = async (state: typeof StateAnnotation.State) => {
     .pipe(llm)
     .pipe(stepParser)
     .invoke({ ...flattenedState, format_instructions: stepParser.getFormatInstructions() })
-
+  console.log('summarizing steps...', JSON.stringify(response))
   return {
     steps: response,
   }

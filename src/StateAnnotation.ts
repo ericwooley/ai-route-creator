@@ -1,6 +1,7 @@
 import { Annotation, MessagesAnnotation } from '@langchain/langgraph'
 import { Theme, RouteDetails } from './types'
 import { theme } from './theme'
+import _ from 'lodash'
 
 export const StateAnnotation = Annotation.Root({
   ...MessagesAnnotation.spec,
@@ -26,6 +27,6 @@ export const StateAnnotation = Annotation.Root({
   }),
   steps: Annotation({
     default: () => [],
-    reducer: (state: RouteDetails[], action: RouteDetails[]) => action,
+    reducer: (state: RouteDetails[], action: RouteDetails[]) => _.uniqBy([...state, ...action], 'name'),
   }),
 })

@@ -34,6 +34,8 @@ The Route Name should clearly indicate where the route starts or where it ends. 
 Example of a popular name that doesn't need to indicate start or end: "The Silk Road" is a popular name that is known by many to be a route from China to Europe. "The Silk Road" is a good name for a route.
 Example of a name that needs to indicate start or end: "San Fran Cisco To New York" is a good name for a route that goes from San Francisco to New York. There is no popular name for this route, so it needs to indicate the start and end.
 
+All steps in the itinerary must be places as a noun, and not a collection of places. For example, "The Eiffel Tower" is a good step, but "The Eiffel Tower and the Louvre" is not a good step.
+
 
 {parser_instructions}
 

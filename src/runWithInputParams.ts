@@ -1,6 +1,7 @@
 import { StateGraph } from '@langchain/langgraph'
 import { StateAnnotation } from './StateAnnotation'
-import { theme } from './theme'
+import { theme as defaultTheme } from './theme'
+import themes from './themes.json'
 import { toolNode } from './toolNode'
 import { checkpointer } from './checkpointer'
 import { searchRouteNode } from './prompts/searchRoutePrompt'
@@ -62,7 +63,12 @@ const builder = new StateGraph(StateAnnotation)
 const graph = builder.compile({ checkpointer })
 
 // Execute the graph
-export const generateRoute = async ({ routeIdea, fictional }: { routeIdea?: string; fictional?: boolean } = {}) => {
+export const generateRoute = async ({
+  routeIdea,
+  fictional,
+  theme: themeName,
+}: { routeIdea?: string; fictional?: boolean; theme?: string } = {}) => {
+  const theme = themes.find(({ theme: name }) => name === themeName) ?? defaultTheme
   const state = { theme, routeIdea, fictional }
   const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' } })
   console.log(itinerary)
