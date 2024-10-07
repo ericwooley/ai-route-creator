@@ -3,6 +3,7 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import { generateRoute } from './runWithInputParams'
 import themes from './themes.json'
+import { boilDownResults, searchGoogle } from './tools/searchTool'
 
 yargs(hideBin(process.argv))
   .scriptName('npm run arc')
@@ -34,6 +35,45 @@ yargs(hideBin(process.argv))
     },
     async (argv) => {
       await generateRoute(argv)
+    }
+  )
+  .command(
+    'search',
+    'Search using google search',
+    (yargs) =>
+      yargs
+        .option('query', {
+          alias: 'q',
+          type: 'string',
+          demand: true,
+          describe: 'The query to search for',
+        })
+        .option('verbose', {
+          alias: 'v',
+          type: 'boolean',
+          demand: false,
+          default: false,
+          describe: 'Whether to log the results',
+        }),
+    async (argv) => {
+      const results = await searchGoogle(argv)
+      if (!results) {
+        console.log('No result')
+        process.exit(1)
+      }
+      console.log(
+        JSON.stringify(
+          await boilDownResults({
+            query: argv.query,
+            results,
+            verbose: argv.verbose,
+          }),
+          null,
+          2
+        )
+      )
+
+      process.exit(0)
     }
   )
   .command('example', 'run the example', async () => {
