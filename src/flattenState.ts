@@ -5,7 +5,7 @@ export function flattenState(state: typeof StateAnnotation.State) {
 
   return {
     ...restState,
-    messages: state.messages.map((message) => `- ${message.content}`).join('\n\n'),
+    messages: state.messages.map((message) => `- ${JSON.stringify(message)}`).join('\n\n'),
     itinerary: state.itinerary.join('\n'),
     themeName: theme.theme,
     themeDescription: theme.description,

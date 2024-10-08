@@ -18,7 +18,7 @@ function decideNextRoute({ messages, steps, itinerary }: typeof StateAnnotation.
     return 'pickRoute'
   }
   const validSteps = steps.filter((step) => step.name && typeof step.distance === 'number')
-  console.log('validSteps', validSteps.length, 'itinerary', itinerary.length)
+  console.log('validSteps', steps, validSteps.length, 'itinerary', itinerary.length)
   if (validSteps.length < itinerary.length) {
     return 'findStep'
   }
@@ -74,7 +74,7 @@ export const generateRoute = async ({
     process.exit(1)
   }
   const state = { theme, routeIdea, fictional }
-  const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' } })
+  const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' }, recursionLimit: 40 })
   console.log(itinerary)
   console.log('Thanks for using the chatgptExample')
   process.exit(0)

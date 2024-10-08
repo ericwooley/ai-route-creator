@@ -58,6 +58,8 @@ const getQuestionFromQueryPrompt = PromptTemplate.fromTemplate(
   `
 Given the following search query, what question do you think the user is trying to answer?
 
+context: {context}
+
 Answer as a short question that is similar to the query.
 
 {output_instructions}
@@ -158,7 +160,13 @@ export const createSearchTool = <T extends ZodTypeAny>({
         return null
       }
       logVerbose('Results:', results.items.length)
-      const answers = await boilDownResults({ verbose, query, results, resultSchema: responseSchema })
+      const answers = await boilDownResults({
+        context: `${name} - ${description}`,
+        verbose,
+        query,
+        results,
+        resultSchema: responseSchema,
+      })
       logVerbose('Final Answer:', answers.finalAnswer, answers.answers)
       return answers.finalAnswer
     },
@@ -243,7 +251,9 @@ export async function boilDownResults<T extends ZodTypeAny>({
   limit = 5,
   resultSchema = finalAnswerSchema as any as T,
   verbose = false,
+  context,
 }: {
+  context: string
   query: string
   results: SearchResult
   llm?: BaseChatModel
@@ -255,7 +265,7 @@ export async function boilDownResults<T extends ZodTypeAny>({
   const question = await getQuestionFromQueryPrompt
     .pipe(llm)
     .pipe(questionOutputParser)
-    .invoke({ query, output_instructions: questionOutputParser.getFormatInstructions() })
+    .invoke({ context, query, output_instructions: questionOutputParser.getFormatInstructions() })
 
   const browser = await puppeteer.launch({
     timeout: 10000,

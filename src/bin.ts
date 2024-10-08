@@ -64,6 +64,7 @@ yargs(hideBin(process.argv))
       console.log(
         JSON.stringify(
           await boilDownResults({
+            context: 'search query:' + argv.query,
             query: argv.query,
             results,
             verbose: argv.verbose,
