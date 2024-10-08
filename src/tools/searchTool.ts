@@ -33,6 +33,8 @@ async function getPdfContent(url: string): Promise<string> {
         'if-none-match': '"22f44-1197b-437097f405b00"',
         'upgrade-insecure-requests': '1',
         'User-Agent': `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36`,
+        'Cache-Control': 'no-cache',
+        Pragma: 'no-cache',
       },
       responseType: 'arraybuffer',
     })
@@ -130,27 +132,35 @@ const finalAnswerPrompt = PromptTemplate.fromTemplate(
   `.trim()
 )
 
-export const searchTool = <T extends ZodTypeAny>({
+export const createSearchTool = <T extends ZodTypeAny>({
   responseSchema,
   verbose,
+  name = 'internet search',
+  description = 'Searches google and returns results as parsed by the first x results',
 }: {
+  name?: string
+  description?: string
   responseSchema: T
   verbose: boolean
 }) =>
   new DynamicStructuredTool({
-    name: 'internet search',
-    description: 'Searches google and returns results as parsed by the first x results',
+    name,
+    description,
     schema: z.object({
       query: z.string().min(1),
     }),
 
     func: async ({ query }) => {
+      const logVerbose = log(verbose)
+      logVerbose('Searching for:', query)
       const results = await searchGoogle({ query, verbose })
       if (!results) {
         return null
       }
+      logVerbose('Results:', results.items.length)
       const answers = await boilDownResults({ verbose, query, results, resultSchema: responseSchema })
-      return answers
+      logVerbose('Final Answer:', answers.finalAnswer, answers.answers)
+      return answers.finalAnswer
     },
   })
 
@@ -230,7 +240,7 @@ export async function boilDownResults<T extends ZodTypeAny>({
   query,
   results,
   llm = defaultLLM,
-  limit = 20,
+  limit = 5,
   resultSchema = finalAnswerSchema as any as T,
   verbose = false,
 }: {
@@ -250,81 +260,88 @@ export async function boilDownResults<T extends ZodTypeAny>({
   const browser = await puppeteer.launch({
     timeout: 10000,
   })
-  let answers: Array<Answer> = []
-  await Promise.all(
-    results.items.slice(0, limit).map(async (item) => {
-      const page = await browser.newPage()
-      page.setViewport({ width: 1920, height: 1080 })
-      page.setExtraHTTPHeaders({
-        accept:
-          'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'accept-language': 'en-US,en;q=0.9',
-        'cache-control': 'max-age=0',
-        'if-modified-since': 'Mon, 06 Aug 2007 15:23:56 GMT',
-        'if-none-match': '"22f44-1197b-437097f405b00"',
-        'upgrade-insecure-requests': '1',
-      })
-      page.setUserAgent(
-        `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36`
-      )
-
-      try {
-        logVerbose('Processing page: ' + item.link)
-        let content = ''
-        if (item.link.toLowerCase().endsWith('.pdf')) {
-          content = await getPdfContent(item.link)
-        } else {
-          await page.goto(item.link)
-          await page.waitForNetworkIdle()
-          // Extract the content of the 'main' element
-          content = await page.evaluate(() => {
-            let mainElement = document.querySelector('main')
-            mainElement = mainElement ?? document.querySelector('#main')
-            mainElement = mainElement ?? document.querySelector('#content')
-            mainElement = mainElement ?? document.querySelector('body')
-            return mainElement ? mainElement.innerText : ''
-          })
-        }
-        if (!content || content.length < 10) {
-          logVerbose('No content found on page: ' + item.link)
-          return
-        }
-
-        const splitDocs = await textSplitter.splitText(content)
-
-        logVerbose('Checking page for answer...' + item.link)
-        const possibleAnswers = await Promise.all(
-          splitDocs.map(async (doc, index) => {
-            console.log('Checking doc for link', item.link, `chunck: ${index + 1}/${splitDocs.length}`)
-            return await answerQuestionFromQueryPrompt.pipe(llm).pipe(answerParser).invoke({
-              output_instructions: answerParser.getFormatInstructions(),
-              question,
-              content: doc,
-              query,
-            })
-          })
+  try {
+    let answers: Array<Answer> = []
+    await Promise.all(
+      results.items.slice(0, limit).map(async (item) => {
+        const page = await browser.newPage()
+        page.setViewport({ width: 1920, height: 1080 })
+        page.setExtraHTTPHeaders({
+          accept:
+            'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'accept-language': 'en-US,en;q=0.9',
+          'cache-control': 'max-age=0',
+          'if-modified-since': 'Mon, 06 Aug 2007 15:23:56 GMT',
+          'if-none-match': '"22f44-1197b-437097f405b00"',
+          'upgrade-insecure-requests': '1',
+        })
+        page.setUserAgent(
+          `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36`
         )
-        const highestQualityAnswer = possibleAnswers.reduce((prev, current) => {
-          return prev.answerQuality > current.answerQuality ? prev : current
-        }, possibleAnswers[0])
-        answers.push({ ...highestQualityAnswer, link: item.link, presumedQuestion: question, query })
-      } catch (e) {
-        console.warn('Error processing page: ' + item.link, e.message)
-      }
-    })
-  )
-  const finalOutputStructure = StructuredOutputParser.fromZodSchema(resultSchema)
-  const finalAnswer = await finalAnswerPrompt
-    .pipe(llm)
-    .pipe(finalOutputStructure)
-    .invoke({
-      query,
-      question,
-      answers: answers.map((answer) => JSON.stringify(answer)).join('\n\n'),
-      output_instructions: finalOutputStructure.getFormatInstructions(),
-    })
-  return {
-    finalAnswer,
-    answers,
+
+        try {
+          logVerbose('Processing page: ' + item.link)
+          let content = await redis.get(`content-${item.link}`)
+          if (!content) {
+            if (item.link.toLowerCase().endsWith('.pdf')) {
+              content = await getPdfContent(item.link)
+            } else {
+              await page.goto(item.link)
+              await page.waitForNetworkIdle()
+              // Extract the content of the 'main' element
+              content = await page.evaluate(() => {
+                let mainElement = document.querySelector('main')
+                mainElement = mainElement ?? document.querySelector('#main')
+                mainElement = mainElement ?? document.querySelector('#content')
+                mainElement = mainElement ?? document.querySelector('body')
+                return mainElement ? mainElement.innerText : ''
+              })
+            }
+
+            if (!content || content.length < 10) {
+              logVerbose('No content found on page: ' + item.link)
+              return
+            }
+            redis.set(`content-${item.link}`, content, 'EX', 60 * 60 * 24 * 7)
+          }
+          const splitDocs = await textSplitter.splitText(content)
+
+          logVerbose('Checking page for answer...' + item.link)
+          const possibleAnswers = await Promise.all(
+            splitDocs.map(async (doc, index) => {
+              console.log('Checking doc for link', item.link, `chunck: ${index + 1}/${splitDocs.length}`)
+              return await answerQuestionFromQueryPrompt.pipe(llm).pipe(answerParser).invoke({
+                output_instructions: answerParser.getFormatInstructions(),
+                question,
+                content: doc,
+                query,
+              })
+            })
+          )
+          const highestQualityAnswer = possibleAnswers.reduce((prev, current) => {
+            return prev.answerQuality > current.answerQuality ? prev : current
+          }, possibleAnswers[0])
+          answers.push({ ...highestQualityAnswer, link: item.link, presumedQuestion: question, query })
+        } catch (e) {
+          console.warn('Error processing page: ' + item.link, e.message)
+        }
+      })
+    )
+    const finalOutputStructure = StructuredOutputParser.fromZodSchema(resultSchema)
+    const finalAnswer = await finalAnswerPrompt
+      .pipe(llm)
+      .pipe(finalOutputStructure)
+      .invoke({
+        query,
+        question,
+        answers: answers.map((answer) => JSON.stringify(answer)).join('\n\n'),
+        output_instructions: finalOutputStructure.getFormatInstructions(),
+      })
+    return {
+      finalAnswer,
+      answers,
+    }
+  } finally {
+    await browser.close()
   }
 }

@@ -1,6 +1,6 @@
 // Define interfaces for type safety
 export interface Theme {
-  name: string
+  theme: string
   description: string
   primaryColor: string
   secondaryColor: string

@@ -1,6 +1,5 @@
 import { StateGraph } from '@langchain/langgraph'
 import { StateAnnotation } from './StateAnnotation'
-import { theme as defaultTheme } from './theme'
 import themes from './themes.json'
 import { toolNode } from './toolNode'
 import { checkpointer } from './checkpointer'
@@ -25,6 +24,7 @@ function decideNextRoute({ messages, steps, itinerary }: typeof StateAnnotation.
   }
   return '__end__'
 }
+
 // Setup the graph
 const builder = new StateGraph(StateAnnotation)
   /**
@@ -51,7 +51,6 @@ const builder = new StateGraph(StateAnnotation)
    * Duplicate tools node that should only edge back to picking the route.
    */
   .addNode('searchForRouteTool', toolNode)
-
   .addEdge('__start__', 'routeSearch')
   .addEdge('routeSearch', 'searchForRouteTool')
   .addEdge('searchForRouteTool', 'pickRoute')
@@ -68,7 +67,12 @@ export const generateRoute = async ({
   fictional,
   theme: themeName,
 }: { routeIdea?: string; fictional?: boolean; theme?: string } = {}) => {
-  const theme = themes.find(({ theme: name }) => name === themeName) ?? defaultTheme
+  console.log('Generating route', routeIdea, fictional, themeName)
+  const theme = themes.find(({ theme: name }) => name === themeName)
+  if (!theme) {
+    console.error('Invalid theme')
+    process.exit(1)
+  }
   const state = { theme, routeIdea, fictional }
   const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' } })
   console.log(itinerary)

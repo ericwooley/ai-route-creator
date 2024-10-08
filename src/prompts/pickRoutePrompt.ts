@@ -11,6 +11,9 @@ const outputSchema = z.object({
     .describe(
       'The name of the route, which should describe the route, but should make no reference to the theme, and be as terse as possible. EG "The Silk Road" or "San Fran Cisco To New York". No fluffy bullshit like "The Amazing Adventure"'
     ),
+  references: z
+    .array(z.object({ name: z.string(), link: z.string() }))
+    .describe('Links or references used for picking this route'),
   itinerary: z
     .array(
       z
@@ -35,8 +38,6 @@ Example of a popular name that doesn't need to indicate start or end: "The Silk 
 Example of a name that needs to indicate start or end: "San Fran Cisco To New York" is a good name for a route that goes from San Francisco to New York. There is no popular name for this route, so it needs to indicate the start and end.
 
 All steps in the itinerary must be places as a noun, and not a collection of places. For example, "The Eiffel Tower" is a good step, but "The Eiffel Tower and the Louvre" is not a good step.
-
-
 {parser_instructions}
 
 `.trim()
@@ -48,6 +49,7 @@ export const pickRouteNode = async (state: typeof StateAnnotation.State) => {
     .invoke({ ...flattenState(state), parser_instructions: summaryParser.getFormatInstructions() })
   return {
     route: response.route,
+    references: response.references,
     itinerary: response.itinerary,
   }
 }

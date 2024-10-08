@@ -9,6 +9,15 @@ export const StateAnnotation = Annotation.Root({
     default: () => false,
     reducer: (state: boolean, action: boolean) => action,
   }),
+  references: Annotation<
+    {
+      name: string
+      link: string
+    }[]
+  >({
+    default: () => [],
+    reducer: (state, action) => action,
+  }),
   routeIdea: Annotation<string>({
     default: () => '',
     reducer: (state: string, action: string) => action,
@@ -18,9 +27,9 @@ export const StateAnnotation = Annotation.Root({
     reducer: (state: string[], action: string[]) => [...state, ...action],
   }),
   theme: Annotation<Theme>({
-    reducer: (state: Theme) => state,
+    reducer: (state, action) => action,
     default: () => theme,
-  }), // Add your specific state fields here
+  }),
   route: Annotation<string>({
     default: () => '',
     reducer: (state: string, action: string) => action,

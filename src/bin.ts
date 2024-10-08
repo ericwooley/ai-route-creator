@@ -13,7 +13,7 @@ yargs(hideBin(process.argv))
     'create a new route',
     function (yargs) {
       return yargs
-        .option('idea', {
+        .option('routeIdea', {
           alias: 'i',
           type: 'string',
           demand: true,
@@ -29,7 +29,7 @@ yargs(hideBin(process.argv))
         .option('fictional', {
           alias: 'f',
           type: 'boolean',
-          demand: false,
+          demand: true,
           describe: 'Whether the route is fictional',
         })
     },
