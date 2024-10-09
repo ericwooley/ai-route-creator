@@ -210,7 +210,7 @@ export async function searchGoogle({
   const logVerbose = log(query, verbose)
 
   const apiKey = process.env.GOOGLE_SEARCH_API_KEY
-  const cx = '57ac4e5ba214b44a4' // Programmable Search Engine ID
+  const cx = process.env.GOOGLE_SEARCH_ENGINE_ID // Programmable Search Engine ID
 
   if (!apiKey || !cx) {
     console.error('API key or CX is missing')
