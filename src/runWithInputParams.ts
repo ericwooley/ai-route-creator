@@ -5,8 +5,9 @@ import { toolNode } from './toolNode'
 import { checkpointer } from './checkpointer'
 import { searchRouteNode } from './prompts/searchRoutePrompt'
 import { summarizeSteps } from './prompts/summarizeStepsPrompt'
-import { findStep } from './prompts/findStepPrompt'
+import { searchStep } from './prompts/searchStepPrompt'
 import { pickRouteNode } from './prompts/pickRoutePrompt'
+import { searchItineraryNode } from './prompts/searchItineraryPrompt'
 
 function decideNextRoute({ messages, steps, itinerary }: typeof StateAnnotation.State) {
   const lastMessage = messages[messages.length - 1]
@@ -17,7 +18,9 @@ function decideNextRoute({ messages, steps, itinerary }: typeof StateAnnotation.
   if (itinerary.length < 1) {
     return 'pickRoute'
   }
-  const validSteps = steps.filter((step) => step.name && typeof step.distance === 'number')
+  const validSteps = steps.filter(
+    (step) => step.startingLocation && step.endingLocation && typeof step.distance === 'number'
+  )
   console.log('validSteps', steps, validSteps.length, 'itinerary', itinerary.length)
   if (validSteps.length < itinerary.length) {
     return 'findStep'
@@ -34,7 +37,7 @@ const builder = new StateGraph(StateAnnotation)
   /**
    * Find the steps for the given route.
    */
-  .addNode('findStep', findStep)
+  .addNode('findStep', searchStep)
   /**
    * Search for the route based on the theme.
    */
@@ -43,6 +46,10 @@ const builder = new StateGraph(StateAnnotation)
    * Pick the route based on the search results.
    */
   .addNode('pickRoute', pickRouteNode)
+
+  .addNode('searchForItineraryTools', toolNode)
+  .addNode('itinerarySearcher', searchItineraryNode)
+
   /**
    * Tools node to call the tools
    */
@@ -53,9 +60,12 @@ const builder = new StateGraph(StateAnnotation)
   .addNode('searchForRouteTool', toolNode)
   .addEdge('__start__', 'routeSearch')
   .addEdge('routeSearch', 'searchForRouteTool')
+
+  .addEdge('itinerarySearcher', 'searchForItineraryTools')
+  .addEdge('searchForItineraryTools', 'findStep')
   .addEdge('searchForRouteTool', 'pickRoute')
   .addEdge('findStep', 'searchForStepDistancesTool')
-  .addEdge('pickRoute', 'findStep')
+  .addEdge('pickRoute', 'itinerarySearcher')
   .addEdge('searchForStepDistancesTool', 'summarize')
   .addConditionalEdges('summarize', decideNextRoute)
 

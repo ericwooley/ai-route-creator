@@ -22,9 +22,9 @@ export const StateAnnotation = Annotation.Root({
     default: () => '',
     reducer: (state: string, action: string) => action,
   }),
-  itinerary: Annotation<string[]>({
+  itinerary: Annotation<RouteDetails[]>({
     default: () => [],
-    reducer: (state: string[], action: string[]) => [...state, ...action],
+    reducer: (state: RouteDetails[], action: RouteDetails[]) => action,
   }),
   theme: Annotation<Theme>({
     reducer: (state, action) => action,
@@ -36,6 +36,6 @@ export const StateAnnotation = Annotation.Root({
   }),
   steps: Annotation({
     default: () => [],
-    reducer: (state: RouteDetails[], action: RouteDetails[]) => _.uniqBy([...state, ...action], 'name'),
+    reducer: (state: RouteDetails[], action: RouteDetails[]) => action,
   }),
 })

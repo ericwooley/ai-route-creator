@@ -7,18 +7,16 @@ import { agentModel } from '../agentModel'
 export const routePrompt = PromptTemplate.fromTemplate(
   `
 ${background}
-
-If we already have a route idea, we need to search the internet to refine that idea into a single route, which users could follow.
-This will give you a list of routes to pick from and possible locations on those routes.
+Search for more information about our route. EG: "Most interesting places to stop while traveling on the silk road".
 
 Make sure your search includes whether we are looking for fictional places or real places. We don't want real-life locations mixed with fictional locations used for filming, etc.
 If the user is looking for fiction, make sure to include that in the search.
 
-For example: if the idea is non fiction "Historical adventure" the search might be "Interesting routes for a historical adventure theme."
-if the the idea is fiction "Historical Adventure" the search might be "Interesting routes ideas for a historical adventure based on fictional locations."
+For example: If the route is "kings landing to the wall" search for "Where would you stop on a journey from kings landing to the wall".
+It is ok to use the route idea directly in the query, but that should not be the entire query. Make sure to add context to the query to get the best results, we are looking for pages that will describe the route.
 `.trim()
 )
-export const searchRouteNode = async (state: typeof StateAnnotation.State) => {
+export const searchItineraryNode = async (state: typeof StateAnnotation.State) => {
   const response = await routePrompt.pipe(agentModel).invoke({
     ...llmState(state),
   })

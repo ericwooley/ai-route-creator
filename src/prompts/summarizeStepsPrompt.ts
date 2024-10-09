@@ -2,38 +2,68 @@ import { PromptTemplate } from '@langchain/core/prompts'
 import { background } from './backgroundPrompt'
 import { flattenState } from '../flattenState'
 import { llm } from '../llm'
-import { stepsStructure } from '../responseStructure'
+import { stepStructure } from '../responseStructure'
 import { StateAnnotation } from '../StateAnnotation'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
+import { z } from 'zod'
 export const summarizeStepsPrompt = PromptTemplate.fromTemplate(
   `
   ${background}
   The chosen route is "{route}". If this is not a good route name, we need to change it.
-  The steps for this route are as follows:
+  The steps for this route are as follows, a distance of -1 means that the distance is unknown:
+
+  Itinerary:
+  ~~~
+  {itinerary}
+  ~~~
+  Researched Steps:
   ~~~
   {steps}
   ~~~
-  You are a higher paid researcher, who is reviewing the research proposed for a guide for tourists. You need to summarize the route and steps for the tourists.
 
-  Rename steps and the route for conciseness and clarity. The theme will be presented as well as the title and steps.
-  Each step should not include anything but the step name: "The Eiffel Tower" or "The Louvre".
-  Do not include "start at the Louvre" or any other information in the step name. Just the name of the place.
-
-  The name of the route is "{route}"
+  {next_information}
+  Based on the most recent information, we need to add the next step to the itinerary.
+  You need to add the distance of the next step to the itinerary. The distance must be in kilometers.
+  If there is not enough information, you can an educated guess for the distance.
 
  {format_instructions}
   `.trim()
 )
-const stepParser = StructuredOutputParser.fromZodSchema(stepsStructure)
 
 export const summarizeSteps = async (state: typeof StateAnnotation.State) => {
+  const stepParser = StructuredOutputParser.fromZodSchema(
+    z.number().gte(0).describe('The distance of the step in kilometers')
+  )
+  const lastStep = state.steps[state.steps.length - 1]
+  const nextItinerary = state.itinerary.find((s) => {
+    if (lastStep) {
+      return s.startingLocation === lastStep.endingLocation
+    }
+
+    return true
+  })
   const flattenedState = flattenState(state)
+  console.log(
+    'next_information',
+    nextItinerary ? `We need to find ${nextItinerary?.startingLocation} -> ${nextItinerary.endingLocation}` : ''
+  )
   const response = await summarizeStepsPrompt
     .pipe(llm)
     .pipe(stepParser)
-    .invoke({ ...flattenedState, format_instructions: stepParser.getFormatInstructions() })
-  console.log('summarizing steps...', JSON.stringify(response))
+    .invoke({
+      ...flattenedState,
+      format_instructions: stepParser.getFormatInstructions(),
+      next_information: nextItinerary
+        ? `We need to find ${nextItinerary?.startingLocation} -> ${nextItinerary.endingLocation}`
+        : '',
+    })
+  const nextStep = {
+    startingLocation: nextItinerary?.startingLocation,
+    endingLocation: nextItinerary?.endingLocation,
+    distance: response,
+  }
+  console.log('Found step', nextStep)
   return {
-    steps: response,
+    steps: [...state.steps, nextStep],
   }
 }

@@ -16,9 +16,9 @@ const textSplitter = new TokenTextSplitter({
 })
 
 const log =
-  (verbose: boolean) =>
+  (ctx: string, verbose: boolean) =>
   (...args: any[]) =>
-    verbose ? console.warn(...args) : null
+    verbose ? console.warn(ctx + ':', ...args) : null
 
 async function getPdfContent(url: string): Promise<string> {
   try {
@@ -53,58 +53,39 @@ async function getPdfContent(url: string): Promise<string> {
 const questionOutputParser = StructuredOutputParser.fromZodSchema(
   z.string().describe('The question that the user is trying to answer')
 )
-export const defaultLLM = new ChatOpenAI({ maxConcurrency: 2, temperature: 0, cache: cache, model: 'gpt-4o-mini' })
-const getQuestionFromQueryPrompt = PromptTemplate.fromTemplate(
-  `
-Given the following search query, what question do you think the user is trying to answer?
+export const defaultLLM = new ChatOpenAI({ maxConcurrency: 10, temperature: 0, cache: cache, model: 'gpt-4o-mini' })
 
-context: {context}
-
-Answer as a short question that is similar to the query.
-
-{output_instructions}
-
-For Example:
-Query: How to make a cake
-Question: What are the steps to make a cake?
-
-You answer should only be the question and no other information.
-Query: {query}
-Question:
-  `.trim()
-)
+const answerQualitySchema = z
+  .union([
+    z.literal('1').describe('The answer is not relevant to the question'),
+    z.literal('2').describe('The answer is barely relevant to the question'),
+    z.literal('3').describe('The answer is somewhat relevant to the question'),
+    z.literal('4').describe('The answer is moderately relevant to the question'),
+    z.literal('5').describe('The answer is relevant to the question'),
+    z.literal('6').describe('The answer is quite relevant to the question'),
+    z.literal('7').describe('The answer is very relevant to the question'),
+    z.literal('8').describe('The answer is highly relevant to the question'),
+    z.literal('9').describe('The answer is almost perfect for the question'),
+    z.literal('10').describe('The answer is perfect for the question'),
+  ])
+  .describe('The quality of the answer, on a scale from 1 to 10')
 const answerSchema = z.object({
-  question: z.string().describe('The question that the user is trying to answer'),
   answerQualityExplanation: z.string().describe('An explanation of the answer quality, why it is rated as such'),
   answer: z.string().describe('The answer to the question'),
-  answerQuality: z
-    .union([
-      z.literal(1).describe('The answer is not relevant to the question'),
-      z.literal(2).describe('The answer is barely relevant to the question'),
-      z.literal(3).describe('The answer is somewhat relevant to the question'),
-      z.literal(4).describe('The answer is moderately relevant to the question'),
-      z.literal(5).describe('The answer is relevant to the question'),
-      z.literal(6).describe('The answer is quite relevant to the question'),
-      z.literal(7).describe('The answer is very relevant to the question'),
-      z.literal(8).describe('The answer is highly relevant to the question'),
-      z.literal(9).describe('The answer is almost perfect for the question'),
-      z.literal(10).describe('The answer is perfect for the question'),
-    ])
-    .describe('The quality of the answer, on a scale from 1 to 10'),
+  answerQuality: answerQualitySchema,
+  snippet: z.string().describe('The snippet of text that the answer was extracted from.'),
 })
 export type Answer = z.infer<typeof answerSchema> & {
   query: string
-  presumedQuestion: string
   link: string
 }
 const answerParser = StructuredOutputParser.fromZodSchema(answerSchema.describe("The answer to the user's question"))
 const answerQuestionFromQueryPrompt = PromptTemplate.fromTemplate(
   `
-  The user is trying to answer the following question. Given this content, what is the answer?
+  The user is trying to answer the following query. Given this content, what is the answer?
 
   Keep the answer as short and terse as possible.
   Original Query: {query}
-  Presumed Question: {question}
   Content:
   ~~~
   {content}
@@ -114,21 +95,18 @@ const answerQuestionFromQueryPrompt = PromptTemplate.fromTemplate(
   `.trim()
 )
 
-const finalAnswerSchema = z
-  .string()
-  .describe(
-    'The answer to the user query, do not use a range, or multiple answers, give a definitive answer to the question, that the user can use to solve their problem'
-  )
-
 const finalAnswerPrompt = PromptTemplate.fromTemplate(
   `
-  We have scoured the internet trying to find the highest quality answers to the user's question. Here are the best answers we could find.
+  We have scoured the internet trying to find the highest quality answers to the user's query. Here are the best answers we could find.
   Original Query: {query}
-  Presumed Question: {question}
-  You are to look through these answers and give a definitive answer to the user. Do not use a range, or multiple answers, give a definitive answer to the question, that the user can use to solve their problem.
+
+  You are to look through these answers and give a definitive answer to the user. Do not use a range (unless the user is looking for a range specifically), or multiple answers (unless the query is requesting a list or multiple answers specifically), give a definitive answer to the query, that the user can use to solve their problem.
   ~~~
   {answers}
   ~~~
+
+  If there are no good answers, make an educated guess based on the results.
+
   {output_instructions}
 
   `.trim()
@@ -137,13 +115,17 @@ const finalAnswerPrompt = PromptTemplate.fromTemplate(
 export const createSearchTool = <T extends ZodTypeAny>({
   responseSchema,
   verbose,
+  llm = defaultLLM,
   name = 'internet search',
   description = 'Searches google and returns results as parsed by the first x results',
+  transform = (result) => result,
 }: {
   name?: string
   description?: string
   responseSchema: T
+  llm?: BaseChatModel
   verbose: boolean
+  transform?: (result: z.infer<T>) => any
 }) =>
   new DynamicStructuredTool({
     name,
@@ -153,14 +135,22 @@ export const createSearchTool = <T extends ZodTypeAny>({
     }),
 
     func: async ({ query }) => {
-      const logVerbose = log(verbose)
+      const logVerbose = log(query, verbose)
+      const cacheKey = name + `:search-${query}`
+      const cachedResponse = await redis.get(cacheKey)
+      if (cachedResponse) {
+        const finalAnswer = transform(JSON.parse(cachedResponse).finalAnswer)
+        logVerbose('Using cached response:', JSON.stringify(finalAnswer, null, 2))
+        return finalAnswer
+      }
       logVerbose('Searching for:', query)
-      const results = await searchGoogle({ query, verbose })
+      const results = await searchGoogle({ query, verbose, name })
       if (!results) {
         return null
       }
       logVerbose('Results:', results.items.length)
       const answers = await boilDownResults({
+        llm,
         context: `${name} - ${description}`,
         verbose,
         query,
@@ -168,7 +158,10 @@ export const createSearchTool = <T extends ZodTypeAny>({
         resultSchema: responseSchema,
       })
       logVerbose('Final Answer:', answers.finalAnswer, answers.answers)
-      return answers.finalAnswer
+      await redis.set(cacheKey, JSON.stringify(answers), 'EX', 60 * 60 * 24 * 7)
+      const finalAnswer = transform(answers.finalAnswer)
+      logVerbose('Final Answer:', finalAnswer)
+      return finalAnswer
     },
   })
 
@@ -208,15 +201,13 @@ interface SearchResult {
 export async function searchGoogle({
   query,
   verbose,
+  name = 'internet search',
 }: {
   query: string
   verbose: boolean
+  name?: string
 }): Promise<SearchResult | null> {
-  const logVerbose = log(verbose)
-  let cacheResponse = await redis.get(`search-${query}`)
-  if (cacheResponse) {
-    return JSON.parse(cacheResponse)
-  }
+  const logVerbose = log(query, verbose)
 
   const apiKey = process.env.GOOGLE_SEARCH_API_KEY
   const cx = '57ac4e5ba214b44a4' // Programmable Search Engine ID
@@ -234,9 +225,6 @@ export async function searchGoogle({
         q: query,
       },
     })
-    logVerbose(response.statusText, response.data)
-    // cache for 1 week
-    await redis.set(`search-${query}`, JSON.stringify(response.data), 'EX', 60 * 60 * 24 * 7)
     return response.data
   } catch (error) {
     console.error('Error fetching search results:', error)
@@ -249,7 +237,7 @@ export async function boilDownResults<T extends ZodTypeAny>({
   results,
   llm = defaultLLM,
   limit = 5,
-  resultSchema = finalAnswerSchema as any as T,
+  resultSchema = z.string() as any as T,
   verbose = false,
   context,
 }: {
@@ -261,11 +249,11 @@ export async function boilDownResults<T extends ZodTypeAny>({
   resultSchema?: T
   verbose?: boolean
 }) {
-  const logVerbose = log(verbose)
-  const question = await getQuestionFromQueryPrompt
-    .pipe(llm)
-    .pipe(questionOutputParser)
-    .invoke({ context, query, output_instructions: questionOutputParser.getFormatInstructions() })
+  const logVerbose = log(query, verbose)
+  // const question = await getQuestionFromQueryPrompt
+  //   .pipe(llm)
+  //   .pipe(questionOutputParser)
+  //   .invoke({ context, query, output_instructions: questionOutputParser.getFormatInstructions() })
 
   const browser = await puppeteer.launch({
     timeout: 10000,
@@ -319,10 +307,9 @@ export async function boilDownResults<T extends ZodTypeAny>({
           logVerbose('Checking page for answer...' + item.link)
           const possibleAnswers = await Promise.all(
             splitDocs.map(async (doc, index) => {
-              console.log('Checking doc for link', item.link, `chunck: ${index + 1}/${splitDocs.length}`)
+              logVerbose('Checking doc for link', item.link, `chunck: ${index + 1}/${splitDocs.length}`)
               return await answerQuestionFromQueryPrompt.pipe(llm).pipe(answerParser).invoke({
                 output_instructions: answerParser.getFormatInstructions(),
-                question,
                 content: doc,
                 query,
               })
@@ -331,19 +318,31 @@ export async function boilDownResults<T extends ZodTypeAny>({
           const highestQualityAnswer = possibleAnswers.reduce((prev, current) => {
             return prev.answerQuality > current.answerQuality ? prev : current
           }, possibleAnswers[0])
-          answers.push({ ...highestQualityAnswer, link: item.link, presumedQuestion: question, query })
+          if (parseInt(highestQualityAnswer?.answerQuality ?? '0') > 3) {
+            answers.push({ ...highestQualityAnswer, link: item.link, query })
+          }
         } catch (e) {
           console.warn('Error processing page: ' + item.link, e.message)
         }
       })
     )
-    const finalOutputStructure = StructuredOutputParser.fromZodSchema(resultSchema)
+    const finalAnswerSchema = z.object({
+      finalAnswer: resultSchema.describe(
+        (
+          'The answer to the user query, do not use a range, or multiple answers, give a definitive answer to the query, that the user can use to solve their problem. If the answer is not known from the search, make an educated guess, and mark the quality as 1' +
+          (resultSchema.description ?? '')
+        ).trim()
+      ),
+      finalAnswerQuality: answerQualitySchema.describe('The quality of the final answer'),
+      relevantLinks: z.array(z.string()).describe('Links to relevant information used to answer the query'),
+      mostUsefulAnswers: z.array(answerSchema).describe('The most useful answers to the user query'),
+    })
+    const finalOutputStructure = StructuredOutputParser.fromZodSchema(finalAnswerSchema)
     const finalAnswer = await finalAnswerPrompt
       .pipe(llm)
       .pipe(finalOutputStructure)
       .invoke({
         query,
-        question,
         answers: answers.map((answer) => JSON.stringify(answer)).join('\n\n'),
         output_instructions: finalOutputStructure.getFormatInstructions(),
       })

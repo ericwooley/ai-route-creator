@@ -6,12 +6,16 @@ export function flattenState(state: typeof StateAnnotation.State) {
   return {
     ...restState,
     messages: state.messages.map((message) => `- ${JSON.stringify(message)}`).join('\n\n'),
-    itinerary: state.itinerary.join('\n'),
+    itinerary: state.itinerary
+      .map(({ startingLocation, endingLocation }) => `${startingLocation} -> ${endingLocation}`)
+      .join('\n'),
     themeName: theme.theme,
     themeDescription: theme.description,
     themePrimaryColor: theme.primaryColor,
     themeSecondaryColor: theme.secondaryColor,
     stepsLength: state.steps.length,
-    steps: state.steps.map((step) => `${step.name} - ${step.distance} km`).join('\n'),
+    steps: state.steps
+      .map((step) => `${step.startingLocation} -> ${step.endingLocation} : ${step.distance} km`)
+      .join('\n'),
   }
 }

@@ -6,7 +6,8 @@ export interface Theme {
   secondaryColor: string
 }
 export interface RouteDetails {
-  name: string
+  startingLocation: string
+  endingLocation: string
   distance: number
 }
 interface Itinerary {

@@ -5,6 +5,7 @@ import { StateAnnotation } from '../StateAnnotation'
 import { llm } from '../llm'
 import { z } from 'zod'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
+import { stepStructure } from '../responseStructure'
 const outputSchema = z.object({
   route: z
     .string()
@@ -15,13 +16,8 @@ const outputSchema = z.object({
     .array(z.object({ name: z.string(), link: z.string() }))
     .describe('Links or references used for picking this route'),
   itinerary: z
-    .array(
-      z
-        .string()
-        .describe(
-          "The start and end of the step of the leg of the route. EG 'San Fran Cisco' -> 'L.A', each leg should start where the last leg ended."
-        )
-    )
+    .array(stepStructure.describe('Use -1 for the distance, because we have not researched it yet....'))
+    .describe('The steps of the route')
     .min(5)
     .describe('The steps of the route'),
 })
@@ -38,6 +34,7 @@ Example of a popular name that doesn't need to indicate start or end: "The Silk 
 Example of a name that needs to indicate start or end: "San Fran Cisco To New York" is a good name for a route that goes from San Francisco to New York. There is no popular name for this route, so it needs to indicate the start and end.
 
 All steps in the itinerary must be places as a noun, and not a collection of places. For example, "The Eiffel Tower" is a good step, but "The Eiffel Tower and the Louvre" is not a good step.
+
 {parser_instructions}
 
 `.trim()
