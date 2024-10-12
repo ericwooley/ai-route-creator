@@ -35,6 +35,14 @@ Example of a name that needs to indicate start or end: "San Fran Cisco To New Yo
 
 All steps in the itinerary must be places as a noun, and not a collection of places. For example, "The Eiffel Tower" is a good step, but "The Eiffel Tower and the Louvre" is not a good step.
 
+Make sure to include the ideal starting location as the first step and the ideal ending location as the last step.
+
+Make sure to summarize this in a route someone could follow on foot or car. Steps that are disjointed, or require a flight or boat should be removed.
+
+The order of the steps are important. Each step should be a journey from the previous step, and be in order from closest to the start to furthest from the start.
+
+Ideally the itinerary should have at least 10 steps, however 5 is a minimum.
+
 {parser_instructions}
 
 `.trim()

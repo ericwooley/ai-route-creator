@@ -5,6 +5,7 @@ import { llm } from '../llm'
 import { StateAnnotation } from '../StateAnnotation'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
 import { z } from 'zod'
+import { stepStructure } from '../responseStructure'
 export const summarizeStepsPrompt = PromptTemplate.fromTemplate(
   `
   ${background}
@@ -30,7 +31,7 @@ export const summarizeStepsPrompt = PromptTemplate.fromTemplate(
 )
 
 export const summarizeSteps = async (state: typeof StateAnnotation.State) => {
-  const stepParser = StructuredOutputParser.fromZodSchema(z.number().gte(0).describe('The distance of the step'))
+  const stepParser = StructuredOutputParser.fromZodSchema(stepStructure)
   const lastStep = state.steps[state.steps.length - 1]
   const nextItinerary = state.itinerary.find((s) => {
     if (lastStep) {
@@ -40,28 +41,21 @@ export const summarizeSteps = async (state: typeof StateAnnotation.State) => {
     return true
   })
   const flattenedState = flattenState(state)
-  console.log(
-    'next_information',
-    nextItinerary ? `We need to find ${nextItinerary?.startingLocation} -> ${nextItinerary.endingLocation}` : ''
-  )
+  const nextInfo = nextItinerary
+    ? `We need to find ${nextItinerary?.startingLocation} -> ${nextItinerary.endingLocation}`
+    : ''
+  console.log('next_information', nextInfo)
   const response = await summarizeStepsPrompt
     .pipe(llm)
     .pipe(stepParser)
     .invoke({
       ...flattenedState,
-      // messages: state.messages.slice(-3).map((m) => m.content.toString()),
       format_instructions: stepParser.getFormatInstructions(),
-      next_information: nextItinerary
-        ? `We need to find ${nextItinerary?.startingLocation} -> ${nextItinerary.endingLocation}`
-        : '',
+      next_information: nextInfo,
     })
-  const nextStep = {
-    startingLocation: nextItinerary?.startingLocation,
-    endingLocation: nextItinerary?.endingLocation,
-    distance: response,
-  }
-  console.log('Found step', nextStep)
+
+  console.log('Found step', response)
   return {
-    steps: [...state.steps, nextStep],
+    steps: [...state.steps, response],
   }
 }

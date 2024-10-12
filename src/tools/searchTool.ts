@@ -133,6 +133,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
     }),
 
     func: async ({ query }) => {
+      console.log('\n\n\nSearch Call', query, '\n\n')
       const logVerbose = log(query, verbose)
       logVerbose('Searching for:', query, 'using model', llm._modelType())
       const cacheKey = llm._modelType() + name + `:search-${query}`

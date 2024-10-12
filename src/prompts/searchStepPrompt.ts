@@ -22,7 +22,13 @@ Here are the steps we have already found.
 
 {next_information}
 
-Find for the distance on foot to the next step, if possible, by car, train or boat otherwise. Make sure any queries include the starting location, the ending location, and that we are specifically looking for a distance either in miles or kilometers.
+Use the tools available to you to search for information about the next step in the route.
+
+If fictional, make sure to include the distance in the search query.
+
+Do not make a guess, use the tools to search or get the distance from google maps.
+
+Prefer maps tools if the locations are real and on planet earth.
 
 `.trim()
 )

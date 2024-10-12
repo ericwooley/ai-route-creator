@@ -7,10 +7,12 @@ import { createMapsTool } from './tools/mapsTools'
 export const agentTools = [
   createMapsTool({
     verbose: true,
+    name: 'distance_google_maps_search',
   }),
   createSearchTool({
     name: 'distance_search',
-    description: 'Search for the distance between two locations',
+    description:
+      'Search for the distance between two locations, better for fictional locations, For real locations use the google maps search',
     responseSchema: z.object({
       distance: z.number().describe('The distance in miles or kilometers'),
       unit: z.union([

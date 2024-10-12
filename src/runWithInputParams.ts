@@ -54,7 +54,6 @@ export const generateRoute = async ({ routeIdea, fictional }: { routeIdea?: stri
   console.log('Generating route', routeIdea, fictional)
   const state = { routeIdea, fictional }
   const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' }, recursionLimit: 40 })
-  console.log(itinerary)
-  console.log('Thanks for using the chatgptExample')
+  console.log(JSON.stringify(itinerary, null, 2))
   process.exit(0)
 }

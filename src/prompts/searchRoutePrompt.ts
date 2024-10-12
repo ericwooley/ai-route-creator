@@ -16,6 +16,7 @@ If the user is looking for fiction, make sure to include that in the search.
 
 For example: if the idea is non fiction "Historical adventure" the search might be "Interesting routes for a historical adventure"
 if the the idea is fiction "Historical Adventure" the search might be "Interesting routes ideas for a historical adventure based on fictional locations."
+
 `.trim()
 )
 export const searchRouteNode = async (state: typeof StateAnnotation.State) => {
