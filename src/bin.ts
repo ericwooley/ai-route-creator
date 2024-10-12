@@ -2,7 +2,6 @@
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import { generateRoute } from './runWithInputParams'
-import themes from './themes.json'
 import { boilDownResults, searchGoogle } from './tools/searchTool'
 
 yargs(hideBin(process.argv))
@@ -19,13 +18,7 @@ yargs(hideBin(process.argv))
           demand: true,
           describe: 'The name of the route',
         })
-        .option('theme', {
-          alias: 't',
-          type: 'string',
-          demand: true,
-          describe: 'The theme of the route',
-          choices: themes.map((theme) => theme.theme),
-        })
+
         .option('fictional', {
           alias: 'f',
           type: 'boolean',

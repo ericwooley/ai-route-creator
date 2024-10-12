@@ -14,7 +14,7 @@ This will give you a list of routes to pick from and possible locations on those
 Make sure your search includes whether we are looking for fictional places or real places. We don't want real-life locations mixed with fictional locations used for filming, etc.
 If the user is looking for fiction, make sure to include that in the search.
 
-For example: if the idea is non fiction "Historical adventure" the search might be "Interesting routes for a historical adventure theme."
+For example: if the idea is non fiction "Historical adventure" the search might be "Interesting routes for a historical adventure"
 if the the idea is fiction "Historical Adventure" the search might be "Interesting routes ideas for a historical adventure based on fictional locations."
 `.trim()
 )

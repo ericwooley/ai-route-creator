@@ -8,7 +8,7 @@ export const stepPrompt = PromptTemplate.fromTemplate(
   `
 ${background}
 
-The Route must have a series of steps. Each step must have a name and a distance. The distance must be in Kilometers.
+The Route must have a series of steps. Each step must have a name and a distance.
 
 The route must be a journey, and the steps must be in order.
 
@@ -20,7 +20,6 @@ here is the itinerary:
 Here are the steps we have already found.
 {steps}
 
-
 {next_information}
 
 Find for the distance on foot to the next step, if possible, by car, train or boat otherwise. Make sure any queries include the starting location, the ending location, and that we are specifically looking for a distance either in miles or kilometers.
@@ -28,12 +27,18 @@ Find for the distance on foot to the next step, if possible, by car, train or bo
 `.trim()
 )
 export const searchStep = async (state: typeof StateAnnotation.State) => {
-  const lastStep = state.steps.find((step) => step.distance < 0)
+  const lastStep = state.steps[state.steps.length - 1]
+  const nextItinerary =
+    state.itinerary.find((i) => i.startingLocation === lastStep?.endingLocation) || state.itinerary[0]
+  let nextInfo = nextItinerary
+    ? `Only search for this, we will perform follow up searches later: ${nextItinerary.startingLocation} -> our next step. There should only be one tool call.`
+    : ''
+  if (!nextInfo) {
+    console.warn('No next information found')
+  }
   const response = await stepPrompt.pipe(agentModel).invoke({
     ...flattenState(state),
-    next_information: lastStep
-      ? `Only search for this: we will perform follow up searches later: ${lastStep.endingLocation} -> our next step. There should only be one tool call.`
-      : '',
+    next_information: nextInfo,
   })
   return {
     messages: [response],

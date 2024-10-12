@@ -10,7 +10,7 @@ const outputSchema = z.object({
   route: z
     .string()
     .describe(
-      'The name of the route, which should describe the route, but should make no reference to the theme, and be as terse as possible. EG "The Silk Road" or "San Fran Cisco To New York". No fluffy bullshit like "The Amazing Adventure"'
+      'The name of the route, which should describe the route and be as terse as possible. EG "The Silk Road" or "San Fran Cisco To New York". No fluffy bullshit like "The Amazing Adventure"'
     ),
   references: z
     .array(z.object({ name: z.string(), link: z.string() }))

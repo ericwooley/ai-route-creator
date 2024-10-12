@@ -50,10 +50,7 @@ async function getPdfContent(url: string): Promise<string> {
   }
 }
 
-const questionOutputParser = StructuredOutputParser.fromZodSchema(
-  z.string().describe('The question that the user is trying to answer')
-)
-export const defaultLLM = new ChatOpenAI({ maxConcurrency: 10, temperature: 0, cache: cache, model: 'gpt-4o-mini' })
+export const defaultLLM = new ChatOpenAI({ maxConcurrency: 10, temperature: 0, cache: cache, model: 'gpt-4o' })
 
 const answerQualitySchema = z
   .union([
@@ -101,6 +98,7 @@ const finalAnswerPrompt = PromptTemplate.fromTemplate(
   Original Query: {query}
 
   You are to look through these answers and give a definitive answer to the user. Do not use a range (unless the user is looking for a range specifically), or multiple answers (unless the query is requesting a list or multiple answers specifically), give a definitive answer to the query, that the user can use to solve their problem.
+  Make sure to double check that the snippet answers the question correctly. Your researchers are often incorrect.
   ~~~
   {answers}
   ~~~
@@ -136,12 +134,13 @@ export const createSearchTool = <T extends ZodTypeAny>({
 
     func: async ({ query }) => {
       const logVerbose = log(query, verbose)
-      const cacheKey = name + `:search-${query}`
+      logVerbose('Searching for:', query, 'using model', llm._modelType())
+      const cacheKey = llm._modelType() + name + `:search-${query}`
       const cachedResponse = await redis.get(cacheKey)
       if (cachedResponse) {
         const finalAnswer = transform(JSON.parse(cachedResponse).finalAnswer)
         logVerbose('Using cached response:', JSON.stringify(finalAnswer, null, 2))
-        return finalAnswer
+        return { query, ...finalAnswer }
       }
       logVerbose('Searching for:', query)
       const results = await searchGoogle({ query, verbose, name })
@@ -161,7 +160,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
       await redis.set(cacheKey, JSON.stringify(answers), 'EX', 60 * 60 * 24 * 7)
       const finalAnswer = transform(answers.finalAnswer)
       logVerbose('Final Answer:', finalAnswer)
-      return finalAnswer
+      return { query, ...finalAnswer }
     },
   })
 

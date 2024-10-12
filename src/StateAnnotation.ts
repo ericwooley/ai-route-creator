@@ -1,6 +1,5 @@
 import { Annotation, MessagesAnnotation } from '@langchain/langgraph'
-import { Theme, RouteDetails } from './types'
-import { theme } from './theme'
+import { RouteDetails } from './types'
 import _ from 'lodash'
 
 export const StateAnnotation = Annotation.Root({
@@ -25,10 +24,6 @@ export const StateAnnotation = Annotation.Root({
   itinerary: Annotation<RouteDetails[]>({
     default: () => [],
     reducer: (state: RouteDetails[], action: RouteDetails[]) => action,
-  }),
-  theme: Annotation<Theme>({
-    reducer: (state, action) => action,
-    default: () => theme,
   }),
   route: Annotation<string>({
     default: () => '',

@@ -6,7 +6,7 @@ import { stepStructure } from './responseStructure'
 export const agentTools = [
   createSearchTool({
     name: 'distance_search',
-    description: 'Search for the distance between two locations in Kilometers',
+    description: 'Search for the distance between two locations',
     responseSchema: z.object({
       distance: z.number().describe('The distance in miles or kilometers'),
       unit: z.union([
@@ -33,7 +33,7 @@ export const agentTools = [
         routeName: z
           .string()
           .describe(
-            'The name of the route, which should make no reference to the theme, and should describe the route, either by famous name reference or by the steps. EG "The Silk Road" or "San Fran Cisco To New York"'
+            'The name of the route which and should describe the route, either by famous name reference or by the steps. EG "The Silk Road" or "San Fran Cisco To New York"'
           ),
       })
     ),

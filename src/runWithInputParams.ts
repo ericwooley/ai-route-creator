@@ -1,6 +1,5 @@
 import { StateGraph } from '@langchain/langgraph'
 import { StateAnnotation } from './StateAnnotation'
-import themes from './themes.json'
 import { toolNode } from './toolNode'
 import { checkpointer } from './checkpointer'
 import { searchRouteNode } from './prompts/searchRoutePrompt'
@@ -30,37 +29,16 @@ function decideNextRoute({ messages, steps, itinerary }: typeof StateAnnotation.
 
 // Setup the graph
 const builder = new StateGraph(StateAnnotation)
-  /**
-   * Summarize the route and steps based on the messages.
-   */
   .addNode('summarize', summarizeSteps)
-  /**
-   * Find the steps for the given route.
-   */
   .addNode('findStep', searchStep)
-  /**
-   * Search for the route based on the theme.
-   */
   .addNode('routeSearch', searchRouteNode)
-  /**
-   * Pick the route based on the search results.
-   */
   .addNode('pickRoute', pickRouteNode)
-
   .addNode('searchForItineraryTools', toolNode)
   .addNode('itinerarySearcher', searchItineraryNode)
-
-  /**
-   * Tools node to call the tools
-   */
   .addNode('searchForStepDistancesTool', toolNode)
-  /**
-   * Duplicate tools node that should only edge back to picking the route.
-   */
   .addNode('searchForRouteTool', toolNode)
   .addEdge('__start__', 'routeSearch')
   .addEdge('routeSearch', 'searchForRouteTool')
-
   .addEdge('itinerarySearcher', 'searchForItineraryTools')
   .addEdge('searchForItineraryTools', 'findStep')
   .addEdge('searchForRouteTool', 'pickRoute')
@@ -72,18 +50,9 @@ const builder = new StateGraph(StateAnnotation)
 const graph = builder.compile({ checkpointer })
 
 // Execute the graph
-export const generateRoute = async ({
-  routeIdea,
-  fictional,
-  theme: themeName,
-}: { routeIdea?: string; fictional?: boolean; theme?: string } = {}) => {
-  console.log('Generating route', routeIdea, fictional, themeName)
-  const theme = themes.find(({ theme: name }) => name === themeName)
-  if (!theme) {
-    console.error('Invalid theme')
-    process.exit(1)
-  }
-  const state = { theme, routeIdea, fictional }
+export const generateRoute = async ({ routeIdea, fictional }: { routeIdea?: string; fictional?: boolean } = {}) => {
+  console.log('Generating route', routeIdea, fictional)
+  const state = { routeIdea, fictional }
   const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' }, recursionLimit: 40 })
   console.log(itinerary)
   console.log('Thanks for using the chatgptExample')

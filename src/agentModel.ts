@@ -8,4 +8,6 @@ export const agentModel = new ChatOpenAI({
   cache: cache,
   model: 'gpt-4o',
   // model: 'gpt-4o-mini',
-}).bindTools(agentTools)
+}).bindTools(agentTools, {
+  parallel_tool_calls: false,
+})

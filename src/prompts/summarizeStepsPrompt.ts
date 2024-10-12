@@ -2,7 +2,6 @@ import { PromptTemplate } from '@langchain/core/prompts'
 import { background } from './backgroundPrompt'
 import { flattenState } from '../flattenState'
 import { llm } from '../llm'
-import { stepStructure } from '../responseStructure'
 import { StateAnnotation } from '../StateAnnotation'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
 import { z } from 'zod'
@@ -23,7 +22,7 @@ export const summarizeStepsPrompt = PromptTemplate.fromTemplate(
 
   {next_information}
   Based on the most recent information, we need to add the next step to the itinerary.
-  You need to add the distance of the next step to the itinerary. The distance must be in kilometers.
+  You need to add the distance of the next step to the itinerary.
   If there is not enough information, you can an educated guess for the distance.
 
  {format_instructions}
@@ -31,9 +30,7 @@ export const summarizeStepsPrompt = PromptTemplate.fromTemplate(
 )
 
 export const summarizeSteps = async (state: typeof StateAnnotation.State) => {
-  const stepParser = StructuredOutputParser.fromZodSchema(
-    z.number().gte(0).describe('The distance of the step in kilometers')
-  )
+  const stepParser = StructuredOutputParser.fromZodSchema(z.number().gte(0).describe('The distance of the step'))
   const lastStep = state.steps[state.steps.length - 1]
   const nextItinerary = state.itinerary.find((s) => {
     if (lastStep) {
@@ -52,6 +49,7 @@ export const summarizeSteps = async (state: typeof StateAnnotation.State) => {
     .pipe(stepParser)
     .invoke({
       ...flattenedState,
+      // messages: state.messages.slice(-3).map((m) => m.content.toString()),
       format_instructions: stepParser.getFormatInstructions(),
       next_information: nextItinerary
         ? `We need to find ${nextItinerary?.startingLocation} -> ${nextItinerary.endingLocation}`
