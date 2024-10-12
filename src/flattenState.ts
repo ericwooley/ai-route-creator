@@ -7,7 +7,10 @@ export function flattenState(state: typeof StateAnnotation.State) {
     ...restState,
     messages: state.messages.map((message) => `- ${JSON.stringify(message)}`).join('\n\n'),
     itinerary: state.itinerary
-      .map(({ startingLocation, endingLocation }) => `${startingLocation} -> ${endingLocation}`)
+      .map(
+        ({ startingLocation, endingLocation, ...otherInfo }) =>
+          `${startingLocation} -> ${endingLocation}: ${JSON.stringify(otherInfo)}`
+      )
       .join('\n'),
     stepsLength: state.steps.length,
     steps: state.steps

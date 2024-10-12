@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Road to the Citadel of Fallout",
+    "fictional": true,
+    "description": "A journey through the post-apocalyptic wasteland inspired by the Fallout series, traversing through desolate landscapes, abandoned towns, and irradiated zones, culminating at the Citadel.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Vault 101",
+        "endingLocation": "Megaton"
+      },
+      {
+        "startingLocation": "Megaton",
+        "endingLocation": "Rivet City"
+      },
+      {
+        "startingLocation": "Rivet City",
+        "endingLocation": "The Pitt"
+      },
+      {
+        "startingLocation": "The Pitt",
+        "endingLocation": "Point Lookout"
+      },
+      {
+        "startingLocation": "Point Lookout",
+        "endingLocation": "The Citadel"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Journey Across Mad Max's Wasteland",
+      "fictional": true,
+      "description": "A trek through the barren and chaotic world of Mad Max, featuring encounters with marauders, vast deserts, and the iconic Fury Road.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Citadel",
+          "endingLocation": "Gas Town"
+        },
+        {
+          "startingLocation": "Gas Town",
+          "endingLocation": "Bullet Farm"
+        },
+        {
+          "startingLocation": "Bullet Farm",
+          "endingLocation": "The Green Place"
+        },
+        {
+          "startingLocation": "The Green Place",
+          "endingLocation": "The Salt Flats"
+        },
+        {
+          "startingLocation": "The Salt Flats",
+          "endingLocation": "The Citadel"
+        }
+      ]
+    },
+    {
+      "name": "The Chernobyl Exclusion Zone Trek",
+      "fictional": false,
+      "description": "A haunting journey through the real-world Chernobyl Exclusion Zone, exploring abandoned towns, the infamous reactor, and the surrounding wilderness.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Pripyat",
+          "endingLocation": "Chernobyl Nuclear Power Plant"
+        },
+        {
+          "startingLocation": "Chernobyl Nuclear Power Plant",
+          "endingLocation": "Red Forest"
+        },
+        {
+          "startingLocation": "Red Forest",
+          "endingLocation": "Duga Radar"
+        },
+        {
+          "startingLocation": "Duga Radar",
+          "endingLocation": "Yaniv Railway Station"
+        },
+        {
+          "startingLocation": "Yaniv Railway Station",
+          "endingLocation": "Pripyat"
+        }
+      ]
+    },
+    {
+      "name": "The Journey Through the Dust Bowl",
+      "fictional": false,
+      "description": "A historical journey through the Dust Bowl of the 1930s, experiencing the harsh conditions and abandoned farms of the American Great Plains.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Boise City, Oklahoma",
+          "endingLocation": "Guymon, Oklahoma"
+        },
+        {
+          "startingLocation": "Guymon, Oklahoma",
+          "endingLocation": "Liberal, Kansas"
+        },
+        {
+          "startingLocation": "Liberal, Kansas",
+          "endingLocation": "Garden City, Kansas"
+        },
+        {
+          "startingLocation": "Garden City, Kansas",
+          "endingLocation": "Dodge City, Kansas"
+        },
+        {
+          "startingLocation": "Dodge City, Kansas",
+          "endingLocation": "Amarillo, Texas"
+        }
+      ]
+    }
+  ]
+}

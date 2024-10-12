@@ -1,0 +1,92 @@
+{
+  "bestIdea": {
+    "name": "The Northwest Passage",
+    "fictional": false,
+    "description": "A historic sea route through the Arctic Ocean, connecting the Atlantic and Pacific Oceans. This treacherous path is known for its icy waters and was sought after for centuries as a potential trade route.",
+    "likelyDistance": 7400,
+    "possibleSteps": [
+      {
+        "startingLocation": "Baffin Bay",
+        "endingLocation": "Lancaster Sound"
+      },
+      {
+        "startingLocation": "Lancaster Sound",
+        "endingLocation": "Viscount Melville Sound"
+      },
+      {
+        "startingLocation": "Viscount Melville Sound",
+        "endingLocation": "McClure Strait"
+      },
+      {
+        "startingLocation": "McClure Strait",
+        "endingLocation": "Beaufort Sea"
+      },
+      {
+        "startingLocation": "Beaufort Sea",
+        "endingLocation": "Bering Strait"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Fridtjof Nansen's Fram Expedition",
+      "fictional": false,
+      "description": "Follow the path of the famous Norwegian explorer Fridtjof Nansen, who attempted to reach the North Pole by allowing his ship, the Fram, to be trapped in the Arctic ice and drift with it.",
+      "likelyDistance": 3500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Kara Sea",
+          "endingLocation": "New Siberian Islands"
+        },
+        {
+          "startingLocation": "New Siberian Islands",
+          "endingLocation": "Fram Strait"
+        },
+        {
+          "startingLocation": "Fram Strait",
+          "endingLocation": "Greenland Sea"
+        }
+      ]
+    },
+    {
+      "name": "The Polar Express",
+      "fictional": true,
+      "description": "A magical journey to the North Pole, inspired by the classic children's book and film. Traverse through snowy landscapes and icy terrains to reach Santa's workshop.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Frozen Forest",
+          "endingLocation": "Iceberg Alley"
+        },
+        {
+          "startingLocation": "Iceberg Alley",
+          "endingLocation": "Aurora Borealis Viewpoint"
+        },
+        {
+          "startingLocation": "Aurora Borealis Viewpoint",
+          "endingLocation": "Santa's Workshop"
+        }
+      ]
+    },
+    {
+      "name": "Roald Amundsen's South Pole Expedition",
+      "fictional": false,
+      "description": "Trace the route of Roald Amundsen, the first person to reach the South Pole. Experience the harsh conditions and strategic planning that led to this historic achievement.",
+      "likelyDistance": 1400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Bay of Whales",
+          "endingLocation": "Ross Ice Shelf"
+        },
+        {
+          "startingLocation": "Ross Ice Shelf",
+          "endingLocation": "Queen Maud Mountains"
+        },
+        {
+          "startingLocation": "Queen Maud Mountains",
+          "endingLocation": "South Pole"
+        }
+      ]
+    }
+  ]
+}

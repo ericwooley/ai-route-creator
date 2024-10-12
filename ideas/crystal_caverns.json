@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "Journey Through the Crystal Caves of Aglarond",
+    "fictional": true,
+    "description": "Explore the legendary Crystal Caves of Aglarond, a vast underground network of glittering caverns from the world of Middle-earth. These caves are renowned for their breathtaking beauty, with walls encrusted with shimmering crystals and luminescent pools.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Helm's Deep",
+        "endingLocation": "First Crystal Chamber"
+      },
+      {
+        "startingLocation": "First Crystal Chamber",
+        "endingLocation": "Glittering Grotto"
+      },
+      {
+        "startingLocation": "Glittering Grotto",
+        "endingLocation": "Luminous Lake"
+      },
+      {
+        "startingLocation": "Luminous Lake",
+        "endingLocation": "Shimmering Passage"
+      },
+      {
+        "startingLocation": "Shimmering Passage",
+        "endingLocation": "Heart of Aglarond"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Crystal Caves of Bermuda",
+      "fictional": false,
+      "description": "Discover the real-world Crystal Caves of Bermuda, a stunning natural wonder filled with stalactites, stalagmites, and crystal-clear underground pools. This journey takes you through a series of breathtaking caverns, each more beautiful than the last.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Hamilton",
+          "endingLocation": "Crystal Cave Entrance"
+        },
+        {
+          "startingLocation": "Crystal Cave Entrance",
+          "endingLocation": "Fantasy Cave"
+        },
+        {
+          "startingLocation": "Fantasy Cave",
+          "endingLocation": "Crystal Lake"
+        },
+        {
+          "startingLocation": "Crystal Lake",
+          "endingLocation": "Stalactite Hall"
+        },
+        {
+          "startingLocation": "Stalactite Hall",
+          "endingLocation": "Exit to Grotto Bay"
+        }
+      ]
+    },
+    {
+      "name": "The Crystal Caves of Naica",
+      "fictional": false,
+      "description": "Venture into the Crystal Caves of Naica in Mexico, home to some of the largest natural crystals ever discovered. This journey takes you through a surreal landscape of massive selenite crystals, creating an otherworldly experience.",
+      "likelyDistance": 2500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Naica Town",
+          "endingLocation": "Cave of Swords"
+        },
+        {
+          "startingLocation": "Cave of Swords",
+          "endingLocation": "Giant Crystal Cave"
+        },
+        {
+          "startingLocation": "Giant Crystal Cave",
+          "endingLocation": "Crystal Forest"
+        },
+        {
+          "startingLocation": "Crystal Forest",
+          "endingLocation": "Selenite Passage"
+        },
+        {
+          "startingLocation": "Selenite Passage",
+          "endingLocation": "Exit to Naica"
+        }
+      ]
+    }
+  ]
+}

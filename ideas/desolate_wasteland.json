@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Road to Mordor",
+    "fictional": true,
+    "description": "A journey through the barren and treacherous lands of Middle-earth, leading to the fiery depths of Mount Doom.",
+    "likelyDistance": 1770,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Shire",
+        "endingLocation": "Bree"
+      },
+      {
+        "startingLocation": "Bree",
+        "endingLocation": "Weathertop"
+      },
+      {
+        "startingLocation": "Weathertop",
+        "endingLocation": "Rivendell"
+      },
+      {
+        "startingLocation": "Rivendell",
+        "endingLocation": "Moria"
+      },
+      {
+        "startingLocation": "Moria",
+        "endingLocation": "Mount Doom"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Chernobyl Exclusion Zone",
+      "fictional": false,
+      "description": "A haunting journey through the abandoned and desolate areas surrounding the Chernobyl Nuclear Power Plant.",
+      "likelyDistance": 2600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Pripyat",
+          "endingLocation": "Chernobyl Nuclear Power Plant"
+        },
+        {
+          "startingLocation": "Chernobyl Nuclear Power Plant",
+          "endingLocation": "Red Forest"
+        },
+        {
+          "startingLocation": "Red Forest",
+          "endingLocation": "Duga Radar"
+        },
+        {
+          "startingLocation": "Duga Radar",
+          "endingLocation": "Yaniv Railway Station"
+        },
+        {
+          "startingLocation": "Yaniv Railway Station",
+          "endingLocation": "Pripyat River"
+        }
+      ]
+    },
+    {
+      "name": "The Martian Surface",
+      "fictional": true,
+      "description": "A trek across the barren and dusty plains of Mars, exploring the desolate landscape of the Red Planet.",
+      "likelyDistance": 3400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Olympus Mons",
+          "endingLocation": "Valles Marineris"
+        },
+        {
+          "startingLocation": "Valles Marineris",
+          "endingLocation": "Gale Crater"
+        },
+        {
+          "startingLocation": "Gale Crater",
+          "endingLocation": "Hellas Basin"
+        },
+        {
+          "startingLocation": "Hellas Basin",
+          "endingLocation": "Tharsis Plateau"
+        },
+        {
+          "startingLocation": "Tharsis Plateau",
+          "endingLocation": "Olympus Mons"
+        }
+      ]
+    }
+  ]
+}

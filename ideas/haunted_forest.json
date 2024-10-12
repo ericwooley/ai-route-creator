@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Black Forest of Germany",
+    "fictional": false,
+    "description": "A journey through the dense, dark woods of the Black Forest in Germany, known for its mysterious atmosphere and folklore of haunted tales.",
+    "likelyDistance": 160,
+    "possibleSteps": [
+      {
+        "startingLocation": "Baden-Baden",
+        "endingLocation": "Freudenstadt"
+      },
+      {
+        "startingLocation": "Freudenstadt",
+        "endingLocation": "Triberg"
+      },
+      {
+        "startingLocation": "Triberg",
+        "endingLocation": "Freiburg"
+      },
+      {
+        "startingLocation": "Freiburg",
+        "endingLocation": "Titisee"
+      },
+      {
+        "startingLocation": "Titisee",
+        "endingLocation": "Schluchsee"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Forest of Brocéliande",
+      "fictional": true,
+      "description": "A mythical forest in Brittany, France, associated with Arthurian legends and said to be haunted by the spirits of ancient knights and sorcerers.",
+      "likelyDistance": 200,
+      "possibleSteps": [
+        {
+          "startingLocation": "Paimpont",
+          "endingLocation": "Val sans Retour"
+        },
+        {
+          "startingLocation": "Val sans Retour",
+          "endingLocation": "Fountain of Barenton"
+        },
+        {
+          "startingLocation": "Fountain of Barenton",
+          "endingLocation": "Tomb of Merlin"
+        },
+        {
+          "startingLocation": "Tomb of Merlin",
+          "endingLocation": "Château de Comper"
+        },
+        {
+          "startingLocation": "Château de Comper",
+          "endingLocation": "Paimpont"
+        }
+      ]
+    },
+    {
+      "name": "Aokigahara Forest",
+      "fictional": false,
+      "description": "A dense forest at the base of Mount Fuji in Japan, known for its eerie silence and reputation as a haunted location.",
+      "likelyDistance": 35,
+      "possibleSteps": [
+        {
+          "startingLocation": "Fujikawaguchiko",
+          "endingLocation": "Narusawa Ice Cave"
+        },
+        {
+          "startingLocation": "Narusawa Ice Cave",
+          "endingLocation": "Fugaku Wind Cave"
+        },
+        {
+          "startingLocation": "Fugaku Wind Cave",
+          "endingLocation": "Saiko Lake"
+        },
+        {
+          "startingLocation": "Saiko Lake",
+          "endingLocation": "Aokigahara Forest Entrance"
+        },
+        {
+          "startingLocation": "Aokigahara Forest Entrance",
+          "endingLocation": "Fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "name": "The Enchanted Forest of Narnia",
+      "fictional": true,
+      "description": "A magical forest from C.S. Lewis's Chronicles of Narnia, filled with mythical creatures and haunted by the White Witch's presence.",
+      "likelyDistance": 500,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Wardrobe",
+          "endingLocation": "Lantern Waste"
+        },
+        {
+          "startingLocation": "Lantern Waste",
+          "endingLocation": "Beaver's Dam"
+        },
+        {
+          "startingLocation": "Beaver's Dam",
+          "endingLocation": "The Stone Table"
+        },
+        {
+          "startingLocation": "The Stone Table",
+          "endingLocation": "Cair Paravel"
+        },
+        {
+          "startingLocation": "Cair Paravel",
+          "endingLocation": "The Wardrobe"
+        }
+      ]
+    }
+  ]
+}

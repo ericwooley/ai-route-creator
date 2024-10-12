@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Frosty Path to Narnia",
+    "fictional": true,
+    "description": "Embark on a magical journey through the snow-laden landscapes of Narnia, where the White Witch's eternal winter reigns. Traverse through enchanted forests, past frozen lakes, and over icy mountains, discovering the hidden wonders and mystical creatures that inhabit this winter fantasy realm.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Wardrobe Entrance",
+        "endingLocation": "The Lantern Waste"
+      },
+      {
+        "startingLocation": "The Lantern Waste",
+        "endingLocation": "Mr. Tumnus's House"
+      },
+      {
+        "startingLocation": "Mr. Tumnus's House",
+        "endingLocation": "The White Witch's Castle"
+      },
+      {
+        "startingLocation": "The White Witch's Castle",
+        "endingLocation": "The Stone Table"
+      },
+      {
+        "startingLocation": "The Stone Table",
+        "endingLocation": "Cair Paravel"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Winter Road to Arendelle",
+      "fictional": true,
+      "description": "Journey through the icy landscapes of Arendelle, inspired by the world of Frozen. Traverse snow-covered mountains, cross frozen fjords, and explore the magical kingdom where Elsa and Anna's adventures unfold.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Village of Arendelle",
+          "endingLocation": "The North Mountain"
+        },
+        {
+          "startingLocation": "The North Mountain",
+          "endingLocation": "Elsa's Ice Palace"
+        },
+        {
+          "startingLocation": "Elsa's Ice Palace",
+          "endingLocation": "The Frozen Fjord"
+        },
+        {
+          "startingLocation": "The Frozen Fjord",
+          "endingLocation": "The Enchanted Forest"
+        },
+        {
+          "startingLocation": "The Enchanted Forest",
+          "endingLocation": "The Valley of the Living Rock"
+        }
+      ]
+    },
+    {
+      "name": "The Snowy Quest to Winterfell",
+      "fictional": true,
+      "description": "Venture through the harsh, snow-covered lands of the North in Westeros, from the Wall to the ancestral home of House Stark, Winterfell. Experience the chilling beauty and the ancient power that lies within this winter fantasy setting.",
+      "likelyDistance": 1800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Castle Black",
+          "endingLocation": "The Haunted Forest"
+        },
+        {
+          "startingLocation": "The Haunted Forest",
+          "endingLocation": "The Last Hearth"
+        },
+        {
+          "startingLocation": "The Last Hearth",
+          "endingLocation": "The Dreadfort"
+        },
+        {
+          "startingLocation": "The Dreadfort",
+          "endingLocation": "The Wolfswood"
+        },
+        {
+          "startingLocation": "The Wolfswood",
+          "endingLocation": "Winterfell"
+        }
+      ]
+    },
+    {
+      "name": "The Icy Pilgrimage to the North Pole",
+      "fictional": false,
+      "description": "Embark on a real-world expedition to the North Pole, traversing the vast, frozen Arctic landscapes. Experience the extreme cold, the endless ice, and the breathtaking beauty of the polar environment.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Longyearbyen, Svalbard",
+          "endingLocation": "Barneo Ice Camp"
+        },
+        {
+          "startingLocation": "Barneo Ice Camp",
+          "endingLocation": "Ice Floes"
+        },
+        {
+          "startingLocation": "Ice Floes",
+          "endingLocation": "The Geographic North Pole"
+        },
+        {
+          "startingLocation": "The Geographic North Pole",
+          "endingLocation": "Ice Floes"
+        },
+        {
+          "startingLocation": "Ice Floes",
+          "endingLocation": "Barneo Ice Camp"
+        }
+      ]
+    }
+  ]
+}

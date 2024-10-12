@@ -1,0 +1,108 @@
+{
+  "bestIdea": {
+    "name": "Route 66: The Sunset Journey",
+    "fictional": false,
+    "description": "Travel along the historic Route 66, also known as the 'Main Street of America', stretching from Chicago to Santa Monica. Experience the iconic American road trip as the sun sets over the vast landscapes.",
+    "likelyDistance": 3940,
+    "possibleSteps": [
+      {
+        "startingLocation": "Chicago, Illinois",
+        "endingLocation": "St. Louis, Missouri"
+      },
+      {
+        "startingLocation": "St. Louis, Missouri",
+        "endingLocation": "Tulsa, Oklahoma"
+      },
+      {
+        "startingLocation": "Tulsa, Oklahoma",
+        "endingLocation": "Amarillo, Texas"
+      },
+      {
+        "startingLocation": "Amarillo, Texas",
+        "endingLocation": "Albuquerque, New Mexico"
+      },
+      {
+        "startingLocation": "Albuquerque, New Mexico",
+        "endingLocation": "Santa Monica, California"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Pacific Coast Highway Drive",
+      "fictional": false,
+      "description": "Cruise along California's Pacific Coast Highway, renowned for its stunning ocean views and dramatic cliffs, from San Francisco to Los Angeles.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "San Francisco, California",
+          "endingLocation": "Monterey, California"
+        },
+        {
+          "startingLocation": "Monterey, California",
+          "endingLocation": "San Luis Obispo, California"
+        },
+        {
+          "startingLocation": "San Luis Obispo, California",
+          "endingLocation": "Santa Barbara, California"
+        },
+        {
+          "startingLocation": "Santa Barbara, California",
+          "endingLocation": "Los Angeles, California"
+        }
+      ]
+    },
+    {
+      "name": "The Great Ocean Road Adventure",
+      "fictional": false,
+      "description": "Explore Australia's Great Ocean Road, famous for its breathtaking coastal scenery and the Twelve Apostles rock formations.",
+      "likelyDistance": 243,
+      "possibleSteps": [
+        {
+          "startingLocation": "Torquay, Victoria",
+          "endingLocation": "Lorne, Victoria"
+        },
+        {
+          "startingLocation": "Lorne, Victoria",
+          "endingLocation": "Apollo Bay, Victoria"
+        },
+        {
+          "startingLocation": "Apollo Bay, Victoria",
+          "endingLocation": "Port Campbell, Victoria"
+        },
+        {
+          "startingLocation": "Port Campbell, Victoria",
+          "endingLocation": "Warrnambool, Victoria"
+        }
+      ]
+    },
+    {
+      "name": "The Trans-Canada Highway Expedition",
+      "fictional": false,
+      "description": "Embark on a journey across the Trans-Canada Highway, the world's second-longest national highway, from Victoria, British Columbia to St. John's, Newfoundland.",
+      "likelyDistance": 7821,
+      "possibleSteps": [
+        {
+          "startingLocation": "Victoria, British Columbia",
+          "endingLocation": "Calgary, Alberta"
+        },
+        {
+          "startingLocation": "Calgary, Alberta",
+          "endingLocation": "Winnipeg, Manitoba"
+        },
+        {
+          "startingLocation": "Winnipeg, Manitoba",
+          "endingLocation": "Toronto, Ontario"
+        },
+        {
+          "startingLocation": "Toronto, Ontario",
+          "endingLocation": "Montreal, Quebec"
+        },
+        {
+          "startingLocation": "Montreal, Quebec",
+          "endingLocation": "St. John's, Newfoundland"
+        }
+      ]
+    }
+  ]
+}

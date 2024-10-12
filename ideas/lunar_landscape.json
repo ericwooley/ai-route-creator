@@ -1,0 +1,92 @@
+{
+  "bestIdea": {
+    "name": "Apollo 11 Lunar Landing Route",
+    "fictional": false,
+    "description": "Follow the historic path of the Apollo 11 mission, from launch to the first human steps on the Moon and back to Earth.",
+    "likelyDistance": 768800,
+    "possibleSteps": [
+      {
+        "startingLocation": "Kennedy Space Center, Florida",
+        "endingLocation": "Low Earth Orbit"
+      },
+      {
+        "startingLocation": "Low Earth Orbit",
+        "endingLocation": "Trans-Lunar Injection"
+      },
+      {
+        "startingLocation": "Trans-Lunar Injection",
+        "endingLocation": "Lunar Orbit"
+      },
+      {
+        "startingLocation": "Lunar Orbit",
+        "endingLocation": "Tranquility Base, Moon"
+      },
+      {
+        "startingLocation": "Tranquility Base, Moon",
+        "endingLocation": "Splashdown in the Pacific Ocean"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Lunar Rover Expedition",
+      "fictional": false,
+      "description": "Trace the path of the lunar rovers used during the Apollo missions, exploring the Moon's surface.",
+      "likelyDistance": 35,
+      "possibleSteps": [
+        {
+          "startingLocation": "Apollo 15 Landing Site",
+          "endingLocation": "Hadley Rille"
+        },
+        {
+          "startingLocation": "Hadley Rille",
+          "endingLocation": "Mount Hadley"
+        },
+        {
+          "startingLocation": "Mount Hadley",
+          "endingLocation": "Apollo 15 Landing Site"
+        }
+      ]
+    },
+    {
+      "name": "Journey to the Dark Side of the Moon",
+      "fictional": true,
+      "description": "A mystical journey to the far side of the Moon, exploring its hidden craters and mysterious landscapes.",
+      "likelyDistance": 10000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Lunar South Pole",
+          "endingLocation": "Aitken Basin"
+        },
+        {
+          "startingLocation": "Aitken Basin",
+          "endingLocation": "Tsiolkovskiy Crater"
+        },
+        {
+          "startingLocation": "Tsiolkovskiy Crater",
+          "endingLocation": "Lunar North Pole"
+        }
+      ]
+    },
+    {
+      "name": "Moon Base Alpha Exploration",
+      "fictional": true,
+      "description": "Explore the futuristic Moon Base Alpha, a hub of scientific research and lunar colonization.",
+      "likelyDistance": 50,
+      "possibleSteps": [
+        {
+          "startingLocation": "Moon Base Alpha Central Hub",
+          "endingLocation": "Lunar Research Facility"
+        },
+        {
+          "startingLocation": "Lunar Research Facility",
+          "endingLocation": "Solar Power Station"
+        },
+        {
+          "startingLocation": "Solar Power Station",
+          "endingLocation": "Moon Base Alpha Central Hub"
+        }
+      ]
+    }
+  ]
+}

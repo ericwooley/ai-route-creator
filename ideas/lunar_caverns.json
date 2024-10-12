@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Moon's Hidden Labyrinth",
+    "fictional": true,
+    "description": "Explore the vast network of caverns beneath the surface of Earth's moon, illuminated by mysterious luminescent crystals. This journey takes you through the hidden passages and chambers that have been untouched for millennia.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Entrance to the Sea of Tranquility Cavern",
+        "endingLocation": "Crystal Chamber of Serenity"
+      },
+      {
+        "startingLocation": "Crystal Chamber of Serenity",
+        "endingLocation": "Lunar Echo Hall"
+      },
+      {
+        "startingLocation": "Lunar Echo Hall",
+        "endingLocation": "Starlit Passage"
+      },
+      {
+        "startingLocation": "Starlit Passage",
+        "endingLocation": "Moonshadow Grotto"
+      },
+      {
+        "startingLocation": "Moonshadow Grotto",
+        "endingLocation": "The Celestial Vault"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Caves of Io",
+      "fictional": true,
+      "description": "Journey through the volcanic caverns of Jupiter's moon Io, where the walls glow with the heat of molten lava and the air is filled with the sound of distant eruptions.",
+      "likelyDistance": 8000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Sulfurous Entrance",
+          "endingLocation": "Lavafall Chamber"
+        },
+        {
+          "startingLocation": "Lavafall Chamber",
+          "endingLocation": "The Molten Maze"
+        },
+        {
+          "startingLocation": "The Molten Maze",
+          "endingLocation": "Geyser Gallery"
+        },
+        {
+          "startingLocation": "Geyser Gallery",
+          "endingLocation": "The Fiery Abyss"
+        },
+        {
+          "startingLocation": "The Fiery Abyss",
+          "endingLocation": "Inferno's End"
+        }
+      ]
+    },
+    {
+      "name": "Titan's Subterranean Voyage",
+      "fictional": true,
+      "description": "Navigate the icy caverns beneath the surface of Saturn's moon Titan, where frozen methane forms intricate patterns and the air is thick with mystery.",
+      "likelyDistance": 6000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Methane Ice Entrance",
+          "endingLocation": "Frozen Falls"
+        },
+        {
+          "startingLocation": "Frozen Falls",
+          "endingLocation": "The Crystal Corridor"
+        },
+        {
+          "startingLocation": "The Crystal Corridor",
+          "endingLocation": "The Glacial Gallery"
+        },
+        {
+          "startingLocation": "The Glacial Gallery",
+          "endingLocation": "The Frosted Cavern"
+        },
+        {
+          "startingLocation": "The Frosted Cavern",
+          "endingLocation": "Titan's Heart"
+        }
+      ]
+    }
+  ]
+}

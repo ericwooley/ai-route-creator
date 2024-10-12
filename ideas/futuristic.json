@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Hyperloop Odyssey",
+    "fictional": false,
+    "description": "Experience the futuristic travel of the Hyperloop, a high-speed transportation system that promises to revolutionize travel. Journey through major cities connected by this cutting-edge technology.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Los Angeles",
+        "endingLocation": "San Francisco"
+      },
+      {
+        "startingLocation": "San Francisco",
+        "endingLocation": "Las Vegas"
+      },
+      {
+        "startingLocation": "Las Vegas",
+        "endingLocation": "Denver"
+      },
+      {
+        "startingLocation": "Denver",
+        "endingLocation": "Chicago"
+      },
+      {
+        "startingLocation": "Chicago",
+        "endingLocation": "New York City"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Mars Colony Circuit",
+      "fictional": true,
+      "description": "Embark on a journey across the first human colonies on Mars, exploring the interconnected domes and habitats that make up this new frontier.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Olympus Mons Base",
+          "endingLocation": "Valles Marineris Habitat"
+        },
+        {
+          "startingLocation": "Valles Marineris Habitat",
+          "endingLocation": "Gale Crater Research Station"
+        },
+        {
+          "startingLocation": "Gale Crater Research Station",
+          "endingLocation": "Elysium Planitia Colony"
+        },
+        {
+          "startingLocation": "Elysium Planitia Colony",
+          "endingLocation": "Hellas Basin Outpost"
+        },
+        {
+          "startingLocation": "Hellas Basin Outpost",
+          "endingLocation": "Olympus Mons Base"
+        }
+      ]
+    },
+    {
+      "name": "The Neo-Tokyo Express",
+      "fictional": true,
+      "description": "Travel through the sprawling metropolis of Neo-Tokyo, a city of towering skyscrapers, neon lights, and advanced technology.",
+      "likelyDistance": 800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Shinjuku District",
+          "endingLocation": "Akihabara Tech Hub"
+        },
+        {
+          "startingLocation": "Akihabara Tech Hub",
+          "endingLocation": "Shibuya Crossing"
+        },
+        {
+          "startingLocation": "Shibuya Crossing",
+          "endingLocation": "Odaiba Island"
+        },
+        {
+          "startingLocation": "Odaiba Island",
+          "endingLocation": "Roppongi Hills"
+        },
+        {
+          "startingLocation": "Roppongi Hills",
+          "endingLocation": "Shinjuku District"
+        }
+      ]
+    },
+    {
+      "name": "The Interstellar Voyage",
+      "fictional": true,
+      "description": "A grand journey through the stars, visiting futuristic space stations and colonies across the galaxy.",
+      "likelyDistance": 100000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Earth Spaceport",
+          "endingLocation": "Lunar Base Alpha"
+        },
+        {
+          "startingLocation": "Lunar Base Alpha",
+          "endingLocation": "Mars Colony One"
+        },
+        {
+          "startingLocation": "Mars Colony One",
+          "endingLocation": "Europa Research Station"
+        },
+        {
+          "startingLocation": "Europa Research Station",
+          "endingLocation": "Titan Outpost"
+        },
+        {
+          "startingLocation": "Titan Outpost",
+          "endingLocation": "Alpha Centauri Station"
+        }
+      ]
+    }
+  ]
+}

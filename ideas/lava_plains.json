@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Fields of Mordor",
+    "fictional": true,
+    "description": "Traverse the treacherous and fiery landscape of Mordor, where the ground is cracked and lava flows freely. This route takes you through the heart of Sauron's domain, from the Black Gate to Mount Doom.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Black Gate",
+        "endingLocation": "Udûn"
+      },
+      {
+        "startingLocation": "Udûn",
+        "endingLocation": "Barad-dûr"
+      },
+      {
+        "startingLocation": "Barad-dûr",
+        "endingLocation": "Gorgoroth"
+      },
+      {
+        "startingLocation": "Gorgoroth",
+        "endingLocation": "Mount Doom"
+      },
+      {
+        "startingLocation": "Mount Doom",
+        "endingLocation": "The Cracks of Doom"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Hawaii's Big Island Lava Fields",
+      "fictional": false,
+      "description": "Explore the real-world lava fields of Hawaii's Big Island, where active volcanoes have shaped the landscape. This route takes you from the lush rainforests to the stark, blackened lava plains.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Hilo",
+          "endingLocation": "Hawai'i Volcanoes National Park"
+        },
+        {
+          "startingLocation": "Hawai'i Volcanoes National Park",
+          "endingLocation": "Kīlauea Caldera"
+        },
+        {
+          "startingLocation": "Kīlauea Caldera",
+          "endingLocation": "Chain of Craters Road"
+        },
+        {
+          "startingLocation": "Chain of Craters Road",
+          "endingLocation": "Pu'u Loa Petroglyphs"
+        },
+        {
+          "startingLocation": "Pu'u Loa Petroglyphs",
+          "endingLocation": "Kalapana"
+        }
+      ]
+    },
+    {
+      "name": "The Lava Plains of Mustafar",
+      "fictional": true,
+      "description": "Journey across the volcanic planet of Mustafar, known for its rivers of lava and fiery eruptions. This route takes you from the landing platform to the heart of the lava fields.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Landing Platform",
+          "endingLocation": "Lava River Crossing"
+        },
+        {
+          "startingLocation": "Lava River Crossing",
+          "endingLocation": "Mining Facility"
+        },
+        {
+          "startingLocation": "Mining Facility",
+          "endingLocation": "Lava Falls"
+        },
+        {
+          "startingLocation": "Lava Falls",
+          "endingLocation": "Duel Arena"
+        },
+        {
+          "startingLocation": "Duel Arena",
+          "endingLocation": "Observation Platform"
+        }
+      ]
+    },
+    {
+      "name": "Iceland's Volcanic Trails",
+      "fictional": false,
+      "description": "Experience the dramatic volcanic landscapes of Iceland, where lava fields stretch as far as the eye can see. This route takes you from the Reykjanes Peninsula to the highlands of Landmannalaugar.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Reykjanes Peninsula",
+          "endingLocation": "Fagradalsfjall Volcano"
+        },
+        {
+          "startingLocation": "Fagradalsfjall Volcano",
+          "endingLocation": "Þingvellir National Park"
+        },
+        {
+          "startingLocation": "Þingvellir National Park",
+          "endingLocation": "Hekla Volcano"
+        },
+        {
+          "startingLocation": "Hekla Volcano",
+          "endingLocation": "Eldgjá Canyon"
+        },
+        {
+          "startingLocation": "Eldgjá Canyon",
+          "endingLocation": "Landmannalaugar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Odyssey of Odysseus",
+    "fictional": true,
+    "description": "Follow the legendary journey of Odysseus as he sails from Troy back to Ithaca, encountering mythical creatures and divine interventions along the way.",
+    "likelyDistance": 12000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Troy",
+        "endingLocation": "Island of the Lotus-Eaters"
+      },
+      {
+        "startingLocation": "Island of the Lotus-Eaters",
+        "endingLocation": "Cyclops' Island"
+      },
+      {
+        "startingLocation": "Cyclops' Island",
+        "endingLocation": "Aeolia"
+      },
+      {
+        "startingLocation": "Aeolia",
+        "endingLocation": "Laestrygonians"
+      },
+      {
+        "startingLocation": "Laestrygonians",
+        "endingLocation": "Circe's Island"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Labors of Hercules",
+      "fictional": true,
+      "description": "Embark on the epic journey of Hercules as he completes his twelve labors, traveling across ancient lands and facing mythical beasts.",
+      "likelyDistance": 15000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Nemea",
+          "endingLocation": "Lerna"
+        },
+        {
+          "startingLocation": "Lerna",
+          "endingLocation": "Mount Erymanthos"
+        },
+        {
+          "startingLocation": "Mount Erymanthos",
+          "endingLocation": "Lake Stymphalia"
+        },
+        {
+          "startingLocation": "Lake Stymphalia",
+          "endingLocation": "Crete"
+        },
+        {
+          "startingLocation": "Crete",
+          "endingLocation": "Thrace"
+        }
+      ]
+    },
+    {
+      "name": "The Quest for the Golden Fleece",
+      "fictional": true,
+      "description": "Join Jason and the Argonauts on their perilous voyage to retrieve the Golden Fleece, navigating through treacherous waters and mythical lands.",
+      "likelyDistance": 10000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Iolcus",
+          "endingLocation": "Lemnos"
+        },
+        {
+          "startingLocation": "Lemnos",
+          "endingLocation": "Mysia"
+        },
+        {
+          "startingLocation": "Mysia",
+          "endingLocation": "Phineus' Island"
+        },
+        {
+          "startingLocation": "Phineus' Island",
+          "endingLocation": "Colchis"
+        },
+        {
+          "startingLocation": "Colchis",
+          "endingLocation": "Iolcus"
+        }
+      ]
+    }
+  ]
+}

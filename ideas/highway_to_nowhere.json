@@ -1,0 +1,108 @@
+{
+  "bestIdea": {
+    "name": "Route 66: The Mother Road",
+    "fictional": false,
+    "description": "Travel the iconic Route 66, known as the 'Main Street of America', stretching from Chicago to Santa Monica. This historic highway offers a journey through the heart of the United States, passing through small towns, deserts, and vast open landscapes.",
+    "likelyDistance": 3940,
+    "possibleSteps": [
+      {
+        "startingLocation": "Chicago, Illinois",
+        "endingLocation": "St. Louis, Missouri"
+      },
+      {
+        "startingLocation": "St. Louis, Missouri",
+        "endingLocation": "Tulsa, Oklahoma"
+      },
+      {
+        "startingLocation": "Tulsa, Oklahoma",
+        "endingLocation": "Amarillo, Texas"
+      },
+      {
+        "startingLocation": "Amarillo, Texas",
+        "endingLocation": "Albuquerque, New Mexico"
+      },
+      {
+        "startingLocation": "Albuquerque, New Mexico",
+        "endingLocation": "Santa Monica, California"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Nullarbor Plain: Australia's Longest Straight Road",
+      "fictional": false,
+      "description": "Experience the vast emptiness of the Nullarbor Plain, home to the longest straight road in Australia. This route offers a unique journey through one of the most remote and desolate landscapes on Earth.",
+      "likelyDistance": 1675,
+      "possibleSteps": [
+        {
+          "startingLocation": "Ceduna, South Australia",
+          "endingLocation": "Eucla, Western Australia"
+        },
+        {
+          "startingLocation": "Eucla, Western Australia",
+          "endingLocation": "Balladonia, Western Australia"
+        },
+        {
+          "startingLocation": "Balladonia, Western Australia",
+          "endingLocation": "Norseman, Western Australia"
+        }
+      ]
+    },
+    {
+      "name": "The Pan-American Highway: From Alaska to Argentina",
+      "fictional": false,
+      "description": "Embark on a journey along the Pan-American Highway, the world's longest motorable road, stretching from Prudhoe Bay in Alaska to Ushuaia in Argentina. This route traverses diverse landscapes, from icy tundras to tropical jungles.",
+      "likelyDistance": 30000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Prudhoe Bay, Alaska",
+          "endingLocation": "Vancouver, Canada"
+        },
+        {
+          "startingLocation": "Vancouver, Canada",
+          "endingLocation": "Mexico City, Mexico"
+        },
+        {
+          "startingLocation": "Mexico City, Mexico",
+          "endingLocation": "Bogotá, Colombia"
+        },
+        {
+          "startingLocation": "Bogotá, Colombia",
+          "endingLocation": "Lima, Peru"
+        },
+        {
+          "startingLocation": "Lima, Peru",
+          "endingLocation": "Ushuaia, Argentina"
+        }
+      ]
+    },
+    {
+      "name": "The Trans-Siberian Highway: Across Russia",
+      "fictional": false,
+      "description": "Travel the Trans-Siberian Highway, a network of federal highways that span the width of Russia. This epic journey takes you through diverse terrains, from the Ural Mountains to the vast Siberian plains.",
+      "likelyDistance": 11000,
+      "possibleSteps": [
+        {
+          "startingLocation": "St. Petersburg, Russia",
+          "endingLocation": "Moscow, Russia"
+        },
+        {
+          "startingLocation": "Moscow, Russia",
+          "endingLocation": "Yekaterinburg, Russia"
+        },
+        {
+          "startingLocation": "Yekaterinburg, Russia",
+          "endingLocation": "Novosibirsk, Russia"
+        },
+        {
+          "startingLocation": "Novosibirsk, Russia",
+          "endingLocation": "Irkutsk, Russia"
+        },
+        {
+          "startingLocation": "Irkutsk, Russia",
+          "endingLocation": "Vladivostok, Russia"
+        }
+      ]
+    }
+  ]
+}

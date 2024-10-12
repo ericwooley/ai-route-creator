@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Journey Through Avalon",
+    "fictional": true,
+    "description": "Traverse the mystical land of Avalon, where the air is filled with magic and the landscape is dotted with glowing crystals and ethereal lights. Follow the path of shimmering stones through enchanted forests and across floating islands.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Crystal Shores",
+        "endingLocation": "The Enchanted Forest"
+      },
+      {
+        "startingLocation": "The Enchanted Forest",
+        "endingLocation": "The Floating Isles"
+      },
+      {
+        "startingLocation": "The Floating Isles",
+        "endingLocation": "The Misty Mountains"
+      },
+      {
+        "startingLocation": "The Misty Mountains",
+        "endingLocation": "The Valley of Whispers"
+      },
+      {
+        "startingLocation": "The Valley of Whispers",
+        "endingLocation": "The Heart of Avalon"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Path of the Elven Realms",
+      "fictional": true,
+      "description": "Embark on a journey through the mystical Elven Realms, where ancient magic and nature intertwine. Walk through forests of towering trees, across shimmering lakes, and over bridges of light.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Glade of Beginnings",
+          "endingLocation": "The Silver Lake"
+        },
+        {
+          "startingLocation": "The Silver Lake",
+          "endingLocation": "The Bridge of Light"
+        },
+        {
+          "startingLocation": "The Bridge of Light",
+          "endingLocation": "The Whispering Woods"
+        },
+        {
+          "startingLocation": "The Whispering Woods",
+          "endingLocation": "The Starry Plains"
+        },
+        {
+          "startingLocation": "The Starry Plains",
+          "endingLocation": "The Elven Citadel"
+        }
+      ]
+    },
+    {
+      "name": "The Quest for the Mystic Stone",
+      "fictional": true,
+      "description": "Set out on a quest to find the legendary Mystic Stone, hidden deep within a land of magic and mystery. Navigate through enchanted valleys, over mystical bridges, and into the heart of the unknown.",
+      "likelyDistance": 1800,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Valley of Echoes",
+          "endingLocation": "The Bridge of Illusions"
+        },
+        {
+          "startingLocation": "The Bridge of Illusions",
+          "endingLocation": "The Forest of Secrets"
+        },
+        {
+          "startingLocation": "The Forest of Secrets",
+          "endingLocation": "The Crystal Caverns"
+        },
+        {
+          "startingLocation": "The Crystal Caverns",
+          "endingLocation": "The Mystic River"
+        },
+        {
+          "startingLocation": "The Mystic River",
+          "endingLocation": "The Shrine of the Mystic Stone"
+        }
+      ]
+    }
+  ]
+}

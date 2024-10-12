@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Tranquil Shores of Lake Baikal",
+    "fictional": false,
+    "description": "A journey around Lake Baikal, the world's deepest and oldest freshwater lake, known for its crystal-clear waters and serene surroundings.",
+    "likelyDistance": 2100,
+    "possibleSteps": [
+      {
+        "startingLocation": "Irkutsk",
+        "endingLocation": "Listvyanka"
+      },
+      {
+        "startingLocation": "Listvyanka",
+        "endingLocation": "Bolshoye Goloustnoye"
+      },
+      {
+        "startingLocation": "Bolshoye Goloustnoye",
+        "endingLocation": "Olkhon Island"
+      },
+      {
+        "startingLocation": "Olkhon Island",
+        "endingLocation": "Severobaikalsk"
+      },
+      {
+        "startingLocation": "Severobaikalsk",
+        "endingLocation": "Ulan-Ude"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Mystical Waters of Loch Ness",
+      "fictional": false,
+      "description": "A scenic route around Loch Ness, famous for its mysterious monster and beautiful landscapes.",
+      "likelyDistance": 360,
+      "possibleSteps": [
+        {
+          "startingLocation": "Inverness",
+          "endingLocation": "Drumnadrochit"
+        },
+        {
+          "startingLocation": "Drumnadrochit",
+          "endingLocation": "Fort Augustus"
+        },
+        {
+          "startingLocation": "Fort Augustus",
+          "endingLocation": "Invermoriston"
+        },
+        {
+          "startingLocation": "Invermoriston",
+          "endingLocation": "Foyers"
+        },
+        {
+          "startingLocation": "Foyers",
+          "endingLocation": "Inverness"
+        }
+      ]
+    },
+    {
+      "name": "The Enchanted Lake of Avalon",
+      "fictional": true,
+      "description": "A mythical journey around the legendary Lake of Avalon, said to be the resting place of King Arthur.",
+      "likelyDistance": 500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Camelot",
+          "endingLocation": "Glastonbury"
+        },
+        {
+          "startingLocation": "Glastonbury",
+          "endingLocation": "Tintagel"
+        },
+        {
+          "startingLocation": "Tintagel",
+          "endingLocation": "Avalon"
+        },
+        {
+          "startingLocation": "Avalon",
+          "endingLocation": "Stonehenge"
+        },
+        {
+          "startingLocation": "Stonehenge",
+          "endingLocation": "Camelot"
+        }
+      ]
+    },
+    {
+      "name": "The Serene Circuit of Lake Geneva",
+      "fictional": false,
+      "description": "A picturesque route around Lake Geneva, known for its stunning views and charming towns.",
+      "likelyDistance": 580,
+      "possibleSteps": [
+        {
+          "startingLocation": "Geneva",
+          "endingLocation": "Lausanne"
+        },
+        {
+          "startingLocation": "Lausanne",
+          "endingLocation": "Montreux"
+        },
+        {
+          "startingLocation": "Montreux",
+          "endingLocation": "Vevey"
+        },
+        {
+          "startingLocation": "Vevey",
+          "endingLocation": "Evian-les-Bains"
+        },
+        {
+          "startingLocation": "Evian-les-Bains",
+          "endingLocation": "Geneva"
+        }
+      ]
+    }
+  ]
+}

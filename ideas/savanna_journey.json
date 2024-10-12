@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Serengeti Migration Trail",
+    "fictional": false,
+    "description": "Follow the path of the Great Migration across the Serengeti, witnessing the movement of millions of wildebeest, zebras, and other wildlife across the vast savanna.",
+    "likelyDistance": 800,
+    "possibleSteps": [
+      {
+        "startingLocation": "Ngorongoro Conservation Area",
+        "endingLocation": "Serengeti National Park"
+      },
+      {
+        "startingLocation": "Serengeti National Park",
+        "endingLocation": "Grumeti River"
+      },
+      {
+        "startingLocation": "Grumeti River",
+        "endingLocation": "Mara River"
+      },
+      {
+        "startingLocation": "Mara River",
+        "endingLocation": "Masai Mara National Reserve"
+      },
+      {
+        "startingLocation": "Masai Mara National Reserve",
+        "endingLocation": "Ngorongoro Conservation Area"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Lion King's Pride Lands",
+      "fictional": true,
+      "description": "Explore the fictional Pride Lands from Disney's The Lion King, a vibrant savanna teeming with life and adventure.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Pride Rock",
+          "endingLocation": "Elephant Graveyard"
+        },
+        {
+          "startingLocation": "Elephant Graveyard",
+          "endingLocation": "Hakuna Matata Oasis"
+        },
+        {
+          "startingLocation": "Hakuna Matata Oasis",
+          "endingLocation": "Rafiki's Tree"
+        },
+        {
+          "startingLocation": "Rafiki's Tree",
+          "endingLocation": "Pride Rock"
+        },
+        {
+          "startingLocation": "Pride Rock",
+          "endingLocation": "The Outlands"
+        }
+      ]
+    },
+    {
+      "name": "The Okavango Delta Expedition",
+      "fictional": false,
+      "description": "Journey through the Okavango Delta, a unique inland delta in Botswana, rich with diverse wildlife and stunning landscapes.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Maun",
+          "endingLocation": "Moremi Game Reserve"
+        },
+        {
+          "startingLocation": "Moremi Game Reserve",
+          "endingLocation": "Chief's Island"
+        },
+        {
+          "startingLocation": "Chief's Island",
+          "endingLocation": "Savuti Channel"
+        },
+        {
+          "startingLocation": "Savuti Channel",
+          "endingLocation": "Linyanti Marshes"
+        },
+        {
+          "startingLocation": "Linyanti Marshes",
+          "endingLocation": "Chobe National Park"
+        }
+      ]
+    },
+    {
+      "name": "The Kalahari Desert Trek",
+      "fictional": false,
+      "description": "Traverse the vast Kalahari Desert, experiencing the unique flora and fauna that have adapted to this arid environment.",
+      "likelyDistance": 1500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Ghanzi",
+          "endingLocation": "Central Kalahari Game Reserve"
+        },
+        {
+          "startingLocation": "Central Kalahari Game Reserve",
+          "endingLocation": "Deception Valley"
+        },
+        {
+          "startingLocation": "Deception Valley",
+          "endingLocation": "Nxai Pan National Park"
+        },
+        {
+          "startingLocation": "Nxai Pan National Park",
+          "endingLocation": "Makgadikgadi Pans"
+        },
+        {
+          "startingLocation": "Makgadikgadi Pans",
+          "endingLocation": "Ghanzi"
+        }
+      ]
+    }
+  ]
+}

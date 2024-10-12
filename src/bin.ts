@@ -4,7 +4,10 @@ import { hideBin } from 'yargs/helpers';
 import { generateRoute } from './runWithInputParams'
 import { boilDownResults, searchGoogle } from './tools/searchTool'
 import { searchGoogleMaps } from './tools/mapsTools'
-
+import themes from './themes.json'
+import { recommendThemeIdea } from './recommendThemes'
+import { mkdir, mkdirSync, writeFileSync } from 'fs'
+import _ from 'lodash'
 yargs(hideBin(process.argv))
   .scriptName('npm run arc')
   .usage('$0 <cmd> [args]')
@@ -101,6 +104,32 @@ yargs(hideBin(process.argv))
     async (argv) => {
       const distance = await searchGoogleMaps(argv)
       console.log('Distance:', JSON.stringify(distance, null, 2))
+      process.exit(0)
+    }
+  )
+  .command(
+    'generate-ideas',
+    'generate ideas for a route',
+    (yargs) =>
+      yargs.option('theme', {
+        alias: 't',
+        type: 'string',
+        default: 'all',
+        choices: ['all', ...themes.map((theme) => theme.theme)],
+        describe: 'The theme of the route, otherwise all themes will be generated',
+      }),
+    async (argv) => {
+      mkdirSync('ideas', { recursive: true })
+      const singleTheme = themes.find((theme) => theme.theme === argv.theme)
+      let themeList = themes
+      if (singleTheme) {
+        themeList = [singleTheme]
+      }
+      for (const theme of themeList) {
+        const idea = await recommendThemeIdea(theme)
+        console.log(theme.theme, JSON.stringify(idea, null, 2))
+        writeFileSync(`ideas/${_.snakeCase(theme.theme)}.json`, JSON.stringify(idea, null, 2))
+      }
       process.exit(0)
     }
   )

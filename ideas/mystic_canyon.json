@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Grand Canyon's Mystical Path",
+    "fictional": false,
+    "description": "A journey through the Grand Canyon, where the natural beauty and mysterious mists create an otherworldly experience. This route takes you along the canyon's edge, offering breathtaking views and a sense of wonder.",
+    "likelyDistance": 446,
+    "possibleSteps": [
+      {
+        "startingLocation": "Hualapai Hilltop",
+        "endingLocation": "Supai Village"
+      },
+      {
+        "startingLocation": "Supai Village",
+        "endingLocation": "Havasu Falls"
+      },
+      {
+        "startingLocation": "Havasu Falls",
+        "endingLocation": "Mooney Falls"
+      },
+      {
+        "startingLocation": "Mooney Falls",
+        "endingLocation": "Beaver Falls"
+      },
+      {
+        "startingLocation": "Beaver Falls",
+        "endingLocation": "Colorado River"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Canyon of the Crescent Moon",
+      "fictional": true,
+      "description": "Inspired by the legendary canyon from Indiana Jones, this route takes you through a mystical landscape filled with ancient secrets and hidden treasures.",
+      "likelyDistance": 500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Desert Outpost",
+          "endingLocation": "Canyon Entrance"
+        },
+        {
+          "startingLocation": "Canyon Entrance",
+          "endingLocation": "Hidden Temple"
+        },
+        {
+          "startingLocation": "Hidden Temple",
+          "endingLocation": "Echoing Chamber"
+        },
+        {
+          "startingLocation": "Echoing Chamber",
+          "endingLocation": "Treasure Vault"
+        },
+        {
+          "startingLocation": "Treasure Vault",
+          "endingLocation": "Canyon Exit"
+        }
+      ]
+    },
+    {
+      "name": "The Enchanted Canyon of Avalon",
+      "fictional": true,
+      "description": "A mystical journey through the legendary Avalon, where the canyon is shrouded in mist and magic, leading to the heart of ancient enchantments.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Avalon Outskirts",
+          "endingLocation": "Misty Gorge"
+        },
+        {
+          "startingLocation": "Misty Gorge",
+          "endingLocation": "Whispering Falls"
+        },
+        {
+          "startingLocation": "Whispering Falls",
+          "endingLocation": "Crystal Cavern"
+        },
+        {
+          "startingLocation": "Crystal Cavern",
+          "endingLocation": "Enchanted Glade"
+        },
+        {
+          "startingLocation": "Enchanted Glade",
+          "endingLocation": "Heart of Avalon"
+        }
+      ]
+    }
+  ]
+}

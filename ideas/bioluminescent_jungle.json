@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "Pandora's Glowing Forest",
+    "fictional": true,
+    "description": "Explore the mesmerizing bioluminescent forests of Pandora, where every step is illuminated by the vibrant glow of exotic flora. Traverse through the lush landscapes that come alive with color as the sun sets.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Hallelujah Mountains",
+        "endingLocation": "Tree of Souls"
+      },
+      {
+        "startingLocation": "Tree of Souls",
+        "endingLocation": "Floating Mountains"
+      },
+      {
+        "startingLocation": "Floating Mountains",
+        "endingLocation": "Valley of Mo'ara"
+      },
+      {
+        "startingLocation": "Valley of Mo'ara",
+        "endingLocation": "Neytiri's Village"
+      },
+      {
+        "startingLocation": "Neytiri's Village",
+        "endingLocation": "Bioluminescent River"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Enchanted Amazon",
+      "fictional": false,
+      "description": "Journey through the Amazon Rainforest, where the dense canopy and unique flora create a natural bioluminescent spectacle. Experience the magic of the jungle as it lights up with the glow of fireflies and luminescent fungi.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Manaus",
+          "endingLocation": "Meeting of Waters"
+        },
+        {
+          "startingLocation": "Meeting of Waters",
+          "endingLocation": "Anavilhanas Archipelago"
+        },
+        {
+          "startingLocation": "Anavilhanas Archipelago",
+          "endingLocation": "Jaú National Park"
+        },
+        {
+          "startingLocation": "Jaú National Park",
+          "endingLocation": "Mamori Lake"
+        },
+        {
+          "startingLocation": "Mamori Lake",
+          "endingLocation": "Amazon River Delta"
+        }
+      ]
+    },
+    {
+      "name": "The Glowing Forest of Endor",
+      "fictional": true,
+      "description": "Walk through the mystical forests of Endor, home to the Ewoks. The forest floor is illuminated by glowing plants and creatures, creating a magical atmosphere under the towering trees.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Ewok Village",
+          "endingLocation": "Forest Clearing"
+        },
+        {
+          "startingLocation": "Forest Clearing",
+          "endingLocation": "Ancient Tree"
+        },
+        {
+          "startingLocation": "Ancient Tree",
+          "endingLocation": "Hidden Waterfall"
+        },
+        {
+          "startingLocation": "Hidden Waterfall",
+          "endingLocation": "Mystic Glade"
+        },
+        {
+          "startingLocation": "Mystic Glade",
+          "endingLocation": "Ewok Village"
+        }
+      ]
+    }
+  ]
+}

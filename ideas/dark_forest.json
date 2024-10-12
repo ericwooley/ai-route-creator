@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Black Forest of Germany",
+    "fictional": false,
+    "description": "A journey through the dense and mysterious Black Forest in Germany, known for its dark woods and folklore. The route takes you through enchanting villages and scenic trails.",
+    "likelyDistance": 160,
+    "possibleSteps": [
+      {
+        "startingLocation": "Baden-Baden",
+        "endingLocation": "Freudenstadt"
+      },
+      {
+        "startingLocation": "Freudenstadt",
+        "endingLocation": "Triberg"
+      },
+      {
+        "startingLocation": "Triberg",
+        "endingLocation": "Freiburg"
+      },
+      {
+        "startingLocation": "Freiburg",
+        "endingLocation": "Titisee"
+      },
+      {
+        "startingLocation": "Titisee",
+        "endingLocation": "Feldberg"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Mirkwood from Middle-earth",
+      "fictional": true,
+      "description": "Traverse the dark and enchanted forest of Mirkwood from J.R.R. Tolkien's Middle-earth, filled with ancient trees and hidden dangers.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Old Forest Road",
+          "endingLocation": "The Enchanted River"
+        },
+        {
+          "startingLocation": "The Enchanted River",
+          "endingLocation": "The Elvenking's Halls"
+        },
+        {
+          "startingLocation": "The Elvenking's Halls",
+          "endingLocation": "The Forest Gate"
+        },
+        {
+          "startingLocation": "The Forest Gate",
+          "endingLocation": "The Mountains of Mirkwood"
+        },
+        {
+          "startingLocation": "The Mountains of Mirkwood",
+          "endingLocation": "The Lonely Mountain"
+        }
+      ]
+    },
+    {
+      "name": "Sherwood Forest",
+      "fictional": false,
+      "description": "Explore the legendary Sherwood Forest, home to the tales of Robin Hood. The route takes you through ancient woodlands and historical sites.",
+      "likelyDistance": 100,
+      "possibleSteps": [
+        {
+          "startingLocation": "Nottingham",
+          "endingLocation": "Edwinstowe"
+        },
+        {
+          "startingLocation": "Edwinstowe",
+          "endingLocation": "Sherwood Pines"
+        },
+        {
+          "startingLocation": "Sherwood Pines",
+          "endingLocation": "Thoresby Park"
+        },
+        {
+          "startingLocation": "Thoresby Park",
+          "endingLocation": "Clumber Park"
+        },
+        {
+          "startingLocation": "Clumber Park",
+          "endingLocation": "Worksop"
+        }
+      ]
+    }
+  ]
+}

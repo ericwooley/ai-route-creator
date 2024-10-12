@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "Amazon Rainforest Expedition",
+    "fictional": false,
+    "description": "A journey through the heart of the Amazon Rainforest, exploring the diverse ecosystems and rich biodiversity of the world's largest tropical rainforest.",
+    "likelyDistance": 4000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Manaus",
+        "endingLocation": "Tefé"
+      },
+      {
+        "startingLocation": "Tefé",
+        "endingLocation": "Tabatinga"
+      },
+      {
+        "startingLocation": "Tabatinga",
+        "endingLocation": "Leticia"
+      },
+      {
+        "startingLocation": "Leticia",
+        "endingLocation": "Iquitos"
+      },
+      {
+        "startingLocation": "Iquitos",
+        "endingLocation": "Pucallpa"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Congo Basin Adventure",
+      "fictional": false,
+      "description": "An exploration of the Congo Basin, traversing through dense jungles and encountering unique wildlife in one of the world's most important wilderness areas.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Kinshasa",
+          "endingLocation": "Mbandaka"
+        },
+        {
+          "startingLocation": "Mbandaka",
+          "endingLocation": "Kisangani"
+        },
+        {
+          "startingLocation": "Kisangani",
+          "endingLocation": "Bumba"
+        },
+        {
+          "startingLocation": "Bumba",
+          "endingLocation": "Gemena"
+        },
+        {
+          "startingLocation": "Gemena",
+          "endingLocation": "Bangui"
+        }
+      ]
+    },
+    {
+      "name": "Lost World of Z",
+      "fictional": true,
+      "description": "Inspired by the legendary expeditions in search of the lost city of Z, this trek takes you through uncharted territories of the Amazon, filled with mystery and adventure.",
+      "likelyDistance": 3500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cuiabá",
+          "endingLocation": "Vila Bela da Santíssima Trindade"
+        },
+        {
+          "startingLocation": "Vila Bela da Santíssima Trindade",
+          "endingLocation": "Porto Velho"
+        },
+        {
+          "startingLocation": "Porto Velho",
+          "endingLocation": "Rio Branco"
+        },
+        {
+          "startingLocation": "Rio Branco",
+          "endingLocation": "Cobija"
+        },
+        {
+          "startingLocation": "Cobija",
+          "endingLocation": "Riberalta"
+        }
+      ]
+    },
+    {
+      "name": "Borneo Jungle Quest",
+      "fictional": false,
+      "description": "A trek through the lush rainforests of Borneo, home to diverse wildlife and indigenous cultures, offering a glimpse into one of the world's oldest rainforests.",
+      "likelyDistance": 2500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Kuching",
+          "endingLocation": "Sibu"
+        },
+        {
+          "startingLocation": "Sibu",
+          "endingLocation": "Bintulu"
+        },
+        {
+          "startingLocation": "Bintulu",
+          "endingLocation": "Miri"
+        },
+        {
+          "startingLocation": "Miri",
+          "endingLocation": "Bandar Seri Begawan"
+        },
+        {
+          "startingLocation": "Bandar Seri Begawan",
+          "endingLocation": "Kota Kinabalu"
+        }
+      ]
+    }
+  ]
+}

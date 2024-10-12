@@ -1,0 +1,100 @@
+{
+  "bestIdea": {
+    "name": "The Amalfi Coast Journey",
+    "fictional": false,
+    "description": "A scenic route along Italy's stunning Amalfi Coast, featuring dramatic cliffs, charming villages, and breathtaking views of the Mediterranean Sea.",
+    "likelyDistance": 50,
+    "possibleSteps": [
+      {
+        "startingLocation": "Sorrento",
+        "endingLocation": "Positano"
+      },
+      {
+        "startingLocation": "Positano",
+        "endingLocation": "Praiano"
+      },
+      {
+        "startingLocation": "Praiano",
+        "endingLocation": "Amalfi"
+      },
+      {
+        "startingLocation": "Amalfi",
+        "endingLocation": "Ravello"
+      },
+      {
+        "startingLocation": "Ravello",
+        "endingLocation": "Salerno"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Cliffs of Moher Trek",
+      "fictional": false,
+      "description": "A journey along the iconic Cliffs of Moher in Ireland, offering stunning views of the Atlantic Ocean and the rugged Irish coastline.",
+      "likelyDistance": 20,
+      "possibleSteps": [
+        {
+          "startingLocation": "Doolin",
+          "endingLocation": "Cliffs of Moher Visitor Center"
+        },
+        {
+          "startingLocation": "Cliffs of Moher Visitor Center",
+          "endingLocation": "Hag's Head"
+        }
+      ]
+    },
+    {
+      "name": "The Great Ocean Road Adventure",
+      "fictional": false,
+      "description": "An epic drive along Australia's Great Ocean Road, featuring towering cliffs, lush rainforests, and the famous Twelve Apostles rock formations.",
+      "likelyDistance": 243,
+      "possibleSteps": [
+        {
+          "startingLocation": "Torquay",
+          "endingLocation": "Lorne"
+        },
+        {
+          "startingLocation": "Lorne",
+          "endingLocation": "Apollo Bay"
+        },
+        {
+          "startingLocation": "Apollo Bay",
+          "endingLocation": "Port Campbell"
+        },
+        {
+          "startingLocation": "Port Campbell",
+          "endingLocation": "Warrnambool"
+        }
+      ]
+    },
+    {
+      "name": "The Pacific Coast Highway",
+      "fictional": false,
+      "description": "A legendary drive along California's Pacific Coast Highway, offering breathtaking views of the Pacific Ocean and rugged coastal cliffs.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "San Francisco",
+          "endingLocation": "Santa Cruz"
+        },
+        {
+          "startingLocation": "Santa Cruz",
+          "endingLocation": "Monterey"
+        },
+        {
+          "startingLocation": "Monterey",
+          "endingLocation": "San Luis Obispo"
+        },
+        {
+          "startingLocation": "San Luis Obispo",
+          "endingLocation": "Santa Barbara"
+        },
+        {
+          "startingLocation": "Santa Barbara",
+          "endingLocation": "Los Angeles"
+        }
+      ]
+    }
+  ]
+}

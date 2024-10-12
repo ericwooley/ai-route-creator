@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Temples of Angkor Wat",
+    "fictional": false,
+    "description": "Explore the ancient temple complex of Angkor Wat in Cambodia, a UNESCO World Heritage site, known for its grand architecture and intricate carvings, surrounded by lush jungle.",
+    "likelyDistance": 300,
+    "possibleSteps": [
+      {
+        "startingLocation": "Siem Reap",
+        "endingLocation": "Angkor Wat"
+      },
+      {
+        "startingLocation": "Angkor Wat",
+        "endingLocation": "Bayon Temple"
+      },
+      {
+        "startingLocation": "Bayon Temple",
+        "endingLocation": "Ta Prohm"
+      },
+      {
+        "startingLocation": "Ta Prohm",
+        "endingLocation": "Banteay Srei"
+      },
+      {
+        "startingLocation": "Banteay Srei",
+        "endingLocation": "Preah Khan"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Lost City of Petra",
+      "fictional": false,
+      "description": "Journey through the ancient city of Petra in Jordan, famous for its rock-cut architecture and water conduit system, hidden within a narrow canyon.",
+      "likelyDistance": 250,
+      "possibleSteps": [
+        {
+          "startingLocation": "Wadi Musa",
+          "endingLocation": "The Siq"
+        },
+        {
+          "startingLocation": "The Siq",
+          "endingLocation": "Al-Khazneh (The Treasury)"
+        },
+        {
+          "startingLocation": "Al-Khazneh",
+          "endingLocation": "The Street of Facades"
+        },
+        {
+          "startingLocation": "The Street of Facades",
+          "endingLocation": "The Monastery (Ad Deir)"
+        },
+        {
+          "startingLocation": "The Monastery",
+          "endingLocation": "The High Place of Sacrifice"
+        }
+      ]
+    },
+    {
+      "name": "The Temples of Bagan",
+      "fictional": false,
+      "description": "Wander through the vast plain of Bagan in Myanmar, dotted with thousands of ancient temples and pagodas, offering a glimpse into the region's rich history.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Nyaung U",
+          "endingLocation": "Ananda Temple"
+        },
+        {
+          "startingLocation": "Ananda Temple",
+          "endingLocation": "Shwezigon Pagoda"
+        },
+        {
+          "startingLocation": "Shwezigon Pagoda",
+          "endingLocation": "Dhammayangyi Temple"
+        },
+        {
+          "startingLocation": "Dhammayangyi Temple",
+          "endingLocation": "Sulamani Temple"
+        },
+        {
+          "startingLocation": "Sulamani Temple",
+          "endingLocation": "Thatbyinnyu Temple"
+        }
+      ]
+    },
+    {
+      "name": "The Mayan Ruins of Tikal",
+      "fictional": false,
+      "description": "Traverse the ancient Mayan city of Tikal in Guatemala, known for its towering pyramids and rich history, set amidst the dense rainforest.",
+      "likelyDistance": 350,
+      "possibleSteps": [
+        {
+          "startingLocation": "Flores",
+          "endingLocation": "Tikal National Park"
+        },
+        {
+          "startingLocation": "Tikal National Park",
+          "endingLocation": "Temple I (Temple of the Great Jaguar)"
+        },
+        {
+          "startingLocation": "Temple I",
+          "endingLocation": "Temple IV"
+        },
+        {
+          "startingLocation": "Temple IV",
+          "endingLocation": "The Lost World Pyramid"
+        },
+        {
+          "startingLocation": "The Lost World Pyramid",
+          "endingLocation": "Temple V"
+        }
+      ]
+    }
+  ]
+}

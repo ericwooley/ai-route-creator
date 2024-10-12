@@ -1,0 +1,104 @@
+{
+  "bestIdea": {
+    "name": "Voyage to Alpha Centauri",
+    "fictional": true,
+    "description": "A journey through the cosmos to the nearest star system, Alpha Centauri. Traverse through interstellar space, passing by celestial wonders and distant planets.",
+    "likelyDistance": 4300000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Earth",
+        "endingLocation": "Lunar Orbit"
+      },
+      {
+        "startingLocation": "Lunar Orbit",
+        "endingLocation": "Mars"
+      },
+      {
+        "startingLocation": "Mars",
+        "endingLocation": "Asteroid Belt"
+      },
+      {
+        "startingLocation": "Asteroid Belt",
+        "endingLocation": "Jupiter"
+      },
+      {
+        "startingLocation": "Jupiter",
+        "endingLocation": "Alpha Centauri"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Journey to the Andromeda Galaxy",
+      "fictional": true,
+      "description": "An epic voyage across the universe to the Andromeda Galaxy, encountering black holes, supernovae, and cosmic phenomena along the way.",
+      "likelyDistance": 2500000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Milky Way",
+          "endingLocation": "Intergalactic Space"
+        },
+        {
+          "startingLocation": "Intergalactic Space",
+          "endingLocation": "Andromeda's Outer Rim"
+        },
+        {
+          "startingLocation": "Andromeda's Outer Rim",
+          "endingLocation": "Andromeda's Core"
+        }
+      ]
+    },
+    {
+      "name": "The Solar System Grand Tour",
+      "fictional": false,
+      "description": "A comprehensive tour of our solar system, visiting each planet and notable moons, capturing the beauty and diversity of our cosmic neighborhood.",
+      "likelyDistance": 6000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mercury",
+          "endingLocation": "Venus"
+        },
+        {
+          "startingLocation": "Venus",
+          "endingLocation": "Earth"
+        },
+        {
+          "startingLocation": "Earth",
+          "endingLocation": "Mars"
+        },
+        {
+          "startingLocation": "Mars",
+          "endingLocation": "Jupiter"
+        },
+        {
+          "startingLocation": "Jupiter",
+          "endingLocation": "Saturn"
+        },
+        {
+          "startingLocation": "Saturn",
+          "endingLocation": "Uranus"
+        },
+        {
+          "startingLocation": "Uranus",
+          "endingLocation": "Neptune"
+        }
+      ]
+    },
+    {
+      "name": "The Galactic Core Expedition",
+      "fictional": true,
+      "description": "A daring expedition to the center of the Milky Way, navigating through dense star fields and the mysterious gravitational forces of the galactic core.",
+      "likelyDistance": 27000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Solar System",
+          "endingLocation": "Sagittarius Arm"
+        },
+        {
+          "startingLocation": "Sagittarius Arm",
+          "endingLocation": "Galactic Center"
+        }
+      ]
+    }
+  ]
+}

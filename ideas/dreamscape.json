@@ -1,0 +1,72 @@
+{
+  "bestIdea": {
+    "name": "Alice's Wonderland Journey",
+    "fictional": true,
+    "description": "Embark on a whimsical journey through the dreamlike world of Wonderland, inspired by Lewis Carroll's classic tale. Traverse through surreal landscapes filled with peculiar creatures and ever-changing scenery.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Rabbit Hole",
+        "endingLocation": "Mad Hatter's Tea Party"
+      },
+      {
+        "startingLocation": "Mad Hatter's Tea Party",
+        "endingLocation": "Queen of Hearts' Garden"
+      },
+      {
+        "startingLocation": "Queen of Hearts' Garden",
+        "endingLocation": "Cheshire Cat's Tree"
+      },
+      {
+        "startingLocation": "Cheshire Cat's Tree",
+        "endingLocation": "Tweedledee and Tweedledum's Forest"
+      },
+      {
+        "startingLocation": "Tweedledee and Tweedledum's Forest",
+        "endingLocation": "Looking Glass House"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Inception's Dream Layers",
+      "fictional": true,
+      "description": "Navigate through the complex and layered dream worlds as seen in the movie 'Inception'. Each layer presents a unique and mind-bending environment, challenging your perception of reality.",
+      "likelyDistance": 10000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cityscape Dream",
+          "endingLocation": "Hotel Dream"
+        },
+        {
+          "startingLocation": "Hotel Dream",
+          "endingLocation": "Snow Fortress Dream"
+        },
+        {
+          "startingLocation": "Snow Fortress Dream",
+          "endingLocation": "Limbo"
+        }
+      ]
+    },
+    {
+      "name": "The Surrealist's Odyssey",
+      "fictional": false,
+      "description": "Explore a dreamscape inspired by the surrealist art movement, featuring landscapes reminiscent of Salvador Dalí's paintings. Journey through bizarre and imaginative scenes that defy logic.",
+      "likelyDistance": 8000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Melting Clocks Desert",
+          "endingLocation": "Elephant Plains"
+        },
+        {
+          "startingLocation": "Elephant Plains",
+          "endingLocation": "Floating Eye Lake"
+        },
+        {
+          "startingLocation": "Floating Eye Lake",
+          "endingLocation": "Endless Staircase"
+        }
+      ]
+    }
+  ]
+}

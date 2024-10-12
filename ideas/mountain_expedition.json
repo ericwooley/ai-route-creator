@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Himalayas Traverse",
+    "fictional": false,
+    "description": "A challenging expedition across the majestic Himalayas, offering breathtaking views of the world's highest peaks and deep valleys.",
+    "likelyDistance": 2400,
+    "possibleSteps": [
+      {
+        "startingLocation": "Nanga Parbat Base Camp",
+        "endingLocation": "K2 Base Camp"
+      },
+      {
+        "startingLocation": "K2 Base Camp",
+        "endingLocation": "Everest Base Camp"
+      },
+      {
+        "startingLocation": "Everest Base Camp",
+        "endingLocation": "Makalu Base Camp"
+      },
+      {
+        "startingLocation": "Makalu Base Camp",
+        "endingLocation": "Kanchenjunga Base Camp"
+      },
+      {
+        "startingLocation": "Kanchenjunga Base Camp",
+        "endingLocation": "Lhotse Base Camp"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Andes Adventure",
+      "fictional": false,
+      "description": "An epic journey through the Andes, traversing diverse landscapes from snow-capped peaks to lush valleys.",
+      "likelyDistance": 7000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mount Aconcagua",
+          "endingLocation": "Cerro Bonete"
+        },
+        {
+          "startingLocation": "Cerro Bonete",
+          "endingLocation": "Huascarán"
+        },
+        {
+          "startingLocation": "Huascarán",
+          "endingLocation": "Chimborazo"
+        },
+        {
+          "startingLocation": "Chimborazo",
+          "endingLocation": "Cotopaxi"
+        },
+        {
+          "startingLocation": "Cotopaxi",
+          "endingLocation": "Mount Pichincha"
+        }
+      ]
+    },
+    {
+      "name": "The Rocky Mountains Expedition",
+      "fictional": false,
+      "description": "A thrilling trek through the rugged terrain of the Rocky Mountains, offering stunning vistas and diverse wildlife.",
+      "likelyDistance": 4800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Banff National Park",
+          "endingLocation": "Jasper National Park"
+        },
+        {
+          "startingLocation": "Jasper National Park",
+          "endingLocation": "Yoho National Park"
+        },
+        {
+          "startingLocation": "Yoho National Park",
+          "endingLocation": "Glacier National Park"
+        },
+        {
+          "startingLocation": "Glacier National Park",
+          "endingLocation": "Yellowstone National Park"
+        },
+        {
+          "startingLocation": "Yellowstone National Park",
+          "endingLocation": "Rocky Mountain National Park"
+        }
+      ]
+    },
+    {
+      "name": "The Alps Odyssey",
+      "fictional": false,
+      "description": "A breathtaking journey through the iconic Alps, featuring picturesque villages and dramatic mountain scenery.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "Chamonix",
+          "endingLocation": "Zermatt"
+        },
+        {
+          "startingLocation": "Zermatt",
+          "endingLocation": "St. Moritz"
+        },
+        {
+          "startingLocation": "St. Moritz",
+          "endingLocation": "Innsbruck"
+        },
+        {
+          "startingLocation": "Innsbruck",
+          "endingLocation": "Salzburg"
+        },
+        {
+          "startingLocation": "Salzburg",
+          "endingLocation": "Berchtesgaden"
+        }
+      ]
+    }
+  ]
+}

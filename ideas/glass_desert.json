@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Glass Desert of Arrakis",
+    "fictional": true,
+    "description": "Traverse the legendary desert of Arrakis, where the sands have turned to glass under the harsh sun. This journey takes you through the heart of the Dune universe, experiencing the vast, shimmering expanses and the challenges they present.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Sietch Tabr",
+        "endingLocation": "Carthag"
+      },
+      {
+        "startingLocation": "Carthag",
+        "endingLocation": "Arrakeen"
+      },
+      {
+        "startingLocation": "Arrakeen",
+        "endingLocation": "Habbanya Ridge"
+      },
+      {
+        "startingLocation": "Habbanya Ridge",
+        "endingLocation": "The Shield Wall"
+      },
+      {
+        "startingLocation": "The Shield Wall",
+        "endingLocation": "Sietch Tabr"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Glass Dunes of Tatooine",
+      "fictional": true,
+      "description": "Explore the iconic desert planet of Tatooine, where the sands have turned to glass under the twin suns. This route takes you through the famous locations of the Star Wars universe.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mos Eisley",
+          "endingLocation": "Anchorhead"
+        },
+        {
+          "startingLocation": "Anchorhead",
+          "endingLocation": "Beggar's Canyon"
+        },
+        {
+          "startingLocation": "Beggar's Canyon",
+          "endingLocation": "Jundland Wastes"
+        },
+        {
+          "startingLocation": "Jundland Wastes",
+          "endingLocation": "Mos Espa"
+        },
+        {
+          "startingLocation": "Mos Espa",
+          "endingLocation": "Mos Eisley"
+        }
+      ]
+    },
+    {
+      "name": "The Shimmering Sands of Mars",
+      "fictional": true,
+      "description": "Embark on a journey across the Martian desert, where the sands have transformed into glass-like structures due to ancient volcanic activity. Experience the red planet's unique landscape and challenges.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Olympus Mons",
+          "endingLocation": "Valles Marineris"
+        },
+        {
+          "startingLocation": "Valles Marineris",
+          "endingLocation": "Gale Crater"
+        },
+        {
+          "startingLocation": "Gale Crater",
+          "endingLocation": "Hellas Basin"
+        },
+        {
+          "startingLocation": "Hellas Basin",
+          "endingLocation": "Tharsis Plateau"
+        },
+        {
+          "startingLocation": "Tharsis Plateau",
+          "endingLocation": "Olympus Mons"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Misty Moors of Wuthering Heights",
+    "fictional": true,
+    "description": "Traverse the hauntingly beautiful moors from Emily Brontë's 'Wuthering Heights', where the fog rolls over the hills and the air is thick with mystery and romance.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Thrushcross Grange",
+        "endingLocation": "Wuthering Heights"
+      },
+      {
+        "startingLocation": "Wuthering Heights",
+        "endingLocation": "Penistone Crags"
+      },
+      {
+        "startingLocation": "Penistone Crags",
+        "endingLocation": "Gimmerton Village"
+      },
+      {
+        "startingLocation": "Gimmerton Village",
+        "endingLocation": "The Moors"
+      },
+      {
+        "startingLocation": "The Moors",
+        "endingLocation": "Thrushcross Grange"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Foggy Marshes of Sleepy Hollow",
+      "fictional": true,
+      "description": "Journey through the eerie marshes surrounding the legendary town of Sleepy Hollow, where the Headless Horseman is said to roam.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Sleepy Hollow",
+          "endingLocation": "Tarrytown"
+        },
+        {
+          "startingLocation": "Tarrytown",
+          "endingLocation": "The Old Dutch Church"
+        },
+        {
+          "startingLocation": "The Old Dutch Church",
+          "endingLocation": "The Bridge"
+        },
+        {
+          "startingLocation": "The Bridge",
+          "endingLocation": "The Marshes"
+        },
+        {
+          "startingLocation": "The Marshes",
+          "endingLocation": "Sleepy Hollow"
+        }
+      ]
+    },
+    {
+      "name": "The Foggy Fens of East Anglia",
+      "fictional": false,
+      "description": "Explore the real-world foggy fens of East Anglia, known for their mysterious atmosphere and rich history.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cambridge",
+          "endingLocation": "Ely"
+        },
+        {
+          "startingLocation": "Ely",
+          "endingLocation": "The Fens"
+        },
+        {
+          "startingLocation": "The Fens",
+          "endingLocation": "King's Lynn"
+        },
+        {
+          "startingLocation": "King's Lynn",
+          "endingLocation": "Norwich"
+        },
+        {
+          "startingLocation": "Norwich",
+          "endingLocation": "Cambridge"
+        }
+      ]
+    },
+    {
+      "name": "The Misty Marshes of Avalon",
+      "fictional": true,
+      "description": "Walk through the legendary marshes leading to the mystical Isle of Avalon, shrouded in mist and Arthurian legend.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Glastonbury",
+          "endingLocation": "The Tor"
+        },
+        {
+          "startingLocation": "The Tor",
+          "endingLocation": "The Marshes"
+        },
+        {
+          "startingLocation": "The Marshes",
+          "endingLocation": "The Lake"
+        },
+        {
+          "startingLocation": "The Lake",
+          "endingLocation": "Avalon"
+        },
+        {
+          "startingLocation": "Avalon",
+          "endingLocation": "Glastonbury"
+        }
+      ]
+    }
+  ]
+}

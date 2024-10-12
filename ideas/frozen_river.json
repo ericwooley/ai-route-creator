@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Yukon River Quest",
+    "fictional": false,
+    "description": "Follow the path of the Yukon River as it freezes over in the winter months, traversing through the vast wilderness of Canada and Alaska. Experience the breathtaking beauty of the frozen river, surrounded by snow-covered landscapes and icy waters.",
+    "likelyDistance": 3200,
+    "possibleSteps": [
+      {
+        "startingLocation": "Whitehorse, Yukon",
+        "endingLocation": "Carmacks, Yukon"
+      },
+      {
+        "startingLocation": "Carmacks, Yukon",
+        "endingLocation": "Dawson City, Yukon"
+      },
+      {
+        "startingLocation": "Dawson City, Yukon",
+        "endingLocation": "Eagle, Alaska"
+      },
+      {
+        "startingLocation": "Eagle, Alaska",
+        "endingLocation": "Circle, Alaska"
+      },
+      {
+        "startingLocation": "Circle, Alaska",
+        "endingLocation": "Fort Yukon, Alaska"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Frozen Danube Journey",
+      "fictional": false,
+      "description": "Travel along the Danube River as it freezes in the heart of Europe, passing through historic cities and picturesque landscapes covered in snow and ice.",
+      "likelyDistance": 2850,
+      "possibleSteps": [
+        {
+          "startingLocation": "Vienna, Austria",
+          "endingLocation": "Bratislava, Slovakia"
+        },
+        {
+          "startingLocation": "Bratislava, Slovakia",
+          "endingLocation": "Budapest, Hungary"
+        },
+        {
+          "startingLocation": "Budapest, Hungary",
+          "endingLocation": "Belgrade, Serbia"
+        },
+        {
+          "startingLocation": "Belgrade, Serbia",
+          "endingLocation": "Ruse, Bulgaria"
+        },
+        {
+          "startingLocation": "Ruse, Bulgaria",
+          "endingLocation": "Constanta, Romania"
+        }
+      ]
+    },
+    {
+      "name": "The Frozen Mississippi Expedition",
+      "fictional": false,
+      "description": "Embark on a journey along the Mississippi River during a rare freeze, exploring the icy banks and frozen waters from Minnesota to the Gulf of Mexico.",
+      "likelyDistance": 3770,
+      "possibleSteps": [
+        {
+          "startingLocation": "Lake Itasca, Minnesota",
+          "endingLocation": "Minneapolis, Minnesota"
+        },
+        {
+          "startingLocation": "Minneapolis, Minnesota",
+          "endingLocation": "St. Louis, Missouri"
+        },
+        {
+          "startingLocation": "St. Louis, Missouri",
+          "endingLocation": "Memphis, Tennessee"
+        },
+        {
+          "startingLocation": "Memphis, Tennessee",
+          "endingLocation": "Baton Rouge, Louisiana"
+        },
+        {
+          "startingLocation": "Baton Rouge, Louisiana",
+          "endingLocation": "New Orleans, Louisiana"
+        }
+      ]
+    },
+    {
+      "name": "The Frozen Rhine Adventure",
+      "fictional": false,
+      "description": "Follow the Rhine River as it freezes over, winding through the heart of Europe and showcasing stunning winter landscapes and historic sites.",
+      "likelyDistance": 1230,
+      "possibleSteps": [
+        {
+          "startingLocation": "Basel, Switzerland",
+          "endingLocation": "Strasbourg, France"
+        },
+        {
+          "startingLocation": "Strasbourg, France",
+          "endingLocation": "Mainz, Germany"
+        },
+        {
+          "startingLocation": "Mainz, Germany",
+          "endingLocation": "Cologne, Germany"
+        },
+        {
+          "startingLocation": "Cologne, Germany",
+          "endingLocation": "Düsseldorf, Germany"
+        },
+        {
+          "startingLocation": "Düsseldorf, Germany",
+          "endingLocation": "Rotterdam, Netherlands"
+        }
+      ]
+    }
+  ]
+}

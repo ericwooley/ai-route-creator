@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Ruins of Detroit",
+    "fictional": false,
+    "description": "Explore the decaying urban landscape of Detroit, a city once thriving with industry, now marked by abandoned factories, crumbling buildings, and graffiti-covered walls. This route takes you through the heart of the city's decline, showcasing the stark reality of urban decay.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Michigan Central Station",
+        "endingLocation": "Packard Automotive Plant"
+      },
+      {
+        "startingLocation": "Packard Automotive Plant",
+        "endingLocation": "Heidelberg Project"
+      },
+      {
+        "startingLocation": "Heidelberg Project",
+        "endingLocation": "Belle Isle Park"
+      },
+      {
+        "startingLocation": "Belle Isle Park",
+        "endingLocation": "Masonic Temple"
+      },
+      {
+        "startingLocation": "Masonic Temple",
+        "endingLocation": "Michigan Central Station"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Wastelands of Chernobyl",
+      "fictional": false,
+      "description": "Journey through the abandoned city of Pripyat, near the Chernobyl Nuclear Power Plant. This route takes you through the eerie, deserted streets and buildings left behind after the 1986 disaster, offering a haunting glimpse into a world frozen in time.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Pripyat Amusement Park",
+          "endingLocation": "Chernobyl Nuclear Power Plant"
+        },
+        {
+          "startingLocation": "Chernobyl Nuclear Power Plant",
+          "endingLocation": "Red Forest"
+        },
+        {
+          "startingLocation": "Red Forest",
+          "endingLocation": "Duga Radar"
+        },
+        {
+          "startingLocation": "Duga Radar",
+          "endingLocation": "Pripyat Hospital"
+        },
+        {
+          "startingLocation": "Pripyat Hospital",
+          "endingLocation": "Pripyat Amusement Park"
+        }
+      ]
+    },
+    {
+      "name": "The Streets of Mega-City One",
+      "fictional": true,
+      "description": "Navigate the sprawling, dystopian metropolis of Mega-City One from the Judge Dredd universe. This route takes you through the towering city blocks, crime-ridden streets, and the oppressive atmosphere of a city on the brink.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Sector 1",
+          "endingLocation": "Sector 13"
+        },
+        {
+          "startingLocation": "Sector 13",
+          "endingLocation": "Sector 45"
+        },
+        {
+          "startingLocation": "Sector 45",
+          "endingLocation": "Sector 99"
+        },
+        {
+          "startingLocation": "Sector 99",
+          "endingLocation": "Sector 66"
+        },
+        {
+          "startingLocation": "Sector 66",
+          "endingLocation": "Sector 1"
+        }
+      ]
+    },
+    {
+      "name": "The Ruins of Neo-Tokyo",
+      "fictional": true,
+      "description": "Explore the post-apocalyptic landscape of Neo-Tokyo, a city rebuilt after a devastating explosion. This route takes you through the neon-lit streets, abandoned skyscrapers, and the remnants of a once-great city.",
+      "likelyDistance": 800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Olympic Stadium",
+          "endingLocation": "Akira's Hideout"
+        },
+        {
+          "startingLocation": "Akira's Hideout",
+          "endingLocation": "Neo-Tokyo Tower"
+        },
+        {
+          "startingLocation": "Neo-Tokyo Tower",
+          "endingLocation": "Old Tokyo Ruins"
+        },
+        {
+          "startingLocation": "Old Tokyo Ruins",
+          "endingLocation": "Kaneda's Bar"
+        },
+        {
+          "startingLocation": "Kaneda's Bar",
+          "endingLocation": "Olympic Stadium"
+        }
+      ]
+    }
+  ]
+}

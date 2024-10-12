@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Great Barrier Reef Voyage",
+    "fictional": false,
+    "description": "A journey along the stunning Great Barrier Reef, exploring the vibrant marine life and serene lagoons that dot the coastline of Queensland, Australia.",
+    "likelyDistance": 2300,
+    "possibleSteps": [
+      {
+        "startingLocation": "Cairns",
+        "endingLocation": "Port Douglas"
+      },
+      {
+        "startingLocation": "Port Douglas",
+        "endingLocation": "Lizard Island"
+      },
+      {
+        "startingLocation": "Lizard Island",
+        "endingLocation": "Cooktown"
+      },
+      {
+        "startingLocation": "Cooktown",
+        "endingLocation": "Cape Tribulation"
+      },
+      {
+        "startingLocation": "Cape Tribulation",
+        "endingLocation": "Townsville"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Maldives Atoll Adventure",
+      "fictional": false,
+      "description": "Explore the idyllic lagoons and coral atolls of the Maldives, a paradise of turquoise waters and vibrant marine ecosystems.",
+      "likelyDistance": 800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Malé",
+          "endingLocation": "Baa Atoll"
+        },
+        {
+          "startingLocation": "Baa Atoll",
+          "endingLocation": "Raa Atoll"
+        },
+        {
+          "startingLocation": "Raa Atoll",
+          "endingLocation": "Lhaviyani Atoll"
+        },
+        {
+          "startingLocation": "Lhaviyani Atoll",
+          "endingLocation": "Noonu Atoll"
+        },
+        {
+          "startingLocation": "Noonu Atoll",
+          "endingLocation": "Shaviyani Atoll"
+        }
+      ]
+    },
+    {
+      "name": "The Caribbean Lagoon Loop",
+      "fictional": false,
+      "description": "A scenic route through the Caribbean, visiting the tranquil lagoons and vibrant islands known for their stunning beaches and clear waters.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Nassau, Bahamas",
+          "endingLocation": "Turks and Caicos"
+        },
+        {
+          "startingLocation": "Turks and Caicos",
+          "endingLocation": "Puerto Rico"
+        },
+        {
+          "startingLocation": "Puerto Rico",
+          "endingLocation": "St. Lucia"
+        },
+        {
+          "startingLocation": "St. Lucia",
+          "endingLocation": "Barbados"
+        },
+        {
+          "startingLocation": "Barbados",
+          "endingLocation": "Trinidad and Tobago"
+        }
+      ]
+    },
+    {
+      "name": "The Bora Bora Lagoon Circuit",
+      "fictional": false,
+      "description": "A journey around the picturesque lagoons of Bora Bora, known for their crystal-clear waters and stunning coral reefs.",
+      "likelyDistance": 50,
+      "possibleSteps": [
+        {
+          "startingLocation": "Vaitape",
+          "endingLocation": "Matira Beach"
+        },
+        {
+          "startingLocation": "Matira Beach",
+          "endingLocation": "Coral Gardens"
+        },
+        {
+          "startingLocation": "Coral Gardens",
+          "endingLocation": "Mount Otemanu"
+        },
+        {
+          "startingLocation": "Mount Otemanu",
+          "endingLocation": "Anau"
+        },
+        {
+          "startingLocation": "Anau",
+          "endingLocation": "Vaitape"
+        }
+      ]
+    }
+  ]
+}

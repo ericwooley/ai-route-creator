@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Long Night of Westeros",
+    "fictional": true,
+    "description": "Journey through the lands of Westeros during the Long Night, where the sun never rises and the world is shrouded in darkness. Navigate through the icy landscapes and haunted forests, guided only by the stars and the flickering lights of distant fires.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Wall",
+        "endingLocation": "Winterfell"
+      },
+      {
+        "startingLocation": "Winterfell",
+        "endingLocation": "The Eyrie"
+      },
+      {
+        "startingLocation": "The Eyrie",
+        "endingLocation": "King's Landing"
+      },
+      {
+        "startingLocation": "King's Landing",
+        "endingLocation": "Storm's End"
+      },
+      {
+        "startingLocation": "Storm's End",
+        "endingLocation": "Dorne"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Midnight Sun of Scandinavia",
+      "fictional": false,
+      "description": "Experience the phenomenon of the Midnight Sun in Scandinavia, where the sun never sets during summer months. Traverse through the stunning landscapes of Norway, Sweden, and Finland, bathed in perpetual twilight.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Nordkapp, Norway",
+          "endingLocation": "Tromsø, Norway"
+        },
+        {
+          "startingLocation": "Tromsø, Norway",
+          "endingLocation": "Kiruna, Sweden"
+        },
+        {
+          "startingLocation": "Kiruna, Sweden",
+          "endingLocation": "Rovaniemi, Finland"
+        },
+        {
+          "startingLocation": "Rovaniemi, Finland",
+          "endingLocation": "Helsinki, Finland"
+        },
+        {
+          "startingLocation": "Helsinki, Finland",
+          "endingLocation": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "name": "The Eternal Night of Alaska",
+      "fictional": false,
+      "description": "Travel through the Alaskan wilderness during the polar night, where the sun barely rises above the horizon. Experience the serene beauty of the snow-covered landscapes under the glow of the Northern Lights.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Barrow, Alaska",
+          "endingLocation": "Fairbanks, Alaska"
+        },
+        {
+          "startingLocation": "Fairbanks, Alaska",
+          "endingLocation": "Anchorage, Alaska"
+        },
+        {
+          "startingLocation": "Anchorage, Alaska",
+          "endingLocation": "Juneau, Alaska"
+        },
+        {
+          "startingLocation": "Juneau, Alaska",
+          "endingLocation": "Ketchikan, Alaska"
+        },
+        {
+          "startingLocation": "Ketchikan, Alaska",
+          "endingLocation": "Sitka, Alaska"
+        }
+      ]
+    }
+  ]
+}

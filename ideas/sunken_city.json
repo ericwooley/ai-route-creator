@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Lost City of Atlantis",
+    "fictional": true,
+    "description": "Embark on a journey through the legendary sunken city of Atlantis, exploring its grand ruins and mysterious underwater landscapes.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Pillars of Hercules",
+        "endingLocation": "The Temple of Poseidon"
+      },
+      {
+        "startingLocation": "The Temple of Poseidon",
+        "endingLocation": "The Grand Amphitheater"
+      },
+      {
+        "startingLocation": "The Grand Amphitheater",
+        "endingLocation": "The Sunken Gardens"
+      },
+      {
+        "startingLocation": "The Sunken Gardens",
+        "endingLocation": "The Crystal Palace"
+      },
+      {
+        "startingLocation": "The Crystal Palace",
+        "endingLocation": "The Central Plaza"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Underwater Ruins of Dwarka",
+      "fictional": false,
+      "description": "Explore the submerged ruins of Dwarka, an ancient city believed to have been lost to the sea, now a site of archaeological intrigue.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Bet Dwarka",
+          "endingLocation": "Samudranarayan Temple"
+        },
+        {
+          "startingLocation": "Samudranarayan Temple",
+          "endingLocation": "Dwarkadhish Temple"
+        },
+        {
+          "startingLocation": "Dwarkadhish Temple",
+          "endingLocation": "Gomti Ghat"
+        },
+        {
+          "startingLocation": "Gomti Ghat",
+          "endingLocation": "Rukmini Devi Temple"
+        },
+        {
+          "startingLocation": "Rukmini Devi Temple",
+          "endingLocation": "Nageshwar Jyotirlinga"
+        }
+      ]
+    },
+    {
+      "name": "The Submerged City of Pavlopetri",
+      "fictional": false,
+      "description": "Discover the ancient city of Pavlopetri, one of the oldest known submerged cities, with its well-preserved streets and buildings.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Elafonisos",
+          "endingLocation": "Pavlopetri Ruins"
+        },
+        {
+          "startingLocation": "Pavlopetri Ruins",
+          "endingLocation": "Neapolis"
+        },
+        {
+          "startingLocation": "Neapolis",
+          "endingLocation": "Monemvasia"
+        },
+        {
+          "startingLocation": "Monemvasia",
+          "endingLocation": "Gythio"
+        },
+        {
+          "startingLocation": "Gythio",
+          "endingLocation": "Sparta"
+        }
+      ]
+    },
+    {
+      "name": "The Sunken City of Heracleion",
+      "fictional": false,
+      "description": "Venture into the depths of Heracleion, an ancient Egyptian city submerged beneath the Mediterranean Sea, revealing its hidden treasures.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Alexandria",
+          "endingLocation": "Canopus"
+        },
+        {
+          "startingLocation": "Canopus",
+          "endingLocation": "Heracleion Ruins"
+        },
+        {
+          "startingLocation": "Heracleion Ruins",
+          "endingLocation": "Thonis"
+        },
+        {
+          "startingLocation": "Thonis",
+          "endingLocation": "Aboukir Bay"
+        },
+        {
+          "startingLocation": "Aboukir Bay",
+          "endingLocation": "Rosetta"
+        }
+      ]
+    }
+  ]
+}

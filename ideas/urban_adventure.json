@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The New York City Marathon Route",
+    "fictional": false,
+    "description": "Experience the vibrant energy of New York City by following the iconic marathon route, which takes you through all five boroughs, showcasing the city's diverse neighborhoods and landmarks.",
+    "likelyDistance": 42.195,
+    "possibleSteps": [
+      {
+        "startingLocation": "Staten Island",
+        "endingLocation": "Brooklyn"
+      },
+      {
+        "startingLocation": "Brooklyn",
+        "endingLocation": "Queens"
+      },
+      {
+        "startingLocation": "Queens",
+        "endingLocation": "Manhattan"
+      },
+      {
+        "startingLocation": "Manhattan",
+        "endingLocation": "The Bronx"
+      },
+      {
+        "startingLocation": "The Bronx",
+        "endingLocation": "Central Park, Manhattan"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Tokyo City Loop",
+      "fictional": false,
+      "description": "Explore the bustling streets of Tokyo by following a loop that takes you through its most famous districts, from the historic Asakusa to the neon-lit Shibuya.",
+      "likelyDistance": 50,
+      "possibleSteps": [
+        {
+          "startingLocation": "Asakusa",
+          "endingLocation": "Akihabara"
+        },
+        {
+          "startingLocation": "Akihabara",
+          "endingLocation": "Shinjuku"
+        },
+        {
+          "startingLocation": "Shinjuku",
+          "endingLocation": "Shibuya"
+        },
+        {
+          "startingLocation": "Shibuya",
+          "endingLocation": "Roppongi"
+        },
+        {
+          "startingLocation": "Roppongi",
+          "endingLocation": "Asakusa"
+        }
+      ]
+    },
+    {
+      "name": "The Parisian Grand Tour",
+      "fictional": false,
+      "description": "Take a grand tour of Paris, starting from the historic Notre-Dame Cathedral and passing through iconic landmarks like the Eiffel Tower and the Champs-Élysées.",
+      "likelyDistance": 35,
+      "possibleSteps": [
+        {
+          "startingLocation": "Notre-Dame Cathedral",
+          "endingLocation": "Louvre Museum"
+        },
+        {
+          "startingLocation": "Louvre Museum",
+          "endingLocation": "Eiffel Tower"
+        },
+        {
+          "startingLocation": "Eiffel Tower",
+          "endingLocation": "Arc de Triomphe"
+        },
+        {
+          "startingLocation": "Arc de Triomphe",
+          "endingLocation": "Montmartre"
+        },
+        {
+          "startingLocation": "Montmartre",
+          "endingLocation": "Notre-Dame Cathedral"
+        }
+      ]
+    },
+    {
+      "name": "The London Royal Route",
+      "fictional": false,
+      "description": "Walk through the heart of London, visiting royal landmarks such as Buckingham Palace, the Tower of London, and the historic Westminster Abbey.",
+      "likelyDistance": 30,
+      "possibleSteps": [
+        {
+          "startingLocation": "Buckingham Palace",
+          "endingLocation": "Westminster Abbey"
+        },
+        {
+          "startingLocation": "Westminster Abbey",
+          "endingLocation": "Tower of London"
+        },
+        {
+          "startingLocation": "Tower of London",
+          "endingLocation": "St. Paul's Cathedral"
+        },
+        {
+          "startingLocation": "St. Paul's Cathedral",
+          "endingLocation": "British Museum"
+        },
+        {
+          "startingLocation": "British Museum",
+          "endingLocation": "Buckingham Palace"
+        }
+      ]
+    }
+  ]
+}

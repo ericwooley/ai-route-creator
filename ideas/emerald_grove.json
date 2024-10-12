@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "Sherwood Forest Adventure",
+    "fictional": true,
+    "description": "Embark on a journey through the legendary Sherwood Forest, home of Robin Hood. Traverse the lush, green landscape filled with towering oaks and hidden glades, where folklore and nature intertwine.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Nottingham Castle",
+        "endingLocation": "Major Oak"
+      },
+      {
+        "startingLocation": "Major Oak",
+        "endingLocation": "Edwinstowe Village"
+      },
+      {
+        "startingLocation": "Edwinstowe Village",
+        "endingLocation": "Thieves' Wood"
+      },
+      {
+        "startingLocation": "Thieves' Wood",
+        "endingLocation": "Sherwood Pines"
+      },
+      {
+        "startingLocation": "Sherwood Pines",
+        "endingLocation": "Clipstone Forest"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Amazon Rainforest Expedition",
+      "fictional": false,
+      "description": "Explore the vast and diverse Amazon Rainforest, a real-world emerald grove teeming with wildlife and vibrant plant life. Journey through the heart of the jungle, experiencing the rich biodiversity and natural beauty.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Manaus",
+          "endingLocation": "Anavilhanas National Park"
+        },
+        {
+          "startingLocation": "Anavilhanas National Park",
+          "endingLocation": "Jaú National Park"
+        },
+        {
+          "startingLocation": "Jaú National Park",
+          "endingLocation": "Mamori Lake"
+        },
+        {
+          "startingLocation": "Mamori Lake",
+          "endingLocation": "Juma Sustainable Development Reserve"
+        },
+        {
+          "startingLocation": "Juma Sustainable Development Reserve",
+          "endingLocation": "Tapajós National Forest"
+        }
+      ]
+    },
+    {
+      "name": "Fangorn Forest Trek",
+      "fictional": true,
+      "description": "Venture into the ancient and mysterious Fangorn Forest from J.R.R. Tolkien's Middle-earth. Navigate through the dense woods, where Ents roam and the air is filled with the whispers of the trees.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Isengard",
+          "endingLocation": "Treebeard's Hill"
+        },
+        {
+          "startingLocation": "Treebeard's Hill",
+          "endingLocation": "Wellinghall"
+        },
+        {
+          "startingLocation": "Wellinghall",
+          "endingLocation": "Entwash River"
+        },
+        {
+          "startingLocation": "Entwash River",
+          "endingLocation": "Rohan Border"
+        },
+        {
+          "startingLocation": "Rohan Border",
+          "endingLocation": "Helm's Deep"
+        }
+      ]
+    }
+  ]
+}

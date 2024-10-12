@@ -1,0 +1,100 @@
+{
+  "bestIdea": {
+    "name": "Grand Canyon Rim-to-Rim",
+    "fictional": false,
+    "description": "A challenging trek across the Grand Canyon, from the North Rim to the South Rim, showcasing breathtaking views of the canyon's vast expanse and geological wonders.",
+    "likelyDistance": 40,
+    "possibleSteps": [
+      {
+        "startingLocation": "North Kaibab Trailhead",
+        "endingLocation": "Cottonwood Campground"
+      },
+      {
+        "startingLocation": "Cottonwood Campground",
+        "endingLocation": "Phantom Ranch"
+      },
+      {
+        "startingLocation": "Phantom Ranch",
+        "endingLocation": "Bright Angel Campground"
+      },
+      {
+        "startingLocation": "Bright Angel Campground",
+        "endingLocation": "Indian Garden"
+      },
+      {
+        "startingLocation": "Indian Garden",
+        "endingLocation": "South Rim"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Zion National Park's The Narrows",
+      "fictional": false,
+      "description": "A hike through the narrowest section of Zion Canyon, where the Virgin River has carved a deep and narrow gorge with towering walls.",
+      "likelyDistance": 26,
+      "possibleSteps": [
+        {
+          "startingLocation": "Chamberlain's Ranch",
+          "endingLocation": "Orderville Canyon"
+        },
+        {
+          "startingLocation": "Orderville Canyon",
+          "endingLocation": "Big Springs"
+        },
+        {
+          "startingLocation": "Big Springs",
+          "endingLocation": "Wall Street"
+        },
+        {
+          "startingLocation": "Wall Street",
+          "endingLocation": "Temple of Sinawava"
+        }
+      ]
+    },
+    {
+      "name": "Bryce Canyon's Fairyland Loop",
+      "fictional": false,
+      "description": "A scenic loop trail in Bryce Canyon National Park, offering views of unique rock formations and hoodoos.",
+      "likelyDistance": 13,
+      "possibleSteps": [
+        {
+          "startingLocation": "Fairyland Point",
+          "endingLocation": "Tower Bridge"
+        },
+        {
+          "startingLocation": "Tower Bridge",
+          "endingLocation": "China Wall"
+        },
+        {
+          "startingLocation": "China Wall",
+          "endingLocation": "Sunrise Point"
+        }
+      ]
+    },
+    {
+      "name": "Mars Canyon Expedition",
+      "fictional": true,
+      "description": "An adventurous journey through the canyons of Mars, exploring the rugged Martian landscape and its mysterious geological formations.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Valles Marineris",
+          "endingLocation": "Candor Chasma"
+        },
+        {
+          "startingLocation": "Candor Chasma",
+          "endingLocation": "Ophir Chasma"
+        },
+        {
+          "startingLocation": "Ophir Chasma",
+          "endingLocation": "Melas Chasma"
+        },
+        {
+          "startingLocation": "Melas Chasma",
+          "endingLocation": "Noctis Labyrinthus"
+        }
+      ]
+    }
+  ]
+}

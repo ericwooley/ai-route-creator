@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "Dagobah Swamp Trek",
+    "fictional": true,
+    "description": "Explore the mysterious swamps of Dagobah, home to ancient Jedi secrets and strange, otherworldly creatures.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Yoda's Hut",
+        "endingLocation": "Dark Side Cave"
+      },
+      {
+        "startingLocation": "Dark Side Cave",
+        "endingLocation": "Swamp Clearing"
+      },
+      {
+        "startingLocation": "Swamp Clearing",
+        "endingLocation": "Gnarltree Forest"
+      },
+      {
+        "startingLocation": "Gnarltree Forest",
+        "endingLocation": "Misty Marshes"
+      },
+      {
+        "startingLocation": "Misty Marshes",
+        "endingLocation": "Jedi Training Grounds"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Swamps of Naboo",
+      "fictional": true,
+      "description": "Journey through the lush and mysterious swamps of Naboo, teeming with exotic wildlife and hidden Gungan cities.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Theed Palace",
+          "endingLocation": "Gungan Sacred Place"
+        },
+        {
+          "startingLocation": "Gungan Sacred Place",
+          "endingLocation": "Lianorm Swamp"
+        },
+        {
+          "startingLocation": "Lianorm Swamp",
+          "endingLocation": "Otah Gunga"
+        },
+        {
+          "startingLocation": "Otah Gunga",
+          "endingLocation": "Paonga Lake"
+        },
+        {
+          "startingLocation": "Paonga Lake",
+          "endingLocation": "Swamp Waterfalls"
+        }
+      ]
+    },
+    {
+      "name": "The Marshes of Mordor",
+      "fictional": true,
+      "description": "Traverse the treacherous marshes on the outskirts of Mordor, where the air is thick with mist and danger lurks at every turn.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Dead Marshes",
+          "endingLocation": "Gollum's Path"
+        },
+        {
+          "startingLocation": "Gollum's Path",
+          "endingLocation": "Morgul Vale"
+        },
+        {
+          "startingLocation": "Morgul Vale",
+          "endingLocation": "Black Gate"
+        },
+        {
+          "startingLocation": "Black Gate",
+          "endingLocation": "Nurnen Swamps"
+        },
+        {
+          "startingLocation": "Nurnen Swamps",
+          "endingLocation": "Mount Doom"
+        }
+      ]
+    }
+  ]
+}

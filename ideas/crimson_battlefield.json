@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Battle of Helm's Deep",
+    "fictional": true,
+    "description": "A journey through the legendary battlefield of Helm's Deep from J.R.R. Tolkien's Middle-earth, where the forces of Rohan defended against Saruman's army. The route takes you through the rugged terrain and fortifications of this epic battle.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Edoras",
+        "endingLocation": "Helm's Deep"
+      },
+      {
+        "startingLocation": "Helm's Deep",
+        "endingLocation": "The Deeping Wall"
+      },
+      {
+        "startingLocation": "The Deeping Wall",
+        "endingLocation": "The Glittering Caves"
+      },
+      {
+        "startingLocation": "The Glittering Caves",
+        "endingLocation": "The Hornburg"
+      },
+      {
+        "startingLocation": "The Hornburg",
+        "endingLocation": "Isengard"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Fields of Pelennor",
+      "fictional": true,
+      "description": "Traverse the vast fields outside Minas Tirith where the epic Battle of the Pelennor Fields took place in 'The Lord of the Rings'. Experience the journey from the city to the battlefield and beyond.",
+      "likelyDistance": 800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Minas Tirith",
+          "endingLocation": "Pelennor Fields"
+        },
+        {
+          "startingLocation": "Pelennor Fields",
+          "endingLocation": "Osgiliath"
+        },
+        {
+          "startingLocation": "Osgiliath",
+          "endingLocation": "Cair Andros"
+        },
+        {
+          "startingLocation": "Cair Andros",
+          "endingLocation": "The Black Gate"
+        },
+        {
+          "startingLocation": "The Black Gate",
+          "endingLocation": "Mount Doom"
+        }
+      ]
+    },
+    {
+      "name": "The Battle of Gettysburg",
+      "fictional": false,
+      "description": "Walk through the historic grounds of the Battle of Gettysburg, a turning point in the American Civil War. This route covers key locations of the three-day battle.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cemetery Hill",
+          "endingLocation": "Little Round Top"
+        },
+        {
+          "startingLocation": "Little Round Top",
+          "endingLocation": "Devil's Den"
+        },
+        {
+          "startingLocation": "Devil's Den",
+          "endingLocation": "The Wheatfield"
+        },
+        {
+          "startingLocation": "The Wheatfield",
+          "endingLocation": "Pickett's Charge"
+        },
+        {
+          "startingLocation": "Pickett's Charge",
+          "endingLocation": "Gettysburg National Cemetery"
+        }
+      ]
+    },
+    {
+      "name": "The Battle of Waterloo",
+      "fictional": false,
+      "description": "Explore the historic battlefield of Waterloo, where Napoleon Bonaparte faced the Duke of Wellington. This route takes you through the key sites of this decisive battle.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "La Haye Sainte",
+          "endingLocation": "Hougoumont"
+        },
+        {
+          "startingLocation": "Hougoumont",
+          "endingLocation": "Plancenoit"
+        },
+        {
+          "startingLocation": "Plancenoit",
+          "endingLocation": "La Belle Alliance"
+        },
+        {
+          "startingLocation": "La Belle Alliance",
+          "endingLocation": "Mont-Saint-Jean"
+        },
+        {
+          "startingLocation": "Mont-Saint-Jean",
+          "endingLocation": "Wellington's Headquarters"
+        }
+      ]
+    }
+  ]
+}

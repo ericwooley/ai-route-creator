@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Shadowy Streets of Gotham",
+    "fictional": true,
+    "description": "Navigate the dark and mysterious streets of Gotham City, where danger lurks in every shadow and the line between hero and villain is blurred. Experience the iconic locations from the world of Batman, from Arkham Asylum to Wayne Tower.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Arkham Asylum",
+        "endingLocation": "Gotham City Police Department"
+      },
+      {
+        "startingLocation": "Gotham City Police Department",
+        "endingLocation": "Ace Chemicals"
+      },
+      {
+        "startingLocation": "Ace Chemicals",
+        "endingLocation": "Wayne Tower"
+      },
+      {
+        "startingLocation": "Wayne Tower",
+        "endingLocation": "Crime Alley"
+      },
+      {
+        "startingLocation": "Crime Alley",
+        "endingLocation": "The Iceberg Lounge"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Mean Streets of Sin City",
+      "fictional": true,
+      "description": "Walk through the gritty and dangerous streets of Sin City, where every corner holds a new story of crime, corruption, and redemption. Explore the iconic locations from Frank Miller's graphic novels.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Basin City Central",
+          "endingLocation": "Kadie's Club Pecos"
+        },
+        {
+          "startingLocation": "Kadie's Club Pecos",
+          "endingLocation": "The Projects"
+        },
+        {
+          "startingLocation": "The Projects",
+          "endingLocation": "Old Town"
+        },
+        {
+          "startingLocation": "Old Town",
+          "endingLocation": "The Docks"
+        },
+        {
+          "startingLocation": "The Docks",
+          "endingLocation": "Roark Family Farm"
+        }
+      ]
+    },
+    {
+      "name": "The Dark Alleys of Los Angeles",
+      "fictional": false,
+      "description": "Explore the noir-inspired streets of Los Angeles, a city of dreams and despair. Follow the path of classic noir detectives through iconic locations like Hollywood Boulevard and the Bradbury Building.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Hollywood Boulevard",
+          "endingLocation": "The Bradbury Building"
+        },
+        {
+          "startingLocation": "The Bradbury Building",
+          "endingLocation": "Union Station"
+        },
+        {
+          "startingLocation": "Union Station",
+          "endingLocation": "Chinatown"
+        },
+        {
+          "startingLocation": "Chinatown",
+          "endingLocation": "The Griffith Observatory"
+        },
+        {
+          "startingLocation": "The Griffith Observatory",
+          "endingLocation": "Santa Monica Pier"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "bestIdea": {
+    "name": "Amazon River Expedition",
+    "fictional": false,
+    "description": "A journey through the heart of the Amazon Rainforest, following the course of the Amazon River. Experience the diverse ecosystems, from dense jungle to open riverbanks, and encounter unique wildlife and indigenous cultures.",
+    "likelyDistance": 6400,
+    "possibleSteps": [
+      {
+        "startingLocation": "Iquitos, Peru",
+        "endingLocation": "Manaus, Brazil"
+      },
+      {
+        "startingLocation": "Manaus, Brazil",
+        "endingLocation": "Santarém, Brazil"
+      },
+      {
+        "startingLocation": "Santarém, Brazil",
+        "endingLocation": "Macapá, Brazil"
+      },
+      {
+        "startingLocation": "Macapá, Brazil",
+        "endingLocation": "Belém, Brazil"
+      },
+      {
+        "startingLocation": "Belém, Brazil",
+        "endingLocation": "Atlantic Ocean"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Congo River Adventure",
+      "fictional": false,
+      "description": "Traverse the Congo River, the second longest river in Africa, through the dense and mysterious Congo Rainforest. Discover the rich biodiversity and the vibrant cultures along the riverbanks.",
+      "likelyDistance": 4700,
+      "possibleSteps": [
+        {
+          "startingLocation": "Kisangani, Democratic Republic of the Congo",
+          "endingLocation": "Mbandaka, Democratic Republic of the Congo"
+        },
+        {
+          "startingLocation": "Mbandaka, Democratic Republic of the Congo",
+          "endingLocation": "Kinshasa, Democratic Republic of the Congo"
+        },
+        {
+          "startingLocation": "Kinshasa, Democratic Republic of the Congo",
+          "endingLocation": "Matadi, Democratic Republic of the Congo"
+        },
+        {
+          "startingLocation": "Matadi, Democratic Republic of the Congo",
+          "endingLocation": "Atlantic Ocean"
+        }
+      ]
+    },
+    {
+      "name": "Borneo Rainforest Trek",
+      "fictional": false,
+      "description": "Explore the lush rainforests of Borneo, home to diverse wildlife including orangutans and pygmy elephants. The trek covers various national parks and conservation areas.",
+      "likelyDistance": 1500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Kota Kinabalu, Malaysia",
+          "endingLocation": "Kinabalu Park, Malaysia"
+        },
+        {
+          "startingLocation": "Kinabalu Park, Malaysia",
+          "endingLocation": "Gunung Mulu National Park, Malaysia"
+        },
+        {
+          "startingLocation": "Gunung Mulu National Park, Malaysia",
+          "endingLocation": "Kuching, Malaysia"
+        },
+        {
+          "startingLocation": "Kuching, Malaysia",
+          "endingLocation": "Bako National Park, Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Sumatra Jungle Journey",
+      "fictional": false,
+      "description": "Venture into the rainforests of Sumatra, Indonesia, known for their rich biodiversity and endangered species like the Sumatran tiger and rhinoceros.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Medan, Indonesia",
+          "endingLocation": "Gunung Leuser National Park, Indonesia"
+        },
+        {
+          "startingLocation": "Gunung Leuser National Park, Indonesia",
+          "endingLocation": "Bukit Barisan Selatan National Park, Indonesia"
+        },
+        {
+          "startingLocation": "Bukit Barisan Selatan National Park, Indonesia",
+          "endingLocation": "Kerinci Seblat National Park, Indonesia"
+        },
+        {
+          "startingLocation": "Kerinci Seblat National Park, Indonesia",
+          "endingLocation": "Padang, Indonesia"
+        }
+      ]
+    }
+  ]
+}

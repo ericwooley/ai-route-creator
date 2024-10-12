@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "Sahara Desert Expedition",
+    "fictional": false,
+    "description": "A journey across the vast Sahara Desert, the largest hot desert in the world, covering multiple countries in North Africa. Experience the endless sand dunes, ancient trade routes, and the unique cultures of the desert's inhabitants.",
+    "likelyDistance": 4800,
+    "possibleSteps": [
+      {
+        "startingLocation": "Nouakchott, Mauritania",
+        "endingLocation": "Timbuktu, Mali"
+      },
+      {
+        "startingLocation": "Timbuktu, Mali",
+        "endingLocation": "Agadez, Niger"
+      },
+      {
+        "startingLocation": "Agadez, Niger",
+        "endingLocation": "Ghat, Libya"
+      },
+      {
+        "startingLocation": "Ghat, Libya",
+        "endingLocation": "Siwa Oasis, Egypt"
+      },
+      {
+        "startingLocation": "Siwa Oasis, Egypt",
+        "endingLocation": "Cairo, Egypt"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Silk Road Desert Passage",
+      "fictional": false,
+      "description": "Traverse the desert sections of the ancient Silk Road, a network of trade routes that connected the East and West. This route takes you through the arid landscapes of Central Asia, where merchants once traveled with their caravans.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Xi'an, China",
+          "endingLocation": "Dunhuang, China"
+        },
+        {
+          "startingLocation": "Dunhuang, China",
+          "endingLocation": "Turpan, China"
+        },
+        {
+          "startingLocation": "Turpan, China",
+          "endingLocation": "Samarkand, Uzbekistan"
+        },
+        {
+          "startingLocation": "Samarkand, Uzbekistan",
+          "endingLocation": "Bukhara, Uzbekistan"
+        },
+        {
+          "startingLocation": "Bukhara, Uzbekistan",
+          "endingLocation": "Merv, Turkmenistan"
+        }
+      ]
+    },
+    {
+      "name": "The Arabian Desert Trek",
+      "fictional": false,
+      "description": "Explore the vast Arabian Desert, known for its stunning sand dunes and rich history. This route takes you through the heart of the Arabian Peninsula, visiting ancient cities and modern marvels.",
+      "likelyDistance": 2500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Riyadh, Saudi Arabia",
+          "endingLocation": "Al-Ula, Saudi Arabia"
+        },
+        {
+          "startingLocation": "Al-Ula, Saudi Arabia",
+          "endingLocation": "Petra, Jordan"
+        },
+        {
+          "startingLocation": "Petra, Jordan",
+          "endingLocation": "Wadi Rum, Jordan"
+        },
+        {
+          "startingLocation": "Wadi Rum, Jordan",
+          "endingLocation": "Aqaba, Jordan"
+        },
+        {
+          "startingLocation": "Aqaba, Jordan",
+          "endingLocation": "Muscat, Oman"
+        }
+      ]
+    },
+    {
+      "name": "The Gobi Desert Adventure",
+      "fictional": false,
+      "description": "Journey through the Gobi Desert, one of the largest deserts in Asia, known for its harsh climate and unique landscapes. This route offers a glimpse into the nomadic lifestyle and the natural beauty of Mongolia and northern China.",
+      "likelyDistance": 1600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Ulaanbaatar, Mongolia",
+          "endingLocation": "Dalanzadgad, Mongolia"
+        },
+        {
+          "startingLocation": "Dalanzadgad, Mongolia",
+          "endingLocation": "Yinchuan, China"
+        },
+        {
+          "startingLocation": "Yinchuan, China",
+          "endingLocation": "Zhangye, China"
+        },
+        {
+          "startingLocation": "Zhangye, China",
+          "endingLocation": "Jiayuguan, China"
+        },
+        {
+          "startingLocation": "Jiayuguan, China",
+          "endingLocation": "Dunhuang, China"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Hawaiian Island Chain Trek",
+    "fictional": false,
+    "description": "A journey across the Hawaiian Islands, exploring the diverse landscapes from the lush rainforests of Kauai to the volcanic terrains of the Big Island, with stops at pristine beaches and vibrant coral reefs.",
+    "likelyDistance": 2400,
+    "possibleSteps": [
+      {
+        "startingLocation": "Kauai",
+        "endingLocation": "Oahu"
+      },
+      {
+        "startingLocation": "Oahu",
+        "endingLocation": "Molokai"
+      },
+      {
+        "startingLocation": "Molokai",
+        "endingLocation": "Maui"
+      },
+      {
+        "startingLocation": "Maui",
+        "endingLocation": "Lanai"
+      },
+      {
+        "startingLocation": "Lanai",
+        "endingLocation": "Big Island"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Caribbean Island Hop",
+      "fictional": false,
+      "description": "A tropical adventure through the Caribbean, visiting famous islands like Jamaica, Puerto Rico, and the Bahamas, each offering unique cultures, cuisines, and stunning beaches.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Jamaica",
+          "endingLocation": "Cayman Islands"
+        },
+        {
+          "startingLocation": "Cayman Islands",
+          "endingLocation": "Cuba"
+        },
+        {
+          "startingLocation": "Cuba",
+          "endingLocation": "Hispaniola"
+        },
+        {
+          "startingLocation": "Hispaniola",
+          "endingLocation": "Puerto Rico"
+        },
+        {
+          "startingLocation": "Puerto Rico",
+          "endingLocation": "Bahamas"
+        }
+      ]
+    },
+    {
+      "name": "The Polynesian Voyage",
+      "fictional": false,
+      "description": "An exploration of the Polynesian islands, from the cultural heart of Tahiti to the remote beauty of Easter Island, experiencing the rich traditions and stunning natural beauty of the Pacific.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Tahiti",
+          "endingLocation": "Moorea"
+        },
+        {
+          "startingLocation": "Moorea",
+          "endingLocation": "Bora Bora"
+        },
+        {
+          "startingLocation": "Bora Bora",
+          "endingLocation": "Rarotonga"
+        },
+        {
+          "startingLocation": "Rarotonga",
+          "endingLocation": "Samoa"
+        },
+        {
+          "startingLocation": "Samoa",
+          "endingLocation": "Easter Island"
+        }
+      ]
+    },
+    {
+      "name": "The Seychelles Sojourn",
+      "fictional": false,
+      "description": "A journey through the idyllic islands of the Seychelles, known for their white-sand beaches, crystal-clear waters, and unique granite boulders, offering a paradise-like experience.",
+      "likelyDistance": 1500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mahé",
+          "endingLocation": "Praslin"
+        },
+        {
+          "startingLocation": "Praslin",
+          "endingLocation": "La Digue"
+        },
+        {
+          "startingLocation": "La Digue",
+          "endingLocation": "Silhouette Island"
+        },
+        {
+          "startingLocation": "Silhouette Island",
+          "endingLocation": "Fregate Island"
+        },
+        {
+          "startingLocation": "Fregate Island",
+          "endingLocation": "Aldabra Atoll"
+        }
+      ]
+    }
+  ]
+}

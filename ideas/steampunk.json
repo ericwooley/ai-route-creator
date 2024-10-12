@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Clockwork City of New Babbage",
+    "fictional": true,
+    "description": "Journey through the sprawling steampunk metropolis of New Babbage, where steam-powered machines and clockwork wonders define the landscape. Traverse cobblestone streets, navigate through bustling markets, and marvel at the towering airship docks.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Iron Gate",
+        "endingLocation": "The Steam Market"
+      },
+      {
+        "startingLocation": "The Steam Market",
+        "endingLocation": "The Clock Tower"
+      },
+      {
+        "startingLocation": "The Clock Tower",
+        "endingLocation": "The Airship Docks"
+      },
+      {
+        "startingLocation": "The Airship Docks",
+        "endingLocation": "The Brass Bridge"
+      },
+      {
+        "startingLocation": "The Brass Bridge",
+        "endingLocation": "The Observatory"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Steam-Powered Transcontinental Railway",
+      "fictional": true,
+      "description": "Embark on a journey across a vast continent aboard a steam-powered train. Experience the marvels of steampunk engineering as you travel through diverse landscapes, from industrial cities to serene countrysides.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Iron City Station",
+          "endingLocation": "The Copper Valley"
+        },
+        {
+          "startingLocation": "The Copper Valley",
+          "endingLocation": "The Gear Forest"
+        },
+        {
+          "startingLocation": "The Gear Forest",
+          "endingLocation": "The Steam Highlands"
+        },
+        {
+          "startingLocation": "The Steam Highlands",
+          "endingLocation": "The Brass Plains"
+        },
+        {
+          "startingLocation": "The Brass Plains",
+          "endingLocation": "The Clockwork Coast"
+        }
+      ]
+    },
+    {
+      "name": "The Airship Voyage to the Floating Isles",
+      "fictional": true,
+      "description": "Take to the skies in a grand airship, navigating through clouds and mechanical wonders to reach the legendary Floating Isles. Witness the beauty of steampunk aviation and the mysteries of the sky.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Skyport",
+          "endingLocation": "The Cloud Sea"
+        },
+        {
+          "startingLocation": "The Cloud Sea",
+          "endingLocation": "The Gear Archipelago"
+        },
+        {
+          "startingLocation": "The Gear Archipelago",
+          "endingLocation": "The Steamfall"
+        },
+        {
+          "startingLocation": "The Steamfall",
+          "endingLocation": "The Isle of Cogs"
+        },
+        {
+          "startingLocation": "The Isle of Cogs",
+          "endingLocation": "The Floating Isles"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Karakoram Highway",
+    "fictional": false,
+    "description": "A journey along the Karakoram Highway, one of the highest paved roads in the world, connecting China and Pakistan through the majestic Karakoram mountain range.",
+    "likelyDistance": 1300,
+    "possibleSteps": [
+      {
+        "startingLocation": "Islamabad, Pakistan",
+        "endingLocation": "Abbottabad, Pakistan"
+      },
+      {
+        "startingLocation": "Abbottabad, Pakistan",
+        "endingLocation": "Gilgit, Pakistan"
+      },
+      {
+        "startingLocation": "Gilgit, Pakistan",
+        "endingLocation": "Sust, Pakistan"
+      },
+      {
+        "startingLocation": "Sust, Pakistan",
+        "endingLocation": "Khunjerab Pass, Pakistan-China Border"
+      },
+      {
+        "startingLocation": "Khunjerab Pass, Pakistan-China Border",
+        "endingLocation": "Kashgar, China"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Trans-Himalayan Highway",
+      "fictional": false,
+      "description": "A route through the Trans-Himalayan region, offering breathtaking views of the Himalayas and connecting India, Nepal, and Tibet.",
+      "likelyDistance": 1600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Shimla, India",
+          "endingLocation": "Manali, India"
+        },
+        {
+          "startingLocation": "Manali, India",
+          "endingLocation": "Leh, India"
+        },
+        {
+          "startingLocation": "Leh, India",
+          "endingLocation": "Lhasa, Tibet"
+        },
+        {
+          "startingLocation": "Lhasa, Tibet",
+          "endingLocation": "Kathmandu, Nepal"
+        },
+        {
+          "startingLocation": "Kathmandu, Nepal",
+          "endingLocation": "Pokhara, Nepal"
+        }
+      ]
+    },
+    {
+      "name": "The Andes Mountain Trail",
+      "fictional": false,
+      "description": "A trek along the spine of the Andes, the longest continental mountain range in the world, stretching from Venezuela to Chile.",
+      "likelyDistance": 7000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Caracas, Venezuela",
+          "endingLocation": "Bogotá, Colombia"
+        },
+        {
+          "startingLocation": "Bogotá, Colombia",
+          "endingLocation": "Quito, Ecuador"
+        },
+        {
+          "startingLocation": "Quito, Ecuador",
+          "endingLocation": "Lima, Peru"
+        },
+        {
+          "startingLocation": "Lima, Peru",
+          "endingLocation": "La Paz, Bolivia"
+        },
+        {
+          "startingLocation": "La Paz, Bolivia",
+          "endingLocation": "Santiago, Chile"
+        }
+      ]
+    },
+    {
+      "name": "The Rocky Mountain Passage",
+      "fictional": false,
+      "description": "A scenic route through the Rocky Mountains, offering stunning views and diverse landscapes from Canada to the United States.",
+      "likelyDistance": 4800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Banff, Canada",
+          "endingLocation": "Jasper, Canada"
+        },
+        {
+          "startingLocation": "Jasper, Canada",
+          "endingLocation": "Calgary, Canada"
+        },
+        {
+          "startingLocation": "Calgary, Canada",
+          "endingLocation": "Yellowstone National Park, USA"
+        },
+        {
+          "startingLocation": "Yellowstone National Park, USA",
+          "endingLocation": "Denver, USA"
+        },
+        {
+          "startingLocation": "Denver, USA",
+          "endingLocation": "Santa Fe, USA"
+        }
+      ]
+    }
+  ]
+}

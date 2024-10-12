@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Fiery Path of Mount Doom",
+    "fictional": true,
+    "description": "A treacherous journey through the volcanic landscapes of Mordor, culminating in the ascent of Mount Doom. The path is fraught with danger, with rivers of lava and ash-filled skies.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Black Gate",
+        "endingLocation": "Udûn Valley"
+      },
+      {
+        "startingLocation": "Udûn Valley",
+        "endingLocation": "Gorgoroth Plains"
+      },
+      {
+        "startingLocation": "Gorgoroth Plains",
+        "endingLocation": "Mount Doom Base"
+      },
+      {
+        "startingLocation": "Mount Doom Base",
+        "endingLocation": "Mount Doom Summit"
+      },
+      {
+        "startingLocation": "Mount Doom Summit",
+        "endingLocation": "Cracks of Doom"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Ring of Fire Expedition",
+      "fictional": false,
+      "description": "A journey around the Pacific Ring of Fire, exploring the volcanic landscapes of countries like Japan, Indonesia, and Chile. Experience the power of active volcanoes and the beauty of volcanic islands.",
+      "likelyDistance": 40000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mount Fuji, Japan",
+          "endingLocation": "Mount Aso, Japan"
+        },
+        {
+          "startingLocation": "Mount Aso, Japan",
+          "endingLocation": "Mount Merapi, Indonesia"
+        },
+        {
+          "startingLocation": "Mount Merapi, Indonesia",
+          "endingLocation": "Mount Bromo, Indonesia"
+        },
+        {
+          "startingLocation": "Mount Bromo, Indonesia",
+          "endingLocation": "Mount Villarrica, Chile"
+        },
+        {
+          "startingLocation": "Mount Villarrica, Chile",
+          "endingLocation": "Mount Cotopaxi, Ecuador"
+        }
+      ]
+    },
+    {
+      "name": "The Path of Pele",
+      "fictional": false,
+      "description": "Explore the volcanic landscapes of Hawaii, following the legendary path of the goddess Pele. From the Kilauea Caldera to the Mauna Loa Summit, witness the fiery beauty of Hawaii's volcanoes.",
+      "likelyDistance": 500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Kilauea Caldera",
+          "endingLocation": "Chain of Craters Road"
+        },
+        {
+          "startingLocation": "Chain of Craters Road",
+          "endingLocation": "Pu'u 'O'o Crater"
+        },
+        {
+          "startingLocation": "Pu'u 'O'o Crater",
+          "endingLocation": "Mauna Loa Observatory"
+        },
+        {
+          "startingLocation": "Mauna Loa Observatory",
+          "endingLocation": "Mauna Loa Summit"
+        },
+        {
+          "startingLocation": "Mauna Loa Summit",
+          "endingLocation": "Hualalai Volcano"
+        }
+      ]
+    },
+    {
+      "name": "The Icelandic Volcanic Trail",
+      "fictional": false,
+      "description": "Traverse the volcanic landscapes of Iceland, from the famous Eyjafjallajökull to the active Hekla volcano. Experience the raw power and beauty of Iceland's fiery terrain.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Eyjafjallajökull",
+          "endingLocation": "Fimmvörðuháls Pass"
+        },
+        {
+          "startingLocation": "Fimmvörðuháls Pass",
+          "endingLocation": "Thórsmörk Valley"
+        },
+        {
+          "startingLocation": "Thórsmörk Valley",
+          "endingLocation": "Hekla Volcano"
+        },
+        {
+          "startingLocation": "Hekla Volcano",
+          "endingLocation": "Landmannalaugar"
+        },
+        {
+          "startingLocation": "Landmannalaugar",
+          "endingLocation": "Askja Caldera"
+        }
+      ]
+    }
+  ]
+}

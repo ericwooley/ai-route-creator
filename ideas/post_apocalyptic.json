@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Road to New Vegas",
+    "fictional": true,
+    "description": "A journey through the post-apocalyptic wasteland of the Mojave Desert, inspired by the setting of 'Fallout: New Vegas'. Traverse through desolate towns, abandoned military bases, and irradiated landscapes on your way to the neon lights of New Vegas.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Goodsprings",
+        "endingLocation": "Primm"
+      },
+      {
+        "startingLocation": "Primm",
+        "endingLocation": "Nipton"
+      },
+      {
+        "startingLocation": "Nipton",
+        "endingLocation": "Novac"
+      },
+      {
+        "startingLocation": "Novac",
+        "endingLocation": "Boulder City"
+      },
+      {
+        "startingLocation": "Boulder City",
+        "endingLocation": "New Vegas"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Journey to the Citadel",
+      "fictional": true,
+      "description": "Inspired by the 'Half-Life' series, this route takes you through the remnants of City 17, past Combine checkpoints, and through the hazardous wastelands to reach the towering Citadel.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "City 17 Outskirts",
+          "endingLocation": "Ravenholm"
+        },
+        {
+          "startingLocation": "Ravenholm",
+          "endingLocation": "Highway 17"
+        },
+        {
+          "startingLocation": "Highway 17",
+          "endingLocation": "Nova Prospekt"
+        },
+        {
+          "startingLocation": "Nova Prospekt",
+          "endingLocation": "City 17"
+        },
+        {
+          "startingLocation": "City 17",
+          "endingLocation": "The Citadel"
+        }
+      ]
+    },
+    {
+      "name": "The Ruins of Washington D.C.",
+      "fictional": true,
+      "description": "Explore the post-apocalyptic ruins of Washington D.C., inspired by 'Fallout 3'. Navigate through the Capital Wasteland, visiting iconic landmarks now in decay.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Megaton",
+          "endingLocation": "Super Duper Mart"
+        },
+        {
+          "startingLocation": "Super Duper Mart",
+          "endingLocation": "Rivet City"
+        },
+        {
+          "startingLocation": "Rivet City",
+          "endingLocation": "The National Mall"
+        },
+        {
+          "startingLocation": "The National Mall",
+          "endingLocation": "The Pentagon"
+        },
+        {
+          "startingLocation": "The Pentagon",
+          "endingLocation": "The Citadel"
+        }
+      ]
+    },
+    {
+      "name": "The Long Walk to Sanctuary",
+      "fictional": true,
+      "description": "Inspired by 'The Walking Dead', this route takes you through the zombie-infested landscapes of Georgia, from Atlanta to the safe haven of Sanctuary.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Atlanta",
+          "endingLocation": "Terminus"
+        },
+        {
+          "startingLocation": "Terminus",
+          "endingLocation": "Alexandria"
+        },
+        {
+          "startingLocation": "Alexandria",
+          "endingLocation": "Hilltop Colony"
+        },
+        {
+          "startingLocation": "Hilltop Colony",
+          "endingLocation": "The Kingdom"
+        },
+        {
+          "startingLocation": "The Kingdom",
+          "endingLocation": "Sanctuary"
+        }
+      ]
+    }
+  ]
+}

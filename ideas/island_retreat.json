@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Hawaiian Island Hop",
+    "fictional": false,
+    "description": "A journey across the Hawaiian Islands, exploring the diverse landscapes from volcanic craters to lush rainforests and pristine beaches.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Hilo, Hawaii (Big Island)",
+        "endingLocation": "Kailua-Kona, Hawaii (Big Island)"
+      },
+      {
+        "startingLocation": "Kailua-Kona, Hawaii (Big Island)",
+        "endingLocation": "Haleakalā National Park, Maui"
+      },
+      {
+        "startingLocation": "Haleakalā National Park, Maui",
+        "endingLocation": "Lahaina, Maui"
+      },
+      {
+        "startingLocation": "Lahaina, Maui",
+        "endingLocation": "Waikiki, Oahu"
+      },
+      {
+        "startingLocation": "Waikiki, Oahu",
+        "endingLocation": "Na Pali Coast, Kauai"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Caribbean Cruise",
+      "fictional": false,
+      "description": "A scenic route through the Caribbean islands, featuring vibrant cultures, stunning beaches, and tropical rainforests.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "San Juan, Puerto Rico",
+          "endingLocation": "Charlotte Amalie, U.S. Virgin Islands"
+        },
+        {
+          "startingLocation": "Charlotte Amalie, U.S. Virgin Islands",
+          "endingLocation": "Bridgetown, Barbados"
+        },
+        {
+          "startingLocation": "Bridgetown, Barbados",
+          "endingLocation": "Castries, Saint Lucia"
+        },
+        {
+          "startingLocation": "Castries, Saint Lucia",
+          "endingLocation": "Kingstown, Saint Vincent and the Grenadines"
+        },
+        {
+          "startingLocation": "Kingstown, Saint Vincent and the Grenadines",
+          "endingLocation": "St. George's, Grenada"
+        }
+      ]
+    },
+    {
+      "name": "The Greek Island Odyssey",
+      "fictional": false,
+      "description": "A journey through the enchanting Greek islands, exploring ancient ruins, white-washed villages, and azure waters.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Athens, Greece",
+          "endingLocation": "Santorini, Greece"
+        },
+        {
+          "startingLocation": "Santorini, Greece",
+          "endingLocation": "Mykonos, Greece"
+        },
+        {
+          "startingLocation": "Mykonos, Greece",
+          "endingLocation": "Rhodes, Greece"
+        },
+        {
+          "startingLocation": "Rhodes, Greece",
+          "endingLocation": "Crete, Greece"
+        },
+        {
+          "startingLocation": "Crete, Greece",
+          "endingLocation": "Corfu, Greece"
+        }
+      ]
+    },
+    {
+      "name": "The Maldives Atoll Adventure",
+      "fictional": false,
+      "description": "An exploration of the Maldives' atolls, featuring crystal-clear lagoons, coral reefs, and luxurious island resorts.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Malé, Maldives",
+          "endingLocation": "Baa Atoll, Maldives"
+        },
+        {
+          "startingLocation": "Baa Atoll, Maldives",
+          "endingLocation": "Ari Atoll, Maldives"
+        },
+        {
+          "startingLocation": "Ari Atoll, Maldives",
+          "endingLocation": "Lhaviyani Atoll, Maldives"
+        },
+        {
+          "startingLocation": "Lhaviyani Atoll, Maldives",
+          "endingLocation": "Raa Atoll, Maldives"
+        },
+        {
+          "startingLocation": "Raa Atoll, Maldives",
+          "endingLocation": "Noonu Atoll, Maldives"
+        }
+      ]
+    }
+  ]
+}

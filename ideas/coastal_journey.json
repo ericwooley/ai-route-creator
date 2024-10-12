@@ -1,0 +1,96 @@
+{
+  "bestIdea": {
+    "name": "Pacific Coast Highway",
+    "fictional": false,
+    "description": "A scenic drive along the California coast, offering breathtaking views of the Pacific Ocean, rugged cliffs, and charming coastal towns.",
+    "likelyDistance": 1000,
+    "possibleSteps": [
+      {
+        "startingLocation": "San Francisco",
+        "endingLocation": "Santa Cruz"
+      },
+      {
+        "startingLocation": "Santa Cruz",
+        "endingLocation": "Monterey"
+      },
+      {
+        "startingLocation": "Monterey",
+        "endingLocation": "San Luis Obispo"
+      },
+      {
+        "startingLocation": "San Luis Obispo",
+        "endingLocation": "Santa Barbara"
+      },
+      {
+        "startingLocation": "Santa Barbara",
+        "endingLocation": "Los Angeles"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Great Ocean Road",
+      "fictional": false,
+      "description": "A famous coastal route in Australia, known for its stunning ocean views, the Twelve Apostles rock formations, and lush rainforests.",
+      "likelyDistance": 243,
+      "possibleSteps": [
+        {
+          "startingLocation": "Torquay",
+          "endingLocation": "Lorne"
+        },
+        {
+          "startingLocation": "Lorne",
+          "endingLocation": "Apollo Bay"
+        },
+        {
+          "startingLocation": "Apollo Bay",
+          "endingLocation": "Port Campbell"
+        },
+        {
+          "startingLocation": "Port Campbell",
+          "endingLocation": "Warrnambool"
+        }
+      ]
+    },
+    {
+      "name": "Amalfi Coast",
+      "fictional": false,
+      "description": "A picturesque coastal route in Italy, featuring dramatic cliffs, charming villages, and the sparkling Mediterranean Sea.",
+      "likelyDistance": 50,
+      "possibleSteps": [
+        {
+          "startingLocation": "Sorrento",
+          "endingLocation": "Positano"
+        },
+        {
+          "startingLocation": "Positano",
+          "endingLocation": "Amalfi"
+        },
+        {
+          "startingLocation": "Amalfi",
+          "endingLocation": "Ravello"
+        }
+      ]
+    },
+    {
+      "name": "Garden Route",
+      "fictional": false,
+      "description": "A scenic drive along South Africa's southeastern coast, known for its diverse ecosystems, beautiful beaches, and lush forests.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mossel Bay",
+          "endingLocation": "Knysna"
+        },
+        {
+          "startingLocation": "Knysna",
+          "endingLocation": "Plettenberg Bay"
+        },
+        {
+          "startingLocation": "Plettenberg Bay",
+          "endingLocation": "Tsitsikamma"
+        }
+      ]
+    }
+  ]
+}

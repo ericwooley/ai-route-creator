@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Mines of Moria",
+    "fictional": true,
+    "description": "Journey through the legendary Mines of Moria, a vast underground complex in Middle-earth, filled with echoes of ancient battles and whispers of long-lost dwarven secrets.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "West Gate",
+        "endingLocation": "First Hall"
+      },
+      {
+        "startingLocation": "First Hall",
+        "endingLocation": "Bridge of Khazad-dûm"
+      },
+      {
+        "startingLocation": "Bridge of Khazad-dûm",
+        "endingLocation": "Second Hall"
+      },
+      {
+        "startingLocation": "Second Hall",
+        "endingLocation": "Chamber of Mazarbul"
+      },
+      {
+        "startingLocation": "Chamber of Mazarbul",
+        "endingLocation": "East Gate"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Whispering Caves of Andros",
+      "fictional": true,
+      "description": "Explore the Whispering Caves of Andros, where the winds carry the voices of ancient spirits and the walls are adorned with glowing runes.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cave Entrance",
+          "endingLocation": "Echoing Chamber"
+        },
+        {
+          "startingLocation": "Echoing Chamber",
+          "endingLocation": "Rune Hall"
+        },
+        {
+          "startingLocation": "Rune Hall",
+          "endingLocation": "Crystal Cavern"
+        },
+        {
+          "startingLocation": "Crystal Cavern",
+          "endingLocation": "Whispering Gallery"
+        },
+        {
+          "startingLocation": "Whispering Gallery",
+          "endingLocation": "Exit Tunnel"
+        }
+      ]
+    },
+    {
+      "name": "The Labyrinth of Echoes",
+      "fictional": true,
+      "description": "Navigate the Labyrinth of Echoes, a maze of tunnels where every footstep is amplified and the air is thick with the murmurs of the past.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Labyrinth Entrance",
+          "endingLocation": "Hall of Murmurs"
+        },
+        {
+          "startingLocation": "Hall of Murmurs",
+          "endingLocation": "Chamber of Shadows"
+        },
+        {
+          "startingLocation": "Chamber of Shadows",
+          "endingLocation": "Corridor of Whispers"
+        },
+        {
+          "startingLocation": "Corridor of Whispers",
+          "endingLocation": "Vault of Echoes"
+        },
+        {
+          "startingLocation": "Vault of Echoes",
+          "endingLocation": "Labyrinth Exit"
+        }
+      ]
+    }
+  ]
+}

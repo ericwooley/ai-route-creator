@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "Journey Across Arrakis",
+    "fictional": true,
+    "description": "Traverse the vast, sandy expanses of Arrakis, the desert planet from Frank Herbert's Dune series. Experience the harsh environment, massive sand dunes, and the ever-present threat of sandworms.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Arrakeen",
+        "endingLocation": "Sietch Tabr"
+      },
+      {
+        "startingLocation": "Sietch Tabr",
+        "endingLocation": "Carthag"
+      },
+      {
+        "startingLocation": "Carthag",
+        "endingLocation": "Habbanya Ridge"
+      },
+      {
+        "startingLocation": "Habbanya Ridge",
+        "endingLocation": "The Shield Wall"
+      },
+      {
+        "startingLocation": "The Shield Wall",
+        "endingLocation": "Arrakeen"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Mars Desert Trek",
+      "fictional": false,
+      "description": "Explore the Martian landscape, inspired by real-world Mars rover missions. Traverse the red planet's dusty plains, rocky outcrops, and ancient riverbeds.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Olympus Mons",
+          "endingLocation": "Valles Marineris"
+        },
+        {
+          "startingLocation": "Valles Marineris",
+          "endingLocation": "Gale Crater"
+        },
+        {
+          "startingLocation": "Gale Crater",
+          "endingLocation": "Hellas Basin"
+        },
+        {
+          "startingLocation": "Hellas Basin",
+          "endingLocation": "Tharsis Plateau"
+        },
+        {
+          "startingLocation": "Tharsis Plateau",
+          "endingLocation": "Olympus Mons"
+        }
+      ]
+    },
+    {
+      "name": "The Deserts of Tatooine",
+      "fictional": true,
+      "description": "Walk through the iconic deserts of Tatooine from the Star Wars universe. Experience the twin suns, sand dunes, and the bustling spaceports.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mos Eisley",
+          "endingLocation": "Jundland Wastes"
+        },
+        {
+          "startingLocation": "Jundland Wastes",
+          "endingLocation": "Anchorhead"
+        },
+        {
+          "startingLocation": "Anchorhead",
+          "endingLocation": "Beggar's Canyon"
+        },
+        {
+          "startingLocation": "Beggar's Canyon",
+          "endingLocation": "Mos Espa"
+        },
+        {
+          "startingLocation": "Mos Espa",
+          "endingLocation": "Mos Eisley"
+        }
+      ]
+    }
+  ]
+}

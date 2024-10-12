@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Overgrown Streets of New York",
+    "fictional": true,
+    "description": "Imagine a New York City where nature has reclaimed the urban landscape. Skyscrapers are covered in vines, Central Park has expanded to engulf the city, and wildlife roams freely through Times Square.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Central Park",
+        "endingLocation": "Times Square"
+      },
+      {
+        "startingLocation": "Times Square",
+        "endingLocation": "Brooklyn Bridge"
+      },
+      {
+        "startingLocation": "Brooklyn Bridge",
+        "endingLocation": "Wall Street"
+      },
+      {
+        "startingLocation": "Wall Street",
+        "endingLocation": "Statue of Liberty"
+      },
+      {
+        "startingLocation": "Statue of Liberty",
+        "endingLocation": "Empire State Building"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Jungle of Tokyo",
+      "fictional": true,
+      "description": "Tokyo has been overtaken by lush greenery, with the iconic Shibuya Crossing now a dense forest and the Tokyo Tower wrapped in vines.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Shibuya Crossing",
+          "endingLocation": "Tokyo Tower"
+        },
+        {
+          "startingLocation": "Tokyo Tower",
+          "endingLocation": "Imperial Palace"
+        },
+        {
+          "startingLocation": "Imperial Palace",
+          "endingLocation": "Akihabara"
+        },
+        {
+          "startingLocation": "Akihabara",
+          "endingLocation": "Asakusa"
+        },
+        {
+          "startingLocation": "Asakusa",
+          "endingLocation": "Odaiba"
+        }
+      ]
+    },
+    {
+      "name": "The Green Canals of Venice",
+      "fictional": true,
+      "description": "Venice's famous canals are now lined with dense foliage, and the city's historic architecture is intertwined with nature.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Piazza San Marco",
+          "endingLocation": "Rialto Bridge"
+        },
+        {
+          "startingLocation": "Rialto Bridge",
+          "endingLocation": "Grand Canal"
+        },
+        {
+          "startingLocation": "Grand Canal",
+          "endingLocation": "Doge's Palace"
+        },
+        {
+          "startingLocation": "Doge's Palace",
+          "endingLocation": "Murano Island"
+        },
+        {
+          "startingLocation": "Murano Island",
+          "endingLocation": "Lido Beach"
+        }
+      ]
+    },
+    {
+      "name": "The Wilds of London",
+      "fictional": true,
+      "description": "London has transformed into a sprawling urban jungle, with the Thames River surrounded by thick forests and Big Ben peeking through the canopy.",
+      "likelyDistance": 700,
+      "possibleSteps": [
+        {
+          "startingLocation": "Big Ben",
+          "endingLocation": "Tower Bridge"
+        },
+        {
+          "startingLocation": "Tower Bridge",
+          "endingLocation": "Buckingham Palace"
+        },
+        {
+          "startingLocation": "Buckingham Palace",
+          "endingLocation": "Hyde Park"
+        },
+        {
+          "startingLocation": "Hyde Park",
+          "endingLocation": "The British Museum"
+        },
+        {
+          "startingLocation": "The British Museum",
+          "endingLocation": "Greenwich Park"
+        }
+      ]
+    }
+  ]
+}

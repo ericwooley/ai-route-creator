@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Gardens of Babylon",
+    "fictional": true,
+    "description": "A journey through the legendary Hanging Gardens of Babylon, one of the Seven Wonders of the Ancient World. This route takes you through lush terraces filled with exotic plants and flowers, cascading waterfalls, and serene pools.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Entrance of the Gardens",
+        "endingLocation": "First Terrace"
+      },
+      {
+        "startingLocation": "First Terrace",
+        "endingLocation": "Waterfall Path"
+      },
+      {
+        "startingLocation": "Waterfall Path",
+        "endingLocation": "Exotic Plant Section"
+      },
+      {
+        "startingLocation": "Exotic Plant Section",
+        "endingLocation": "Serene Pool"
+      },
+      {
+        "startingLocation": "Serene Pool",
+        "endingLocation": "Top Terrace Overlook"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Versailles Gardens Stroll",
+      "fictional": false,
+      "description": "Explore the opulent gardens of the Palace of Versailles, with its meticulously manicured lawns, ornate fountains, and grand sculptures. This route offers a glimpse into the grandeur of French royal gardens.",
+      "likelyDistance": 800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Palace Entrance",
+          "endingLocation": "Orangery Garden"
+        },
+        {
+          "startingLocation": "Orangery Garden",
+          "endingLocation": "Latona Fountain"
+        },
+        {
+          "startingLocation": "Latona Fountain",
+          "endingLocation": "Grand Canal"
+        },
+        {
+          "startingLocation": "Grand Canal",
+          "endingLocation": "Apollo Fountain"
+        },
+        {
+          "startingLocation": "Apollo Fountain",
+          "endingLocation": "Queen's Hamlet"
+        }
+      ]
+    },
+    {
+      "name": "Kew Gardens Expedition",
+      "fictional": false,
+      "description": "A journey through the Royal Botanic Gardens, Kew, featuring a vast collection of plants from around the world, iconic glasshouses, and beautiful landscapes.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Victoria Gate",
+          "endingLocation": "Palm House"
+        },
+        {
+          "startingLocation": "Palm House",
+          "endingLocation": "Temperate House"
+        },
+        {
+          "startingLocation": "Temperate House",
+          "endingLocation": "Japanese Garden"
+        },
+        {
+          "startingLocation": "Japanese Garden",
+          "endingLocation": "Treetop Walkway"
+        },
+        {
+          "startingLocation": "Treetop Walkway",
+          "endingLocation": "Waterlily House"
+        }
+      ]
+    },
+    {
+      "name": "The Secret Garden Quest",
+      "fictional": true,
+      "description": "Inspired by the classic novel, this route takes you through a hidden, magical garden where every turn reveals new wonders and secrets.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Mysterious Gate",
+          "endingLocation": "Rose Archway"
+        },
+        {
+          "startingLocation": "Rose Archway",
+          "endingLocation": "Hidden Pond"
+        },
+        {
+          "startingLocation": "Hidden Pond",
+          "endingLocation": "Wisteria Tunnel"
+        },
+        {
+          "startingLocation": "Wisteria Tunnel",
+          "endingLocation": "Secret Clearing"
+        },
+        {
+          "startingLocation": "Secret Clearing",
+          "endingLocation": "Enchanted Fountain"
+        }
+      ]
+    }
+  ]
+}

@@ -71,6 +71,10 @@ const answerSchema = z.object({
   answer: z.string().describe('The answer to the question'),
   answerQuality: answerQualitySchema,
   snippet: z.string().describe('The snippet of text that the answer was extracted from.'),
+  content: z
+    .string()
+    .optional()
+    .describe('If the answer is high quality, add as much context as possible for the answer.'),
 })
 export type Answer = z.infer<typeof answerSchema> & {
   query: string
@@ -139,9 +143,9 @@ export const createSearchTool = <T extends ZodTypeAny>({
       const cacheKey = llm._modelType() + name + `:search-${query}`
       const cachedResponse = await redis.get(cacheKey)
       if (cachedResponse) {
-        const finalAnswer = transform(JSON.parse(cachedResponse).finalAnswer)
+        const { finalAnswer, ...answers } = transform(JSON.parse(cachedResponse).finalAnswer)
         logVerbose('Using cached response:', JSON.stringify(finalAnswer, null, 2))
-        return { query, ...finalAnswer }
+        return { query, definitiveAnswer: finalAnswer, context: answers }
       }
       logVerbose('Searching for:', query)
       const results = await searchGoogle({ query, verbose, name })
@@ -161,7 +165,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
       await redis.set(cacheKey, JSON.stringify(answers), 'EX', 60 * 60 * 24 * 7)
       const finalAnswer = transform(answers.finalAnswer)
       logVerbose('Final Answer:', finalAnswer)
-      return { query, ...finalAnswer }
+      return { query, definitiveAnswer: finalAnswer, context: answers }
     },
   })
 
@@ -327,6 +331,11 @@ export async function boilDownResults<T extends ZodTypeAny>({
       })
     )
     const finalAnswerSchema = z.object({
+      answerContext: z
+        .string()
+        .describe(
+          'Compile all the context from the answers to give a high quality and in depth answer context, so that the user can understand the answer'
+        ),
       finalAnswer: resultSchema.describe(
         (
           'The answer to the user query, do not use a range, or multiple answers, give a definitive answer to the query, that the user can use to solve their problem. If the answer is not known from the search, make an educated guess, and mark the quality as 1' +

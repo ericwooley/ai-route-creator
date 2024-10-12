@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Inca Trail to Machu Picchu",
+    "fictional": false,
+    "description": "Follow the ancient paths of the Incas through the Andes mountains, culminating in the breathtaking ruins of Machu Picchu. This historic trek offers a glimpse into the past with its well-preserved archaeological sites.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Cusco",
+        "endingLocation": "Ollantaytambo"
+      },
+      {
+        "startingLocation": "Ollantaytambo",
+        "endingLocation": "Wayllabamba"
+      },
+      {
+        "startingLocation": "Wayllabamba",
+        "endingLocation": "Pacaymayo"
+      },
+      {
+        "startingLocation": "Pacaymayo",
+        "endingLocation": "Wiñay Wayna"
+      },
+      {
+        "startingLocation": "Wiñay Wayna",
+        "endingLocation": "Machu Picchu"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Lost City of Petra",
+      "fictional": false,
+      "description": "Explore the ancient Nabatean city of Petra, carved into the rose-red cliffs of southern Jordan. This route takes you through the Siq, past the iconic Treasury, and into the heart of this archaeological wonder.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Wadi Musa",
+          "endingLocation": "The Siq"
+        },
+        {
+          "startingLocation": "The Siq",
+          "endingLocation": "The Treasury"
+        },
+        {
+          "startingLocation": "The Treasury",
+          "endingLocation": "The Street of Facades"
+        },
+        {
+          "startingLocation": "The Street of Facades",
+          "endingLocation": "The Monastery"
+        },
+        {
+          "startingLocation": "The Monastery",
+          "endingLocation": "The High Place of Sacrifice"
+        }
+      ]
+    },
+    {
+      "name": "The Great Wall of China",
+      "fictional": false,
+      "description": "Traverse the ancient fortifications of the Great Wall of China, stretching across the northern borders of China. This monumental structure offers a journey through history and stunning landscapes.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Jiayuguan",
+          "endingLocation": "Juyongguan"
+        },
+        {
+          "startingLocation": "Juyongguan",
+          "endingLocation": "Mutianyu"
+        },
+        {
+          "startingLocation": "Mutianyu",
+          "endingLocation": "Jinshanling"
+        },
+        {
+          "startingLocation": "Jinshanling",
+          "endingLocation": "Simatai"
+        },
+        {
+          "startingLocation": "Simatai",
+          "endingLocation": "Shanhaiguan"
+        }
+      ]
+    },
+    {
+      "name": "The Pyramids of Giza",
+      "fictional": false,
+      "description": "Walk through the sands of time to the Pyramids of Giza, one of the most iconic ancient sites in the world. This route takes you from the bustling city of Cairo to the enigmatic Sphinx and the towering pyramids.",
+      "likelyDistance": 100,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cairo",
+          "endingLocation": "Giza Plateau"
+        },
+        {
+          "startingLocation": "Giza Plateau",
+          "endingLocation": "The Great Pyramid"
+        },
+        {
+          "startingLocation": "The Great Pyramid",
+          "endingLocation": "The Pyramid of Khafre"
+        },
+        {
+          "startingLocation": "The Pyramid of Khafre",
+          "endingLocation": "The Pyramid of Menkaure"
+        },
+        {
+          "startingLocation": "The Pyramid of Menkaure",
+          "endingLocation": "The Great Sphinx"
+        }
+      ]
+    }
+  ]
+}

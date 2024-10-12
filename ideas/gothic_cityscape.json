@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Streets of Victorian London",
+    "fictional": false,
+    "description": "Explore the dark and atmospheric streets of Victorian London, where history and mystery intertwine. Walk through the fog-laden alleys and past iconic landmarks that tell tales of the past.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Tower of London",
+        "endingLocation": "St. Paul's Cathedral"
+      },
+      {
+        "startingLocation": "St. Paul's Cathedral",
+        "endingLocation": "Westminster Abbey"
+      },
+      {
+        "startingLocation": "Westminster Abbey",
+        "endingLocation": "British Museum"
+      },
+      {
+        "startingLocation": "British Museum",
+        "endingLocation": "Covent Garden"
+      },
+      {
+        "startingLocation": "Covent Garden",
+        "endingLocation": "Baker Street"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Gothic Alleys of Prague",
+      "fictional": false,
+      "description": "Wander through the historic and gothic alleys of Prague, a city known for its medieval architecture and haunting beauty. Discover the secrets hidden within its cobblestone streets.",
+      "likelyDistance": 400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Prague Castle",
+          "endingLocation": "Charles Bridge"
+        },
+        {
+          "startingLocation": "Charles Bridge",
+          "endingLocation": "Old Town Square"
+        },
+        {
+          "startingLocation": "Old Town Square",
+          "endingLocation": "Wenceslas Square"
+        },
+        {
+          "startingLocation": "Wenceslas Square",
+          "endingLocation": "Vyšehrad"
+        },
+        {
+          "startingLocation": "Vyšehrad",
+          "endingLocation": "Petrin Hill"
+        }
+      ]
+    },
+    {
+      "name": "The Shadows of Transylvania",
+      "fictional": false,
+      "description": "Traverse the eerie landscapes of Transylvania, where gothic castles and misty mountains create a setting straight out of a horror novel. Experience the chilling allure of this legendary region.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Bran Castle",
+          "endingLocation": "Rasnov Fortress"
+        },
+        {
+          "startingLocation": "Rasnov Fortress",
+          "endingLocation": "Sighisoara"
+        },
+        {
+          "startingLocation": "Sighisoara",
+          "endingLocation": "Biertan Fortified Church"
+        },
+        {
+          "startingLocation": "Biertan Fortified Church",
+          "endingLocation": "Corvin Castle"
+        },
+        {
+          "startingLocation": "Corvin Castle",
+          "endingLocation": "Poenari Castle"
+        }
+      ]
+    },
+    {
+      "name": "The Haunting of Edinburgh",
+      "fictional": false,
+      "description": "Walk through the historic and ghostly streets of Edinburgh, a city steeped in gothic architecture and tales of the supernatural. Discover the legends that haunt its ancient buildings.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Edinburgh Castle",
+          "endingLocation": "Royal Mile"
+        },
+        {
+          "startingLocation": "Royal Mile",
+          "endingLocation": "Holyrood Palace"
+        },
+        {
+          "startingLocation": "Holyrood Palace",
+          "endingLocation": "Greyfriars Kirkyard"
+        },
+        {
+          "startingLocation": "Greyfriars Kirkyard",
+          "endingLocation": "Arthur's Seat"
+        },
+        {
+          "startingLocation": "Arthur's Seat",
+          "endingLocation": "Calton Hill"
+        }
+      ]
+    }
+  ]
+}

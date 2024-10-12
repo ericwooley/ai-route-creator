@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Enchanted Forest of Narnia",
+    "fictional": true,
+    "description": "Journey through the magical land of Narnia, where mythical creatures roam and the landscape is ever-changing with enchantment. Follow the path from the wardrobe to the majestic Cair Paravel.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Wardrobe",
+        "endingLocation": "The Lantern Waste"
+      },
+      {
+        "startingLocation": "The Lantern Waste",
+        "endingLocation": "Mr. Tumnus's House"
+      },
+      {
+        "startingLocation": "Mr. Tumnus's House",
+        "endingLocation": "The Stone Table"
+      },
+      {
+        "startingLocation": "The Stone Table",
+        "endingLocation": "Aslan's Camp"
+      },
+      {
+        "startingLocation": "Aslan's Camp",
+        "endingLocation": "Cair Paravel"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Yellow Brick Road to Oz",
+      "fictional": true,
+      "description": "Follow the iconic Yellow Brick Road through the magical land of Oz, encountering whimsical characters and enchanting landscapes on the way to the Emerald City.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Munchkinland",
+          "endingLocation": "The Cornfield"
+        },
+        {
+          "startingLocation": "The Cornfield",
+          "endingLocation": "The Apple Orchard"
+        },
+        {
+          "startingLocation": "The Apple Orchard",
+          "endingLocation": "The Dark Forest"
+        },
+        {
+          "startingLocation": "The Dark Forest",
+          "endingLocation": "The Poppy Field"
+        },
+        {
+          "startingLocation": "The Poppy Field",
+          "endingLocation": "The Emerald City"
+        }
+      ]
+    },
+    {
+      "name": "The Fairy Tale Road of Grimm",
+      "fictional": true,
+      "description": "Travel through the world of Grimm's Fairy Tales, where each step takes you deeper into a land of classic stories and magical adventures.",
+      "likelyDistance": 2500,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Village of Hansel and Gretel",
+          "endingLocation": "The Enchanted Castle"
+        },
+        {
+          "startingLocation": "The Enchanted Castle",
+          "endingLocation": "The Tower of Rapunzel"
+        },
+        {
+          "startingLocation": "The Tower of Rapunzel",
+          "endingLocation": "The Forest of Little Red Riding Hood"
+        },
+        {
+          "startingLocation": "The Forest of Little Red Riding Hood",
+          "endingLocation": "The Kingdom of Sleeping Beauty"
+        },
+        {
+          "startingLocation": "The Kingdom of Sleeping Beauty",
+          "endingLocation": "The Land of Snow White"
+        }
+      ]
+    }
+  ]
+}

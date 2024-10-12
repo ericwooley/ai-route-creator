@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Heavenly Ascent to Mount Meru",
+    "fictional": true,
+    "description": "A mythical journey to the sacred Mount Meru, believed to be the center of all physical, metaphysical, and spiritual universes. The path is a celestial staircase leading through the clouds to the divine temple at the summit.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Base of Mount Meru",
+        "endingLocation": "Cloud Gate"
+      },
+      {
+        "startingLocation": "Cloud Gate",
+        "endingLocation": "Sky Bridge"
+      },
+      {
+        "startingLocation": "Sky Bridge",
+        "endingLocation": "Heavenly Terrace"
+      },
+      {
+        "startingLocation": "Heavenly Terrace",
+        "endingLocation": "Celestial Pathway"
+      },
+      {
+        "startingLocation": "Celestial Pathway",
+        "endingLocation": "Temple of the Gods"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Celestial Journey to Shambhala",
+      "fictional": true,
+      "description": "A spiritual quest to the legendary kingdom of Shambhala, hidden in the clouds and surrounded by snow-capped mountains. The route is a mystical path through the sky, leading to the enlightened city.",
+      "likelyDistance": 8000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Himalayan Foothills",
+          "endingLocation": "Skyward Pass"
+        },
+        {
+          "startingLocation": "Skyward Pass",
+          "endingLocation": "Cloud Valley"
+        },
+        {
+          "startingLocation": "Cloud Valley",
+          "endingLocation": "Ethereal Ridge"
+        },
+        {
+          "startingLocation": "Ethereal Ridge",
+          "endingLocation": "Shambhala Gate"
+        },
+        {
+          "startingLocation": "Shambhala Gate",
+          "endingLocation": "City of Light"
+        }
+      ]
+    },
+    {
+      "name": "The Ascent to the Temple of Zeus",
+      "fictional": true,
+      "description": "A divine journey to the Temple of Zeus, perched high above the clouds on Mount Olympus. The path is a series of heavenly steps leading to the abode of the gods.",
+      "likelyDistance": 6000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Olympus Base",
+          "endingLocation": "Zephyr's Path"
+        },
+        {
+          "startingLocation": "Zephyr's Path",
+          "endingLocation": "Nimbus Plateau"
+        },
+        {
+          "startingLocation": "Nimbus Plateau",
+          "endingLocation": "Aether's Crossing"
+        },
+        {
+          "startingLocation": "Aether's Crossing",
+          "endingLocation": "Olympian Heights"
+        },
+        {
+          "startingLocation": "Olympian Heights",
+          "endingLocation": "Temple of Zeus"
+        }
+      ]
+    }
+  ]
+}

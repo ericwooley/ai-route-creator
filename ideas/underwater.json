@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Great Barrier Reef Dive",
+    "fictional": false,
+    "description": "Explore the world's largest coral reef system, teeming with marine life and vibrant corals. This underwater journey takes you through the stunning biodiversity of the Great Barrier Reef.",
+    "likelyDistance": 2300,
+    "possibleSteps": [
+      {
+        "startingLocation": "Lady Elliot Island",
+        "endingLocation": "Heron Island"
+      },
+      {
+        "startingLocation": "Heron Island",
+        "endingLocation": "Whitsunday Islands"
+      },
+      {
+        "startingLocation": "Whitsunday Islands",
+        "endingLocation": "Cairns"
+      },
+      {
+        "startingLocation": "Cairns",
+        "endingLocation": "Port Douglas"
+      },
+      {
+        "startingLocation": "Port Douglas",
+        "endingLocation": "Lizard Island"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Lost City of Atlantis",
+      "fictional": true,
+      "description": "Dive into the mythical underwater city of Atlantis, exploring its grand architecture and mysterious ruins submerged beneath the ocean.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Pillars of Hercules",
+          "endingLocation": "The Temple of Poseidon"
+        },
+        {
+          "startingLocation": "The Temple of Poseidon",
+          "endingLocation": "The Sunken Gardens"
+        },
+        {
+          "startingLocation": "The Sunken Gardens",
+          "endingLocation": "The Crystal Palace"
+        },
+        {
+          "startingLocation": "The Crystal Palace",
+          "endingLocation": "The Great Library"
+        },
+        {
+          "startingLocation": "The Great Library",
+          "endingLocation": "The Royal Quarters"
+        }
+      ]
+    },
+    {
+      "name": "The Mariana Trench Expedition",
+      "fictional": false,
+      "description": "Embark on a deep-sea exploration of the Mariana Trench, the deepest part of the world's oceans, encountering unique and bizarre marine life.",
+      "likelyDistance": 2500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Guam",
+          "endingLocation": "Challenger Deep"
+        },
+        {
+          "startingLocation": "Challenger Deep",
+          "endingLocation": "Sirena Deep"
+        },
+        {
+          "startingLocation": "Sirena Deep",
+          "endingLocation": "Hossack Seamount"
+        },
+        {
+          "startingLocation": "Hossack Seamount",
+          "endingLocation": "Fritz Seamount"
+        },
+        {
+          "startingLocation": "Fritz Seamount",
+          "endingLocation": "Guam"
+        }
+      ]
+    },
+    {
+      "name": "The Underwater Kingdom of Lemuria",
+      "fictional": true,
+      "description": "Journey through the legendary submerged continent of Lemuria, exploring its ancient cities and mystical underwater landscapes.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Coral Gate",
+          "endingLocation": "The Sunken Temple"
+        },
+        {
+          "startingLocation": "The Sunken Temple",
+          "endingLocation": "The Crystal Caverns"
+        },
+        {
+          "startingLocation": "The Crystal Caverns",
+          "endingLocation": "The Abyssal Plains"
+        },
+        {
+          "startingLocation": "The Abyssal Plains",
+          "endingLocation": "The Luminescent Forest"
+        },
+        {
+          "startingLocation": "The Luminescent Forest",
+          "endingLocation": "The Throne of Lemuria"
+        }
+      ]
+    }
+  ]
+}

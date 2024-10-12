@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "Mount Olympus Ascent",
+    "fictional": false,
+    "description": "A journey to the peak of Mount Olympus, the legendary home of the Greek gods. This route takes you through ancient trails and mythical landscapes, reaching the celestial heights where gods were believed to reside.",
+    "likelyDistance": 2917,
+    "possibleSteps": [
+      {
+        "startingLocation": "Dion",
+        "endingLocation": "Prionia"
+      },
+      {
+        "startingLocation": "Prionia",
+        "endingLocation": "Spilios Agapitos Refuge"
+      },
+      {
+        "startingLocation": "Spilios Agapitos Refuge",
+        "endingLocation": "Skala"
+      },
+      {
+        "startingLocation": "Skala",
+        "endingLocation": "Mytikas"
+      },
+      {
+        "startingLocation": "Mytikas",
+        "endingLocation": "Litochoro"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Himalayan Skywalk",
+      "fictional": false,
+      "description": "Traverse the majestic Himalayas, reaching the celestial peaks that touch the sky. This route offers breathtaking views and a spiritual journey through the world's highest mountain range.",
+      "likelyDistance": 2400,
+      "possibleSteps": [
+        {
+          "startingLocation": "Lukla",
+          "endingLocation": "Namche Bazaar"
+        },
+        {
+          "startingLocation": "Namche Bazaar",
+          "endingLocation": "Tengboche"
+        },
+        {
+          "startingLocation": "Tengboche",
+          "endingLocation": "Dingboche"
+        },
+        {
+          "startingLocation": "Dingboche",
+          "endingLocation": "Lobuche"
+        },
+        {
+          "startingLocation": "Lobuche",
+          "endingLocation": "Everest Base Camp"
+        }
+      ]
+    },
+    {
+      "name": "Stairway to Heaven",
+      "fictional": true,
+      "description": "An ethereal journey up a mystical mountain that reaches into the heavens. This fictional route is filled with celestial wonders and mythical creatures, offering a path to the stars.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Valley of Echoes",
+          "endingLocation": "Cloud Bridge"
+        },
+        {
+          "startingLocation": "Cloud Bridge",
+          "endingLocation": "Starry Meadow"
+        },
+        {
+          "startingLocation": "Starry Meadow",
+          "endingLocation": "Moonlit Ridge"
+        },
+        {
+          "startingLocation": "Moonlit Ridge",
+          "endingLocation": "Sunrise Summit"
+        },
+        {
+          "startingLocation": "Sunrise Summit",
+          "endingLocation": "Celestial Gate"
+        }
+      ]
+    },
+    {
+      "name": "Andes Celestial Trek",
+      "fictional": false,
+      "description": "A trek through the Andes, reaching the celestial peaks that have inspired countless legends. This route offers a blend of natural beauty and cultural heritage.",
+      "likelyDistance": 3500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cusco",
+          "endingLocation": "Salkantay Pass"
+        },
+        {
+          "startingLocation": "Salkantay Pass",
+          "endingLocation": "Santa Teresa"
+        },
+        {
+          "startingLocation": "Santa Teresa",
+          "endingLocation": "Aguas Calientes"
+        },
+        {
+          "startingLocation": "Aguas Calientes",
+          "endingLocation": "Machu Picchu"
+        },
+        {
+          "startingLocation": "Machu Picchu",
+          "endingLocation": "Ollantaytambo"
+        }
+      ]
+    }
+  ]
+}

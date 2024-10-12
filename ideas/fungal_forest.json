@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Mushroom Kingdom Quest",
+    "fictional": true,
+    "description": "Embark on a journey through the iconic Mushroom Kingdom, where towering fungi and vibrant landscapes create a whimsical adventure. Traverse through various regions, each with its own unique challenges and wonders.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Toad Town",
+        "endingLocation": "Mushroom Gorge"
+      },
+      {
+        "startingLocation": "Mushroom Gorge",
+        "endingLocation": "Fungi Forest"
+      },
+      {
+        "startingLocation": "Fungi Forest",
+        "endingLocation": "Shroom Ridge"
+      },
+      {
+        "startingLocation": "Shroom Ridge",
+        "endingLocation": "Mushroom Bridge"
+      },
+      {
+        "startingLocation": "Mushroom Bridge",
+        "endingLocation": "Peach's Castle"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Enchanted Fungal Trail",
+      "fictional": true,
+      "description": "Venture through a mystical forest where bioluminescent mushrooms light the way. This enchanted path is filled with magical creatures and hidden secrets waiting to be discovered.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Glowing Glade",
+          "endingLocation": "Mushroom Meadow"
+        },
+        {
+          "startingLocation": "Mushroom Meadow",
+          "endingLocation": "Spore Swamp"
+        },
+        {
+          "startingLocation": "Spore Swamp",
+          "endingLocation": "Luminescent Lake"
+        },
+        {
+          "startingLocation": "Luminescent Lake",
+          "endingLocation": "Fungal Falls"
+        },
+        {
+          "startingLocation": "Fungal Falls",
+          "endingLocation": "Mystic Mushroom Mountain"
+        }
+      ]
+    },
+    {
+      "name": "The Mycelium Network",
+      "fictional": true,
+      "description": "Explore the vast underground network of the Mycelium, a hidden world beneath the forest floor. Navigate through tunnels and caverns filled with giant mushrooms and glowing spores.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Rooted Entrance",
+          "endingLocation": "Spore Cavern"
+        },
+        {
+          "startingLocation": "Spore Cavern",
+          "endingLocation": "Mushroom Tunnel"
+        },
+        {
+          "startingLocation": "Mushroom Tunnel",
+          "endingLocation": "Fungal Junction"
+        },
+        {
+          "startingLocation": "Fungal Junction",
+          "endingLocation": "Bioluminescent Basin"
+        },
+        {
+          "startingLocation": "Bioluminescent Basin",
+          "endingLocation": "Mycelium Heart"
+        }
+      ]
+    }
+  ]
+}

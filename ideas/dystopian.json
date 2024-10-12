@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Ruins of Rapture",
+    "fictional": true,
+    "description": "Explore the underwater dystopian city of Rapture, a once-thriving metropolis now in decay, filled with leaking tunnels, broken neon signs, and remnants of a society that fell into chaos.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Welcome Center",
+        "endingLocation": "Medical Pavilion"
+      },
+      {
+        "startingLocation": "Medical Pavilion",
+        "endingLocation": "Neptune's Bounty"
+      },
+      {
+        "startingLocation": "Neptune's Bounty",
+        "endingLocation": "Arcadia"
+      },
+      {
+        "startingLocation": "Arcadia",
+        "endingLocation": "Fort Frolic"
+      },
+      {
+        "startingLocation": "Fort Frolic",
+        "endingLocation": "Hephaestus"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Wastelands of Fallout",
+      "fictional": true,
+      "description": "Traverse the post-apocalyptic wastelands of the Fallout universe, where remnants of pre-war America are scattered across a desolate landscape filled with mutated creatures and abandoned vaults.",
+      "likelyDistance": 10000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Vault 101",
+          "endingLocation": "Megaton"
+        },
+        {
+          "startingLocation": "Megaton",
+          "endingLocation": "Rivet City"
+        },
+        {
+          "startingLocation": "Rivet City",
+          "endingLocation": "The Citadel"
+        },
+        {
+          "startingLocation": "The Citadel",
+          "endingLocation": "Tenpenny Tower"
+        },
+        {
+          "startingLocation": "Tenpenny Tower",
+          "endingLocation": "Little Lamplight"
+        }
+      ]
+    },
+    {
+      "name": "The Streets of Mega-City One",
+      "fictional": true,
+      "description": "Navigate the sprawling, crime-ridden streets of Mega-City One, a massive dystopian city from the Judge Dredd universe, where towering city blocks and lawless zones dominate the landscape.",
+      "likelyDistance": 8000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Sector 1",
+          "endingLocation": "Sector 13"
+        },
+        {
+          "startingLocation": "Sector 13",
+          "endingLocation": "Sector 45"
+        },
+        {
+          "startingLocation": "Sector 45",
+          "endingLocation": "Sector 301"
+        },
+        {
+          "startingLocation": "Sector 301",
+          "endingLocation": "Sector 500"
+        },
+        {
+          "startingLocation": "Sector 500",
+          "endingLocation": "Sector 666"
+        }
+      ]
+    },
+    {
+      "name": "The Maze of the Hunger Games",
+      "fictional": true,
+      "description": "Journey through the districts and arenas of the Hunger Games universe, where each step takes you deeper into a world of survival, rebellion, and the fight against a totalitarian regime.",
+      "likelyDistance": 12000,
+      "possibleSteps": [
+        {
+          "startingLocation": "District 12",
+          "endingLocation": "The Capitol"
+        },
+        {
+          "startingLocation": "The Capitol",
+          "endingLocation": "Arena 74"
+        },
+        {
+          "startingLocation": "Arena 74",
+          "endingLocation": "District 13"
+        },
+        {
+          "startingLocation": "District 13",
+          "endingLocation": "Arena 75"
+        },
+        {
+          "startingLocation": "Arena 75",
+          "endingLocation": "The Capitol"
+        }
+      ]
+    }
+  ]
+}

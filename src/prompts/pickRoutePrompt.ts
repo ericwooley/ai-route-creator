@@ -16,7 +16,19 @@ const outputSchema = z.object({
     .array(z.object({ name: z.string(), link: z.string() }))
     .describe('Links or references used for picking this route'),
   itinerary: z
-    .array(stepStructure.describe('Use -1 for the distance, because we have not researched it yet....'))
+    .array(
+      stepStructure
+        .omit({
+          credibility: true,
+          distance: true,
+        })
+        .extend({
+          fictionalLocation: z.boolean().describe('Whether the location is fictional or real'),
+          possibleAddressInfo: z.array(z.string()).describe('Possible addresses for the location'),
+          anyExtraInformationOnHowToFind: z.string().describe('Any extra information on how to find the location'),
+        })
+        .describe('Use -1 for the distance, because we have not researched it yet....')
+    )
     .describe('The steps of the route')
     .min(5)
     .describe('The steps of the route'),

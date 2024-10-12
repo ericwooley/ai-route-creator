@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Event Horizon Voyage",
+    "fictional": true,
+    "description": "A journey through the void of space, approaching the edge of a black hole where time and space cease to exist. This route explores the mysterious and terrifying boundary of a black hole's event horizon.",
+    "likelyDistance": 100000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Deep Space Station",
+        "endingLocation": "Outer Asteroid Belt"
+      },
+      {
+        "startingLocation": "Outer Asteroid Belt",
+        "endingLocation": "Kuiper Belt"
+      },
+      {
+        "startingLocation": "Kuiper Belt",
+        "endingLocation": "Oort Cloud"
+      },
+      {
+        "startingLocation": "Oort Cloud",
+        "endingLocation": "Interstellar Space"
+      },
+      {
+        "startingLocation": "Interstellar Space",
+        "endingLocation": "Event Horizon"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Abyssal Descent",
+      "fictional": true,
+      "description": "A descent into the deepest, darkest parts of the ocean, where light cannot penetrate and the pressure is immense. This route explores the mysterious and uncharted depths of the oceanic abyss.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Continental Shelf",
+          "endingLocation": "Abyssal Plain"
+        },
+        {
+          "startingLocation": "Abyssal Plain",
+          "endingLocation": "Mid-Ocean Ridge"
+        },
+        {
+          "startingLocation": "Mid-Ocean Ridge",
+          "endingLocation": "Deep Sea Trench"
+        },
+        {
+          "startingLocation": "Deep Sea Trench",
+          "endingLocation": "Hadal Zone"
+        },
+        {
+          "startingLocation": "Hadal Zone",
+          "endingLocation": "Ocean Floor"
+        }
+      ]
+    },
+    {
+      "name": "The Cosmic Void Trek",
+      "fictional": true,
+      "description": "A journey through the vast emptiness between galaxies, where stars are sparse and darkness reigns. This route takes you through the largest known voids in the universe.",
+      "likelyDistance": 200000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Local Group",
+          "endingLocation": "Virgo Supercluster"
+        },
+        {
+          "startingLocation": "Virgo Supercluster",
+          "endingLocation": "Bootes Void"
+        },
+        {
+          "startingLocation": "Bootes Void",
+          "endingLocation": "Eridanus Supervoid"
+        },
+        {
+          "startingLocation": "Eridanus Supervoid",
+          "endingLocation": "Sloan Great Wall"
+        },
+        {
+          "startingLocation": "Sloan Great Wall",
+          "endingLocation": "Cosmic Web"
+        }
+      ]
+    }
+  ]
+}

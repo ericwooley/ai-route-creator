@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Hawaiian Island Chain Trek",
+    "fictional": false,
+    "description": "A journey across the beautiful Hawaiian Islands, exploring lush rainforests, volcanic landscapes, and pristine beaches. This route takes you through the diverse ecosystems and vibrant cultures of Hawaii.",
+    "likelyDistance": 2400,
+    "possibleSteps": [
+      {
+        "startingLocation": "Hilo, Hawaii (Big Island)",
+        "endingLocation": "Kailua-Kona, Hawaii (Big Island)"
+      },
+      {
+        "startingLocation": "Kailua-Kona, Hawaii (Big Island)",
+        "endingLocation": "Hana, Maui"
+      },
+      {
+        "startingLocation": "Hana, Maui",
+        "endingLocation": "Lahaina, Maui"
+      },
+      {
+        "startingLocation": "Lahaina, Maui",
+        "endingLocation": "Lihue, Kauai"
+      },
+      {
+        "startingLocation": "Lihue, Kauai",
+        "endingLocation": "Honolulu, Oahu"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Caribbean Island Hop",
+      "fictional": false,
+      "description": "Explore the stunning Caribbean islands, hopping from one tropical paradise to another. Experience the vibrant cultures, white sandy beaches, and crystal-clear waters of the Caribbean.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Nassau, Bahamas",
+          "endingLocation": "Havana, Cuba"
+        },
+        {
+          "startingLocation": "Havana, Cuba",
+          "endingLocation": "Kingston, Jamaica"
+        },
+        {
+          "startingLocation": "Kingston, Jamaica",
+          "endingLocation": "Santo Domingo, Dominican Republic"
+        },
+        {
+          "startingLocation": "Santo Domingo, Dominican Republic",
+          "endingLocation": "San Juan, Puerto Rico"
+        },
+        {
+          "startingLocation": "San Juan, Puerto Rico",
+          "endingLocation": "Bridgetown, Barbados"
+        }
+      ]
+    },
+    {
+      "name": "The Polynesian Voyage",
+      "fictional": false,
+      "description": "Sail across the vast Pacific Ocean, visiting the enchanting islands of Polynesia. Discover the rich traditions, stunning landscapes, and warm hospitality of the Polynesian people.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Papeete, Tahiti",
+          "endingLocation": "Bora Bora, French Polynesia"
+        },
+        {
+          "startingLocation": "Bora Bora, French Polynesia",
+          "endingLocation": "Rarotonga, Cook Islands"
+        },
+        {
+          "startingLocation": "Rarotonga, Cook Islands",
+          "endingLocation": "Nuku'alofa, Tonga"
+        },
+        {
+          "startingLocation": "Nuku'alofa, Tonga",
+          "endingLocation": "Apia, Samoa"
+        },
+        {
+          "startingLocation": "Apia, Samoa",
+          "endingLocation": "Auckland, New Zealand"
+        }
+      ]
+    }
+  ]
+}

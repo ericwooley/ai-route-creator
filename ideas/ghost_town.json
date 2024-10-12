@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "Route 66 Ghost Towns",
+    "fictional": false,
+    "description": "Travel along the historic Route 66, exploring the ghost towns that were once bustling stops along this iconic highway. Experience the eerie silence and decaying remnants of a bygone era.",
+    "likelyDistance": 3945,
+    "possibleSteps": [
+      {
+        "startingLocation": "Chicago, Illinois",
+        "endingLocation": "Pontiac, Illinois"
+      },
+      {
+        "startingLocation": "Pontiac, Illinois",
+        "endingLocation": "Springfield, Illinois"
+      },
+      {
+        "startingLocation": "Springfield, Illinois",
+        "endingLocation": "St. Louis, Missouri"
+      },
+      {
+        "startingLocation": "St. Louis, Missouri",
+        "endingLocation": "Carthage, Missouri"
+      },
+      {
+        "startingLocation": "Carthage, Missouri",
+        "endingLocation": "Santa Fe, New Mexico"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Ghost Towns of the Old West",
+      "fictional": false,
+      "description": "Journey through the American West, visiting ghost towns that were once thriving during the Gold Rush era. Discover the stories of fortune seekers and the towns they left behind.",
+      "likelyDistance": 2500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Bodie, California",
+          "endingLocation": "Virginia City, Nevada"
+        },
+        {
+          "startingLocation": "Virginia City, Nevada",
+          "endingLocation": "Goldfield, Nevada"
+        },
+        {
+          "startingLocation": "Goldfield, Nevada",
+          "endingLocation": "Rhyolite, Nevada"
+        },
+        {
+          "startingLocation": "Rhyolite, Nevada",
+          "endingLocation": "Calico, California"
+        },
+        {
+          "startingLocation": "Calico, California",
+          "endingLocation": "Tombstone, Arizona"
+        }
+      ]
+    },
+    {
+      "name": "The Haunted Towns of Transylvania",
+      "fictional": false,
+      "description": "Explore the mysterious and haunted towns of Transylvania, where legends of vampires and spirits abound. Walk through ancient streets and feel the chill of history.",
+      "likelyDistance": 1500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Brasov, Romania",
+          "endingLocation": "Sighisoara, Romania"
+        },
+        {
+          "startingLocation": "Sighisoara, Romania",
+          "endingLocation": "Sibiu, Romania"
+        },
+        {
+          "startingLocation": "Sibiu, Romania",
+          "endingLocation": "Cluj-Napoca, Romania"
+        },
+        {
+          "startingLocation": "Cluj-Napoca, Romania",
+          "endingLocation": "Bistrita, Romania"
+        },
+        {
+          "startingLocation": "Bistrita, Romania",
+          "endingLocation": "Targu Mures, Romania"
+        }
+      ]
+    },
+    {
+      "name": "The Abandoned Villages of Chernobyl",
+      "fictional": false,
+      "description": "Venture into the exclusion zone of Chernobyl, where time has stood still since the nuclear disaster. Explore the abandoned villages and witness the haunting beauty of nature reclaiming the land.",
+      "likelyDistance": 300,
+      "possibleSteps": [
+        {
+          "startingLocation": "Pripyat, Ukraine",
+          "endingLocation": "Kopachi, Ukraine"
+        },
+        {
+          "startingLocation": "Kopachi, Ukraine",
+          "endingLocation": "Chernobyl, Ukraine"
+        },
+        {
+          "startingLocation": "Chernobyl, Ukraine",
+          "endingLocation": "Yaniv, Ukraine"
+        },
+        {
+          "startingLocation": "Yaniv, Ukraine",
+          "endingLocation": "Zalissya, Ukraine"
+        },
+        {
+          "startingLocation": "Zalissya, Ukraine",
+          "endingLocation": "Poliske, Ukraine"
+        }
+      ]
+    }
+  ]
+}

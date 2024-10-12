@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Journey to Hogwarts",
+    "fictional": true,
+    "description": "Embark on a magical journey from the bustling streets of London to the enchanting Hogwarts School of Witchcraft and Wizardry. Traverse through mystical landscapes, cross the iconic Hogwarts Express route, and experience the wonders of the wizarding world.",
+    "likelyDistance": 800,
+    "possibleSteps": [
+      {
+        "startingLocation": "King's Cross Station, London",
+        "endingLocation": "Hogsmeade Station"
+      },
+      {
+        "startingLocation": "Hogsmeade Station",
+        "endingLocation": "Hogwarts Castle"
+      },
+      {
+        "startingLocation": "Hogwarts Castle",
+        "endingLocation": "Forbidden Forest"
+      },
+      {
+        "startingLocation": "Forbidden Forest",
+        "endingLocation": "Hogsmeade Village"
+      },
+      {
+        "startingLocation": "Hogsmeade Village",
+        "endingLocation": "Hogwarts Lake"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Quest for the Holy Grail",
+      "fictional": true,
+      "description": "Join the legendary knights on their quest for the Holy Grail. Travel through mystical lands, encounter mythical creatures, and face challenges that test your courage and resolve.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "Camelot",
+          "endingLocation": "The Enchanted Forest"
+        },
+        {
+          "startingLocation": "The Enchanted Forest",
+          "endingLocation": "The Bridge of Death"
+        },
+        {
+          "startingLocation": "The Bridge of Death",
+          "endingLocation": "Castle Anthrax"
+        },
+        {
+          "startingLocation": "Castle Anthrax",
+          "endingLocation": "The Cave of Caerbannog"
+        },
+        {
+          "startingLocation": "The Cave of Caerbannog",
+          "endingLocation": "The Grail Castle"
+        }
+      ]
+    },
+    {
+      "name": "The Voyage of the Dawn Treader",
+      "fictional": true,
+      "description": "Sail across the magical seas of Narnia aboard the Dawn Treader. Discover enchanted islands, meet fantastical creatures, and explore the wonders of the Narnian world.",
+      "likelyDistance": 1500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cair Paravel",
+          "endingLocation": "Lone Islands"
+        },
+        {
+          "startingLocation": "Lone Islands",
+          "endingLocation": "Dragon Island"
+        },
+        {
+          "startingLocation": "Dragon Island",
+          "endingLocation": "Dark Island"
+        },
+        {
+          "startingLocation": "Dark Island",
+          "endingLocation": "Ramandu's Island"
+        },
+        {
+          "startingLocation": "Ramandu's Island",
+          "endingLocation": "Aslan's Country"
+        }
+      ]
+    },
+    {
+      "name": "The Journey Through Middle-earth",
+      "fictional": true,
+      "description": "Travel through the legendary lands of Middle-earth, from the Shire to the fiery depths of Mount Doom. Encounter elves, dwarves, and other mythical beings as you embark on an epic adventure.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Shire",
+          "endingLocation": "Rivendell"
+        },
+        {
+          "startingLocation": "Rivendell",
+          "endingLocation": "Mines of Moria"
+        },
+        {
+          "startingLocation": "Mines of Moria",
+          "endingLocation": "Lothlórien"
+        },
+        {
+          "startingLocation": "Lothlórien",
+          "endingLocation": "Rohan"
+        },
+        {
+          "startingLocation": "Rohan",
+          "endingLocation": "Mount Doom"
+        }
+      ]
+    }
+  ]
+}

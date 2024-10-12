@@ -1,0 +1,76 @@
+{
+  "bestIdea": {
+    "name": "The Celtic Way",
+    "fictional": false,
+    "description": "A journey through the heart of Celtic culture, exploring the ancient landscapes of Scotland and Ireland, from the Highlands to the Emerald Isle.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Edinburgh, Scotland",
+        "endingLocation": "Inverness, Scotland"
+      },
+      {
+        "startingLocation": "Inverness, Scotland",
+        "endingLocation": "Isle of Skye, Scotland"
+      },
+      {
+        "startingLocation": "Isle of Skye, Scotland",
+        "endingLocation": "Belfast, Northern Ireland"
+      },
+      {
+        "startingLocation": "Belfast, Northern Ireland",
+        "endingLocation": "Dublin, Ireland"
+      },
+      {
+        "startingLocation": "Dublin, Ireland",
+        "endingLocation": "Galway, Ireland"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Highland Trail",
+      "fictional": false,
+      "description": "A trek through the Scottish Highlands, visiting iconic sites such as Loch Ness, Ben Nevis, and the Isle of Skye.",
+      "likelyDistance": 800,
+      "possibleSteps": [
+        {
+          "startingLocation": "Fort William, Scotland",
+          "endingLocation": "Ben Nevis, Scotland"
+        },
+        {
+          "startingLocation": "Ben Nevis, Scotland",
+          "endingLocation": "Loch Ness, Scotland"
+        },
+        {
+          "startingLocation": "Loch Ness, Scotland",
+          "endingLocation": "Isle of Skye, Scotland"
+        }
+      ]
+    },
+    {
+      "name": "The Celtic Ring",
+      "fictional": false,
+      "description": "A circular route encompassing the key Celtic sites in Ireland, including the Cliffs of Moher, the Ring of Kerry, and the Giant's Causeway.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "Dublin, Ireland",
+          "endingLocation": "Cliffs of Moher, Ireland"
+        },
+        {
+          "startingLocation": "Cliffs of Moher, Ireland",
+          "endingLocation": "Ring of Kerry, Ireland"
+        },
+        {
+          "startingLocation": "Ring of Kerry, Ireland",
+          "endingLocation": "Giant's Causeway, Northern Ireland"
+        },
+        {
+          "startingLocation": "Giant's Causeway, Northern Ireland",
+          "endingLocation": "Dublin, Ireland"
+        }
+      ]
+    }
+  ]
+}

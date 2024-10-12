@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "Journey Across Pandora",
+    "fictional": true,
+    "description": "Explore the vibrant and exotic landscapes of Pandora, the alien moon from the movie Avatar. Traverse through floating mountains, bioluminescent forests, and vast plains inhabited by unique alien creatures.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Hallelujah Mountains",
+        "endingLocation": "Tree of Souls"
+      },
+      {
+        "startingLocation": "Tree of Souls",
+        "endingLocation": "Pandora's Plains"
+      },
+      {
+        "startingLocation": "Pandora's Plains",
+        "endingLocation": "Bioluminescent Forest"
+      },
+      {
+        "startingLocation": "Bioluminescent Forest",
+        "endingLocation": "Na'vi Village"
+      },
+      {
+        "startingLocation": "Na'vi Village",
+        "endingLocation": "Floating Mountains"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Expedition to Mars",
+      "fictional": false,
+      "description": "A journey across the Martian landscape, inspired by real-world Mars missions. Experience the red planet's vast deserts, towering volcanoes, and deep canyons.",
+      "likelyDistance": 10000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Olympus Mons",
+          "endingLocation": "Valles Marineris"
+        },
+        {
+          "startingLocation": "Valles Marineris",
+          "endingLocation": "Gale Crater"
+        },
+        {
+          "startingLocation": "Gale Crater",
+          "endingLocation": "Hellas Basin"
+        },
+        {
+          "startingLocation": "Hellas Basin",
+          "endingLocation": "Tharsis Plateau"
+        },
+        {
+          "startingLocation": "Tharsis Plateau",
+          "endingLocation": "Polar Ice Caps"
+        }
+      ]
+    },
+    {
+      "name": "Exploration of Krypton",
+      "fictional": true,
+      "description": "Venture through the legendary home planet of Superman, Krypton. Discover its crystalline landscapes, advanced cities, and unique alien wildlife.",
+      "likelyDistance": 8000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Kandor City",
+          "endingLocation": "Crystal Mountains"
+        },
+        {
+          "startingLocation": "Crystal Mountains",
+          "endingLocation": "Kryptonian Plains"
+        },
+        {
+          "startingLocation": "Kryptonian Plains",
+          "endingLocation": "Fortress of Solitude"
+        },
+        {
+          "startingLocation": "Fortress of Solitude",
+          "endingLocation": "Krypton's Core"
+        },
+        {
+          "startingLocation": "Krypton's Core",
+          "endingLocation": "Kandor City"
+        }
+      ]
+    }
+  ]
+}

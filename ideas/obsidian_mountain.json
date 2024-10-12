@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "Mount Doom Trek",
+    "fictional": true,
+    "description": "A perilous journey through the treacherous landscapes of Mordor, culminating in the ascent of Mount Doom, the fiery mountain of obsidian rock.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "The Shire",
+        "endingLocation": "Bree"
+      },
+      {
+        "startingLocation": "Bree",
+        "endingLocation": "Rivendell"
+      },
+      {
+        "startingLocation": "Rivendell",
+        "endingLocation": "Mines of Moria"
+      },
+      {
+        "startingLocation": "Mines of Moria",
+        "endingLocation": "Rohan"
+      },
+      {
+        "startingLocation": "Rohan",
+        "endingLocation": "Mount Doom"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Obsidian Path of Erebor",
+      "fictional": true,
+      "description": "A journey through the Lonely Mountain, where the path is lined with sharp obsidian rocks, leading to the heart of the dwarven kingdom.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "Lake-town",
+          "endingLocation": "The Front Gate of Erebor"
+        },
+        {
+          "startingLocation": "The Front Gate of Erebor",
+          "endingLocation": "The Great Hall"
+        },
+        {
+          "startingLocation": "The Great Hall",
+          "endingLocation": "The Chamber of Thror"
+        },
+        {
+          "startingLocation": "The Chamber of Thror",
+          "endingLocation": "The Arkenstone Chamber"
+        },
+        {
+          "startingLocation": "The Arkenstone Chamber",
+          "endingLocation": "The Secret Exit"
+        }
+      ]
+    },
+    {
+      "name": "The Black Mountain of Svartalfheim",
+      "fictional": true,
+      "description": "Traverse the dark and jagged obsidian peaks of Svartalfheim, home to the dark elves, in a mythical Norse setting.",
+      "likelyDistance": 1800,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Bifrost Bridge",
+          "endingLocation": "The Dark Forest"
+        },
+        {
+          "startingLocation": "The Dark Forest",
+          "endingLocation": "The Obsidian Mines"
+        },
+        {
+          "startingLocation": "The Obsidian Mines",
+          "endingLocation": "The Black Mountain Base"
+        },
+        {
+          "startingLocation": "The Black Mountain Base",
+          "endingLocation": "The Summit of Svartalfheim"
+        },
+        {
+          "startingLocation": "The Summit of Svartalfheim",
+          "endingLocation": "The Dark Elf Fortress"
+        }
+      ]
+    }
+  ]
+}

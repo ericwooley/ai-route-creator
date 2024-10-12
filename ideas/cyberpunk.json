@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Sprawl of Neo-Tokyo",
+    "fictional": true,
+    "description": "Explore the sprawling, neon-lit streets of Neo-Tokyo, a cityscape filled with towering skyscrapers, bustling markets, and hidden alleyways. Navigate through the high-tech districts and experience the cyber-enhanced culture of this futuristic metropolis.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Shinjuku District",
+        "endingLocation": "Akihabara Electric Town"
+      },
+      {
+        "startingLocation": "Akihabara Electric Town",
+        "endingLocation": "Shibuya Crossing"
+      },
+      {
+        "startingLocation": "Shibuya Crossing",
+        "endingLocation": "Roppongi Hills"
+      },
+      {
+        "startingLocation": "Roppongi Hills",
+        "endingLocation": "Odaiba Island"
+      },
+      {
+        "startingLocation": "Odaiba Island",
+        "endingLocation": "Tokyo Tower"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Streets of Night City",
+      "fictional": true,
+      "description": "Traverse the gritty and vibrant streets of Night City, a hub of cybernetic enhancements and corporate intrigue. From the bustling city center to the shadowy outskirts, experience the diverse districts and their unique cultures.",
+      "likelyDistance": 6000,
+      "possibleSteps": [
+        {
+          "startingLocation": "City Center",
+          "endingLocation": "Watson District"
+        },
+        {
+          "startingLocation": "Watson District",
+          "endingLocation": "Westbrook"
+        },
+        {
+          "startingLocation": "Westbrook",
+          "endingLocation": "Heywood"
+        },
+        {
+          "startingLocation": "Heywood",
+          "endingLocation": "Pacifica"
+        },
+        {
+          "startingLocation": "Pacifica",
+          "endingLocation": "Santo Domingo"
+        }
+      ]
+    },
+    {
+      "name": "The Megacity of New Angeles",
+      "fictional": true,
+      "description": "Journey through New Angeles, a megacity where technology and humanity intersect. From the towering corporate skyscrapers to the vibrant street markets, explore the diverse environments and cultures of this futuristic urban landscape.",
+      "likelyDistance": 7000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Corporate Plaza",
+          "endingLocation": "Downtown Market"
+        },
+        {
+          "startingLocation": "Downtown Market",
+          "endingLocation": "Harbor District"
+        },
+        {
+          "startingLocation": "Harbor District",
+          "endingLocation": "Industrial Zone"
+        },
+        {
+          "startingLocation": "Industrial Zone",
+          "endingLocation": "Residential Sector"
+        },
+        {
+          "startingLocation": "Residential Sector",
+          "endingLocation": "Entertainment Hub"
+        }
+      ]
+    }
+  ]
+}

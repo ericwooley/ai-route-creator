@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Silk Road Journey",
+    "fictional": false,
+    "description": "Travel along the ancient Silk Road, a network of trade routes that connected the East and West, facilitating not only commerce but also cultural exchange.",
+    "likelyDistance": 7000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Xi'an, China",
+        "endingLocation": "Dunhuang, China"
+      },
+      {
+        "startingLocation": "Dunhuang, China",
+        "endingLocation": "Samarkand, Uzbekistan"
+      },
+      {
+        "startingLocation": "Samarkand, Uzbekistan",
+        "endingLocation": "Tehran, Iran"
+      },
+      {
+        "startingLocation": "Tehran, Iran",
+        "endingLocation": "Istanbul, Turkey"
+      },
+      {
+        "startingLocation": "Istanbul, Turkey",
+        "endingLocation": "Venice, Italy"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Roman Empire Expedition",
+      "fictional": false,
+      "description": "Explore the vast expanse of the Roman Empire at its height, from the heart of Rome to the farthest reaches of its territories.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Rome, Italy",
+          "endingLocation": "Athens, Greece"
+        },
+        {
+          "startingLocation": "Athens, Greece",
+          "endingLocation": "Alexandria, Egypt"
+        },
+        {
+          "startingLocation": "Alexandria, Egypt",
+          "endingLocation": "Carthage, Tunisia"
+        },
+        {
+          "startingLocation": "Carthage, Tunisia",
+          "endingLocation": "Cordoba, Spain"
+        },
+        {
+          "startingLocation": "Cordoba, Spain",
+          "endingLocation": "London, United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "The Viking Voyage",
+      "fictional": false,
+      "description": "Follow the path of the Vikings as they explored and raided across Europe, from their Scandinavian homelands to the British Isles and beyond.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Bergen, Norway",
+          "endingLocation": "Dublin, Ireland"
+        },
+        {
+          "startingLocation": "Dublin, Ireland",
+          "endingLocation": "York, United Kingdom"
+        },
+        {
+          "startingLocation": "York, United Kingdom",
+          "endingLocation": "Paris, France"
+        },
+        {
+          "startingLocation": "Paris, France",
+          "endingLocation": "Kiev, Ukraine"
+        },
+        {
+          "startingLocation": "Kiev, Ukraine",
+          "endingLocation": "Constantinople, Turkey"
+        }
+      ]
+    },
+    {
+      "name": "The Inca Empire Trail",
+      "fictional": false,
+      "description": "Traverse the ancient paths of the Inca Empire, from the highlands of Peru to the farthest reaches of their vast domain.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Cusco, Peru",
+          "endingLocation": "Machu Picchu, Peru"
+        },
+        {
+          "startingLocation": "Machu Picchu, Peru",
+          "endingLocation": "Quito, Ecuador"
+        },
+        {
+          "startingLocation": "Quito, Ecuador",
+          "endingLocation": "La Paz, Bolivia"
+        },
+        {
+          "startingLocation": "La Paz, Bolivia",
+          "endingLocation": "Santiago, Chile"
+        },
+        {
+          "startingLocation": "Santiago, Chile",
+          "endingLocation": "Buenos Aires, Argentina"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Caribbean Pirate's Quest",
+    "fictional": false,
+    "description": "Embark on a legendary journey through the Caribbean Sea, following the paths of infamous pirates like Blackbeard and Calico Jack. Discover hidden coves, bustling ports, and treasure-laden islands.",
+    "likelyDistance": 3000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Nassau, Bahamas",
+        "endingLocation": "Port Royal, Jamaica"
+      },
+      {
+        "startingLocation": "Port Royal, Jamaica",
+        "endingLocation": "Havana, Cuba"
+      },
+      {
+        "startingLocation": "Havana, Cuba",
+        "endingLocation": "Tortuga, Haiti"
+      },
+      {
+        "startingLocation": "Tortuga, Haiti",
+        "endingLocation": "San Juan, Puerto Rico"
+      },
+      {
+        "startingLocation": "San Juan, Puerto Rico",
+        "endingLocation": "Nassau, Bahamas"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Treasure Island Voyage",
+      "fictional": true,
+      "description": "Sail the seas in search of the legendary Treasure Island, navigating through perilous waters and encountering mysterious islands along the way.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Bristol, England",
+          "endingLocation": "Hispaniola"
+        },
+        {
+          "startingLocation": "Hispaniola",
+          "endingLocation": "Skeleton Island"
+        },
+        {
+          "startingLocation": "Skeleton Island",
+          "endingLocation": "Treasure Island"
+        },
+        {
+          "startingLocation": "Treasure Island",
+          "endingLocation": "Port Royal, Jamaica"
+        },
+        {
+          "startingLocation": "Port Royal, Jamaica",
+          "endingLocation": "Bristol, England"
+        }
+      ]
+    },
+    {
+      "name": "The Pirate's Golden Circle",
+      "fictional": false,
+      "description": "Follow the notorious Pirate Round, a route taken by pirates in the late 17th century, from the Caribbean to the Indian Ocean.",
+      "likelyDistance": 20000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Nassau, Bahamas",
+          "endingLocation": "Cape of Good Hope, South Africa"
+        },
+        {
+          "startingLocation": "Cape of Good Hope, South Africa",
+          "endingLocation": "Madagascar"
+        },
+        {
+          "startingLocation": "Madagascar",
+          "endingLocation": "Yemen"
+        },
+        {
+          "startingLocation": "Yemen",
+          "endingLocation": "India"
+        },
+        {
+          "startingLocation": "India",
+          "endingLocation": "Nassau, Bahamas"
+        }
+      ]
+    }
+  ]
+}

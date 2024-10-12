@@ -1,0 +1,108 @@
+{
+  "bestIdea": {
+    "name": "The Appalachian Trail",
+    "fictional": false,
+    "description": "A legendary hiking trail that stretches across the eastern United States, offering a diverse range of forest landscapes, from dense woods to open meadows.",
+    "likelyDistance": 3500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Springer Mountain, Georgia",
+        "endingLocation": "Fontana Dam, North Carolina"
+      },
+      {
+        "startingLocation": "Fontana Dam, North Carolina",
+        "endingLocation": "Damascus, Virginia"
+      },
+      {
+        "startingLocation": "Damascus, Virginia",
+        "endingLocation": "Harpers Ferry, West Virginia"
+      },
+      {
+        "startingLocation": "Harpers Ferry, West Virginia",
+        "endingLocation": "Delaware Water Gap, Pennsylvania"
+      },
+      {
+        "startingLocation": "Delaware Water Gap, Pennsylvania",
+        "endingLocation": "Mount Katahdin, Maine"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Pacific Crest Trail",
+      "fictional": false,
+      "description": "A scenic trail that runs through the western United States, traversing a variety of forested areas, from the lush forests of the Pacific Northwest to the arid landscapes of Southern California.",
+      "likelyDistance": 4265,
+      "possibleSteps": [
+        {
+          "startingLocation": "Campo, California",
+          "endingLocation": "Kennedy Meadows, California"
+        },
+        {
+          "startingLocation": "Kennedy Meadows, California",
+          "endingLocation": "Tuolumne Meadows, California"
+        },
+        {
+          "startingLocation": "Tuolumne Meadows, California",
+          "endingLocation": "Crater Lake, Oregon"
+        },
+        {
+          "startingLocation": "Crater Lake, Oregon",
+          "endingLocation": "Timberline Lodge, Oregon"
+        },
+        {
+          "startingLocation": "Timberline Lodge, Oregon",
+          "endingLocation": "Manning Park, British Columbia"
+        }
+      ]
+    },
+    {
+      "name": "The Black Forest Trail",
+      "fictional": false,
+      "description": "A loop trail located in Pennsylvania, USA, known for its dense forest cover and scenic views, offering a challenging yet rewarding hiking experience.",
+      "likelyDistance": 70,
+      "possibleSteps": [
+        {
+          "startingLocation": "Slate Run, Pennsylvania",
+          "endingLocation": "Red Run, Pennsylvania"
+        },
+        {
+          "startingLocation": "Red Run, Pennsylvania",
+          "endingLocation": "Callahan Run, Pennsylvania"
+        },
+        {
+          "startingLocation": "Callahan Run, Pennsylvania",
+          "endingLocation": "Naval Run, Pennsylvania"
+        },
+        {
+          "startingLocation": "Naval Run, Pennsylvania",
+          "endingLocation": "Slate Run, Pennsylvania"
+        }
+      ]
+    },
+    {
+      "name": "The Enchanted Forest of Middle-earth",
+      "fictional": true,
+      "description": "A journey through the mystical forests of Middle-earth, exploring the legendary woods of Lothlórien, Fangorn, and Mirkwood.",
+      "likelyDistance": 1500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Lothlórien",
+          "endingLocation": "Fangorn Forest"
+        },
+        {
+          "startingLocation": "Fangorn Forest",
+          "endingLocation": "Mirkwood"
+        },
+        {
+          "startingLocation": "Mirkwood",
+          "endingLocation": "The Old Forest"
+        },
+        {
+          "startingLocation": "The Old Forest",
+          "endingLocation": "Lothlórien"
+        }
+      ]
+    }
+  ]
+}

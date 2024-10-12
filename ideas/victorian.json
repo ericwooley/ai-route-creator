@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Victorian Grand Tour",
+    "fictional": false,
+    "description": "Embark on a journey through the heart of Victorian Europe, exploring the cultural and architectural marvels of the era. This route takes you through iconic cities and landmarks that defined the Victorian age.",
+    "likelyDistance": 3000,
+    "possibleSteps": [
+      {
+        "startingLocation": "London, England",
+        "endingLocation": "Paris, France"
+      },
+      {
+        "startingLocation": "Paris, France",
+        "endingLocation": "Brussels, Belgium"
+      },
+      {
+        "startingLocation": "Brussels, Belgium",
+        "endingLocation": "Amsterdam, Netherlands"
+      },
+      {
+        "startingLocation": "Amsterdam, Netherlands",
+        "endingLocation": "Berlin, Germany"
+      },
+      {
+        "startingLocation": "Berlin, Germany",
+        "endingLocation": "Vienna, Austria"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Victorian Steamship Voyage",
+      "fictional": false,
+      "description": "Travel the seas as Victorian explorers did, visiting key ports and cities that were central to trade and exploration during the Victorian era.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Liverpool, England",
+          "endingLocation": "New York City, USA"
+        },
+        {
+          "startingLocation": "New York City, USA",
+          "endingLocation": "Cape Town, South Africa"
+        },
+        {
+          "startingLocation": "Cape Town, South Africa",
+          "endingLocation": "Mumbai, India"
+        },
+        {
+          "startingLocation": "Mumbai, India",
+          "endingLocation": "Sydney, Australia"
+        },
+        {
+          "startingLocation": "Sydney, Australia",
+          "endingLocation": "Hong Kong, China"
+        }
+      ]
+    },
+    {
+      "name": "The Victorian Literary Trail",
+      "fictional": false,
+      "description": "Follow in the footsteps of famous Victorian authors, visiting the places that inspired their greatest works and the cities where they lived and wrote.",
+      "likelyDistance": 2500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Edinburgh, Scotland",
+          "endingLocation": "London, England"
+        },
+        {
+          "startingLocation": "London, England",
+          "endingLocation": "Bath, England"
+        },
+        {
+          "startingLocation": "Bath, England",
+          "endingLocation": "Dublin, Ireland"
+        },
+        {
+          "startingLocation": "Dublin, Ireland",
+          "endingLocation": "Paris, France"
+        },
+        {
+          "startingLocation": "Paris, France",
+          "endingLocation": "Florence, Italy"
+        }
+      ]
+    }
+  ]
+}

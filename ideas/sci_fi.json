@@ -1,0 +1,96 @@
+{
+  "bestIdea": {
+    "name": "The Journey to Trantor",
+    "fictional": true,
+    "description": "Embark on a journey to Trantor, the capital of the Galactic Empire in Isaac Asimov's Foundation series. Traverse through the galaxy, visiting key planets and space stations, experiencing the vastness of space and the advanced technology of the future.",
+    "likelyDistance": 100000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Terminus",
+        "endingLocation": "Anacreon"
+      },
+      {
+        "startingLocation": "Anacreon",
+        "endingLocation": "Trantor"
+      },
+      {
+        "startingLocation": "Trantor",
+        "endingLocation": "Kalgan"
+      },
+      {
+        "startingLocation": "Kalgan",
+        "endingLocation": "Neotrantor"
+      },
+      {
+        "startingLocation": "Neotrantor",
+        "endingLocation": "Terminus"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Expanse: Belt to Earth",
+      "fictional": true,
+      "description": "Travel through the solar system as depicted in The Expanse series. Start from the asteroid belt, journey to Mars, and finally reach Earth, experiencing the political and technological complexities of a future human civilization spread across the solar system.",
+      "likelyDistance": 500000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Ceres Station",
+          "endingLocation": "Ganymede"
+        },
+        {
+          "startingLocation": "Ganymede",
+          "endingLocation": "Mars"
+        },
+        {
+          "startingLocation": "Mars",
+          "endingLocation": "Luna"
+        },
+        {
+          "startingLocation": "Luna",
+          "endingLocation": "Earth"
+        }
+      ]
+    },
+    {
+      "name": "The Voyage to Arrakis",
+      "fictional": true,
+      "description": "Set out on a journey to the desert planet Arrakis from Frank Herbert's Dune series. Experience the harsh environment and the advanced technology of the spice trade, traveling from Caladan to Arrakis.",
+      "likelyDistance": 200000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Caladan",
+          "endingLocation": "Kaitain"
+        },
+        {
+          "startingLocation": "Kaitain",
+          "endingLocation": "Arrakis"
+        }
+      ]
+    },
+    {
+      "name": "The Star Trek: Federation Journey",
+      "fictional": true,
+      "description": "Join the crew of the USS Enterprise on a mission across the United Federation of Planets. Visit iconic locations from the Star Trek universe, exploring new worlds and civilizations.",
+      "likelyDistance": 300000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Earth",
+          "endingLocation": "Vulcan"
+        },
+        {
+          "startingLocation": "Vulcan",
+          "endingLocation": "Qo'noS"
+        },
+        {
+          "startingLocation": "Qo'noS",
+          "endingLocation": "Deep Space Nine"
+        },
+        {
+          "startingLocation": "Deep Space Nine",
+          "endingLocation": "Bajor"
+        }
+      ]
+    }
+  ]
+}

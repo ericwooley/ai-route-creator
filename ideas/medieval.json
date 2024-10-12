@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Pilgrimage to Canterbury",
+    "fictional": false,
+    "description": "Follow the historic route of medieval pilgrims traveling from London to Canterbury, as immortalized in Geoffrey Chaucer's 'The Canterbury Tales'. Experience the journey through the English countryside, passing through ancient towns and villages.",
+    "likelyDistance": 100,
+    "possibleSteps": [
+      {
+        "startingLocation": "Southwark, London",
+        "endingLocation": "Dartford"
+      },
+      {
+        "startingLocation": "Dartford",
+        "endingLocation": "Rochester"
+      },
+      {
+        "startingLocation": "Rochester",
+        "endingLocation": "Sittingbourne"
+      },
+      {
+        "startingLocation": "Sittingbourne",
+        "endingLocation": "Faversham"
+      },
+      {
+        "startingLocation": "Faversham",
+        "endingLocation": "Canterbury"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Knights' Quest to Camelot",
+      "fictional": true,
+      "description": "Embark on a legendary journey to the mythical castle of Camelot, home of King Arthur and the Knights of the Round Table. Traverse through enchanted forests and mystical lands.",
+      "likelyDistance": 500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Tintagel",
+          "endingLocation": "Glastonbury"
+        },
+        {
+          "startingLocation": "Glastonbury",
+          "endingLocation": "Winchester"
+        },
+        {
+          "startingLocation": "Winchester",
+          "endingLocation": "Stonehenge"
+        },
+        {
+          "startingLocation": "Stonehenge",
+          "endingLocation": "Avalon"
+        },
+        {
+          "startingLocation": "Avalon",
+          "endingLocation": "Camelot"
+        }
+      ]
+    },
+    {
+      "name": "The Crusaders' March to Jerusalem",
+      "fictional": false,
+      "description": "Retrace the steps of medieval crusaders as they journeyed from Europe to the Holy Land, passing through historic cities and battlefields.",
+      "likelyDistance": 4000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Paris",
+          "endingLocation": "Venice"
+        },
+        {
+          "startingLocation": "Venice",
+          "endingLocation": "Constantinople"
+        },
+        {
+          "startingLocation": "Constantinople",
+          "endingLocation": "Antioch"
+        },
+        {
+          "startingLocation": "Antioch",
+          "endingLocation": "Acre"
+        },
+        {
+          "startingLocation": "Acre",
+          "endingLocation": "Jerusalem"
+        }
+      ]
+    },
+    {
+      "name": "The Viking Voyage to Vinland",
+      "fictional": false,
+      "description": "Sail the seas as the Vikings did, from Scandinavia to the shores of North America, exploring the lands they called Vinland.",
+      "likelyDistance": 7000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Bergen",
+          "endingLocation": "Shetland Islands"
+        },
+        {
+          "startingLocation": "Shetland Islands",
+          "endingLocation": "Faroe Islands"
+        },
+        {
+          "startingLocation": "Faroe Islands",
+          "endingLocation": "Iceland"
+        },
+        {
+          "startingLocation": "Iceland",
+          "endingLocation": "Greenland"
+        },
+        {
+          "startingLocation": "Greenland",
+          "endingLocation": "Newfoundland"
+        }
+      ]
+    }
+  ]
+}

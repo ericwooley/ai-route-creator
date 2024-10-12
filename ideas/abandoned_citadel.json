@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Ruins of Angkor",
+    "fictional": false,
+    "description": "Explore the ancient and abandoned citadel of Angkor, once the heart of the Khmer Empire. Traverse through the mystical ruins, where nature has reclaimed the stone structures, creating an eerie yet beautiful landscape.",
+    "likelyDistance": 300,
+    "possibleSteps": [
+      {
+        "startingLocation": "Angkor Wat",
+        "endingLocation": "Bayon Temple"
+      },
+      {
+        "startingLocation": "Bayon Temple",
+        "endingLocation": "Ta Prohm"
+      },
+      {
+        "startingLocation": "Ta Prohm",
+        "endingLocation": "Banteay Kdei"
+      },
+      {
+        "startingLocation": "Banteay Kdei",
+        "endingLocation": "Preah Khan"
+      },
+      {
+        "startingLocation": "Preah Khan",
+        "endingLocation": "Angkor Thom"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Lost City of Petra",
+      "fictional": false,
+      "description": "Journey through the ancient city of Petra, a once-thriving trade hub now standing as a testament to the past. Walk through the narrow Siq to the iconic Treasury and explore the vast ruins carved into the rose-red cliffs.",
+      "likelyDistance": 250,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Siq",
+          "endingLocation": "The Treasury"
+        },
+        {
+          "startingLocation": "The Treasury",
+          "endingLocation": "The Street of Facades"
+        },
+        {
+          "startingLocation": "The Street of Facades",
+          "endingLocation": "The Royal Tombs"
+        },
+        {
+          "startingLocation": "The Royal Tombs",
+          "endingLocation": "The Monastery"
+        },
+        {
+          "startingLocation": "The Monastery",
+          "endingLocation": "The Great Temple"
+        }
+      ]
+    },
+    {
+      "name": "The Citadel of Minas Tirith",
+      "fictional": true,
+      "description": "Embark on a journey through the legendary city of Minas Tirith from J.R.R. Tolkien's Middle-earth. Traverse the seven levels of the White City, each offering a unique glimpse into the grandeur and decay of this iconic fortress.",
+      "likelyDistance": 150,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Great Gate",
+          "endingLocation": "The First Circle"
+        },
+        {
+          "startingLocation": "The First Circle",
+          "endingLocation": "The Second Circle"
+        },
+        {
+          "startingLocation": "The Second Circle",
+          "endingLocation": "The Third Circle"
+        },
+        {
+          "startingLocation": "The Third Circle",
+          "endingLocation": "The Citadel"
+        },
+        {
+          "startingLocation": "The Citadel",
+          "endingLocation": "The White Tower"
+        }
+      ]
+    },
+    {
+      "name": "The Forbidden City",
+      "fictional": false,
+      "description": "Walk through the historic Forbidden City in Beijing, a sprawling palace complex that served as the home of emperors for nearly 500 years. Discover the grandeur and mystery of this ancient citadel.",
+      "likelyDistance": 350,
+      "possibleSteps": [
+        {
+          "startingLocation": "Meridian Gate",
+          "endingLocation": "Hall of Supreme Harmony"
+        },
+        {
+          "startingLocation": "Hall of Supreme Harmony",
+          "endingLocation": "Hall of Central Harmony"
+        },
+        {
+          "startingLocation": "Hall of Central Harmony",
+          "endingLocation": "Hall of Preserving Harmony"
+        },
+        {
+          "startingLocation": "Hall of Preserving Harmony",
+          "endingLocation": "Palace of Heavenly Purity"
+        },
+        {
+          "startingLocation": "Palace of Heavenly Purity",
+          "endingLocation": "Imperial Garden"
+        }
+      ]
+    }
+  ]
+}

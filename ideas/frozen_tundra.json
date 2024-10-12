@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Iditarod Trail",
+    "fictional": false,
+    "description": "Follow the historic Iditarod Trail, a route that spans the frozen tundra of Alaska, famous for the annual sled dog race. Experience the harsh, icy conditions and breathtaking landscapes as you traverse this legendary path.",
+    "likelyDistance": 1570,
+    "possibleSteps": [
+      {
+        "startingLocation": "Anchorage",
+        "endingLocation": "Willow"
+      },
+      {
+        "startingLocation": "Willow",
+        "endingLocation": "Rainy Pass"
+      },
+      {
+        "startingLocation": "Rainy Pass",
+        "endingLocation": "Nikolai"
+      },
+      {
+        "startingLocation": "Nikolai",
+        "endingLocation": "McGrath"
+      },
+      {
+        "startingLocation": "McGrath",
+        "endingLocation": "Nome"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Frostfangs Journey",
+      "fictional": true,
+      "description": "Venture through the Frostfangs, a treacherous mountain range in the world of Westeros from 'Game of Thrones'. Navigate the icy peaks and frozen valleys, encountering mythical creatures and ancient mysteries along the way.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "The Wall",
+          "endingLocation": "The Fist of the First Men"
+        },
+        {
+          "startingLocation": "The Fist of the First Men",
+          "endingLocation": "Craster's Keep"
+        },
+        {
+          "startingLocation": "Craster's Keep",
+          "endingLocation": "The Frostfangs"
+        },
+        {
+          "startingLocation": "The Frostfangs",
+          "endingLocation": "The Skirling Pass"
+        },
+        {
+          "startingLocation": "The Skirling Pass",
+          "endingLocation": "The Haunted Forest"
+        }
+      ]
+    },
+    {
+      "name": "The Siberian Traverse",
+      "fictional": false,
+      "description": "Embark on a journey across the vast Siberian tundra, experiencing the extreme cold and remote wilderness. This route takes you through some of the most isolated and breathtaking landscapes on Earth.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Omsk",
+          "endingLocation": "Novosibirsk"
+        },
+        {
+          "startingLocation": "Novosibirsk",
+          "endingLocation": "Krasnoyarsk"
+        },
+        {
+          "startingLocation": "Krasnoyarsk",
+          "endingLocation": "Irkutsk"
+        },
+        {
+          "startingLocation": "Irkutsk",
+          "endingLocation": "Ulan-Ude"
+        },
+        {
+          "startingLocation": "Ulan-Ude",
+          "endingLocation": "Vladivostok"
+        }
+      ]
+    },
+    {
+      "name": "The White Walkers' Path",
+      "fictional": true,
+      "description": "Follow the path of the White Walkers from 'Game of Thrones', traversing the icy lands beyond the Wall. This route takes you through the heart of the frozen wilderness, where danger lurks at every turn.",
+      "likelyDistance": 1500,
+      "possibleSteps": [
+        {
+          "startingLocation": "Hardhome",
+          "endingLocation": "The Lands of Always Winter"
+        },
+        {
+          "startingLocation": "The Lands of Always Winter",
+          "endingLocation": "The Shivering Sea"
+        },
+        {
+          "startingLocation": "The Shivering Sea",
+          "endingLocation": "The Frostfangs"
+        },
+        {
+          "startingLocation": "The Frostfangs",
+          "endingLocation": "The Wall"
+        },
+        {
+          "startingLocation": "The Wall",
+          "endingLocation": "Winterfell"
+        }
+      ]
+    }
+  ]
+}

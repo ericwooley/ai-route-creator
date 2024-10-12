@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Shire to Rivendell",
+    "fictional": true,
+    "description": "A journey through the lush and picturesque landscapes of Middle-earth, starting from the peaceful Shire and ending at the elven haven of Rivendell. This route captures the essence of a verdant, green valley with rolling hills and flowing rivers.",
+    "likelyDistance": 1200,
+    "possibleSteps": [
+      {
+        "startingLocation": "Hobbiton",
+        "endingLocation": "Bree"
+      },
+      {
+        "startingLocation": "Bree",
+        "endingLocation": "Weathertop"
+      },
+      {
+        "startingLocation": "Weathertop",
+        "endingLocation": "Last Bridge"
+      },
+      {
+        "startingLocation": "Last Bridge",
+        "endingLocation": "Trollshaws"
+      },
+      {
+        "startingLocation": "Trollshaws",
+        "endingLocation": "Rivendell"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Cotswold Way",
+      "fictional": false,
+      "description": "A scenic walk through the Cotswolds, known for its charming villages, rolling hills, and lush valleys. This route offers a quintessentially English countryside experience.",
+      "likelyDistance": 164,
+      "possibleSteps": [
+        {
+          "startingLocation": "Chipping Campden",
+          "endingLocation": "Broadway"
+        },
+        {
+          "startingLocation": "Broadway",
+          "endingLocation": "Winchcombe"
+        },
+        {
+          "startingLocation": "Winchcombe",
+          "endingLocation": "Cheltenham"
+        },
+        {
+          "startingLocation": "Cheltenham",
+          "endingLocation": "Painswick"
+        },
+        {
+          "startingLocation": "Painswick",
+          "endingLocation": "Bath"
+        }
+      ]
+    },
+    {
+      "name": "The Appalachian Trail: Shenandoah National Park",
+      "fictional": false,
+      "description": "A section of the Appalachian Trail that runs through the lush and scenic Shenandoah National Park, offering stunning views of the Blue Ridge Mountains and verdant valleys.",
+      "likelyDistance": 160,
+      "possibleSteps": [
+        {
+          "startingLocation": "Front Royal",
+          "endingLocation": "Skyline Drive"
+        },
+        {
+          "startingLocation": "Skyline Drive",
+          "endingLocation": "Big Meadows"
+        },
+        {
+          "startingLocation": "Big Meadows",
+          "endingLocation": "Lewis Mountain"
+        },
+        {
+          "startingLocation": "Lewis Mountain",
+          "endingLocation": "Swift Run Gap"
+        },
+        {
+          "startingLocation": "Swift Run Gap",
+          "endingLocation": "Rockfish Gap"
+        }
+      ]
+    },
+    {
+      "name": "The Milford Track",
+      "fictional": false,
+      "description": "A famous hiking route in New Zealand, known for its lush valleys, cascading waterfalls, and stunning mountain scenery. This track offers a breathtaking journey through Fiordland National Park.",
+      "likelyDistance": 53.5,
+      "possibleSteps": [
+        {
+          "startingLocation": "Glade Wharf",
+          "endingLocation": "Clinton Hut"
+        },
+        {
+          "startingLocation": "Clinton Hut",
+          "endingLocation": "Mintaro Hut"
+        },
+        {
+          "startingLocation": "Mintaro Hut",
+          "endingLocation": "Mackinnon Pass"
+        },
+        {
+          "startingLocation": "Mackinnon Pass",
+          "endingLocation": "Dumpling Hut"
+        },
+        {
+          "startingLocation": "Dumpling Hut",
+          "endingLocation": "Sandfly Point"
+        }
+      ]
+    }
+  ]
+}

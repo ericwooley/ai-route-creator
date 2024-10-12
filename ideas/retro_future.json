@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Neon Circuit of Neo-Tokyo",
+    "fictional": true,
+    "description": "A journey through the vibrant, neon-lit streets of a futuristic Tokyo, where flying cars zip by and holographic billboards light up the skyline. Experience the retro-futuristic vibes as you traverse this sprawling metropolis.",
+    "likelyDistance": 5000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Shibuya Crossing",
+        "endingLocation": "Akihabara Electric Town"
+      },
+      {
+        "startingLocation": "Akihabara Electric Town",
+        "endingLocation": "Tokyo Tower"
+      },
+      {
+        "startingLocation": "Tokyo Tower",
+        "endingLocation": "Odaiba Island"
+      },
+      {
+        "startingLocation": "Odaiba Island",
+        "endingLocation": "Shinjuku Skyscraper District"
+      },
+      {
+        "startingLocation": "Shinjuku Skyscraper District",
+        "endingLocation": "Roppongi Hills"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Synthwave Sojourn through Los Angeles 2049",
+      "fictional": true,
+      "description": "Travel through a futuristic Los Angeles inspired by synthwave aesthetics, with neon lights, flying cars, and a skyline dominated by towering skyscrapers and digital billboards.",
+      "likelyDistance": 6000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Downtown LA",
+          "endingLocation": "Santa Monica Pier"
+        },
+        {
+          "startingLocation": "Santa Monica Pier",
+          "endingLocation": "Hollywood Boulevard"
+        },
+        {
+          "startingLocation": "Hollywood Boulevard",
+          "endingLocation": "Griffith Observatory"
+        },
+        {
+          "startingLocation": "Griffith Observatory",
+          "endingLocation": "Venice Beach"
+        },
+        {
+          "startingLocation": "Venice Beach",
+          "endingLocation": "Beverly Hills"
+        }
+      ]
+    },
+    {
+      "name": "Neon Odyssey of New York 2121",
+      "fictional": true,
+      "description": "Embark on a neon-lit journey through a futuristic New York City, where the skyline is a dazzling array of lights and the streets are alive with the hum of advanced technology.",
+      "likelyDistance": 7000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Times Square",
+          "endingLocation": "Brooklyn Bridge"
+        },
+        {
+          "startingLocation": "Brooklyn Bridge",
+          "endingLocation": "Central Park"
+        },
+        {
+          "startingLocation": "Central Park",
+          "endingLocation": "Empire State Building"
+        },
+        {
+          "startingLocation": "Empire State Building",
+          "endingLocation": "Wall Street"
+        },
+        {
+          "startingLocation": "Wall Street",
+          "endingLocation": "Statue of Liberty"
+        }
+      ]
+    }
+  ]
+}

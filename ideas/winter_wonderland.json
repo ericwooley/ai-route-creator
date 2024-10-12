@@ -1,0 +1,116 @@
+{
+  "bestIdea": {
+    "name": "The Frosty Path to Arendelle",
+    "fictional": true,
+    "description": "A magical journey through the snow-covered landscapes inspired by the kingdom of Arendelle from Disney's Frozen. Traverse through icy mountains, frozen fjords, and enchanted forests.",
+    "likelyDistance": 1500,
+    "possibleSteps": [
+      {
+        "startingLocation": "Frozen Fjord",
+        "endingLocation": "Ice Palace"
+      },
+      {
+        "startingLocation": "Ice Palace",
+        "endingLocation": "Enchanted Forest"
+      },
+      {
+        "startingLocation": "Enchanted Forest",
+        "endingLocation": "Snowy Mountain Pass"
+      },
+      {
+        "startingLocation": "Snowy Mountain Pass",
+        "endingLocation": "Arendelle Castle"
+      },
+      {
+        "startingLocation": "Arendelle Castle",
+        "endingLocation": "Frozen Lake"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Winter Road to Narnia",
+      "fictional": true,
+      "description": "A journey through the wintry landscapes of Narnia, starting from the wardrobe entrance and traveling through the snowy woods to reach the White Witch's castle.",
+      "likelyDistance": 1200,
+      "possibleSteps": [
+        {
+          "startingLocation": "Wardrobe Entrance",
+          "endingLocation": "Lamp-post"
+        },
+        {
+          "startingLocation": "Lamp-post",
+          "endingLocation": "Mr. Tumnus' House"
+        },
+        {
+          "startingLocation": "Mr. Tumnus' House",
+          "endingLocation": "Beaver's Dam"
+        },
+        {
+          "startingLocation": "Beaver's Dam",
+          "endingLocation": "Aslan's Camp"
+        },
+        {
+          "startingLocation": "Aslan's Camp",
+          "endingLocation": "White Witch's Castle"
+        }
+      ]
+    },
+    {
+      "name": "The Snowy Trek to Lapland",
+      "fictional": false,
+      "description": "A real-world journey through the snowy landscapes of Lapland, exploring the vast wilderness, reindeer herding areas, and the Northern Lights.",
+      "likelyDistance": 2000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Rovaniemi",
+          "endingLocation": "Saariselkä"
+        },
+        {
+          "startingLocation": "Saariselkä",
+          "endingLocation": "Inari"
+        },
+        {
+          "startingLocation": "Inari",
+          "endingLocation": "Kittilä"
+        },
+        {
+          "startingLocation": "Kittilä",
+          "endingLocation": "Levi"
+        },
+        {
+          "startingLocation": "Levi",
+          "endingLocation": "Ylläs"
+        }
+      ]
+    },
+    {
+      "name": "The Icy Expedition to Antarctica",
+      "fictional": false,
+      "description": "A challenging expedition across the icy continent of Antarctica, exploring the vast ice sheets, glaciers, and remote research stations.",
+      "likelyDistance": 3000,
+      "possibleSteps": [
+        {
+          "startingLocation": "McMurdo Station",
+          "endingLocation": "Ross Ice Shelf"
+        },
+        {
+          "startingLocation": "Ross Ice Shelf",
+          "endingLocation": "Transantarctic Mountains"
+        },
+        {
+          "startingLocation": "Transantarctic Mountains",
+          "endingLocation": "Amundsen-Scott South Pole Station"
+        },
+        {
+          "startingLocation": "Amundsen-Scott South Pole Station",
+          "endingLocation": "Weddell Sea"
+        },
+        {
+          "startingLocation": "Weddell Sea",
+          "endingLocation": "Palmer Station"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "bestIdea": {
+    "name": "The Bayou of Louisiana",
+    "fictional": false,
+    "description": "Explore the mysterious and enchanting swamps of Louisiana, where the air is thick with humidity and the sounds of wildlife echo through the cypress trees. This journey takes you through the heart of the bayou, offering a glimpse into the unique ecosystem and culture of the region.",
+    "likelyDistance": 500,
+    "possibleSteps": [
+      {
+        "startingLocation": "New Orleans",
+        "endingLocation": "Jean Lafitte National Historical Park and Preserve"
+      },
+      {
+        "startingLocation": "Jean Lafitte National Historical Park and Preserve",
+        "endingLocation": "Atchafalaya Basin"
+      },
+      {
+        "startingLocation": "Atchafalaya Basin",
+        "endingLocation": "Lake Martin"
+      },
+      {
+        "startingLocation": "Lake Martin",
+        "endingLocation": "Cypress Island Preserve"
+      },
+      {
+        "startingLocation": "Cypress Island Preserve",
+        "endingLocation": "Avery Island"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "The Everglades Expedition",
+      "fictional": false,
+      "description": "Traverse the vast and diverse wetlands of the Florida Everglades, home to a rich array of wildlife and unique landscapes. This journey offers an immersive experience into one of the most famous swamps in the world.",
+      "likelyDistance": 600,
+      "possibleSteps": [
+        {
+          "startingLocation": "Miami",
+          "endingLocation": "Shark Valley"
+        },
+        {
+          "startingLocation": "Shark Valley",
+          "endingLocation": "Big Cypress National Preserve"
+        },
+        {
+          "startingLocation": "Big Cypress National Preserve",
+          "endingLocation": "Fakahatchee Strand Preserve State Park"
+        },
+        {
+          "startingLocation": "Fakahatchee Strand Preserve State Park",
+          "endingLocation": "Ten Thousand Islands"
+        },
+        {
+          "startingLocation": "Ten Thousand Islands",
+          "endingLocation": "Everglades City"
+        }
+      ]
+    },
+    {
+      "name": "The Swamps of Dagobah",
+      "fictional": true,
+      "description": "Venture into the murky and mysterious swamps of Dagobah, the remote planet known for its dense fog and twisted trees. This journey takes you through the iconic setting where Jedi Master Yoda once lived.",
+      "likelyDistance": 1000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Yoda's Hut",
+          "endingLocation": "Dark Side Cave"
+        },
+        {
+          "startingLocation": "Dark Side Cave",
+          "endingLocation": "Swamp Clearing"
+        },
+        {
+          "startingLocation": "Swamp Clearing",
+          "endingLocation": "Misty Marshes"
+        },
+        {
+          "startingLocation": "Misty Marshes",
+          "endingLocation": "Gnarled Tree Grove"
+        },
+        {
+          "startingLocation": "Gnarled Tree Grove",
+          "endingLocation": "Hidden Lagoon"
+        }
+      ]
+    }
+  ]
+}

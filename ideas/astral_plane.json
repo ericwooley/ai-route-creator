@@ -1,0 +1,72 @@
+{
+  "bestIdea": {
+    "name": "The Milky Way Voyage",
+    "fictional": true,
+    "description": "Embark on a journey through the Milky Way, traversing the spiral arms of our galaxy. Experience the wonders of nebulae, star clusters, and cosmic phenomena as you travel from the Orion Arm to the Sagittarius Arm.",
+    "likelyDistance": 100000,
+    "possibleSteps": [
+      {
+        "startingLocation": "Orion Arm",
+        "endingLocation": "Perseus Arm"
+      },
+      {
+        "startingLocation": "Perseus Arm",
+        "endingLocation": "Sagittarius Arm"
+      },
+      {
+        "startingLocation": "Sagittarius Arm",
+        "endingLocation": "Scutum-Centaurus Arm"
+      },
+      {
+        "startingLocation": "Scutum-Centaurus Arm",
+        "endingLocation": "Norma Arm"
+      },
+      {
+        "startingLocation": "Norma Arm",
+        "endingLocation": "Galactic Center"
+      }
+    ]
+  },
+  "otherIdeas": [
+    {
+      "name": "Journey to Andromeda",
+      "fictional": true,
+      "description": "A cosmic expedition from the Milky Way to the Andromeda Galaxy. Traverse the intergalactic void, witnessing the beauty of distant galaxies and the vastness of space.",
+      "likelyDistance": 2500000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Milky Way",
+          "endingLocation": "Triangulum Galaxy"
+        },
+        {
+          "startingLocation": "Triangulum Galaxy",
+          "endingLocation": "Andromeda Galaxy"
+        }
+      ]
+    },
+    {
+      "name": "Celestial Odyssey",
+      "fictional": true,
+      "description": "A grand tour of the celestial sphere, visiting major constellations and their brightest stars. Navigate through the night sky, from Orion to Ursa Major.",
+      "likelyDistance": 5000,
+      "possibleSteps": [
+        {
+          "startingLocation": "Orion",
+          "endingLocation": "Taurus"
+        },
+        {
+          "startingLocation": "Taurus",
+          "endingLocation": "Gemini"
+        },
+        {
+          "startingLocation": "Gemini",
+          "endingLocation": "Leo"
+        },
+        {
+          "startingLocation": "Leo",
+          "endingLocation": "Ursa Major"
+        }
+      ]
+    }
+  ]
+}
