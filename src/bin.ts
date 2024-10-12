@@ -3,6 +3,7 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import { generateRoute } from './runWithInputParams'
 import { boilDownResults, searchGoogle } from './tools/searchTool'
+import { searchGoogleMaps } from './tools/mapsTools'
 
 yargs(hideBin(process.argv))
   .scriptName('npm run arc')
@@ -73,5 +74,35 @@ yargs(hideBin(process.argv))
   .command('example', 'run the example', async () => {
     await generateRoute()
   })
+  .command(
+    'distance',
+    'calculate the distance between two places',
+    (yargs) =>
+      yargs
+        .option('from', {
+          alias: 'f',
+          type: 'string',
+          demand: true,
+          describe: 'The starting location',
+        })
+        .option('to', {
+          alias: 't',
+          type: 'string',
+          demand: true,
+          describe: 'The destination location',
+        })
+        .option('verbose', {
+          alias: 'v',
+          type: 'boolean',
+          demand: false,
+          default: false,
+          describe: 'Whether to log the results',
+        }),
+    async (argv) => {
+      const distance = await searchGoogleMaps(argv)
+      console.log('Distance:', JSON.stringify(distance, null, 2))
+      process.exit(0)
+    }
+  )
   .help()
   .alias('help', 'h').argv

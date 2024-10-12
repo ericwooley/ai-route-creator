@@ -3,7 +3,11 @@ import { ToolNode } from '@langchain/langgraph/prebuilt'
 import { createSearchTool } from './tools/searchTool'
 import { z } from 'zod'
 import { stepStructure } from './responseStructure'
+import { createMapsTool } from './tools/mapsTools'
 export const agentTools = [
+  createMapsTool({
+    verbose: true,
+  }),
   createSearchTool({
     name: 'distance_search',
     description: 'Search for the distance between two locations',
