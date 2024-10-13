@@ -91,7 +91,7 @@ export async function searchGoogleMaps({ from, to, verbose }: { from: string; to
 export const createMapsTool = ({
   verbose,
   name = 'google maps search',
-  description = 'Searches Google Maps and returns location results. This should only be used for non-fictional locations. Real places on earth during modern times only.',
+  description = 'Searches Google Maps and returns location results. This should only be used for non-fictional locations. Real places on earth during modern times only. Include as much information in to and from as possible, especially partial addresses and states.',
 }: {
   name?: string
   description?: string
@@ -122,6 +122,6 @@ export const createMapsTool = ({
       }
       logVerbose('Results:', JSON.stringify(results, null, 2))
       // await redis.set(cacheKey, JSON.stringify(results), 'EX', 60 * 60 * 24 * 7)
-      return { query: from, results }
+      return { from, to, results }
     },
   })

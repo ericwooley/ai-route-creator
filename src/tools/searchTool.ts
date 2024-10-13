@@ -141,12 +141,12 @@ export const createSearchTool = <T extends ZodTypeAny>({
       const logVerbose = log(query, verbose)
       logVerbose('Searching for:', query, 'using model', llm._modelType())
       const cacheKey = llm._modelType() + name + `:search-${query}`
-      const cachedResponse = await redis.get(cacheKey)
-      if (cachedResponse) {
-        const { finalAnswer, ...answers } = transform(JSON.parse(cachedResponse).finalAnswer)
-        logVerbose('Using cached response:', JSON.stringify(finalAnswer, null, 2))
-        return { query, definitiveAnswer: finalAnswer, context: answers }
-      }
+      // const cachedResponse = await redis.get(cacheKey)
+      // if (cachedResponse) {
+      //   const { finalAnswer, ...answers } = transform(JSON.parse(cachedResponse).finalAnswer)
+      //   logVerbose('Using cached response:', JSON.stringify(finalAnswer, null, 2))
+      //   return { query, definitiveAnswer: finalAnswer, context: answers }
+      // }
       logVerbose('Searching for:', query)
       const results = await searchGoogle({ query, verbose, name })
       if (!results) {
@@ -161,10 +161,14 @@ export const createSearchTool = <T extends ZodTypeAny>({
         results,
         resultSchema: responseSchema,
       })
-      logVerbose('Final Answer:', answers.finalAnswer, answers.answers)
+      logVerbose(
+        'Final Answer:',
+        JSON.stringify({ answers: answers.answers }),
+        JSON.stringify(answers.finalAnswer, null, 2)
+      )
       await redis.set(cacheKey, JSON.stringify(answers), 'EX', 60 * 60 * 24 * 7)
       const finalAnswer = transform(answers.finalAnswer)
-      logVerbose('Final Answer:', finalAnswer)
+
       return { query, definitiveAnswer: finalAnswer, context: answers }
     },
   })
@@ -289,7 +293,9 @@ export async function boilDownResults<T extends ZodTypeAny>({
               content = await getPdfContent(item.link)
             } else {
               await page.goto(item.link)
-              await page.waitForNetworkIdle()
+              await page.waitForNetworkIdle({
+                timeout: 5000,
+              })
               // Extract the content of the 'main' element
               content = await page.evaluate(() => {
                 let mainElement = document.querySelector('main')

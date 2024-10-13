@@ -8,6 +8,7 @@ import themes from './themes.json'
 import { recommendThemeIdea } from './recommendThemes'
 import { mkdir, mkdirSync, writeFileSync } from 'fs'
 import _ from 'lodash'
+const __dirname = new URL('.', import.meta.url).pathname
 yargs(hideBin(process.argv))
   .scriptName('npm run arc')
   .usage('$0 <cmd> [args]')
@@ -131,6 +132,21 @@ yargs(hideBin(process.argv))
         writeFileSync(`ideas/${_.snakeCase(theme.theme)}.json`, JSON.stringify(idea, null, 2))
       }
       process.exit(0)
+    }
+  )
+  .command(
+    'generate-routes-from-ideas',
+    'generate routes from ideas',
+    (yargs) =>
+      yargs.option('theme', {
+        alias: 't',
+        type: 'string',
+        default: 'all',
+        choices: ['all', ...themes.map((theme) => theme.theme)],
+        describe: 'The theme of the route',
+      }),
+    async (argv) => {
+      console.log('Generating routes from ideas', argv.theme)
     }
   )
   .help()
