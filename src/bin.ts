@@ -153,10 +153,12 @@ yargs(hideBin(process.argv))
       readdirSync('generated_routes').forEach((file) => {
         skip[file] = true
       })
+      console.log({ skip })
       console.log(skip)
       const themeList = argv.theme === 'all' ? themes : themes.filter((theme) => theme.theme === argv.theme)
       for (const theme of themeList) {
-        const filename = _.snakeCase(theme.theme)
+        const filename = _.snakeCase(theme.theme) + '.json'
+        console.log('Checking', filename, skip[filename])
         if (skip[filename]) {
           console.log('Skipping', filename)
           continue
@@ -174,7 +176,8 @@ Some ideas for steps are: \n${idea.bestIdea.possibleSteps
         console.log('\n\n\n\n')
         try {
           const result = await generateRoute({ routeIdea: bestIdea, fictional: idea.bestIdea.fictional })
-          writeFileSync(`generated_routes/${_.snakeCase(theme.theme)}.json`, JSON.stringify(result, null, 2))
+          console.log('Generated route: ', idea.bestIdea.name, JSON.stringify(result, null, 2))
+          writeFileSync(`generated_routes/${filename}`, JSON.stringify(result, null, 2))
         } catch (e) {
           console.error('Error generating route', e)
           exitCode = 1

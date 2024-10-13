@@ -1,0 +1,656 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Inca Trail to Machu Picchu itinerary"
+            },
+            "type": "tool_call",
+            "id": "call_n0Q3gfsPnqNyHe8vMjPnW8a0"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_n0Q3gfsPnqNyHe8vMjPnW8a0",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Inca Trail to Machu Picchu itinerary\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 24,
+            "promptTokens": 525,
+            "totalTokens": 549
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 525,
+            "completion_tokens": 24,
+            "total_tokens": 549,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AHhyrViaUWN2JGnNRoMbJ07fYPkdF"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Inca Trail to Machu Picchu itinerary\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Inca Trail to Machu Picchu is a renowned 4-day trek covering 26 miles (42 kilometers) through the Peruvian Andes. The journey begins in Cusco and passes through several significant Incan archaeological sites, including Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate, which offers a breathtaking view of Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and provides stunning views of the surrounding landscape. The trek concludes with a visit to the Machu Picchu ruins, offering a rewarding experience for hikers.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Cusco\",\n          \"endingLocation\": \"Ayapata\",\n          \"startingLocationDescription\": \"Cusco is the historical capital of the Inca Empire and the starting point for the Inca Trail.\",\n          \"endingLocationDescription\": \"Ayapata is the first campsite on the Inca Trail, offering a chance to acclimatize to the altitude.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 1 involves trekking from Cusco to Ayapata, passing through lush landscapes and beginning the ascent into the Andes.\"\n        },\n        {\n          \"startingLocation\": \"Ayapata\",\n          \"endingLocation\": \"Chaquiccocha\",\n          \"startingLocationDescription\": \"Ayapata is a campsite where trekkers rest after the first day of hiking.\",\n          \"endingLocationDescription\": \"Chaquiccocha is the second campsite, located after the challenging Dead Woman's Pass.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 2 covers the trek from Dead Woman's Pass to Chaquiccocha, the highest point of the trail, offering panoramic views.\"\n        },\n        {\n          \"startingLocation\": \"Chaquiccocha\",\n          \"endingLocation\": \"Wiñaywayna\",\n          \"startingLocationDescription\": \"Chaquiccocha is a serene campsite surrounded by stunning mountain views.\",\n          \"endingLocationDescription\": \"Wiñaywayna is an archaeological site and the final campsite before reaching Machu Picchu.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 3 involves trekking from Chaquiccocha to Wiñaywayna, passing through cloud forests and Incan ruins.\"\n        },\n        {\n          \"startingLocation\": \"Wiñaywayna\",\n          \"endingLocation\": \"Machu Picchu\",\n          \"startingLocationDescription\": \"Wiñaywayna is the last campsite, known for its impressive Incan terraces.\",\n          \"endingLocationDescription\": \"Machu Picchu is the iconic Incan citadel and the culmination of the Inca Trail.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 4 concludes the trek at Machu Picchu, entering through the Sun Gate for a stunning view of the ancient city.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"10\",\n    \"relevantLinks\": [\n      \"https://www.thebrokebackpacker.com/inca-trail-hike/\",\n      \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n      \"https://www.kimkim.com/c/inca-trail-5-day-itinerary\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is perfect for the question as it succinctly summarizes the itinerary of the Inca Trail to Machu Picchu, which is the user's query.\",\n        \"answer\": \"The Inca Trail to Machu Picchu is a 4-day hike covering 26 miles, passing several Incan archaeological sites, and culminating at the Sun Gate overlooking Machu Picchu.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Classic 4-day Inca Trail hike to Machu Picchu is arguably the most famous trail in all of South America. The Inca Trail’s length is 26 miles (42 kilometers) of pure Peruvian power that connects several Incan archaeological sites: Runcuracay, Sayacmarca, Phuyuptamarca, Wiñaywayna, and of course none other than the magnificent Machu Picchu ruins!\",\n        \"content\": \"The Inca Trail is a 4-day trek that covers 26 miles and includes visits to several Incan archaeological sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate at Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and offers stunning views of the Peruvian landscape. The journey ends with a visit to the Machu Picchu ruins, providing a rewarding experience for hikers.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer provides a concise summary of the Inca Trail to Machu Picchu itinerary, which is exactly what the user asked for.\",\n        \"answer\": \"4 days, 3 nights trek from Cusco to Machu Picchu via the Inca Trail.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Inca Trail Trek to Machu Picchu 4D, 3N Group Hiking Tour\",\n        \"content\": \"The itinerary includes a 4-day trek starting from Cusco, passing through various Inca sites, and culminating at Machu Picchu. Day 1 involves trekking from Cusco to Ayapata, Day 2 covers Dead Woman's Pass to Chaquiccocha, Day 3 goes from Chaquiccocha to Wiñaywayna, and Day 4 concludes at Machu Picchu via the Sun Gate.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Inca Trail to Machu Picchu is a renowned 4-day trek covering 26 miles (42 kilometers) through the Peruvian Andes. The journey begins in Cusco and passes through several significant Incan archaeological sites, including Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate, which offers a breathtaking view of Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and provides stunning views of the surrounding landscape. The trek concludes with a visit to the Machu Picchu ruins, offering a rewarding experience for hikers.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Cusco\",\n            \"endingLocation\": \"Ayapata\",\n            \"startingLocationDescription\": \"Cusco is the historical capital of the Inca Empire and the starting point for the Inca Trail.\",\n            \"endingLocationDescription\": \"Ayapata is the first campsite on the Inca Trail, offering a chance to acclimatize to the altitude.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 1 involves trekking from Cusco to Ayapata, passing through lush landscapes and beginning the ascent into the Andes.\"\n          },\n          {\n            \"startingLocation\": \"Ayapata\",\n            \"endingLocation\": \"Chaquiccocha\",\n            \"startingLocationDescription\": \"Ayapata is a campsite where trekkers rest after the first day of hiking.\",\n            \"endingLocationDescription\": \"Chaquiccocha is the second campsite, located after the challenging Dead Woman's Pass.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 2 covers the trek from Dead Woman's Pass to Chaquiccocha, the highest point of the trail, offering panoramic views.\"\n          },\n          {\n            \"startingLocation\": \"Chaquiccocha\",\n            \"endingLocation\": \"Wiñaywayna\",\n            \"startingLocationDescription\": \"Chaquiccocha is a serene campsite surrounded by stunning mountain views.\",\n            \"endingLocationDescription\": \"Wiñaywayna is an archaeological site and the final campsite before reaching Machu Picchu.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 3 involves trekking from Chaquiccocha to Wiñaywayna, passing through cloud forests and Incan ruins.\"\n          },\n          {\n            \"startingLocation\": \"Wiñaywayna\",\n            \"endingLocation\": \"Machu Picchu\",\n            \"startingLocationDescription\": \"Wiñaywayna is the last campsite, known for its impressive Incan terraces.\",\n            \"endingLocationDescription\": \"Machu Picchu is the iconic Incan citadel and the culmination of the Inca Trail.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 4 concludes the trek at Machu Picchu, entering through the Sun Gate for a stunning view of the ancient city.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"10\",\n      \"relevantLinks\": [\n        \"https://www.thebrokebackpacker.com/inca-trail-hike/\",\n        \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n        \"https://www.kimkim.com/c/inca-trail-5-day-itinerary\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is perfect for the question as it succinctly summarizes the itinerary of the Inca Trail to Machu Picchu, which is the user's query.\",\n          \"answer\": \"The Inca Trail to Machu Picchu is a 4-day hike covering 26 miles, passing several Incan archaeological sites, and culminating at the Sun Gate overlooking Machu Picchu.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"The Classic 4-day Inca Trail hike to Machu Picchu is arguably the most famous trail in all of South America. The Inca Trail’s length is 26 miles (42 kilometers) of pure Peruvian power that connects several Incan archaeological sites: Runcuracay, Sayacmarca, Phuyuptamarca, Wiñaywayna, and of course none other than the magnificent Machu Picchu ruins!\",\n          \"content\": \"The Inca Trail is a 4-day trek that covers 26 miles and includes visits to several Incan archaeological sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate at Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and offers stunning views of the Peruvian landscape. The journey ends with a visit to the Machu Picchu ruins, providing a rewarding experience for hikers.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer provides a concise summary of the Inca Trail to Machu Picchu itinerary, which is exactly what the user asked for.\",\n          \"answer\": \"4 days, 3 nights trek from Cusco to Machu Picchu via the Inca Trail.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"Inca Trail Trek to Machu Picchu 4D, 3N Group Hiking Tour\",\n          \"content\": \"The itinerary includes a 4-day trek starting from Cusco, passing through various Inca sites, and culminating at Machu Picchu. Day 1 involves trekking from Cusco to Ayapata, Day 2 covers Dead Woman's Pass to Chaquiccocha, Day 3 goes from Chaquiccocha to Wiñaywayna, and Day 4 concludes at Machu Picchu via the Sun Gate.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is perfect for the question as it succinctly summarizes the itinerary of the Inca Trail to Machu Picchu, which is the user's query.\",\n        \"answer\": \"The Inca Trail to Machu Picchu is a 4-day hike covering 26 miles, passing several Incan archaeological sites, and culminating at the Sun Gate overlooking Machu Picchu.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Classic 4-day Inca Trail hike to Machu Picchu is arguably the most famous trail in all of South America. The Inca Trail’s length is 26 miles (42 kilometers) of pure Peruvian power that connects several Incan archaeological sites: Runcuracay, Sayacmarca, Phuyuptamarca, Wiñaywayna, and of course none other than the magnificent Machu Picchu ruins!\",\n        \"content\": \"The Inca Trail is a 4-day trek that covers 26 miles and includes visits to several Incan archaeological sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate at Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and offers stunning views of the Peruvian landscape. The journey ends with a visit to the Machu Picchu ruins, providing a rewarding experience for hikers.\",\n        \"link\": \"https://www.thebrokebackpacker.com/inca-trail-hike/\",\n        \"query\": \"The Inca Trail to Machu Picchu itinerary\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer provides a concise summary of the Inca Trail to Machu Picchu itinerary, which is exactly what the user asked for.\",\n        \"answer\": \"4 days, 3 nights trek from Cusco to Machu Picchu via the Inca Trail.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Inca Trail Trek to Machu Picchu 4D, 3N Group Hiking Tour\",\n        \"content\": \"The itinerary includes a 4-day trek starting from Cusco, passing through various Inca sites, and culminating at Machu Picchu. Day 1 involves trekking from Cusco to Ayapata, Day 2 covers Dead Woman's Pass to Chaquiccocha, Day 3 goes from Chaquiccocha to Wiñaywayna, and Day 4 concludes at Machu Picchu via the Sun Gate.\",\n        \"link\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n        \"query\": \"The Inca Trail to Machu Picchu itinerary\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is perfect for the question as it provides a concise summary of the 8-day itinerary for the Inca Trail to Machu Picchu, directly addressing the user's query.\",\n        \"answer\": \"8-day itinerary: Day 1: Arrival in Lima, Day 2: Arrival in Cusco & Sacred Valley Tour, Day 3: Inca Trail Day 1, Day 4: Inca Trail Day 2, Day 5: Inca Trail Day 3, Day 6: Inca Trail Day 4, Day 7: Explore Machu Picchu and return to Cusco, Day 8: Departing Cusco.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Brief itinerary\\nDay\\tDestination\\tOvernight\\nDay 1\\tArrival in Lima\\tLima\\nDay 2\\tArrival in Cusco & Sacred Valley Tour: Cusco - Chinchero - Ollantaytambo\\tOllantaytambo\\nDay 3\\tInca Trail Day 1/4: Your Inca Trail Journey Begins\\tLlactapata\\nDay 4\\tInca Trail Day 2/4: Into the Cloud Forest\\tLlulluchapampa\\nDay 5\\tInca Trail Day 3/4: Mountains and Valleys\\tPhuyupatamarca\\nDay 6\\tInca Trail Day 4/4: Machu Picchu\\tAguas Calientes\\nDay 7\\tExplore Machu Picchu and return to Cusco\\tCusco\\nDay 8\\tDeparting Cusco\",\n        \"content\": \"The itinerary provides a detailed day-by-day plan for the Inca Trail to Machu Picchu, including arrival in Lima, a tour of the Sacred Valley, and a four-day trek on the Inca Trail culminating in a visit to Machu Picchu, followed by a return to Cusco and departure.\",\n        \"link\": \"https://www.kimkim.com/c/inca-trail-5-day-itinerary\",\n        \"query\": \"The Inca Trail to Machu Picchu itinerary\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_n0Q3gfsPnqNyHe8vMjPnW8a0",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5c616c20-59a3-44e1-a951-4593363bf73b"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Inca Trail to Machu Picchu itinerary"
+            },
+            "type": "tool_call",
+            "id": "call_SatRQEFpfkgnXNag5h4RfDvJ"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_SatRQEFpfkgnXNag5h4RfDvJ",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Inca Trail to Machu Picchu itinerary\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 24,
+            "promptTokens": 8898,
+            "totalTokens": 8922
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8898,
+            "completion_tokens": 24,
+            "total_tokens": 8922,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AHi4wHyRggOg5thKQksLXZA7vJMwZ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Inca Trail to Machu Picchu itinerary\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Inca Trail to Machu Picchu is a renowned 4-day trek that covers approximately 26 miles (42 kilometers) and includes visits to several significant Incan archaeological sites. The journey begins in Cusco and passes through sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate, which offers a breathtaking view of Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and provides stunning views of the Peruvian landscape. The trek is divided into four main segments, each offering unique experiences and historical insights, culminating in a rewarding visit to the Machu Picchu ruins.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Cusco\",\n          \"endingLocation\": \"Ayapata\",\n          \"startingLocationDescription\": \"Cusco is the historical capital of the Inca Empire and the starting point for the Inca Trail.\",\n          \"endingLocationDescription\": \"Ayapata is a campsite where trekkers spend the first night after a day of hiking.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 1 involves trekking from Cusco to Ayapata, passing through scenic landscapes and beginning the ascent into the Andes.\"\n        },\n        {\n          \"startingLocation\": \"Ayapata\",\n          \"endingLocation\": \"Chaquiccocha\",\n          \"startingLocationDescription\": \"Ayapata is a campsite where trekkers spend the first night.\",\n          \"endingLocationDescription\": \"Chaquiccocha is a campsite where trekkers spend the second night.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 2 covers the trek from Dead Woman's Pass to Chaquiccocha, passing through the highest point of the trail and offering stunning views.\"\n        },\n        {\n          \"startingLocation\": \"Chaquiccocha\",\n          \"endingLocation\": \"Wiñaywayna\",\n          \"startingLocationDescription\": \"Chaquiccocha is a campsite where trekkers spend the second night.\",\n          \"endingLocationDescription\": \"Wiñaywayna is an archaeological site and campsite near Machu Picchu.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 3 involves trekking from Chaquiccocha to Wiñaywayna, passing through lush cloud forests and visiting Incan sites.\"\n        },\n        {\n          \"startingLocation\": \"Wiñaywayna\",\n          \"endingLocation\": \"Machu Picchu\",\n          \"startingLocationDescription\": \"Wiñaywayna is an archaeological site and campsite near Machu Picchu.\",\n          \"endingLocationDescription\": \"Machu Picchu is the iconic Incan citadel and the final destination of the trek.\",\n          \"credibility\": {\n            \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n            \"reliability\": 10,\n            \"guess\": false\n          },\n          \"description\": \"Day 4 concludes the trek at Machu Picchu, entering through the Sun Gate and offering a panoramic view of the ancient ruins.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"10\",\n    \"relevantLinks\": [\n      \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n      \"https://www.thebrokebackpacker.com/inca-trail-hike/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a concise summary of the Inca Trail to Machu Picchu itinerary, which is exactly what the user asked for.\",\n        \"answer\": \"4 days, 3 nights trek from Cusco to Machu Picchu via the Inca Trail.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Inca Trail Trek to Machu Picchu 4D, 3N Group Hiking Tour\",\n        \"content\": \"The itinerary includes a 4-day trek starting from Cusco, passing through various Inca sites, and culminating at Machu Picchu. Day 1 involves trekking from Cusco to Ayapata, Day 2 covers Dead Woman's Pass to Chaquiccocha, Day 3 goes from Chaquiccocha to Wiñaywayna, and Day 4 concludes at Machu Picchu via the Sun Gate.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is perfect for the question as it succinctly summarizes the itinerary of the Inca Trail to Machu Picchu, which is the user's query.\",\n        \"answer\": \"The Inca Trail to Machu Picchu is a 4-day hike covering 26 miles, passing several Incan archaeological sites, and culminating at the Sun Gate overlooking Machu Picchu.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Classic 4-day Inca Trail hike to Machu Picchu is arguably the most famous trail in all of South America. The Inca Trail’s length is 26 miles (42 kilometers) of pure Peruvian power that connects several Incan archaeological sites: Runcuracay, Sayacmarca, Phuyuptamarca, Wiñaywayna, and of course none other than the magnificent Machu Picchu ruins!\",\n        \"content\": \"The Inca Trail is a 4-day trek that covers 26 miles and includes visits to several Incan archaeological sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate at Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and offers stunning views of the Peruvian landscape. The journey ends with a visit to the Machu Picchu ruins, providing a rewarding experience for hikers.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Inca Trail to Machu Picchu is a renowned 4-day trek that covers approximately 26 miles (42 kilometers) and includes visits to several significant Incan archaeological sites. The journey begins in Cusco and passes through sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate, which offers a breathtaking view of Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and provides stunning views of the Peruvian landscape. The trek is divided into four main segments, each offering unique experiences and historical insights, culminating in a rewarding visit to the Machu Picchu ruins.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Cusco\",\n            \"endingLocation\": \"Ayapata\",\n            \"startingLocationDescription\": \"Cusco is the historical capital of the Inca Empire and the starting point for the Inca Trail.\",\n            \"endingLocationDescription\": \"Ayapata is a campsite where trekkers spend the first night after a day of hiking.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 1 involves trekking from Cusco to Ayapata, passing through scenic landscapes and beginning the ascent into the Andes.\"\n          },\n          {\n            \"startingLocation\": \"Ayapata\",\n            \"endingLocation\": \"Chaquiccocha\",\n            \"startingLocationDescription\": \"Ayapata is a campsite where trekkers spend the first night.\",\n            \"endingLocationDescription\": \"Chaquiccocha is a campsite where trekkers spend the second night.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 2 covers the trek from Dead Woman's Pass to Chaquiccocha, passing through the highest point of the trail and offering stunning views.\"\n          },\n          {\n            \"startingLocation\": \"Chaquiccocha\",\n            \"endingLocation\": \"Wiñaywayna\",\n            \"startingLocationDescription\": \"Chaquiccocha is a campsite where trekkers spend the second night.\",\n            \"endingLocationDescription\": \"Wiñaywayna is an archaeological site and campsite near Machu Picchu.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 3 involves trekking from Chaquiccocha to Wiñaywayna, passing through lush cloud forests and visiting Incan sites.\"\n          },\n          {\n            \"startingLocation\": \"Wiñaywayna\",\n            \"endingLocation\": \"Machu Picchu\",\n            \"startingLocationDescription\": \"Wiñaywayna is an archaeological site and campsite near Machu Picchu.\",\n            \"endingLocationDescription\": \"Machu Picchu is the iconic Incan citadel and the final destination of the trek.\",\n            \"credibility\": {\n              \"source\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n              \"reliability\": 10,\n              \"guess\": false\n            },\n            \"description\": \"Day 4 concludes the trek at Machu Picchu, entering through the Sun Gate and offering a panoramic view of the ancient ruins.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"10\",\n      \"relevantLinks\": [\n        \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n        \"https://www.thebrokebackpacker.com/inca-trail-hike/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a concise summary of the Inca Trail to Machu Picchu itinerary, which is exactly what the user asked for.\",\n          \"answer\": \"4 days, 3 nights trek from Cusco to Machu Picchu via the Inca Trail.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"Inca Trail Trek to Machu Picchu 4D, 3N Group Hiking Tour\",\n          \"content\": \"The itinerary includes a 4-day trek starting from Cusco, passing through various Inca sites, and culminating at Machu Picchu. Day 1 involves trekking from Cusco to Ayapata, Day 2 covers Dead Woman's Pass to Chaquiccocha, Day 3 goes from Chaquiccocha to Wiñaywayna, and Day 4 concludes at Machu Picchu via the Sun Gate.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is perfect for the question as it succinctly summarizes the itinerary of the Inca Trail to Machu Picchu, which is the user's query.\",\n          \"answer\": \"The Inca Trail to Machu Picchu is a 4-day hike covering 26 miles, passing several Incan archaeological sites, and culminating at the Sun Gate overlooking Machu Picchu.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"The Classic 4-day Inca Trail hike to Machu Picchu is arguably the most famous trail in all of South America. The Inca Trail’s length is 26 miles (42 kilometers) of pure Peruvian power that connects several Incan archaeological sites: Runcuracay, Sayacmarca, Phuyuptamarca, Wiñaywayna, and of course none other than the magnificent Machu Picchu ruins!\",\n          \"content\": \"The Inca Trail is a 4-day trek that covers 26 miles and includes visits to several Incan archaeological sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate at Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and offers stunning views of the Peruvian landscape. The journey ends with a visit to the Machu Picchu ruins, providing a rewarding experience for hikers.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a concise summary of the Inca Trail to Machu Picchu itinerary, which is exactly what the user asked for.\",\n        \"answer\": \"4 days, 3 nights trek from Cusco to Machu Picchu via the Inca Trail.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Inca Trail Trek to Machu Picchu 4D, 3N Group Hiking Tour\",\n        \"content\": \"The itinerary includes a 4-day trek starting from Cusco, passing through various Inca sites, and culminating at Machu Picchu. Day 1 involves trekking from Cusco to Ayapata, Day 2 covers Dead Woman's Pass to Chaquiccocha, Day 3 goes from Chaquiccocha to Wiñaywayna, and Day 4 concludes at Machu Picchu via the Sun Gate.\",\n        \"link\": \"https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/\",\n        \"query\": \"The Inca Trail to Machu Picchu itinerary\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is perfect for the question as it succinctly summarizes the itinerary of the Inca Trail to Machu Picchu, which is the user's query.\",\n        \"answer\": \"The Inca Trail to Machu Picchu is a 4-day hike covering 26 miles, passing several Incan archaeological sites, and culminating at the Sun Gate overlooking Machu Picchu.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Classic 4-day Inca Trail hike to Machu Picchu is arguably the most famous trail in all of South America. The Inca Trail’s length is 26 miles (42 kilometers) of pure Peruvian power that connects several Incan archaeological sites: Runcuracay, Sayacmarca, Phuyuptamarca, Wiñaywayna, and of course none other than the magnificent Machu Picchu ruins!\",\n        \"content\": \"The Inca Trail is a 4-day trek that covers 26 miles and includes visits to several Incan archaeological sites such as Runcuracay, Sayacmarca, Phuyuptamarca, and Wiñaywayna, before reaching the Sun Gate at Machu Picchu. The trail is known for its challenging elevation, reaching over 13,000 feet, and offers stunning views of the Peruvian landscape. The journey ends with a visit to the Machu Picchu ruins, providing a rewarding experience for hikers.\",\n        \"link\": \"https://www.thebrokebackpacker.com/inca-trail-hike/\",\n        \"query\": \"The Inca Trail to Machu Picchu itinerary\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_SatRQEFpfkgnXNag5h4RfDvJ",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e593ef1c-faac-4969-977d-c1e411ed6549"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Cusco, Peru",
+              "to": "Ollantaytambo, Peru"
+            },
+            "type": "tool_call",
+            "id": "call_BYXIrbLVhJ7DmYS2LFxhdHxz"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_BYXIrbLVhJ7DmYS2LFxhdHxz",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Cusco, Peru\",\"to\":\"Ollantaytambo, Peru\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 30,
+            "promptTokens": 16657,
+            "totalTokens": 16687
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 16657,
+            "completion_tokens": 30,
+            "total_tokens": 16687,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AHi57VbD9fMDqWlt0SVfQtRV3kgMd"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Cusco, Peru\",\n  \"to\": \"Ollantaytambo, Peru\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Ollantaytambo, Peru\"\n    ],\n    \"origin_addresses\": [\n      \"Cusco, Peru\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"58.8 km\",\n              \"value\": 58796\n            },\n            \"duration\": {\n              \"text\": \"13 hours 1 min\",\n              \"value\": 46860\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_BYXIrbLVhJ7DmYS2LFxhdHxz",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "9e76c062-37d5-4457-ae2f-20ebf831629a"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Ollantaytambo, Peru",
+              "to": "Wayllabamba, Peru"
+            },
+            "type": "tool_call",
+            "id": "call_JHmMC7exBWDFUOrOsyBvfZ43"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_JHmMC7exBWDFUOrOsyBvfZ43",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Ollantaytambo, Peru\",\"to\":\"Wayllabamba, Peru\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 16870,
+            "totalTokens": 16902
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 16870,
+            "completion_tokens": 32,
+            "total_tokens": 16902,
+            "prompt_tokens_details": {
+              "cached_tokens": 15616
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AHi6QVBpuubRcqUFHgnFOun5uUQ1B"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Ollantaytambo, Peru\",\n  \"to\": \"Wayllabamba, Peru\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"PHP3+75W Wayllabamba Camp, Chillca 08680, Peru\",\n      \"Inca Trail, 08680, Peru\",\n      \"Huayllabamba 08670, Peru\"\n    ],\n    \"origin_addresses\": [\n      \"Ollantaytambo, Peru\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"25.4 km\",\n              \"value\": 25393\n            },\n            \"duration\": {\n              \"text\": \"6 hours 17 mins\",\n              \"value\": 22616\n            },\n            \"status\": \"OK\"\n          },\n          {\n            \"distance\": {\n              \"text\": \"25.5 km\",\n              \"value\": 25507\n            },\n            \"duration\": {\n              \"text\": \"6 hours 20 mins\",\n              \"value\": 22824\n            },\n            \"status\": \"OK\"\n          },\n          {\n            \"distance\": {\n              \"text\": \"26.3 km\",\n              \"value\": 26295\n            },\n            \"duration\": {\n              \"text\": \"5 hours 58 mins\",\n              \"value\": 21499\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_JHmMC7exBWDFUOrOsyBvfZ43",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "93620354-0ba1-443c-a931-bcde96526722"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Wayllabamba, Peru",
+              "to": "Pacaymayo, Peru"
+            },
+            "type": "tool_call",
+            "id": "call_BAsC0uakGibUY5ehQcc6HpkK"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_BAsC0uakGibUY5ehQcc6HpkK",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Wayllabamba, Peru\",\"to\":\"Pacaymayo, Peru\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 30,
+            "promptTokens": 13105,
+            "totalTokens": 13135
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 13105,
+            "completion_tokens": 30,
+            "total_tokens": 13135,
+            "prompt_tokens_details": {
+              "cached_tokens": 7936
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AHi72TXRKWFK5mY3ac3aanKN4krze"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Wayllabamba, Peru\",\n  \"to\": \"Pacaymayo, Peru\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Rio Pacaymayo, 08680, Peru\"\n    ],\n    \"origin_addresses\": [\n      \"PHP3+75W Wayllabamba Camp, Chillca 08680, Peru\",\n      \"Inca Trail, 08680, Peru\",\n      \"Huayllabamba 08670, Peru\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"8.0 km\",\n              \"value\": 7988\n            },\n            \"duration\": {\n              \"text\": \"4 hours 2 mins\",\n              \"value\": 14546\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      },\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"7.9 km\",\n              \"value\": 7873\n            },\n            \"duration\": {\n              \"text\": \"3 hours 59 mins\",\n              \"value\": 14338\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      },\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"59.7 km\",\n              \"value\": 59665\n            },\n            \"duration\": {\n              \"text\": \"16 hours 15 mins\",\n              \"value\": 58478\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_BAsC0uakGibUY5ehQcc6HpkK",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "7a27a092-2c11-49fd-b92f-bf6daeb79694"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Pacaymayo, Peru",
+              "to": "Wiñay Wayna, Peru"
+            },
+            "type": "tool_call",
+            "id": "call_DUnFZmMA5sYohAWomp3NBXeE"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_DUnFZmMA5sYohAWomp3NBXeE",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Pacaymayo, Peru\",\"to\":\"Wiñay Wayna, Peru\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 9892,
+            "totalTokens": 9923
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9892,
+            "completion_tokens": 31,
+            "total_tokens": 9923,
+            "prompt_tokens_details": {
+              "cached_tokens": 7808
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AHi7d3WLG8NqwinqSSKN57rXCKtQG"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Pacaymayo, Peru\",\n  \"to\": \"Wiñay Wayna, Peru\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"51, 08676, Peru\"\n    ],\n    \"origin_addresses\": [\n      \"Rio Pacaymayo, 08680, Peru\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"32.5 km\",\n              \"value\": 32540\n            },\n            \"duration\": {\n              \"text\": \"9 hours 41 mins\",\n              \"value\": 34881\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_DUnFZmMA5sYohAWomp3NBXeE",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "65fb0dca-0045-4869-9368-6b88ff3be051"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Wiñay Wayna, Peru",
+              "to": "Machu Picchu, Peru"
+            },
+            "type": "tool_call",
+            "id": "call_bDX3GfWSHZ1mD4lwX32PYaYB"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_bDX3GfWSHZ1mD4lwX32PYaYB",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Wiñay Wayna, Peru\",\"to\":\"Machu Picchu, Peru\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 9917,
+            "totalTokens": 9948
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9917,
+            "completion_tokens": 31,
+            "total_tokens": 9948,
+            "prompt_tokens_details": {
+              "cached_tokens": 7808
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AHi8IyuuP1BXSb8i7i3N1De4GMMWm"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Wiñay Wayna, Peru\",\n  \"to\": \"Machu Picchu, Peru\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"08680, Peru\",\n      \"Machu Picchu, 08680, Peru\"\n    ],\n    \"origin_addresses\": [\n      \"51, 08676, Peru\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"46.2 km\",\n              \"value\": 46196\n            },\n            \"duration\": {\n              \"text\": \"14 hours 37 mins\",\n              \"value\": 52640\n            },\n            \"status\": \"OK\"\n          },\n          {\n            \"distance\": {\n              \"text\": \"47.1 km\",\n              \"value\": 47101\n            },\n            \"duration\": {\n              \"text\": \"15 hours 24 mins\",\n              \"value\": 55417\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_bDX3GfWSHZ1mD4lwX32PYaYB",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "40cd7ff6-c55b-4ffc-a51b-f71984562889"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Alpaca Expeditions",
+      "link": "https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/"
+    },
+    {
+      "name": "The Broke Backpacker",
+      "link": "https://www.thebrokebackpacker.com/inca-trail-hike/"
+    },
+    {
+      "name": "Kimkim",
+      "link": "https://www.kimkim.com/c/inca-trail-5-day-itinerary"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Inca Trail to Machu Picchu\", which is real world.\nThe  pitch for this route is \"Follow the ancient paths of the Incas through the Andes mountains, culminating in the breathtaking ruins of Machu Picchu. This historic trek offers a glimpse into the past with its well-preserved archaeological sites.\".\nSome ideas for steps are: \n\t - Cusco to Ollantaytambo\n\t - Ollantaytambo to Wayllabamba\n\t - Wayllabamba to Pacaymayo\n\t - Pacaymayo to Wiñay Wayna\n\t - Wiñay Wayna to Machu Picchu",
+  "itinerary": [
+    {
+      "startingLocation": "Cusco",
+      "endingLocation": "Ollantaytambo",
+      "startingLocationDescription": "Cusco is the historical capital of the Inca Empire and the starting point for the Inca Trail.",
+      "endingLocationDescription": "Ollantaytambo is a town in the Sacred Valley of the Incas, known for its well-preserved Incan ruins.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Cusco, Peru"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in southeastern Peru, accessible by road from Cusco."
+    },
+    {
+      "startingLocation": "Ollantaytambo",
+      "endingLocation": "Wayllabamba",
+      "startingLocationDescription": "Ollantaytambo is a starting point for many Inca Trail treks.",
+      "endingLocationDescription": "Wayllabamba is a small village and the first campsite on the Inca Trail.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Ollantaytambo, Peru"
+      ],
+      "anyExtraInformationOnHowToFind": "Accessible by foot from Ollantaytambo, part of the Inca Trail."
+    },
+    {
+      "startingLocation": "Wayllabamba",
+      "endingLocation": "Pacaymayo",
+      "startingLocationDescription": "Wayllabamba is a village where trekkers often camp on the first night.",
+      "endingLocationDescription": "Pacaymayo is a campsite located after the challenging Dead Woman's Pass.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Wayllabamba, Peru"
+      ],
+      "anyExtraInformationOnHowToFind": "Part of the Inca Trail, accessible by foot."
+    },
+    {
+      "startingLocation": "Pacaymayo",
+      "endingLocation": "Wiñay Wayna",
+      "startingLocationDescription": "Pacaymayo is a popular campsite on the Inca Trail.",
+      "endingLocationDescription": "Wiñay Wayna is an archaeological site and the final campsite before reaching Machu Picchu.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Pacaymayo, Peru"
+      ],
+      "anyExtraInformationOnHowToFind": "Located on the Inca Trail, accessible by foot."
+    },
+    {
+      "startingLocation": "Wiñay Wayna",
+      "endingLocation": "Machu Picchu",
+      "startingLocationDescription": "Wiñay Wayna is known for its impressive Incan terraces.",
+      "endingLocationDescription": "Machu Picchu is the iconic Incan citadel and the culmination of the Inca Trail.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Wiñay Wayna, Peru"
+      ],
+      "anyExtraInformationOnHowToFind": "The final leg of the Inca Trail, entering through the Sun Gate."
+    }
+  ],
+  "route": "Cusco to Machu Picchu via the Inca Trail",
+  "steps": [
+    {
+      "startingLocation": "Cusco",
+      "endingLocation": "Ollantaytambo",
+      "distance": 58.8,
+      "startingLocationDescription": "Cusco is the historical capital of the Inca Empire and the starting point for the Inca Trail.",
+      "endingLocationDescription": "Ollantaytambo is a town in the Sacred Valley of the Incas, known for its well-preserved Incan ruins.",
+      "credibility": {
+        "source": "https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Ollantaytambo",
+      "endingLocation": "Wayllabamba",
+      "distance": 25.4,
+      "startingLocationDescription": "Ollantaytambo is a starting point for many Inca Trail treks.",
+      "endingLocationDescription": "Wayllabamba is a small village and the first campsite on the Inca Trail.",
+      "credibility": {
+        "source": "https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Wayllabamba",
+      "endingLocation": "Pacaymayo",
+      "distance": 8,
+      "startingLocationDescription": "Wayllabamba is a village where trekkers often camp on the first night.",
+      "endingLocationDescription": "Pacaymayo is a campsite located after the challenging Dead Woman's Pass.",
+      "credibility": {
+        "source": "https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Pacaymayo",
+      "endingLocation": "Wiñay Wayna",
+      "distance": 32.5,
+      "startingLocationDescription": "Pacaymayo is a popular campsite on the Inca Trail.",
+      "endingLocationDescription": "Wiñay Wayna is an archaeological site and the final campsite before reaching Machu Picchu.",
+      "credibility": {
+        "source": "https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Wiñay Wayna",
+      "endingLocation": "Machu Picchu",
+      "distance": 5,
+      "startingLocationDescription": "Wiñay Wayna is known for its impressive Incan terraces.",
+      "endingLocationDescription": "Machu Picchu is the iconic Incan citadel and the culmination of the Inca Trail.",
+      "credibility": {
+        "source": "https://www.alpacaexpeditions.com/classic-inca-trail-trek-4d3n-group-service/",
+        "reliability": 10,
+        "guess": false
+      }
+    }
+  ]
+}
