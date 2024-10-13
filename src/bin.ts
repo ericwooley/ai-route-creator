@@ -6,7 +6,8 @@ import { boilDownResults, searchGoogle } from './tools/searchTool'
 import { searchGoogleMaps } from './tools/mapsTools'
 import themes from './themes.json'
 import { recommendThemeIdea } from './recommendThemes'
-import { mkdir, mkdirSync, writeFileSync } from 'fs'
+import { mkdir, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs'
+import path from 'path'
 import _ from 'lodash'
 const __dirname = new URL('.', import.meta.url).pathname
 yargs(hideBin(process.argv))
@@ -146,7 +147,40 @@ yargs(hideBin(process.argv))
         describe: 'The theme of the route',
       }),
     async (argv) => {
-      console.log('Generating routes from ideas', argv.theme)
+      let exitCode = 0
+      mkdirSync('generated_routes', { recursive: true })
+      const skip: { [filename: string]: boolean } = {}
+      readdirSync('generated_routes').forEach((file) => {
+        skip[file] = true
+      })
+      console.log(skip)
+      const themeList = argv.theme === 'all' ? themes : themes.filter((theme) => theme.theme === argv.theme)
+      for (const theme of themeList) {
+        const filename = _.snakeCase(theme.theme)
+        if (skip[filename]) {
+          console.log('Skipping', filename)
+          continue
+        }
+        const idea = JSON.parse(readFileSync(path.join(`ideas/${_.snakeCase(theme.theme)}.json`), 'utf-8'))
+        const bestIdea = `
+My idea is a route for "${idea.bestIdea.name}", which is ${idea.bestIdea.fictional ? 'fictional' : 'real world'}.
+The  pitch for this route is "${idea.bestIdea.description}".
+Some ideas for steps are: \n${idea.bestIdea.possibleSteps
+          .map((step) => `\t - ${step.startingLocation} to ${step.endingLocation}`)
+          .join('\n')}
+        `.trim()
+        console.log('Generating routes from ideas', idea.bestIdea.name)
+        console.log(bestIdea)
+        console.log('\n\n\n\n')
+        try {
+          const result = await generateRoute({ routeIdea: bestIdea, fictional: idea.bestIdea.fictional })
+          writeFileSync(`generated_routes/${_.snakeCase(theme.theme)}.json`, JSON.stringify(result, null, 2))
+        } catch (e) {
+          console.error('Error generating route', e)
+          exitCode = 1
+        }
+      }
+      process.exit(exitCode)
     }
   )
   .help()

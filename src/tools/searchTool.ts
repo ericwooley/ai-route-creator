@@ -363,7 +363,7 @@ export async function boilDownResults<T extends ZodTypeAny>({
       })
     return {
       finalAnswer,
-      answers,
+      answers: answers.filter((a) => Number(a.answerQuality) > 7),
     }
   } finally {
     await browser.close()

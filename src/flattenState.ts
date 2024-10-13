@@ -2,10 +2,10 @@ import { StateAnnotation } from './StateAnnotation'
 
 export function flattenState(state: typeof StateAnnotation.State) {
   const { ...restState } = state
-
+  const firstAndLast10Messages = state.messages.slice(0, 5).concat(state.messages.slice(-5))
   return {
     ...restState,
-    messages: state.messages.map((message) => `- ${JSON.stringify(message.content)}`).join('\n\n'),
+    messages: firstAndLast10Messages.map((message) => `- ${JSON.stringify(message.content)}`).join('\n\n'),
     itinerary: state.itinerary
       .map(
         ({ startingLocation, endingLocation, ...otherInfo }) =>
