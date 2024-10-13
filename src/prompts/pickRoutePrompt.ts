@@ -50,7 +50,7 @@ Make sure to summarize this in a route someone could follow on foot or car. Step
 
 The order of the steps are important. Each step should be a journey from the previous step, and be in order from closest to the start to furthest from the start.
 
-Ideally the itinerary should have at least 10 steps, however 5 is a minimum if there simply is not enough for 10
+The itinerary should have at least 10 steps, however 5 is a minimum if there simply is not enough for 10. 20 or more is fantastic.
 
 Make sure to include the final destination as the last step. We don't just want destinations, we want a route, with a start and end.
 
