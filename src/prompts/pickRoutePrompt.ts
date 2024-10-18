@@ -54,6 +54,10 @@ The itinerary should have at least 10 steps, however 5 is a minimum if there sim
 
 Make sure to include the final destination as the last step. We don't just want destinations, we want a route, with a start and end.
 
+Make sure all locations in the itinerary make sense for the proposed route based on the search results. You cannot trust the idea submitter to have done this correctly. Use the search results to make sure itinerary ideas make sense.
+
+Part of your job is removing results that don't fit. For example, if the user is searching a fictional route, and the search results include a real location, you should remove that location from the itinerary.
+
 {parser_instructions}
 
 `.trim()
@@ -63,6 +67,7 @@ export const pickRouteNode = async (state: typeof StateAnnotation.State) => {
     .pipe(llm())
     .pipe(summaryParser)
     .invoke({ ...flattenState(state), parser_instructions: summaryParser.getFormatInstructions() })
+  console.log('Found route', response)
   return {
     route: response.route,
     references: response.references,

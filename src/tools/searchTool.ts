@@ -51,6 +51,8 @@ async function getPdfContent(url: string): Promise<string> {
 }
 
 export const defaultLLM = () => new ChatOpenAI({ maxConcurrency: 10, temperature: 0, cache: cache, model: 'gpt-4o' })
+export const defaultReaderLLM = () =>
+  new ChatOpenAI({ maxConcurrency: 10, temperature: 0, cache: cache, model: 'gpt-4o-mini' })
 
 const answerQualitySchema = z
   .union([
@@ -118,6 +120,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
   responseSchema,
   verbose,
   llm = defaultLLM(),
+  readerLLM = defaultReaderLLM(),
   name = 'internet search',
   description = 'Searches google and returns results as parsed by the first x results',
   transform = (result) => result,
@@ -126,6 +129,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
   description?: string
   responseSchema: T
   llm?: BaseChatModel
+  readerLLM?: BaseChatModel
   verbose: boolean
   transform?: (result: z.infer<T>) => any
 }) =>
@@ -148,7 +152,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
       }
       logVerbose('Results:', results.items.length)
       const answers = await boilDownResults({
-        llm,
+        llm: readerLLM,
         context: `${name} - ${description}`,
         verbose,
         query,
@@ -237,7 +241,7 @@ export async function searchGoogle({
 export async function boilDownResults<T extends ZodTypeAny>({
   query,
   results,
-  llm = defaultLLM(),
+  llm = defaultReaderLLM(),
   limit = 5,
   resultSchema = z.string() as any as T,
   verbose = false,

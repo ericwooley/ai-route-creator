@@ -7,6 +7,7 @@ import { summarizeSteps } from './prompts/summarizeStepsPrompt'
 import { searchStep } from './prompts/searchStepPrompt'
 import { pickRouteNode } from './prompts/pickRoutePrompt'
 import { searchItineraryNode } from './prompts/searchItineraryPrompt'
+import { createHash } from 'crypto'
 
 function decideNextRoute({ messages, steps, itinerary }: typeof StateAnnotation.State) {
   const lastMessage = messages[messages.length - 1]
@@ -52,7 +53,10 @@ const graph = builder.compile({ checkpointer })
 // Execute the graph
 export const generateRoute = async ({ routeIdea, fictional }: { routeIdea?: string; fictional?: boolean } = {}) => {
   console.log('Generating route', routeIdea, fictional)
+  const hash = createHash('md5')
+  hash.update(JSON.stringify({ routeIdea, fictional }))
+  const thread_id = hash.digest('hex')
   const state = { routeIdea, fictional }
-  const itinerary = await graph.invoke(state, { configurable: { thread_id: '42' }, recursionLimit: 40 })
+  const itinerary = await graph.invoke(state, { configurable: { thread_id }, recursionLimit: 40 })
   return itinerary
 }

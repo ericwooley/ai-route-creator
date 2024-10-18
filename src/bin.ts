@@ -162,12 +162,17 @@ yargs(hideBin(process.argv))
       })
 
       const themeList = argv.theme === 'all' ? themes : themes.filter((theme) => theme.theme === argv.theme)
+      let generatedCount = 0
       for (const theme of themeList) {
         const filename = _.snakeCase(theme.theme) + '.json'
         console.log('Checking', filename, skip[filename])
         if (skip[filename]) {
           console.log('Skipping', filename)
           continue
+        }
+        generatedCount++
+        if (generatedCount > argv.limit) {
+          break
         }
         const idea = JSON.parse(readFileSync(path.join(`ideas/${_.snakeCase(theme.theme)}.json`), 'utf-8'))
         const bestIdea = `

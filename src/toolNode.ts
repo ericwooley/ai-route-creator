@@ -47,7 +47,8 @@ export const agentTools = [
   }),
   createSearchTool({
     name: 'itinerary_search',
-    description: 'Search for itineraries for a route and locations along a route',
+    description:
+      'Search for itineraries for a route and locations along a route, make sure to specify if you are looking for fictional locations or real locations.',
     responseSchema: z.array(
       z.array(
         stepStructure
