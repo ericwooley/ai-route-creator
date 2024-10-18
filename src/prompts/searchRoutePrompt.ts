@@ -2,7 +2,7 @@ import { PromptTemplate } from '@langchain/core/prompts'
 import { background } from './backgroundPrompt'
 import { flattenState as llmState } from '../flattenState'
 import { StateAnnotation } from '../StateAnnotation'
-import { agentModel } from '../agentModel'
+import { getAgentModel } from '../agentModel'
 
 export const routePrompt = PromptTemplate.fromTemplate(
   `
@@ -20,7 +20,7 @@ if the the idea is fiction "Historical Adventure" the search might be "Interesti
 `.trim()
 )
 export const searchRouteNode = async (state: typeof StateAnnotation.State) => {
-  const response = await routePrompt.pipe(agentModel).invoke({
+  const response = await routePrompt.pipe(getAgentModel()).invoke({
     ...llmState(state),
   })
   if (response.content.toString().toLowerCase().includes(state.routeIdea.toLowerCase())) {

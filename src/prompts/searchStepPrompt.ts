@@ -1,6 +1,6 @@
 import { PromptTemplate } from '@langchain/core/prompts'
 import { background } from './backgroundPrompt'
-import { agentModel } from '../agentModel'
+import { getAgentModel } from '../agentModel'
 import { flattenState } from '../flattenState'
 import { StateAnnotation } from '../StateAnnotation'
 
@@ -42,7 +42,7 @@ export const searchStep = async (state: typeof StateAnnotation.State) => {
   if (!nextInfo) {
     console.warn('No next information found')
   }
-  const response = await stepPrompt.pipe(agentModel).invoke({
+  const response = await stepPrompt.pipe(getAgentModel()).invoke({
     ...flattenState(state),
     next_information: nextInfo,
   })

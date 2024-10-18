@@ -1,6 +1,6 @@
 import { StateGraph } from '@langchain/langgraph'
 import { StateAnnotation } from './StateAnnotation'
-import { toolNode } from './toolNode'
+import { getToolNode } from './toolNode'
 import { checkpointer } from './checkpointer'
 import { searchRouteNode } from './prompts/searchRoutePrompt'
 import { summarizeSteps } from './prompts/summarizeStepsPrompt'
@@ -33,10 +33,10 @@ const builder = new StateGraph(StateAnnotation)
   .addNode('findStep', searchStep)
   .addNode('routeSearch', searchRouteNode)
   .addNode('pickRoute', pickRouteNode)
-  .addNode('searchForItineraryTools', toolNode)
+  .addNode('searchForItineraryTools', getToolNode())
   .addNode('itinerarySearcher', searchItineraryNode)
-  .addNode('searchForStepDistancesTool', toolNode)
-  .addNode('searchForRouteTool', toolNode)
+  .addNode('searchForStepDistancesTool', getToolNode())
+  .addNode('searchForRouteTool', getToolNode())
   .addEdge('__start__', 'routeSearch')
   .addEdge('routeSearch', 'searchForRouteTool')
   .addEdge('itinerarySearcher', 'searchForItineraryTools')

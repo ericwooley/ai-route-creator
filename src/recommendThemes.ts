@@ -72,7 +72,7 @@ export async function recommendThemeIdea(theme: Itheme) {
     })
     .map((i) => i.bestIdea.name)
   const response = await routePrompt
-    .pipe(llm)
+    .pipe(llm())
     .pipe(summaryParser)
     .invoke({
       existingIdeas,

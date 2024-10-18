@@ -60,7 +60,7 @@ Make sure to include the final destination as the last step. We don't just want 
 )
 export const pickRouteNode = async (state: typeof StateAnnotation.State) => {
   const response = await routePrompt
-    .pipe(llm)
+    .pipe(llm())
     .pipe(summaryParser)
     .invoke({ ...flattenState(state), parser_instructions: summaryParser.getFormatInstructions() })
   return {

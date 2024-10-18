@@ -4,7 +4,6 @@ import { flattenState } from '../flattenState'
 import { llm } from '../llm'
 import { StateAnnotation } from '../StateAnnotation'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
-import { z } from 'zod'
 import { stepStructure } from '../responseStructure'
 export const summarizeStepsPrompt = PromptTemplate.fromTemplate(
   `
@@ -46,7 +45,7 @@ export const summarizeSteps = async (state: typeof StateAnnotation.State) => {
     : ''
   console.log('next_information', nextInfo)
   const response = await summarizeStepsPrompt
-    .pipe(llm)
+    .pipe(llm())
     .pipe(stepParser)
     .invoke({
       ...flattenedState,

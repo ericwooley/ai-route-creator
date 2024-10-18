@@ -64,6 +64,6 @@ export const agentTools = [
   }),
   // new TavilySearchResults({ maxResults: 20, verbose: true })
 ]
-export const toolNode = new ToolNode(agentTools)
+export const getToolNode = () => new ToolNode(agentTools)
 
 

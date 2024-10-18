@@ -50,7 +50,7 @@ async function getPdfContent(url: string): Promise<string> {
   }
 }
 
-export const defaultLLM = new ChatOpenAI({ maxConcurrency: 10, temperature: 0, cache: cache, model: 'gpt-4o' })
+export const defaultLLM = () => new ChatOpenAI({ maxConcurrency: 10, temperature: 0, cache: cache, model: 'gpt-4o' })
 
 const answerQualitySchema = z
   .union([
@@ -117,7 +117,7 @@ const finalAnswerPrompt = PromptTemplate.fromTemplate(
 export const createSearchTool = <T extends ZodTypeAny>({
   responseSchema,
   verbose,
-  llm = defaultLLM,
+  llm = defaultLLM(),
   name = 'internet search',
   description = 'Searches google and returns results as parsed by the first x results',
   transform = (result) => result,
@@ -140,13 +140,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
       console.log('\n\n\nSearch Call', query, '\n\n')
       const logVerbose = log(query, verbose)
       logVerbose('Searching for:', query, 'using model', llm._modelType())
-      const cacheKey = llm._modelType() + name + `:search-${query}`
-      // const cachedResponse = await redis.get(cacheKey)
-      // if (cachedResponse) {
-      //   const { finalAnswer, ...answers } = transform(JSON.parse(cachedResponse).finalAnswer)
-      //   logVerbose('Using cached response:', JSON.stringify(finalAnswer, null, 2))
-      //   return { query, definitiveAnswer: finalAnswer, context: answers }
-      // }
+
       logVerbose('Searching for:', query)
       const results = await searchGoogle({ query, verbose, name })
       if (!results) {
@@ -166,7 +160,7 @@ export const createSearchTool = <T extends ZodTypeAny>({
         JSON.stringify({ answers: answers.answers }),
         JSON.stringify(answers.finalAnswer, null, 2)
       )
-      await redis.set(cacheKey, JSON.stringify(answers), 'EX', 60 * 60 * 24 * 7)
+
       const finalAnswer = transform(answers.finalAnswer)
 
       return { query, definitiveAnswer: finalAnswer, context: answers }
@@ -243,7 +237,7 @@ export async function searchGoogle({
 export async function boilDownResults<T extends ZodTypeAny>({
   query,
   results,
-  llm = defaultLLM,
+  llm = defaultLLM(),
   limit = 5,
   resultSchema = z.string() as any as T,
   verbose = false,
