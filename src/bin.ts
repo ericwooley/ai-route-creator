@@ -139,13 +139,20 @@ yargs(hideBin(process.argv))
     'generate-routes-from-ideas',
     'generate routes from ideas',
     (yargs) =>
-      yargs.option('theme', {
-        alias: 't',
-        type: 'string',
-        default: 'all',
-        choices: ['all', ...themes.map((theme) => theme.theme)],
-        describe: 'The theme of the route',
-      }),
+      yargs
+        .option('theme', {
+          alias: 't',
+          type: 'string',
+          default: 'all',
+          choices: ['all', ...themes.map((theme) => theme.theme)],
+          describe: 'The theme of the route',
+        })
+        .option('limit', {
+          alias: 'l',
+          type: 'number',
+          default: 5,
+          describe: 'The number of routes to generate',
+        }),
     async (argv) => {
       let exitCode = 0
       mkdirSync('generated_routes', { recursive: true })
@@ -153,8 +160,7 @@ yargs(hideBin(process.argv))
       readdirSync('generated_routes').forEach((file) => {
         skip[file] = true
       })
-      console.log({ skip })
-      console.log(skip)
+
       const themeList = argv.theme === 'all' ? themes : themes.filter((theme) => theme.theme === argv.theme)
       for (const theme of themeList) {
         const filename = _.snakeCase(theme.theme) + '.json'
