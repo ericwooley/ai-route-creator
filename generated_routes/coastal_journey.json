@@ -1,0 +1,653 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Pacific Coast Highway scenic drive itinerary real locations"
+            },
+            "type": "tool_call",
+            "id": "call_5Ke8hVdrr4KFrYN4aKJxYKO5"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_5Ke8hVdrr4KFrYN4aKJxYKO5",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Pacific Coast Highway scenic drive itinerary real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 497,
+            "totalTokens": 519
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 497,
+            "completion_tokens": 22,
+            "total_tokens": 519,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKHGeHl162GdPKpl4UoThlHgnJV"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_5Ke8hVdrr4KFrYN4aKJxYKO5",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "485d01a7-3f8a-475e-9bb7-fb28e05cf3c0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling on the Pacific Coast Highway, a real-world scenic drive along the California coast."
+            },
+            "type": "tool_call",
+            "id": "call_k1N28Nb5iGpUvdEk9xcfpP0C"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_k1N28Nb5iGpUvdEk9xcfpP0C",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling on the Pacific Coast Highway, a real-world scenic drive along the California coast.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 37,
+            "promptTokens": 764,
+            "totalTokens": 801
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 764,
+            "completion_tokens": 37,
+            "total_tokens": 801,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKOyz3MUOBizuLv0zraL6KVcUTu"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_k1N28Nb5iGpUvdEk9xcfpP0C",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "a17a7481-e733-4955-b68c-3e55d5e46780"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "San Francisco, CA",
+              "to": "Santa Cruz, CA"
+            },
+            "type": "tool_call",
+            "id": "call_TzigrjW2wyQbpUrCZ4ZUEZrg"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_TzigrjW2wyQbpUrCZ4ZUEZrg",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"San Francisco, CA\",\"to\":\"Santa Cruz, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 1327,
+            "totalTokens": 1353
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1327,
+            "completion_tokens": 26,
+            "total_tokens": 1353,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AKAKQzN54dUbPwHcbhGVPyE38rS08"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"San Francisco, CA\",\n  \"to\": \"Santa Cruz, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Santa Cruz, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"San Francisco, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"124 km\",\n              \"value\": 124491\n            },\n            \"duration\": {\n              \"text\": \"1 day 5 hours\",\n              \"value\": 104290\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_TzigrjW2wyQbpUrCZ4ZUEZrg",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "8d1c83f9-df1f-4858-a0bb-9e106f2b0b2b"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Santa Cruz, CA",
+              "to": "Monterey, CA"
+            },
+            "type": "tool_call",
+            "id": "call_0e6R2LjbXWsdVUYFb2kcFQlf"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_0e6R2LjbXWsdVUYFb2kcFQlf",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Santa Cruz, CA\",\"to\":\"Monterey, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 1532,
+            "totalTokens": 1559
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1532,
+            "completion_tokens": 27,
+            "total_tokens": 1559,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKTEDELhfFbTxVILbZqNscICSI0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Santa Cruz, CA\",\n  \"to\": \"Monterey, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Monterey, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Santa Cruz, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"72.1 km\",\n              \"value\": 72065\n            },\n            \"duration\": {\n              \"text\": \"16 hours 22 mins\",\n              \"value\": 58924\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_0e6R2LjbXWsdVUYFb2kcFQlf",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d25c7ff5-cd9b-413b-8548-9fe2789ca2dc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Monterey, CA",
+              "to": "San Luis Obispo, CA"
+            },
+            "type": "tool_call",
+            "id": "call_OtpHovD42i7aiJiOK0nSzYNs"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_OtpHovD42i7aiJiOK0nSzYNs",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Monterey, CA\",\"to\":\"San Luis Obispo, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 1643,
+            "totalTokens": 1672
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1643,
+            "completion_tokens": 29,
+            "total_tokens": 1672,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKVBRrKolwvAzg3On7YJlrzeGz6"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Monterey, CA\",\n  \"to\": \"San Luis Obispo, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"San Luis Obispo, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Monterey, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"267 km\",\n              \"value\": 267067\n            },\n            \"duration\": {\n              \"text\": \"2 days 12 hours\",\n              \"value\": 217571\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_OtpHovD42i7aiJiOK0nSzYNs",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "c64c79c0-3d4e-49e2-a54d-924232610916"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "San Luis Obispo, CA",
+              "to": "Santa Barbara, CA"
+            },
+            "type": "tool_call",
+            "id": "call_wwpQSODGaCXtgzB1BoC6V3nN"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_wwpQSODGaCXtgzB1BoC6V3nN",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"San Luis Obispo, CA\",\"to\":\"Santa Barbara, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 1760,
+            "totalTokens": 1788
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1760,
+            "completion_tokens": 28,
+            "total_tokens": 1788,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKYHIS259a94NwX2sAP6y6K1i2T"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"San Luis Obispo, CA\",\n  \"to\": \"Santa Barbara, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Santa Barbara, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"San Luis Obispo, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"159 km\",\n              \"value\": 158817\n            },\n            \"duration\": {\n              \"text\": \"1 day 12 hours\",\n              \"value\": 129381\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_wwpQSODGaCXtgzB1BoC6V3nN",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "227568fe-bf75-4004-a2ed-a149cdca9dac"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "San Francisco, CA",
+              "to": "Santa Cruz, CA"
+            },
+            "type": "tool_call",
+            "id": "call_4t6INL1YcViluaixYrs60hUu"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_4t6INL1YcViluaixYrs60hUu",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"San Francisco, CA\",\"to\":\"Santa Cruz, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 1782,
+            "totalTokens": 1808
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1782,
+            "completion_tokens": 26,
+            "total_tokens": 1808,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKb2UFMSQTojq5Lapr8bqNT8u8H"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"San Francisco, CA\",\n  \"to\": \"Santa Cruz, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Santa Cruz, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"San Francisco, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"124 km\",\n              \"value\": 124491\n            },\n            \"duration\": {\n              \"text\": \"1 day 5 hours\",\n              \"value\": 104290\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_4t6INL1YcViluaixYrs60hUu",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "a88c43a7-5293-4bd3-b19e-94074fb7eb88"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Pacific Coast Highway\", which is real world.\nThe  pitch for this route is \"A scenic drive along the California coast, offering breathtaking views of the Pacific Ocean, rugged cliffs, and charming coastal towns.\".\nSome ideas for steps are: \n\t - San Francisco to Santa Cruz\n\t - Santa Cruz to Monterey\n\t - Monterey to San Luis Obispo\n\t - San Luis Obispo to Santa Barbara\n\t - Santa Barbara to Los Angeles",
+  "itinerary": [
+    {
+      "startingLocation": "San Francisco",
+      "endingLocation": "Santa Cruz",
+      "startingLocationDescription": "Start your journey in the iconic city of San Francisco, known for the Golden Gate Bridge and vibrant culture.",
+      "endingLocationDescription": "Arrive in Santa Cruz, famous for its boardwalk and beautiful beaches.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "San Francisco, CA",
+        "Santa Cruz, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow Highway 1 south from San Francisco to reach Santa Cruz."
+    },
+    {
+      "startingLocation": "Santa Cruz",
+      "endingLocation": "Monterey",
+      "startingLocationDescription": "Explore the coastal town of Santa Cruz before heading south.",
+      "endingLocationDescription": "Monterey is known for its historic Cannery Row and the Monterey Bay Aquarium.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Santa Cruz, CA",
+        "Monterey, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Highway 1 south to reach Monterey."
+    },
+    {
+      "startingLocation": "Monterey",
+      "endingLocation": "San Luis Obispo",
+      "startingLocationDescription": "Depart from Monterey, enjoying the scenic views along the way.",
+      "endingLocationDescription": "San Luis Obispo offers a charming downtown and the famous Bubblegum Alley.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Monterey, CA",
+        "San Luis Obispo, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Stay on Highway 1 south to reach San Luis Obispo."
+    },
+    {
+      "startingLocation": "San Luis Obispo",
+      "endingLocation": "Santa Barbara",
+      "startingLocationDescription": "Leave San Luis Obispo and continue your journey south.",
+      "endingLocationDescription": "Santa Barbara is known for its Mediterranean-style buildings and beautiful beaches.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "San Luis Obispo, CA",
+        "Santa Barbara, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow Highway 101 south to reach Santa Barbara."
+    },
+    {
+      "startingLocation": "Santa Barbara",
+      "endingLocation": "Los Angeles",
+      "startingLocationDescription": "Depart from Santa Barbara, heading towards the bustling city of Los Angeles.",
+      "endingLocationDescription": "Los Angeles, the entertainment capital, offers attractions like Hollywood and Santa Monica Pier.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Santa Barbara, CA",
+        "Los Angeles, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Highway 101 south to reach Los Angeles."
+    }
+  ],
+  "route": "Pacific Coast Highway",
+  "steps": [
+    {
+      "startingLocation": "San Francisco, CA",
+      "endingLocation": "Santa Cruz, CA",
+      "distance": 124.491,
+      "startingLocationDescription": "Start your journey in the iconic city of San Francisco, known for the Golden Gate Bridge and vibrant culture.",
+      "endingLocationDescription": "Arrive in Santa Cruz, famous for its boardwalk and beautiful beaches.",
+      "credibility": {
+        "source": "Google Maps API",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Santa Cruz, CA",
+      "endingLocation": "Monterey, CA",
+      "distance": 72.065,
+      "startingLocationDescription": "Explore the coastal town of Santa Cruz before heading south.",
+      "endingLocationDescription": "Monterey is known for its historic Cannery Row and the Monterey Bay Aquarium.",
+      "credibility": {
+        "source": "Provided data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Monterey, CA",
+      "endingLocation": "San Luis Obispo, CA",
+      "distance": 267.067,
+      "startingLocationDescription": "Depart from Monterey, enjoying the scenic views along the way.",
+      "endingLocationDescription": "San Luis Obispo offers a charming downtown and the famous Bubblegum Alley.",
+      "credibility": {
+        "source": "Provided data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "San Luis Obispo, CA",
+      "endingLocation": "Santa Barbara, CA",
+      "distance": 158.817,
+      "startingLocationDescription": "Leave San Luis Obispo and continue your journey south.",
+      "endingLocationDescription": "Santa Barbara is known for its Mediterranean-style buildings and beautiful beaches.",
+      "credibility": {
+        "source": "Provided data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Santa Barbara, CA",
+      "endingLocation": "Los Angeles, CA",
+      "distance": 153,
+      "startingLocationDescription": "Depart from Santa Barbara, heading towards the bustling city of Los Angeles.",
+      "endingLocationDescription": "Los Angeles, the entertainment capital, offers attractions like Hollywood and Santa Monica Pier.",
+      "credibility": {
+        "source": "Estimated based on typical driving routes along Highway 101",
+        "reliability": 7,
+        "guess": true
+      }
+    }
+  ]
+}

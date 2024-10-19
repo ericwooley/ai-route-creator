@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting route ideas for a journey through Middle-earth to Mount Doom, focusing on fictional locations from The Lord of the Rings."
+            },
+            "type": "tool_call",
+            "id": "call_q5p6oKB4AW09ruqnQYhKpqYK"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_q5p6oKB4AW09ruqnQYhKpqYK",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting route ideas for a journey through Middle-earth to Mount Doom, focusing on fictional locations from The Lord of the Rings.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 38,
+            "promptTokens": 500,
+            "totalTokens": 538
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 500,
+            "completion_tokens": 38,
+            "total_tokens": 538,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMXr13SQlabbHoG7lIWZg2a3Egc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_q5p6oKB4AW09ruqnQYhKpqYK",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e7072444-f1d4-468e-9bea-535a41ef588b"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling from The Shire to Mount Doom in Middle-earth, fictional journey"
+            },
+            "type": "tool_call",
+            "id": "call_2j2OIvtSRVgzbcMomeV2XVPf"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_2j2OIvtSRVgzbcMomeV2XVPf",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling from The Shire to Mount Doom in Middle-earth, fictional journey\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 34,
+            "promptTokens": 767,
+            "totalTokens": 801
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 767,
+            "completion_tokens": 34,
+            "total_tokens": 801,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMfOglO8Lx7rn90U15UrpAf1Jtl"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_2j2OIvtSRVgzbcMomeV2XVPf",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ef6f34a1-a432-47d4-ad9e-7f1f84e29c70"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Shire to Bree"
+            },
+            "type": "tool_call",
+            "id": "call_NAznWfdzkpLmSg0GTvPJ5wk8"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_NAznWfdzkpLmSg0GTvPJ5wk8",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Shire to Bree\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 18,
+            "promptTokens": 1328,
+            "totalTokens": 1346
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1328,
+            "completion_tokens": 18,
+            "total_tokens": 1346,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMgfwTiPOLHQcaQ77Ha11zHiHDh"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_NAznWfdzkpLmSg0GTvPJ5wk8",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "cd00cdfe-c6cd-42f8-bc5b-09179d3bc27f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Bree to Weathertop distance"
+            },
+            "type": "tool_call",
+            "id": "call_QR2CwVKTCFJX1oKLaDrFVcnK"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_QR2CwVKTCFJX1oKLaDrFVcnK",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Bree to Weathertop distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 1433,
+            "totalTokens": 1454
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1433,
+            "completion_tokens": 21,
+            "total_tokens": 1454,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMikxSDzzDiipwla3uZ0ywU4Jpc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_QR2CwVKTCFJX1oKLaDrFVcnK",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "24cd30d9-aed1-431c-94a1-bce36d606746"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Weathertop to Rivendell"
+            },
+            "type": "tool_call",
+            "id": "call_Oxx9rGwgZBgXPHxdPZ8Rke8y"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Oxx9rGwgZBgXPHxdPZ8Rke8y",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Weathertop to Rivendell\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 1448,
+            "totalTokens": 1469
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1448,
+            "completion_tokens": 21,
+            "total_tokens": 1469,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMlGDLGTippNKzSuS9NqunsY0YT"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_Oxx9rGwgZBgXPHxdPZ8Rke8y",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "6cb043e8-af71-4115-a886-9ac2479ec097"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Rivendell to Moria distance"
+            },
+            "type": "tool_call",
+            "id": "call_ul84WhI9H6gm7XHhG9e4yWBh"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ul84WhI9H6gm7XHhG9e4yWBh",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Rivendell to Moria distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 1460,
+            "totalTokens": 1481
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1460,
+            "completion_tokens": 21,
+            "total_tokens": 1481,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMnBD9T3qig5P6vbJyMcweiNQea"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_ul84WhI9H6gm7XHhG9e4yWBh",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "85ba764d-536d-417d-9960-a190a8f7c387"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Moria to Mount Doom distance"
+            },
+            "type": "tool_call",
+            "id": "call_tGAj83NpHZk5q6hS8ypTT8zp"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_tGAj83NpHZk5q6hS8ypTT8zp",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Moria to Mount Doom distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 19,
+            "promptTokens": 1471,
+            "totalTokens": 1490
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1471,
+            "completion_tokens": 19,
+            "total_tokens": 1490,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMqrKdQTpcBz6Lpc7XaLqEKLVCl"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_tGAj83NpHZk5q6hS8ypTT8zp",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5dea4eb3-e234-4284-85c0-a09f48642353"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Road to Mordor\", which is fictional.\nThe  pitch for this route is \"A journey through the barren and treacherous lands of Middle-earth, leading to the fiery depths of Mount Doom.\".\nSome ideas for steps are: \n\t - The Shire to Bree\n\t - Bree to Weathertop\n\t - Weathertop to Rivendell\n\t - Rivendell to Moria\n\t - Moria to Mount Doom",
+  "itinerary": [
+    {
+      "startingLocation": "The Shire",
+      "endingLocation": "Bree",
+      "startingLocationDescription": "A peaceful and lush region inhabited by Hobbits, known for its rolling hills and quaint villages.",
+      "endingLocationDescription": "A small town at the crossroads of Middle-earth, known for the Prancing Pony Inn.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Start your journey in Hobbiton, the heart of the Shire."
+    },
+    {
+      "startingLocation": "Bree",
+      "endingLocation": "Weathertop",
+      "startingLocationDescription": "A small town at the crossroads of Middle-earth, known for the Prancing Pony Inn.",
+      "endingLocationDescription": "A hill with ancient ruins, offering a strategic view of the surrounding lands.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the Great East Road from Bree to reach Weathertop."
+    },
+    {
+      "startingLocation": "Weathertop",
+      "endingLocation": "Rivendell",
+      "startingLocationDescription": "A hill with ancient ruins, offering a strategic view of the surrounding lands.",
+      "endingLocationDescription": "An Elven refuge hidden in a deep valley, known for its beauty and wisdom.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Travel through the wilderness, heading towards the Misty Mountains to find Rivendell."
+    },
+    {
+      "startingLocation": "Rivendell",
+      "endingLocation": "Moria",
+      "startingLocationDescription": "An Elven refuge hidden in a deep valley, known for its beauty and wisdom.",
+      "endingLocationDescription": "An ancient Dwarven city beneath the Misty Mountains, known for its vast halls and dark secrets.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Cross the Misty Mountains to reach the gates of Moria."
+    },
+    {
+      "startingLocation": "Moria",
+      "endingLocation": "Mount Doom",
+      "startingLocationDescription": "An ancient Dwarven city beneath the Misty Mountains, known for its vast halls and dark secrets.",
+      "endingLocationDescription": "A fiery volcano in the heart of Mordor, where the One Ring must be destroyed.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Navigate through the barren lands of Mordor to reach Mount Doom."
+    }
+  ],
+  "route": "The Road to Mordor",
+  "steps": [
+    {
+      "startingLocation": "The Shire",
+      "endingLocation": "Bree",
+      "distance": 100,
+      "startingLocationDescription": "A peaceful and lush region inhabited by Hobbits, known for its rolling hills and quaint villages.",
+      "endingLocationDescription": "A small town at the crossroads of Middle-earth, known for the Prancing Pony Inn.",
+      "credibility": {
+        "source": "Fictional literature and maps of Middle-earth",
+        "reliability": 7,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Bree",
+      "endingLocation": "Weathertop",
+      "distance": 60,
+      "startingLocationDescription": "A small town at the crossroads of Middle-earth, known for the Prancing Pony Inn.",
+      "endingLocationDescription": "A hill with ancient ruins, offering a strategic view of the surrounding lands.",
+      "credibility": {
+        "source": "Estimated based on fictional map distances and narrative descriptions from 'The Lord of the Rings'.",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Weathertop",
+      "endingLocation": "Rivendell",
+      "distance": 120,
+      "startingLocationDescription": "A hill with ancient ruins, offering a strategic view of the surrounding lands.",
+      "endingLocationDescription": "An Elven refuge hidden in a deep valley, known for its beauty and wisdom.",
+      "credibility": {
+        "source": "Estimated based on fictional map distances and narrative descriptions",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Rivendell",
+      "endingLocation": "Moria",
+      "distance": 250,
+      "startingLocationDescription": "An Elven refuge hidden in a deep valley, known for its beauty and wisdom.",
+      "endingLocationDescription": "An ancient Dwarven city beneath the Misty Mountains, known for its vast halls and dark secrets.",
+      "credibility": {
+        "source": "Educated guess based on fictional map analysis",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Moria",
+      "endingLocation": "Mount Doom",
+      "distance": 300,
+      "startingLocationDescription": "An ancient Dwarven city beneath the Misty Mountains, known for its vast halls and dark secrets.",
+      "endingLocationDescription": "A fiery volcano in the heart of Mordor, where the One Ring must be destroyed.",
+      "credibility": {
+        "source": "Educated guess based on fictional geography",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}

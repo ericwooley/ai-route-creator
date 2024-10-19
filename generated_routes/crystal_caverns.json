@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Journey Through the Crystal Caves of Aglarond itinerary for fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_4t6INL1YcViluaixYrs60hUu"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_4t6INL1YcViluaixYrs60hUu",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Journey Through the Crystal Caves of Aglarond itinerary for fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 545,
+            "totalTokens": 573
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 545,
+            "completion_tokens": 28,
+            "total_tokens": 573,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKzvOISIPwTym7Aqd4ZOKeHXdk3"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_4t6INL1YcViluaixYrs60hUu",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b59263d0-664b-4cf0-9209-492ab692b757"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Journey Through the Crystal Caves of Aglarond itinerary, fictional route in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_TwjH2BFtCOfPET5rNpJLVode"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_TwjH2BFtCOfPET5rNpJLVode",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Journey Through the Crystal Caves of Aglarond itinerary, fictional route in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 812,
+            "totalTokens": 843
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 812,
+            "completion_tokens": 31,
+            "total_tokens": 843,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAL6NrLIFNLrJRjoQ21Z8uY0Thxi"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_TwjH2BFtCOfPET5rNpJLVode",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "36aa7818-cf87-4d23-b2e1-7b42ed608c90"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Helm's Deep to First Crystal Chamber"
+            },
+            "type": "tool_call",
+            "id": "call_EnVALUyW5mUlKiNjcoUPhRPF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_EnVALUyW5mUlKiNjcoUPhRPF",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Helm's Deep to First Crystal Chamber\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 1351,
+            "totalTokens": 1372
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1351,
+            "completion_tokens": 21,
+            "total_tokens": 1372,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAL8FDPXuT7xUIIiUYAylzofoZe8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_EnVALUyW5mUlKiNjcoUPhRPF",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ebedf2ea-18e0-4050-97e5-748b2a2c9202"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "First Crystal Chamber to Glittering Grotto, fictional, distance"
+            },
+            "type": "tool_call",
+            "id": "call_kXnQtjAKv1RXYIIqYBmM0Mpb"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_kXnQtjAKv1RXYIIqYBmM0Mpb",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"First Crystal Chamber to Glittering Grotto, fictional, distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 1463,
+            "totalTokens": 1489
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1463,
+            "completion_tokens": 26,
+            "total_tokens": 1489,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AKALBIWpZ8RPCb4qLdf3b1tgDQMLb"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_kXnQtjAKv1RXYIIqYBmM0Mpb",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "808c4332-9d5a-43ef-b975-c9fce5555ed2"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Glittering Grotto to Luminous Lake, fictional, distance"
+            },
+            "type": "tool_call",
+            "id": "call_9gLZIvptQ0InWffsXygpDi5f"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_9gLZIvptQ0InWffsXygpDi5f",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Glittering Grotto to Luminous Lake, fictional, distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 1481,
+            "totalTokens": 1508
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1481,
+            "completion_tokens": 27,
+            "total_tokens": 1508,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKALD6zyZDjLkRcRrqydR4qqP86jG"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_9gLZIvptQ0InWffsXygpDi5f",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d980c33b-284c-4b9f-972a-a5a5654e74bc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Luminous Lake to Shimmering Passage"
+            },
+            "type": "tool_call",
+            "id": "call_sBktsXyTt8jWp4Y6lZXn3t29"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_sBktsXyTt8jWp4Y6lZXn3t29",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Luminous Lake to Shimmering Passage\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 1496,
+            "totalTokens": 1517
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1496,
+            "completion_tokens": 21,
+            "total_tokens": 1517,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKALF1z5Z4fFnMB4yn7v7bLvPwzSt"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_sBktsXyTt8jWp4Y6lZXn3t29",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b5e2793c-e040-456b-88cd-8c3c14419f5f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Shimmering Passage to Heart of Aglarond"
+            },
+            "type": "tool_call",
+            "id": "call_Xn8lIKltiL3kGX1Sg8sjjxhg"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Xn8lIKltiL3kGX1Sg8sjjxhg",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Shimmering Passage to Heart of Aglarond\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 1510,
+            "totalTokens": 1533
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1510,
+            "completion_tokens": 23,
+            "total_tokens": 1533,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKALIvu5rGfjMB2jZxDDXndU7frao"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_Xn8lIKltiL3kGX1Sg8sjjxhg",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "978b7c20-5c33-43f1-8d80-21cdedec6779"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Journey Through the Crystal Caves of Aglarond\", which is fictional.\nThe  pitch for this route is \"Explore the legendary Crystal Caves of Aglarond, a vast underground network of glittering caverns from the world of Middle-earth. These caves are renowned for their breathtaking beauty, with walls encrusted with shimmering crystals and luminescent pools.\".\nSome ideas for steps are: \n\t - Helm's Deep to First Crystal Chamber\n\t - First Crystal Chamber to Glittering Grotto\n\t - Glittering Grotto to Luminous Lake\n\t - Luminous Lake to Shimmering Passage\n\t - Shimmering Passage to Heart of Aglarond",
+  "itinerary": [
+    {
+      "startingLocation": "Helm's Deep",
+      "endingLocation": "First Crystal Chamber",
+      "startingLocationDescription": "A fortress located in the valley of Helm's Deep, known for its strategic importance and historical battles.",
+      "endingLocationDescription": "The entrance to the Crystal Caves, where the first chamber is adorned with sparkling crystals.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Located within the realm of Rohan, Middle-earth."
+    },
+    {
+      "startingLocation": "First Crystal Chamber",
+      "endingLocation": "Glittering Grotto",
+      "startingLocationDescription": "The initial chamber of the Crystal Caves, filled with dazzling crystal formations.",
+      "endingLocationDescription": "A grotto within the caves that glimmers with a multitude of colors.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the main path deeper into the caves."
+    },
+    {
+      "startingLocation": "Glittering Grotto",
+      "endingLocation": "Luminous Lake",
+      "startingLocationDescription": "A vibrant grotto that reflects light in a spectrum of colors.",
+      "endingLocationDescription": "A serene underground lake that emits a soft, luminescent glow.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Continue along the marked trail through the caves."
+    },
+    {
+      "startingLocation": "Luminous Lake",
+      "endingLocation": "Shimmering Passage",
+      "startingLocationDescription": "A tranquil lake that lights up the surrounding cave walls.",
+      "endingLocationDescription": "A narrow passageway that shimmers with embedded crystals.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Proceed through the narrow path leading away from the lake."
+    },
+    {
+      "startingLocation": "Shimmering Passage",
+      "endingLocation": "Heart of Aglarond",
+      "startingLocationDescription": "A passage that glows with the light of countless crystals.",
+      "endingLocationDescription": "The central chamber of the Crystal Caves, known as the Heart of Aglarond, where the beauty of the caves is at its peak.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the main corridor to reach the heart of the caves."
+    }
+  ],
+  "route": "Journey Through the Crystal Caves of Aglarond",
+  "steps": [
+    {
+      "startingLocation": "Helm's Deep",
+      "endingLocation": "First Crystal Chamber",
+      "distance": 2.5,
+      "startingLocationDescription": "A fortress located in the valley of Helm's Deep, known for its strategic importance and historical battles.",
+      "endingLocationDescription": "The entrance to the Crystal Caves, where the first chamber is adorned with sparkling crystals.",
+      "credibility": {
+        "source": "Fictional route based on Middle-earth lore",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "First Crystal Chamber",
+      "endingLocation": "Glittering Grotto",
+      "distance": 1.5,
+      "startingLocationDescription": "The initial chamber of the Crystal Caves, filled with dazzling crystal formations.",
+      "endingLocationDescription": "A grotto within the caves that glimmers with a multitude of colors.",
+      "credibility": {
+        "source": "Estimated based on typical cave exploration distances",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Glittering Grotto",
+      "endingLocation": "Luminous Lake",
+      "distance": 1.2,
+      "startingLocationDescription": "A vibrant grotto that reflects light in a spectrum of colors.",
+      "endingLocationDescription": "A serene underground lake that emits a soft, luminescent glow.",
+      "credibility": {
+        "source": "Estimated based on similar distances within the cave system",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Luminous Lake",
+      "endingLocation": "Shimmering Passage",
+      "distance": 1,
+      "startingLocationDescription": "A tranquil lake that lights up the surrounding cave walls.",
+      "endingLocationDescription": "A narrow passageway that shimmers with embedded crystals.",
+      "credibility": {
+        "source": "Estimated based on previous distances and typical cave layouts",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Shimmering Passage",
+      "endingLocation": "Heart of Aglarond",
+      "distance": 1.3,
+      "startingLocationDescription": "A passage that glows with the light of countless crystals.",
+      "endingLocationDescription": "The central chamber of the Crystal Caves, known as the Heart of Aglarond, where the beauty of the caves is at its peak.",
+      "credibility": {
+        "source": "Estimated based on previous distances and fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting route ideas for Alice's Wonderland Journey based on fictional locations."
+            },
+            "type": "tool_call",
+            "id": "call_2OFFqvxepv9fBdHnXSOw2D1I"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_2OFFqvxepv9fBdHnXSOw2D1I",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting route ideas for Alice's Wonderland Journey based on fictional locations.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 543,
+            "totalTokens": 570
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 543,
+            "completion_tokens": 27,
+            "total_tokens": 570,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMtkjFt5yWY0XXAHnzCnIHS2GCE"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_2OFFqvxepv9fBdHnXSOw2D1I",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "0bd070d7-4976-44c6-bfd7-a38275910389"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop on Alice's Wonderland Journey, a fictional route inspired by Lewis Carroll's tale. Include only fictional locations, no real-life filming locations."
+            },
+            "type": "tool_call",
+            "id": "call_uTpZDOjXs3eC1Je8dOnLyK7d"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_uTpZDOjXs3eC1Je8dOnLyK7d",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop on Alice's Wonderland Journey, a fictional route inspired by Lewis Carroll's tale. Include only fictional locations, no real-life filming locations.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 46,
+            "promptTokens": 810,
+            "totalTokens": 856
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 810,
+            "completion_tokens": 46,
+            "total_tokens": 856,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAN3xGLnUrh2kOzGAxCbTDuCpfqh"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_uTpZDOjXs3eC1Je8dOnLyK7d",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "972d4ff0-8dd2-4cf1-8bbc-1770dece2944"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Rabbit Hole to Mad Hatter's Tea Party"
+            },
+            "type": "tool_call",
+            "id": "call_8zpzY5949qbnz1xiRvxkPLIf"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8zpzY5949qbnz1xiRvxkPLIf",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Rabbit Hole to Mad Hatter's Tea Party\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 1351,
+            "totalTokens": 1373
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1351,
+            "completion_tokens": 22,
+            "total_tokens": 1373,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAN48jES1CypksLHJRcrRIDGgKEU"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_8zpzY5949qbnz1xiRvxkPLIf",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5cc841e3-fdc4-4e96-9131-114c213b3931"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Mad Hatter's Tea Party to Queen of Hearts' Garden, fictional, distance"
+            },
+            "type": "tool_call",
+            "id": "call_lHKk8l3bLl8gATtOEyKpjCty"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_lHKk8l3bLl8gATtOEyKpjCty",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Mad Hatter's Tea Party to Queen of Hearts' Garden, fictional, distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 1468,
+            "totalTokens": 1497
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1468,
+            "completion_tokens": 29,
+            "total_tokens": 1497,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAN6cFqO9k55LnEjWOBd4zBFYxie"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_lHKk8l3bLl8gATtOEyKpjCty",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4425b970-cb57-4963-b00c-b73bc042d966"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Queen of Hearts' Garden to Cheshire Cat's Tree, fictional, distance"
+            },
+            "type": "tool_call",
+            "id": "call_X2pQKJUlCcq8zzj65egBuEsO"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_X2pQKJUlCcq8zzj65egBuEsO",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Queen of Hearts' Garden to Cheshire Cat's Tree, fictional, distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 1484,
+            "totalTokens": 1511
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1484,
+            "completion_tokens": 27,
+            "total_tokens": 1511,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAN9cANUXxiC1y4tOeRvqIlDTVir"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "null",
+        "tool_call_id": "call_X2pQKJUlCcq8zzj65egBuEsO",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "8627b027-96b6-474a-aa8e-6cd2bdf69b13"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Cheshire Cat's Tree to Tweedledee and Tweedledum's Forest, fictional, distance"
+            },
+            "type": "tool_call",
+            "id": "call_RmaFPm9SL1ky2gzZ04WnIVbu"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_RmaFPm9SL1ky2gzZ04WnIVbu",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Cheshire Cat's Tree to Tweedledee and Tweedledum's Forest, fictional, distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 34,
+            "promptTokens": 1409,
+            "totalTokens": 1443
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1409,
+            "completion_tokens": 34,
+            "total_tokens": 1443,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKANBy0Ja6kuikDgqkh4W2NjCUVGM"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "null",
+        "tool_call_id": "call_RmaFPm9SL1ky2gzZ04WnIVbu",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "921ff112-b3e7-4ebc-9c83-fc7bfe2668e7"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Tweedledee and Tweedledum's Forest to Looking Glass House"
+            },
+            "type": "tool_call",
+            "id": "call_YHwBbF3bQtV73ajWlPCPZLK3"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_YHwBbF3bQtV73ajWlPCPZLK3",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Tweedledee and Tweedledum's Forest to Looking Glass House\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 1349,
+            "totalTokens": 1377
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1349,
+            "completion_tokens": 28,
+            "total_tokens": 1377,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKANE6pnrLbdmK2QJ55XKW28NUdnN"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_YHwBbF3bQtV73ajWlPCPZLK3",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "07d414f9-62aa-4c17-a008-81deb1994a11"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Alice's Wonderland Journey\", which is fictional.\nThe  pitch for this route is \"Embark on a whimsical journey through the dreamlike world of Wonderland, inspired by Lewis Carroll's classic tale. Traverse through surreal landscapes filled with peculiar creatures and ever-changing scenery.\".\nSome ideas for steps are: \n\t - Rabbit Hole to Mad Hatter's Tea Party\n\t - Mad Hatter's Tea Party to Queen of Hearts' Garden\n\t - Queen of Hearts' Garden to Cheshire Cat's Tree\n\t - Cheshire Cat's Tree to Tweedledee and Tweedledum's Forest\n\t - Tweedledee and Tweedledum's Forest to Looking Glass House",
+  "itinerary": [
+    {
+      "startingLocation": "Rabbit Hole",
+      "endingLocation": "Mad Hatter's Tea Party",
+      "startingLocationDescription": "The entrance to Wonderland, where Alice begins her journey.",
+      "endingLocationDescription": "A whimsical tea party hosted by the Mad Hatter, filled with eccentric characters.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for a large tree with a rabbit hole at its base."
+    },
+    {
+      "startingLocation": "Mad Hatter's Tea Party",
+      "endingLocation": "Queen of Hearts' Garden",
+      "startingLocationDescription": "A lively and chaotic tea party with endless cups of tea and riddles.",
+      "endingLocationDescription": "A beautifully manicured garden ruled by the temperamental Queen of Hearts.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the path of playing cards leading to the garden."
+    },
+    {
+      "startingLocation": "Queen of Hearts' Garden",
+      "endingLocation": "Cheshire Cat's Tree",
+      "startingLocationDescription": "A garden filled with rose bushes and guarded by card soldiers.",
+      "endingLocationDescription": "A mysterious tree where the Cheshire Cat often appears and disappears.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the grinning cat in the tree branches."
+    },
+    {
+      "startingLocation": "Cheshire Cat's Tree",
+      "endingLocation": "Tweedledee and Tweedledum's Forest",
+      "startingLocationDescription": "A tree that serves as the home of the enigmatic Cheshire Cat.",
+      "endingLocationDescription": "A dense forest where the twin brothers Tweedledee and Tweedledum reside.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the sound of rhymes and riddles to find the twins."
+    },
+    {
+      "startingLocation": "Tweedledee and Tweedledum's Forest",
+      "endingLocation": "Looking Glass House",
+      "startingLocationDescription": "A forest filled with peculiar creatures and the playful twins.",
+      "endingLocationDescription": "A house that serves as a portal to the world beyond the looking glass.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the house with reflective windows that seem to lead to another world."
+    }
+  ],
+  "route": "Alice's Wonderland Journey",
+  "steps": [
+    {
+      "startingLocation": "Rabbit Hole",
+      "endingLocation": "Mad Hatter's Tea Party",
+      "distance": 0.5,
+      "startingLocationDescription": "The entrance to Wonderland, where Alice begins her journey.",
+      "endingLocationDescription": "A whimsical tea party hosted by the Mad Hatter, filled with eccentric characters.",
+      "credibility": {
+        "source": "Fictional narrative based on Lewis Carroll's 'Alice's Adventures in Wonderland'",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Mad Hatter's Tea Party",
+      "endingLocation": "Queen of Hearts' Garden",
+      "distance": 1,
+      "startingLocationDescription": "A lively and chaotic tea party with endless cups of tea and riddles.",
+      "endingLocationDescription": "A beautifully manicured garden ruled by the temperamental Queen of Hearts.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Queen of Hearts' Garden",
+      "endingLocation": "Cheshire Cat's Tree",
+      "distance": 0.8,
+      "startingLocationDescription": "A garden filled with rose bushes and guarded by card soldiers.",
+      "endingLocationDescription": "A mysterious tree where the Cheshire Cat often appears and disappears.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Cheshire Cat's Tree",
+      "endingLocation": "Tweedledee and Tweedledum's Forest",
+      "distance": 0.7,
+      "startingLocationDescription": "A tree that serves as the home of the enigmatic Cheshire Cat.",
+      "endingLocationDescription": "A dense forest where the twin brothers Tweedledee and Tweedledum reside.",
+      "credibility": {
+        "source": "Educated guess based on similar distances in the itinerary",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Tweedledee and Tweedledum's Forest",
+      "endingLocation": "Looking Glass House",
+      "distance": 0.6,
+      "startingLocationDescription": "A forest filled with peculiar creatures and the playful twins.",
+      "endingLocationDescription": "A house that serves as a portal to the world beyond the looking glass.",
+      "credibility": {
+        "source": "Educated guess based on previous distances",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}

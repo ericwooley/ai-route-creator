@@ -1,0 +1,648 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Mount Olympus Ascent route itinerary real locations"
+            },
+            "type": "tool_call",
+            "id": "call_PrjfPMYG7sYUlJJE6gdMQSWQ"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_PrjfPMYG7sYUlJJE6gdMQSWQ",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Mount Olympus Ascent route itinerary real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 524,
+            "totalTokens": 546
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 524,
+            "completion_tokens": 22,
+            "total_tokens": 546,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAIwxgsmz0gLE30WPtActfYnMLgV"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_PrjfPMYG7sYUlJJE6gdMQSWQ",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2dd16049-8ce8-4199-a262-c9c2084d622b"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Mount Olympus Ascent route itinerary, real locations, Dion to Litochoro, hiking journey"
+            },
+            "type": "tool_call",
+            "id": "call_8pOSmg7RvQm2LbPVps5RYgnt"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8pOSmg7RvQm2LbPVps5RYgnt",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Mount Olympus Ascent route itinerary, real locations, Dion to Litochoro, hiking journey\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 33,
+            "promptTokens": 791,
+            "totalTokens": 824
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 791,
+            "completion_tokens": 33,
+            "total_tokens": 824,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAJ51KZlrtZqATJGSm2uKEYgpS71"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_8pOSmg7RvQm2LbPVps5RYgnt",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d3b6a0ac-1d21-4d7d-9c17-f25de71e6058"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Dion, Greece",
+              "to": "Prionia, Greece"
+            },
+            "type": "tool_call",
+            "id": "call_Q7aWACD79PQ1xoNC3DM8hFXW"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Q7aWACD79PQ1xoNC3DM8hFXW",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Dion, Greece\",\"to\":\"Prionia, Greece\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 1416,
+            "totalTokens": 1443
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1416,
+            "completion_tokens": 27,
+            "total_tokens": 1443,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AKAJ7bDoVFixdYPUqSv3uFXkLP4RC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Dion, Greece\",\n  \"to\": \"Prionia, Greece\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Prionia 511 00, Greece\"\n    ],\n    \"origin_addresses\": [\n      \"Dion 601 00, Greece\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"145 km\",\n              \"value\": 145175\n            },\n            \"duration\": {\n              \"text\": \"1 day 11 hours\",\n              \"value\": 125273\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_Q7aWACD79PQ1xoNC3DM8hFXW",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "8cc454bc-8a3e-4689-9d24-917ad0ee7fa1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Prionia, Greece",
+              "to": "Spilios Agapitos Refuge, Greece"
+            },
+            "type": "tool_call",
+            "id": "call_2fF2BmryfF4rxeUlPfB9bhVu"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_2fF2BmryfF4rxeUlPfB9bhVu",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Prionia, Greece\",\"to\":\"Spilios Agapitos Refuge, Greece\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 1624,
+            "totalTokens": 1655
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1624,
+            "completion_tokens": 31,
+            "total_tokens": 1655,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAJBDSPyZbvUSgZjd9j9uhogHUYJ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Prionia, Greece\",\n  \"to\": \"Spilios Agapitos Refuge, Greece\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Balkoni, Olimpou, Litochoro 602 00, Greece\"\n    ],\n    \"origin_addresses\": [\n      \"Prionia 511 00, Greece\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"135 km\",\n              \"value\": 134724\n            },\n            \"duration\": {\n              \"text\": \"1 day 10 hours\",\n              \"value\": 121578\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_2fF2BmryfF4rxeUlPfB9bhVu",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "35c94209-4489-40c3-ae03-0d7dbb7fa63b"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Spilios Agapitos Refuge, Greece",
+              "to": "Skala, Mount Olympus, Greece"
+            },
+            "type": "tool_call",
+            "id": "call_WxuduAzLOsFAXDMH7UhGTppO"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_WxuduAzLOsFAXDMH7UhGTppO",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Spilios Agapitos Refuge, Greece\",\"to\":\"Skala, Mount Olympus, Greece\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 33,
+            "promptTokens": 1753,
+            "totalTokens": 1786
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1753,
+            "completion_tokens": 33,
+            "total_tokens": 1786,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAJEweXKIYo2GZiTRdGUE6zlm95N"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Spilios Agapitos Refuge, Greece\",\n  \"to\": \"Skala, Mount Olympus, Greece\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Skala Summit, Σκάλα - Οροπέδιο Μουσών, Dion Olimpos 602 00, Greece\"\n    ],\n    \"origin_addresses\": [\n      \"Balkoni, Olimpou, Litochoro 602 00, Greece\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"2.6 km\",\n              \"value\": 2620\n            },\n            \"duration\": {\n              \"text\": \"1 hour 28 mins\",\n              \"value\": 5308\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_WxuduAzLOsFAXDMH7UhGTppO",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "c5cf3afb-805e-46f8-a303-4e69321b303c"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Skala, Mount Olympus, Greece",
+              "to": "Mytikas, Mount Olympus, Greece"
+            },
+            "type": "tool_call",
+            "id": "call_ocIFmR895CICcwxO3sEcsYqT"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ocIFmR895CICcwxO3sEcsYqT",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Skala, Mount Olympus, Greece\",\"to\":\"Mytikas, Mount Olympus, Greece\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 33,
+            "promptTokens": 1897,
+            "totalTokens": 1930
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1897,
+            "completion_tokens": 33,
+            "total_tokens": 1930,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAJGJ6q4sZLpyXGjiObXTo9dH584"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Skala, Mount Olympus, Greece\",\n  \"to\": \"Mytikas, Mount Olympus, Greece\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Mount Olympus, Litochoro 402 00, Greece\"\n    ],\n    \"origin_addresses\": [\n      \"Skala Summit, Σκάλα - Οροπέδιο Μουσών, Dion Olimpos 602 00, Greece\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"1.1 km\",\n              \"value\": 1122\n            },\n            \"duration\": {\n              \"text\": \"28 mins\",\n              \"value\": 1696\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_ocIFmR895CICcwxO3sEcsYqT",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e9173a35-5d03-4015-b6b2-85bd563f2ba8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Mytikas, Mount Olympus, Greece",
+              "to": "Litochoro, Greece"
+            },
+            "type": "tool_call",
+            "id": "call_iDTH9sxIEcAXgxx5uwmyMaxf"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_iDTH9sxIEcAXgxx5uwmyMaxf",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Mytikas, Mount Olympus, Greece\",\"to\":\"Litochoro, Greece\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 1938,
+            "totalTokens": 1970
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1938,
+            "completion_tokens": 32,
+            "total_tokens": 1970,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAJJavEKGh5NxJadeOILEmn1f3Vg"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Mytikas, Mount Olympus, Greece\",\n  \"to\": \"Litochoro, Greece\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Litochoro 602 00, Greece\"\n    ],\n    \"origin_addresses\": [\n      \"Mount Olympus, Litochoro 402 00, Greece\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"24.1 km\",\n              \"value\": 24145\n            },\n            \"duration\": {\n              \"text\": \"6 hours 18 mins\",\n              \"value\": 22688\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_iDTH9sxIEcAXgxx5uwmyMaxf",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "766c0f16-0397-4098-bb72-fd1746c6823f"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Mount Olympus Ascent\", which is real world.\nThe  pitch for this route is \"A journey to the peak of Mount Olympus, the legendary home of the Greek gods. This route takes you through ancient trails and mythical landscapes, reaching the celestial heights where gods were believed to reside.\".\nSome ideas for steps are: \n\t - Dion to Prionia\n\t - Prionia to Spilios Agapitos Refuge\n\t - Spilios Agapitos Refuge to Skala\n\t - Skala to Mytikas\n\t - Mytikas to Litochoro",
+  "itinerary": [
+    {
+      "startingLocation": "Dion",
+      "endingLocation": "Prionia",
+      "startingLocationDescription": "Dion is an ancient city at the foot of Mount Olympus, known for its archaeological park and museum.",
+      "endingLocationDescription": "Prionia is a popular starting point for hikers, located at the base of Mount Olympus.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Dion, Greece"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the signs from Dion to Prionia, which is accessible by road."
+    },
+    {
+      "startingLocation": "Prionia",
+      "endingLocation": "Spilios Agapitos Refuge",
+      "startingLocationDescription": "Prionia is a well-known trailhead for Mount Olympus hikes.",
+      "endingLocationDescription": "Spilios Agapitos Refuge is a mountain hut offering shelter and rest for hikers.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Prionia, Greece"
+      ],
+      "anyExtraInformationOnHowToFind": "The trail from Prionia to Spilios Agapitos Refuge is well-marked and popular among hikers."
+    },
+    {
+      "startingLocation": "Spilios Agapitos Refuge",
+      "endingLocation": "Skala",
+      "startingLocationDescription": "Spilios Agapitos Refuge is a key rest stop on the ascent of Mount Olympus.",
+      "endingLocationDescription": "Skala is a peak on Mount Olympus, offering stunning views of the surrounding area.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Spilios Agapitos Refuge, Greece"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on the E4 trail from Spilios Agapitos Refuge to reach Skala."
+    },
+    {
+      "startingLocation": "Skala",
+      "endingLocation": "Mytikas",
+      "startingLocationDescription": "Skala is a prominent peak on Mount Olympus, known for its panoramic views.",
+      "endingLocationDescription": "Mytikas is the highest peak of Mount Olympus, standing at 2,918 meters.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Skala, Mount Olympus, Greece"
+      ],
+      "anyExtraInformationOnHowToFind": "The path from Skala to Mytikas is challenging and requires careful navigation."
+    },
+    {
+      "startingLocation": "Mytikas",
+      "endingLocation": "Litochoro",
+      "startingLocationDescription": "Mytikas is the summit of Mount Olympus, offering breathtaking views and a sense of achievement.",
+      "endingLocationDescription": "Litochoro is a picturesque town at the base of Mount Olympus, known for its charming streets and local culture.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Mytikas, Mount Olympus, Greece"
+      ],
+      "anyExtraInformationOnHowToFind": "Descend from Mytikas back through the trails to reach Litochoro."
+    }
+  ],
+  "route": "Mount Olympus Ascent",
+  "steps": [
+    {
+      "startingLocation": "Dion",
+      "endingLocation": "Prionia",
+      "distance": 145,
+      "startingLocationDescription": "Dion is an ancient city at the foot of Mount Olympus, known for its archaeological park and museum.",
+      "endingLocationDescription": "Prionia is a popular starting point for hikers, located at the base of Mount Olympus.",
+      "credibility": {
+        "source": "Google Maps API",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Prionia",
+      "endingLocation": "Spilios Agapitos Refuge",
+      "distance": 135,
+      "startingLocationDescription": "Prionia is a well-known trailhead for Mount Olympus hikes.",
+      "endingLocationDescription": "Spilios Agapitos Refuge is a mountain hut offering shelter and rest for hikers.",
+      "credibility": {
+        "source": "Provided JSON data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Spilios Agapitos Refuge",
+      "endingLocation": "Skala",
+      "distance": 2.6,
+      "startingLocationDescription": "Spilios Agapitos Refuge is a key rest stop on the ascent of Mount Olympus.",
+      "endingLocationDescription": "Skala is a peak on Mount Olympus, offering stunning views of the surrounding area.",
+      "credibility": {
+        "source": "Provided data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Skala",
+      "endingLocation": "Mytikas",
+      "distance": 1.1,
+      "startingLocationDescription": "Skala is a prominent peak on Mount Olympus, known for its panoramic views.",
+      "endingLocationDescription": "Mytikas is the highest peak of Mount Olympus, standing at 2,918 meters.",
+      "credibility": {
+        "source": "Provided data in the initial input",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Mytikas",
+      "endingLocation": "Litochoro",
+      "distance": 24.1,
+      "startingLocationDescription": "Mytikas is the summit of Mount Olympus, offering breathtaking views and a sense of achievement.",
+      "endingLocationDescription": "Litochoro is a picturesque town at the base of Mount Olympus, known for its charming streets and local culture.",
+      "credibility": {
+        "source": "Provided data in the initial input",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}
