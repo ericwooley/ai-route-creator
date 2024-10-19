@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Journey through the legendary Mines of Moria, a vast underground complex in Middle-earth, filled with echoes of ancient battles and whispers of long-lost dwarven secrets. Fictional route ideas for Mines of Moria"
+            },
+            "type": "tool_call",
+            "id": "call_s1BYUqAwn1Pj7y6BJjiN8z4g"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_s1BYUqAwn1Pj7y6BJjiN8z4g",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Journey through the legendary Mines of Moria, a vast underground complex in Middle-earth, filled with echoes of ancient battles and whispers of long-lost dwarven secrets. Fictional route ideas for Mines of Moria\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 56,
+            "promptTokens": 523,
+            "totalTokens": 579
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 523,
+            "completion_tokens": 56,
+            "total_tokens": 579,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAFJS3mY24YcOjYJL3bEm5zHQBLC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_s1BYUqAwn1Pj7y6BJjiN8z4g",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "391d5b69-d8bf-4705-b5f8-ef7825d37f0e"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting places to stop while traveling through the Mines of Moria in Middle-earth, fictional journey"
+            },
+            "type": "tool_call",
+            "id": "call_j4WRuFSlxxv504fXrNYVcuO1"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_j4WRuFSlxxv504fXrNYVcuO1",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting places to stop while traveling through the Mines of Moria in Middle-earth, fictional journey\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 790,
+            "totalTokens": 822
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 790,
+            "completion_tokens": 32,
+            "total_tokens": 822,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAFQTLbYvdz2YxrIyftU0HRqWRB7"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_j4WRuFSlxxv504fXrNYVcuO1",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3a59212d-1d50-4483-859a-99ccfdcfe090"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "West Gate to First Hall Mines of Moria"
+            },
+            "type": "tool_call",
+            "id": "call_tGAj83NpHZk5q6hS8ypTT8zp"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_tGAj83NpHZk5q6hS8ypTT8zp",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"West Gate to First Hall Mines of Moria\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 1337,
+            "totalTokens": 1359
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1337,
+            "completion_tokens": 22,
+            "total_tokens": 1359,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAFS7ZOnDcTS3jT90U46nJY0DPgD"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_tGAj83NpHZk5q6hS8ypTT8zp",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b954809e-a4e5-44b7-b315-2d84d58bcf12"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "First Hall to Bridge of Khazad-dûm in the Mines of Moria, fictional, distance"
+            },
+            "type": "tool_call",
+            "id": "call_u4T2BMNHMCrmj2toLwEjrh6v"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_u4T2BMNHMCrmj2toLwEjrh6v",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"First Hall to Bridge of Khazad-dûm in the Mines of Moria, fictional, distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 34,
+            "promptTokens": 1446,
+            "totalTokens": 1480
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1446,
+            "completion_tokens": 34,
+            "total_tokens": 1480,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAFVIiMinBTHC3m7J8tXoh7Nk4cX"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_u4T2BMNHMCrmj2toLwEjrh6v",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "86bc7194-526d-4d10-b258-c30227148d76"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Bridge of Khazad-dûm to Second Hall distance"
+            },
+            "type": "tool_call",
+            "id": "call_Jpj0QILVvJXBpCIswnUPEclj"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Jpj0QILVvJXBpCIswnUPEclj",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Bridge of Khazad-dûm to Second Hall distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 25,
+            "promptTokens": 1470,
+            "totalTokens": 1495
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1470,
+            "completion_tokens": 25,
+            "total_tokens": 1495,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAFZ4MovPbQ9Nnj5wp4dVi7Nw9Hb"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_Jpj0QILVvJXBpCIswnUPEclj",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "cb895f65-6247-43a0-898e-594d5a057dae"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Second Hall to Chamber of Mazarbul in the Mines of Moria, fictional, include distance"
+            },
+            "type": "tool_call",
+            "id": "call_4t6INL1YcViluaixYrs60hUu"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_4t6INL1YcViluaixYrs60hUu",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Second Hall to Chamber of Mazarbul in the Mines of Moria, fictional, include distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 33,
+            "promptTokens": 1482,
+            "totalTokens": 1515
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1482,
+            "completion_tokens": 33,
+            "total_tokens": 1515,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAFbPyT1LRYjmLaEAUfEDDxMtsuF"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_4t6INL1YcViluaixYrs60hUu",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "76e7280c-a84d-4f86-87e2-028344fad48a"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Chamber of Mazarbul to East Gate distance"
+            },
+            "type": "tool_call",
+            "id": "call_bFnxoHJhKznKSRaUaKXQ1ALM"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_bFnxoHJhKznKSRaUaKXQ1ALM",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Chamber of Mazarbul to East Gate distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 1500,
+            "totalTokens": 1523
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1500,
+            "completion_tokens": 23,
+            "total_tokens": 1523,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAFf8AHfh9Hghu7bFlnaAc2p3FIV"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_bFnxoHJhKznKSRaUaKXQ1ALM",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b3e2260b-800f-4283-986c-b5c3388ab143"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Mines of Moria\", which is fictional.\nThe  pitch for this route is \"Journey through the legendary Mines of Moria, a vast underground complex in Middle-earth, filled with echoes of ancient battles and whispers of long-lost dwarven secrets.\".\nSome ideas for steps are: \n\t - West Gate to First Hall\n\t - First Hall to Bridge of Khazad-dûm\n\t - Bridge of Khazad-dûm to Second Hall\n\t - Second Hall to Chamber of Mazarbul\n\t - Chamber of Mazarbul to East Gate",
+  "itinerary": [
+    {
+      "startingLocation": "West Gate",
+      "endingLocation": "First Hall",
+      "startingLocationDescription": "The grand entrance to the Mines of Moria, marked by ancient dwarven runes.",
+      "endingLocationDescription": "A vast hall supported by towering pillars, echoing with the history of the dwarves.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the Doors of Durin, inscribed with the password to enter."
+    },
+    {
+      "startingLocation": "First Hall",
+      "endingLocation": "Bridge of Khazad-dûm",
+      "startingLocationDescription": "A spacious hall that serves as the gateway to the deeper parts of Moria.",
+      "endingLocationDescription": "A narrow stone bridge spanning a deep chasm, known for its pivotal role in the Fellowship's journey.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the main path through the hallways, keeping an eye out for the chasm."
+    },
+    {
+      "startingLocation": "Bridge of Khazad-dûm",
+      "endingLocation": "Second Hall",
+      "startingLocationDescription": "The iconic bridge that requires careful navigation due to its narrowness.",
+      "endingLocationDescription": "Another grand hall, filled with the remnants of dwarven craftsmanship.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Cross the bridge and continue straight into the next hall."
+    },
+    {
+      "startingLocation": "Second Hall",
+      "endingLocation": "Chamber of Mazarbul",
+      "startingLocationDescription": "A hall that showcases the architectural prowess of the dwarves.",
+      "endingLocationDescription": "The chamber where the dwarves kept their records, now a site of historical significance.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Head towards the sound of echoes, where the chamber lies."
+    },
+    {
+      "startingLocation": "Chamber of Mazarbul",
+      "endingLocation": "East Gate",
+      "startingLocationDescription": "A room filled with ancient tomes and the echoes of past battles.",
+      "endingLocationDescription": "The exit of the Mines of Moria, leading back to the outside world.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the path leading upwards towards the light."
+    }
+  ],
+  "route": "The Mines of Moria Journey",
+  "steps": [
+    {
+      "startingLocation": "West Gate",
+      "endingLocation": "First Hall",
+      "distance": 0.5,
+      "startingLocationDescription": "The grand entrance to the Mines of Moria, marked by ancient dwarven runes.",
+      "endingLocationDescription": "A vast hall supported by towering pillars, echoing with the history of the dwarves.",
+      "credibility": {
+        "source": "Fictional route description based on 'The Lord of the Rings' by J.R.R. Tolkien",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "First Hall",
+      "endingLocation": "Bridge of Khazad-dûm",
+      "distance": 0.3,
+      "startingLocationDescription": "A spacious hall that serves as the gateway to the deeper parts of Moria.",
+      "endingLocationDescription": "A narrow stone bridge spanning a deep chasm, known for its pivotal role in the Fellowship's journey.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Bridge of Khazad-dûm",
+      "endingLocation": "Second Hall",
+      "distance": 0.4,
+      "startingLocationDescription": "The iconic bridge that requires careful navigation due to its narrowness.",
+      "endingLocationDescription": "Another grand hall, filled with the remnants of dwarven craftsmanship.",
+      "credibility": {
+        "source": "Educated guess based on fictional context and previous distances",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Second Hall",
+      "endingLocation": "Chamber of Mazarbul",
+      "distance": 0.6,
+      "startingLocationDescription": "A hall that showcases the architectural prowess of the dwarves.",
+      "endingLocationDescription": "The chamber where the dwarves kept their records, now a site of historical significance.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Chamber of Mazarbul",
+      "endingLocation": "East Gate",
+      "distance": 0.7,
+      "startingLocationDescription": "A room filled with ancient tomes and the echoes of past battles.",
+      "endingLocationDescription": "The exit of the Mines of Moria, leading back to the outside world.",
+      "credibility": {
+        "source": "Educated guess based on previous distances",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}
