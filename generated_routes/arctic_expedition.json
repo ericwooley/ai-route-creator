@@ -1,0 +1,641 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Northwest Passage route itinerary real locations"
+            },
+            "type": "tool_call",
+            "id": "call_FEOhfFET2H5s3EY10XJlyxOY"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_FEOhfFET2H5s3EY10XJlyxOY",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Northwest Passage route itinerary real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 525,
+            "totalTokens": 546
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 525,
+            "completion_tokens": 21,
+            "total_tokens": 546,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAAr0gNtvyEW5u0fOxddmRpiKeO1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_FEOhfFET2H5s3EY10XJlyxOY",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5e7290d0-0424-4123-867c-9282c050782d"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling on the Northwest Passage, a historic sea route through the Arctic Ocean, connecting the Atlantic and Pacific Oceans. Real locations only, no fictional places."
+            },
+            "type": "tool_call",
+            "id": "call_lsnPEktFoHcJNYLD2ziQByFf"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_lsnPEktFoHcJNYLD2ziQByFf",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling on the Northwest Passage, a historic sea route through the Arctic Ocean, connecting the Atlantic and Pacific Oceans. Real locations only, no fictional places.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 50,
+            "promptTokens": 792,
+            "totalTokens": 842
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 792,
+            "completion_tokens": 50,
+            "total_tokens": 842,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAB0zKmJCsOJpsE1IuUb90bDybZO"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_lsnPEktFoHcJNYLD2ziQByFf",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ea8da8f4-61bb-4f5a-835d-0f1f14da1135"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Baffin Bay to Lancaster Sound"
+            },
+            "type": "tool_call",
+            "id": "call_c4a2t1Z6eckI1Y2dQWdv2Zky"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_c4a2t1Z6eckI1Y2dQWdv2Zky",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Baffin Bay to Lancaster Sound\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 1398,
+            "totalTokens": 1419
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1398,
+            "completion_tokens": 21,
+            "total_tokens": 1419,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AKAB2YX4mtY3ETFcliM4GnZzilZ8J"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_c4a2t1Z6eckI1Y2dQWdv2Zky",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ff581feb-8094-4041-8898-34119de57853"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Lancaster Sound",
+              "to": "Viscount Melville Sound"
+            },
+            "type": "tool_call",
+            "id": "call_oXrnDykcF0wdKuq8WXSDqAdv"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_oXrnDykcF0wdKuq8WXSDqAdv",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Lancaster Sound\",\"to\":\"Viscount Melville Sound\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 1505,
+            "totalTokens": 1531
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1505,
+            "completion_tokens": 26,
+            "total_tokens": 1531,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AKAB5moYugzGfFq3OB5vNu4CMFF4G"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Lancaster Sound\",\n  \"to\": \"Viscount Melville Sound\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Viscount Melville Sound, Qikiqtaaluk Region, NU, Canada\"\n    ],\n    \"origin_addresses\": [\n      \"Lancaster Sound, Qikiqtaaluk Region, NU, Canada\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_oXrnDykcF0wdKuq8WXSDqAdv",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "10c285b0-e982-4f71-bee1-ba0fbe934b28"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Viscount Melville Sound, Qikiqtaaluk Region, NU, Canada",
+              "to": "McClure Strait, Canadian Arctic Archipelago"
+            },
+            "type": "tool_call",
+            "id": "call_jn5lyqVYgoD80bDIFLZYTeJ1"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_jn5lyqVYgoD80bDIFLZYTeJ1",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Viscount Melville Sound, Qikiqtaaluk Region, NU, Canada\",\"to\":\"McClure Strait, Canadian Arctic Archipelago\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 43,
+            "promptTokens": 1576,
+            "totalTokens": 1619
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1576,
+            "completion_tokens": 43,
+            "total_tokens": 1619,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAB9o818AJmaRhudBaSVgW5XnFWl"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Viscount Melville Sound, Qikiqtaaluk Region, NU, Canada\",\n  \"to\": \"McClure Strait, Canadian Arctic Archipelago\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"M'Clure Strait, Canada\"\n    ],\n    \"origin_addresses\": [\n      \"Viscount Melville Sound, Qikiqtaaluk Region, NU, Canada\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_jn5lyqVYgoD80bDIFLZYTeJ1",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "f5c969db-1b18-4452-8939-24cceb845686"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "McClure Strait, Canada",
+              "to": "Beaufort Sea, Canada"
+            },
+            "type": "tool_call",
+            "id": "call_I1mGDEpCAHEj6LRfOB1i5BB2"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_I1mGDEpCAHEj6LRfOB1i5BB2",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"McClure Strait, Canada\",\"to\":\"Beaufort Sea, Canada\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 30,
+            "promptTokens": 1654,
+            "totalTokens": 1684
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1654,
+            "completion_tokens": 30,
+            "total_tokens": 1684,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AKABCS7qadtHMftoA2nwK6boY3Iw0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"McClure Strait, Canada\",\n  \"to\": \"Beaufort Sea, Canada\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Beaufort Sea, Canada\",\n      \"Beaufort Sea, Canada\"\n    ],\n    \"origin_addresses\": [\n      \"M'Clure Strait, Canada\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          },\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_I1mGDEpCAHEj6LRfOB1i5BB2",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "78474ed9-ac8c-4e60-b5c0-5a7f45790bdc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Beaufort Sea, Canada",
+              "to": "Bering Strait, USA"
+            },
+            "type": "tool_call",
+            "id": "call_Oxx9rGwgZBgXPHxdPZ8Rke8y"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Oxx9rGwgZBgXPHxdPZ8Rke8y",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Beaufort Sea, Canada\",\"to\":\"Bering Strait, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 1733,
+            "totalTokens": 1762
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1733,
+            "completion_tokens": 29,
+            "total_tokens": 1762,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKABFiAzOgwQQVnJcbG6cIv5NGQLx"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Beaufort Sea, Canada\",\n  \"to\": \"Bering Strait, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Bering Strait, United States\"\n    ],\n    \"origin_addresses\": [\n      \"Beaufort Sea, Canada\",\n      \"Beaufort Sea, Canada\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      },\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_Oxx9rGwgZBgXPHxdPZ8Rke8y",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "bb415ca7-9257-479e-a1aa-cfc8d349958c"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Northwest Passage - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Northwest_Passage"
+    },
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Northwest Passage\", which is real world.\nThe  pitch for this route is \"A historic sea route through the Arctic Ocean, connecting the Atlantic and Pacific Oceans. This treacherous path is known for its icy waters and was sought after for centuries as a potential trade route.\".\nSome ideas for steps are: \n\t - Baffin Bay to Lancaster Sound\n\t - Lancaster Sound to Viscount Melville Sound\n\t - Viscount Melville Sound to McClure Strait\n\t - McClure Strait to Beaufort Sea\n\t - Beaufort Sea to Bering Strait",
+  "itinerary": [
+    {
+      "startingLocation": "Baffin Bay",
+      "endingLocation": "Lancaster Sound",
+      "startingLocationDescription": "Baffin Bay is a marginal sea of the North Atlantic Ocean located between Baffin Island and the southwest coast of Greenland.",
+      "endingLocationDescription": "Lancaster Sound is a body of water located in the Canadian Arctic Archipelago, known for its rich marine life.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Accessible via the Davis Strait from the Atlantic Ocean."
+    },
+    {
+      "startingLocation": "Lancaster Sound",
+      "endingLocation": "Viscount Melville Sound",
+      "startingLocationDescription": "Lancaster Sound is the eastern entrance to the Northwest Passage, known for its historical significance in Arctic exploration.",
+      "endingLocationDescription": "Viscount Melville Sound is a large body of water in the Canadian Arctic Archipelago, connecting several channels and straits.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Navigate westward through the Arctic Archipelago."
+    },
+    {
+      "startingLocation": "Viscount Melville Sound",
+      "endingLocation": "McClure Strait",
+      "startingLocationDescription": "Viscount Melville Sound is a key part of the Northwest Passage, offering a route through the Arctic.",
+      "endingLocationDescription": "McClure Strait is a strait on the edge of the Arctic Ocean, known for its challenging ice conditions.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Continue westward through the Arctic waters."
+    },
+    {
+      "startingLocation": "McClure Strait",
+      "endingLocation": "Beaufort Sea",
+      "startingLocationDescription": "McClure Strait is a historically significant part of the Northwest Passage, named after explorer Robert McClure.",
+      "endingLocationDescription": "Beaufort Sea is a marginal sea of the Arctic Ocean, located north of the Northwest Territories, the Yukon, and Alaska.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Proceed into the Beaufort Sea, navigating through the ice."
+    },
+    {
+      "startingLocation": "Beaufort Sea",
+      "endingLocation": "Bering Strait",
+      "startingLocationDescription": "Beaufort Sea is known for its oil and gas reserves and is a critical habitat for Arctic wildlife.",
+      "endingLocationDescription": "Bering Strait is a strait connecting the Arctic Ocean with the Bering Sea, and separates Russia and Alaska.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Travel southwest towards the Bering Strait, marking the end of the Northwest Passage."
+    }
+  ],
+  "route": "The Northwest Passage",
+  "steps": [
+    {
+      "startingLocation": "Baffin Bay",
+      "endingLocation": "Lancaster Sound",
+      "distance": 600,
+      "startingLocationDescription": "Baffin Bay is a marginal sea of the North Atlantic Ocean located between Baffin Island and the southwest coast of Greenland.",
+      "endingLocationDescription": "Lancaster Sound is a body of water located in the Canadian Arctic Archipelago, known for its rich marine life.",
+      "credibility": {
+        "source": "https://en.wikipedia.org/wiki/Northwest_Passage",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Lancaster Sound",
+      "endingLocation": "Viscount Melville Sound",
+      "distance": 400,
+      "startingLocationDescription": "Lancaster Sound is the eastern entrance to the Northwest Passage, known for its historical significance in Arctic exploration.",
+      "endingLocationDescription": "Viscount Melville Sound is a large body of water in the Canadian Arctic Archipelago, connecting several channels and straits.",
+      "credibility": {
+        "source": "Estimated based on typical distances in the Canadian Arctic Archipelago",
+        "reliability": 6,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Viscount Melville Sound",
+      "endingLocation": "McClure Strait",
+      "distance": 300,
+      "startingLocationDescription": "Viscount Melville Sound is a key part of the Northwest Passage, offering a route through the Arctic.",
+      "endingLocationDescription": "McClure Strait is a strait on the edge of the Arctic Ocean, known for its challenging ice conditions.",
+      "credibility": {
+        "source": "Estimated based on typical distances between known points in the Arctic Archipelago.",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "McClure Strait",
+      "endingLocation": "Beaufort Sea",
+      "distance": 250,
+      "startingLocationDescription": "McClure Strait is a historically significant part of the Northwest Passage, named after explorer Robert McClure.",
+      "endingLocationDescription": "Beaufort Sea is a marginal sea of the Arctic Ocean, located north of the Northwest Territories, the Yukon, and Alaska.",
+      "credibility": {
+        "source": "Estimated based on typical distances in the Arctic region",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Beaufort Sea",
+      "endingLocation": "Bering Strait",
+      "distance": 800,
+      "startingLocationDescription": "Beaufort Sea is known for its oil and gas reserves and is a critical habitat for Arctic wildlife.",
+      "endingLocationDescription": "Bering Strait is a strait connecting the Arctic Ocean with the Bering Sea, and separates Russia and Alaska.",
+      "credibility": {
+        "source": "Estimated based on typical distances in the region",
+        "reliability": 6,
+        "guess": true
+      }
+    }
+  ]
+}
