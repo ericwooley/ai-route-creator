@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Dagobah Swamp Trek fictional route"
+            },
+            "type": "tool_call",
+            "id": "call_trY8yjJePj7xLuZqDaov3Gfb"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_trY8yjJePj7xLuZqDaov3Gfb",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Dagobah Swamp Trek fictional route\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 513,
+            "totalTokens": 535
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 513,
+            "completion_tokens": 22,
+            "total_tokens": 535,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AK9gxav5EZD6afMRJEo8UgXsOM6ov"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_trY8yjJePj7xLuZqDaov3Gfb",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ba66976c-a5e6-4355-a360-ee13528673df"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting places to stop on the Dagobah Swamp Trek, a fictional journey exploring the mysterious swamps of Dagobah, including Yoda's Hut, Dark Side Cave, Swamp Clearing, Gnarltree Forest, Misty Marshes, and Jedi Training Grounds. Ensure no real locations are included."
+            },
+            "type": "tool_call",
+            "id": "call_trY8yjJePj7xLuZqDaov3Gfb"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_trY8yjJePj7xLuZqDaov3Gfb",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting places to stop on the Dagobah Swamp Trek, a fictional journey exploring the mysterious swamps of Dagobah, including Yoda's Hut, Dark Side Cave, Swamp Clearing, Gnarltree Forest, Misty Marshes, and Jedi Training Grounds. Ensure no real locations are included.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 77,
+            "promptTokens": 780,
+            "totalTokens": 857
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 780,
+            "completion_tokens": 77,
+            "total_tokens": 857,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AK9h5rx7qAzuesGTSYToXloA1ubWk"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Cannot read properties of undefined (reading 'length')\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_trY8yjJePj7xLuZqDaov3Gfb",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e515c90d-32e6-453e-a3c9-2d4b7c082964"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Yoda's Hut to Dark Side Cave distance"
+            },
+            "type": "tool_call",
+            "id": "call_oBvDch911HXqnUPv1GftAM8h"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_oBvDch911HXqnUPv1GftAM8h",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Yoda's Hut to Dark Side Cave distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 1182,
+            "totalTokens": 1204
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1182,
+            "completion_tokens": 22,
+            "total_tokens": 1204,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AK9h7kADneP2FfCRRrXYdOxu6SJME"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_oBvDch911HXqnUPv1GftAM8h",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "58b9b8c6-597b-4c7a-a1b7-164cf6f1253c"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Dark Side Cave to Swamp Clearing"
+            },
+            "type": "tool_call",
+            "id": "call_b0nNnk6e1CR1Hil9gwe1qjoO"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_b0nNnk6e1CR1Hil9gwe1qjoO",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Dark Side Cave to Swamp Clearing\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 1293,
+            "totalTokens": 1313
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1293,
+            "completion_tokens": 20,
+            "total_tokens": 1313,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AK9hAnjM0IQGWkyBSbSFs8uDAvPui"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_b0nNnk6e1CR1Hil9gwe1qjoO",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "37670b39-0b32-4860-aada-56a38cc7f18f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Swamp Clearing to Gnarltree Forest Dagobah Swamp Trek"
+            },
+            "type": "tool_call",
+            "id": "call_dgKeZXFFd1a2VUxwEaRVxDrm"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_dgKeZXFFd1a2VUxwEaRVxDrm",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Swamp Clearing to Gnarltree Forest Dagobah Swamp Trek\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 1307,
+            "totalTokens": 1335
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1307,
+            "completion_tokens": 28,
+            "total_tokens": 1335,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AK9hD8MAvwMtAt1tvWaMqahy8p3SG"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_dgKeZXFFd1a2VUxwEaRVxDrm",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "c3f91a17-f4de-4b85-9309-1871a499e3b6"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Gnarltree Forest to Misty Marshes distance"
+            },
+            "type": "tool_call",
+            "id": "call_RKPxGxTpvmhUtRqyOsrejFLt"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_RKPxGxTpvmhUtRqyOsrejFLt",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Gnarltree Forest to Misty Marshes distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 24,
+            "promptTokens": 1399,
+            "totalTokens": 1423
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1399,
+            "completion_tokens": 24,
+            "total_tokens": 1423,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AK9hITumrTcGn4Fh8Ah6T2OmmPVDp"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_RKPxGxTpvmhUtRqyOsrejFLt",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "f62d3382-1a88-4a5e-859a-1574330542dc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Misty Marshes to Jedi Training Grounds, Dagobah, fictional, distance"
+            },
+            "type": "tool_call",
+            "id": "call_k1N28Nb5iGpUvdEk9xcfpP0C"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_k1N28Nb5iGpUvdEk9xcfpP0C",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Misty Marshes to Jedi Training Grounds, Dagobah, fictional, distance\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 1413,
+            "totalTokens": 1442
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1413,
+            "completion_tokens": 29,
+            "total_tokens": 1442,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_a20a4ee344"
+        },
+        "id": "chatcmpl-AK9hMsjfGAwDk7IOnkOoI5MXELIk2"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to launch the browser process!\n/var/lib/jenkins/.cache/puppeteer/chrome/linux-129.0.6668.89/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n Please fix your mistakes.",
+        "name": "distance_search",
+        "tool_call_id": "call_k1N28Nb5iGpUvdEk9xcfpP0C",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e97d2f9d-6e37-462c-aa8e-1c9413ec9aac"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Puppeteer Troubleshooting",
+      "link": "https://pptr.dev/troubleshooting"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Dagobah Swamp Trek\", which is fictional.\nThe  pitch for this route is \"Explore the mysterious swamps of Dagobah, home to ancient Jedi secrets and strange, otherworldly creatures.\".\nSome ideas for steps are: \n\t - Yoda's Hut to Dark Side Cave\n\t - Dark Side Cave to Swamp Clearing\n\t - Swamp Clearing to Gnarltree Forest\n\t - Gnarltree Forest to Misty Marshes\n\t - Misty Marshes to Jedi Training Grounds",
+  "itinerary": [
+    {
+      "startingLocation": "Yoda's Hut",
+      "endingLocation": "Dark Side Cave",
+      "startingLocationDescription": "A small, humble dwelling where Yoda resides, surrounded by dense swamp vegetation.",
+      "endingLocationDescription": "A mysterious cave that exudes a dark presence, known for testing one's inner fears.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the small hut nestled among the trees, with a path leading deeper into the swamp."
+    },
+    {
+      "startingLocation": "Dark Side Cave",
+      "endingLocation": "Swamp Clearing",
+      "startingLocationDescription": "The entrance to the cave is shrouded in mist and darkness.",
+      "endingLocationDescription": "A rare open area in the swamp, providing a brief respite from the dense foliage.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the path out of the cave, leading to a more open area in the swamp."
+    },
+    {
+      "startingLocation": "Swamp Clearing",
+      "endingLocation": "Gnarltree Forest",
+      "startingLocationDescription": "An open space in the swamp, surrounded by towering trees.",
+      "endingLocationDescription": "A dense forest of twisted, gnarled trees, teeming with life.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Head towards the thick cluster of trees visible from the clearing."
+    },
+    {
+      "startingLocation": "Gnarltree Forest",
+      "endingLocation": "Misty Marshes",
+      "startingLocationDescription": "A forest filled with ancient, twisted trees and the sounds of hidden creatures.",
+      "endingLocationDescription": "A marshland covered in a perpetual mist, obscuring the path ahead.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Navigate through the forest until you reach the edge of the misty marshes."
+    },
+    {
+      "startingLocation": "Misty Marshes",
+      "endingLocation": "Jedi Training Grounds",
+      "startingLocationDescription": "A foggy marshland that challenges visibility and navigation.",
+      "endingLocationDescription": "An open area used for Jedi training, marked by ancient stones and clearings.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Continue through the mist until you find the clearing with ancient stones."
+    }
+  ],
+  "route": "Dagobah Swamp Trek",
+  "steps": [
+    {
+      "startingLocation": "Yoda's Hut",
+      "endingLocation": "Dark Side Cave",
+      "distance": 0.5,
+      "startingLocationDescription": "A small, humble dwelling where Yoda resides, surrounded by dense swamp vegetation.",
+      "endingLocationDescription": "A mysterious cave that exudes a dark presence, known for testing one's inner fears.",
+      "credibility": {
+        "source": "Fictional Route Planning",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Dark Side Cave",
+      "endingLocation": "Swamp Clearing",
+      "distance": 0.7,
+      "startingLocationDescription": "The entrance to the cave is shrouded in mist and darkness.",
+      "endingLocationDescription": "A rare open area in the swamp, providing a brief respite from the dense foliage.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Swamp Clearing",
+      "endingLocation": "Gnarltree Forest",
+      "distance": 0.8,
+      "startingLocationDescription": "An open space in the swamp, surrounded by towering trees.",
+      "endingLocationDescription": "A dense forest of twisted, gnarled trees, teeming with life.",
+      "credibility": {
+        "source": "Educated guess based on similar distances",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Gnarltree Forest",
+      "endingLocation": "Misty Marshes",
+      "distance": 1,
+      "startingLocationDescription": "A forest filled with ancient, twisted trees and the sounds of hidden creatures.",
+      "endingLocationDescription": "A marshland covered in a perpetual mist, obscuring the path ahead.",
+      "credibility": {
+        "source": "Educated guess based on previous distances",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Misty Marshes",
+      "endingLocation": "Jedi Training Grounds",
+      "distance": 1.2,
+      "startingLocationDescription": "A foggy marshland that challenges visibility and navigation.",
+      "endingLocationDescription": "An open area used for Jedi training, marked by ancient stones and clearings.",
+      "credibility": {
+        "source": "Educated guess based on previous distances",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}
