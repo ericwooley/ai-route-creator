@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Milky Way Voyage fictional route"
+            },
+            "type": "tool_call",
+            "id": "call_vYjr7BBF58Iy7z4psHCn4GQA"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_vYjr7BBF58Iy7z4psHCn4GQA",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Milky Way Voyage fictional route\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 528,
+            "totalTokens": 549
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 528,
+            "completion_tokens": 21,
+            "total_tokens": 549,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxYkDEyC6cKziEnG2pG5d9kGkhaw"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Voyager spacecraft, which has been traveling through space since its launch in 1977, is currently on a trajectory that will eventually take it out of the solar system. However, to reach the edge of the Milky Way galaxy, it would take tens of thousands of years, depending on its specific path. This vast distance highlights the immense scale of our galaxy compared to the distances we are familiar with on Earth.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Solar System\",\n        \"endingLocation\": \"Edge of the Milky Way\",\n        \"startingLocationDescription\": \"The Voyager spacecraft begins its journey from the outer reaches of our solar system, having already passed the planets and into interstellar space.\",\n        \"endingLocationDescription\": \"The edge of the Milky Way is a vast region filled with stars, gas, and dust, marking the boundary of our galaxy.\",\n        \"credibility\": {\n          \"source\": \"Reddit AskScience\",\n          \"reliability\": 5,\n          \"guess\": false\n        },\n        \"description\": \"The Voyager spacecraft would take tens of thousands of years to reach the edge of the Milky Way, illustrating the vast distances involved in our galaxy.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"5\",\n  \"relevantLinks\": [\n    \"https://www.reddit.com/r/askscience/comments/slfu4/voyager_1_is_almost_outside_of_our_solar_system/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer is relevant to the question as it addresses the time it would take for Voyager to exit the Milky Way.\",\n      \"answer\": \"The Voyager would take tens of thousands of years to reach the Milky Way's edge, depending on its trajectory.\",\n      \"answerQuality\": 5,\n      \"snippet\": \"Relative to the Milky Way, how insignificant is this distance? How long would it take for the Voyager to reach the edge of the Milky Way?\",\n      \"content\": \"The Voyager spacecraft is currently traveling through interstellar space and is on a long journey that will eventually take it out of the solar system. However, the distance to the edge of the Milky Way is so vast that it would take tens of thousands of years to reach it, depending on its trajectory.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_vYjr7BBF58Iy7z4psHCn4GQA",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "1660aa53-f9e4-4967-a8c4-39c6c9d5dea3"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling through the Milky Way, fictional journey from Orion Arm to Galactic Center"
+            },
+            "type": "tool_call",
+            "id": "call_jORITS2TFUl3sjpUoEoTI6vK"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_jORITS2TFUl3sjpUoEoTI6vK",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling through the Milky Way, fictional journey from Orion Arm to Galactic Center\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 35,
+            "promptTokens": 3989,
+            "totalTokens": 4024
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3989,
+            "completion_tokens": 35,
+            "total_tokens": 4024,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxZQCr20Zna1CEPYo5Ia57jM3Jd5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The journey through the Milky Way from the Orion Arm to the Galactic Center includes several fascinating locations. Starting from the Orion Spur, travelers can explore the Sagittarius Arm and the Scutum-Centaurus Arm, which are rich in star formation and cosmic phenomena. The Norma Arm is another significant region to visit. The journey culminates at Sagittarius A*, the supermassive black hole at the center of our galaxy, which is a point of immense gravitational pull and scientific interest.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Orion Spur\",\n        \"endingLocation\": \"Sagittarius Arm\",\n        \"startingLocationDescription\": \"Begin your journey in the Orion Spur, home to many bright stars and nebulae, including the famous Orion Nebula.\",\n        \"endingLocationDescription\": \"As you enter the Sagittarius Arm, look for dense star clusters and regions of active star formation.\",\n        \"credibility\": {\n          \"source\": \"https://www.space.com/19915-milky-way-galaxy.html\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"Traveling from the Orion Spur to the Sagittarius Arm offers a view of some of the most vibrant star-forming regions in the galaxy.\"\n      },\n      {\n        \"startingLocation\": \"Sagittarius Arm\",\n        \"endingLocation\": \"Scutum-Centaurus Arm\",\n        \"startingLocationDescription\": \"In the Sagittarius Arm, you can observe the rich star fields and the central bulge of the Milky Way.\",\n        \"endingLocationDescription\": \"The Scutum-Centaurus Arm is known for its massive star clusters and the beautiful Lagoon Nebula.\",\n        \"credibility\": {\n          \"source\": \"https://www.space.com/19915-milky-way-galaxy.html\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the journey showcases the beauty of the Milky Way's structure and the diversity of its stellar populations.\"\n      },\n      {\n        \"startingLocation\": \"Scutum-Centaurus Arm\",\n        \"endingLocation\": \"Norma Arm\",\n        \"startingLocationDescription\": \"The Scutum-Centaurus Arm is rich in star clusters and offers stunning views of the Milky Way's core.\",\n        \"endingLocationDescription\": \"The Norma Arm features a variety of star systems and is less densely populated than the previous arms.\",\n        \"credibility\": {\n          \"source\": \"https://www.space.com/19915-milky-way-galaxy.html\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"Traveling to the Norma Arm provides a contrast to the previous arms, with a different stellar environment.\"\n      },\n      {\n        \"startingLocation\": \"Norma Arm\",\n        \"endingLocation\": \"Sagittarius A*\",\n        \"startingLocationDescription\": \"The Norma Arm is a quieter region of the galaxy, with fewer stars but interesting star systems.\",\n        \"endingLocationDescription\": \"Arriving at Sagittarius A*, you will witness the supermassive black hole that dominates the center of the Milky Way.\",\n        \"credibility\": {\n          \"source\": \"https://www.space.com/19915-milky-way-galaxy.html\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"The final destination, Sagittarius A*, is a point of great interest for astronomers and a dramatic conclusion to your journey.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"8\",\n  \"relevantLinks\": [\n    \"https://www.space.com/19915-milky-way-galaxy.html\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer lists specific interesting locations within the Milky Way relevant to the journey from the Orion Arm to the Galactic Center.\",\n      \"answer\": \"Orion Spur, Sagittarius Arm, Scutum-Centaurus Arm, Norma Arm, Sagittarius A* (black hole).\",\n      \"answerQuality\": 5,\n      \"snippet\": \"If we were to travel inwards towards the city center, we would find the Scutum-Centaurus and Norma arms.\",\n      \"content\": \"The Milky Way's structure includes various arms and features, such as the Orion Spur where we are located, and the central supermassive black hole Sagittarius A*.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_jORITS2TFUl3sjpUoEoTI6vK",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "f948b50f-c395-4fb5-84ac-165d675fa205"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Orion Arm to Perseus Arm, fictional"
+            },
+            "type": "tool_call",
+            "id": "call_c8mBemkEsFFZ8WdA0d7RrcZl"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_c8mBemkEsFFZ8WdA0d7RrcZl",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Orion Arm to Perseus Arm, fictional\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 8707,
+            "totalTokens": 8730
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8707,
+            "completion_tokens": 23,
+            "total_tokens": 8730,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxa8ruj732bEhKlkfgSV3gk5mtkc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Orion Arm to Perseus Arm, fictional\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Orion Arm is a minor spiral arm of the Milky Way galaxy, situated between the Perseus Arm and the Scutum-Centaurus Arm. It is often considered a spur of the Perseus Arm, indicating a close relationship between the two structures. The Orion Arm contains our solar system and is approximately 3,500 light-years wide. The Perseus Arm is a major arm of the Milky Way, and the Orion Arm's position suggests it is a smaller feature branching off from it.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Orion Arm\",\n          \"endingLocation\": \"Perseus Arm\",\n          \"startingLocationDescription\": \"The Orion Arm is a minor spiral arm of the Milky Way, containing our solar system.\",\n          \"endingLocationDescription\": \"The Perseus Arm is a major spiral arm of the Milky Way, located adjacent to the Orion Arm.\",\n          \"credibility\": {\n            \"source\": \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"The Orion Arm is often viewed as a spur of the Perseus Arm, indicating a close spatial relationship between the two arms.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the Orion Arm's classification and its relation to the Perseus Arm.\",\n        \"answer\": \"The Orion Arm is considered a minor arm of the Milky Way, often viewed as a spur of the Perseus Arm.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Is our 'Orion Arm' a proper minor arm in and of itself? Is it a spur of a larger arm?\",\n        \"content\": \"The Orion Arm is a minor spiral arm of the Milky Way, located between the Perseus Arm and the Scutum-Centaurus Arm. It is often considered a spur of the Perseus Arm.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Orion Arm is a minor spiral arm of the Milky Way galaxy, situated between the Perseus Arm and the Scutum-Centaurus Arm. It is often considered a spur of the Perseus Arm, indicating a close relationship between the two structures. The Orion Arm contains our solar system and is approximately 3,500 light-years wide. The Perseus Arm is a major arm of the Milky Way, and the Orion Arm's position suggests it is a smaller feature branching off from it.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Orion Arm\",\n            \"endingLocation\": \"Perseus Arm\",\n            \"startingLocationDescription\": \"The Orion Arm is a minor spiral arm of the Milky Way, containing our solar system.\",\n            \"endingLocationDescription\": \"The Perseus Arm is a major spiral arm of the Milky Way, located adjacent to the Orion Arm.\",\n            \"credibility\": {\n              \"source\": \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"The Orion Arm is often viewed as a spur of the Perseus Arm, indicating a close spatial relationship between the two arms.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the Orion Arm's classification and its relation to the Perseus Arm.\",\n          \"answer\": \"The Orion Arm is considered a minor arm of the Milky Way, often viewed as a spur of the Perseus Arm.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"Is our 'Orion Arm' a proper minor arm in and of itself? Is it a spur of a larger arm?\",\n          \"content\": \"The Orion Arm is a minor spiral arm of the Milky Way, located between the Perseus Arm and the Scutum-Centaurus Arm. It is often considered a spur of the Perseus Arm.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the user's query about the Orion Arm's classification and its relation to the Perseus Arm.\",\n        \"answer\": \"The Orion Arm is considered a minor arm of the Milky Way, often viewed as a spur of the Perseus Arm.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Is our 'Orion Arm' a proper minor arm in and of itself? Is it a spur of a larger arm?\",\n        \"link\": \"https://www.reddit.com/r/Astronomy/comments/pobmif/is_it_still_widely_accepted_that_the_sol_system/\",\n        \"query\": \"Orion Arm to Perseus Arm, fictional\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_c8mBemkEsFFZ8WdA0d7RrcZl",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "a6083626-7e2c-4d7d-8e2c-41b891081e66"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Perseus Arm to Sagittarius Arm, fictional"
+            },
+            "type": "tool_call",
+            "id": "call_no9o6KaR6Ia8NhAEvge4QaOF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_no9o6KaR6Ia8NhAEvge4QaOF",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Perseus Arm to Sagittarius Arm, fictional\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 10039,
+            "totalTokens": 10061
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 10039,
+            "completion_tokens": 22,
+            "total_tokens": 10061,
+            "prompt_tokens_details": {
+              "cached_tokens": 7808
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxaTrHBIUlO965BRqkDrrthV8AVQ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Perseus Arm to Sagittarius Arm, fictional\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Orion Arm is a minor spiral arm of the Milky Way galaxy, located between the Perseus Arm and the Scutum-Centaurus Arm. It is often regarded as a spur of the Perseus Arm, which provides context for the location of our solar system within the galaxy. The Orion Arm contains our solar system and is situated on the inner edge of the Orion-Cygnus Arm.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"7\",\n    \"relevantLinks\": [\n      \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n      \"https://www.reddit.com/r/Astronomy/comments/pobmif/is_it_still_widely_accepted_that_the_sol_system/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it addresses the user's inquiry about the Orion Arm's classification in relation to the Perseus and Sagittarius arms.\",\n        \"answer\": \"The Orion Arm is considered a minor arm, often viewed as a spur of the Perseus Arm.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"Is it a spur of a larger arm? Is it something else entirely?\",\n        \"content\": \"The Orion Arm is generally accepted as a minor arm of the Milky Way, often regarded as a spur of the Perseus Arm, which provides context for the Sol system's location between the Perseus and Sagittarius arms.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Orion Arm is a minor spiral arm of the Milky Way galaxy, located between the Perseus Arm and the Scutum-Centaurus Arm. It is often regarded as a spur of the Perseus Arm, which provides context for the location of our solar system within the galaxy. The Orion Arm contains our solar system and is situated on the inner edge of the Orion-Cygnus Arm.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"7\",\n      \"relevantLinks\": [\n        \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n        \"https://www.reddit.com/r/Astronomy/comments/pobmif/is_it_still_widely_accepted_that_the_sol_system/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it addresses the user's inquiry about the Orion Arm's classification in relation to the Perseus and Sagittarius arms.\",\n          \"answer\": \"The Orion Arm is considered a minor arm, often viewed as a spur of the Perseus Arm.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"Is it a spur of a larger arm? Is it something else entirely?\",\n          \"content\": \"The Orion Arm is generally accepted as a minor arm of the Milky Way, often regarded as a spur of the Perseus Arm, which provides context for the Sol system's location between the Perseus and Sagittarius arms.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_no9o6KaR6Ia8NhAEvge4QaOF",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d40137a1-b041-409e-8640-2b409d0a532c"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Sagittarius Arm to Scutum-Centaurus Arm, fictional"
+            },
+            "type": "tool_call",
+            "id": "call_NjkAD4Pkdnt5vSqXKs6byP0m"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_NjkAD4Pkdnt5vSqXKs6byP0m",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Sagittarius Arm to Scutum-Centaurus Arm, fictional\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 25,
+            "promptTokens": 9162,
+            "totalTokens": 9187
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9162,
+            "completion_tokens": 25,
+            "total_tokens": 9187,
+            "prompt_tokens_details": {
+              "cached_tokens": 3968
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxasL2WLcAvlnvKoUWiV7dij8Yml"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Sagittarius Arm to Scutum-Centaurus Arm, fictional\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Sagittarius Arm and Scutum-Centaurus Arm are two of the major spiral arms of the Milky Way galaxy. The Sagittarius Arm connects to the Scutum-Centaurus Arm as part of the galaxy's spiral structure. In fictional contexts, such as in the Sailor Moon universe, various star systems are located within these arms, providing a creative interpretation of their positions in the galaxy.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n      \"https://www.reddit.com/r/sailormoon/comments/u4wkzq/a_part_of_my_interpreted_map_of_the_sailor_moon/\",\n      \"https://academic.oup.com/mnras/article-pdf/527/1/1472/53009725/stad3350.pdf\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly identifies the spiral arm where our solar system is located, which is relevant to the query about the Sagittarius Arm to Scutum-Centaurus Arm.\",\n        \"answer\": \"The Orion Arm.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"We lie between the major arms in a smaller spiral arm known as the Orion Arm.\",\n        \"content\": \"Our solar system lies between the Perseus Arm and the Scutum-Centaurus Arm, on the inner edge of the Orion-Cygnus Arm, also called the Orion Arm.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it discusses the fictional locations within the context of the query.\",\n        \"answer\": \"The Kinmoku system is in the Carina-Sagittarius arm; Chuu, Mermaid, Coronis, Mau, and Cocoon are in the Scutum-Centaurus arm.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Chuu, Mermaid, Coronis, Mau and Cocoon are star systems in the Inner Rim part of the Scutum-Centaurus Arm. The Kinmoku system is located in the Carina-Sagittarius arm.\",\n        \"content\": \"The content provides a fictional map of the Sailor Moon Milky Way Galaxy, detailing various star systems and their locations, which directly relates to the query about the Sagittarius Arm and Scutum-Centaurus Arm.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it directly addresses the query about the transition from the Sagittarius Arm to the Scutum-Centaurus Arm, which is discussed in the context of the spiral structure of the Milky Way.\",\n        \"answer\": \"The Sagittarius Arm connects to the Scutum-Centaurus Arm in the Galactic spiral structure.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"We present a schematic four-arm global pattern, consisting of the Scutum–Centaurus, Sagittarius–Carina, Perseus, Norma-Outer arms, as well as the local arm Orion.\",\n        \"content\": \"The study discusses the parameters of the spiral arms of the Milky Way, including the Sagittarius and Scutum-Centaurus arms, based on kinematic tracers from Gaia DR3 data.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Sagittarius Arm and Scutum-Centaurus Arm are two of the major spiral arms of the Milky Way galaxy. The Sagittarius Arm connects to the Scutum-Centaurus Arm as part of the galaxy's spiral structure. In fictional contexts, such as in the Sailor Moon universe, various star systems are located within these arms, providing a creative interpretation of their positions in the galaxy.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n        \"https://www.reddit.com/r/sailormoon/comments/u4wkzq/a_part_of_my_interpreted_map_of_the_sailor_moon/\",\n        \"https://academic.oup.com/mnras/article-pdf/527/1/1472/53009725/stad3350.pdf\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly identifies the spiral arm where our solar system is located, which is relevant to the query about the Sagittarius Arm to Scutum-Centaurus Arm.\",\n          \"answer\": \"The Orion Arm.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"We lie between the major arms in a smaller spiral arm known as the Orion Arm.\",\n          \"content\": \"Our solar system lies between the Perseus Arm and the Scutum-Centaurus Arm, on the inner edge of the Orion-Cygnus Arm, also called the Orion Arm.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it discusses the fictional locations within the context of the query.\",\n          \"answer\": \"The Kinmoku system is in the Carina-Sagittarius arm; Chuu, Mermaid, Coronis, Mau, and Cocoon are in the Scutum-Centaurus arm.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Chuu, Mermaid, Coronis, Mau and Cocoon are star systems in the Inner Rim part of the Scutum-Centaurus Arm. The Kinmoku system is located in the Carina-Sagittarius arm.\",\n          \"content\": \"The content provides a fictional map of the Sailor Moon Milky Way Galaxy, detailing various star systems and their locations, which directly relates to the query about the Sagittarius Arm and Scutum-Centaurus Arm.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it directly addresses the query about the transition from the Sagittarius Arm to the Scutum-Centaurus Arm, which is discussed in the context of the spiral structure of the Milky Way.\",\n          \"answer\": \"The Sagittarius Arm connects to the Scutum-Centaurus Arm in the Galactic spiral structure.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"We present a schematic four-arm global pattern, consisting of the Scutum–Centaurus, Sagittarius–Carina, Perseus, Norma-Outer arms, as well as the local arm Orion.\",\n          \"content\": \"The study discusses the parameters of the spiral arms of the Milky Way, including the Sagittarius and Scutum-Centaurus arms, based on kinematic tracers from Gaia DR3 data.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_NjkAD4Pkdnt5vSqXKs6byP0m",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "dfa8302f-f20a-4b64-bb33-1a9f540651ee"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Scutum-Centaurus Arm to Norma Arm, fictional"
+            },
+            "type": "tool_call",
+            "id": "call_Nu80nacSLzUBbgtySZ2O2a9X"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Nu80nacSLzUBbgtySZ2O2a9X",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Scutum-Centaurus Arm to Norma Arm, fictional\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 24,
+            "promptTokens": 8604,
+            "totalTokens": 8628
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8604,
+            "completion_tokens": 24,
+            "total_tokens": 8628,
+            "prompt_tokens_details": {
+              "cached_tokens": 3968
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxbYqa19qUNI3n6I8RRZ5WVPh3eC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Scutum-Centaurus Arm to Norma Arm, fictional\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Scutum-Centaurus Arm and the Norma Arm are both significant spiral arms of the Milky Way galaxy. The Inner Scutum-Centaurus Arm borders the Norma Arm, indicating a close spatial relationship between these two regions. The Scutum-Centaurus Arm is part of a four-arm structure in the galaxy, which includes the Sagittarius-Carina, Perseus, and Norma-Outer arms, while the Norma Arm is also a key component of this structure.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://academic.oup.com/mnras/article-pdf/527/1/1472/53009725/stad3350.pdf\",\n      \"https://elite-dangerous.fandom.com/wiki/Inner_Scutum-Centaurus_Arm\",\n      \"https://elite-dangerous.fandom.com/wiki/Norma_Arm\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the relationship between the Scutum-Centaurus Arm and the Norma Arm, providing relevant context about their roles in the Milky Way's spiral structure.\",\n        \"answer\": \"The Scutum-Centaurus Arm is one of the main spiral arms of the Milky Way, while the Norma Arm is another significant arm. They are part of a four-arm global pattern in the Galaxy.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"we present a schematic four-arm global pattern, consisting of the Scutum–Centaurus, Sagittarius–Carina, Perseus, Norma-Outer arms, as well as the local arm Orion.\",\n        \"content\": \"The content discusses the parameters of the spiral arms of the Milky Way, including the Scutum-Centaurus and Norma arms, and their significance in the overall structure of the Galaxy.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it identifies the relationship between the Inner Scutum-Centaurus Arm and the Norma Arm.\",\n        \"answer\": \"The Inner Scutum-Centaurus Arm borders the Norma Arm.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The Inner Scutum-Centaurus Arm is bordered by Inner Orion-Perseus Conflux, Odin's Hold, Norma Arm, Norma Expanse, Inner Orion Spur, Temple, and Orion-Cygnus Arm.\",\n        \"content\": \"The Inner Scutum-Centaurus Arm is a galactic region in the Milky Way, and it is directly adjacent to the Norma Arm.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it identifies the Norma Arm's location in relation to the Scutum-Centaurus Arm.\",\n        \"answer\": \"The Norma Arm is bordered by the Inner Scutum-Centaurus Arm.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The Norma Arm is galactic region #5 in the Milky Way. It is bordered by the Empyrean Straits, the Arcadian Stream, the Norma Expanse, the Inner Scutum-Centaurus Arm, and Odin's Hold.\",\n        \"content\": \"The Norma Arm is a galactic region in the Milky Way, specifically bordered by the Inner Scutum-Centaurus Arm.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Scutum-Centaurus Arm and the Norma Arm are both significant spiral arms of the Milky Way galaxy. The Inner Scutum-Centaurus Arm borders the Norma Arm, indicating a close spatial relationship between these two regions. The Scutum-Centaurus Arm is part of a four-arm structure in the galaxy, which includes the Sagittarius-Carina, Perseus, and Norma-Outer arms, while the Norma Arm is also a key component of this structure.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://academic.oup.com/mnras/article-pdf/527/1/1472/53009725/stad3350.pdf\",\n        \"https://elite-dangerous.fandom.com/wiki/Inner_Scutum-Centaurus_Arm\",\n        \"https://elite-dangerous.fandom.com/wiki/Norma_Arm\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the relationship between the Scutum-Centaurus Arm and the Norma Arm, providing relevant context about their roles in the Milky Way's spiral structure.\",\n          \"answer\": \"The Scutum-Centaurus Arm is one of the main spiral arms of the Milky Way, while the Norma Arm is another significant arm. They are part of a four-arm global pattern in the Galaxy.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"we present a schematic four-arm global pattern, consisting of the Scutum–Centaurus, Sagittarius–Carina, Perseus, Norma-Outer arms, as well as the local arm Orion.\",\n          \"content\": \"The content discusses the parameters of the spiral arms of the Milky Way, including the Scutum-Centaurus and Norma arms, and their significance in the overall structure of the Galaxy.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it identifies the relationship between the Inner Scutum-Centaurus Arm and the Norma Arm.\",\n          \"answer\": \"The Inner Scutum-Centaurus Arm borders the Norma Arm.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The Inner Scutum-Centaurus Arm is bordered by Inner Orion-Perseus Conflux, Odin's Hold, Norma Arm, Norma Expanse, Inner Orion Spur, Temple, and Orion-Cygnus Arm.\",\n          \"content\": \"The Inner Scutum-Centaurus Arm is a galactic region in the Milky Way, and it is directly adjacent to the Norma Arm.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it identifies the Norma Arm's location in relation to the Scutum-Centaurus Arm.\",\n          \"answer\": \"The Norma Arm is bordered by the Inner Scutum-Centaurus Arm.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The Norma Arm is galactic region #5 in the Milky Way. It is bordered by the Empyrean Straits, the Arcadian Stream, the Norma Expanse, the Inner Scutum-Centaurus Arm, and Odin's Hold.\",\n          \"content\": \"The Norma Arm is a galactic region in the Milky Way, specifically bordered by the Inner Scutum-Centaurus Arm.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_Nu80nacSLzUBbgtySZ2O2a9X",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "0c26eee2-f015-4808-8797-bccf01b541a5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Norma Arm to Galactic Center, fictional"
+            },
+            "type": "tool_call",
+            "id": "call_VOwFemJ7QuPU3qEPUT8vpkjr"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_VOwFemJ7QuPU3qEPUT8vpkjr",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Norma Arm to Galactic Center, fictional\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 8885,
+            "totalTokens": 8906
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8885,
+            "completion_tokens": 21,
+            "total_tokens": 8906,
+            "prompt_tokens_details": {
+              "cached_tokens": 3968
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxc01POWo73OU3B9M3iD3kUDWmPJ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Norma Arm to Galactic Center, fictional\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Norma Arm is a spiral arm of the Milky Way galaxy, situated between the Scutum-Centaurus and Sagittarius Arms. It is approximately 25,000 to 30,000 light-years from the Galactic Center, where the supermassive black hole Sagittarius A* resides. The solar system, located in the Orion Arm, is about 26,000 to 27,000 light-years from the Galactic Center, indicating that the Norma Arm is relatively close to this central region of the galaxy.\",\n    \"finalAnswer\": {\n      \"distance\": 25000,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n      \"https://www.space.com/19915-milky-way-galaxy.html\",\n      \"https://en.wikipedia.org/wiki/Sagittarius_A\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific information about the location of the Norma Arm in relation to the Galactic Center, which is relevant to the query.\",\n        \"answer\": \"The Norma Arm is located between the Scutum-Centaurus and Sagittarius Arms of the Milky Way, approximately 25,000 to 30,000 light-years from the Galactic Center.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"If we were to travel inwards towards the city center, we would find the Scutum-Centaurus and Norma arms.\",\n        \"content\": \"The Norma Arm is one of the spiral arms of the Milky Way galaxy, situated between the Scutum-Centaurus and Sagittarius Arms. It is approximately 25,000 to 30,000 light-years from the Galactic Center, where the supermassive black hole Sagittarius A* resides.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the query about the Norma Arm's position relative to the Galactic Center, providing relevant context about the Orion Arm.\",\n        \"answer\": \"The solar system is located about 26,000 light-years from the Galactic Center, on the inner edge of the Orion Arm.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Where do we live in the Milky Way galaxy? We lie between the major arms in a smaller spiral arm known as the Orion Arm.\",\n        \"content\": \"Our solar system lies between the Perseus Arm and the Scutum-Centaurus Arm, on the edge of the Orion-Cygnus Arm, approximately 26,000 light-years from the Galactic Center.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Norma Arm is a spiral arm of the Milky Way galaxy, situated between the Scutum-Centaurus and Sagittarius Arms. It is approximately 25,000 to 30,000 light-years from the Galactic Center, where the supermassive black hole Sagittarius A* resides. The solar system, located in the Orion Arm, is about 26,000 to 27,000 light-years from the Galactic Center, indicating that the Norma Arm is relatively close to this central region of the galaxy.\",\n      \"finalAnswer\": {\n        \"distance\": 25000,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n        \"https://www.space.com/19915-milky-way-galaxy.html\",\n        \"https://en.wikipedia.org/wiki/Sagittarius_A\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides specific information about the location of the Norma Arm in relation to the Galactic Center, which is relevant to the query.\",\n          \"answer\": \"The Norma Arm is located between the Scutum-Centaurus and Sagittarius Arms of the Milky Way, approximately 25,000 to 30,000 light-years from the Galactic Center.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"If we were to travel inwards towards the city center, we would find the Scutum-Centaurus and Norma arms.\",\n          \"content\": \"The Norma Arm is one of the spiral arms of the Milky Way galaxy, situated between the Scutum-Centaurus and Sagittarius Arms. It is approximately 25,000 to 30,000 light-years from the Galactic Center, where the supermassive black hole Sagittarius A* resides.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is directly related to the query about the Norma Arm's position relative to the Galactic Center, providing relevant context about the Orion Arm.\",\n          \"answer\": \"The solar system is located about 26,000 light-years from the Galactic Center, on the inner edge of the Orion Arm.\",\n          \"answerQuality\": \"9\",\n          \"snippet\": \"Where do we live in the Milky Way galaxy? We lie between the major arms in a smaller spiral arm known as the Orion Arm.\",\n          \"content\": \"Our solar system lies between the Perseus Arm and the Scutum-Centaurus Arm, on the edge of the Orion-Cygnus Arm, approximately 26,000 light-years from the Galactic Center.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the query about the Norma Arm's position relative to the Galactic Center, providing relevant context about the Orion Arm.\",\n        \"answer\": \"The solar system is located about 26,000 light-years from the Galactic Center, on the inner edge of the Orion Arm.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Where do we live in the Milky Way galaxy? We lie between the major arms in a smaller spiral arm known as the Orion Arm.\",\n        \"content\": \"Our solar system lies between the Perseus Arm and the Scutum-Centaurus Arm, on the edge of the Orion-Cygnus Arm, approximately 26,000 light-years from the Galactic Center.\",\n        \"link\": \"https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/\",\n        \"query\": \"Norma Arm to Galactic Center, fictional\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the user's query about the distance from the Sun to the Galactic Center, providing a specific measurement.\",\n        \"answer\": \"The Sun is located about 27,000 light-years (8.3 kpc) from the Galactic Center in the Milky Way.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Solar System is located at a radius of about 27,000 light-years (8.3 kpc) from the Galactic Center.\",\n        \"content\": \"The Milky Way is a barred spiral galaxy with the Solar System located approximately 27,000 light-years from its center, which is marked by the supermassive black hole Sagittarius A*.\",\n        \"link\": \"https://en.wikipedia.org/wiki/Milky_Way\",\n        \"query\": \"Norma Arm to Galactic Center, fictional\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_VOwFemJ7QuPU3qEPUT8vpkjr",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "cc65be0e-113c-4aa1-b698-174491e51531"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Reddit AskScience",
+      "link": "https://www.reddit.com/r/askscience/comments/slfu4/voyager_1_is_almost_outside_of_our_solar_system/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Milky Way Voyage\", which is fictional.\nThe  pitch for this route is \"Embark on a journey through the Milky Way, traversing the spiral arms of our galaxy. Experience the wonders of nebulae, star clusters, and cosmic phenomena as you travel from the Orion Arm to the Sagittarius Arm.\".\nSome ideas for steps are: \n\t - Orion Arm to Perseus Arm\n\t - Perseus Arm to Sagittarius Arm\n\t - Sagittarius Arm to Scutum-Centaurus Arm\n\t - Scutum-Centaurus Arm to Norma Arm\n\t - Norma Arm to Galactic Center",
+  "itinerary": [
+    {
+      "startingLocation": "Orion Arm",
+      "endingLocation": "Perseus Arm",
+      "startingLocationDescription": "Begin your journey in the Orion Arm, home to our solar system and many familiar stars.",
+      "endingLocationDescription": "Travel to the Perseus Arm, known for its rich star-forming regions and nebulae.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "This is a fictional journey through the Milky Way galaxy."
+    },
+    {
+      "startingLocation": "Perseus Arm",
+      "endingLocation": "Sagittarius Arm",
+      "startingLocationDescription": "Explore the Perseus Arm, a spiral arm of the Milky Way with numerous star clusters.",
+      "endingLocationDescription": "Head towards the Sagittarius Arm, which contains the dense star fields of the Milky Way's center.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "This is a fictional journey through the Milky Way galaxy."
+    },
+    {
+      "startingLocation": "Sagittarius Arm",
+      "endingLocation": "Scutum-Centaurus Arm",
+      "startingLocationDescription": "Discover the wonders of the Sagittarius Arm, filled with cosmic phenomena.",
+      "endingLocationDescription": "Continue to the Scutum-Centaurus Arm, one of the galaxy's major spiral arms.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "This is a fictional journey through the Milky Way galaxy."
+    },
+    {
+      "startingLocation": "Scutum-Centaurus Arm",
+      "endingLocation": "Norma Arm",
+      "startingLocationDescription": "Journey through the Scutum-Centaurus Arm, known for its bright stars and nebulae.",
+      "endingLocationDescription": "Reach the Norma Arm, a lesser-known but intriguing part of the Milky Way.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "This is a fictional journey through the Milky Way galaxy."
+    },
+    {
+      "startingLocation": "Norma Arm",
+      "endingLocation": "Galactic Center",
+      "startingLocationDescription": "Explore the Norma Arm, a region with unique stellar formations.",
+      "endingLocationDescription": "Conclude your voyage at the Galactic Center, the heart of the Milky Way.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "This is a fictional journey through the Milky Way galaxy."
+    }
+  ],
+  "route": "The Milky Way Voyage",
+  "steps": [
+    {
+      "startingLocation": "Orion Arm",
+      "endingLocation": "Perseus Arm",
+      "distance": -1,
+      "startingLocationDescription": "Begin your journey in the Orion Arm, home to our solar system and many familiar stars.",
+      "endingLocationDescription": "Travel to the Perseus Arm, known for its rich star-forming regions and nebulae.",
+      "credibility": {
+        "source": "https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Perseus Arm",
+      "endingLocation": "Sagittarius Arm",
+      "distance": 5000,
+      "startingLocationDescription": "Explore the Perseus Arm, a spiral arm of the Milky Way with numerous star clusters.",
+      "endingLocationDescription": "Head towards the Sagittarius Arm, which contains the dense star fields of the Milky Way's center.",
+      "credibility": {
+        "source": "https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/",
+        "reliability": 7,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Sagittarius Arm",
+      "endingLocation": "Scutum-Centaurus Arm",
+      "distance": 10000,
+      "startingLocationDescription": "Discover the wonders of the Sagittarius Arm, filled with cosmic phenomena.",
+      "endingLocationDescription": "Continue to the Scutum-Centaurus Arm, one of the galaxy's major spiral arms.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Scutum-Centaurus Arm",
+      "endingLocation": "Norma Arm",
+      "distance": 15000,
+      "startingLocationDescription": "Journey through the Scutum-Centaurus Arm, known for its bright stars and nebulae.",
+      "endingLocationDescription": "Reach the Norma Arm, a lesser-known but intriguing part of the Milky Way.",
+      "credibility": {
+        "source": "Educated Guess",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Norma Arm",
+      "endingLocation": "Galactic Center",
+      "distance": 27500,
+      "startingLocationDescription": "Explore the Norma Arm, a region with unique stellar formations.",
+      "endingLocationDescription": "Conclude your voyage at the Galactic Center, the heart of the Milky Way.",
+      "credibility": {
+        "source": "https://earthsky.org/astronomy-essentials/which-spiral-arm-of-the-milky-way-contains-our-sun/",
+        "reliability": 8,
+        "guess": false
+      }
+    }
+  ]
+}

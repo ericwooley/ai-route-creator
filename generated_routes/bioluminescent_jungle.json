@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting route ideas for exploring Pandora's Glowing Forest, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_Qka0O4jWoeCpBHX5r5gVbexf"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Qka0O4jWoeCpBHX5r5gVbexf",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting route ideas for exploring Pandora's Glowing Forest, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 533,
+            "totalTokens": 560
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 533,
+            "completion_tokens": 27,
+            "total_tokens": 560,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAC89XlHI0niEGDvLOo2x4qfi9ou"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Interesting route ideas for exploring Pandora's Glowing Forest, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Pandora's Glowing Forest is a stunning fictional location filled with breathtaking landscapes and interactive experiences. Visitors can explore the vibrant flora and fauna, especially at night when the environment glows. Key attractions include the Avatar Flight of Passage ride, which offers an exhilarating experience, and the Na'vi River Journey, a tranquil boat ride that showcases the beauty of the forest. Engaging with the glowing elements of the forest enhances the exploration experience, making it a magical adventure.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Entrance of Pandora\",\n          \"endingLocation\": \"Avatar Flight of Passage\",\n          \"startingLocationDescription\": \"Begin your journey at the entrance, where you can see the towering bioluminescent plants and hear the sounds of the forest.\",\n          \"endingLocationDescription\": \"Experience the Avatar Flight of Passage, a thrilling ride that immerses you in the world of Pandora.\",\n          \"credibility\": {\n            \"source\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"After enjoying the entrance's vibrant atmosphere, head to the Avatar Flight of Passage for an unforgettable ride that simulates flying on a banshee.\"\n        },\n        {\n          \"startingLocation\": \"Avatar Flight of Passage\",\n          \"endingLocation\": \"Na'vi River Journey\",\n          \"startingLocationDescription\": \"After your exhilarating flight, take a moment to appreciate the stunning views of Pandora.\",\n          \"endingLocationDescription\": \"The Na'vi River Journey offers a serene boat ride through the glowing forest.\",\n          \"credibility\": {\n            \"source\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"Transition from the excitement of flight to the tranquility of the Na'vi River Journey, where you can relax and enjoy the glowing flora and fauna.\"\n        },\n        {\n          \"startingLocation\": \"Na'vi River Journey\",\n          \"endingLocation\": \"Exploration of Glowing Flora\",\n          \"startingLocationDescription\": \"As you disembark from the boat, take in the sights and sounds of the forest.\",\n          \"endingLocationDescription\": \"Interact with the glowing plants and creatures, especially as night falls.\",\n          \"credibility\": {\n            \"source\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"Conclude your adventure by exploring the forest on foot, engaging with the bioluminescent environment and discovering its magical elements.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific activities and highlights the unique features of Pandora's Glowing Forest, making it highly relevant to the query.\",\n        \"answer\": \"Explore the breathtaking landscapes, enjoy the Avatar Flight of Passage ride, and take a boat ride on the Na'vi River Journey. Don't forget to interact with the glowing flora and fauna at night.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"The best element of Pandora is undoubtedly its landscape. It’s breathtaking in a way few theme park areas are, even by today’s high standard.\",\n        \"content\": \"Pandora offers stunning landscapes, attractions like Avatar Flight of Passage and Na'vi River Journey, and interactive experiences with its glowing environment, making it a captivating place to explore.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Pandora's Glowing Forest is a stunning fictional location filled with breathtaking landscapes and interactive experiences. Visitors can explore the vibrant flora and fauna, especially at night when the environment glows. Key attractions include the Avatar Flight of Passage ride, which offers an exhilarating experience, and the Na'vi River Journey, a tranquil boat ride that showcases the beauty of the forest. Engaging with the glowing elements of the forest enhances the exploration experience, making it a magical adventure.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Entrance of Pandora\",\n            \"endingLocation\": \"Avatar Flight of Passage\",\n            \"startingLocationDescription\": \"Begin your journey at the entrance, where you can see the towering bioluminescent plants and hear the sounds of the forest.\",\n            \"endingLocationDescription\": \"Experience the Avatar Flight of Passage, a thrilling ride that immerses you in the world of Pandora.\",\n            \"credibility\": {\n              \"source\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"After enjoying the entrance's vibrant atmosphere, head to the Avatar Flight of Passage for an unforgettable ride that simulates flying on a banshee.\"\n          },\n          {\n            \"startingLocation\": \"Avatar Flight of Passage\",\n            \"endingLocation\": \"Na'vi River Journey\",\n            \"startingLocationDescription\": \"After your exhilarating flight, take a moment to appreciate the stunning views of Pandora.\",\n            \"endingLocationDescription\": \"The Na'vi River Journey offers a serene boat ride through the glowing forest.\",\n            \"credibility\": {\n              \"source\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"Transition from the excitement of flight to the tranquility of the Na'vi River Journey, where you can relax and enjoy the glowing flora and fauna.\"\n          },\n          {\n            \"startingLocation\": \"Na'vi River Journey\",\n            \"endingLocation\": \"Exploration of Glowing Flora\",\n            \"startingLocationDescription\": \"As you disembark from the boat, take in the sights and sounds of the forest.\",\n            \"endingLocationDescription\": \"Interact with the glowing plants and creatures, especially as night falls.\",\n            \"credibility\": {\n              \"source\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"Conclude your adventure by exploring the forest on foot, engaging with the bioluminescent environment and discovering its magical elements.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides specific activities and highlights the unique features of Pandora's Glowing Forest, making it highly relevant to the query.\",\n          \"answer\": \"Explore the breathtaking landscapes, enjoy the Avatar Flight of Passage ride, and take a boat ride on the Na'vi River Journey. Don't forget to interact with the glowing flora and fauna at night.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"The best element of Pandora is undoubtedly its landscape. It’s breathtaking in a way few theme park areas are, even by today’s high standard.\",\n          \"content\": \"Pandora offers stunning landscapes, attractions like Avatar Flight of Passage and Na'vi River Journey, and interactive experiences with its glowing environment, making it a captivating place to explore.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific activities and highlights the unique features of Pandora's Glowing Forest, making it highly relevant to the query.\",\n        \"answer\": \"Explore the breathtaking landscapes, enjoy the Avatar Flight of Passage ride, and take a boat ride on the Na'vi River Journey. Don't forget to interact with the glowing flora and fauna at night.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"The best element of Pandora is undoubtedly its landscape. It’s breathtaking in a way few theme park areas are, even by today’s high standard.\",\n        \"content\": \"Pandora offers stunning landscapes, attractions like Avatar Flight of Passage and Na'vi River Journey, and interactive experiences with its glowing environment, making it a captivating place to explore.\",\n        \"link\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n        \"query\": \"Interesting route ideas for exploring Pandora's Glowing Forest, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it provides a direct response to the user's query about exploring fictional locations in Pandora's Glowing Forest, even though the content does not explicitly mention Pandora.\",\n        \"answer\": \"Explore the vibrant amusement park atmosphere, interact with characters, and enjoy rides like the Tilt-a-Whirl to experience the magical essence of Pandora's Glowing Forest.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"I continue to stand in the current of people as I finish my ice cream cone. A clown stops and places a balloon puppy at my feet. An older woman, who looks exactly like my late grandmother Constance, places a candy necklace around my neck and holds my hand gently before walking away.\",\n        \"content\": \"The content describes a lively amusement park experience filled with colors, sounds, and interactions that evoke a sense of wonder and magic, akin to what one might expect in a fictional setting like Pandora's Glowing Forest.\",\n        \"link\": \"https://katemessner.com/teachers-write-65-tuesday-quick-write/\",\n        \"query\": \"Interesting route ideas for exploring Pandora's Glowing Forest, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_Qka0O4jWoeCpBHX5r5gVbexf",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "f2731339-5ee5-4f1d-91e0-6239ac832825"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Exploring Pandora's Glowing Forest, fictional locations, route from Hallelujah Mountains to Bioluminescent River"
+            },
+            "type": "tool_call",
+            "id": "call_uup89MbvocvyGdREersMpQNb"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_uup89MbvocvyGdREersMpQNb",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Exploring Pandora's Glowing Forest, fictional locations, route from Hallelujah Mountains to Bioluminescent River\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 38,
+            "promptTokens": 5538,
+            "totalTokens": 5576
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5538,
+            "completion_tokens": 38,
+            "total_tokens": 5576,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxdDf0zmQArkaJ0IY6ycQXO2o6lw"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"To explore Pandora's Glowing Forest, the Na'vi River Journey is the primary route that connects the Hallelujah Mountains to the Bioluminescent River. This serene boat ride takes visitors through the bioluminescent rainforest, showcasing the vibrant flora and fauna of Pandora. The journey begins at the Hallelujah Mountains, where guests can board a reed boat and set sail on a tranquil voyage, ultimately leading to the Bioluminescent River, which is known for its stunning glowing landscapes.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Hallelujah Mountains\",\n        \"endingLocation\": \"Bioluminescent River\",\n        \"startingLocationDescription\": \"Begin your adventure at the breathtaking Hallelujah Mountains, characterized by their floating peaks and lush greenery.\",\n        \"endingLocationDescription\": \"Conclude your journey at the Bioluminescent River, where the water glows with vibrant colors, surrounded by the enchanting bioluminescent flora.\",\n        \"credibility\": {\n          \"source\": \"https://www.merchmates.co.uk/blog/disney/navi-river-journey-guide/\",\n          \"reliability\": 5,\n          \"guess\": false\n        },\n        \"description\": \"The Na'vi River Journey is a slow boat ride that takes you through the bioluminescent forests of Pandora, providing an immersive experience of the glowing environment.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"5\",\n  \"relevantLinks\": [\n    \"https://joantupponce.com/whole-new-world-explore-pandora-at-disney-world/\",\n    \"https://www.merchmates.co.uk/blog/disney/navi-river-journey-guide/\",\n    \"https://www.travelagewest.com/Travel/Family-Travel/Attraction-Review-Pandora-The-World-of-Avatar\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer directly addresses the query about the Na'vi River Journey and its route through Pandora, making it relevant.\",\n      \"answer\": \"The Na'vi River Journey is a slow boat ride through Pandora's bioluminescent forests, starting from the Hallelujah Mountains and leading to the Bioluminescent River.\",\n      \"answerQuality\": 5,\n      \"snippet\": \"The Na’vi River Journey invites you to board a reed boat and set sail on a serene voyage through the bioluminescent forests of Pandora.\",\n      \"content\": \"The Na'vi River Journey is a tranquil boat ride that showcases the beauty of Pandora's glowing flora and fauna, providing an immersive experience suitable for all ages.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_uup89MbvocvyGdREersMpQNb",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "403ddc30-e0f2-410b-a586-50a37f3836c0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Entrance of Pandora to Avatar Flight of Passage, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_QnYWpHrkwO7t5WB7XWYs8H78"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_QnYWpHrkwO7t5WB7XWYs8H78",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Entrance of Pandora to Avatar Flight of Passage, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 24,
+            "promptTokens": 9475,
+            "totalTokens": 9499
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9475,
+            "completion_tokens": 24,
+            "total_tokens": 9499,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxdr7w833t2QQ6twBSSqLfXtaXEv"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Entrance of Pandora to Avatar Flight of Passage, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Pandora – The World of Avatar is a themed area in Disney's Animal Kingdom, designed to immerse guests in the world of James Cameron's Avatar. The entrance to this area is marked by a welcome sign that resembles those found in national parks, providing visitors with safety tips and a map of the area, indicating that they are entering a unique and adventurous environment. Avatar Flight of Passage is one of the main attractions located within this immersive land, offering a thrilling experience that allows guests to fly on the back of a banshee.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"9\",\n    \"relevantLinks\": [\n      \"https://www.tripadvisor.com/ShowUserReviews-g23869903-d14145257-r745026944-Avatar_Flight_of_Passage-Lake_Buena_Vista-Florida.html\",\n      \"https://www.theorlandodinks.com/blog/pandora-the-world-of-avatar-disney-animal-kingdom-with-gorgeous-pictures\",\n      \"https://colinatthemovies.wordpress.com/2018/10/15/disney-world-building-and-telling-the-transmedia-experience-of-avatar-flight-of-passage-2017/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the entrance of Pandora in relation to Avatar Flight of Passage, providing specific location details.\",\n        \"answer\": \"The entrance to Pandora in Avatar: Flight of Passage is marked by a welcome sign that resembles national park displays, providing safety tips and a map, indicating a hiking expedition.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"As we enter Mo’ara, we are greeted by a sign (fig. 3). On some level it simply signals our entrance into the park. But it isn’t merely functional. Resembling the displays we encounter in national parks, the sign offers visitors a series of safety tips and a map of the area.\",\n        \"content\": \"The content describes Avatar Flight of Passage as a ride located in Pandora – The World of Avatar at Disney's Animal Kingdom, providing context about its popularity and immersive experience.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Pandora – The World of Avatar is a themed area in Disney's Animal Kingdom, designed to immerse guests in the world of James Cameron's Avatar. The entrance to this area is marked by a welcome sign that resembles those found in national parks, providing visitors with safety tips and a map of the area, indicating that they are entering a unique and adventurous environment. Avatar Flight of Passage is one of the main attractions located within this immersive land, offering a thrilling experience that allows guests to fly on the back of a banshee.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"9\",\n      \"relevantLinks\": [\n        \"https://www.tripadvisor.com/ShowUserReviews-g23869903-d14145257-r745026944-Avatar_Flight_of_Passage-Lake_Buena_Vista-Florida.html\",\n        \"https://www.theorlandodinks.com/blog/pandora-the-world-of-avatar-disney-animal-kingdom-with-gorgeous-pictures\",\n        \"https://colinatthemovies.wordpress.com/2018/10/15/disney-world-building-and-telling-the-transmedia-experience-of-avatar-flight-of-passage-2017/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the entrance of Pandora in relation to Avatar Flight of Passage, providing specific location details.\",\n          \"answer\": \"The entrance to Pandora in Avatar: Flight of Passage is marked by a welcome sign that resembles national park displays, providing safety tips and a map, indicating a hiking expedition.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"As we enter Mo’ara, we are greeted by a sign (fig. 3). On some level it simply signals our entrance into the park. But it isn’t merely functional. Resembling the displays we encounter in national parks, the sign offers visitors a series of safety tips and a map of the area.\",\n          \"content\": \"The content describes Avatar Flight of Passage as a ride located in Pandora – The World of Avatar at Disney's Animal Kingdom, providing context about its popularity and immersive experience.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the entrance of Pandora in relation to Avatar Flight of Passage, providing specific location details.\",\n        \"answer\": \"Pandora – The World of Avatar, located in Disney's Animal Kingdom, is the fictional setting for Avatar Flight of Passage.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Pandora _ The World of Avatar, Disney's Animal Kingdom Theme Park, Lake Buena Vista, FL 32830-8410\",\n        \"content\": \"The content describes Avatar Flight of Passage as a ride located in Pandora – The World of Avatar at Disney's Animal Kingdom, providing context about its popularity and immersive experience.\",\n        \"link\": \"https://www.tripadvisor.com/ShowUserReviews-g23869903-d14145257-r745026944-Avatar_Flight_of_Passage-Lake_Buena_Vista_Florida.html\",\n        \"query\": \"Entrance of Pandora to Avatar Flight of Passage, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant to the question as it directly addresses the entrance of Pandora in the context of the Avatar: Flight of Passage attraction.\",\n        \"answer\": \"The entrance to Pandora in Avatar: Flight of Passage is marked by a welcome sign that resembles national park displays, providing safety tips and a map, indicating a hiking expedition.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"As we enter Mo’ara, we are greeted by a sign (fig. 3). On some level it simply signals our entrance into the park. But it isn’t merely functional. Resembling the displays we encounter in national parks, the sign offers visitors a series of safety tips and a map of the area.\",\n        \"link\": \"https://colinatthemovies.wordpress.com/2018/10/15/disney-world-building-and-telling-the-transmedia-experience-of-avatar-flight-of-passage-2017/\",\n        \"query\": \"Entrance of Pandora to Avatar Flight of Passage, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_QnYWpHrkwO7t5WB7XWYs8H78",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2e1b3764-201b-4ef5-a454-59ae32dd1b92"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Avatar Flight of Passage to Na'vi River Journey, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_ZslwuAoUcYf8mfkhycFPt9UK"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ZslwuAoUcYf8mfkhycFPt9UK",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Avatar Flight of Passage to Na'vi River Journey, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 11011,
+            "totalTokens": 11037
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 11011,
+            "completion_tokens": 26,
+            "total_tokens": 11037,
+            "prompt_tokens_details": {
+              "cached_tokens": 8576
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxea8FC0DWWaX8pC6Q42pzBkaSgF"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Avatar Flight of Passage to Na'vi River Journey, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Avatar Flight of Passage and Na'vi River Journey are both attractions located in Pandora – The World of Avatar at Disney's Animal Kingdom. Avatar Flight of Passage is a thrilling simulator ride that immerses guests in the world of Pandora, while Na'vi River Journey is a gentle boat ride that showcases the bioluminescent forests of Pandora but lacks a strong narrative. Both rides offer unique experiences, with Flight of Passage being the more popular and immersive attraction.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"9\",\n    \"relevantLinks\": [\n      \"https://www.tripadvisor.com/ShowUserReviews-g23869903-d14145257-r745026944-Avatar_Flight_of_Passage-Lake_Buena_Vista_Florida.html\",\n      \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n      \"https://en.wikipedia.org/wiki/Pandora_%E2%80%93_The_World_of_Avatar\",\n      \"https://wdwtherapy.wordpress.com/2019/03/04/lets-take-a-ride-on-navi-river-journey/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query by identifying the relationship between the two fictional locations.\",\n        \"answer\": \"Avatar Flight of Passage is a ride in Pandora – The World of Avatar at Disney's Animal Kingdom, while Na'vi River Journey is another ride in the same area.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Animal Kingdom’s Pandora has two rides one of which is currently THE most popular attraction at Disney World, even more so than HS’s Star Wars attractions. It’s Avatar’s Flight of Passage.\",\n        \"content\": \"The content provides detailed descriptions of both rides, their popularity, and their immersive experiences within the fictional world of Avatar.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query by comparing the two attractions, highlighting their key features and differences.\",\n        \"answer\": \"Avatar Flight of Passage is a thrilling simulator ride, while Na'vi River Journey is a gentle boat ride with beautiful visuals but lacks a strong story.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"One attraction does so with a thrilling simulator, while the other employs a gentle boat ride. ... Na’vi River Journey struggles to do the same under the same parameters because of its lack thereof.\",\n        \"content\": \"The content provides a detailed review of the attractions in Pandora – The World of Avatar, explaining the experiences of Avatar Flight of Passage and Na'vi River Journey, their thematic elements, and how they fit within the overall context of the park.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer provides a clear distinction between the two attractions, highlighting their characteristics and relevance to the query.\",\n        \"answer\": \"Na'vi River Journey is a short, slow-moving boat ride through Pandora's bioluminescent forests, while Avatar Flight of Passage is a more popular and immersive attraction in the same area.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Na’vi River Journey is a slow moving 'night time' boat ride through the bio luminescent forests of Pandora. ... Flight of Passage is the overwhelming favorite among fans in Pandora (and it should be, its the better attraction by far).\",\n        \"content\": \"Na'vi River Journey offers a relaxing experience with detailed visuals, while Flight of Passage is known for its thrilling and immersive ride experience.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Avatar Flight of Passage and Na'vi River Journey are both attractions located in Pandora – The World of Avatar at Disney's Animal Kingdom. Avatar Flight of Passage is a thrilling simulator ride that immerses guests in the world of Pandora, while Na'vi River Journey is a gentle boat ride that showcases the bioluminescent forests of Pandora but lacks a strong narrative. Both rides offer unique experiences, with Flight of Passage being the more popular and immersive attraction.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"9\",\n      \"relevantLinks\": [\n        \"https://www.tripadvisor.com/ShowUserReviews-g23869903-d14145257-r745026944-Avatar_Flight_of_Passage-Lake_Buena_Vista_Florida.html\",\n        \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n        \"https://en.wikipedia.org/wiki/Pandora_%E2%80%93_The_World_of_Avatar\",\n        \"https://wdwtherapy.wordpress.com/2019/03/04/lets-take-a-ride-on-navi-river-journey/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query by identifying the relationship between the two fictional locations.\",\n          \"answer\": \"Avatar Flight of Passage is a ride in Pandora – The World of Avatar at Disney's Animal Kingdom, while Na'vi River Journey is another ride in the same area.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Animal Kingdom’s Pandora has two rides one of which is currently THE most popular attraction at Disney World, even more so than HS’s Star Wars attractions. It’s Avatar’s Flight of Passage.\",\n          \"content\": \"The content provides detailed descriptions of both rides, their popularity, and their immersive experiences within the fictional world of Avatar.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query by comparing the two attractions, highlighting their key features and differences.\",\n          \"answer\": \"Avatar Flight of Passage is a thrilling simulator ride, while Na'vi River Journey is a gentle boat ride with beautiful visuals but lacks a strong story.\",\n          \"answerQuality\": \"9\",\n          \"snippet\": \"One attraction does so with a thrilling simulator, while the other employs a gentle boat ride. ... Na’vi River Journey struggles to do the same under the same parameters because of its lack thereof.\",\n          \"content\": \"The content provides a detailed review of the attractions in Pandora – The World of Avatar, explaining the experiences of Avatar Flight of Passage and Na'vi River Journey, their thematic elements, and how they fit within the overall context of the park.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer provides a clear distinction between the two attractions, highlighting their characteristics and relevance to the query.\",\n          \"answer\": \"Na'vi River Journey is a short, slow-moving boat ride through Pandora's bioluminescent forests, while Avatar Flight of Passage is a more popular and immersive attraction in the same area.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"Na’vi River Journey is a slow moving 'night time' boat ride through the bio luminescent forests of Pandora. ... Flight of Passage is the overwhelming favorite among fans in Pandora (and it should be, its the better attraction by far).\",\n          \"content\": \"Na'vi River Journey offers a relaxing experience with detailed visuals, while Flight of Passage is known for its thrilling and immersive ride experience.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query by comparing the two attractions, highlighting their key features and differences.\",\n        \"answer\": \"Avatar Flight of Passage is a thrilling simulator ride, while Na'vi River Journey is a gentle boat ride with beautiful visuals but lacks a strong story.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"One attraction does so with a thrilling simulator, while the other employs a gentle boat ride. ... Na’vi River Journey struggles to do the same under the same parameters because of its lack thereof.\",\n        \"content\": \"The content provides a detailed review of the attractions in Pandora – The World of Avatar, explaining the experiences of Avatar Flight of Passage and Na'vi River Journey, their thematic elements, and how they fit within the overall context of the park.\",\n        \"link\": \"https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/\",\n        \"query\": \"Avatar Flight of Passage to Na'vi River Journey, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the attractions in the fictional location of Pandora.\",\n        \"answer\": \"Avatar Flight of Passage and Na'vi River Journey are attractions in Pandora – The World of Avatar.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Pandora – The World of Avatar includes two major attractions, Avatar Flight of Passage and Na'vi River Journey.\",\n        \"content\": \"Pandora – The World of Avatar is a themed area inspired by James Cameron's Avatar located within Disney's Animal Kingdom theme park at the Walt Disney World Resort in Bay Lake, Florida. It features two major attractions, Avatar Flight of Passage and Na'vi River Journey.\",\n        \"link\": \"https://en.wikipedia.org/wiki/Pandora_%E2%80%93_The_World_of_Avatar\",\n        \"query\": \"Avatar Flight of Passage to Na'vi River Journey, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer provides a clear distinction between the two attractions, highlighting their characteristics and relevance to the query.\",\n        \"answer\": \"Na'vi River Journey is a short, slow-moving boat ride through Pandora's bioluminescent forests, while Avatar Flight of Passage is a more popular and immersive attraction in the same area.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Na’vi River Journey is a slow moving 'night time' boat ride through the bio luminescent forests of Pandora. ... Flight of Passage is the overwhelming favorite among fans in Pandora (and it should be, its the better attraction by far).\",\n        \"content\": \"Na'vi River Journey offers a relaxing experience with detailed visuals, while Flight of Passage is known for its thrilling and immersive ride experience.\",\n        \"link\": \"https://wdwtherapy.wordpress.com/2019/03/04/lets-take-a-ride-on-navi-river-journey/\",\n        \"query\": \"Avatar Flight of Passage to Na'vi River Journey, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_ZslwuAoUcYf8mfkhycFPt9UK",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "a886b125-2b47-4f22-8a71-690f3cb7bc76"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Na'vi River Journey to Exploration of Glowing Flora, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_9pKB3eH7EcZ3krDnt4AQBmjQ"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_9pKB3eH7EcZ3krDnt4AQBmjQ",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Na'vi River Journey to Exploration of Glowing Flora, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 11011,
+            "totalTokens": 11039
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 11011,
+            "completion_tokens": 28,
+            "total_tokens": 11039,
+            "prompt_tokens_details": {
+              "cached_tokens": 4352
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxfMKAdAKrHcSw0hhIaXuvlkWog2"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Na'vi River Journey is a serene boat ride located in Pandora: The World of Avatar at Disney's Animal Kingdom. It takes guests through a bioluminescent rainforest, showcasing the unique glowing flora and fauna of this fictional world. The ride features a tranquil atmosphere, with a mystical singing figure guiding visitors past exotic plants and creatures, making it a captivating experience that highlights the beauty of Pandora's ecosystem.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Pandora: The World of Avatar\",\n        \"endingLocation\": \"Bioluminescent rainforest\",\n        \"startingLocationDescription\": \"Begin your journey in the immersive land of Pandora, surrounded by lush landscapes and the sounds of nature.\",\n        \"endingLocationDescription\": \"As you glide through the glowing rainforest, observe the vibrant bioluminescent plants and listen to the enchanting music of the Na'vi.\",\n        \"credibility\": {\n          \"source\": \"https://www.merchmates.co.uk/blog/disney/navi-river-journey-guide/\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"The Na'vi River Journey is a gentle boat ride that immerses guests in the stunning bioluminescent world of Pandora, showcasing its unique flora and fauna.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"10\",\n  \"relevantLinks\": [\n    \"https://www.merchmates.co.uk/blog/disney/navi-river-journey-guide/\",\n    \"https://joantupponce.com/whole-new-world-explore-pandora-at-disney-world/\",\n    \"https://seasonsmagazines.com/2018/06/the-mythical-land-of-pandora/\",\n    \"https://orlandoinformer.com/blog/pandora-world-of-avatar-preview/\",\n    \"https://boardwalktimes.net/breaking-the-bounds-of-reality-a-review-of-pandora-the-world-of-avatar-dfa3251c09de\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer directly addresses the query about the Na'vi River Journey and its exploration of glowing flora, providing a clear and concise description.\",\n      \"answer\": \"The Na'vi River Journey is a gentle boat ride through the bioluminescent forests of Pandora, featuring glowing flora and fauna.\",\n      \"answerQuality\": 10,\n      \"snippet\": \"Embark on a mesmerising journey through the bioluminescent forests of Pandora on the Na’vi River Journey, a tranquil and immersive attraction located in Disney’s Animal Kingdom.\",\n      \"content\": \"The Na'vi River Journey is a slow-moving boat ride that showcases the beauty of Pandora's glowing flora and fauna, making it a captivating experience for guests.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_9pKB3eH7EcZ3krDnt4AQBmjQ",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "0367d969-a57c-449f-a4ea-d0cf77a20c78"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Exploration of Glowing Flora to Hallelujah Mountains, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_EyVQyhHPzAQWKsR5Dk8GrPLw"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_EyVQyhHPzAQWKsR5Dk8GrPLw",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Exploration of Glowing Flora to Hallelujah Mountains, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 11055,
+            "totalTokens": 11082
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 11055,
+            "completion_tokens": 27,
+            "total_tokens": 11082,
+            "prompt_tokens_details": {
+              "cached_tokens": 4352
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxgL4wazu6PTuWhIrSnIuZ2fXr6p"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Exploration of Glowing Flora to Hallelujah Mountains, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Hallelujah Mountains and glowing flora are fictional elements from the movie 'Avatar', inspired by scientific concepts like superconductors and bioluminescence. The floating Hallelujah Mountains are depicted as being suspended due to the presence of unobtanium, a fictional superconductor, while the glowing flora draws inspiration from real-life bioluminescent organisms found in nature.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"9\",\n    \"relevantLinks\": [\n      \"https://www.csmonitor.com/Science/2009/1228/Avatar-the-real-life-science-behind-the-fantasy\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the fictional nature of the locations and their scientific basis, making it highly relevant.\",\n        \"answer\": \"The Hallelujah Mountains and glowing flora are fictional elements from the movie 'Avatar', based on scientific concepts like superconductors and bioluminescence.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The floating Hallelujah Mountains provide one of the more exotic settings for the blockbuster science-fiction film, 'Avatar.'\",\n        \"content\": \"The Hallelujah Mountains are depicted as floating due to the presence of unobtanium, a superconductor, while the glowing flora is inspired by bioluminescence found in deep-sea organisms.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Hallelujah Mountains and glowing flora are fictional elements from the movie 'Avatar', inspired by scientific concepts like superconductors and bioluminescence. The floating Hallelujah Mountains are depicted as being suspended due to the presence of unobtanium, a fictional superconductor, while the glowing flora draws inspiration from real-life bioluminescent organisms found in nature.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"9\",\n      \"relevantLinks\": [\n        \"https://www.csmonitor.com/Science/2009/1228/Avatar-the-real-life-science-behind-the-fantasy\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the fictional nature of the locations and their scientific basis, making it highly relevant.\",\n          \"answer\": \"The Hallelujah Mountains and glowing flora are fictional elements from the movie 'Avatar', based on scientific concepts like superconductors and bioluminescence.\",\n          \"answerQuality\": \"9\",\n          \"snippet\": \"The floating Hallelujah Mountains provide one of the more exotic settings for the blockbuster science-fiction film, 'Avatar.'\",\n          \"content\": \"The Hallelujah Mountains are depicted as floating due to the presence of unobtanium, a superconductor, while the glowing flora is inspired by bioluminescence found in deep-sea organisms.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the user's query about fictional locations related to glowing flora and the Hallelujah Mountains, providing context and examples from the content.\",\n        \"answer\": \"The content does not explicitly mention glowing flora or the Hallelujah Mountains, but it describes various fictional and real places, emphasizing sensory details and emotional connections to settings.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Given this content, what is the answer? Keep the answer as short and terse as possible. Original Query: Exploration of Glowing Flora to Hallelujah Mountains, fictional locations.\",\n        \"content\": \"The content includes descriptions of various places, focusing on sensory experiences and emotional connections, but does not specifically mention glowing flora or the Hallelujah Mountains.\",\n        \"link\": \"https://katemessner.com/teachers-write-65-tuesday-quick-write/\",\n        \"query\": \"Exploration of Glowing Flora to Hallelujah Mountains, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the fictional nature of the locations and their scientific basis, making it highly relevant.\",\n        \"answer\": \"The Hallelujah Mountains and glowing flora are fictional elements from the movie 'Avatar', based on scientific concepts like superconductors and bioluminescence.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The floating Hallelujah Mountains provide one of the more exotic settings for the blockbuster science-fiction film, 'Avatar.'\",\n        \"content\": \"The Hallelujah Mountains are depicted as floating due to the presence of unobtanium, a superconductor, while the glowing flora is inspired by bioluminescence found in deep-sea organisms.\",\n        \"link\": \"https://www.csmonitor.com/Science/2009/1228/Avatar-the-real-life-science-behind-the-fantasy\",\n        \"query\": \"Exploration of Glowing Flora to Hallelujah Mountains, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_EyVQyhHPzAQWKsR5Dk8GrPLw",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "78e20da8-85c7-4e4e-8592-667920db71b7"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Hallelujah Mountains to Tree of Souls, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_79SYYnLfMcq86jXUIPMN0hFk"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_79SYYnLfMcq86jXUIPMN0hFk",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Hallelujah Mountains to Tree of Souls, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 25,
+            "promptTokens": 10756,
+            "totalTokens": 10781
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 10756,
+            "completion_tokens": 25,
+            "total_tokens": 10781,
+            "prompt_tokens_details": {
+              "cached_tokens": 4352
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxgc5bS4xu1OOkFDSP7G2Af96v8G"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Hallelujah Mountains to Tree of Souls, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Hallelujah Mountains and the Tree of Souls are fictional locations from James Cameron's Avatar. The Hallelujah Mountains are known for their floating nature and are inspired by the Zhangjiajie National Forest Park in China. The Tree of Souls is a sacred site for the Na'vi, integral to the story's setting and cultural significance within the film.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"10\",\n    \"relevantLinks\": [\n      \"https://truenorthbricks.com/2023/03/22/floating-mountains-75573-review/\",\n      \"https://medium.com/globetrotters/how-to-escape-the-crowd-and-find-tranquility-in-the-enchanting-avatar-mountains-1612d412349e\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query by identifying the locations as fictional and their association with the Avatar universe.\",\n        \"answer\": \"The Hallelujah Mountains and Tree of Souls are fictional locations in the Avatar universe.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Hallelujah Mountains to Tree of Souls, fictional locations\",\n        \"content\": \"The Hallelujah Mountains are a prominent feature in the Avatar film, known for their floating nature, while the Tree of Souls is a sacred site for the Na'vi, both integral to the story's setting.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the fictional locations mentioned.\",\n        \"answer\": \"The Hallelujah Mountains and the Tree of Souls are fictional locations in James Cameron's Avatar.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"As we round the bend, we come upon some iconic sights from Cameron’s film–floating mountains, with streams of water falling from up on high and stretching out into pools down below.\",\n        \"content\": \"The content discusses the immersive world-building of Disney's Avatar attractions, specifically mentioning the Hallelujah Mountains and the Tree of Souls as part of the fictional universe created in the Avatar film.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Hallelujah Mountains and the Tree of Souls are fictional locations from James Cameron's Avatar. The Hallelujah Mountains are known for their floating nature and are inspired by the Zhangjiajie National Forest Park in China. The Tree of Souls is a sacred site for the Na'vi, integral to the story's setting and cultural significance within the film.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"10\",\n      \"relevantLinks\": [\n        \"https://truenorthbricks.com/2023/03/22/floating-mountains-75573-review/\",\n        \"https://medium.com/globetrotters/how-to-escape-the-crowd-and-find-tranquility-in-the-enchanting-avatar-mountains-1612d412349e\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query by identifying the locations as fictional and their association with the Avatar universe.\",\n          \"answer\": \"The Hallelujah Mountains and Tree of Souls are fictional locations in the Avatar universe.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"Hallelujah Mountains to Tree of Souls, fictional locations\",\n          \"content\": \"The Hallelujah Mountains are a prominent feature in the Avatar film, known for their floating nature, while the Tree of Souls is a sacred site for the Na'vi, both integral to the story's setting.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the fictional locations mentioned.\",\n          \"answer\": \"The Hallelujah Mountains and the Tree of Souls are fictional locations in James Cameron's Avatar.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"As we round the bend, we come upon some iconic sights from Cameron’s film–floating mountains, with streams of water falling from up on high and stretching out into pools down below.\",\n          \"content\": \"The content discusses the immersive world-building of Disney's Avatar attractions, specifically mentioning the Hallelujah Mountains and the Tree of Souls as part of the fictional universe created in the Avatar film.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query by identifying the locations as fictional and their association with the Avatar universe.\",\n        \"answer\": \"The Hallelujah Mountains and Tree of Souls are fictional locations in the Avatar universe.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Hallelujah Mountains to Tree of Souls, fictional locations\",\n        \"content\": \"The Hallelujah Mountains are a prominent feature in the Avatar film, known for their floating nature, while the Tree of Souls is a sacred site for the Na'vi, both integral to the story's setting.\",\n        \"link\": \"https://truenorthbricks.com/2023/03/22/floating-mountains-75573-review/\",\n        \"query\": \"Hallelujah Mountains to Tree of Souls, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the fictional locations mentioned.\",\n        \"answer\": \"The Hallelujah Mountains and the Tree of Souls are fictional locations in James Cameron's Avatar.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"As we round the bend, we come upon some iconic sights from Cameron’s film–floating mountains, with streams of water falling from up on high and stretching out into pools down below. And through an opening, we witness some stone arches, which in the film, encircle the Tree of Souls.\",\n        \"content\": \"The content discusses the immersive world-building of Disney's Avatar attractions, specifically mentioning the Hallelujah Mountains and the Tree of Souls as part of the fictional universe created in the Avatar film.\",\n        \"link\": \"https://colinatthemovies.wordpress.com/2018/10/15/disney-world-building-and-telling-the-transmedia-experience-of-avatar-flight-of-passage-2017/\",\n        \"query\": \"Hallelujah Mountains to Tree of Souls, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the fictional locations mentioned in the query and provides relevant context.\",\n        \"answer\": \"Hallelujah Mountains are inspired by Zhangjiajie, a national park in China, featured in Avatar.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Zhangjiajie is a national park featuring towering sandstone pillars... it gained international fame when the movie Avatar selected it as the shooting location of the fictional planet Pandora’s Hallelujah Mountains.\",\n        \"content\": \"The content explains that the Hallelujah Mountains from Avatar are based on Zhangjiajie, a real national park in China, making the connection between the fictional and real locations clear.\",\n        \"link\": \"https://medium.com/globetrotters/how-to-escape-the-crowd-and-find-tranquility-in-the-enchanting-avatar-mountains-1612d412349e\",\n        \"query\": \"Hallelujah Mountains to Tree of Souls, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_79SYYnLfMcq86jXUIPMN0hFk",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2a5a50d9-b04f-414b-b7a3-e85ff4500a4b"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "WDW Radio Review of Pandora",
+      "link": "https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Pandora's Glowing Forest\", which is fictional.\nThe  pitch for this route is \"Explore the mesmerizing bioluminescent forests of Pandora, where every step is illuminated by the vibrant glow of exotic flora. Traverse through the lush landscapes that come alive with color as the sun sets.\".\nSome ideas for steps are: \n\t - Hallelujah Mountains to Tree of Souls\n\t - Tree of Souls to Floating Mountains\n\t - Floating Mountains to Valley of Mo'ara\n\t - Valley of Mo'ara to Neytiri's Village\n\t - Neytiri's Village to Bioluminescent River",
+  "itinerary": [
+    {
+      "startingLocation": "Entrance of Pandora",
+      "endingLocation": "Avatar Flight of Passage",
+      "startingLocationDescription": "Begin your journey at the entrance, where you can see the towering bioluminescent plants and hear the sounds of the forest.",
+      "endingLocationDescription": "Experience the Avatar Flight of Passage, a thrilling ride that immerses you in the world of Pandora.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the large entrance sign and follow the path leading into the forest."
+    },
+    {
+      "startingLocation": "Avatar Flight of Passage",
+      "endingLocation": "Na'vi River Journey",
+      "startingLocationDescription": "After your exhilarating flight, take a moment to appreciate the stunning views of Pandora.",
+      "endingLocationDescription": "The Na'vi River Journey offers a serene boat ride through the glowing forest.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the signs leading to the Na'vi River Journey from the exit of Avatar Flight of Passage."
+    },
+    {
+      "startingLocation": "Na'vi River Journey",
+      "endingLocation": "Exploration of Glowing Flora",
+      "startingLocationDescription": "As you disembark from the boat, take in the sights and sounds of the forest.",
+      "endingLocationDescription": "Interact with the glowing plants and creatures, especially as night falls.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Wander through the paths that lead deeper into the forest, where the flora glows brightest."
+    },
+    {
+      "startingLocation": "Exploration of Glowing Flora",
+      "endingLocation": "Hallelujah Mountains",
+      "startingLocationDescription": "Engage with the bioluminescent environment and discover its magical elements.",
+      "endingLocationDescription": "Marvel at the floating Hallelujah Mountains, a breathtaking sight in Pandora.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the towering structures that seem to defy gravity."
+    },
+    {
+      "startingLocation": "Hallelujah Mountains",
+      "endingLocation": "Tree of Souls",
+      "startingLocationDescription": "Take in the awe-inspiring views of the floating mountains.",
+      "endingLocationDescription": "Visit the Tree of Souls, a sacred and spiritual site for the Na'vi.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the path that leads to the heart of the forest, where the Tree of Souls is located."
+    }
+  ],
+  "route": "Pandora's Glowing Forest Exploration",
+  "steps": [
+    {
+      "startingLocation": "Entrance of Pandora",
+      "endingLocation": "Avatar Flight of Passage",
+      "distance": 0.2,
+      "startingLocationDescription": "Begin your journey at the entrance, where you can see the towering bioluminescent plants and hear the sounds of the forest.",
+      "endingLocationDescription": "Experience the Avatar Flight of Passage, a thrilling ride that immerses you in the world of Pandora.",
+      "credibility": {
+        "source": "https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Avatar Flight of Passage",
+      "endingLocation": "Na'vi River Journey",
+      "distance": 0.1,
+      "startingLocationDescription": "After your exhilarating flight, take a moment to appreciate the stunning views of Pandora.",
+      "endingLocationDescription": "The Na'vi River Journey offers a serene boat ride through the glowing forest.",
+      "credibility": {
+        "source": "https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Na'vi River Journey",
+      "endingLocation": "Exploration of Glowing Flora",
+      "distance": 0.15,
+      "startingLocationDescription": "As you disembark from the boat, take in the sights and sounds of the forest.",
+      "endingLocationDescription": "Interact with the glowing plants and creatures, especially as night falls.",
+      "credibility": {
+        "source": "https://www.wdwradio.com/2017/05/full-review-pandora-the-world-of-avatar-is-this-generations-snow-whites-scary-adventures/",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Exploration of Glowing Flora",
+      "endingLocation": "Hallelujah Mountains",
+      "distance": 0.3,
+      "startingLocationDescription": "Engage with the bioluminescent environment and discover its magical elements.",
+      "endingLocationDescription": "Marvel at the floating Hallelujah Mountains, a breathtaking sight in Pandora.",
+      "credibility": {
+        "source": "https://www.csmonitor.com/Science/2009/1228/Avatar-the-real-life-science-behind-the-fantasy",
+        "reliability": 9,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Hallelujah Mountains",
+      "endingLocation": "Tree of Souls",
+      "distance": 0.25,
+      "startingLocationDescription": "Take in the awe-inspiring views of the floating mountains.",
+      "endingLocationDescription": "Visit the Tree of Souls, a sacred and spiritual site for the Na'vi.",
+      "credibility": {
+        "source": "https://www.csmonitor.com/Science/2009/1228/Avatar-the-real-life-science-behind-the-fantasy",
+        "reliability": 9,
+        "guess": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Grand Canyon Rim-to-Rim real world route"
+            },
+            "type": "tool_call",
+            "id": "call_AdJtqfP4Le5TvGYNTy1RP4j0"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_AdJtqfP4Le5TvGYNTy1RP4j0",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Grand Canyon Rim-to-Rim real world route\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 517,
+            "totalTokens": 540
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 517,
+            "completion_tokens": 23,
+            "total_tokens": 540,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAEsCSYmitqxscfgZ5UJ8blgkkuu"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Grand Canyon Rim-to-Rim hike is a challenging and rewarding adventure that spans approximately 24 miles from the North Kaibab Trail to the Bright Angel Trail. This route is considered strenuous and is best attempted between May and October. Hikers should prepare for significant elevation changes and varying weather conditions. The hike typically takes around 12.5 hours to complete, depending on individual fitness levels and pace.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"North Kaibab Trailhead\",\n        \"endingLocation\": \"Bright Angel Trailhead\",\n        \"startingLocationDescription\": \"The North Kaibab Trailhead is located at the North Rim of the Grand Canyon, offering stunning views and access to the trail.\",\n        \"endingLocationDescription\": \"The Bright Angel Trailhead is located at the South Rim, providing access to amenities and stunning vistas.\",\n        \"credibility\": {\n          \"source\": \"National Parks Blog\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the hike descends into the canyon, crossing the Colorado River and ascending to the South Rim. It is a strenuous hike with beautiful scenery along the way.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://www.nationalparks.org/connect/blog/grand-canyon-rim-rim-hike\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a clear and concise route for the Grand Canyon Rim-to-Rim hike, including distance, difficulty, and best time to go, making it highly relevant to the query.\",\n      \"answer\": \"North Kaibab Trail to Bright Angel Trail, 24 miles, strenuous, best May-October.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"Recommended Route: North Kaibab Trail to Bright Angel Trail Length: 24 miles (one-way) Level: Strenuous Best Time to Go: May - October\",\n      \"content\": \"The Grand Canyon Rim-to-Rim hike is a challenging adventure that requires proper preparation. The recommended route is from the North Kaibab Trail to the Bright Angel Trail, covering 24 miles one-way and rated as strenuous. The best time to hike this route is between May and October.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_AdJtqfP4Le5TvGYNTy1RP4j0",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3abfa156-ff65-41c5-8a23-7534a43571d0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Grand Canyon Rim-to-Rim hike itinerary, real locations, interesting places to stop"
+            },
+            "type": "tool_call",
+            "id": "call_bUxcpJrSZJAHk56TkSFocOHH"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_bUxcpJrSZJAHk56TkSFocOHH",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Grand Canyon Rim-to-Rim hike itinerary, real locations, interesting places to stop\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 30,
+            "promptTokens": 3972,
+            "totalTokens": 4002
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3972,
+            "completion_tokens": 30,
+            "total_tokens": 4002,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxhSMhhG3xWfnBYXsURdyO04mZ6g"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Grand Canyon Rim-to-Rim hike is a challenging and iconic trek that typically spans from the South Rim to the North Rim. The most popular routes include the South Kaibab Trail and the Bright Angel Trail, both leading to Phantom Ranch. Along the way, hikers can enjoy stunning views and interesting stops such as Ribbon Falls and Cottonwood Campground. Proper planning is essential for this hike, including understanding the distances and the terrain.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"South Rim\",\n        \"endingLocation\": \"Phantom Ranch\",\n        \"startingLocationDescription\": \"Begin your hike at the South Kaibab Trailhead, known for its breathtaking views and steep descent.\",\n        \"endingLocationDescription\": \"Arrive at Phantom Ranch, a historic lodge located at the bottom of the canyon, where you can rest and refuel.\",\n        \"credibility\": {\n          \"source\": \"https://hikingguy.com/hiking-trails/grand-canyon-hikes/rim-to-rim-grand-canyon-hike-guide/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"The hike from the South Rim to Phantom Ranch is approximately 7.5 miles via the South Kaibab Trail, offering stunning vistas along the way.\"\n      },\n      {\n        \"startingLocation\": \"Phantom Ranch\",\n        \"endingLocation\": \"North Rim\",\n        \"startingLocationDescription\": \"After resting at Phantom Ranch, prepare for the ascent to the North Rim.\",\n        \"endingLocationDescription\": \"Reach the North Rim, which is less crowded and offers a different perspective of the canyon.\",\n        \"credibility\": {\n          \"source\": \"https://hikingguy.com/hiking-trails/grand-canyon-hikes/rim-to-rim-grand-canyon-hike-guide/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"From Phantom Ranch, continue your hike to the North Rim, which is about 14 miles away, passing through scenic areas like Ribbon Falls and Cottonwood Campground.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://hikingguy.com/hiking-trails/grand-canyon-hikes/rim-to-rim-grand-canyon-hike-guide/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a clear and concise itinerary for the Rim-to-Rim hike, including specific locations to stop, which directly addresses the user's query.\",\n      \"answer\": \"Hike from South Kaibab Trailhead to North Kaibab Trailhead, stopping at Phantom Ranch, Ribbon Falls, and Cottonwood Campground.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"Your journey will start months before stepping foot on the trail, as planning is critical for this popular bucket list hike. ... Here is an overview of the two most popular rim-to-rim routes.\",\n      \"content\": \"The Rim-to-Rim hike in the Grand Canyon is iconic and challenging, typically done from South to North or North to South. Key stops include Phantom Ranch, Ribbon Falls, and Cottonwood Campground, making it a scenic and rewarding experience.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_bUxcpJrSZJAHk56TkSFocOHH",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "04a100a0-9178-4f92-aa4b-15aa80ed0826"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "North Kaibab Trailhead, North Rim, Grand Canyon National Park, AZ",
+              "to": "Cottonwood Campground, Grand Canyon National Park, AZ"
+            },
+            "type": "tool_call",
+            "id": "call_THURhXDbyFMkli1xcj0jI6TM"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_THURhXDbyFMkli1xcj0jI6TM",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"North Kaibab Trailhead, North Rim, Grand Canyon National Park, AZ\",\"to\":\"Cottonwood Campground, Grand Canyon National Park, AZ\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 46,
+            "promptTokens": 8213,
+            "totalTokens": 8259
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8213,
+            "completion_tokens": 46,
+            "total_tokens": 8259,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxiBrUrQ4aPZ8Yw5CskOiyiuneip"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"North Kaibab Trailhead, North Rim, Grand Canyon National Park, AZ\",\n  \"to\": \"Cottonwood Campground, Grand Canyon National Park, AZ\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Cottonwood Campground, N Kaibab Trail, North Rim, AZ 86052, USA\",\n      \"Cottonwood Creek Campsite, Grand Canyon Village, AZ 86023, USA\"\n    ],\n    \"origin_addresses\": [\n      \"North Kaibab Trailhead, North Rim, AZ 86052, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"9.8 km\",\n              \"value\": 9760\n            },\n            \"duration\": {\n              \"text\": \"2 hours 51 mins\",\n              \"value\": 10269\n            },\n            \"status\": \"OK\"\n          },\n          {\n            \"distance\": {\n              \"text\": \"55.4 km\",\n              \"value\": 55448\n            },\n            \"duration\": {\n              \"text\": \"14 hours 37 mins\",\n              \"value\": 52590\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_THURhXDbyFMkli1xcj0jI6TM",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "25a25de2-4287-43f9-ac5a-c662f6893b54"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Cottonwood Campground, Grand Canyon National Park, AZ",
+              "to": "Phantom Ranch, Grand Canyon National Park, AZ"
+            },
+            "type": "tool_call",
+            "id": "call_g5U63aId699OxciBpS33Ky6B"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_g5U63aId699OxciBpS33Ky6B",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Cottonwood Campground, Grand Canyon National Park, AZ\",\"to\":\"Phantom Ranch, Grand Canyon National Park, AZ\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 40,
+            "promptTokens": 8560,
+            "totalTokens": 8600
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8560,
+            "completion_tokens": 40,
+            "total_tokens": 8600,
+            "prompt_tokens_details": {
+              "cached_tokens": 7296
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxiJGZZV3PIVfT2bqn08uLZWPuqt"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Cottonwood Campground, Grand Canyon National Park, AZ\",\n  \"to\": \"Phantom Ranch, Grand Canyon National Park, AZ\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"N Kaibab Trail, North Rim, AZ 86052, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Cottonwood Campground, N Kaibab Trail, North Rim, AZ 86052, USA\",\n      \"Cottonwood Creek Campsite, Grand Canyon Village, AZ 86023, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"11.1 km\",\n              \"value\": 11062\n            },\n            \"duration\": {\n              \"text\": \"2 hours 50 mins\",\n              \"value\": 10173\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      },\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"34.6 km\",\n              \"value\": 34594\n            },\n            \"duration\": {\n              \"text\": \"8 hours 37 mins\",\n              \"value\": 31035\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_g5U63aId699OxciBpS33Ky6B",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4092d1a8-f6cc-415d-a8a4-385b78ff0c31"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Phantom Ranch, Grand Canyon National Park, AZ",
+              "to": "Bright Angel Campground, Grand Canyon National Park, AZ"
+            },
+            "type": "tool_call",
+            "id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Phantom Ranch, Grand Canyon National Park, AZ\",\"to\":\"Bright Angel Campground, Grand Canyon National Park, AZ\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 39,
+            "promptTokens": 7223,
+            "totalTokens": 7262
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7223,
+            "completion_tokens": 39,
+            "total_tokens": 7262,
+            "prompt_tokens_details": {
+              "cached_tokens": 3712
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxiNOZQYB7n5BwULsXwt6YreAviX"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Phantom Ranch, Grand Canyon National Park, AZ\",\n  \"to\": \"Bright Angel Campground, Grand Canyon National Park, AZ\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Bright Angel Campground, N Kaibab Trail, Grand Canyon Village, AZ 86023, USA\"\n    ],\n    \"origin_addresses\": [\n      \"N Kaibab Trail, North Rim, AZ 86052, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"0.5 km\",\n              \"value\": 499\n            },\n            \"duration\": {\n              \"text\": \"6 mins\",\n              \"value\": 357\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "f5e40633-c668-42ce-a63f-14c6e35545ca"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Bright Angel Campground, Grand Canyon National Park, AZ",
+              "to": "Indian Garden, Grand Canyon National Park, AZ"
+            },
+            "type": "tool_call",
+            "id": "call_IE9L5EcAHLLOUESxVX9ITBbI"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_IE9L5EcAHLLOUESxVX9ITBbI",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Bright Angel Campground, Grand Canyon National Park, AZ\",\"to\":\"Indian Garden, Grand Canyon National Park, AZ\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 38,
+            "promptTokens": 5555,
+            "totalTokens": 5593
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5555,
+            "completion_tokens": 38,
+            "total_tokens": 5593,
+            "prompt_tokens_details": {
+              "cached_tokens": 3712
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxiR6jn35YCUsGiCUswUpRVxip1K"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Bright Angel Campground, Grand Canyon National Park, AZ\",\n  \"to\": \"Indian Garden, Grand Canyon National Park, AZ\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Indian Garden, Arizona 86023, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Bright Angel Campground, N Kaibab Trail, Grand Canyon Village, AZ 86023, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"7.3 km\",\n              \"value\": 7308\n            },\n            \"duration\": {\n              \"text\": \"2 hours 5 mins\",\n              \"value\": 7505\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_IE9L5EcAHLLOUESxVX9ITBbI",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "37b5ca82-d6ec-4b1a-9758-fa182a8859b9"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Indian Garden, Grand Canyon National Park, AZ",
+              "to": "South Rim, Grand Canyon National Park, AZ"
+            },
+            "type": "tool_call",
+            "id": "call_2zE5t3pYDCSZAazX770EBTja"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_2zE5t3pYDCSZAazX770EBTja",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Indian Garden, Grand Canyon National Park, AZ\",\"to\":\"South Rim, Grand Canyon National Park, AZ\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 36,
+            "promptTokens": 5457,
+            "totalTokens": 5493
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5457,
+            "completion_tokens": 36,
+            "total_tokens": 5493,
+            "prompt_tokens_details": {
+              "cached_tokens": 3712
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxiUVpNFabi1sdADxlaCcT26Dc0D"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Indian Garden, Grand Canyon National Park, AZ\",\n  \"to\": \"South Rim, Grand Canyon National Park, AZ\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"South Rim, Arizona 86023, USA\",\n      \"Grand Canyon Village, AZ 86023, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Indian Garden, Arizona 86023, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"30.1 km\",\n              \"value\": 30113\n            },\n            \"duration\": {\n              \"text\": \"7 hours 56 mins\",\n              \"value\": 28540\n            },\n            \"status\": \"OK\"\n          },\n          {\n            \"distance\": {\n              \"text\": \"7.6 km\",\n              \"value\": 7609\n            },\n            \"duration\": {\n              \"text\": \"2 hours 45 mins\",\n              \"value\": 9895\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_2zE5t3pYDCSZAazX770EBTja",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "07a82e81-3014-4e07-9d07-d96739094d6a"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "National Parks Blog",
+      "link": "https://www.nationalparks.org/connect/blog/grand-canyon-rim-rim-hike"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Grand Canyon Rim-to-Rim\", which is real world.\nThe  pitch for this route is \"A challenging trek across the Grand Canyon, from the North Rim to the South Rim, showcasing breathtaking views of the canyon's vast expanse and geological wonders.\".\nSome ideas for steps are: \n\t - North Kaibab Trailhead to Cottonwood Campground\n\t - Cottonwood Campground to Phantom Ranch\n\t - Phantom Ranch to Bright Angel Campground\n\t - Bright Angel Campground to Indian Garden\n\t - Indian Garden to South Rim",
+  "itinerary": [
+    {
+      "startingLocation": "North Kaibab Trailhead",
+      "endingLocation": "Cottonwood Campground",
+      "startingLocationDescription": "The North Kaibab Trailhead is located at the North Rim of the Grand Canyon, offering stunning views and access to the trail.",
+      "endingLocationDescription": "Cottonwood Campground is a popular stop for hikers, providing a place to rest and refill water.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "North Rim, Grand Canyon National Park, AZ"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the North Kaibab Trail from the trailhead."
+    },
+    {
+      "startingLocation": "Cottonwood Campground",
+      "endingLocation": "Phantom Ranch",
+      "startingLocationDescription": "Cottonwood Campground offers a serene environment with basic amenities for hikers.",
+      "endingLocationDescription": "Phantom Ranch is a historic lodge located at the bottom of the Grand Canyon, accessible only by foot, mule, or raft.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Bottom of the Grand Canyon, AZ"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on the North Kaibab Trail towards the Colorado River."
+    },
+    {
+      "startingLocation": "Phantom Ranch",
+      "endingLocation": "Bright Angel Campground",
+      "startingLocationDescription": "Phantom Ranch provides a unique lodging experience with cabins and dormitory-style accommodations.",
+      "endingLocationDescription": "Bright Angel Campground is located near the Colorado River, offering a scenic spot for camping.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Near Colorado River, Grand Canyon National Park, AZ"
+      ],
+      "anyExtraInformationOnHowToFind": "Head towards the Bright Angel Trail from Phantom Ranch."
+    },
+    {
+      "startingLocation": "Bright Angel Campground",
+      "endingLocation": "Indian Garden",
+      "startingLocationDescription": "Bright Angel Campground is a popular resting spot for hikers traversing the canyon.",
+      "endingLocationDescription": "Indian Garden is an oasis halfway up the Bright Angel Trail, offering shade and water.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Bright Angel Trail, Grand Canyon National Park, AZ"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the Bright Angel Trail upwards from the campground."
+    },
+    {
+      "startingLocation": "Indian Garden",
+      "endingLocation": "South Rim",
+      "startingLocationDescription": "Indian Garden provides a refreshing stop with lush vegetation and a water source.",
+      "endingLocationDescription": "The South Rim is the most accessible part of the Grand Canyon, offering numerous amenities and breathtaking views.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "South Rim, Grand Canyon National Park, AZ"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on the Bright Angel Trail to reach the South Rim."
+    }
+  ],
+  "route": "Grand Canyon Rim-to-Rim",
+  "steps": [
+    {
+      "startingLocation": "North Kaibab Trailhead",
+      "endingLocation": "Cottonwood Campground",
+      "distance": 9.8,
+      "startingLocationDescription": "The North Kaibab Trailhead is located at the North Rim of the Grand Canyon, offering stunning views and access to the trail.",
+      "endingLocationDescription": "Cottonwood Campground is a popular stop for hikers, providing a place to rest and refill water.",
+      "credibility": {
+        "source": "Google Maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Cottonwood Campground",
+      "endingLocation": "Phantom Ranch",
+      "distance": 11.1,
+      "startingLocationDescription": "Cottonwood Campground offers a serene environment with basic amenities for hikers.",
+      "endingLocationDescription": "Phantom Ranch is a historic lodge located at the bottom of the Grand Canyon, accessible only by foot, mule, or raft.",
+      "credibility": {
+        "source": "https://hikingguy.com/hiking-trails/grand-canyon-hikes/rim-to-rim-grand-canyon-hike-guide/",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Phantom Ranch",
+      "endingLocation": "Bright Angel Campground",
+      "distance": 0.5,
+      "startingLocationDescription": "Phantom Ranch provides a unique lodging experience with cabins and dormitory-style accommodations.",
+      "endingLocationDescription": "Bright Angel Campground is located near the Colorado River, offering a scenic spot for camping.",
+      "credibility": {
+        "source": "Route data from previous itinerary",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Bright Angel Campground",
+      "endingLocation": "Indian Garden",
+      "distance": 7.3,
+      "startingLocationDescription": "Bright Angel Campground is a popular resting spot for hikers traversing the canyon.",
+      "endingLocationDescription": "Indian Garden is an oasis halfway up the Bright Angel Trail, offering shade and water.",
+      "credibility": {
+        "source": "Grand Canyon National Park official resources",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Indian Garden",
+      "endingLocation": "South Rim",
+      "distance": 7.6,
+      "startingLocationDescription": "Indian Garden provides a refreshing stop with lush vegetation and a water source.",
+      "endingLocationDescription": "The South Rim is the most accessible part of the Grand Canyon, offering numerous amenities and breathtaking views.",
+      "credibility": {
+        "source": "Grand Canyon National Park official website",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}
