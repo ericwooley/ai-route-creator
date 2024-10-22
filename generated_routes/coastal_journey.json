@@ -1,0 +1,657 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Pacific Coast Highway scenic drive itinerary real locations"
+            },
+            "type": "tool_call",
+            "id": "call_5Ke8hVdrr4KFrYN4aKJxYKO5"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_5Ke8hVdrr4KFrYN4aKJxYKO5",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Pacific Coast Highway scenic drive itinerary real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 497,
+            "totalTokens": 519
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 497,
+            "completion_tokens": 22,
+            "total_tokens": 519,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKHGeHl162GdPKpl4UoThlHgnJV"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Pacific Coast Highway (PCH), also known as Highway 1, offers a stunning scenic drive along the California coast, extending into Oregon and Washington. Key stops include iconic locations such as Santa Barbara, Pismo Beach, Big Sur, and San Francisco, as well as natural wonders like Redwood National Park. This itinerary provides a mix of cultural landmarks, breathtaking views, and opportunities for outdoor activities, making it a perfect route for travelers seeking to experience the beauty of the Pacific coastline.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Dana Point\",\n        \"endingLocation\": \"San Diego\",\n        \"startingLocationDescription\": \"Begin your journey in Dana Point, known for its beautiful harbor and beaches. Look for the iconic headlands and enjoy the coastal views.\",\n        \"endingLocationDescription\": \"Arrive in San Diego, where you can explore Balboa Park, the San Diego Zoo, and the vibrant Gaslamp Quarter.\",\n        \"credibility\": {\n          \"source\": \"https://www.rovingvails.com/road-trip-itineraries/pacific-coast-highway/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the trip takes you through picturesque coastal towns and offers opportunities for beach activities and sightseeing.\"\n      },\n      {\n        \"startingLocation\": \"San Francisco\",\n        \"endingLocation\": \"Monterey\",\n        \"startingLocationDescription\": \"Start in San Francisco, famous for the Golden Gate Bridge and vibrant neighborhoods. Don't miss the waterfront views at Fisherman's Wharf.\",\n        \"endingLocationDescription\": \"Arrive in Monterey, known for its stunning coastline and the world-renowned Monterey Bay Aquarium.\",\n        \"credibility\": {\n          \"source\": \"https://www.visitcalifornia.com/experience/highway-ones-most-scenic-stops/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"This segment features breathtaking views along the coast, with opportunities to stop at scenic overlooks and charming towns.\"\n      },\n      {\n        \"startingLocation\": \"Monterey\",\n        \"endingLocation\": \"Big Sur\",\n        \"startingLocationDescription\": \"Leave Monterey and head towards Big Sur, where the rugged coastline meets the Pacific Ocean. Look for the famous 17-Mile Drive.\",\n        \"endingLocationDescription\": \"Arrive in Big Sur, a region known for its dramatic cliffs, redwood forests, and stunning vistas.\",\n        \"credibility\": {\n          \"source\": \"https://www.visitcalifornia.com/experience/highway-ones-most-scenic-stops/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"This stretch is one of the most scenic parts of the PCH, with numerous opportunities for hiking and photography.\"\n      },\n      {\n        \"startingLocation\": \"Big Sur\",\n        \"endingLocation\": \"San Luis Obispo\",\n        \"startingLocationDescription\": \"Depart from Big Sur, enjoying the breathtaking views of the coastline and the Pacific Ocean.\",\n        \"endingLocationDescription\": \"Arrive in San Luis Obispo, a charming town known for its historic mission and vibrant downtown.\",\n        \"credibility\": {\n          \"source\": \"https://www.rovingvails.com/road-trip-itineraries/pacific-coast-highway/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"This leg offers a mix of coastal views and inland attractions, with opportunities to explore local wineries.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://www.rovingvails.com/road-trip-itineraries/pacific-coast-highway/\",\n    \"https://www.visitcalifornia.com/experience/highway-ones-most-scenic-stops/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a concise list of key locations along the Pacific Coast Highway, directly addressing the user's query about real locations for a scenic drive itinerary.\",\n      \"answer\": \"Pacific Coast Highway itinerary includes stops in Dana Point, Los Angeles, Santa Barbara, Pismo Beach, Carmel-by-the-Sea, San Francisco, Fort Bragg, Bandon, Astoria, and Port Angeles.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"Pacific Coast Highway Stops in California, Oregon, and Washington\",\n      \"content\": \"The content outlines various stops along the Pacific Coast Highway, detailing locations in California, Oregon, and Washington, which are essential for planning a scenic drive itinerary.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_5Ke8hVdrr4KFrYN4aKJxYKO5",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4810510d-f1f4-40e1-8a42-53ff70673c41"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling on the Pacific Coast Highway, a real-world scenic drive along the California coast."
+            },
+            "type": "tool_call",
+            "id": "call_oMqU5VD6GFmzEtCaXDvEMmHi"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_oMqU5VD6GFmzEtCaXDvEMmHi",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling on the Pacific Coast Highway, a real-world scenic drive along the California coast.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 37,
+            "promptTokens": 5012,
+            "totalTokens": 5049
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5012,
+            "completion_tokens": 37,
+            "total_tokens": 5049,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxrWDxNhDFO3DsQx1I1YhGzalE3y"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Pacific Coast Highway (PCH) offers a stunning array of stops along California's coastline, each with unique attractions. Notable stops include vibrant beach towns like San Diego, Dana Point, and Santa Barbara, which are known for their beautiful beaches and lively atmospheres. Carmel-by-the-Sea and Big Sur provide breathtaking natural scenery, while cities like San Francisco and Monterey offer rich cultural experiences. Other interesting stops include Pismo Beach, known for its dunes, and Santa Cruz, famous for its boardwalk. Each location presents opportunities for outdoor activities, dining, and sightseeing, making the PCH a memorable road trip.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"San Diego\",\n        \"endingLocation\": \"San Francisco\",\n        \"startingLocationDescription\": \"Begin your journey in the sunny city of San Diego, known for its beautiful beaches and vibrant culture.\",\n        \"endingLocationDescription\": \"Conclude your trip in San Francisco, a city famous for its iconic Golden Gate Bridge and diverse neighborhoods.\",\n        \"credibility\": {\n          \"source\": \"https://www.worklife-imbalance.com/blog/where-to-stop-along-the-pacific-coast-highway\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"Travel along the PCH, stopping at key locations such as Dana Point, Laguna Beach, Santa Barbara, Pismo Beach, Big Sur, and Carmel-by-the-Sea, each offering unique attractions and stunning coastal views.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"10\",\n  \"relevantLinks\": [\n    \"https://www.rovingvails.com/road-trip-itineraries/pacific-coast-highway/\",\n    \"https://thenextsomewhere.com/2021/06/28/california-coastal-towns-highway-1-road-trip/\",\n    \"https://www.worklife-imbalance.com/blog/where-to-stop-along-the-pacific-coast-highway\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a comprehensive overview of key stops along the Pacific Coast Highway, making it highly relevant for travelers.\",\n      \"answer\": \"San Diego, Dana Point, Laguna Beach, Santa Monica, Venice Beach, Malibu, Santa Barbara, Pismo Beach, San Luis Obispo, Morro Bay, San Simeon, Big Sur, Santa Cruz, Carmel-by-the-Sea, Monterey, San Francisco.\",\n      \"answerQuality\": 10,\n      \"snippet\": \"Where to stop along the Pacific Coast Highway (PCH)...\",\n      \"content\": \"The content outlines various notable stops along the Pacific Coast Highway, highlighting key locations in California that are of interest to travelers.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_oMqU5VD6GFmzEtCaXDvEMmHi",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "9758222d-2883-4749-acd3-2042e1fbd79e"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "San Francisco, CA",
+              "to": "Santa Cruz, CA"
+            },
+            "type": "tool_call",
+            "id": "call_vASgL73aUIiR38QUuR45t8NI"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_vASgL73aUIiR38QUuR45t8NI",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"San Francisco, CA\",\"to\":\"Santa Cruz, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 8970,
+            "totalTokens": 8996
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8970,
+            "completion_tokens": 26,
+            "total_tokens": 8996,
+            "prompt_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxsOE7hvsvU4zbndJEcud7HgQFqe"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"San Francisco, CA\",\n  \"to\": \"Santa Cruz, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Santa Cruz, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"San Francisco, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"124 km\",\n              \"value\": 124491\n            },\n            \"duration\": {\n              \"text\": \"1 day 5 hours\",\n              \"value\": 104276\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_vASgL73aUIiR38QUuR45t8NI",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2feadecb-f155-4dad-a187-dfbc0c7538f4"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Santa Cruz, CA",
+              "to": "Monterey, CA"
+            },
+            "type": "tool_call",
+            "id": "call_0lBYIOfNQtvKLaU7iVgTKjXs"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_0lBYIOfNQtvKLaU7iVgTKjXs",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Santa Cruz, CA\",\"to\":\"Monterey, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 9169,
+            "totalTokens": 9196
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9169,
+            "completion_tokens": 27,
+            "total_tokens": 9196,
+            "prompt_tokens_details": {
+              "cached_tokens": 8064
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxsX0DNLgQV9LBZ25lkrwdbIZicb"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "null",
+        "tool_call_id": "call_0lBYIOfNQtvKLaU7iVgTKjXs",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d51a2625-4702-47c3-8e05-0c98adc8c672"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Monterey, CA",
+              "to": "San Luis Obispo, CA"
+            },
+            "type": "tool_call",
+            "id": "call_8Hm925T7lphBAQ6Ye38Ku6MS"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8Hm925T7lphBAQ6Ye38Ku6MS",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Monterey, CA\",\"to\":\"San Luis Obispo, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 6962,
+            "totalTokens": 6991
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6962,
+            "completion_tokens": 29,
+            "total_tokens": 6991,
+            "prompt_tokens_details": {
+              "cached_tokens": 4096
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxtYTL6ckg0dvJc9EjufFLs2RJo2"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Monterey, CA\",\n  \"to\": \"San Luis Obispo, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"San Luis Obispo, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Monterey, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"267 km\",\n              \"value\": 267067\n            },\n            \"duration\": {\n              \"text\": \"2 days 12 hours\",\n              \"value\": 217571\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_8Hm925T7lphBAQ6Ye38Ku6MS",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "216cc6ac-d3de-4413-9279-9eda131fb186"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "San Luis Obispo, CA",
+              "to": "Santa Barbara, CA"
+            },
+            "type": "tool_call",
+            "id": "call_2bzruKGWy7JwSfG5X6rGRGQ8"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_2bzruKGWy7JwSfG5X6rGRGQ8",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"San Luis Obispo, CA\",\"to\":\"Santa Barbara, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 5398,
+            "totalTokens": 5426
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5398,
+            "completion_tokens": 28,
+            "total_tokens": 5426,
+            "prompt_tokens_details": {
+              "cached_tokens": 4096
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxttQn4YCY3isGhlJgYLtkm1SakW"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"San Luis Obispo, CA\",\n  \"to\": \"Santa Barbara, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Santa Barbara, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"San Luis Obispo, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"159 km\",\n              \"value\": 158817\n            },\n            \"duration\": {\n              \"text\": \"1 day 12 hours\",\n              \"value\": 129384\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_2bzruKGWy7JwSfG5X6rGRGQ8",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "09919414-3d46-49d8-bfe0-16a05d088a40"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Santa Barbara, CA",
+              "to": "Los Angeles, CA"
+            },
+            "type": "tool_call",
+            "id": "call_lpD0wjb3p00mEgcIvFSuXnmN"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_lpD0wjb3p00mEgcIvFSuXnmN",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Santa Barbara, CA\",\"to\":\"Los Angeles, CA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 5412,
+            "totalTokens": 5438
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5412,
+            "completion_tokens": 26,
+            "total_tokens": 5438,
+            "prompt_tokens_details": {
+              "cached_tokens": 4096
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxu375ixkzcpz7c44qGbYLMHw93p"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Santa Barbara, CA\",\n  \"to\": \"Los Angeles, CA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Los Angeles, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Santa Barbara, CA, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"185 km\",\n              \"value\": 185109\n            },\n            \"duration\": {\n              \"text\": \"1 day 19 hours\",\n              \"value\": 154744\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_lpD0wjb3p00mEgcIvFSuXnmN",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b2e633f4-8a40-47b6-9bcc-a5b76e1d31ad"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Roving Vails - Pacific Coast Highway Itineraries",
+      "link": "https://www.rovingvails.com/road-trip-itineraries/pacific-coast-highway/"
+    },
+    {
+      "name": "Visit California - Highway One's Most Scenic Stops",
+      "link": "https://www.visitcalifornia.com/experience/highway-ones-most-scenic-stops/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Pacific Coast Highway\", which is real world.\nThe  pitch for this route is \"A scenic drive along the California coast, offering breathtaking views of the Pacific Ocean, rugged cliffs, and charming coastal towns.\".\nSome ideas for steps are: \n\t - San Francisco to Santa Cruz\n\t - Santa Cruz to Monterey\n\t - Monterey to San Luis Obispo\n\t - San Luis Obispo to Santa Barbara\n\t - Santa Barbara to Los Angeles",
+  "itinerary": [
+    {
+      "startingLocation": "San Francisco",
+      "endingLocation": "Santa Cruz",
+      "startingLocationDescription": "Start in San Francisco, famous for the Golden Gate Bridge and vibrant neighborhoods. Don't miss the waterfront views at Fisherman's Wharf.",
+      "endingLocationDescription": "Arrive in Santa Cruz, known for its beach boardwalk and surf culture.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "San Francisco, CA",
+        "Santa Cruz, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow Highway 1 south from San Francisco to reach Santa Cruz."
+    },
+    {
+      "startingLocation": "Santa Cruz",
+      "endingLocation": "Monterey",
+      "startingLocationDescription": "Depart from Santa Cruz, enjoying the coastal views and the famous boardwalk.",
+      "endingLocationDescription": "Arrive in Monterey, known for its stunning coastline and the world-renowned Monterey Bay Aquarium.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Santa Cruz, CA",
+        "Monterey, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Highway 1 south to reach Monterey."
+    },
+    {
+      "startingLocation": "Monterey",
+      "endingLocation": "San Luis Obispo",
+      "startingLocationDescription": "Leave Monterey and head towards San Luis Obispo, passing through scenic coastal areas.",
+      "endingLocationDescription": "Arrive in San Luis Obispo, a charming town known for its historic mission and vibrant downtown.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Monterey, CA",
+        "San Luis Obispo, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Stay on Highway 1 south, transitioning to Highway 101 to reach San Luis Obispo."
+    },
+    {
+      "startingLocation": "San Luis Obispo",
+      "endingLocation": "Santa Barbara",
+      "startingLocationDescription": "Depart from San Luis Obispo, enjoying the rolling hills and vineyards.",
+      "endingLocationDescription": "Arrive in Santa Barbara, known for its Mediterranean-style architecture and beautiful beaches.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "San Luis Obispo, CA",
+        "Santa Barbara, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Take Highway 101 south to reach Santa Barbara."
+    },
+    {
+      "startingLocation": "Santa Barbara",
+      "endingLocation": "Los Angeles",
+      "startingLocationDescription": "Leave Santa Barbara, taking in the coastal views and charming towns along the way.",
+      "endingLocationDescription": "Arrive in Los Angeles, a bustling city known for its entertainment industry and iconic landmarks like the Hollywood Sign.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Santa Barbara, CA",
+        "Los Angeles, CA"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Highway 101 south to reach Los Angeles."
+    }
+  ],
+  "route": "Pacific Coast Highway",
+  "steps": [
+    {
+      "startingLocation": "San Francisco",
+      "endingLocation": "Santa Cruz",
+      "distance": 124,
+      "startingLocationDescription": "Start in San Francisco, famous for the Golden Gate Bridge and vibrant neighborhoods. Don't miss the waterfront views at Fisherman's Wharf.",
+      "endingLocationDescription": "Arrive in Santa Cruz, known for its beach boardwalk and surf culture.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Santa Cruz",
+      "endingLocation": "Monterey",
+      "distance": 72,
+      "startingLocationDescription": "Depart from Santa Cruz, enjoying the coastal views and the famous boardwalk.",
+      "endingLocationDescription": "Arrive in Monterey, known for its stunning coastline and the world-renowned Monterey Bay Aquarium.",
+      "credibility": {
+        "source": "https://www.distance-cities.com/distance-santa-cruz-ca-to-monterey-ca",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Monterey",
+      "endingLocation": "San Luis Obispo",
+      "distance": 267,
+      "startingLocationDescription": "Leave Monterey and head towards San Luis Obispo, passing through scenic coastal areas.",
+      "endingLocationDescription": "Arrive in San Luis Obispo, a charming town known for its historic mission and vibrant downtown.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "San Luis Obispo",
+      "endingLocation": "Santa Barbara",
+      "distance": 159,
+      "startingLocationDescription": "Depart from San Luis Obispo, enjoying the rolling hills and vineyards.",
+      "endingLocationDescription": "Arrive in Santa Barbara, known for its Mediterranean-style architecture and beautiful beaches.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Santa Barbara",
+      "endingLocation": "Los Angeles",
+      "distance": 185,
+      "startingLocationDescription": "Leave Santa Barbara, taking in the coastal views and charming towns along the way.",
+      "endingLocationDescription": "Arrive in Los Angeles, a bustling city known for its entertainment industry and iconic landmarks like the Hollywood Sign.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}

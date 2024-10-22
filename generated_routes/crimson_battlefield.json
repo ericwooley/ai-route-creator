@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting route ideas for The Battle of Helm's Deep based on fictional locations from J.R.R. Tolkien's Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_ZX6Mmqtre9a4yp4SddAJy5i7"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ZX6Mmqtre9a4yp4SddAJy5i7",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting route ideas for The Battle of Helm's Deep based on fictional locations from J.R.R. Tolkien's Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 37,
+            "promptTokens": 537,
+            "totalTokens": 574
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 537,
+            "completion_tokens": 37,
+            "total_tokens": 574,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAKdoI5mPmlHtFkXzohxJHVFskjw"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Interesting route ideas for The Battle of Helm's Deep based on fictional locations from J.R.R. Tolkien's Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Battle of Helm's Deep is inspired by real-world locations, particularly Cheddar Gorge, which Tolkien visited and acknowledged as the origin of the Glittering Caves of Aglarond. This connection provides a unique route idea that combines the fictional elements of Middle-earth with tangible geography.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Cheddar Gorge\",\n          \"endingLocation\": \"Helm's Deep\",\n          \"startingLocationDescription\": \"Begin your journey at Cheddar Gorge, a stunning limestone gorge with dramatic cliffs and a rich cave system. Look for the unique rock formations and the natural beauty that inspired Tolkien.\",\n          \"endingLocationDescription\": \"Arrive at Helm's Deep, a fortress set against a backdrop of towering cliffs. Explore the area and imagine the epic battle that took place here, surrounded by the lush landscape of Rohan.\",\n          \"credibility\": {\n            \"source\": \"Wikipedia\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"This route takes you from the real-world inspiration of Cheddar Gorge to the fictional Helm's Deep, allowing you to experience the dramatic landscapes that influenced Tolkien's writing.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://en.wikipedia.org/wiki/Battle_of_Helm%27s_Deep\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a relevant and concise idea for a fictional route based on Tolkien's work.\",\n        \"answer\": \"Consider a route through the Glittering Caves of Aglarond, leading to Helm's Deep, inspired by Cheddar Gorge.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Helm's Deep is based on the Cheddar Gorge, a limestone gorge 400 ft (120 m) deep in the Mendip Hills, with a large cave complex that Tolkien visited on his honeymoon in 1916 and revisited in 1940, and which he acknowledged as the origin of the Glittering Caves of Aglarond at the head of Helm's Deep, behind the fortress.\",\n        \"content\": \"The Battle of Helm's Deep features a dramatic setting inspired by real locations, such as Cheddar Gorge, and includes the Glittering Caves of Aglarond, which could serve as an interesting route idea for exploring the fictional geography of Middle-earth.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Battle of Helm's Deep is inspired by real-world locations, particularly Cheddar Gorge, which Tolkien visited and acknowledged as the origin of the Glittering Caves of Aglarond. This connection provides a unique route idea that combines the fictional elements of Middle-earth with tangible geography.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Cheddar Gorge\",\n            \"endingLocation\": \"Helm's Deep\",\n            \"startingLocationDescription\": \"Begin your journey at Cheddar Gorge, a stunning limestone gorge with dramatic cliffs and a rich cave system. Look for the unique rock formations and the natural beauty that inspired Tolkien.\",\n            \"endingLocationDescription\": \"Arrive at Helm's Deep, a fortress set against a backdrop of towering cliffs. Explore the area and imagine the epic battle that took place here, surrounded by the lush landscape of Rohan.\",\n            \"credibility\": {\n              \"source\": \"Wikipedia\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"This route takes you from the real-world inspiration of Cheddar Gorge to the fictional Helm's Deep, allowing you to experience the dramatic landscapes that influenced Tolkien's writing.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://en.wikipedia.org/wiki/Battle_of_Helm%27s_Deep\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a relevant and concise idea for a fictional route based on Tolkien's work.\",\n          \"answer\": \"Consider a route through the Glittering Caves of Aglarond, leading to Helm's Deep, inspired by Cheddar Gorge.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"Helm's Deep is based on the Cheddar Gorge, a limestone gorge 400 ft (120 m) deep in the Mendip Hills, with a large cave complex that Tolkien visited on his honeymoon in 1916 and revisited in 1940, and which he acknowledged as the origin of the Glittering Caves of Aglarond at the head of Helm's Deep, behind the fortress.\",\n          \"content\": \"The Battle of Helm's Deep features a dramatic setting inspired by real locations, such as Cheddar Gorge, and includes the Glittering Caves of Aglarond, which could serve as an interesting route idea for exploring the fictional geography of Middle-earth.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a relevant and concise idea for a fictional route based on Tolkien's work.\",\n        \"answer\": \"Consider a route through the Glittering Caves of Aglarond, leading to Helm's Deep, inspired by Cheddar Gorge.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Helm's Deep is based on the Cheddar Gorge, a limestone gorge 400 ft (120 m) deep in the Mendip Hills, with a large cave complex that Tolkien visited on his honeymoon in 1916 and revisited in 1940, and which he acknowledged as the origin of the Glittering Caves of Aglarond at the head of Helm's Deep, behind the fortress.\",\n        \"content\": \"The Battle of Helm's Deep features a dramatic setting inspired by real locations, such as Cheddar Gorge, and includes the Glittering Caves of Aglarond, which could serve as an interesting route idea for exploring the fictional geography of Middle-earth.\",\n        \"link\": \"https://en.wikipedia.org/wiki/Battle_of_Helm%27s_Deep\",\n        \"query\": \"Interesting route ideas for The Battle of Helm's Deep based on fictional locations from J.R.R. Tolkien's Middle-earth\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_ZX6Mmqtre9a4yp4SddAJy5i7",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "cd7c70cf-e249-4098-badc-32127d8d8640"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting places to stop on a journey from Edoras to Isengard in J.R.R. Tolkien's Middle-earth, focusing on fictional locations like Helm's Deep, The Deeping Wall, The Glittering Caves, and The Hornburg."
+            },
+            "type": "tool_call",
+            "id": "call_nIBtL8WvwZu1BRH7GUVv4b2j"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_nIBtL8WvwZu1BRH7GUVv4b2j",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting places to stop on a journey from Edoras to Isengard in J.R.R. Tolkien's Middle-earth, focusing on fictional locations like Helm's Deep, The Deeping Wall, The Glittering Caves, and The Hornburg.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 63,
+            "promptTokens": 3574,
+            "totalTokens": 3637
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3574,
+            "completion_tokens": 63,
+            "total_tokens": 3637,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxv6WFAvWT2oLi45XvmgbnFExIF5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The journey from Edoras to Isengard in J.R.R. Tolkien's Middle-earth features several notable fictional locations. Helm's Deep is a significant fortress known for its defensive capabilities and the epic battle that takes place there. The Deeping Wall is part of Helm's Deep, providing a crucial line of defense. The Glittering Caves, located behind Helm's Deep, are renowned for their beauty and hidden treasures. The Hornburg is the main fortress of Helm's Deep, characterized by its strategic importance during the War of the Ring.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Edoras\",\n        \"endingLocation\": \"Helm's Deep\",\n        \"startingLocationDescription\": \"Edoras, the capital of Rohan, is a beautiful city set on a hill, surrounded by golden fields. Look for the golden hall of Meduseld, where King Théoden resides.\",\n        \"endingLocationDescription\": \"Helm's Deep is a massive fortress known for its strong defenses. It features towering walls and a deep gorge, making it a strategic location during battles.\",\n        \"credibility\": {\n          \"source\": \"https://en.wikipedia.org/wiki/Battle_of_Helm%27s_Deep\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"Travel from the scenic Edoras to the formidable Helm's Deep, where you can explore the fortifications and learn about its historical significance.\"\n      },\n      {\n        \"startingLocation\": \"Helm's Deep\",\n        \"endingLocation\": \"The Deeping Wall\",\n        \"startingLocationDescription\": \"At Helm's Deep, you can see the impressive architecture and the layout of the fortress, which is crucial for its defense.\",\n        \"endingLocationDescription\": \"The Deeping Wall is a key defensive structure of Helm's Deep, providing a vantage point and a stronghold against attackers.\",\n        \"credibility\": {\n          \"source\": \"https://acoup.blog/2020/05/28/collections-the-battle-of-helms-deep-part-v-ladders-are-chaos/comment-page-1/\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"From Helm's Deep, walk to the Deeping Wall, which offers a closer look at the defensive strategies employed during the War of the Ring.\"\n      },\n      {\n        \"startingLocation\": \"The Deeping Wall\",\n        \"endingLocation\": \"The Glittering Caves\",\n        \"startingLocationDescription\": \"The Deeping Wall provides a stunning view of the surrounding landscape and the fortress itself.\",\n        \"endingLocationDescription\": \"The Glittering Caves, located behind Helm's Deep, are famous for their sparkling beauty and hidden treasures, making them a must-visit.\",\n        \"credibility\": {\n          \"source\": \"https://en.wikipedia.org/wiki/Glittering_Caves\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"After exploring the Deeping Wall, head to the Glittering Caves, where you can marvel at the natural beauty and the unique formations within.\"\n      },\n      {\n        \"startingLocation\": \"The Glittering Caves\",\n        \"endingLocation\": \"The Hornburg\",\n        \"startingLocationDescription\": \"The Glittering Caves are a breathtaking sight, filled with shimmering crystals and beautiful rock formations.\",\n        \"endingLocationDescription\": \"The Hornburg is the main fortress of Helm's Deep, known for its strategic importance and iconic architecture.\",\n        \"credibility\": {\n          \"source\": \"https://en.wikipedia.org/wiki/Hornburg\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"Conclude your journey by visiting the Hornburg, where you can appreciate its historical significance and the role it played during the battles.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://en.wikipedia.org/wiki/Battle_of_Helm%27s_Deep\",\n    \"https://acoup.blog/2020/05/28/collections-the-battle-of-helms-deep-part-v-ladders-are-chaos/comment-page-1/\",\n    \"https://en.wikipedia.org/wiki/Glittering_Caves\",\n    \"https://en.wikipedia.org/wiki/Hornburg\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer directly lists the key fictional locations relevant to the journey from Edoras to Isengard, making it highly relevant.\",\n      \"answer\": \"Helm's Deep, The Deeping Wall, The Glittering Caves of Aglarond, and the Hornburg.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"Interesting places to stop on a journey from Edoras to Isengard in J.R.R. Tolkien's Middle-earth, focusing on fictional locations like Helm's Deep, The Deeping Wall, The Glittering Caves, and The Hornburg.\",\n      \"content\": \"The content discusses Helm's Deep, its fortifications, and the Glittering Caves of Aglarond, which are significant locations in Tolkien's Middle-earth, particularly in the context of the Battle of Helm's Deep.\"\n    },\n    {\n      \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the user's query about interesting places to stop on the journey from Edoras to Isengard, specifically mentioning Helm's Deep, The Deeping Wall, The Glittering Caves, and The Hornburg.\",\n      \"answer\": \"Key stops include Helm's Deep, The Deeping Wall, The Glittering Caves, and The Hornburg.\",\n      \"answerQuality\": 8,\n      \"snippet\": \"Interesting places to stop on a journey from Edoras to Isengard in J.R.R. Tolkien's Middle-earth, focusing on fictional locations like Helm's Deep, The Deeping Wall, The Glittering Caves, and The Hornburg.\",\n      \"content\": \"The journey from Edoras to Isengard in Tolkien's Middle-earth features several notable fictional locations. Helm's Deep is a significant fortress known for its defensive capabilities and the epic battle that takes place there.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  },\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      1,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_nIBtL8WvwZu1BRH7GUVv4b2j",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "a34b6293-48c6-4f62-8028-3df0bccf2def"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Edoras to Helm's Deep in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_94PCA5SWBEWsBho8MnE9Mrpm"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_94PCA5SWBEWsBho8MnE9Mrpm",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Edoras to Helm's Deep in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 11385,
+            "totalTokens": 11407
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 11385,
+            "completion_tokens": 22,
+            "total_tokens": 11407,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxvog84RBY7giInYjYpjrGHZdCp0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Edoras to Helm's Deep in Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The journey from Edoras to Helm's Deep is significant in the context of Rohan's defense against Saruman's forces. Theoden, the king of Rohan, is advised by Aragorn and Gandalf that moving to Helm's Deep may be a trap, as they are likely to be outnumbered and face a massacre. Edoras serves as the capital of Rohan, being more pleasant and better suited for supplies compared to the fortress of Helm's Deep, which is primarily a defensive stronghold. This context highlights the strategic considerations involved in the decision to move from Edoras to Helm's Deep.\",\n    \"finalAnswer\": {\n      \"distance\": 30,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/lordoftherings/comments/1cy4tz0/would_it_actually_have_gone_better_for_rohan_if/\",\n      \"https://www.reddit.com/r/AskScienceFiction/comments/fbzflg/lotr_why_is_edoras_the_capital_of_rohan_and_not/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer discusses Theoden's decision-making process and the implications of moving to Helm's Deep, which is directly relevant to the query about the journey between Edoras and Helm's Deep.\",\n        \"answer\": \"Theoden's decision to go to Helm's Deep was likely a trap, as Gandalf warned, and Rohan was undermanned against Saruman's forces.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"Aragorn and Gandalf strongly counsel Theoden not to abandon Edoras and lead his people to Helm’s Deep: ‘Theoden is walking into a trap - he thinks he’s leading them to safety, but what they will get is a massacre’.\",\n        \"content\": \"The content discusses the military strategy involved in Theoden's choice to move to Helm's Deep, emphasizing the warnings from Gandalf and the potential consequences of being outnumbered.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The journey from Edoras to Helm's Deep is significant in the context of Rohan's defense against Saruman's forces. Theoden, the king of Rohan, is advised by Aragorn and Gandalf that moving to Helm's Deep may be a trap, as they are likely to be outnumbered and face a massacre. Edoras serves as the capital of Rohan, being more pleasant and better suited for supplies compared to the fortress of Helm's Deep, which is primarily a defensive stronghold. This context highlights the strategic considerations involved in the decision to move from Edoras to Helm's Deep.\",\n      \"finalAnswer\": {\n        \"distance\": 30,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/lordoftherings/comments/1cy4tz0/would_it_actually_have_gone_better_for_rohan_if/\",\n        \"https://www.reddit.com/r/AskScienceFiction/comments/fbzflg/lotr_why_is_edoras_the_capital_of_rohan_and_not/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer discusses Theoden's decision-making process and the implications of moving to Helm's Deep, which is directly relevant to the query about the journey between Edoras and Helm's Deep.\",\n          \"answer\": \"Theoden's decision to go to Helm's Deep was likely a trap, as Gandalf warned, and Rohan was undermanned against Saruman's forces.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"Aragorn and Gandalf strongly counsel Theoden not to abandon Edoras and lead his people to Helm’s Deep: ‘Theoden is walking into a trap - he thinks he’s leading them to safety, but what they will get is a massacre’.\",\n          \"content\": \"The content discusses the military strategy involved in Theoden's choice to move to Helm's Deep, emphasizing the warnings from Gandalf and the potential consequences of being outnumbered.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_94PCA5SWBEWsBho8MnE9Mrpm",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "93e5ec0b-3f54-4621-923a-a66b84f9db39"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Helm's Deep to The Deeping Wall in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_lUboq4tYuRRLd28rDSOOPEVA"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_lUboq4tYuRRLd28rDSOOPEVA",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Helm's Deep to The Deeping Wall in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 25,
+            "promptTokens": 12410,
+            "totalTokens": 12435
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 12410,
+            "completion_tokens": 25,
+            "total_tokens": 12435,
+            "prompt_tokens_details": {
+              "cached_tokens": 10368
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxwOqZoNmfjQLuc1wPjXmT7jonP5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Helm's Deep to The Deeping Wall in Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Helm's Deep is a fortress in Middle-earth, specifically in Rohan, and the Deeping Wall is a crucial defensive structure within it. The Deeping Wall is a 20-foot-high stone wall that was built as part of the Hornburg fortress, serving as a critical defense during the Battle of the Hornburg against Isengard. The terrain behind the Deeping Wall is depicted as a valley, which is significant as it protects the land beyond the wall.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"7\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/lotr/comments/150ol1g/how_to_interpret_the_geography_of_what_lies/\",\n      \"https://bfme2.heavengames.com/downloads/showfile.php?fileid=377\",\n      \"https://lotr.fandom.com/wiki/Deeping_Wall\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides relevant information about the Deeping Wall's significance and characteristics in relation to Helm's Deep.\",\n        \"answer\": \"The Deeping Wall is a 20-foot-high stone wall part of Helm's Deep, crucial in the Battle of the Hornburg.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"The Deeping Wall was a long, twenty foot-high wall of stone which formed part of the Hornburg, the fortress of Rohan in Helm's Deep.\",\n        \"content\": \"The Deeping Wall was built as part of the Hornburg fortress in Rohan, serving as a critical defensive structure during the Battle of the Hornburg. It was designed to be strong and thick, with features that made it difficult for attackers to breach.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Helm's Deep is a fortress in Middle-earth, specifically in Rohan, and the Deeping Wall is a crucial defensive structure within it. The Deeping Wall is a 20-foot-high stone wall that was built as part of the Hornburg fortress, serving as a critical defense during the Battle of the Hornburg against Isengard. The terrain behind the Deeping Wall is depicted as a valley, which is significant as it protects the land beyond the wall.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"7\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/lotr/comments/150ol1g/how_to_interpret_the_geography_of_what_lies/\",\n        \"https://bfme2.heavengames.com/downloads/showfile.php?fileid=377\",\n        \"https://lotr.fandom.com/wiki/Deeping_Wall\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides relevant information about the Deeping Wall's significance and characteristics in relation to Helm's Deep.\",\n          \"answer\": \"The Deeping Wall is a 20-foot-high stone wall part of Helm's Deep, crucial in the Battle of the Hornburg.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"The Deeping Wall was a long, twenty foot-high wall of stone which formed part of the Hornburg, the fortress of Rohan in Helm's Deep.\",\n          \"content\": \"The Deeping Wall was built as part of the Hornburg fortress in Rohan, serving as a critical defensive structure during the Battle of the Hornburg. It was designed to be strong and thick, with features that made it difficult for attackers to breach.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_lUboq4tYuRRLd28rDSOOPEVA",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5ae29f18-3d3b-4ffb-95e2-380a7231d19f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Deeping Wall to The Glittering Caves in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_kxTLkdqFhhOAmmbm9eCsP6k0"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_kxTLkdqFhhOAmmbm9eCsP6k0",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Deeping Wall to The Glittering Caves in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 11849,
+            "totalTokens": 11875
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 11849,
+            "completion_tokens": 26,
+            "total_tokens": 11875,
+            "prompt_tokens_details": {
+              "cached_tokens": 5248
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxwyw2GOqEeGTbJHwMoOgMJn2RnA"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Deeping Wall to The Glittering Caves in Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Glittering Caves, also known as Aglarond, are located directly behind the Deeping Wall of Helm's Deep in the White Mountains. This cave system is described as immense and beautiful, serving as a refuge during the Battle of the Hornburg. The entrance to the caves is situated in a narrow gorge that can be defended against attacks, making it an ideal location for shelter. The terrain behind the Deeping Wall includes a valley that is protected by the wall, emphasizing its strategic importance.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"10\",\n    \"relevantLinks\": [\n      \"https://www.pinterest.com/pin/glittering-caves--107734616068800790/\",\n      \"https://tolkiengateway.net/wiki/Glittering_Caves\",\n      \"https://middle-earthcinematicuniverse.fandom.com/wiki/Glittering_Caves\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is perfect as it directly states the location of the Glittering Caves in relation to the Deeping Wall, providing clear and relevant information.\",\n        \"answer\": \"The Glittering Caves are located behind the Deeping Wall of Helm's Deep.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Glittering Caves, also known as Aglarond, was the cave system located behind the Deeping Wall of Helm's Deep.\",\n        \"content\": \"The Glittering Caves were located behind Helm's Deep under the three peaks of the Thrihyrne in the northwestern arm of the White Mountains. The entrance to the caves was behind the Deeping Wall in a narrow gorge that could be defended long against an onslaught, making them an ideal refuge location.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Glittering Caves, also known as Aglarond, are located directly behind the Deeping Wall of Helm's Deep in the White Mountains. This cave system is described as immense and beautiful, serving as a refuge during the Battle of the Hornburg. The entrance to the caves is situated in a narrow gorge that can be defended against attacks, making it an ideal location for shelter. The terrain behind the Deeping Wall includes a valley that is protected by the wall, emphasizing its strategic importance.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"10\",\n      \"relevantLinks\": [\n        \"https://www.pinterest.com/pin/glittering-caves--107734616068800790/\",\n        \"https://tolkiengateway.net/wiki/Glittering_Caves\",\n        \"https://middle-earthcinematicuniverse.fandom.com/wiki/Glittering_Caves\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is perfect as it directly states the location of the Glittering Caves in relation to the Deeping Wall, providing clear and relevant information.\",\n          \"answer\": \"The Glittering Caves are located behind the Deeping Wall of Helm's Deep.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"The Glittering Caves, also known as Aglarond, was the cave system located behind the Deeping Wall of Helm's Deep.\",\n          \"content\": \"The Glittering Caves were located behind Helm's Deep under the three peaks of the Thrihyrne in the northwestern arm of the White Mountains. The entrance to the caves was behind the Deeping Wall in a narrow gorge that could be defended long against an onslaught, making them an ideal refuge location.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the query about the location of the Glittering Caves in relation to the Deeping Wall.\",\n        \"answer\": \"The Glittering Caves are located behind the Deeping Wall of Helm's Deep.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Glittering Caves, also known as Aglarond and Glæ̂mscrafu, was the cave system located behind the Deeping Wall of Helm's Deep.\",\n        \"content\": \"The Glittering Caves is an immense, beautiful, and ore-laden cave system that extends deep behind the Deeping Wall.\",\n        \"link\": \"https://www.pinterest.com/pin/glittering-caves--107734616068800790/\",\n        \"query\": \"The Deeping Wall to The Glittering Caves in Middle-earth\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the location of the Glittering Caves in relation to the Deeping Wall, providing clear and relevant information.\",\n        \"answer\": \"The Glittering Caves, also known as Aglarond, are located behind the Deeping Wall of Helm's Deep.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The Glittering Caves, also known as Aglarond, was the cave system located behind the Deeping Wall of Helm's Deep.\",\n        \"content\": \"The Glittering Caves were located behind Helm's Deep under the three peaks of the Thrihyrne in the northwestern arm of the White Mountains. The entrance to the caves was behind the Deeping Wall in a narrow gorge that could be defended long against an onslaught, making them an ideal refuge location.\",\n        \"link\": \"https://middle-earthcinematicuniverse.fandom.com/wiki/Glittering_Caves\",\n        \"query\": \"The Deeping Wall to The Glittering Caves in Middle-earth\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_kxTLkdqFhhOAmmbm9eCsP6k0",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b5b21da1-3ad8-4b0e-a539-2e9d8e4a46e7"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Glittering Caves to The Hornburg in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_no9o6KaR6Ia8NhAEvge4QaOF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_no9o6KaR6Ia8NhAEvge4QaOF",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Glittering Caves to The Hornburg in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 25,
+            "promptTokens": 9535,
+            "totalTokens": 9560
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9535,
+            "completion_tokens": 25,
+            "total_tokens": 9560,
+            "prompt_tokens_details": {
+              "cached_tokens": 5248
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxxKdGYiFmgaJOQW4wbaH1DkAWLq"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Glittering Caves to The Hornburg in Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Glittering Caves, also known as Aglarond, are located behind Helm's Deep in the White Mountains of Rohan. They are described as spectacular jewelled caverns and are situated under the three peaks of the Thrihyrne. The proximity of the Glittering Caves to Helm's Deep is significant, as they served as a refuge during the Battle of Helm's Deep, where many men and elves retreated before the arrival of Gandalf with reinforcements.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://tolkiengateway.net/wiki/Glittering_Caves\",\n      \"https://www.reddit.com/r/lordoftherings/comments/18k6z0v/battle_of_helms_deep_who_made_it_to_the/\",\n      \"https://www.mcmiddleearth.com/community/threads/frecas-fortress.2430/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the location of the Glittering Caves in relation to the Hornburg.\",\n        \"answer\": \"The Glittering Caves, also known as Aglarond, are located behind Helm's Deep in the White Mountains of Rohan.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The Glittering Caves were located behind Helm's Deep under the three peaks of the Thrihyrne in the northwestern arm of the White Mountains.\",\n        \"content\": \"The Glittering Caves, in Sindarin called Aglarond, were the spectacular jewelled caverns that lay in the White Mountains behind Helm's Deep in Rohan.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Glittering Caves, also known as Aglarond, are located behind Helm's Deep in the White Mountains of Rohan. They are described as spectacular jewelled caverns and are situated under the three peaks of the Thrihyrne. The proximity of the Glittering Caves to Helm's Deep is significant, as they served as a refuge during the Battle of Helm's Deep, where many men and elves retreated before the arrival of Gandalf with reinforcements.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://tolkiengateway.net/wiki/Glittering_Caves\",\n        \"https://www.reddit.com/r/lordoftherings/comments/18k6z0v/battle_of_helms_deep_who_made_it_to_the/\",\n        \"https://www.mcmiddleearth.com/community/threads/frecas-fortress.2430/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the location of the Glittering Caves in relation to the Hornburg.\",\n          \"answer\": \"The Glittering Caves, also known as Aglarond, are located behind Helm's Deep in the White Mountains of Rohan.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The Glittering Caves were located behind Helm's Deep under the three peaks of the Thrihyrne in the northwestern arm of the White Mountains.\",\n          \"content\": \"The Glittering Caves, in Sindarin called Aglarond, were the spectacular jewelled caverns that lay in the White Mountains behind Helm's Deep in Rohan.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_no9o6KaR6Ia8NhAEvge4QaOF",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "f971927c-ec87-4d87-b8ba-c504364384c7"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Hornburg to Isengard in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_mAcTxX8X1E5WdeLEUbxOIhdk"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_mAcTxX8X1E5WdeLEUbxOIhdk",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Hornburg to Isengard in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 9430,
+            "totalTokens": 9453
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9430,
+            "completion_tokens": 23,
+            "total_tokens": 9453,
+            "prompt_tokens_details": {
+              "cached_tokens": 5248
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKxxrqfntx5N8NDETaOXVyiBXq9DI"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Hornburg to Isengard in Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Hornburg, also known as Helm's Deep, is a fortress located in Rohan, while Isengard is a stronghold associated with Saruman. The Battle of the Hornburg was a significant conflict during the War of the Ring, fought between the Rohirrim and Saruman's forces on March 3-4, T.A. 3019. The Rohirrim, led by Théoden and Erkenbrand, successfully defended against the attacking forces from Isengard, showcasing their bravery and strategic prowess. The fortifications of Isengard and Helm's Deep were originally built by Elendil and the Numenoreans to project power over the native men of Middle-earth, rather than solely for defense against Sauron.\",\n    \"finalAnswer\": {\n      \"distance\": 25,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://tolkiengateway.net/wiki/Battle_of_the_Hornburg\",\n      \"https://www.reddit.com/r/tolkienfans/comments/nk38yi/helms_deep_and_isengard_as_colonial_forts_never/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides key details about the Battle of the Hornburg, which is directly relevant to the query about the relationship between the Hornburg and Isengard.\",\n        \"answer\": \"The Battle of the Hornburg was fought between the Rohirrim and Saruman's forces at Helm's Deep on March 3-4, T.A. 3019, resulting in a Rohirrim victory.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The Battle of the Hornburg took place at the mountain fortress of the Hornburg in the valley of Helm's Deep in Rohan. Taking place over the night of the 3-4 March T.A. 3019, it saw the attacking Isengard-host of Saruman defeated by the Rohirrim led by Théoden and Erkenbrand.\",\n        \"content\": \"The Battle of the Hornburg was a significant conflict in the War of the Ring, where the Rohirrim successfully defended against Saruman's forces, showcasing the bravery and strategy of Rohan's leaders.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Hornburg, also known as Helm's Deep, is a fortress located in Rohan, while Isengard is a stronghold associated with Saruman. The Battle of the Hornburg was a significant conflict during the War of the Ring, fought between the Rohirrim and Saruman's forces on March 3-4, T.A. 3019. The Rohirrim, led by Théoden and Erkenbrand, successfully defended against the attacking forces from Isengard, showcasing their bravery and strategic prowess. The fortifications of Isengard and Helm's Deep were originally built by Elendil and the Numenoreans to project power over the native men of Middle-earth, rather than solely for defense against Sauron.\",\n      \"finalAnswer\": {\n        \"distance\": 25,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://tolkiengateway.net/wiki/Battle_of_the_Hornburg\",\n        \"https://www.reddit.com/r/tolkienfans/comments/nk38yi/helms_deep_and_isengard_as_colonial_forts_never/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides key details about the Battle of the Hornburg, which is directly relevant to the query about the relationship between the Hornburg and Isengard.\",\n          \"answer\": \"The Battle of the Hornburg was fought between the Rohirrim and Saruman's forces at Helm's Deep on March 3-4, T.A. 3019, resulting in a Rohirrim victory.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The Battle of the Hornburg took place at the mountain fortress of the Hornburg in the valley of Helm's Deep in Rohan. Taking place over the night of the 3-4 March T.A. 3019, it saw the attacking Isengard-host of Saruman defeated by the Rohirrim led by Théoden and Erkenbrand.\",\n          \"content\": \"The Battle of the Hornburg was a significant conflict in the War of the Ring, where the Rohirrim successfully defended against Saruman's forces, showcasing the bravery and strategy of Rohan's leaders.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_mAcTxX8X1E5WdeLEUbxOIhdk",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "37adc884-fa9e-4e68-908a-688130a137ee"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Wikipedia - Battle of Helm's Deep",
+      "link": "https://en.wikipedia.org/wiki/Battle_of_Helm%27s_Deep"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Battle of Helm's Deep\", which is fictional.\nThe  pitch for this route is \"A journey through the legendary battlefield of Helm's Deep from J.R.R. Tolkien's Middle-earth, where the forces of Rohan defended against Saruman's army. The route takes you through the rugged terrain and fortifications of this epic battle.\".\nSome ideas for steps are: \n\t - Edoras to Helm's Deep\n\t - Helm's Deep to The Deeping Wall\n\t - The Deeping Wall to The Glittering Caves\n\t - The Glittering Caves to The Hornburg\n\t - The Hornburg to Isengard",
+  "itinerary": [
+    {
+      "startingLocation": "Edoras",
+      "endingLocation": "Helm's Deep",
+      "startingLocationDescription": "Begin your journey at Edoras, the capital of Rohan, known for its golden hall and panoramic views of the surrounding plains.",
+      "endingLocationDescription": "Arrive at Helm's Deep, a fortress set against a backdrop of towering cliffs. Explore the area and imagine the epic battle that took place here, surrounded by the lush landscape of Rohan.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Edoras is located in the fictional land of Rohan, Middle-earth."
+    },
+    {
+      "startingLocation": "Helm's Deep",
+      "endingLocation": "The Deeping Wall",
+      "startingLocationDescription": "Explore the fortress of Helm's Deep, known for its strategic importance and historical battles.",
+      "endingLocationDescription": "Proceed to The Deeping Wall, a massive defensive structure that played a crucial role in the defense of Helm's Deep.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "The Deeping Wall is part of the Helm's Deep fortress complex."
+    },
+    {
+      "startingLocation": "The Deeping Wall",
+      "endingLocation": "The Glittering Caves",
+      "startingLocationDescription": "Stand atop The Deeping Wall and take in the view of the surrounding valley.",
+      "endingLocationDescription": "Enter The Glittering Caves, a vast network of caverns known for their beauty and mineral formations.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "The Glittering Caves are located behind the fortress of Helm's Deep."
+    },
+    {
+      "startingLocation": "The Glittering Caves",
+      "endingLocation": "The Hornburg",
+      "startingLocationDescription": "Marvel at the natural beauty of The Glittering Caves, with their shimmering walls and unique formations.",
+      "endingLocationDescription": "Head to The Hornburg, the central keep of Helm's Deep, known for its strength and resilience.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "The Hornburg is the main stronghold within Helm's Deep."
+    },
+    {
+      "startingLocation": "The Hornburg",
+      "endingLocation": "Isengard",
+      "startingLocationDescription": "Depart from The Hornburg, reflecting on its role in the defense of Rohan.",
+      "endingLocationDescription": "Conclude your journey at Isengard, the stronghold of Saruman, surrounded by a ring of stone and the lush gardens of Orthanc.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Isengard is located in the fictional land of Middle-earth, near the southern end of the Misty Mountains."
+    }
+  ],
+  "route": "Edoras to Isengard",
+  "steps": [
+    {
+      "startingLocation": "Edoras",
+      "endingLocation": "Helm's Deep",
+      "distance": 30,
+      "startingLocationDescription": "Begin your journey at Edoras, the capital of Rohan, known for its golden hall and panoramic views of the surrounding plains.",
+      "endingLocationDescription": "Arrive at Helm's Deep, a fortress set against a backdrop of towering cliffs. Explore the area and imagine the epic battle that took place here, surrounded by the lush landscape of Rohan.",
+      "credibility": {
+        "source": "https://www.reddit.com/r/lordoftherings/comments/1cy4tz0/would_it_actually_have_gone_better_for_rohan_if/",
+        "reliability": 5,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Helm's Deep",
+      "endingLocation": "The Deeping Wall",
+      "distance": 0.5,
+      "startingLocationDescription": "Explore the fortress of Helm's Deep, known for its strategic importance and historical battles.",
+      "endingLocationDescription": "Proceed to The Deeping Wall, a massive defensive structure that played a crucial role in the defense of Helm's Deep.",
+      "credibility": {
+        "source": "https://lotr.fandom.com/wiki/Deeping_Wall",
+        "reliability": 7,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "The Deeping Wall",
+      "endingLocation": "The Glittering Caves",
+      "distance": 0.2,
+      "startingLocationDescription": "Stand atop The Deeping Wall and take in the view of the surrounding valley.",
+      "endingLocationDescription": "Enter The Glittering Caves, a vast network of caverns known for their beauty and mineral formations.",
+      "credibility": {
+        "source": "https://tolkiengateway.net/wiki/Glittering_Caves",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "The Glittering Caves",
+      "endingLocation": "The Hornburg",
+      "distance": 0.3,
+      "startingLocationDescription": "Marvel at the natural beauty of The Glittering Caves, with their shimmering walls and unique formations.",
+      "endingLocationDescription": "Head to The Hornburg, the central keep of Helm's Deep, known for its strength and resilience.",
+      "credibility": {
+        "source": "https://tolkiengateway.net/wiki/Glittering_Caves",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "The Hornburg",
+      "endingLocation": "Isengard",
+      "distance": 40,
+      "startingLocationDescription": "Depart from The Hornburg, reflecting on its role in the defense of Rohan.",
+      "endingLocationDescription": "Conclude your journey at Isengard, the stronghold of Saruman, surrounded by a ring of stone and the lush gardens of Orthanc.",
+      "credibility": {
+        "source": "Estimated based on fictional geography",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}
