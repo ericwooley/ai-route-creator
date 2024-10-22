@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "popular_route_search",
+            "args": {
+              "query": "The Mushroom Kingdom Quest route ideas for fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_eFasasuFrps52hVzRnzwk9un"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_eFasasuFrps52hVzRnzwk9un",
+              "type": "function",
+              "function": {
+                "name": "popular_route_search",
+                "arguments": "{\"query\":\"The Mushroom Kingdom Quest route ideas for fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 24,
+            "promptTokens": 513,
+            "totalTokens": 537
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 513,
+            "completion_tokens": 24,
+            "total_tokens": 537,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCaI3xDhDlQn12KfqWeXJnvD7gPs"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Mushroom Kingdom Quest route ideas for fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Mushroom Kingdom can be enriched with various quest ideas that focus on growth mechanics and interactions. Suggested quests include eating quests, territory marking, and environmental challenges like clearing water jams. These quests can be adapted to fit the whimsical and adventurous nature of the Mushroom Kingdom, allowing players to engage with the environment and characters in meaningful ways.\",\n    \"finalAnswer\": [\n      {\n        \"routeName\": \"The Quest for Growth: Eating Adventures\"\n      }\n    ],\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/pathoftitans/comments/yr5zd1/quest_ideas/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it summarizes various quest ideas that could fit into a fictional Mushroom Kingdom setting.\",\n        \"answer\": \"Quest ideas include: eating quests, territory marking, bonded couple growth, destroying hives, mud wallowing, juvenile eating, and clearing water jams.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Quest Ideas\\n\\nExp from eating. No seriously. Herbivores should get growth from just eating... Have any of your own?\",\n        \"content\": \"The content provides a variety of quest ideas that could be adapted for a fictional setting like the Mushroom Kingdom, focusing on growth mechanics and interactions.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Mushroom Kingdom can be enriched with various quest ideas that focus on growth mechanics and interactions. Suggested quests include eating quests, territory marking, and environmental challenges like clearing water jams. These quests can be adapted to fit the whimsical and adventurous nature of the Mushroom Kingdom, allowing players to engage with the environment and characters in meaningful ways.\",\n      \"finalAnswer\": [\n        {\n          \"routeName\": \"The Quest for Growth: Eating Adventures\"\n        }\n      ],\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/pathoftitans/comments/yr5zd1/quest_ideas/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it summarizes various quest ideas that could fit into a fictional Mushroom Kingdom setting.\",\n          \"answer\": \"Quest ideas include: eating quests, territory marking, bonded couple growth, destroying hives, mud wallowing, juvenile eating, and clearing water jams.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Quest Ideas\\n\\nExp from eating. No seriously. Herbivores should get growth from just eating... Have any of your own?\",\n          \"content\": \"The content provides a variety of quest ideas that could be adapted for a fictional setting like the Mushroom Kingdom, focusing on growth mechanics and interactions.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_eFasasuFrps52hVzRnzwk9un",
+        "name": "popular_route_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d9b8d617-eef4-41e7-ad53-f05421ed40d1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Mushroom Kingdom Quest route ideas for fictional locations, including stops from Toad Town to Peach's Castle"
+            },
+            "type": "tool_call",
+            "id": "call_b98puNGpVFuAvRGkUoyWhj7E"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_b98puNGpVFuAvRGkUoyWhj7E",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Mushroom Kingdom Quest route ideas for fictional locations, including stops from Toad Town to Peach's Castle\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 34,
+            "promptTokens": 2004,
+            "totalTokens": 2038
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 2004,
+            "completion_tokens": 34,
+            "total_tokens": 2038,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCb3l8ZqnJZBTxqCQbKCJK3153r1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The quest route from Toad Town to Peach's Castle can include iconic locations such as Bob-Omb Battlefield, Yoshi's Island, and Bowser's Castle. Each location can feature themed challenges and power-ups, enhancing the adventure as players navigate through the Mushroom Kingdom.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Toad Town\",\n        \"endingLocation\": \"Bob-Omb Battlefield\",\n        \"startingLocationDescription\": \"Begin your journey in Toad Town, a bustling hub filled with friendly Toads and shops. Look for helpful items and advice from the locals.\",\n        \"endingLocationDescription\": \"Arrive at Bob-Omb Battlefield, where you can engage in battles with Bob-Ombs and complete challenges to earn power-ups.\",\n        \"credibility\": {\n          \"source\": \"https://famiboards.com/threads/lets-speculate-about-the-next-3d-mario.10435/\",\n          \"reliability\": 7,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the journey introduces combat mechanics and exploration, setting the tone for the adventure ahead.\"\n      },\n      {\n        \"startingLocation\": \"Bob-Omb Battlefield\",\n        \"endingLocation\": \"Yoshi's Island\",\n        \"startingLocationDescription\": \"After conquering the battlefield, head towards Yoshi's Island, known for its vibrant scenery and friendly Yoshis.\",\n        \"endingLocationDescription\": \"Explore Yoshi's Island, where you can ride Yoshis and collect special fruits that grant unique abilities.\",\n        \"credibility\": {\n          \"source\": \"https://famiboards.com/threads/lets-speculate-about-the-next-3d-mario.10435/\",\n          \"reliability\": 7,\n          \"guess\": false\n        },\n        \"description\": \"This segment emphasizes platforming and puzzle-solving, utilizing Yoshi's abilities to navigate the environment.\"\n      },\n      {\n        \"startingLocation\": \"Yoshi's Island\",\n        \"endingLocation\": \"Bowser's Castle\",\n        \"startingLocationDescription\": \"Leave the lush landscapes of Yoshi's Island and prepare for a challenging trek to Bowser's Castle, filled with traps and enemies.\",\n        \"endingLocationDescription\": \"Arrive at Bowser's Castle, a foreboding fortress where the final showdown with Bowser takes place.\",\n        \"credibility\": {\n          \"source\": \"https://famiboards.com/threads/lets-speculate-about-the-next-3d-mario.10435/\",\n          \"reliability\": 7,\n          \"guess\": false\n        },\n        \"description\": \"This final leg culminates in an epic battle, testing all the skills and power-ups acquired throughout the journey.\"\n      },\n      {\n        \"startingLocation\": \"Bowser's Castle\",\n        \"endingLocation\": \"Peach's Castle\",\n        \"startingLocationDescription\": \"After defeating Bowser, make your way through the castle's exit, filled with treasures and secrets.\",\n        \"endingLocationDescription\": \"Reach Peach's Castle, where you can celebrate your victory and reunite with Princess Peach.\",\n        \"credibility\": {\n          \"source\": \"https://famiboards.com/threads/lets-speculate-about-the-next-3d-mario.10435/\",\n          \"reliability\": 7,\n          \"guess\": false\n        },\n        \"description\": \"This concluding segment wraps up the adventure, providing a sense of accomplishment and closure.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"7\",\n  \"relevantLinks\": [\n    \"https://famiboards.com/threads/lets-speculate-about-the-next-3d-mario.10435/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a relevant route idea with specific locations and themes, aligning well with the user's query about fictional locations in the Mushroom Kingdom.\",\n      \"answer\": \"Consider a route from Toad Town to Peach's Castle that includes iconic locations like Bob-Omb Battlefield, Yoshi's Island, and Bowser's Castle, with various themed challenges and power-ups along the way.\",\n      \"answerQuality\": 7,\n      \"snippet\": \"I could see them do a isekai plot, where Mario appears on a new planet or something like that, as that would give the 3D Mario team a excuse to go for a more simplistic open-world rather than a more detailed one we could get from Mushroom Kingdom.\",\n      \"content\": \"The content discusses various ideas for the next 3D Mario game, including open-world concepts and potential locations that could be included in a route from Toad Town to Peach's Castle.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_b98puNGpVFuAvRGkUoyWhj7E",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "9bb55a69-fc97-42c9-b042-251eb5a2f05d"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Toad Town to Mushroom Gorge"
+            },
+            "type": "tool_call",
+            "id": "call_ruKAvKA1Ek6E30WywqQ2dnrl"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ruKAvKA1Ek6E30WywqQ2dnrl",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Toad Town to Mushroom Gorge\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 19,
+            "promptTokens": 6814,
+            "totalTokens": 6833
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6814,
+            "completion_tokens": 19,
+            "total_tokens": 6833,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCbwS9wUV8ZlLN3zxKH5v5j5fbkC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Toad Town to Mushroom Gorge\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The query involves traveling from Toad Town to Mushroom Gorge, which is a location in the Mario franchise. The answer provided mentions Mushroom Gorge, indicating relevance to the user's query. However, it does not provide specific distance or directions.\",\n    \"finalAnswer\": {\n      \"distance\": 5,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"3\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/Minecraftbuilds/comments/x1lsys/i_built_mushroom_gorge_in_minecraft/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it mentions Mushroom Gorge, which is part of the query.\",\n        \"answer\": \"Mushroom Gorge\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"I Built Mushroom Gorge In Minecraft\",\n        \"content\": \"The content directly references Mushroom Gorge, making it relevant to the user's query about Toad Town to Mushroom Gorge.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The query involves traveling from Toad Town to Mushroom Gorge, which is a location in the Mario franchise. The answer provided mentions Mushroom Gorge, indicating relevance to the user's query. However, it does not provide specific distance or directions.\",\n      \"finalAnswer\": {\n        \"distance\": 5,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"3\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/Minecraftbuilds/comments/x1lsys/i_built_mushroom_gorge_in_minecraft/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it mentions Mushroom Gorge, which is part of the query.\",\n          \"answer\": \"Mushroom Gorge\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"I Built Mushroom Gorge In Minecraft\",\n          \"content\": \"The content directly references Mushroom Gorge, making it relevant to the user's query about Toad Town to Mushroom Gorge.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_ruKAvKA1Ek6E30WywqQ2dnrl",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "8b30d496-bdcc-4e64-a282-a28ee7667c0f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Mushroom Gorge to Fungi Forest"
+            },
+            "type": "tool_call",
+            "id": "call_b2wnOpfcFsO4xyJIjSuQqkK1"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_b2wnOpfcFsO4xyJIjSuQqkK1",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Mushroom Gorge to Fungi Forest\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 7374,
+            "totalTokens": 7395
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7374,
+            "completion_tokens": 21,
+            "total_tokens": 7395,
+            "prompt_tokens_details": {
+              "cached_tokens": 5888
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCcL3JB80uk0kCHxsau7ck0FUVbJ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "null",
+        "tool_call_id": "call_b2wnOpfcFsO4xyJIjSuQqkK1",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "32cf241c-e585-4033-8551-53985de514a5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Fungi Forest to Shroom Ridge"
+            },
+            "type": "tool_call",
+            "id": "call_q0v6L8wJlC2VXDNXwNRGWPv0"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_q0v6L8wJlC2VXDNXwNRGWPv0",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Fungi Forest to Shroom Ridge\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 6685,
+            "totalTokens": 6705
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6685,
+            "completion_tokens": 20,
+            "total_tokens": 6705,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCd0YIOk8dIIRH8BvNZgrWIGiDCk"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Fungi Forest to Shroom Ridge\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The query about Fungi Forest to Shroom Ridge does not have a direct answer in the provided snippets. However, it can be inferred that both locations are related to fungi and forest ecosystems. Fungi play crucial roles in forest ecosystems, including decomposition and nutrient exchange, which are essential for the health of these environments. The snippets provided discuss the importance of fungi in forest ecosystems and the best times for mushroom foraging, indicating a connection to the query.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"1\",\n    \"relevantLinks\": [\n      \"https://www.nps.gov/olym/learn/nature/fungi.htm\",\n      \"https://www.destinationmcdowell.com/blog/forest-treasures-foraging-finding-mushrooms-in-mcdowell-county/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the role of fungi in forest ecosystems, which is relevant to the query about Fungi Forest to Shroom Ridge.\",\n        \"answer\": \"Fungi play crucial roles in forest ecosystems, including decomposition and nutrient exchange.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"Today fungi continue to shape the park’s forest ecosystems in three main ways: 1) parasitism, 2) saprophytism (decomposition) and 3) mycorrhizal (mutualism).\",\n        \"content\": \"Fungi are essential for forest health, aiding in decomposition and forming symbiotic relationships with trees.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The query about Fungi Forest to Shroom Ridge does not have a direct answer in the provided snippets. However, it can be inferred that both locations are related to fungi and forest ecosystems. Fungi play crucial roles in forest ecosystems, including decomposition and nutrient exchange, which are essential for the health of these environments. The snippets provided discuss the importance of fungi in forest ecosystems and the best times for mushroom foraging, indicating a connection to the query.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"1\",\n      \"relevantLinks\": [\n        \"https://www.nps.gov/olym/learn/nature/fungi.htm\",\n        \"https://www.destinationmcdowell.com/blog/forest-treasures-foraging-finding-mushrooms-in-mcdowell-county/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the role of fungi in forest ecosystems, which is relevant to the query about Fungi Forest to Shroom Ridge.\",\n          \"answer\": \"Fungi play crucial roles in forest ecosystems, including decomposition and nutrient exchange.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"Today fungi continue to shape the park’s forest ecosystems in three main ways: 1) parasitism, 2) saprophytism (decomposition) and 3) mycorrhizal (mutualism).\",\n          \"content\": \"Fungi are essential for forest health, aiding in decomposition and forming symbiotic relationships with trees.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_q0v6L8wJlC2VXDNXwNRGWPv0",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "7356d1ce-7b9c-4703-9639-c99d2005061d"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Shroom Ridge to Mushroom Bridge"
+            },
+            "type": "tool_call",
+            "id": "call_Pwq7sZaFC7jnTzHozA0StYUs"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Pwq7sZaFC7jnTzHozA0StYUs",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Shroom Ridge to Mushroom Bridge\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 19,
+            "promptTokens": 5266,
+            "totalTokens": 5285
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5266,
+            "completion_tokens": 19,
+            "total_tokens": 5285,
+            "prompt_tokens_details": {
+              "cached_tokens": 3072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCdaYs3TbLOdbTHD4oAEwUVmBQIs"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Shroom Ridge to Mushroom Bridge\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The discussion around Shroom Ridge and Mushroom Bridge indicates that Mushroom Bridge was not included in Wave 4 of the game, which suggests that it may not be relevant in the current context. Additionally, Mushroom Bridge is viewed as simplistic and not fitting for the current game standards, particularly in comparison to other tracks. This context helps to understand the relationship and differences between the two tracks.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/mariokart/comments/14sydhn/it_wouldnt_make_sence_for_them_to_add_them/\",\n      \"https://www.reddit.com/r/mariokart/comments/14jj6if/mushroom_bridge_not_being_in_the_bcp/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the relationship between Shroom Ridge and Mushroom Bridge by indicating the absence of Mushroom Bridge in a specific context.\",\n        \"answer\": \"Mushroom Bridge wasn't in Wave 4.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"I think it makes a lot of sence for them to do this, since Mushroom Bridge wasn't in Wave 4\",\n        \"content\": \"The discussion suggests that adding both tracks may not make sense, but highlights that Mushroom Bridge's absence in Wave 4 could justify its inclusion.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is relevant to the question as it directly addresses the comparison between Shroom Ridge and Mushroom Bridge.\",\n        \"answer\": \"Mushroom Bridge is considered boring and simplistic, not fitting for the BCP.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Mushroom Bridge does not fit in the BCP. Why? Answer: Too simplistic. ... it works perfectly for Tour but feels like a low point for the BCP.\",\n        \"content\": \"The discussion highlights that Mushroom Bridge is viewed as a low point in the context of the BCP due to its simplicity and lack of excitement compared to other tracks.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The discussion around Shroom Ridge and Mushroom Bridge indicates that Mushroom Bridge was not included in Wave 4 of the game, which suggests that it may not be relevant in the current context. Additionally, Mushroom Bridge is viewed as simplistic and not fitting for the current game standards, particularly in comparison to other tracks. This context helps to understand the relationship and differences between the two tracks.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/mariokart/comments/14sydhn/it_wouldnt_make_sence_for_them_to_add_them/\",\n        \"https://www.reddit.com/r/mariokart/comments/14jj6if/mushroom_bridge_not_being_in_the_bcp/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the relationship between Shroom Ridge and Mushroom Bridge by indicating the absence of Mushroom Bridge in a specific context.\",\n          \"answer\": \"Mushroom Bridge wasn't in Wave 4.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"I think it makes a lot of sence for them to do this, since Mushroom Bridge wasn't in Wave 4\",\n          \"content\": \"The discussion suggests that adding both tracks may not make sense, but highlights that Mushroom Bridge's absence in Wave 4 could justify its inclusion.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is relevant to the question as it directly addresses the comparison between Shroom Ridge and Mushroom Bridge.\",\n          \"answer\": \"Mushroom Bridge is considered boring and simplistic, not fitting for the BCP.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Mushroom Bridge does not fit in the BCP. Why? Answer: Too simplistic. ... it works perfectly for Tour but feels like a low point for the BCP.\",\n          \"content\": \"The discussion highlights that Mushroom Bridge is viewed as a low point in the context of the BCP due to its simplicity and lack of excitement compared to other tracks.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_Pwq7sZaFC7jnTzHozA0StYUs",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "53705a2c-d6a4-4108-826e-6430c881222e"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Mushroom Bridge to Peach's Castle"
+            },
+            "type": "tool_call",
+            "id": "call_ZAnmJlVZAGDw4hprN5JECa8P"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ZAnmJlVZAGDw4hprN5JECa8P",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Mushroom Bridge to Peach's Castle\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 5804,
+            "totalTokens": 5825
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5804,
+            "completion_tokens": 21,
+            "total_tokens": 5825,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCeHyEsKt5C2RE0AOr65KKlbQFh3"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Mushroom Bridge to Peach's Castle\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Mushroom Bridge is a location in the Mario franchise, specifically known from the Mario Kart series. It is connected to Peach's Castle, which serves as a central hub in the Mushroom Kingdom. The bridge facilitates access between these two iconic locations, enhancing the gameplay experience by linking various tracks and areas within the game.\",\n    \"finalAnswer\": {\n      \"distance\": 0.5,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.deviantart.com/specter24/art/OPSA-Mushroom-Kingdom-Peach-s-Castle-334340065\",\n      \"https://www.reddit.com/r/mariokart/comments/13efo2f/this_trafficfilled_track_thats_coming_to_tour/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the connection between Mushroom Bridge and Peach's Castle.\",\n        \"answer\": \"A bridge connects Mushroom Bridge to Peach's Castle.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Across the pond is another bridge that exits the castle grounds and enters the road to the Shooting Star Summit.\",\n        \"content\": \"The content describes the layout of Peach's Castle and mentions a bridge that connects to the surrounding areas, including Mushroom Bridge.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Mushroom Bridge is a location in the Mario franchise, specifically known from the Mario Kart series. It is connected to Peach's Castle, which serves as a central hub in the Mushroom Kingdom. The bridge facilitates access between these two iconic locations, enhancing the gameplay experience by linking various tracks and areas within the game.\",\n      \"finalAnswer\": {\n        \"distance\": 0.5,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.deviantart.com/specter24/art/OPSA-Mushroom-Kingdom-Peach-s-Castle-334340065\",\n        \"https://www.reddit.com/r/mariokart/comments/13efo2f/this_trafficfilled_track_thats_coming_to_tour/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the connection between Mushroom Bridge and Peach's Castle.\",\n          \"answer\": \"A bridge connects Mushroom Bridge to Peach's Castle.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Across the pond is another bridge that exits the castle grounds and enters the road to the Shooting Star Summit.\",\n          \"content\": \"The content describes the layout of Peach's Castle and mentions a bridge that connects to the surrounding areas, including Mushroom Bridge.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_ZAnmJlVZAGDw4hprN5JECa8P",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3388082c-8e20-4ed4-9fc6-b59c561408cd"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Quest Ideas for Mushroom Kingdom",
+      "link": "https://www.reddit.com/r/pathoftitans/comments/yr5zd1/quest_ideas/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Mushroom Kingdom Quest\", which is fictional.\nThe  pitch for this route is \"Embark on a journey through the iconic Mushroom Kingdom, where towering fungi and vibrant landscapes create a whimsical adventure. Traverse through various regions, each with its own unique challenges and wonders.\".\nSome ideas for steps are: \n\t - Toad Town to Mushroom Gorge\n\t - Mushroom Gorge to Fungi Forest\n\t - Fungi Forest to Shroom Ridge\n\t - Shroom Ridge to Mushroom Bridge\n\t - Mushroom Bridge to Peach's Castle",
+  "itinerary": [
+    {
+      "startingLocation": "Toad Town",
+      "endingLocation": "Mushroom Gorge",
+      "startingLocationDescription": "The bustling hub of the Mushroom Kingdom, known for its friendly Toad inhabitants and vibrant market.",
+      "endingLocationDescription": "A scenic area filled with giant mushrooms and winding paths, perfect for adventurous exploration.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the large mushroom structures and follow the path leading out of Toad Town."
+    },
+    {
+      "startingLocation": "Mushroom Gorge",
+      "endingLocation": "Fungi Forest",
+      "startingLocationDescription": "A picturesque gorge with towering mushrooms and hidden paths.",
+      "endingLocationDescription": "A dense forest filled with various types of fungi, offering a mysterious and enchanting atmosphere.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the trail through the gorge, keeping an eye out for the entrance to the forest."
+    },
+    {
+      "startingLocation": "Fungi Forest",
+      "endingLocation": "Shroom Ridge",
+      "startingLocationDescription": "A lush forest teeming with life and vibrant fungi.",
+      "endingLocationDescription": "A ridge offering stunning views of the surrounding landscape, dotted with unique mushroom formations.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Navigate through the forest trails until you reach the elevated ridge."
+    },
+    {
+      "startingLocation": "Shroom Ridge",
+      "endingLocation": "Mushroom Bridge",
+      "startingLocationDescription": "A high vantage point with panoramic views of the Mushroom Kingdom.",
+      "endingLocationDescription": "A charming bridge connecting two regions, adorned with mushroom motifs.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Descend from the ridge and follow the path leading to the bridge."
+    },
+    {
+      "startingLocation": "Mushroom Bridge",
+      "endingLocation": "Peach's Castle",
+      "startingLocationDescription": "A picturesque bridge that serves as a gateway to the royal grounds.",
+      "endingLocationDescription": "The iconic castle of Princess Peach, known for its grandeur and central role in the Mushroom Kingdom.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Cross the bridge and follow the main road leading directly to the castle."
+    }
+  ],
+  "route": "Toad Town To Peach's Castle",
+  "steps": [
+    {
+      "startingLocation": "Toad Town",
+      "endingLocation": "Mushroom Gorge",
+      "distance": 5,
+      "startingLocationDescription": "The bustling hub of the Mushroom Kingdom, known for its friendly Toad inhabitants and vibrant market.",
+      "endingLocationDescription": "A scenic area filled with giant mushrooms and winding paths, perfect for adventurous exploration.",
+      "credibility": {
+        "source": "https://www.reddit.com/r/Minecraftbuilds/comments/x1lsys/i_built_mushroom_gorge_in_minecraft/",
+        "reliability": 3,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Mushroom Gorge",
+      "endingLocation": "Fungi Forest",
+      "distance": 4,
+      "startingLocationDescription": "A picturesque gorge with towering mushrooms and hidden paths.",
+      "endingLocationDescription": "A dense forest filled with various types of fungi, offering a mysterious and enchanting atmosphere.",
+      "credibility": {
+        "source": "Educated guess based on fictional setting",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Fungi Forest",
+      "endingLocation": "Shroom Ridge",
+      "distance": 3,
+      "startingLocationDescription": "A lush forest teeming with life and vibrant fungi.",
+      "endingLocationDescription": "A ridge offering stunning views of the surrounding landscape, dotted with unique mushroom formations.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Shroom Ridge",
+      "endingLocation": "Mushroom Bridge",
+      "distance": 2.5,
+      "startingLocationDescription": "A high vantage point with panoramic views of the Mushroom Kingdom.",
+      "endingLocationDescription": "A charming bridge connecting two regions, adorned with mushroom motifs.",
+      "credibility": {
+        "source": "Educated guess based on fictional context",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Mushroom Bridge",
+      "endingLocation": "Peach's Castle",
+      "distance": 0.5,
+      "startingLocationDescription": "A picturesque bridge that serves as a gateway to the royal grounds.",
+      "endingLocationDescription": "The iconic castle of Princess Peach, known for its grandeur and central role in the Mushroom Kingdom.",
+      "credibility": {
+        "source": "https://www.deviantart.com/specter24/art/OPSA-Mushroom-Kingdom-Peach-s-Castle-334340065",
+        "reliability": 5,
+        "guess": false
+      }
+    }
+  ]
+}

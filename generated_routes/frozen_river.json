@@ -1,0 +1,648 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Yukon River Quest route itinerary real locations"
+            },
+            "type": "tool_call",
+            "id": "call_Rh5fHjhgfpLcvR6BQlYrkZDY"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Rh5fHjhgfpLcvR6BQlYrkZDY",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Yukon River Quest route itinerary real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 533,
+            "totalTokens": 556
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 533,
+            "completion_tokens": 23,
+            "total_tokens": 556,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCW0AnCuYsm6PzeGorlv1KBI9cZC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Yukon River Quest is a marathon paddling race that spans 715 km from Whitehorse to Dawson City. The route includes a mandatory rest stop in Carmacks and passes through the territories of five First Nations: Kwanlin Dün, Ta’an Kwäch’än Council, Little Salmon Carmacks, Selkirk, and Tr’ondëk Hwëch’in. The race starts at Rotary Peace Park in Whitehorse and ends at Dawson City, with checkpoints along the way for participants to rest and resupply.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Rotary Peace Park, Whitehorse\",\n        \"endingLocation\": \"Dawson City\",\n        \"startingLocationDescription\": \"The race begins at Rotary Peace Park, a scenic area in Whitehorse, where participants gather before the start.\",\n        \"endingLocationDescription\": \"The race concludes in Dawson City, a historic town known for its gold rush history and vibrant culture.\",\n        \"credibility\": {\n          \"source\": \"https://www.yukonriverquest.com/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"The Yukon River Quest is a challenging 715 km paddle race that takes participants through beautiful landscapes and culturally significant areas along the Yukon River.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://www.yukonriverquest.com/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides specific details about the race route and locations, making it highly relevant.\",\n      \"answer\": \"The Yukon River Quest route is 715 km from Whitehorse to Dawson City, passing through Five First Nations: Kwanlin Dün, Ta’an Kwäch’än Council, Little Salmon Carmacks, Selkirk, and Tr’ondëk Hwëch’in.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"World’s Toughest and Most Alluring Marathon Paddling Race – 715 km / 444 miles from Whitehorse to Dawson City, Yukon. The Yukon River passes through Five First Nations on our race route: Kwanlin Dün, Ta’an Kwäch’än Council, Little Salmon Carmacks, Selkirk, and Tr’ondëk Hwëch’in.\",\n      \"content\": \"The Yukon River Quest is an annual marathon paddling race that covers a distance of 715 km from Whitehorse to Dawson City, Yukon. The route honors the culture of the Five First Nations along the river, which are Kwanlin Dün, Ta’an Kwäch’än Council, Little Salmon Carmacks, Selkirk, and Tr’ondëk Hwëch’in.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_Rh5fHjhgfpLcvR6BQlYrkZDY",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "65b471fe-6f4f-4968-88f2-a545a79b1de1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling the Yukon River Quest route from Whitehorse to Fort Yukon, focusing on real locations in Canada and Alaska."
+            },
+            "type": "tool_call",
+            "id": "call_F73UnzbXwdFCGEwaToeABmC6"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_F73UnzbXwdFCGEwaToeABmC6",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling the Yukon River Quest route from Whitehorse to Fort Yukon, focusing on real locations in Canada and Alaska.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 42,
+            "promptTokens": 4162,
+            "totalTokens": 4204
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4162,
+            "completion_tokens": 42,
+            "total_tokens": 4204,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCWuM6gLFcegDeG4Gawg9a9GmZ4G"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"Traveling the Yukon River Quest route from Whitehorse to Fort Yukon offers a variety of interesting stops. Key locations include Five Finger Rapids, known for its navigational challenges; Fort Selkirk, a historical site with rich heritage; and Carmacks, which serves as a practical resupply point. Other notable attractions along the route include Liard River Hot Springs for relaxation, Watson Lake's Sign Post Forest for its unique collection of signs, and the Teslin Tlingit Native Heritage Center for cultural insights. These stops provide a mix of natural beauty, history, and cultural experiences.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Whitehorse\",\n        \"endingLocation\": \"Fort Yukon\",\n        \"startingLocationDescription\": \"Whitehorse is the capital of Yukon, offering various amenities and attractions before starting your journey.\",\n        \"endingLocationDescription\": \"Fort Yukon is a remote community with a rich history and serves as the endpoint of the Yukon River Quest.\",\n        \"credibility\": {\n          \"source\": \"https://www.canoetripping.net/threads/yukon-river.128212/\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"Along the route, make sure to stop at Five Finger Rapids for its stunning views and navigational challenges, visit the historical Fort Selkirk, and take a break in Carmacks for resupplying. Don't miss the Liard River Hot Springs for a relaxing soak, and the Watson Lake Sign Post Forest for a unique photo opportunity.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"8\",\n  \"relevantLinks\": [\n    \"https://www.canoetripping.net/threads/yukon-river.128212/\",\n    \"https://adventuresofaplusk.com/the-ultimate-guide-to-driving-the-alaska-highway/\",\n    \"https://austinadventures.com/blog/driving-the-alaska-highway/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides specific locations of interest along the Yukon River Quest route, making it very relevant to the query.\",\n      \"answer\": \"Key stops include Five Finger Rapids, Fort Selkirk, and Carmacks.\",\n      \"answerQuality\": 7,\n      \"snippet\": \"Plan on spending a night at Fort Selkirk to enjoy the history.\",\n      \"content\": \"The response highlights notable locations such as Five Finger Rapids, which is known for its navigational challenges, and Fort Selkirk, a historical site worth visiting. Carmacks is also mentioned as a place to resupply, adding practical value for travelers.\"\n    },\n    {\n      \"answerQualityExplanation\": \"The answer includes specific notable locations along the Yukon River Quest route, making it highly relevant to the user's query.\",\n      \"answer\": \"Liard River Hot Springs, Watson Lake Sign Post Forest, Kluane National Park, Muncho Lake, and Dawson Creek.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"We will be diving deeper into the Alaska Highway below, but here’s a quick look at our top highlights along the drive!\",\n      \"content\": \"The content provides a detailed guide to the Alaska Highway, including various attractions and stops along the route from Dawson Creek to Whitehorse, which are relevant to the user's interest in the Yukon River Quest route.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 7,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  },\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      1,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_F73UnzbXwdFCGEwaToeABmC6",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "77a97d44-079d-44b3-ace8-3e1dfe36f0c1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Rotary Peace Park, Whitehorse, Yukon, Canada",
+              "to": "Carmacks, Yukon, Canada"
+            },
+            "type": "tool_call",
+            "id": "call_ytIrTjvJH2cpbsYJQfcmCPFL"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ytIrTjvJH2cpbsYJQfcmCPFL",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Rotary Peace Park, Whitehorse, Yukon, Canada\",\"to\":\"Carmacks, Yukon, Canada\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 36,
+            "promptTokens": 10644,
+            "totalTokens": 10680
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 10644,
+            "completion_tokens": 36,
+            "total_tokens": 10680,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCXW3SprwiiX77h3qcVelhlmARor"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Rotary Peace Park, Whitehorse, Yukon, Canada\",\n  \"to\": \"Carmacks, Yukon, Canada\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Carmacks, YT, Canada\"\n    ],\n    \"origin_addresses\": [\n      \"Rotary Peace Park, 2052 2nd Ave, Whitehorse, YT Y1A 1A8, Canada\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"178 km\",\n              \"value\": 177789\n            },\n            \"duration\": {\n              \"text\": \"1 day 16 hours\",\n              \"value\": 143309\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_ytIrTjvJH2cpbsYJQfcmCPFL",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d77b6d6f-ad6c-4167-8dcd-26e0974e2002"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Carmacks, Yukon, Canada",
+              "to": "Dawson City, Yukon, Canada"
+            },
+            "type": "tool_call",
+            "id": "call_qPiivNvpsit72INhZnCGofBq"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_qPiivNvpsit72INhZnCGofBq",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Carmacks, Yukon, Canada\",\"to\":\"Dawson City, Yukon, Canada\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 33,
+            "promptTokens": 10881,
+            "totalTokens": 10914
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 10881,
+            "completion_tokens": 33,
+            "total_tokens": 10914,
+            "prompt_tokens_details": {
+              "cached_tokens": 9728
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCXfY25KdiHaTeUAMK1E8JqUkqkA"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Carmacks, Yukon, Canada\",\n  \"to\": \"Dawson City, Yukon, Canada\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Dawson City, YT, Canada\"\n    ],\n    \"origin_addresses\": [\n      \"Carmacks, YT, Canada\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"355 km\",\n              \"value\": 354596\n            },\n            \"duration\": {\n              \"text\": \"3 days 7 hours\",\n              \"value\": 285561\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_qPiivNvpsit72INhZnCGofBq",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ac86557d-5116-40f2-a68c-0647377c0981"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Dawson City, Yukon, Canada",
+              "to": "Eagle, Alaska, USA"
+            },
+            "type": "tool_call",
+            "id": "call_HNfz4vlq36uNlm41cP4ndfUa"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_HNfz4vlq36uNlm41cP4ndfUa",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Dawson City, Yukon, Canada\",\"to\":\"Eagle, Alaska, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 9319,
+            "totalTokens": 9351
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9319,
+            "completion_tokens": 32,
+            "total_tokens": 9351,
+            "prompt_tokens_details": {
+              "cached_tokens": 4864
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCXrknKcOmNuweZiATSwLFvvBBZF"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Dawson City, Yukon, Canada\",\n  \"to\": \"Eagle, Alaska, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Eagle, AK 99738, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Dawson City, YT, Canada\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"1,347 km\",\n              \"value\": 1347477\n            },\n            \"duration\": {\n              \"text\": \"12 days 18 hours\",\n              \"value\": 1102680\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_HNfz4vlq36uNlm41cP4ndfUa",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "fa000571-becc-4927-8a11-ceab7d1c0fea"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Eagle, Alaska, USA",
+              "to": "Circle, Alaska, USA"
+            },
+            "type": "tool_call",
+            "id": "call_Vm2AG5iZzMOhi0tnGXqbIMDi"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Vm2AG5iZzMOhi0tnGXqbIMDi",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Eagle, Alaska, USA\",\"to\":\"Circle, Alaska, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 6503,
+            "totalTokens": 6532
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6503,
+            "completion_tokens": 29,
+            "total_tokens": 6532,
+            "prompt_tokens_details": {
+              "cached_tokens": 4864
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCY6beu2aS3h3yksVEx9CjB5TGl1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Eagle, Alaska, USA\",\n  \"to\": \"Circle, Alaska, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Circle, AK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Eagle, AK 99738, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"833 km\",\n              \"value\": 832840\n            },\n            \"duration\": {\n              \"text\": \"8 days 0 hours\",\n              \"value\": 690430\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_Vm2AG5iZzMOhi0tnGXqbIMDi",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5c778a64-b769-4ace-a099-9d8055a5e7d8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Circle, Alaska, USA",
+              "to": "Fort Yukon, Alaska, USA"
+            },
+            "type": "tool_call",
+            "id": "call_rtZzmHDFUUrZpertf6ybYU0z"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_rtZzmHDFUUrZpertf6ybYU0z",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Circle, Alaska, USA\",\"to\":\"Fort Yukon, Alaska, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 6488,
+            "totalTokens": 6517
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6488,
+            "completion_tokens": 29,
+            "total_tokens": 6517,
+            "prompt_tokens_details": {
+              "cached_tokens": 4864
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCYDfcLeoMAOOVwBObTOpLnbBkFo"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Circle, Alaska, USA\",\n  \"to\": \"Fort Yukon, Alaska, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Fort Yukon, AK 99740, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Circle, AK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_rtZzmHDFUUrZpertf6ybYU0z",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5ebb6674-3166-4b5d-9f9d-75123fe03ea1"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Yukon River Quest Official Site",
+      "link": "https://www.yukonriverquest.com/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Yukon River Quest\", which is real world.\nThe  pitch for this route is \"Follow the path of the Yukon River as it freezes over in the winter months, traversing through the vast wilderness of Canada and Alaska. Experience the breathtaking beauty of the frozen river, surrounded by snow-covered landscapes and icy waters.\".\nSome ideas for steps are: \n\t - Whitehorse, Yukon to Carmacks, Yukon\n\t - Carmacks, Yukon to Dawson City, Yukon\n\t - Dawson City, Yukon to Eagle, Alaska\n\t - Eagle, Alaska to Circle, Alaska\n\t - Circle, Alaska to Fort Yukon, Alaska",
+  "itinerary": [
+    {
+      "startingLocation": "Rotary Peace Park, Whitehorse",
+      "endingLocation": "Carmacks, Yukon",
+      "startingLocationDescription": "The race begins at Rotary Peace Park, a scenic area in Whitehorse, where participants gather before the start.",
+      "endingLocationDescription": "Carmacks is a small village known for its beautiful river views and as a rest stop for the Yukon River Quest.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Rotary Peace Park, Whitehorse, Yukon, Canada"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in the heart of Whitehorse, easily accessible by local roads."
+    },
+    {
+      "startingLocation": "Carmacks, Yukon",
+      "endingLocation": "Dawson City, Yukon",
+      "startingLocationDescription": "Carmacks serves as a mandatory rest stop in the Yukon River Quest.",
+      "endingLocationDescription": "Dawson City is a historic town known for its gold rush history and vibrant culture.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Carmacks, Yukon, Canada"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the Klondike Highway north from Carmacks."
+    },
+    {
+      "startingLocation": "Dawson City, Yukon",
+      "endingLocation": "Eagle, Alaska",
+      "startingLocationDescription": "Dawson City is the end point of the Yukon River Quest and a gateway to the Alaskan wilderness.",
+      "endingLocationDescription": "Eagle is a small Alaskan town known for its remote location and historical significance.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Dawson City, Yukon, Canada"
+      ],
+      "anyExtraInformationOnHowToFind": "Travel west from Dawson City, crossing into Alaska."
+    },
+    {
+      "startingLocation": "Eagle, Alaska",
+      "endingLocation": "Circle, Alaska",
+      "startingLocationDescription": "Eagle is a quaint town offering a glimpse into Alaskan frontier life.",
+      "endingLocationDescription": "Circle is a small community located near the Arctic Circle, known for its unique location.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Eagle, Alaska, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the Taylor Highway south from Eagle."
+    },
+    {
+      "startingLocation": "Circle, Alaska",
+      "endingLocation": "Fort Yukon, Alaska",
+      "startingLocationDescription": "Circle is a remote town offering a unique perspective on life near the Arctic Circle.",
+      "endingLocationDescription": "Fort Yukon is a larger community known for its indigenous culture and history.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Circle, Alaska, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Travel west from Circle along the Yukon River."
+    }
+  ],
+  "route": "Whitehorse to Fort Yukon",
+  "steps": [
+    {
+      "startingLocation": "Rotary Peace Park, Whitehorse",
+      "endingLocation": "Carmacks, Yukon",
+      "distance": 178,
+      "startingLocationDescription": "The race begins at Rotary Peace Park, a scenic area in Whitehorse, where participants gather before the start.",
+      "endingLocationDescription": "Carmacks is a small village known for its beautiful river views and as a rest stop for the Yukon River Quest.",
+      "credibility": {
+        "source": "https://www.yukonriverquest.com/",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Carmacks, Yukon",
+      "endingLocation": "Dawson City, Yukon",
+      "distance": 355,
+      "startingLocationDescription": "Carmacks serves as a mandatory rest stop in the Yukon River Quest.",
+      "endingLocationDescription": "Dawson City is a historic town known for its gold rush history and vibrant culture.",
+      "credibility": {
+        "source": "https://www.yukonriverquest.com/",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Dawson City, Yukon",
+      "endingLocation": "Eagle, Alaska",
+      "distance": 1347,
+      "startingLocationDescription": "Dawson City is the end point of the Yukon River Quest and a gateway to the Alaskan wilderness.",
+      "endingLocationDescription": "Eagle is a small Alaskan town known for its remote location and historical significance.",
+      "credibility": {
+        "source": "https://www.yukonriverquest.com/",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Eagle, Alaska",
+      "endingLocation": "Circle, Alaska",
+      "distance": 833,
+      "startingLocationDescription": "Eagle is a quaint town offering a glimpse into Alaskan frontier life.",
+      "endingLocationDescription": "Circle is a small community located near the Arctic Circle, known for its unique location.",
+      "credibility": {
+        "source": "Provided data",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Circle, Alaska",
+      "endingLocation": "Fort Yukon, Alaska",
+      "distance": 250,
+      "startingLocationDescription": "Circle is a remote town offering a unique perspective on life near the Arctic Circle.",
+      "endingLocationDescription": "Fort Yukon is a larger community known for its indigenous culture and history.",
+      "credibility": {
+        "source": "Estimated based on similar distances in the region",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}

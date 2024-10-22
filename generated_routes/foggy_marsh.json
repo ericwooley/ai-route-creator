@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Misty Moors of Wuthering Heights fictional route"
+            },
+            "type": "tool_call",
+            "id": "call_qGofhpHzIR9b74mBCSHelAmy"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_qGofhpHzIR9b74mBCSHelAmy",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Misty Moors of Wuthering Heights fictional route\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 535,
+            "totalTokens": 561
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 535,
+            "completion_tokens": 26,
+            "total_tokens": 561,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCOa1R7isydUUkOovdtkp0DYan9y"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The misty moors of Wuthering Heights are primarily set in the Yorkshire moors, particularly above the Brontë Parsonage in Haworth. This area is known for its rugged landscape and atmospheric conditions, which contribute to the novel's gothic and romantic themes. The moors serve as a significant backdrop for the events of the story, reflecting the tumultuous emotions of the characters.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Brontë Parsonage, Haworth\",\n        \"endingLocation\": \"Misty Moors of Wuthering Heights\",\n        \"startingLocationDescription\": \"Begin your journey at the Brontë Parsonage, where the Brontë sisters lived and wrote. Look for the historical architecture and the surrounding gardens.\",\n        \"endingLocationDescription\": \"As you ascend to the moors, you'll encounter vast, open landscapes with heather and wild grasses. The atmosphere can be misty and moody, reminiscent of the novel's themes.\",\n        \"credibility\": {\n          \"source\": \"https://helenafairfax.com/2015/07/10/from-wuthering-heights-to-the-secret-garden-literature-inspired-by-yorkshire-in-the-north-of-england/\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"This route takes you from the historical Brontë Parsonage to the iconic moors that inspired Emily Brontë's Wuthering Heights. The journey offers a glimpse into the landscape that shaped the novel's characters and themes.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://helenafairfax.com/2015/07/10/from-wuthering-heights-to-the-secret-garden-literature-inspired-by-yorkshire-in-the-north-of-england/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer directly addresses the query about the fictional route in Wuthering Heights, providing specific information about its setting.\",\n      \"answer\": \"The moors above the Brontë Parsonage in Haworth are the fictional setting for Wuthering Heights.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"The family lived in the parsonage in the village of Haworth, and the moorland above the Brontë Parsonage is said to be the setting for Wuthering Heights.\",\n      \"content\": \"The content discusses the Yorkshire moors and their literary significance, particularly in relation to the Brontë sisters and Wuthering Heights, making it highly relevant to the query.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_qGofhpHzIR9b74mBCSHelAmy",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b4f84a01-d0ef-4d69-a9c7-28dd697f5d47"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "fictional route from Thrushcross Grange to Wuthering Heights, Penistone Crags, Gimmerton Village, and The Moors in 'Wuthering Heights'"
+            },
+            "type": "tool_call",
+            "id": "call_MO6NBBxYnQ8Va1x8JBwNvlxx"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_MO6NBBxYnQ8Va1x8JBwNvlxx",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"fictional route from Thrushcross Grange to Wuthering Heights, Penistone Crags, Gimmerton Village, and The Moors in 'Wuthering Heights'\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 51,
+            "promptTokens": 4142,
+            "totalTokens": 4193
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4142,
+            "completion_tokens": 51,
+            "total_tokens": 4193,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCPTlw7wYz54Ubh0XoAxUgxnVfLk"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The fictional route from Thrushcross Grange to Wuthering Heights is approximately four miles, with significant landmarks including Penistone Crags and Gimmerton Village along the way. The moors provide a dramatic backdrop to this journey, emphasizing the isolation and wild beauty of the setting in Emily Brontë's novel.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Thrushcross Grange\",\n        \"endingLocation\": \"Wuthering Heights\",\n        \"startingLocationDescription\": \"Begin your journey at Thrushcross Grange, a serene and sheltered valley estate, known for its lush surroundings and tranquility.\",\n        \"endingLocationDescription\": \"Arrive at Wuthering Heights, perched on the hill, characterized by its rugged architecture and the wild, windswept moors that surround it.\",\n        \"credibility\": {\n          \"source\": \"https://edizionicafoscari.unive.it/media/pdf/article/annali-di-ca-foscari-serie-occidentale/2021/55/art-10.30687-AnnOc-2499-1562-2021-09-005_EyTa96l.pdf\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"The route takes you through the picturesque landscape, with Penistone Crags and Gimmerton Village as notable points along the way, enhancing the journey's connection to the novel's themes of nature and isolation.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"8\",\n  \"relevantLinks\": [\n    \"https://edizionicafoscari.unive.it/media/pdf/article/annali-di-ca-foscari-serie-occidentale/2021/55/art-10.30687-AnnOc-2499-1562-2021-09-005_EyTa96l.pdf\",\n    \"https://www.ucm.es/data/cont/docs/119-2014-04-09-Wuthering%20Heights.pdf\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a clear and concise summary of the fictional route mentioned in the query, directly addressing the user's request.\",\n      \"answer\": \"The fictional route is approximately four miles from Thrushcross Grange to Wuthering Heights, passing by Penistone Crags and Gimmerton Village, with the moors as a backdrop.\",\n      \"answerQuality\": 5,\n      \"snippet\": \"The action of the novel is entirely concentrated in one locality, as a distance of only four miles separates Thrushcross in the valley from Wuthering Heights on the hill.\",\n      \"content\": \"The content discusses the geographical context of 'Wuthering Heights', emphasizing the proximity of Thrushcross Grange to Wuthering Heights and the significance of the moors, Penistone Crags, and Gimmerton Village in the narrative.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_MO6NBBxYnQ8Va1x8JBwNvlxx",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "41769986-c3c4-448c-8ee4-9ecadbbb097a"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Thrushcross Grange to Wuthering Heights"
+            },
+            "type": "tool_call",
+            "id": "call_Hc9Eqb7CExJSWIXewBi8coC9"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Hc9Eqb7CExJSWIXewBi8coC9",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Thrushcross Grange to Wuthering Heights\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 8125,
+            "totalTokens": 8148
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8125,
+            "completion_tokens": 23,
+            "total_tokens": 8148,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCQ3HQg37c0ZQi77gdAVQqaZZway"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Thrushcross Grange to Wuthering Heights\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Thrushcross Grange and Wuthering Heights are two significant locations in Emily Brontë's novel 'Wuthering Heights.' Thrushcross Grange is the home of the Linton family and is described as a symbol of material wealth and civilization. In contrast, Wuthering Heights represents despair and wildness. The two estates are located approximately four miles apart, with Thrushcross Grange situated to the south of Wuthering Heights. This distance highlights the contrasting natures of the two locations and their respective inhabitants.\",\n    \"finalAnswer\": {\n      \"distance\": 4,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://study.com/academy/lesson/thrushcross-grange-in-wuthering-heights-description-quotes.html\",\n      \"https://wuthering-heights.co.uk/locations/thrushcross-grange\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the distance between Thrushcross Grange and Wuthering Heights, which is relevant to the query.\",\n        \"answer\": \"Thrushcross Grange is 4 miles from Wuthering Heights.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"It is a four mile (six and a half kilometer) walk to Wuthering Heights which lies to the north.\",\n        \"content\": \"The content provides details about Thrushcross Grange, its location, and its distance from Wuthering Heights, making it relevant to the user's query.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Thrushcross Grange and Wuthering Heights are two significant locations in Emily Brontë's novel 'Wuthering Heights.' Thrushcross Grange is the home of the Linton family and is described as a symbol of material wealth and civilization. In contrast, Wuthering Heights represents despair and wildness. The two estates are located approximately four miles apart, with Thrushcross Grange situated to the south of Wuthering Heights. This distance highlights the contrasting natures of the two locations and their respective inhabitants.\",\n      \"finalAnswer\": {\n        \"distance\": 4,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://study.com/academy/lesson/thrushcross-grange-in-wuthering-heights-description-quotes.html\",\n        \"https://wuthering-heights.co.uk/locations/thrushcross-grange\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the distance between Thrushcross Grange and Wuthering Heights, which is relevant to the query.\",\n          \"answer\": \"Thrushcross Grange is 4 miles from Wuthering Heights.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"It is a four mile (six and a half kilometer) walk to Wuthering Heights which lies to the north.\",\n          \"content\": \"The content provides details about Thrushcross Grange, its location, and its distance from Wuthering Heights, making it relevant to the user's query.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the contrasting representations of Thrushcross Grange and Wuthering Heights, which is central to the query.\",\n        \"answer\": \"Thrushcross Grange represents material wealth and civilization, while Wuthering Heights symbolizes despair and wildness.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Brontë used the two buildings to represent contrasting viewpoints on the purposes of wealth and education. Thrushcross Grange represents the positive aspects of wealth and education. Wuthering Heights, on the other hand, is a place of despair and wildness.\",\n        \"content\": \"In Emily Brontë's Wuthering Heights, Thrushcross Grange and Wuthering Heights serve as contrasting symbols. Thrushcross Grange represents material wealth and its positive impacts, while Wuthering Heights symbolizes despair and wildness.\",\n        \"link\": \"https://study.com/academy/lesson/contrast-between-thrushcross-grange-and-wuthering-heights.html\",\n        \"query\": \"Thrushcross Grange to Wuthering Heights\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_Hc9Eqb7CExJSWIXewBi8coC9",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "29c4fea1-a902-440d-82f0-8201aa66a462"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Wuthering Heights to Penistone Crags"
+            },
+            "type": "tool_call",
+            "id": "call_MO6NBBxYnQ8Va1x8JBwNvlxx"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_MO6NBBxYnQ8Va1x8JBwNvlxx",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Wuthering Heights to Penistone Crags\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 9191,
+            "totalTokens": 9214
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9191,
+            "completion_tokens": 23,
+            "total_tokens": 9214,
+            "prompt_tokens_details": {
+              "cached_tokens": 7296
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCQiIShP6JumNJy8Z0fD6dBBnHPO"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Wuthering Heights to Penistone Crags\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Penistone Crags is mentioned in Wuthering Heights in a dream-like context as a fairy cave, which ties into local folklore and cultural beliefs of the time. The likely inspiration for Penistone Crags is Ponden Kirk, an outcrop of gritstone rock located about one kilometer north of Top Withens, which is associated with local legends and the Fairy Cave, reflecting elements found in Wuthering Heights.\",\n    \"finalAnswer\": {\n      \"distance\": 1,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"7\",\n    \"relevantLinks\": [\n      \"https://dragoncache.blogspot.com/2014/03/elf-bolts-sex-rocks-in-wuthering-heights.html\",\n      \"https://wuthering-heights.co.uk/locations/ponden-kirk\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about Penistone Crags in relation to Wuthering Heights, providing relevant context from the text.\",\n        \"answer\": \"Penistone Crags is referenced in Wuthering Heights as a fairy cave in a dream-like context.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"This bed is the fairy cave under Penistone crags, and you are gathering elf-bolts to hurt our heifers; pretending, while I am near, that they are only locks of wool.\",\n        \"content\": \"The mention of Penistone Crags in Wuthering Heights connects to local folklore and reflects the cultural beliefs of the time, as discussed in the text.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query by identifying the connection between Wuthering Heights and Penistone Crags.\",\n        \"answer\": \"Ponden Kirk is the likely inspiration for Penistone Crags.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"The likely inspiration for Penistone Crags is Ponden Kirk...\",\n        \"content\": \"Ponden Kirk, an outcrop of gritstone rock, is located about one kilometer north of Top Withens and is associated with local legends and the Fairy Cave, which corresponds to elements in Wuthering Heights.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Penistone Crags is mentioned in Wuthering Heights in a dream-like context as a fairy cave, which ties into local folklore and cultural beliefs of the time. The likely inspiration for Penistone Crags is Ponden Kirk, an outcrop of gritstone rock located about one kilometer north of Top Withens, which is associated with local legends and the Fairy Cave, reflecting elements found in Wuthering Heights.\",\n      \"finalAnswer\": {\n        \"distance\": 1,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"7\",\n      \"relevantLinks\": [\n        \"https://dragoncache.blogspot.com/2014/03/elf-bolts-sex-rocks-in-wuthering-heights.html\",\n        \"https://wuthering-heights.co.uk/locations/ponden-kirk\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about Penistone Crags in relation to Wuthering Heights, providing relevant context from the text.\",\n          \"answer\": \"Penistone Crags is referenced in Wuthering Heights as a fairy cave in a dream-like context.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"This bed is the fairy cave under Penistone crags, and you are gathering elf-bolts to hurt our heifers; pretending, while I am near, that they are only locks of wool.\",\n          \"content\": \"The mention of Penistone Crags in Wuthering Heights connects to local folklore and reflects the cultural beliefs of the time, as discussed in the text.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query by identifying the connection between Wuthering Heights and Penistone Crags.\",\n          \"answer\": \"Ponden Kirk is the likely inspiration for Penistone Crags.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"The likely inspiration for Penistone Crags is Ponden Kirk...\",\n          \"content\": \"Ponden Kirk, an outcrop of gritstone rock, is located about one kilometer north of Top Withens and is associated with local legends and the Fairy Cave, which corresponds to elements in Wuthering Heights.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_MO6NBBxYnQ8Va1x8JBwNvlxx",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "397520c4-367a-4ed1-bea8-d15cc07b338d"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Penistone Crags to Gimmerton Village"
+            },
+            "type": "tool_call",
+            "id": "call_7H9eSm3JtH1rvU5BRnaj8vHN"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_7H9eSm3JtH1rvU5BRnaj8vHN",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Penistone Crags to Gimmerton Village\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 8542,
+            "totalTokens": 8565
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8542,
+            "completion_tokens": 23,
+            "total_tokens": 8565,
+            "prompt_tokens_details": {
+              "cached_tokens": 3712
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCRL4D6zYk2n2A0fG6lkfHAkOpdu"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Penistone Crags to Gimmerton Village\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Penistone Crags is located approximately 1.5 miles beyond Wuthering Heights, which itself is about 4 miles from Thrushcross Grange. Therefore, the total distance from Penistone Crags to Gimmerton Village, which is near these locations, is approximately 5.5 miles. This geographical context is derived from the descriptions in 'Wuthering Heights' and provides a clear understanding of the distances involved.\",\n    \"finalAnswer\": {\n      \"distance\": 5.5,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://wuthering-heights.co.uk/locations/the-moors\",\n      \"https://brontecountry.wordpress.com/excerpts-from-wuthering-heights/location-quotations/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a clear distance and context related to the query about the locations.\",\n        \"answer\": \"Penistone Crags is about 1.5 miles beyond Wuthering Heights, which is 4 miles from Thrushcross Grange, making the total distance to Gimmerton Village approximately 5.5 miles.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The Crags lie about a mile and a half beyond Mr. Heathcliff’s place, and that is four from the Grange...\",\n        \"content\": \"The content discusses the geography of the Moors, including distances between Penistone Crags, Wuthering Heights, and Gimmerton Village, providing relevant information for the user's query.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Penistone Crags is located approximately 1.5 miles beyond Wuthering Heights, which itself is about 4 miles from Thrushcross Grange. Therefore, the total distance from Penistone Crags to Gimmerton Village, which is near these locations, is approximately 5.5 miles. This geographical context is derived from the descriptions in 'Wuthering Heights' and provides a clear understanding of the distances involved.\",\n      \"finalAnswer\": {\n        \"distance\": 5.5,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://wuthering-heights.co.uk/locations/the-moors\",\n        \"https://brontecountry.wordpress.com/excerpts-from-wuthering-heights/location-quotations/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a clear distance and context related to the query about the locations.\",\n          \"answer\": \"Penistone Crags is about 1.5 miles beyond Wuthering Heights, which is 4 miles from Thrushcross Grange, making the total distance to Gimmerton Village approximately 5.5 miles.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The Crags lie about a mile and a half beyond Mr. Heathcliff’s place, and that is four from the Grange...\",\n          \"content\": \"The content discusses the geography of the Moors, including distances between Penistone Crags, Wuthering Heights, and Gimmerton Village, providing relevant information for the user's query.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_7H9eSm3JtH1rvU5BRnaj8vHN",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "9a10b91d-6059-4006-889e-cb64d4086e28"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Gimmerton Village to The Moors"
+            },
+            "type": "tool_call",
+            "id": "call_x4rP4PbsqJgWNRccdkzpz2yd"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_x4rP4PbsqJgWNRccdkzpz2yd",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Gimmerton Village to The Moors\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 7562,
+            "totalTokens": 7583
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7562,
+            "completion_tokens": 21,
+            "total_tokens": 7583,
+            "prompt_tokens_details": {
+              "cached_tokens": 3712
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCRlRVbBBE7AUEn0IdQRCk4b3Xdm"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Gimmerton Village to The Moors\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Gimmerton Village is closely associated with the moorland described in Emily Brontë's works, particularly in 'Wuthering Heights'. The moors surrounding Gimmerton are reflective of the landscapes that influenced Brontë's writing, including areas she was familiar with such as the moor around Haworth and the Shibden valley. These locations contribute to the atmospheric setting of her novels.\",\n    \"finalAnswer\": {\n      \"distance\": 5,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://wuthering-heights.co.uk/locations/the-moors\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is relevant to the question as it directly relates Gimmerton Village to The Moors, providing context from the content.\",\n        \"answer\": \"Gimmerton Valley is near Thrushcross Grange and Wuthering Heights, described in Emily Brontë's works.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Gimmerton Valley near Thrushcross Park (Click to enlarge)\",\n        \"content\": \"The moorland that Emily Brontë describes is a combination of areas that she knew such as the moor around Haworth where she spent most of her life, the Shibden valley where she worked, and the countryside near Cowan Bridge where she lived briefly as a child.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Gimmerton Village is closely associated with the moorland described in Emily Brontë's works, particularly in 'Wuthering Heights'. The moors surrounding Gimmerton are reflective of the landscapes that influenced Brontë's writing, including areas she was familiar with such as the moor around Haworth and the Shibden valley. These locations contribute to the atmospheric setting of her novels.\",\n      \"finalAnswer\": {\n        \"distance\": 5,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://wuthering-heights.co.uk/locations/the-moors\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is relevant to the question as it directly relates Gimmerton Village to The Moors, providing context from the content.\",\n          \"answer\": \"Gimmerton Valley is near Thrushcross Grange and Wuthering Heights, described in Emily Brontë's works.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Gimmerton Valley near Thrushcross Park (Click to enlarge)\",\n          \"content\": \"The moorland that Emily Brontë describes is a combination of areas that she knew such as the moor around Haworth where she spent most of her life, the Shibden valley where she worked, and the countryside near Cowan Bridge where she lived briefly as a child.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_x4rP4PbsqJgWNRccdkzpz2yd",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "c2adf529-c1ab-491f-b050-2612cbcce521"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Moors to Thrushcross Grange"
+            },
+            "type": "tool_call",
+            "id": "call_ylOl8qdPaa9ZzsTED34HLZ8t"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ylOl8qdPaa9ZzsTED34HLZ8t",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Moors to Thrushcross Grange\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 7270,
+            "totalTokens": 7292
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7270,
+            "completion_tokens": 22,
+            "total_tokens": 7292,
+            "prompt_tokens_details": {
+              "cached_tokens": 3712
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCSbOYOjYxbaXy6HyGkbkhvvtfy8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Moors to Thrushcross Grange\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Thrushcross Grange and the Moors are key settings in Emily Brontë's 'Wuthering Heights'. The Moors symbolize wildness and passion, while Thrushcross Grange represents material wealth and civilization, providing a stark contrast to the despair found at Wuthering Heights. The geographical context of the Moors, particularly around Haworth, is essential for understanding the backdrop of the story, as it influences the characters and their relationships.\",\n    \"finalAnswer\": {\n      \"distance\": 3,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://study.com/academy/lesson/contrast-between-thrushcross-grange-and-wuthering-heights.html\",\n      \"https://wuthering-heights.co.uk/locations/the-moors\",\n      \"https://en.wikipedia.org/wiki/Wuthering_Heights\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the significance of Thrushcross Grange in relation to the Moors, providing a clear contrast with Wuthering Heights.\",\n        \"answer\": \"Thrushcross Grange represents material wealth and civilization, contrasting with the despair of Wuthering Heights.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Thrushcross Grange represents material wealth and its positive impacts. [...] Wuthering Heights, on the other hand, is a place of despair and wildness.\",\n        \"content\": \"The contrast between Thrushcross Grange and Wuthering Heights highlights the themes of civilization versus wildness in the novel.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is relevant to the question as it directly addresses the geographical context of the Moors in relation to Thrushcross Grange.\",\n        \"answer\": \"The Moors are depicted as a combination of areas known to Emily Brontë, particularly around Haworth, and serve as the setting for Wuthering Heights and Thrushcross Grange.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The moorland that Emily Brontë describes is a combination of areas that she knew such as the moor around Haworth where she spent most of her life...\",\n        \"content\": \"The moors provide a rich backdrop for the events of 'Wuthering Heights', influencing the characters' lives and the story's themes.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Thrushcross Grange and the Moors are key settings in Emily Brontë's 'Wuthering Heights'. The Moors symbolize wildness and passion, while Thrushcross Grange represents material wealth and civilization, providing a stark contrast to the despair found at Wuthering Heights. The geographical context of the Moors, particularly around Haworth, is essential for understanding the backdrop of the story, as it influences the characters and their relationships.\",\n      \"finalAnswer\": {\n        \"distance\": 3,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://study.com/academy/lesson/contrast-between-thrushcross-grange-and-wuthering-heights.html\",\n        \"https://wuthering-heights.co.uk/locations/the-moors\",\n        \"https://en.wikipedia.org/wiki/Wuthering_Heights\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the significance of Thrushcross Grange in relation to the Moors, providing a clear contrast with Wuthering Heights.\",\n          \"answer\": \"Thrushcross Grange represents material wealth and civilization, contrasting with the despair of Wuthering Heights.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"Thrushcross Grange represents material wealth and its positive impacts. [...] Wuthering Heights, on the other hand, is a place of despair and wildness.\",\n          \"content\": \"The contrast between Thrushcross Grange and Wuthering Heights highlights the themes of civilization versus wildness in the novel.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is relevant to the question as it directly addresses the geographical context of the Moors in relation to Thrushcross Grange.\",\n          \"answer\": \"The Moors are depicted as a combination of areas known to Emily Brontë, particularly around Haworth, and serve as the setting for Wuthering Heights and Thrushcross Grange.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The moorland that Emily Brontë describes is a combination of areas that she knew such as the moor around Haworth where she spent most of her life...\",\n          \"content\": \"The moors provide a rich backdrop for the events of 'Wuthering Heights', influencing the characters' lives and the story's themes.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the significance of Thrushcross Grange in relation to the Moors, providing a clear contrast with Wuthering Heights.\",\n        \"answer\": \"Thrushcross Grange represents material wealth and civilization, contrasting with the despair of Wuthering Heights.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Thrushcross Grange represents material wealth and its positive impacts. [...] Wuthering Heights, on the other hand, is a place of despair and wildness.\",\n        \"link\": \"https://study.com/academy/lesson/contrast-between-thrushcross-grange-and-wuthering-heights.html\",\n        \"query\": \"The Moors to Thrushcross Grange\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_ylOl8qdPaa9ZzsTED34HLZ8t",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "c0246dce-b930-4549-b52c-3cdf507898ca"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "From Wuthering Heights to The Secret Garden: Literature Inspired by Yorkshire",
+      "link": "https://helenafairfax.com/2015/07/10/from-wuthering-heights-to-the-secret-garden-literature-inspired-by-yorkshire-in-the-north-of-england/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Misty Moors of Wuthering Heights\", which is fictional.\nThe  pitch for this route is \"Traverse the hauntingly beautiful moors from Emily Brontë's 'Wuthering Heights', where the fog rolls over the hills and the air is thick with mystery and romance.\".\nSome ideas for steps are: \n\t - Thrushcross Grange to Wuthering Heights\n\t - Wuthering Heights to Penistone Crags\n\t - Penistone Crags to Gimmerton Village\n\t - Gimmerton Village to The Moors\n\t - The Moors to Thrushcross Grange",
+  "itinerary": [
+    {
+      "startingLocation": "Thrushcross Grange",
+      "endingLocation": "Wuthering Heights",
+      "startingLocationDescription": "Begin your journey at Thrushcross Grange, a grand estate known for its elegance and refinement.",
+      "endingLocationDescription": "Travel to Wuthering Heights, a remote farmhouse with a dark and mysterious atmosphere.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for a path leading from the Grange into the moors."
+    },
+    {
+      "startingLocation": "Wuthering Heights",
+      "endingLocation": "Penistone Crags",
+      "startingLocationDescription": "Depart from the eerie Wuthering Heights.",
+      "endingLocationDescription": "Arrive at Penistone Crags, a rugged and rocky outcrop offering dramatic views.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the trail through the moors to reach the crags."
+    },
+    {
+      "startingLocation": "Penistone Crags",
+      "endingLocation": "Gimmerton Village",
+      "startingLocationDescription": "Leave the crags behind as you head towards civilization.",
+      "endingLocationDescription": "Enter Gimmerton Village, a quaint settlement with a rustic charm.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "The village is nestled in a valley beyond the crags."
+    },
+    {
+      "startingLocation": "Gimmerton Village",
+      "endingLocation": "The Moors",
+      "startingLocationDescription": "Depart from the village and head back into the wild.",
+      "endingLocationDescription": "Return to the expansive moors, where the landscape is open and untamed.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Take the path leading out of the village towards the moors."
+    },
+    {
+      "startingLocation": "The Moors",
+      "endingLocation": "Thrushcross Grange",
+      "startingLocationDescription": "Begin your final leg from the heart of the moors.",
+      "endingLocationDescription": "Conclude your journey back at Thrushcross Grange.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the trail that loops back to the Grange."
+    }
+  ],
+  "route": "The Misty Moors of Wuthering Heights",
+  "steps": [
+    {
+      "startingLocation": "Thrushcross Grange",
+      "endingLocation": "Wuthering Heights",
+      "distance": 4,
+      "startingLocationDescription": "Begin your journey at Thrushcross Grange, a grand estate known for its elegance and refinement.",
+      "endingLocationDescription": "Travel to Wuthering Heights, a remote farmhouse with a dark and mysterious atmosphere.",
+      "credibility": {
+        "source": "https://study.com/academy/lesson/thrushcross-grange-in-wuthering-heights-description-quotes.html",
+        "reliability": 5,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Wuthering Heights",
+      "endingLocation": "Penistone Crags",
+      "distance": 1,
+      "startingLocationDescription": "Depart from the eerie Wuthering Heights.",
+      "endingLocationDescription": "Arrive at Penistone Crags, a rugged and rocky outcrop offering dramatic views.",
+      "credibility": {
+        "source": "https://wuthering-heights.co.uk/locations/ponden-kirk",
+        "reliability": 7,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Penistone Crags",
+      "endingLocation": "Gimmerton Village",
+      "distance": 4.5,
+      "startingLocationDescription": "Leave the crags behind as you head towards civilization.",
+      "endingLocationDescription": "Enter Gimmerton Village, a quaint settlement with a rustic charm.",
+      "credibility": {
+        "source": "https://wuthering-heights.co.uk/locations/the-moors",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Gimmerton Village",
+      "endingLocation": "The Moors",
+      "distance": 5,
+      "startingLocationDescription": "Depart from the village and head back into the wild.",
+      "endingLocationDescription": "Return to the expansive moors, where the landscape is open and untamed.",
+      "credibility": {
+        "source": "https://wuthering-heights.co.uk/locations/the-moors",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "The Moors",
+      "endingLocation": "Thrushcross Grange",
+      "distance": 3,
+      "startingLocationDescription": "Begin your final leg from the heart of the moors.",
+      "endingLocationDescription": "Conclude your journey back at Thrushcross Grange.",
+      "credibility": {
+        "source": "https://wuthering-heights.co.uk/locations/the-moors",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}

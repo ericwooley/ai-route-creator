@@ -1,0 +1,652 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Streets of Victorian London route"
+            },
+            "type": "tool_call",
+            "id": "call_7H9eSm3JtH1rvU5BRnaj8vHN"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_7H9eSm3JtH1rvU5BRnaj8vHN",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Streets of Victorian London route\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 516,
+            "totalTokens": 536
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 516,
+            "completion_tokens": 20,
+            "total_tokens": 536,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCnkt4P1CGCRUAigMpQQSIkx6Chg"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"In Victorian London, the transport system was well-developed, with various omnibus routes connecting central areas to the suburbs. The principal routes included Bayswater, Blackwall, Bow, Brixton, Chelsea, and Clapham, among others. Additionally, the Ring Road in Hyde Park was a popular cycling route, known for its level and straight path, making it ideal for cyclists of the era.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Bayswater\",\n        \"endingLocation\": \"Blackwall\",\n        \"startingLocationDescription\": \"Bayswater is a bustling area known for its hotels and proximity to Hyde Park.\",\n        \"endingLocationDescription\": \"Blackwall is located near the River Thames, historically significant for its docks.\",\n        \"credibility\": {\n          \"source\": \"https://www.victorianlondon.org/transport/omnibus-routes.htm\",\n          \"reliability\": 5,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the route takes you from the lively Bayswater area through various neighborhoods, ending at the historic docks of Blackwall.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"5\",\n  \"relevantLinks\": [\n    \"https://www.victorianlondon.org/transport/omnibus-routes.htm\",\n    \"https://www.victorianlondon.org/transport/bicyclecraze.htm\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a concise summary of the main omnibus routes in Victorian London, directly addressing the query.\",\n      \"answer\": \"The principal omnibus routes in Victorian London include Bayswater, Blackwall, Bow, Brixton, Chelsea, Clapham, and many others, connecting central areas to suburbs.\",\n      \"answerQuality\": 5,\n      \"snippet\": \"These are the principal routes.\",\n      \"content\": \"The content details various omnibus routes in Victorian London, including their starting points and destinations, which are essential for understanding the transport system of that era.\"\n    },\n    {\n      \"answerQualityExplanation\": \"The answer directly addresses the query about a specific route in Victorian London related to cycling.\",\n      \"answer\": \"The Ring Road in Hyde Park was a popular cycling route.\",\n      \"answerQuality\": 5,\n      \"snippet\": \"The Ring Road, from the Achilles Statue, Hyde Park Corner, to the Magazine, was the selected track, - a nice level straight run of about a mile.\",\n      \"content\": \"The content discusses the popularity of cycling in Victorian London, particularly in Hyde Park, and mentions the Ring Road as a specific route used by cyclists.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  },\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      1,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_7H9eSm3JtH1rvU5BRnaj8vHN",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b466fbc2-068b-4e35-a975-f3d4333e7494"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Explore the dark and atmospheric streets of Victorian London, visiting real historical landmarks like Tower of London, St. Paul's Cathedral, Westminster Abbey, British Museum, Covent Garden, and Baker Street. Focus on real places and their historical significance."
+            },
+            "type": "tool_call",
+            "id": "call_I0XTlc9nsUUy0OdXXZNPEC57"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_I0XTlc9nsUUy0OdXXZNPEC57",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Explore the dark and atmospheric streets of Victorian London, visiting real historical landmarks like Tower of London, St. Paul's Cathedral, Westminster Abbey, British Museum, Covent Garden, and Baker Street. Focus on real places and their historical significance.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 61,
+            "promptTokens": 6367,
+            "totalTokens": 6428
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6367,
+            "completion_tokens": 61,
+            "total_tokens": 6428,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCoLUI0lDoceR22azoUpVhdSRIDW"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Explore the dark and atmospheric streets of Victorian London, visiting real historical landmarks like Tower of London, St. Paul's Cathedral, Westminster Abbey, British Museum, Covent Garden, and Baker Street. Focus on real places and their historical significance.\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"To explore the dark and atmospheric streets of Victorian London, you can visit several significant historical landmarks. The Tower of London, a historic castle and former royal palace, is known for its rich history and association with the monarchy. St. Paul's Cathedral, an iconic symbol of London, showcases stunning architecture and has been a site of many important events. Westminster Abbey, a UNESCO World Heritage site, is famous for royal ceremonies and burials. The British Museum houses a vast collection of world art and artifacts, reflecting the history of human civilization. Covent Garden, originally a fruit and vegetable market, is now a vibrant area known for shopping and entertainment. Finally, Baker Street is renowned for its connection to Sherlock Holmes, the fictional detective created by Sir Arthur Conan Doyle. Each of these locations offers a glimpse into the historical significance of Victorian London.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Tower of London\",\n          \"endingLocation\": \"St. Paul's Cathedral\",\n          \"startingLocationDescription\": \"Begin your journey at the Tower of London, where you can explore the medieval fortress and learn about its history as a royal palace and prison.\",\n          \"endingLocationDescription\": \"Proceed to St. Paul's Cathedral, an architectural masterpiece with a stunning dome, where you can admire the interior and the views from the dome.\",\n          \"credibility\": {\n            \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n            \"reliability\": 9,\n            \"guess\": false\n          },\n          \"description\": \"This leg of the journey takes you from the historic Tower of London to the magnificent St. Paul's Cathedral, highlighting the rich history and architecture of Victorian London.\"\n        },\n        {\n          \"startingLocation\": \"St. Paul's Cathedral\",\n          \"endingLocation\": \"Westminster Abbey\",\n          \"startingLocationDescription\": \"After visiting St. Paul's Cathedral, take a short walk to Westminster Abbey, a site of royal ceremonies and burials.\",\n          \"endingLocationDescription\": \"At Westminster Abbey, explore the stunning Gothic architecture and the many memorials dedicated to notable figures in British history.\",\n          \"credibility\": {\n            \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n            \"reliability\": 9,\n            \"guess\": false\n          },\n          \"description\": \"This leg connects two of London's most iconic religious sites, showcasing their historical importance.\"\n        },\n        {\n          \"startingLocation\": \"Westminster Abbey\",\n          \"endingLocation\": \"British Museum\",\n          \"startingLocationDescription\": \"From Westminster Abbey, head towards the British Museum, which is a short distance away.\",\n          \"endingLocationDescription\": \"The British Museum is home to a vast collection of art and artifacts from around the world, offering insights into human history.\",\n          \"credibility\": {\n            \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n            \"reliability\": 9,\n            \"guess\": false\n          },\n          \"description\": \"This leg of the journey takes you from a site of national significance to a museum that houses treasures from across the globe.\"\n        },\n        {\n          \"startingLocation\": \"British Museum\",\n          \"endingLocation\": \"Covent Garden\",\n          \"startingLocationDescription\": \"After exploring the British Museum, walk to Covent Garden, known for its lively atmosphere and shopping.\",\n          \"endingLocationDescription\": \"Covent Garden features street performers, shops, and restaurants, making it a great place to relax and enjoy the local culture.\",\n          \"credibility\": {\n            \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n            \"reliability\": 9,\n            \"guess\": false\n          },\n          \"description\": \"This leg transitions from a historical museum to a vibrant market area, showcasing the cultural evolution of London.\"\n        },\n        {\n          \"startingLocation\": \"Covent Garden\",\n          \"endingLocation\": \"Baker Street\",\n          \"startingLocationDescription\": \"From Covent Garden, make your way to Baker Street, famous for its connection to Sherlock Holmes.\",\n          \"endingLocationDescription\": \"At Baker Street, visit the Sherlock Holmes Museum and explore the area that inspired the legendary detective's stories.\",\n          \"credibility\": {\n            \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n            \"reliability\": 9,\n            \"guess\": false\n          },\n          \"description\": \"This final leg of the journey takes you to a location steeped in literary history, connecting the past with popular culture.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"10\",\n    \"relevantLinks\": [\n      \"https://www.bowlofchalk.net/things-are-afoot/previous/2\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query by listing the historical landmarks in Victorian London and their significance.\",\n        \"answer\": \"Visit historical landmarks like Tower of London, St. Paul's Cathedral, Westminster Abbey, British Museum, Covent Garden, and Baker Street in Victorian London for their significance.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Explore the dark and atmospheric streets of Victorian London, visiting real historical landmarks like Tower of London, St. Paul's Cathedral, Westminster Abbey, British Museum, Covent Garden, and Baker Street.\",\n        \"content\": \"The content provides a list of significant historical landmarks in Victorian London, which aligns perfectly with the user's request to explore real places and their historical significance.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"To explore the dark and atmospheric streets of Victorian London, you can visit several significant historical landmarks. The Tower of London, a historic castle and former royal palace, is known for its rich history and association with the monarchy. St. Paul's Cathedral, an iconic symbol of London, showcases stunning architecture and has been a site of many important events. Westminster Abbey, a UNESCO World Heritage site, is famous for royal ceremonies and burials. The British Museum houses a vast collection of world art and artifacts, reflecting the history of human civilization. Covent Garden, originally a fruit and vegetable market, is now a vibrant area known for shopping and entertainment. Finally, Baker Street is renowned for its connection to Sherlock Holmes, the fictional detective created by Sir Arthur Conan Doyle. Each of these locations offers a glimpse into the historical significance of Victorian London.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Tower of London\",\n            \"endingLocation\": \"St. Paul's Cathedral\",\n            \"startingLocationDescription\": \"Begin your journey at the Tower of London, where you can explore the medieval fortress and learn about its history as a royal palace and prison.\",\n            \"endingLocationDescription\": \"Proceed to St. Paul's Cathedral, an architectural masterpiece with a stunning dome, where you can admire the interior and the views from the dome.\",\n            \"credibility\": {\n              \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n              \"reliability\": 9,\n              \"guess\": false\n            },\n            \"description\": \"This leg of the journey takes you from the historic Tower of London to the magnificent St. Paul's Cathedral, highlighting the rich history and architecture of Victorian London.\"\n          },\n          {\n            \"startingLocation\": \"St. Paul's Cathedral\",\n            \"endingLocation\": \"Westminster Abbey\",\n            \"startingLocationDescription\": \"After visiting St. Paul's Cathedral, take a short walk to Westminster Abbey, a site of royal ceremonies and burials.\",\n            \"endingLocationDescription\": \"At Westminster Abbey, explore the stunning Gothic architecture and the many memorials dedicated to notable figures in British history.\",\n            \"credibility\": {\n              \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n              \"reliability\": 9,\n              \"guess\": false\n            },\n            \"description\": \"This leg connects two of London's most iconic religious sites, showcasing their historical importance.\"\n          },\n          {\n            \"startingLocation\": \"Westminster Abbey\",\n            \"endingLocation\": \"British Museum\",\n            \"startingLocationDescription\": \"From Westminster Abbey, head towards the British Museum, which is a short distance away.\",\n            \"endingLocationDescription\": \"The British Museum is home to a vast collection of art and artifacts from around the world, offering insights into human history.\",\n            \"credibility\": {\n              \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n              \"reliability\": 9,\n              \"guess\": false\n            },\n            \"description\": \"This leg of the journey takes you from a site of national significance to a museum that houses treasures from across the globe.\"\n          },\n          {\n            \"startingLocation\": \"British Museum\",\n            \"endingLocation\": \"Covent Garden\",\n            \"startingLocationDescription\": \"After exploring the British Museum, walk to Covent Garden, known for its lively atmosphere and shopping.\",\n            \"endingLocationDescription\": \"Covent Garden features street performers, shops, and restaurants, making it a great place to relax and enjoy the local culture.\",\n            \"credibility\": {\n              \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n              \"reliability\": 9,\n              \"guess\": false\n            },\n            \"description\": \"This leg transitions from a historical museum to a vibrant market area, showcasing the cultural evolution of London.\"\n          },\n          {\n            \"startingLocation\": \"Covent Garden\",\n            \"endingLocation\": \"Baker Street\",\n            \"startingLocationDescription\": \"From Covent Garden, make your way to Baker Street, famous for its connection to Sherlock Holmes.\",\n            \"endingLocationDescription\": \"At Baker Street, visit the Sherlock Holmes Museum and explore the area that inspired the legendary detective's stories.\",\n            \"credibility\": {\n              \"source\": \"https://www.bowlofchalk.net/things-are-afoot/previous/2\",\n              \"reliability\": 9,\n              \"guess\": false\n            },\n            \"description\": \"This final leg of the journey takes you to a location steeped in literary history, connecting the past with popular culture.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"10\",\n      \"relevantLinks\": [\n        \"https://www.bowlofchalk.net/things-are-afoot/previous/2\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query by listing the historical landmarks in Victorian London and their significance.\",\n          \"answer\": \"Visit historical landmarks like Tower of London, St. Paul's Cathedral, Westminster Abbey, British Museum, Covent Garden, and Baker Street in Victorian London for their significance.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Explore the dark and atmospheric streets of Victorian London, visiting real historical landmarks like Tower of London, St. Paul's Cathedral, Westminster Abbey, British Museum, Covent Garden, and Baker Street.\",\n          \"content\": \"The content provides a list of significant historical landmarks in Victorian London, which aligns perfectly with the user's request to explore real places and their historical significance.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_I0XTlc9nsUUy0OdXXZNPEC57",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b45985a1-75ad-4374-9b4d-d3e452dbf027"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Tower of London, London EC3N 4AB, UK",
+              "to": "St. Paul's Cathedral, London EC4M 8AD, UK"
+            },
+            "type": "tool_call",
+            "id": "call_uB8hwAQXqfytUtAzYNKXRLLT"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_uB8hwAQXqfytUtAzYNKXRLLT",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Tower of London, London EC3N 4AB, UK\",\"to\":\"St. Paul's Cathedral, London EC4M 8AD, UK\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 45,
+            "promptTokens": 12188,
+            "totalTokens": 12233
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 12188,
+            "completion_tokens": 45,
+            "total_tokens": 12233,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCovAxvyGnLeTWyztWJD3U7nC3oH"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Tower of London, London EC3N 4AB, UK\",\n  \"to\": \"St. Paul's Cathedral, London EC4M 8AD, UK\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"St. Paul's Churchyard, London EC4M 8AD, UK\"\n    ],\n    \"origin_addresses\": [\n      \"London EC3N 4AB, UK\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"1.7 km\",\n              \"value\": 1725\n            },\n            \"duration\": {\n              \"text\": \"25 mins\",\n              \"value\": 1497\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_uB8hwAQXqfytUtAzYNKXRLLT",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "90337270-9f87-4f8c-a2cb-802c5ea84ea6"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "St. Paul's Cathedral, London EC4M 8AD, UK",
+              "to": "Westminster Abbey, London SW1P 3PA, UK"
+            },
+            "type": "tool_call",
+            "id": "call_RtvDfBJlR6mfvt5SyJ02e5Ok"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_RtvDfBJlR6mfvt5SyJ02e5Ok",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"St. Paul's Cathedral, London EC4M 8AD, UK\",\"to\":\"Westminster Abbey, London SW1P 3PA, UK\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 45,
+            "promptTokens": 12423,
+            "totalTokens": 12468
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 12423,
+            "completion_tokens": 45,
+            "total_tokens": 12468,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCp1aqyDXqZxdBepklOXMf7ARxQd"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"St. Paul's Cathedral, London EC4M 8AD, UK\",\n  \"to\": \"Westminster Abbey, London SW1P 3PA, UK\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Dean's Yard, London SW1P 3PA, UK\"\n    ],\n    \"origin_addresses\": [\n      \"St. Paul's Churchyard, London EC4M 8AD, UK\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"3.1 km\",\n              \"value\": 3142\n            },\n            \"duration\": {\n              \"text\": \"43 mins\",\n              \"value\": 2589\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_RtvDfBJlR6mfvt5SyJ02e5Ok",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "cb63a3d8-8e3f-4e97-862e-808eef12f8cd"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Westminster Abbey, London SW1P 3PA, UK",
+              "to": "British Museum, Great Russell St, London WC1B 3DG, UK"
+            },
+            "type": "tool_call",
+            "id": "call_R4hyIIvoTS339WwATr0iWMcH"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_R4hyIIvoTS339WwATr0iWMcH",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Westminster Abbey, London SW1P 3PA, UK\",\"to\":\"British Museum, Great Russell St, London WC1B 3DG, UK\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 47,
+            "promptTokens": 9769,
+            "totalTokens": 9816
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9769,
+            "completion_tokens": 47,
+            "total_tokens": 9816,
+            "prompt_tokens_details": {
+              "cached_tokens": 5632
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCp7tgskvXiEMi6VxZWFhAHj4J5u"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Westminster Abbey, London SW1P 3PA, UK\",\n  \"to\": \"British Museum, Great Russell St, London WC1B 3DG, UK\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Great Russell St, London WC1B 3DG, UK\"\n    ],\n    \"origin_addresses\": [\n      \"Dean's Yard, London SW1P 3PA, UK\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"2.3 km\",\n              \"value\": 2332\n            },\n            \"duration\": {\n              \"text\": \"34 mins\",\n              \"value\": 2040\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_R4hyIIvoTS339WwATr0iWMcH",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "a9fb8f82-ee74-47b6-9ea1-7af3d8631e03"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "British Museum, Great Russell St, London WC1B 3DG, UK",
+              "to": "Covent Garden, London WC2E 9DD, UK"
+            },
+            "type": "tool_call",
+            "id": "call_4z2axLONDNUCWV9W9cJ9uZWc"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_4z2axLONDNUCWV9W9cJ9uZWc",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"British Museum, Great Russell St, London WC1B 3DG, UK\",\"to\":\"Covent Garden, London WC2E 9DD, UK\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 47,
+            "promptTokens": 7299,
+            "totalTokens": 7346
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7299,
+            "completion_tokens": 47,
+            "total_tokens": 7346,
+            "prompt_tokens_details": {
+              "cached_tokens": 5632
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCpDlakKIGY7nZ1OIM8GYVLwbTr5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"British Museum, Great Russell St, London WC1B 3DG, UK\",\n  \"to\": \"Covent Garden, London WC2E 9DD, UK\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Floral St, London WC2E 9DD, UK\"\n    ],\n    \"origin_addresses\": [\n      \"Great Russell St, London WC1B 3DG, UK\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"0.7 km\",\n              \"value\": 729\n            },\n            \"duration\": {\n              \"text\": \"10 mins\",\n              \"value\": 627\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_4z2axLONDNUCWV9W9cJ9uZWc",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "6b137917-2802-4f81-ab13-2c5b46609ed2"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Covent Garden, London WC2E 9DD, UK",
+              "to": "Baker Street, London, UK"
+            },
+            "type": "tool_call",
+            "id": "call_PGM1ox95WwitZ7yzSj84mB1Q"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_PGM1ox95WwitZ7yzSj84mB1Q",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Covent Garden, London WC2E 9DD, UK\",\"to\":\"Baker Street, London, UK\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 38,
+            "promptTokens": 7315,
+            "totalTokens": 7353
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7315,
+            "completion_tokens": 38,
+            "total_tokens": 7353,
+            "prompt_tokens_details": {
+              "cached_tokens": 5632
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCpJbKe3qyTF60r6jtFy34lB8Drq"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Covent Garden, London WC2E 9DD, UK\",\n  \"to\": \"Baker Street, London, UK\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Baker St, London, UK\"\n    ],\n    \"origin_addresses\": [\n      \"Floral St, London WC2E 9DD, UK\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"3.1 km\",\n              \"value\": 3145\n            },\n            \"duration\": {\n              \"text\": \"44 mins\",\n              \"value\": 2665\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_PGM1ox95WwitZ7yzSj84mB1Q",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3cc4dcff-ef77-4e13-a4c6-4e40dd8eb526"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Victorian London Transport",
+      "link": "https://www.victorianlondon.org/transport/omnibus-routes.htm"
+    },
+    {
+      "name": "Victorian London Cycling",
+      "link": "https://www.victorianlondon.org/transport/bicyclecraze.htm"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Streets of Victorian London\", which is real world.\nThe  pitch for this route is \"Explore the dark and atmospheric streets of Victorian London, where history and mystery intertwine. Walk through the fog-laden alleys and past iconic landmarks that tell tales of the past.\".\nSome ideas for steps are: \n\t - Tower of London to St. Paul's Cathedral\n\t - St. Paul's Cathedral to Westminster Abbey\n\t - Westminster Abbey to British Museum\n\t - British Museum to Covent Garden\n\t - Covent Garden to Baker Street",
+  "itinerary": [
+    {
+      "startingLocation": "Tower of London",
+      "endingLocation": "St. Paul's Cathedral",
+      "startingLocationDescription": "The Tower of London, a historic castle on the north bank of the River Thames, known for its history and the Crown Jewels.",
+      "endingLocationDescription": "St. Paul's Cathedral, an iconic symbol of London with its magnificent dome and rich history.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Tower of London, London EC3N 4AB, UK"
+      ],
+      "anyExtraInformationOnHowToFind": "Located near Tower Hill Underground Station."
+    },
+    {
+      "startingLocation": "St. Paul's Cathedral",
+      "endingLocation": "Westminster Abbey",
+      "startingLocationDescription": "St. Paul's Cathedral, a masterpiece of architecture and a place of worship.",
+      "endingLocationDescription": "Westminster Abbey, a Gothic abbey church in the City of Westminster, known for royal ceremonies.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "St. Paul's Churchyard, London EC4M 8AD, UK"
+      ],
+      "anyExtraInformationOnHowToFind": "Accessible via St. Paul's Underground Station."
+    },
+    {
+      "startingLocation": "Westminster Abbey",
+      "endingLocation": "British Museum",
+      "startingLocationDescription": "Westminster Abbey, a historic church with a rich history of coronations and burials.",
+      "endingLocationDescription": "The British Museum, home to a vast collection of world art and artifacts.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "20 Deans Yd, London SW1P 3PA, UK"
+      ],
+      "anyExtraInformationOnHowToFind": "Close to Westminster Underground Station."
+    },
+    {
+      "startingLocation": "British Museum",
+      "endingLocation": "Covent Garden",
+      "startingLocationDescription": "The British Museum, a treasure trove of history and culture.",
+      "endingLocationDescription": "Covent Garden, a vibrant area known for its shopping, street performers, and the Royal Opera House.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Great Russell St, London WC1B 3DG, UK"
+      ],
+      "anyExtraInformationOnHowToFind": "Near Tottenham Court Road Underground Station."
+    },
+    {
+      "startingLocation": "Covent Garden",
+      "endingLocation": "Baker Street",
+      "startingLocationDescription": "Covent Garden, a lively district with a rich history and cultural attractions.",
+      "endingLocationDescription": "Baker Street, famous for its connection to Sherlock Holmes and the nearby Madame Tussauds.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Covent Garden, London WC2E 9DD, UK"
+      ],
+      "anyExtraInformationOnHowToFind": "Accessible via Covent Garden Underground Station."
+    }
+  ],
+  "route": "Victorian London Walking Tour",
+  "steps": [
+    {
+      "startingLocation": "Tower of London",
+      "endingLocation": "St. Paul's Cathedral",
+      "distance": 1.7,
+      "startingLocationDescription": "The Tower of London, a historic castle on the north bank of the River Thames, known for its history and the Crown Jewels.",
+      "endingLocationDescription": "St. Paul's Cathedral, an iconic symbol of London with its magnificent dome and rich history.",
+      "credibility": {
+        "source": "https://www.bowlofchalk.net/things-are-afoot/previous/2",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "St. Paul's Cathedral",
+      "endingLocation": "Westminster Abbey",
+      "distance": 3.1,
+      "startingLocationDescription": "St. Paul's Cathedral, a masterpiece of architecture and a place of worship.",
+      "endingLocationDescription": "Westminster Abbey, a Gothic abbey church in the City of Westminster, known for royal ceremonies.",
+      "credibility": {
+        "source": "https://www.bowlofchalk.net/things-are-afoot/previous/2",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Westminster Abbey",
+      "endingLocation": "British Museum",
+      "distance": 2.3,
+      "startingLocationDescription": "Westminster Abbey, a historic church with a rich history of coronations and burials.",
+      "endingLocationDescription": "The British Museum, home to a vast collection of world art and artifacts.",
+      "credibility": {
+        "source": "https://www.bowlofchalk.net/things-are-afoot/previous/2",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "British Museum",
+      "endingLocation": "Covent Garden",
+      "distance": 0.7,
+      "startingLocationDescription": "The British Museum, a treasure trove of history and culture.",
+      "endingLocationDescription": "Covent Garden, a vibrant area known for its shopping, street performers, and the Royal Opera House.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Covent Garden",
+      "endingLocation": "Baker Street",
+      "distance": 3.1,
+      "startingLocationDescription": "Covent Garden, a lively district with a rich history and cultural attractions.",
+      "endingLocationDescription": "Baker Street, famous for its connection to Sherlock Holmes and the nearby Madame Tussauds.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}

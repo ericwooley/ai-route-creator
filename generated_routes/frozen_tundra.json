@@ -1,0 +1,1137 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Iditarod Trail itinerary real locations"
+            },
+            "type": "tool_call",
+            "id": "call_tXkZTRIohZ04fYtZe8KyCAun"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_tXkZTRIohZ04fYtZe8KyCAun",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Iditarod Trail itinerary real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 516,
+            "totalTokens": 537
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 516,
+            "completion_tokens": 21,
+            "total_tokens": 537,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCYPJ9MP43hRlUuUkCj469L0cJmZ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Iditarod Trail itinerary real locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Iditarod Trail itinerary includes key locations such as Anchorage for the ceremonial start, Willow for the actual race start, and Nome for the finish. Along the trail, there are several checkpoints including Campbell Airstrip, Yentna Station, Skwentna, and others leading up to Nome. These locations are essential for understanding the route and events of the Iditarod.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Anchorage\",\n          \"endingLocation\": \"Willow\",\n          \"startingLocationDescription\": \"Anchorage is the starting point for the ceremonial event, where fans gather to see the mushers and their teams.\",\n          \"endingLocationDescription\": \"Willow is where the official race starts, marking the transition from the ceremonial festivities to the competitive race.\",\n          \"credibility\": {\n            \"source\": \"iditarod.com\",\n            \"reliability\": 9,\n            \"guess\": false\n          },\n          \"description\": \"The race begins in Anchorage with a ceremonial start, followed by the official restart in Willow, where the real competition begins.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"9\",\n    \"relevantLinks\": [\n      \"https://iditarod.com/calendar/\",\n      \"https://iditarod.com/race-map/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a comprehensive overview of the key locations along the Iditarod Trail, including both the ceremonial and official start points.\",\n        \"answer\": \"Key locations include Anchorage for the ceremonial start and Willow for the actual race start.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The Iditarod Trail itinerary includes Anchorage for the ceremonial start and Willow for the actual race start.\",\n        \"content\": \"The Iditarod Trail itinerary includes real locations such as Anchorage, Campbell Airstrip, Willow, Yentna Station, Skwentna, Finger Lake, Rainy Pass, Rohn, Nikolai, McGrath, Takotna, Ophir, Cripple, Ruby, Galena, Nulato, Kaltag, Unalakleet, Shaktoolik, Koyuk, Elim, Golovin, White Mountain, Safety, and Nome.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Iditarod Trail itinerary includes key locations such as Anchorage for the ceremonial start, Willow for the actual race start, and Nome for the finish. Along the trail, there are several checkpoints including Campbell Airstrip, Yentna Station, Skwentna, and others leading up to Nome. These locations are essential for understanding the route and events of the Iditarod.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Anchorage\",\n            \"endingLocation\": \"Willow\",\n            \"startingLocationDescription\": \"Anchorage is the starting point for the ceremonial event, where fans gather to see the mushers and their teams.\",\n            \"endingLocationDescription\": \"Willow is where the official race starts, marking the transition from the ceremonial festivities to the competitive race.\",\n            \"credibility\": {\n              \"source\": \"iditarod.com\",\n              \"reliability\": 9,\n              \"guess\": false\n            },\n            \"description\": \"The race begins in Anchorage with a ceremonial start, followed by the official restart in Willow, where the real competition begins.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"9\",\n      \"relevantLinks\": [\n        \"https://iditarod.com/calendar/\",\n        \"https://iditarod.com/race-map/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a comprehensive overview of the key locations along the Iditarod Trail, including both the ceremonial and official start points.\",\n          \"answer\": \"Key locations include Anchorage for the ceremonial start and Willow for the actual race start.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The Iditarod Trail itinerary includes Anchorage for the ceremonial start and Willow for the actual race start.\",\n          \"content\": \"The Iditarod Trail itinerary includes real locations such as Anchorage, Campbell Airstrip, Willow, Yentna Station, Skwentna, Finger Lake, Rainy Pass, Rohn, Nikolai, McGrath, Takotna, Ophir, Cripple, Ruby, Galena, Nulato, Kaltag, Unalakleet, Shaktoolik, Koyuk, Elim, Golovin, White Mountain, Safety, and Nome.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer lists the real locations of checkpoints along the Iditarod Trail, which directly addresses the query.\",\n        \"answer\": \"Anchorage, Campbell Airstrip, Willow, Yentna Station, Skwentna, Finger Lake, Rainy Pass, Rohn, Nikolai, McGrath, Takotna, Ophir, Cripple, Ruby, Galena, Nulato, Kaltag, Unalakleet, Shaktoolik, Koyuk, Elim, Golovin, White Mountain, Safety, Nome.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Checkpoints Distance between Checkpoints* Distance from Anchorage Distance to Nome Total Distance 975 Anchorage to Campbell Airstrip 11 11 964 Willow to Yentna Station 42 53 922 Yentna Station to Skwentna 30 83 892...\",\n        \"content\": \"The Iditarod Trail itinerary includes real locations such as Anchorage, Campbell Airstrip, Willow, Yentna Station, Skwentna, Finger Lake, Rainy Pass, Rohn, Nikolai, McGrath, Takotna, Ophir, Cripple, Ruby, Galena, Nulato, Kaltag, Unalakleet, Shaktoolik, Koyuk, Elim, Golovin, White Mountain, Safety, and Nome.\",\n        \"link\": \"https://iditarod.com/race-map/\",\n        \"query\": \"Iditarod Trail itinerary real locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_tXkZTRIohZ04fYtZe8KyCAun",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "36d20358-e8a7-46ed-82f8-b05cc682ca0e"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Iditarod Trail itinerary real locations"
+            },
+            "type": "tool_call",
+            "id": "call_PDbX45mI5OTANIHXJZ1F5lBk"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_PDbX45mI5OTANIHXJZ1F5lBk",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Iditarod Trail itinerary real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 3507,
+            "totalTokens": 3528
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3507,
+            "completion_tokens": 21,
+            "total_tokens": 3528,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCZVlYgZaITS1HavdQPsyqSUDaaV"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "null",
+        "tool_call_id": "call_PDbX45mI5OTANIHXJZ1F5lBk",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "29173dd2-027b-4afc-9a4b-349d342dfca5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Anchorage, AK, USA",
+              "to": "Campbell Airstrip, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_q8DRQb3Iu67jOvoZIwlBF9S7"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_q8DRQb3Iu67jOvoZIwlBF9S7",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Anchorage, AK, USA\",\"to\":\"Campbell Airstrip, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 4280,
+            "totalTokens": 4312
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4280,
+            "completion_tokens": 32,
+            "total_tokens": 4312,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCZgADCWTsJijVvrN4fXbUHqN3dM"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Anchorage, AK, USA\",\n  \"to\": \"Campbell Airstrip, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Campbell Airstrip Road, Anchorage, AK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Anchorage, AK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"10.7 km\",\n              \"value\": 10739\n            },\n            \"duration\": {\n              \"text\": \"2 hours 29 mins\",\n              \"value\": 8910\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_q8DRQb3Iu67jOvoZIwlBF9S7",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "52312497-33e6-4b84-af8a-26411e446166"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Campbell Airstrip, AK, USA",
+              "to": "Willow, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_1LtZC56uANg2OE8nx0SAJVk4"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1LtZC56uANg2OE8nx0SAJVk4",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Campbell Airstrip, AK, USA\",\"to\":\"Willow, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 4497,
+            "totalTokens": 4529
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4497,
+            "completion_tokens": 32,
+            "total_tokens": 4529,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCZlInGQDtrbLjuarrUlvhQZmVX8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Campbell Airstrip, AK, USA\",\n  \"to\": \"Willow, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Willow, AK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Campbell Airstrip Road, Anchorage, AK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_1LtZC56uANg2OE8nx0SAJVk4",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "0062c5a9-06c3-4bf4-b991-6896015d72ff"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Willow, AK, USA",
+              "to": "Yentna Station, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Willow, AK, USA\",\"to\":\"Yentna Station, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 3191,
+            "totalTokens": 3223
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3191,
+            "completion_tokens": 32,
+            "total_tokens": 3223,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCZoVuW0gHuBSg5fX2qgoLd7xUsj"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Willow, AK, USA\",\n  \"to\": \"Yentna Station, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Mile 18 Yentna River, Willow, AK 99688, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Willow, AK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "7d4c2498-6581-4cb6-9dc1-e97d8a8e234d"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Yentna Station, AK, USA",
+              "to": "Skwentna, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_2YdsbnGCc0tkKZwWFZeuHvDb"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_2YdsbnGCc0tkKZwWFZeuHvDb",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Yentna Station, AK, USA\",\"to\":\"Skwentna, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 34,
+            "promptTokens": 3350,
+            "totalTokens": 3384
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3350,
+            "completion_tokens": 34,
+            "total_tokens": 3384,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCZsaHIrvzEb5oJtZkAaUMpOHZLD"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Yentna Station, AK, USA\",\n  \"to\": \"Skwentna, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Skwentna, AK 99667, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Mile 18 Yentna River, Willow, AK 99688, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_2YdsbnGCc0tkKZwWFZeuHvDb",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3f89bf8d-9287-4713-b78e-ffe928a596d2"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Skwentna, AK, USA",
+              "to": "Finger Lake, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_3mpllrWlEYCZapRrQpRmQC0S"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_3mpllrWlEYCZapRrQpRmQC0S",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Skwentna, AK, USA\",\"to\":\"Finger Lake, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 3317,
+            "totalTokens": 3349
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3317,
+            "completion_tokens": 32,
+            "total_tokens": 3349,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCZwEHde04VnnbEz6zyQeAHoz2gA"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Skwentna, AK, USA\",\n  \"to\": \"Finger Lake, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Finger Lakes, NY, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Skwentna, AK 99667, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_3mpllrWlEYCZapRrQpRmQC0S",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "861bc189-06b1-46e7-ab3c-8baf3db9a3db"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Finger Lake, AK, USA",
+              "to": "Rainy Pass, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_vJUps1NuhdBUE0mbPC97rl8O"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_vJUps1NuhdBUE0mbPC97rl8O",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Finger Lake, AK, USA\",\"to\":\"Rainy Pass, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 3328,
+            "totalTokens": 3359
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3328,
+            "completion_tokens": 31,
+            "total_tokens": 3359,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCa0EKFIpMeIBRwdspZlxpZzSgts"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Finger Lake, AK, USA\",\n  \"to\": \"Rainy Pass, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Rainy Pass, Alaska, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Finger Lakes, NY, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_vJUps1NuhdBUE0mbPC97rl8O",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ac2d8f77-ee88-4e4f-9cb8-3bb91355b3b4"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Rainy Pass, AK, USA",
+              "to": "Rohn, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_HgO9B5W6zMGPrtLzscDtJ2dz"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_HgO9B5W6zMGPrtLzscDtJ2dz",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Rainy Pass, AK, USA\",\"to\":\"Rohn, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 3329,
+            "totalTokens": 3360
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3329,
+            "completion_tokens": 31,
+            "total_tokens": 3360,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCa4nsUVedZW4fNdCkwDsbiSlpWi"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Rainy Pass, AK, USA\",\n  \"to\": \"Rohn, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Alaska, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Rainy Pass, Alaska, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_HgO9B5W6zMGPrtLzscDtJ2dz",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "7a426734-f9bc-4818-afe4-3b0328c3cb92"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Rohn, AK, USA",
+              "to": "Nikolai, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_1LtZC56uANg2OE8nx0SAJVk4"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1LtZC56uANg2OE8nx0SAJVk4",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Rohn, AK, USA\",\"to\":\"Nikolai, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 3319,
+            "totalTokens": 3350
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3319,
+            "completion_tokens": 31,
+            "total_tokens": 3350,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCa8EioxqjL9gfhcLRXmdUQX0ge7"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Rohn, AK, USA\",\n  \"to\": \"Nikolai, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Nikolai, AK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Alaska, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_1LtZC56uANg2OE8nx0SAJVk4",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "842ec4c8-bab3-47a6-bc87-b2ffec78e7f5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Nikolai, AK, USA",
+              "to": "McGrath, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_TlViWViZVVlZffM34Va4WKP0"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_TlViWViZVVlZffM34Va4WKP0",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Nikolai, AK, USA\",\"to\":\"McGrath, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 3322,
+            "totalTokens": 3354
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3322,
+            "completion_tokens": 32,
+            "total_tokens": 3354,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCaBiwLWDurxd6VYvi8k6w5p3Uyz"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Nikolai, AK, USA\",\n  \"to\": \"McGrath, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"McGrath, AK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Nikolai, AK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_TlViWViZVVlZffM34Va4WKP0",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "04b7c32d-b6f0-45ca-b051-d8aefc6980c9"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "McGrath, AK, USA",
+              "to": "Nome, AK, USA"
+            },
+            "type": "tool_call",
+            "id": "call_kJbwDeuxDslAXWRPnwkYr4V0"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_kJbwDeuxDslAXWRPnwkYr4V0",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"McGrath, AK, USA\",\"to\":\"Nome, AK, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 30,
+            "promptTokens": 3337,
+            "totalTokens": 3367
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3337,
+            "completion_tokens": 30,
+            "total_tokens": 3367,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-ALCaFCPVBc0t4HFEJGLqAC1B75H26"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"McGrath, AK, USA\",\n  \"to\": \"Nome, AK, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Nome, AK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"McGrath, AK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_kJbwDeuxDslAXWRPnwkYr4V0",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b45fee6b-6918-4d06-b6af-43b554b530ad"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Iditarod Official Site - Race Map",
+      "link": "https://iditarod.com/race-map/"
+    },
+    {
+      "name": "Iditarod Official Site - Calendar",
+      "link": "https://iditarod.com/calendar/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Iditarod Trail\", which is real world.\nThe  pitch for this route is \"Follow the historic Iditarod Trail, a route that spans the frozen tundra of Alaska, famous for the annual sled dog race. Experience the harsh, icy conditions and breathtaking landscapes as you traverse this legendary path.\".\nSome ideas for steps are: \n\t - Anchorage to Willow\n\t - Willow to Rainy Pass\n\t - Rainy Pass to Nikolai\n\t - Nikolai to McGrath\n\t - McGrath to Nome",
+  "itinerary": [
+    {
+      "startingLocation": "Anchorage",
+      "endingLocation": "Campbell Airstrip",
+      "startingLocationDescription": "Anchorage is the starting point for the ceremonial event, where fans gather to see the mushers and their teams.",
+      "endingLocationDescription": "Campbell Airstrip is the first checkpoint after the ceremonial start in Anchorage.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Anchorage, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located within the city limits of Anchorage."
+    },
+    {
+      "startingLocation": "Campbell Airstrip",
+      "endingLocation": "Willow",
+      "startingLocationDescription": "Campbell Airstrip serves as a transition point from the city to the wilderness.",
+      "endingLocationDescription": "Willow is where the official race starts, marking the transition from the ceremonial festivities to the competitive race.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Willow, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located north of Anchorage, accessible via the George Parks Highway."
+    },
+    {
+      "startingLocation": "Willow",
+      "endingLocation": "Yentna Station",
+      "startingLocationDescription": "Willow is the official start of the Iditarod race.",
+      "endingLocationDescription": "Yentna Station is a remote checkpoint along the trail.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Yentna Station, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Accessible only by trail, located in the wilderness."
+    },
+    {
+      "startingLocation": "Yentna Station",
+      "endingLocation": "Skwentna",
+      "startingLocationDescription": "Yentna Station is a key checkpoint early in the race.",
+      "endingLocationDescription": "Skwentna is another checkpoint along the Iditarod Trail.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Skwentna, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located further along the trail, accessible by snowmobile or dog sled."
+    },
+    {
+      "startingLocation": "Skwentna",
+      "endingLocation": "Finger Lake",
+      "startingLocationDescription": "Skwentna is a checkpoint where mushers rest and resupply.",
+      "endingLocationDescription": "Finger Lake is a scenic checkpoint along the trail.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Finger Lake, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in a remote area, accessible by trail."
+    },
+    {
+      "startingLocation": "Finger Lake",
+      "endingLocation": "Rainy Pass",
+      "startingLocationDescription": "Finger Lake is known for its beautiful surroundings.",
+      "endingLocationDescription": "Rainy Pass is a challenging checkpoint due to its elevation and weather conditions.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Rainy Pass, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in the Alaska Range, known for its difficult terrain."
+    },
+    {
+      "startingLocation": "Rainy Pass",
+      "endingLocation": "Rohn",
+      "startingLocationDescription": "Rainy Pass is a high-altitude checkpoint.",
+      "endingLocationDescription": "Rohn is a remote checkpoint known for its rugged terrain.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Rohn, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in a remote area, accessible by trail."
+    },
+    {
+      "startingLocation": "Rohn",
+      "endingLocation": "Nikolai",
+      "startingLocationDescription": "Rohn is a checkpoint where mushers often face harsh conditions.",
+      "endingLocationDescription": "Nikolai is a village checkpoint along the trail.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Nikolai, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in the interior of Alaska, accessible by trail."
+    },
+    {
+      "startingLocation": "Nikolai",
+      "endingLocation": "McGrath",
+      "startingLocationDescription": "Nikolai is a checkpoint where mushers can rest and resupply.",
+      "endingLocationDescription": "McGrath is a larger checkpoint with more facilities.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "McGrath, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located along the Kuskokwim River, accessible by trail."
+    },
+    {
+      "startingLocation": "McGrath",
+      "endingLocation": "Nome",
+      "startingLocationDescription": "McGrath is a key checkpoint with a larger population.",
+      "endingLocationDescription": "Nome is the final destination of the Iditarod Trail, where the race concludes.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Nome, AK, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Located on the western coast of Alaska, accessible by trail."
+    }
+  ],
+  "route": "The Iditarod Trail",
+  "steps": [
+    {
+      "startingLocation": "Anchorage",
+      "endingLocation": "Campbell Airstrip",
+      "distance": 10.7,
+      "startingLocationDescription": "Anchorage is the starting point for the ceremonial event, where fans gather to see the mushers and their teams.",
+      "endingLocationDescription": "Campbell Airstrip is the first checkpoint after the ceremonial start in Anchorage.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Campbell Airstrip",
+      "endingLocation": "Willow",
+      "distance": 80,
+      "startingLocationDescription": "Campbell Airstrip serves as a transition point from the city to the wilderness.",
+      "endingLocationDescription": "Willow is where the official race starts, marking the transition from the ceremonial festivities to the competitive race.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Willow",
+      "endingLocation": "Yentna Station",
+      "distance": 53,
+      "startingLocationDescription": "Willow is the official start of the Iditarod race.",
+      "endingLocationDescription": "Yentna Station is a remote checkpoint along the trail.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Yentna Station",
+      "endingLocation": "Skwentna",
+      "distance": 48,
+      "startingLocationDescription": "Yentna Station is a key checkpoint early in the race.",
+      "endingLocationDescription": "Skwentna is another checkpoint along the Iditarod Trail.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Skwentna",
+      "endingLocation": "Finger Lake",
+      "distance": 56,
+      "startingLocationDescription": "Skwentna is a checkpoint where mushers rest and resupply.",
+      "endingLocationDescription": "Finger Lake is a scenic checkpoint along the trail.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Finger Lake",
+      "endingLocation": "Rainy Pass",
+      "distance": 48,
+      "startingLocationDescription": "Finger Lake is known for its beautiful surroundings.",
+      "endingLocationDescription": "Rainy Pass is a challenging checkpoint due to its elevation and weather conditions.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Rainy Pass",
+      "endingLocation": "Rohn",
+      "distance": 56,
+      "startingLocationDescription": "Rainy Pass is a high-altitude checkpoint known for its challenging weather conditions and stunning views.",
+      "endingLocationDescription": "Rohn is a remote checkpoint known for its rugged terrain and is a critical point in the race.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Rohn",
+      "endingLocation": "Nikolai",
+      "distance": 121,
+      "startingLocationDescription": "Rohn is a remote checkpoint known for its rugged terrain.",
+      "endingLocationDescription": "Nikolai is a village checkpoint along the trail.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Nikolai",
+      "endingLocation": "McGrath",
+      "distance": 77,
+      "startingLocationDescription": "Nikolai is a checkpoint where mushers can rest and resupply.",
+      "endingLocationDescription": "McGrath is a larger checkpoint with more facilities.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "McGrath",
+      "endingLocation": "Nome",
+      "distance": 777,
+      "startingLocationDescription": "McGrath is a key checkpoint with a larger population.",
+      "endingLocationDescription": "Nome is the final destination of the Iditarod Trail, where the race concludes.",
+      "credibility": {
+        "source": "iditarod.com",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}
