@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting route ideas for The Gardens of Babylon, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_no9o6KaR6Ia8NhAEvge4QaOF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_no9o6KaR6Ia8NhAEvge4QaOF",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting route ideas for The Gardens of Babylon, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 25,
+            "promptTokens": 522,
+            "totalTokens": 547
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 522,
+            "completion_tokens": 25,
+            "total_tokens": 547,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKynn0M8073ho8F3XMl3pNERsHmQE"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The answers suggest focusing on the historical significance of Babylon, particularly the Hanging Gardens, the Code of Laws, and the city's impressive walls. These elements can serve as interesting routes for fictional locations, emphasizing the political intrigue and architectural marvels of the time.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Nebuchadnezzar's Palace\",\n        \"endingLocation\": \"Hanging Gardens\",\n        \"startingLocationDescription\": \"Begin at the grand palace of Nebuchadnezzar, where you can imagine the opulence and power of the Babylonian king.\",\n        \"endingLocationDescription\": \"Travel to the Hanging Gardens, a marvel of engineering and beauty, where you can explore the lush terraces and imagine the stories of those who walked there.\",\n        \"credibility\": {\n          \"source\": \"https://tracyhigley.com/garden-of-madness-the-story-behind-the-story/\",\n          \"reliability\": 5,\n          \"guess\": false\n        },\n        \"description\": \"This route takes you from the heart of Babylonian power to one of its most famous landmarks, allowing for exploration of both the political and architectural significance of the era.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"5\",\n  \"relevantLinks\": [\n    \"https://forum.paradoxplaza.com/forum/threads/some-lovely-custom-nations-for-you-all-courtesy-of-me.904528/\",\n    \"https://tracyhigley.com/garden-of-madness-the-story-behind-the-story/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides relevant route ideas related to the fictional setting of the Hanging Gardens of Babylon.\",\n      \"answer\": \"Explore the Hanging Gardens, view from Nebuchadnezzar's palace, and consider plots against the king.\",\n      \"answerQuality\": 5,\n      \"snippet\": \"I had studied Babylon for previous novels, and knew the city was heavily walled and thoroughly irrigated, with little but desert beyond its walls. Where, I wondered, would those in charge of the government during Nebuchadnezzar’s seven years of madness have stashed the mad king? Was it possible he was kept in the very Hanging Gardens he had built?\",\n      \"content\": \"The content discusses the author's inspiration for the story set in Babylon, particularly focusing on the Hanging Gardens and the historical context of Nebuchadnezzar's reign. It suggests exploring the Gardens and the political intrigue surrounding the king.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_no9o6KaR6Ia8NhAEvge4QaOF",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "6c17d1e7-892c-46ea-9149-604ebb1a86ac"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Fictional journey through the Hanging Gardens of Babylon, exploring lush terraces, waterfalls, exotic plants, and serene pools. Looking for interesting fictional stops along the route."
+            },
+            "type": "tool_call",
+            "id": "call_6bBsbNfIUclgXmQPTob1hJU0"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_6bBsbNfIUclgXmQPTob1hJU0",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Fictional journey through the Hanging Gardens of Babylon, exploring lush terraces, waterfalls, exotic plants, and serene pools. Looking for interesting fictional stops along the route.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 47,
+            "promptTokens": 4063,
+            "totalTokens": 4110
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4063,
+            "completion_tokens": 47,
+            "total_tokens": 4110,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyoN3Hb7L40zS4ZtKPZm7gkjQusk"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The journey through the Hanging Gardens of Babylon can be imagined as a vibrant exploration filled with enchanting stops. Key fictional stops include a waterfall grotto where singing mermaids reside, a terrace adorned with rare flowers that bloom only at night, and a serene pool where mythical creatures gather. These elements create a rich tapestry of lush terraces, exotic plants, and tranquil waters, embodying the beauty and magic of this legendary garden.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Entrance of the Hanging Gardens\",\n        \"endingLocation\": \"Waterfall Grotto\",\n        \"startingLocationDescription\": \"Begin your journey at the grand entrance, where the scent of exotic flowers fills the air and the sound of water can be heard in the distance.\",\n        \"endingLocationDescription\": \"Arrive at the Waterfall Grotto, a hidden gem where mermaids sing and the water cascades down into a sparkling pool.\",\n        \"credibility\": {\n          \"source\": \"Imaginary exploration of the Hanging Gardens\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the journey takes you through lush greenery and vibrant flowers, leading to a magical grotto filled with enchanting sounds.\"\n      },\n      {\n        \"startingLocation\": \"Waterfall Grotto\",\n        \"endingLocation\": \"Terrace of Night-Blooming Flowers\",\n        \"startingLocationDescription\": \"Leave the soothing sounds of the grotto and follow the path lined with luminescent plants that guide you to the next stop.\",\n        \"endingLocationDescription\": \"Arrive at the Terrace of Night-Blooming Flowers, where the air is filled with sweet fragrances and the flowers glow softly in the moonlight.\",\n        \"credibility\": {\n          \"source\": \"Imaginary exploration of the Hanging Gardens\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This segment showcases the beauty of nature at night, with flowers that only bloom under the stars, creating a magical atmosphere.\"\n      },\n      {\n        \"startingLocation\": \"Terrace of Night-Blooming Flowers\",\n        \"endingLocation\": \"Serene Pool\",\n        \"startingLocationDescription\": \"As you leave the terrace, the path descends gently, surrounded by the sounds of nature and the soft glow of the flowers.\",\n        \"endingLocationDescription\": \"Reach the Serene Pool, a tranquil spot where mythical creatures gather, reflecting the beauty of the gardens above.\",\n        \"credibility\": {\n          \"source\": \"Imaginary exploration of the Hanging Gardens\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This final stop offers a peaceful retreat, perfect for reflection and enjoying the magical ambiance of the gardens.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"8\",\n  \"relevantLinks\": [],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a vivid and imaginative description of fictional stops in the Hanging Gardens, aligning well with the user's request.\",\n      \"answer\": \"Fictional stops could include a waterfall grotto with singing mermaids, a terrace of rare flowers that bloom only at night, and a serene pool where mythical creatures gather.\",\n      \"answerQuality\": 8,\n      \"snippet\": \"Fictional journey through the Hanging Gardens of Babylon, exploring lush terraces, waterfalls, exotic plants, and serene pools.\",\n      \"content\": \"The content describes a fictional journey through the Hanging Gardens of Babylon, highlighting lush terraces, waterfalls, exotic plants, and serene pools, which aligns with the user's interest in interesting fictional stops along the route.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_6bBsbNfIUclgXmQPTob1hJU0",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "86f63db0-a13d-4a0c-871c-50bbe7d49057"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Entrance of the Gardens to First Terrace"
+            },
+            "type": "tool_call",
+            "id": "call_IzSwbryLxPzhoylTAcdCFHji"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_IzSwbryLxPzhoylTAcdCFHji",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Entrance of the Gardens to First Terrace\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 8417,
+            "totalTokens": 8437
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8417,
+            "completion_tokens": 20,
+            "total_tokens": 8437,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyoz3U6SG7rCmmNvzfVZi3ZhIj0I"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Entrance of the Gardens to First Terrace\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Boboli Gardens, located behind the Pitti Palace in Florence, can be accessed through several entrances, including the main entrance from the Pitti Palace and the Porta Romana. This information is crucial for visitors looking to explore the gardens, as it provides clear directions on how to enter.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.uffizi.it/en/boboli-garden\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the entrance to the gardens, providing relevant information.\",\n        \"answer\": \"The entrance to the Boboli Gardens is accessible from Pitti Palace and Porta Romana.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Access to the Boboli Gardens (and possible exit) is possible not only from the Pitti Palace and the Annalena entrance in Via Romana, but also from the gates of Forte di Belvedere and Porta Romana.\",\n        \"content\": \"The Boboli Gardens, located directly behind the Pitti Palace, can be accessed from multiple entrances, including the Pitti Palace and Porta Romana.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Boboli Gardens, located behind the Pitti Palace in Florence, can be accessed through several entrances, including the main entrance from the Pitti Palace and the Porta Romana. This information is crucial for visitors looking to explore the gardens, as it provides clear directions on how to enter.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.uffizi.it/en/boboli-garden\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the entrance to the gardens, providing relevant information.\",\n          \"answer\": \"The entrance to the Boboli Gardens is accessible from Pitti Palace and Porta Romana.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Access to the Boboli Gardens (and possible exit) is possible not only from the Pitti Palace and the Annalena entrance in Via Romana, but also from the gates of Forte di Belvedere and Porta Romana.\",\n          \"content\": \"The Boboli Gardens, located directly behind the Pitti Palace, can be accessed from multiple entrances, including the Pitti Palace and Porta Romana.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_IzSwbryLxPzhoylTAcdCFHji",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d41a131d-a377-4c04-ac18-a13fe0607ff0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "First Terrace to Waterfall Path"
+            },
+            "type": "tool_call",
+            "id": "call_79SYYnLfMcq86jXUIPMN0hFk"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_79SYYnLfMcq86jXUIPMN0hFk",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"First Terrace to Waterfall Path\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 19,
+            "promptTokens": 9104,
+            "totalTokens": 9123
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9104,
+            "completion_tokens": 19,
+            "total_tokens": 9123,
+            "prompt_tokens_details": {
+              "cached_tokens": 7552
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyq4Y7U5I65d29zY23g4jWnNHyHm"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"First Terrace to Waterfall Path\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The First Terrace to Waterfall Path is a 2.7-mile out-and-back trail located near Kitsumkaylum 1, British Columbia, leading to Exstew Falls. It is generally considered a moderately challenging route, taking an average of 1 hour and 9 minutes to complete. The trail features scenic views and is accessible year-round.\",\n    \"finalAnswer\": {\n      \"distance\": 2.7,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.alltrails.com/trail/canada/british-columbia/exstew-falls\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the first terrace to waterfall path by mentioning a specific location known for waterfalls.\",\n        \"answer\": \"The First Terrace to Waterfall Path leads to Exstew Falls, a 2.7-mile moderate trail near Kitsumkaylum 1, British Columbia.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Explore this 2.7-mile out-and-back trail near Kitsumkaylum 1, British Columbia. Generally considered a moderately challenging route, it takes an average of 1 h 9 min to complete.\",\n        \"content\": \"The First Terrace to Waterfall Path is a trail leading to Exstew Falls, which is described as a moderately challenging 2.7-mile out-and-back hike located in Kitsumkaylum 1, British Columbia. The trail features scenic views and is accessible year-round.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The First Terrace to Waterfall Path is a 2.7-mile out-and-back trail located near Kitsumkaylum 1, British Columbia, leading to Exstew Falls. It is generally considered a moderately challenging route, taking an average of 1 hour and 9 minutes to complete. The trail features scenic views and is accessible year-round.\",\n      \"finalAnswer\": {\n        \"distance\": 2.7,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.alltrails.com/trail/canada/british-columbia/exstew-falls\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the first terrace to waterfall path by mentioning a specific location known for waterfalls.\",\n          \"answer\": \"The First Terrace to Waterfall Path leads to Exstew Falls, a 2.7-mile moderate trail near Kitsumkaylum 1, British Columbia.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Explore this 2.7-mile out-and-back trail near Kitsumkaylum 1, British Columbia. Generally considered a moderately challenging route, it takes an average of 1 h 9 min to complete.\",\n          \"content\": \"The First Terrace to Waterfall Path is a trail leading to Exstew Falls, which is described as a moderately challenging 2.7-mile out-and-back hike located in Kitsumkaylum 1, British Columbia. The trail features scenic views and is accessible year-round.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_79SYYnLfMcq86jXUIPMN0hFk",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ea8d3c79-3b4d-4177-80b5-94ef66066169"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Waterfall Path to Exotic Plant Section in the fictional Hanging Gardens of Babylon"
+            },
+            "type": "tool_call",
+            "id": "call_L8OKgUTohAOyL8r4rJppnWwS"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_L8OKgUTohAOyL8r4rJppnWwS",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Waterfall Path to Exotic Plant Section in the fictional Hanging Gardens of Babylon\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 8190,
+            "totalTokens": 8218
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8190,
+            "completion_tokens": 28,
+            "total_tokens": 8218,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyqgTEPkeaNeLoFc2psn4HsWHPJM"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Waterfall Path to Exotic Plant Section in the fictional Hanging Gardens of Babylon\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The search did not yield specific information regarding a waterfall path to the Exotic Plant Section in the fictional Hanging Gardens of Babylon. The only relevant content discussed the Gardens By The Bay in Singapore, which is not directly related to the query about the Hanging Gardens.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"N/A\",\n          \"endingLocation\": \"N/A\",\n          \"startingLocationDescription\": \"No specific starting point is provided as there is no known waterfall path.\",\n          \"endingLocationDescription\": \"No specific ending point is provided as there is no known waterfall path.\",\n          \"credibility\": {\n            \"source\": \"Research on the Hanging Gardens of Babylon\",\n            \"reliability\": 1,\n            \"guess\": true\n          },\n          \"description\": \"There is no documented waterfall path leading to the Exotic Plant Section in the Hanging Gardens of Babylon.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"1\",\n    \"relevantLinks\": [],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is relevant to the question as it directly addresses the lack of information regarding a waterfall path in the provided content.\",\n        \"answer\": \"There is no specific waterfall path mentioned for the Exotic Plant Section in the Hanging Gardens of Babylon.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The most recent addition to Singapore’s collection of green space is the Gardens By The Bay, which has been marketed to the world as an eco-friendly 'super park'.\",\n        \"content\": \"The content discusses the Gardens By The Bay in Singapore, comparing it to the Hanging Gardens of Babylon, but does not provide specific details about a waterfall path to an Exotic Plant Section.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The search did not yield specific information regarding a waterfall path to the Exotic Plant Section in the fictional Hanging Gardens of Babylon. The only relevant content discussed the Gardens By The Bay in Singapore, which is not directly related to the query about the Hanging Gardens.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"N/A\",\n            \"endingLocation\": \"N/A\",\n            \"startingLocationDescription\": \"No specific starting point is provided as there is no known waterfall path.\",\n            \"endingLocationDescription\": \"No specific ending point is provided as there is no known waterfall path.\",\n            \"credibility\": {\n              \"source\": \"Research on the Hanging Gardens of Babylon\",\n              \"reliability\": 1,\n              \"guess\": true\n            },\n            \"description\": \"There is no documented waterfall path leading to the Exotic Plant Section in the Hanging Gardens of Babylon.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"1\",\n      \"relevantLinks\": [],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is relevant to the question as it directly addresses the lack of information regarding a waterfall path in the provided content.\",\n          \"answer\": \"There is no specific waterfall path mentioned for the Exotic Plant Section in the Hanging Gardens of Babylon.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The most recent addition to Singapore’s collection of green space is the Gardens By The Bay, which has been marketed to the world as an eco-friendly 'super park'.\",\n          \"content\": \"The content discusses the Gardens By The Bay in Singapore, comparing it to the Hanging Gardens of Babylon, but does not provide specific details about a waterfall path to an Exotic Plant Section.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_L8OKgUTohAOyL8r4rJppnWwS",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3848eaeb-eb28-4b04-9be4-a5ce95f04ed5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Exotic Plant Section to Serene Pool in the fictional Hanging Gardens of Babylon"
+            },
+            "type": "tool_call",
+            "id": "call_Gz3NtZnmJ0667cD0FXdKpGzk"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Gz3NtZnmJ0667cD0FXdKpGzk",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Exotic Plant Section to Serene Pool in the fictional Hanging Gardens of Babylon\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 7095,
+            "totalTokens": 7123
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7095,
+            "completion_tokens": 28,
+            "total_tokens": 7123,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyrDgzRNLBq5xELbxDRmCn9wY3Kh"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Exotic Plant Section to Serene Pool in the fictional Hanging Gardens of Babylon\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Exotic Plant Section in the fictional Hanging Gardens of Babylon is directly connected to the Serene Pool, creating a tranquil and beautiful environment. This transition emphasizes the harmony between exotic flora and serene water features, characteristic of the gardens' design.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.terrapinbrightgreen.com/reports/14-patterns/\",\n      \"https://edisciplinas.usp.br/pluginfile.php/3985648/mod_resource/content/1/LEAVES%20OF%20GRASS.pdf\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the location transition within the Hanging Gardens of Babylon.\",\n        \"answer\": \"The Exotic Plant Section leads to the Serene Pool in the Hanging Gardens of Babylon.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Exotic Plant Section to Serene Pool in the fictional Hanging Gardens of Babylon.\",\n        \"content\": \"The answer succinctly captures the essence of the user's query regarding the spatial relationship between the Exotic Plant Section and the Serene Pool in the context of the Hanging Gardens of Babylon.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Exotic Plant Section in the fictional Hanging Gardens of Babylon is directly connected to the Serene Pool, creating a tranquil and beautiful environment. This transition emphasizes the harmony between exotic flora and serene water features, characteristic of the gardens' design.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.terrapinbrightgreen.com/reports/14-patterns/\",\n        \"https://edisciplinas.usp.br/pluginfile.php/3985648/mod_resource/content/1/LEAVES%20OF%20GRASS.pdf\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the location transition within the Hanging Gardens of Babylon.\",\n          \"answer\": \"The Exotic Plant Section leads to the Serene Pool in the Hanging Gardens of Babylon.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Exotic Plant Section to Serene Pool in the fictional Hanging Gardens of Babylon.\",\n          \"content\": \"The answer succinctly captures the essence of the user's query regarding the spatial relationship between the Exotic Plant Section and the Serene Pool in the context of the Hanging Gardens of Babylon.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_Gz3NtZnmJ0667cD0FXdKpGzk",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b3c1e61d-f016-4ddc-8d18-57f659671e5a"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Serene Pool to Top Terrace Overlook in the fictional Hanging Gardens of Babylon"
+            },
+            "type": "tool_call",
+            "id": "call_d3q4HFyH5s2p1YGOIB15DvmL"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_d3q4HFyH5s2p1YGOIB15DvmL",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Serene Pool to Top Terrace Overlook in the fictional Hanging Gardens of Babylon\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 7122,
+            "totalTokens": 7150
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7122,
+            "completion_tokens": 28,
+            "total_tokens": 7150,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyrlRw3k1e6iStYqN3diHpTEQyiC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Serene Pool to Top Terrace Overlook in the fictional Hanging Gardens of Babylon\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Serene Pool is a notable feature within the fictional Hanging Gardens of Babylon, leading to the Top Terrace Overlook. This connection highlights the architectural and aesthetic design of the gardens, which are often depicted as a marvel of ancient engineering and beauty. The gardens are characterized by their lush greenery and terraced structure, making the journey from the Serene Pool to the Top Terrace Overlook a significant aspect of the overall experience of the gardens.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://edisciplinas.usp.br/pluginfile.php/3985648/mod_resource/content/1/LEAVES%20OF%20GRASS.pdf\",\n      \"http://marvin.cs.uidaho.edu/About/quotes.html\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the location within the fictional Hanging Gardens of Babylon.\",\n        \"answer\": \"The Serene Pool leads to the Top Terrace Overlook in the Hanging Gardens of Babylon.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Serene Pool to Top Terrace Overlook in the fictional Hanging Gardens of Babylon.\",\n        \"content\": \"The content provides a clear reference to the specific locations within the Hanging Gardens, making the answer relevant and accurate.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Serene Pool is a notable feature within the fictional Hanging Gardens of Babylon, leading to the Top Terrace Overlook. This connection highlights the architectural and aesthetic design of the gardens, which are often depicted as a marvel of ancient engineering and beauty. The gardens are characterized by their lush greenery and terraced structure, making the journey from the Serene Pool to the Top Terrace Overlook a significant aspect of the overall experience of the gardens.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://edisciplinas.usp.br/pluginfile.php/3985648/mod_resource/content/1/LEAVES%20OF%20GRASS.pdf\",\n        \"http://marvin.cs.uidaho.edu/About/quotes.html\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the location within the fictional Hanging Gardens of Babylon.\",\n          \"answer\": \"The Serene Pool leads to the Top Terrace Overlook in the Hanging Gardens of Babylon.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Serene Pool to Top Terrace Overlook in the fictional Hanging Gardens of Babylon.\",\n          \"content\": \"The content provides a clear reference to the specific locations within the Hanging Gardens, making the answer relevant and accurate.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_d3q4HFyH5s2p1YGOIB15DvmL",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "87dcd46e-6ae0-428c-9264-6233bde9c1fa"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Garden of Madness: The Story Behind the Story",
+      "link": "https://tracyhigley.com/garden-of-madness-the-story-behind-the-story/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Gardens of Babylon\", which is fictional.\nThe  pitch for this route is \"A journey through the legendary Hanging Gardens of Babylon, one of the Seven Wonders of the Ancient World. This route takes you through lush terraces filled with exotic plants and flowers, cascading waterfalls, and serene pools.\".\nSome ideas for steps are: \n\t - Entrance of the Gardens to First Terrace\n\t - First Terrace to Waterfall Path\n\t - Waterfall Path to Exotic Plant Section\n\t - Exotic Plant Section to Serene Pool\n\t - Serene Pool to Top Terrace Overlook",
+  "itinerary": [
+    {
+      "startingLocation": "Entrance of the Gardens",
+      "endingLocation": "First Terrace",
+      "startingLocationDescription": "Begin your journey at the grand entrance of the Hanging Gardens, where the lush greenery welcomes you.",
+      "endingLocationDescription": "Ascend to the First Terrace, where you can admire the variety of exotic plants and flowers.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the grand archway adorned with intricate carvings."
+    },
+    {
+      "startingLocation": "First Terrace",
+      "endingLocation": "Waterfall Path",
+      "startingLocationDescription": "Explore the First Terrace, filled with vibrant flora and fauna.",
+      "endingLocationDescription": "Follow the sound of cascading water to the Waterfall Path, a serene and refreshing area.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "The path is marked by the sound of water and lush greenery."
+    },
+    {
+      "startingLocation": "Waterfall Path",
+      "endingLocation": "Exotic Plant Section",
+      "startingLocationDescription": "Enjoy the tranquility of the Waterfall Path, with its soothing sounds and misty air.",
+      "endingLocationDescription": "Venture into the Exotic Plant Section, where rare and unique plants thrive.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the signpost indicating the entrance to the Exotic Plant Section."
+    },
+    {
+      "startingLocation": "Exotic Plant Section",
+      "endingLocation": "Serene Pool",
+      "startingLocationDescription": "Marvel at the diverse collection of plants in the Exotic Plant Section.",
+      "endingLocationDescription": "Proceed to the Serene Pool, a peaceful spot perfect for reflection and relaxation.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the path lined with flowering shrubs to reach the Serene Pool."
+    },
+    {
+      "startingLocation": "Serene Pool",
+      "endingLocation": "Top Terrace Overlook",
+      "startingLocationDescription": "Take a moment to relax by the Serene Pool, surrounded by nature's beauty.",
+      "endingLocationDescription": "Climb to the Top Terrace Overlook for a breathtaking view of the entire garden and the city beyond.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "The overlook is accessible via a staircase near the pool."
+    }
+  ],
+  "route": "Journey Through the Hanging Gardens of Babylon",
+  "steps": [
+    {
+      "startingLocation": "Entrance of the Gardens",
+      "endingLocation": "First Terrace",
+      "distance": 0.2,
+      "startingLocationDescription": "Begin your journey at the grand entrance of the Hanging Gardens, where the lush greenery welcomes you.",
+      "endingLocationDescription": "Ascend to the First Terrace, where you can admire the variety of exotic plants and flowers.",
+      "credibility": {
+        "source": "Imaginary exploration of the Hanging Gardens",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "First Terrace",
+      "endingLocation": "Waterfall Path",
+      "distance": 0.3,
+      "startingLocationDescription": "Explore the First Terrace, filled with vibrant flora and fauna.",
+      "endingLocationDescription": "Follow the sound of cascading water to the Waterfall Path, a serene and refreshing area.",
+      "credibility": {
+        "source": "Imaginary exploration of the Hanging Gardens",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Waterfall Path",
+      "endingLocation": "Exotic Plant Section",
+      "distance": 0.4,
+      "startingLocationDescription": "Enjoy the tranquility of the Waterfall Path, with its soothing sounds and misty air.",
+      "endingLocationDescription": "Venture into the Exotic Plant Section, where rare and unique plants thrive.",
+      "credibility": {
+        "source": "Imaginary exploration of the Hanging Gardens",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Exotic Plant Section",
+      "endingLocation": "Serene Pool",
+      "distance": 0.2,
+      "startingLocationDescription": "Marvel at the diverse collection of plants in the Exotic Plant Section.",
+      "endingLocationDescription": "Proceed to the Serene Pool, a peaceful spot perfect for reflection and relaxation.",
+      "credibility": {
+        "source": "Imaginary exploration of the Hanging Gardens",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Serene Pool",
+      "endingLocation": "Top Terrace Overlook",
+      "distance": 0.3,
+      "startingLocationDescription": "Take a moment to relax by the Serene Pool, surrounded by nature's beauty.",
+      "endingLocationDescription": "Climb to the Top Terrace Overlook for a breathtaking view of the entire garden and the city beyond.",
+      "credibility": {
+        "source": "Imaginary exploration of the Hanging Gardens",
+        "reliability": 7,
+        "guess": true
+      }
+    }
+  ]
+}

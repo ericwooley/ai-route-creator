@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "popular_route_search",
+            "args": {
+              "query": "Interesting route ideas for a journey through Westeros during the Long Night, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_Um77MR9nL98O7ThUbzDq3yNX"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Um77MR9nL98O7ThUbzDq3yNX",
+              "type": "function",
+              "function": {
+                "name": "popular_route_search",
+                "arguments": "{\"query\":\"Interesting route ideas for a journey through Westeros during the Long Night, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 529,
+            "totalTokens": 560
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 529,
+            "completion_tokens": 31,
+            "total_tokens": 560,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKysXGls2cCTpOMJL4Pa6KfNm94HW"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Interesting route ideas for a journey through Westeros during the Long Night, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"During the Long Night in Westeros, a journey can take you through some of the most iconic and eerie locations. Notable routes include the Haunted Forest, where the White Walkers roam, and the Iron Islands, known for their rugged terrain and isolation. Dorne offers a stark contrast with its warm climate and rich culture, while Winterfell stands as a bastion of hope against the encroaching darkness. The King's Road provides a path through the heart of Westeros, connecting various regions, and Dragonstone, with its volcanic landscape, adds a mystical element to the journey. These locations not only highlight the diverse geography of Westeros but also encapsulate the atmosphere of the Long Night, making for a compelling route.\",\n    \"finalAnswer\": [\n      {\n        \"routeName\": \"Journey Through the Haunted Forest and Beyond\"\n      }\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://www.captureone.com/blog/riding-thrones\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific fictional locations relevant to the query about a journey through Westeros during the Long Night.\",\n        \"answer\": \"Explore the Haunted Forest, Iron Islands, Dorne, Winterfell, King’s Road, and Dragonstone during the Long Night.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"...we could create images featuring the landscapes of the Iron Islands, Dorne, Winterfell, the King’s Road and Dragonstone...\",\n        \"content\": \"The suggested locations are iconic settings from Game of Thrones, fitting the theme of a journey through Westeros during a winter scenario.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"During the Long Night in Westeros, a journey can take you through some of the most iconic and eerie locations. Notable routes include the Haunted Forest, where the White Walkers roam, and the Iron Islands, known for their rugged terrain and isolation. Dorne offers a stark contrast with its warm climate and rich culture, while Winterfell stands as a bastion of hope against the encroaching darkness. The King's Road provides a path through the heart of Westeros, connecting various regions, and Dragonstone, with its volcanic landscape, adds a mystical element to the journey. These locations not only highlight the diverse geography of Westeros but also encapsulate the atmosphere of the Long Night, making for a compelling route.\",\n      \"finalAnswer\": [\n        {\n          \"routeName\": \"Journey Through the Haunted Forest and Beyond\"\n        }\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://www.captureone.com/blog/riding-thrones\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides specific fictional locations relevant to the query about a journey through Westeros during the Long Night.\",\n          \"answer\": \"Explore the Haunted Forest, Iron Islands, Dorne, Winterfell, King’s Road, and Dragonstone during the Long Night.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"...we could create images featuring the landscapes of the Iron Islands, Dorne, Winterfell, the King’s Road and Dragonstone...\",\n          \"content\": \"The suggested locations are iconic settings from Game of Thrones, fitting the theme of a journey through Westeros during a winter scenario.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific fictional locations relevant to the query about a journey through Westeros during the Long Night.\",\n        \"answer\": \"Explore the Haunted Forest, Iron Islands, Dorne, Winterfell, King’s Road, and Dragonstone during the Long Night.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"...we could create images featuring the landscapes of the Iron Islands, Dorne, Winterfell, the King’s Road and Dragonstone...\",\n        \"content\": \"The suggested locations are iconic settings from Game of Thrones, fitting the theme of a journey through Westeros during a winter scenario.\",\n        \"link\": \"https://www.captureone.com/blog/riding-thrones\",\n        \"query\": \"Interesting route ideas for a journey through Westeros during the Long Night, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_Um77MR9nL98O7ThUbzDq3yNX",
+        "name": "popular_route_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "00c779d2-b088-4abb-af2e-443476d14a42"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting places to stop on a journey from The Wall to Dorne during the Long Night in Westeros, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_j6y2B0SLym24unktThQjYT4n"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_j6y2B0SLym24unktThQjYT4n",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting places to stop on a journey from The Wall to Dorne during the Long Night in Westeros, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 37,
+            "promptTokens": 2658,
+            "totalTokens": 2695
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 2658,
+            "completion_tokens": 37,
+            "total_tokens": 2695,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyt9gxoyy2DzbMtsldmepZZhk4Ep"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Interesting places to stop on a journey from The Wall to Dorne during the Long Night in Westeros, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The journey from The Wall to Dorne during the Long Night in Westeros can include several interesting stops that reflect the rich lore and diverse landscapes of the realm. Notable locations include the Haunted Forest, known for its eerie atmosphere and connection to the White Walkers; the Iron Islands, with their rugged coastlines and seafaring culture; Winterfell, the ancestral home of House Stark, which offers a glimpse into the North's history; the King's Road, a vital trade route that connects the North to the South; Dragonstone, a volcanic island with a storied past; and Tollymore Forest Park, a beautiful and mysterious woodland that is steeped in legends. Each of these locations provides unique experiences and insights into the world of Westeros.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"The Wall\",\n          \"endingLocation\": \"Dorne\",\n          \"startingLocationDescription\": \"Begin your journey at The Wall, a massive ice structure that marks the northern border of the Seven Kingdoms, known for its stark beauty and the Night's Watch.\",\n          \"endingLocationDescription\": \"Arrive in Dorne, a warm and arid region known for its vibrant culture, beautiful landscapes, and the seat of House Martell.\",\n          \"credibility\": {\n            \"source\": \"https://www.captureone.com/blog/riding-thrones\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"Travel through various landscapes, including the Haunted Forest, Iron Islands, and Winterfell, before making your way down the King's Road to reach the sunny shores of Dorne.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://www.captureone.com/blog/riding-thrones\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer lists several relevant fictional locations in Westeros that could be interesting stops on the journey.\",\n        \"answer\": \"Haunted Forest, Iron Islands, Dorne, Winterfell, King's Road, Dragonstone, Tollymore Forest Park.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"From here we could create images featuring the landscapes of the Iron Islands, Dorne, Winterfell, the King’s Road and Dragonstone.\",\n        \"content\": \"The content discusses various locations in Westeros, including the Haunted Forest and others, which are relevant to the user's query about interesting places to stop during a journey from The Wall to Dorne.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The journey from The Wall to Dorne during the Long Night in Westeros can include several interesting stops that reflect the rich lore and diverse landscapes of the realm. Notable locations include the Haunted Forest, known for its eerie atmosphere and connection to the White Walkers; the Iron Islands, with their rugged coastlines and seafaring culture; Winterfell, the ancestral home of House Stark, which offers a glimpse into the North's history; the King's Road, a vital trade route that connects the North to the South; Dragonstone, a volcanic island with a storied past; and Tollymore Forest Park, a beautiful and mysterious woodland that is steeped in legends. Each of these locations provides unique experiences and insights into the world of Westeros.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"The Wall\",\n            \"endingLocation\": \"Dorne\",\n            \"startingLocationDescription\": \"Begin your journey at The Wall, a massive ice structure that marks the northern border of the Seven Kingdoms, known for its stark beauty and the Night's Watch.\",\n            \"endingLocationDescription\": \"Arrive in Dorne, a warm and arid region known for its vibrant culture, beautiful landscapes, and the seat of House Martell.\",\n            \"credibility\": {\n              \"source\": \"https://www.captureone.com/blog/riding-thrones\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"Travel through various landscapes, including the Haunted Forest, Iron Islands, and Winterfell, before making your way down the King's Road to reach the sunny shores of Dorne.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://www.captureone.com/blog/riding-thrones\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer lists several relevant fictional locations in Westeros that could be interesting stops on the journey.\",\n          \"answer\": \"Haunted Forest, Iron Islands, Dorne, Winterfell, King's Road, Dragonstone, Tollymore Forest Park.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"From here we could create images featuring the landscapes of the Iron Islands, Dorne, Winterfell, the King’s Road and Dragonstone.\",\n          \"content\": \"The content discusses various locations in Westeros, including the Haunted Forest and others, which are relevant to the user's query about interesting places to stop during a journey from The Wall to Dorne.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_j6y2B0SLym24unktThQjYT4n",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e57bd2be-b2bf-44ff-b60c-7ce76c54e558"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Wall to Winterfell, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_rxCUfg9lJhRdnO7MEZiBQZmY"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_rxCUfg9lJhRdnO7MEZiBQZmY",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Wall to Winterfell, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 5531,
+            "totalTokens": 5552
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5531,
+            "completion_tokens": 21,
+            "total_tokens": 5552,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKytedlP6mPqny7AyHASqqenwfQGK"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Wall to Winterfell, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Wall is a massive ice structure in the North of Westeros, serving as a barrier against threats from the North, including the White Walkers. It is home to the Night's Watch and separates the Seven Kingdoms from the lands Beyond the Wall. Winterfell, on the other hand, is the ancestral castle of House Stark, located in the North and serving as the political capital of the North. The two locations are significant in the A Song of Ice and Fire series, with the Wall protecting the realm from dangers that lie beyond, while Winterfell is central to the Stark family's legacy and governance.\",\n    \"finalAnswer\": {\n      \"distance\": 0,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://www.captureone.com/blog/riding-thrones\",\n      \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the Wall and Winterfell, two significant fictional locations in the A Song of Ice and Fire series.\",\n        \"answer\": \"The Wall is a massive ice structure separating the Seven Kingdoms from the lands Beyond the Wall, while Winterfell is the ancestral castle of House Stark, located in the North.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"A massive wall of ice and old magic separates the Seven Kingdoms from the largely unmapped area to the north. Winterfell is the ancestral castle of House Stark and the political capital of the North.\",\n        \"content\": \"The Wall is a huge structure of stone, ice, and magic on the northern border of the Seven Kingdoms, home to the Night's Watch. Winterfell, located at the geographical center of the North, is built over a natural hot spring and serves as the political capital of the North.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Wall is a massive ice structure in the North of Westeros, serving as a barrier against threats from the North, including the White Walkers. It is home to the Night's Watch and separates the Seven Kingdoms from the lands Beyond the Wall. Winterfell, on the other hand, is the ancestral castle of House Stark, located in the North and serving as the political capital of the North. The two locations are significant in the A Song of Ice and Fire series, with the Wall protecting the realm from dangers that lie beyond, while Winterfell is central to the Stark family's legacy and governance.\",\n      \"finalAnswer\": {\n        \"distance\": 0,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://www.captureone.com/blog/riding-thrones\",\n        \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the Wall and Winterfell, two significant fictional locations in the A Song of Ice and Fire series.\",\n          \"answer\": \"The Wall is a massive ice structure separating the Seven Kingdoms from the lands Beyond the Wall, while Winterfell is the ancestral castle of House Stark, located in the North.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"A massive wall of ice and old magic separates the Seven Kingdoms from the largely unmapped area to the north. Winterfell is the ancestral castle of House Stark and the political capital of the North.\",\n          \"content\": \"The Wall is a huge structure of stone, ice, and magic on the northern border of the Seven Kingdoms, home to the Night's Watch. Winterfell, located at the geographical center of the North, is built over a natural hot spring and serves as the political capital of the North.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the Wall and Winterfell, two significant fictional locations in the A Song of Ice and Fire series.\",\n        \"answer\": \"The Wall is a massive ice structure separating the Seven Kingdoms from the lands Beyond the Wall, while Winterfell is the ancestral castle of House Stark, located in the North.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"A massive wall of ice and old magic separates the Seven Kingdoms from the largely unmapped area to the north. Winterfell is the ancestral castle of House Stark and the political capital of the North.\",\n        \"content\": \"The Wall is a huge structure of stone, ice, and magic on the northern border of the Seven Kingdoms, home to the Night's Watch. Winterfell, located at the geographical center of the North, is built over a natural hot spring and serves as the political capital of the North.\",\n        \"link\": \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\",\n        \"query\": \"The Wall to Winterfell, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_rxCUfg9lJhRdnO7MEZiBQZmY",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d2e09286-6206-4f34-bac1-d989e7e61195"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Winterfell to The Eyrie, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_8QohfBPtckFcTHq2C5n8Jy7V"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8QohfBPtckFcTHq2C5n8Jy7V",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Winterfell to The Eyrie, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 6750,
+            "totalTokens": 6773
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6750,
+            "completion_tokens": 23,
+            "total_tokens": 6773,
+            "prompt_tokens_details": {
+              "cached_tokens": 4608
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyuQ2m32yDbfLkZzUHKVtQRtUIyQ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Winterfell to The Eyrie, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Winterfell is the ancestral castle of House Stark, located in the North, characterized by a cold, snowy climate. The Eyrie, on the other hand, is the seat of House Arryn, situated high in the mountains of the Vale. It is known for its beauty but is criticized for its vulnerability to siege and harsh winter conditions. Both locations are significant in the lore of A Song of Ice and Fire, with Winterfell serving as a political capital and The Eyrie being a notable mountain fortress.\",\n    \"finalAnswer\": {\n      \"distance\": 200,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://www.city-data.com/forum/weather/2618195-fictional-climates-game-thrones-asoiaf-universe.html\",\n      \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific details about the climates and geographical characteristics of both locations, making it highly relevant.\",\n        \"answer\": \"Winterfell is in the North with a cold, snowy climate; The Eyrie is a mountain fortress in the Vale.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Winterfell- capital of the North, in the subarctic latitudes, cold and snowy climate; The Eyrie- mountain fortress amidst thousand-foot cliffs in the highlands of the Vale.\",\n        \"content\": \"The content describes the fictional climates of various locations in the Game of Thrones universe, including Winterfell and The Eyrie, providing context about their geographical and climatic characteristics.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the fictional locations of Winterfell and The Eyrie within the context of A Song of Ice and Fire.\",\n        \"answer\": \"Winterfell is the ancestral castle of House Stark in the North, while The Eyrie is the seat of House Arryn in the Vale.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"The North consists of the northern half of the Seven Kingdoms and is ruled by House Stark from their castle at Winterfell. The Vale is under the rulership of House Arryn, one of the oldest lines of Andal nobility and formerly Kings of Mountain and Vale.\",\n        \"content\": \"Winterfell is located in the North and serves as the political capital for House Stark, while The Eyrie is a high castle in the Vale, ruled by House Arryn. Both locations are significant in the lore of A Song of Ice and Fire.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Winterfell is the ancestral castle of House Stark, located in the North, characterized by a cold, snowy climate. The Eyrie, on the other hand, is the seat of House Arryn, situated high in the mountains of the Vale. It is known for its beauty but is criticized for its vulnerability to siege and harsh winter conditions. Both locations are significant in the lore of A Song of Ice and Fire, with Winterfell serving as a political capital and The Eyrie being a notable mountain fortress.\",\n      \"finalAnswer\": {\n        \"distance\": 200,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://www.city-data.com/forum/weather/2618195-fictional-climates-game-thrones-asoiaf-universe.html\",\n        \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides specific details about the climates and geographical characteristics of both locations, making it highly relevant.\",\n          \"answer\": \"Winterfell is in the North with a cold, snowy climate; The Eyrie is a mountain fortress in the Vale.\",\n          \"answerQuality\": \"9\",\n          \"snippet\": \"Winterfell- capital of the North, in the subarctic latitudes, cold and snowy climate; The Eyrie- mountain fortress amidst thousand-foot cliffs in the highlands of the Vale.\",\n          \"content\": \"The content describes the fictional climates of various locations in the Game of Thrones universe, including Winterfell and The Eyrie, providing context about their geographical and climatic characteristics.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the fictional locations of Winterfell and The Eyrie within the context of A Song of Ice and Fire.\",\n          \"answer\": \"Winterfell is the ancestral castle of House Stark in the North, while The Eyrie is the seat of House Arryn in the Vale.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"The North consists of the northern half of the Seven Kingdoms and is ruled by House Stark from their castle at Winterfell. The Vale is under the rulership of House Arryn, one of the oldest lines of Andal nobility and formerly Kings of Mountain and Vale.\",\n          \"content\": \"Winterfell is located in the North and serves as the political capital for House Stark, while The Eyrie is a high castle in the Vale, ruled by House Arryn. Both locations are significant in the lore of A Song of Ice and Fire.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific details about the climates and geographical characteristics of both locations, making it highly relevant.\",\n        \"answer\": \"Winterfell is in the North with a cold, snowy climate; The Eyrie is a mountain fortress in the Vale.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Winterfell- capital of the North, in the subarctic latitudes, cold and snowy climate; The Eyrie- mountain fortress amidst thousand-foot cliffs in the highlands of the Vale.\",\n        \"content\": \"The content describes the fictional climates of various locations in the Game of Thrones universe, including Winterfell and The Eyrie, providing context about their geographical and climatic characteristics.\",\n        \"link\": \"https://www.city-data.com/forum/weather/2618195-fictional-climates-game-thrones-asoiaf-universe.html\",\n        \"query\": \"Winterfell to The Eyrie, fictional locations\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the fictional locations of Winterfell and The Eyrie within the context of A Song of Ice and Fire.\",\n        \"answer\": \"Winterfell is the ancestral castle of House Stark in the North, while The Eyrie is the seat of House Arryn in the Vale.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"The North consists of the northern half of the Seven Kingdoms and is ruled by House Stark from their castle at Winterfell. The Vale is under the rulership of House Arryn, one of the oldest lines of Andal nobility and formerly Kings of Mountain and Vale. Their seat, the Eyrie, is a castle high in the mountains.\",\n        \"content\": \"Winterfell is located in the North and serves as the political capital for House Stark, while The Eyrie is a high castle in the Vale, ruled by House Arryn. Both locations are significant in the lore of A Song of Ice and Fire.\",\n        \"link\": \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\",\n        \"query\": \"Winterfell to The Eyrie, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_8QohfBPtckFcTHq2C5n8Jy7V",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "50d063c4-9780-4e1a-96fd-302cbc683d34"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Eyrie to King's Landing, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_79SYYnLfMcq86jXUIPMN0hFk"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_79SYYnLfMcq86jXUIPMN0hFk",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Eyrie to King's Landing, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 7520,
+            "totalTokens": 7543
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7520,
+            "completion_tokens": 23,
+            "total_tokens": 7543,
+            "prompt_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyut3IGenVhMAgTgUGlnXqTQ2WyF"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Eyrie to King's Landing, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"In the world of 'Game of Thrones', King's Landing is primarily represented by Dubrovnik, Croatia, known for its stunning medieval architecture and coastal views. Fort Manoel in Malta also served as a filming location for certain scenes. The Eyrie, on the other hand, is depicted using the breathtaking mountain-top monasteries of Meteora, Greece, which were digitally integrated into the series to represent the Sky Cells where Tyrion Lannister was imprisoned.\",\n    \"finalAnswer\": {\n      \"distance\": 100,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"9\",\n    \"relevantLinks\": [\n      \"https://www.afar.com/magazine/game-of-thrones-destinations-you-can-visit-in-real-life\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the fictional locations of The Eyrie and King's Landing with specific real-world counterparts, making it highly relevant.\",\n        \"answer\": \"King's Landing is represented by Dubrovnik, Croatia, and Fort Manoel, Malta. The Eyrie is depicted using Meteora, Greece.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Game of Thrones in-universe location: King’s Landing Dubrovnik’s Old Town first appeared on screen as 'King’s Landing' during the second season of Game of Thrones. ... Game of Thrones in-universe location: The Eyrie in the Vale of Arryn The GOT cast and crew didn’t actually shoot scenes at this UNESCO World Heritage site. However, Meteora’s famed mountain-top monasteries were digitally mastered into the series’s first season as a backdrop for the Sky Cells where Tyrion Lannister was imprisoned.\",\n        \"content\": \"King's Landing is primarily represented by Dubrovnik, Croatia, and Fort Manoel in Malta, while The Eyrie is depicted using the mountain-top monasteries of Meteora, Greece, which were digitally added to the series.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"In the world of 'Game of Thrones', King's Landing is primarily represented by Dubrovnik, Croatia, known for its stunning medieval architecture and coastal views. Fort Manoel in Malta also served as a filming location for certain scenes. The Eyrie, on the other hand, is depicted using the breathtaking mountain-top monasteries of Meteora, Greece, which were digitally integrated into the series to represent the Sky Cells where Tyrion Lannister was imprisoned.\",\n      \"finalAnswer\": {\n        \"distance\": 100,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"9\",\n      \"relevantLinks\": [\n        \"https://www.afar.com/magazine/game-of-thrones-destinations-you-can-visit-in-real-life\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the fictional locations of The Eyrie and King's Landing with specific real-world counterparts, making it highly relevant.\",\n          \"answer\": \"King's Landing is represented by Dubrovnik, Croatia, and Fort Manoel, Malta. The Eyrie is depicted using Meteora, Greece.\",\n          \"answerQuality\": \"9\",\n          \"snippet\": \"Game of Thrones in-universe location: King’s Landing Dubrovnik’s Old Town first appeared on screen as 'King’s Landing' during the second season of Game of Thrones. ... Game of Thrones in-universe location: The Eyrie in the Vale of Arryn The GOT cast and crew didn’t actually shoot scenes at this UNESCO World Heritage site. However, Meteora’s famed mountain-top monasteries were digitally mastered into the series’s first season as a backdrop for the Sky Cells where Tyrion Lannister was imprisoned.\",\n          \"content\": \"King's Landing is primarily represented by Dubrovnik, Croatia, and Fort Manoel in Malta, while The Eyrie is depicted using the mountain-top monasteries of Meteora, Greece, which were digitally added to the series.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the fictional locations of The Eyrie and King's Landing with specific real-world counterparts, making it highly relevant.\",\n        \"answer\": \"King's Landing is represented by Dubrovnik, Croatia, and Fort Manoel, Malta. The Eyrie is depicted using Meteora, Greece.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"Game of Thrones in-universe location: King’s Landing Dubrovnik’s Old Town first appeared on screen as 'King’s Landing' during the second season of Game of Thrones. ... Game of Thrones in-universe location: The Eyrie in the Vale of Arryn The GOT cast and crew didn’t actually shoot scenes at this UNESCO World Heritage site. However, Meteora’s famed mountain-top monasteries were digitally mastered into the series’s first season as a backdrop for the Sky Cells where Tyrion Lannister was imprisoned.\",\n        \"content\": \"King's Landing is primarily represented by Dubrovnik, Croatia, and Fort Manoel in Malta, while The Eyrie is depicted using the mountain-top monasteries of Meteora, Greece, which were digitally added to the series.\",\n        \"link\": \"https://www.afar.com/magazine/game-of-thrones-destinations-you-can-visit-in-real-life\",\n        \"query\": \"The Eyrie to King's Landing, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_79SYYnLfMcq86jXUIPMN0hFk",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "165c4fdc-476f-4e52-863e-ed69c792644f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "King's Landing to Storm's End, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_8ihTAQ6brLAS6xRsV8np1df8"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8ihTAQ6brLAS6xRsV8np1df8",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"King's Landing to Storm's End, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 7560,
+            "totalTokens": 7583
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7560,
+            "completion_tokens": 23,
+            "total_tokens": 7583,
+            "prompt_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyvUsnvzmAsB2KvCVt5KyNkZ6dk8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"King's Landing to Storm's End, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"King's Landing is a major city located in the Crownlands, while Storm's End is a castle located in the Stormlands, to the southeast of King's Landing. Storm's End is known as the ancestral home of House Baratheon, making it a significant location in the lore of 'Game of Thrones' and 'A Song of Ice and Fire'.\",\n    \"finalAnswer\": {\n      \"distance\": 100,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.deviantart.com/oblivionkirie/art/Storm-s-End-721067641\",\n      \"https://asoiaf.westeros.org/index.php?/topic/135343-no-storms-in-the-stormlands/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the locations of King's Landing and Storm's End.\",\n        \"answer\": \"King's Landing is south of Storm's End in the Stormlands.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The stormlands aren't called the stormlands just because of rain and high winds.\",\n        \"content\": \"King's Landing is a major city located in the Crownlands, while Storm's End is a castle located in the Stormlands, to the southeast of King's Landing.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer provides context about Storm's End as a fictional location related to House Baratheon.\",\n        \"answer\": \"Storm's End is the ancestral home of House Baratheon.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Storm's End is the ancestral home of House Baratheon.\",\n        \"content\": \"Storm's End is a significant location in the 'Game of Thrones' and 'A Song of Ice and Fire' series, known as the ancestral seat of House Baratheon.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"King's Landing is a major city located in the Crownlands, while Storm's End is a castle located in the Stormlands, to the southeast of King's Landing. Storm's End is known as the ancestral home of House Baratheon, making it a significant location in the lore of 'Game of Thrones' and 'A Song of Ice and Fire'.\",\n      \"finalAnswer\": {\n        \"distance\": 100,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.deviantart.com/oblivionkirie/art/Storm-s-End-721067641\",\n        \"https://asoiaf.westeros.org/index.php?/topic/135343-no-storms-in-the-stormlands/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the locations of King's Landing and Storm's End.\",\n          \"answer\": \"King's Landing is south of Storm's End in the Stormlands.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The stormlands aren't called the stormlands just because of rain and high winds.\",\n          \"content\": \"King's Landing is a major city located in the Crownlands, while Storm's End is a castle located in the Stormlands, to the southeast of King's Landing.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer provides context about Storm's End as a fictional location related to House Baratheon.\",\n          \"answer\": \"Storm's End is the ancestral home of House Baratheon.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Storm's End is the ancestral home of House Baratheon.\",\n          \"content\": \"Storm's End is a significant location in the 'Game of Thrones' and 'A Song of Ice and Fire' series, known as the ancestral seat of House Baratheon.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_8ihTAQ6brLAS6xRsV8np1df8",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2ed648d9-98c0-469b-8878-d07a3e7bd63a"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Storm's End to Dorne, fictional locations"
+            },
+            "type": "tool_call",
+            "id": "call_UOFdix57cv7i7Hh2oSmYTF7x"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_UOFdix57cv7i7Hh2oSmYTF7x",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Storm's End to Dorne, fictional locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 7342,
+            "totalTokens": 7364
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7342,
+            "completion_tokens": 22,
+            "total_tokens": 7364,
+            "prompt_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyw3P2vGUuX978WQX0jDQACzkKUm"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Storm's End to Dorne, fictional locations\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Storm's End is a significant location in the Stormlands, known for its stormy weather and as the seat of House Baratheon. Dorne, on the other hand, is the southernmost region of Westeros, ruled by House Martell, and is characterized by its unique culture and geography, being the least populated region of the continent. The Stormlands are located between Blackwater Bay and the Sea of Dorne, highlighting their geographical proximity.\",\n    \"finalAnswer\": {\n      \"distance\": 500,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"6\",\n    \"relevantLinks\": [\n      \"https://asoiaf.westeros.org/index.php?/topic/135343-no-storms-in-the-stormlands/\",\n      \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the fictional locations of Storm's End and Dorne within the context of the A Song of Ice and Fire series.\",\n        \"answer\": \"Storm's End is the seat of House Baratheon in the Stormlands, while Dorne is the southernmost region ruled by House Martell.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"The Stormlands are the large cape between the Blackwater Bay and the Sea of Dorne... Storm's End is the seat of House Baratheon and, before them, the ancestral seat of the Storm Kings... Dorne is the southernmost and least populated land of Westeros.\",\n        \"content\": \"Storm's End is a significant location in the Stormlands, known for its strong defenses and historical importance as the seat of House Baratheon. Dorne, ruled by House Martell, is characterized by its unique culture and geography, being the least populated region of Westeros.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Storm's End is a significant location in the Stormlands, known for its stormy weather and as the seat of House Baratheon. Dorne, on the other hand, is the southernmost region of Westeros, ruled by House Martell, and is characterized by its unique culture and geography, being the least populated region of the continent. The Stormlands are located between Blackwater Bay and the Sea of Dorne, highlighting their geographical proximity.\",\n      \"finalAnswer\": {\n        \"distance\": 500,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"6\",\n      \"relevantLinks\": [\n        \"https://asoiaf.westeros.org/index.php?/topic/135343-no-storms-in-the-stormlands/\",\n        \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the fictional locations of Storm's End and Dorne within the context of the A Song of Ice and Fire series.\",\n          \"answer\": \"Storm's End is the seat of House Baratheon in the Stormlands, while Dorne is the southernmost region ruled by House Martell.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"The Stormlands are the large cape between the Blackwater Bay and the Sea of Dorne... Storm's End is the seat of House Baratheon and, before them, the ancestral seat of the Storm Kings... Dorne is the southernmost and least populated land of Westeros.\",\n          \"content\": \"Storm's End is a significant location in the Stormlands, known for its strong defenses and historical importance as the seat of House Baratheon. Dorne, ruled by House Martell, is characterized by its unique culture and geography, being the least populated region of Westeros.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the query about the fictional locations of Storm's End and Dorne within the context of the A Song of Ice and Fire series.\",\n        \"answer\": \"Storm's End is the seat of House Baratheon in the Stormlands, while Dorne is the southernmost region ruled by House Martell.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"The Stormlands are the large cape between the Blackwater Bay and the Sea of Dorne... Storm's End is the seat of House Baratheon and, before them, the ancestral seat of the Storm Kings... Dorne is the southernmost and least populated land of Westeros.\",\n        \"content\": \"Storm's End is a significant location in the Stormlands, known for its strong defenses and historical importance as the seat of House Baratheon. Dorne, ruled by House Martell, is characterized by its unique culture and geography, being the least populated region of Westeros.\",\n        \"link\": \"https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire\",\n        \"query\": \"Storm's End to Dorne, fictional locations\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_UOFdix57cv7i7Hh2oSmYTF7x",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "89248d9f-cc18-42de-abc2-85010fd9c2f0"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Capture One Blog - Riding Thrones",
+      "link": "https://www.captureone.com/blog/riding-thrones"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Long Night of Westeros\", which is fictional.\nThe  pitch for this route is \"Journey through the lands of Westeros during the Long Night, where the sun never rises and the world is shrouded in darkness. Navigate through the icy landscapes and haunted forests, guided only by the stars and the flickering lights of distant fires.\".\nSome ideas for steps are: \n\t - The Wall to Winterfell\n\t - Winterfell to The Eyrie\n\t - The Eyrie to King's Landing\n\t - King's Landing to Storm's End\n\t - Storm's End to Dorne",
+  "itinerary": [
+    {
+      "startingLocation": "The Wall",
+      "endingLocation": "Winterfell",
+      "startingLocationDescription": "The Wall is a massive ice structure that separates the Seven Kingdoms from the lands beyond. It is the northernmost point of Westeros.",
+      "endingLocationDescription": "Winterfell is the ancestral castle of House Stark, located in the center of the northern province of the Seven Kingdoms.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Look for the towering ice wall and the Night's Watch garrison."
+    },
+    {
+      "startingLocation": "Winterfell",
+      "endingLocation": "The Eyrie",
+      "startingLocationDescription": "Winterfell is known for its ancient architecture and the crypts of the Stark family.",
+      "endingLocationDescription": "The Eyrie is a castle located in the Mountains of the Moon, known for its impregnable position and sky cells.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Travel south from Winterfell through the Vale of Arryn."
+    },
+    {
+      "startingLocation": "The Eyrie",
+      "endingLocation": "King's Landing",
+      "startingLocationDescription": "The Eyrie offers breathtaking views of the surrounding mountains and valleys.",
+      "endingLocationDescription": "King's Landing is the capital of the Seven Kingdoms, known for the Red Keep and the Iron Throne.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Descend from the mountains and follow the road to the capital."
+    },
+    {
+      "startingLocation": "King's Landing",
+      "endingLocation": "Storm's End",
+      "startingLocationDescription": "King's Landing is bustling with political intrigue and the seat of the Iron Throne.",
+      "endingLocationDescription": "Storm's End is a formidable fortress located on the southeastern coast of Westeros.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Head southeast along the coast from King's Landing."
+    },
+    {
+      "startingLocation": "Storm's End",
+      "endingLocation": "Dorne",
+      "startingLocationDescription": "Storm's End is known for its massive walls and the seat of House Baratheon.",
+      "endingLocationDescription": "Dorne is a region known for its warm climate, distinct culture, and the seat of House Martell.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Travel south through the Stormlands to reach the deserts of Dorne."
+    }
+  ],
+  "route": "The Long Night Journey from The Wall to Dorne",
+  "steps": [
+    {
+      "startingLocation": "The Wall",
+      "endingLocation": "Winterfell",
+      "distance": 300,
+      "startingLocationDescription": "The Wall is a massive ice structure that separates the Seven Kingdoms from the lands beyond. It is the northernmost point of Westeros.",
+      "endingLocationDescription": "Winterfell is the ancestral castle of House Stark, located in the center of the northern province of the Seven Kingdoms.",
+      "credibility": {
+        "source": "https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Winterfell",
+      "endingLocation": "The Eyrie",
+      "distance": 200,
+      "startingLocationDescription": "Winterfell is known for its ancient architecture and the crypts of the Stark family.",
+      "endingLocationDescription": "The Eyrie is a castle located in the Mountains of the Moon, known for its impregnable position and sky cells.",
+      "credibility": {
+        "source": "https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "The Eyrie",
+      "endingLocation": "King's Landing",
+      "distance": 300,
+      "startingLocationDescription": "The Eyrie offers breathtaking views of the surrounding mountains and valleys.",
+      "endingLocationDescription": "King's Landing is the capital of the Seven Kingdoms, known for the Red Keep and the Iron Throne.",
+      "credibility": {
+        "source": "https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire",
+        "reliability": 8,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "King's Landing",
+      "endingLocation": "Storm's End",
+      "distance": 160,
+      "startingLocationDescription": "King's Landing is bustling with political intrigue and the seat of the Iron Throne.",
+      "endingLocationDescription": "Storm's End is a formidable fortress located on the southeastern coast of Westeros.",
+      "credibility": {
+        "source": "https://www.deviantart.com/oblivionkirie/art/Storm-s-End-721067641",
+        "reliability": 5,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Storm's End",
+      "endingLocation": "Dorne",
+      "distance": 500,
+      "startingLocationDescription": "Storm's End is known for its massive walls and the seat of House Baratheon.",
+      "endingLocationDescription": "Dorne is a region known for its warm climate, distinct culture, and the seat of House Martell.",
+      "credibility": {
+        "source": "https://en.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire",
+        "reliability": 8,
+        "guess": false
+      }
+    }
+  ]
+}

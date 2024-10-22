@@ -1,0 +1,633 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting route ideas for a journey through Middle-earth to Mount Doom, focusing on fictional locations from The Lord of the Rings."
+            },
+            "type": "tool_call",
+            "id": "call_q5p6oKB4AW09ruqnQYhKpqYK"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_q5p6oKB4AW09ruqnQYhKpqYK",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting route ideas for a journey through Middle-earth to Mount Doom, focusing on fictional locations from The Lord of the Rings.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 38,
+            "promptTokens": 500,
+            "totalTokens": 538
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 500,
+            "completion_tokens": 38,
+            "total_tokens": 538,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKAMXr13SQlabbHoG7lIWZg2a3Egc"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Interesting route ideas for a journey through Middle-earth to Mount Doom, focusing on fictional locations from The Lord of the Rings.\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The journey through Middle-earth to Mount Doom can be an exciting adventure, incorporating several iconic locations from The Lord of the Rings. Starting in the peaceful Shire, travelers can make their way to Bree, a bustling town known for its inns and diverse inhabitants. From Bree, the route continues to the enchanting Rivendell, where Elrond's house offers a moment of respite. Next, the journey leads through the treacherous Moria, an ancient dwarven city filled with both wonders and dangers. After surviving Moria, travelers can visit Lothlórien, a beautiful elven realm, before finally reaching the dark lands of Mordor and Mount Doom, the ultimate destination of the journey.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"The Shire\",\n          \"endingLocation\": \"Bree\",\n          \"startingLocationDescription\": \"Begin your journey in the idyllic Shire, known for its rolling hills and peaceful hobbit homes.\",\n          \"endingLocationDescription\": \"Arrive in Bree, a lively town where hobbits, men, and other creatures gather, famous for the Prancing Pony inn.\",\n          \"credibility\": {\n            \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n            \"reliability\": 5,\n            \"guess\": false\n          },\n          \"description\": \"This leg of the journey introduces you to the diverse cultures of Middle-earth, with opportunities to meet various characters.\"\n        },\n        {\n          \"startingLocation\": \"Bree\",\n          \"endingLocation\": \"Rivendell\",\n          \"startingLocationDescription\": \"Leave Bree behind and head towards the scenic paths leading to the hidden valley of Rivendell.\",\n          \"endingLocationDescription\": \"Arrive at Rivendell, a sanctuary of peace and beauty, where you can rest and gather wisdom from Elrond.\",\n          \"credibility\": {\n            \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n            \"reliability\": 5,\n            \"guess\": false\n          },\n          \"description\": \"This segment allows for reflection and the chance to learn about the history of Middle-earth from the elves.\"\n        },\n        {\n          \"startingLocation\": \"Rivendell\",\n          \"endingLocation\": \"Moria\",\n          \"startingLocationDescription\": \"Depart from the serene Rivendell, following the path that leads into the Misty Mountains.\",\n          \"endingLocationDescription\": \"Enter Moria, the ancient dwarven city, where you will encounter both the beauty and the perils of its dark halls.\",\n          \"credibility\": {\n            \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n            \"reliability\": 5,\n            \"guess\": false\n          },\n          \"description\": \"Prepare for challenges as you navigate through Moria, filled with echoes of the past and lurking dangers.\"\n        },\n        {\n          \"startingLocation\": \"Moria\",\n          \"endingLocation\": \"Lothlórien\",\n          \"startingLocationDescription\": \"After navigating the depths of Moria, emerge into the light and head towards the golden woods of Lothlórien.\",\n          \"endingLocationDescription\": \"Arrive in Lothlórien, a realm of beauty and tranquility, where the elves live in harmony with nature.\",\n          \"credibility\": {\n            \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n            \"reliability\": 5,\n            \"guess\": false\n          },\n          \"description\": \"This leg offers a chance to rejuvenate and experience the magic of the elven lands.\"\n        },\n        {\n          \"startingLocation\": \"Lothlórien\",\n          \"endingLocation\": \"Mount Doom\",\n          \"startingLocationDescription\": \"Leave the beauty of Lothlórien behind and prepare for the final leg of your journey into the dark lands of Mordor.\",\n          \"endingLocationDescription\": \"Reach Mount Doom, the fiery mountain where the fate of the One Ring will be decided.\",\n          \"credibility\": {\n            \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n            \"reliability\": 5,\n            \"guess\": false\n          },\n          \"description\": \"This final stretch is filled with tension and excitement as you approach the climax of your adventure.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a clear and relevant route through Middle-earth to Mount Doom, referencing key fictional locations.\",\n        \"answer\": \"Start in The Shire, then travel to Bree, Rivendell, Moria, Lothlórien, and finally reach Mount Doom in Mordor.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Knowing that you still have 3000 kilometers to reach Mordor is indeed not very encouraging. But isn’t it way more fun to know that in only 12 kilometers you’re going to meet the Elf of Rivendell?\",\n        \"content\": \"The content discusses hiking apps themed around The Lord of the Rings, specifically mentioning the journey from The Shire to Mordor and various mid-way points like Bree, Rivendell, and Moria.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The journey through Middle-earth to Mount Doom can be an exciting adventure, incorporating several iconic locations from The Lord of the Rings. Starting in the peaceful Shire, travelers can make their way to Bree, a bustling town known for its inns and diverse inhabitants. From Bree, the route continues to the enchanting Rivendell, where Elrond's house offers a moment of respite. Next, the journey leads through the treacherous Moria, an ancient dwarven city filled with both wonders and dangers. After surviving Moria, travelers can visit Lothlórien, a beautiful elven realm, before finally reaching the dark lands of Mordor and Mount Doom, the ultimate destination of the journey.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"The Shire\",\n            \"endingLocation\": \"Bree\",\n            \"startingLocationDescription\": \"Begin your journey in the idyllic Shire, known for its rolling hills and peaceful hobbit homes.\",\n            \"endingLocationDescription\": \"Arrive in Bree, a lively town where hobbits, men, and other creatures gather, famous for the Prancing Pony inn.\",\n            \"credibility\": {\n              \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n              \"reliability\": 5,\n              \"guess\": false\n            },\n            \"description\": \"This leg of the journey introduces you to the diverse cultures of Middle-earth, with opportunities to meet various characters.\"\n          },\n          {\n            \"startingLocation\": \"Bree\",\n            \"endingLocation\": \"Rivendell\",\n            \"startingLocationDescription\": \"Leave Bree behind and head towards the scenic paths leading to the hidden valley of Rivendell.\",\n            \"endingLocationDescription\": \"Arrive at Rivendell, a sanctuary of peace and beauty, where you can rest and gather wisdom from Elrond.\",\n            \"credibility\": {\n              \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n              \"reliability\": 5,\n              \"guess\": false\n            },\n            \"description\": \"This segment allows for reflection and the chance to learn about the history of Middle-earth from the elves.\"\n          },\n          {\n            \"startingLocation\": \"Rivendell\",\n            \"endingLocation\": \"Moria\",\n            \"startingLocationDescription\": \"Depart from the serene Rivendell, following the path that leads into the Misty Mountains.\",\n            \"endingLocationDescription\": \"Enter Moria, the ancient dwarven city, where you will encounter both the beauty and the perils of its dark halls.\",\n            \"credibility\": {\n              \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n              \"reliability\": 5,\n              \"guess\": false\n            },\n            \"description\": \"Prepare for challenges as you navigate through Moria, filled with echoes of the past and lurking dangers.\"\n          },\n          {\n            \"startingLocation\": \"Moria\",\n            \"endingLocation\": \"Lothlórien\",\n            \"startingLocationDescription\": \"After navigating the depths of Moria, emerge into the light and head towards the golden woods of Lothlórien.\",\n            \"endingLocationDescription\": \"Arrive in Lothlórien, a realm of beauty and tranquility, where the elves live in harmony with nature.\",\n            \"credibility\": {\n              \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n              \"reliability\": 5,\n              \"guess\": false\n            },\n            \"description\": \"This leg offers a chance to rejuvenate and experience the magic of the elven lands.\"\n          },\n          {\n            \"startingLocation\": \"Lothlórien\",\n            \"endingLocation\": \"Mount Doom\",\n            \"startingLocationDescription\": \"Leave the beauty of Lothlórien behind and prepare for the final leg of your journey into the dark lands of Mordor.\",\n            \"endingLocationDescription\": \"Reach Mount Doom, the fiery mountain where the fate of the One Ring will be decided.\",\n            \"credibility\": {\n              \"source\": \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\",\n              \"reliability\": 5,\n              \"guess\": false\n            },\n            \"description\": \"This final stretch is filled with tension and excitement as you approach the climax of your adventure.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a clear and relevant route through Middle-earth to Mount Doom, referencing key fictional locations.\",\n          \"answer\": \"Start in The Shire, then travel to Bree, Rivendell, Moria, Lothlórien, and finally reach Mount Doom in Mordor.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Knowing that you still have 3000 kilometers to reach Mordor is indeed not very encouraging. But isn’t it way more fun to know that in only 12 kilometers you’re going to meet the Elf of Rivendell?\",\n          \"content\": \"The content discusses hiking apps themed around The Lord of the Rings, specifically mentioning the journey from The Shire to Mordor and various mid-way points like Bree, Rivendell, and Moria.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_q5p6oKB4AW09ruqnQYhKpqYK",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5adaea2e-1a62-458a-8add-bd66088e0c82"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Interesting places to stop on a journey from The Shire to Mount Doom in Middle-earth, focusing on fictional locations from The Lord of the Rings."
+            },
+            "type": "tool_call",
+            "id": "call_H4sbUQjAfSi0IkwZS2vZQClJ"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_H4sbUQjAfSi0IkwZS2vZQClJ",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Interesting places to stop on a journey from The Shire to Mount Doom in Middle-earth, focusing on fictional locations from The Lord of the Rings.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 43,
+            "promptTokens": 6011,
+            "totalTokens": 6054
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6011,
+            "completion_tokens": 43,
+            "total_tokens": 6054,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKySxOOXL8o1IkmCkeAHdNniS1Nvp"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Interesting places to stop on a journey from The Shire to Mount Doom in Middle-earth, focusing on fictional locations from The Lord of the Rings.\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The journey from The Shire to Mount Doom is filled with significant locations that are rich in lore and beauty. Key stops include Rivendell, known for its serene beauty and Elvish culture; Lothlórien, a magical forest realm of the Elves; and the Dead Marshes, a haunting area filled with the remnants of past battles. Each of these locations offers unique experiences and insights into the world of Middle-earth.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"The Shire\",\n          \"endingLocation\": \"Rivendell\",\n          \"startingLocationDescription\": \"A peaceful and idyllic land, home to the Hobbits, characterized by rolling hills and lush greenery.\",\n          \"endingLocationDescription\": \"A hidden valley surrounded by mountains, known for its Elvish architecture and tranquil atmosphere.\",\n          \"credibility\": {\n            \"source\": \"Fantasy Hike app\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"The journey begins in The Shire, where travelers can enjoy the simple pleasures of Hobbit life before heading to the enchanting Rivendell, a place of refuge and wisdom.\"\n        },\n        {\n          \"startingLocation\": \"Rivendell\",\n          \"endingLocation\": \"Lothlórien\",\n          \"startingLocationDescription\": \"A haven of peace and knowledge, where Elrond resides and travelers can rest and gather strength.\",\n          \"endingLocationDescription\": \"A mystical forest filled with golden leaves and the sounds of Elvish song, ruled by Galadriel.\",\n          \"credibility\": {\n            \"source\": \"Fantasy Hike app\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"From Rivendell, the journey continues to Lothlórien, where the beauty of the Elven realm captivates all who enter.\"\n        },\n        {\n          \"startingLocation\": \"Lothlórien\",\n          \"endingLocation\": \"Dead Marshes\",\n          \"startingLocationDescription\": \"A land of beauty and light, where the Elves live in harmony with nature.\",\n          \"endingLocationDescription\": \"A dark and eerie swamp, filled with the memories of the dead and the remnants of ancient battles.\",\n          \"credibility\": {\n            \"source\": \"Fantasy Hike app\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"Leaving the beauty of Lothlórien, travelers must navigate the treacherous Dead Marshes, a stark contrast to the previous leg of the journey.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/lotr/comments/14s6s24/any_lotr_fans_looking_to_get_in_shape_should/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is relevant as it discusses the journey Frodo took, which includes interesting locations along the way.\",\n        \"answer\": \"Interesting places include Rivendell, Lothlórien, and the Dead Marshes.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"It basically takes info from your health app and tracks your distance traveled. It tracks the 1,780 miles Frodo traveled to Mount Doom and has little excerpts about the journey along the way.\",\n        \"content\": \"The Fantasy Hike app tracks Frodo's journey to Mount Doom, highlighting significant locations like Rivendell, Lothlórien, and the Dead Marshes, providing context and excerpts about the journey.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The journey from The Shire to Mount Doom is filled with significant locations that are rich in lore and beauty. Key stops include Rivendell, known for its serene beauty and Elvish culture; Lothlórien, a magical forest realm of the Elves; and the Dead Marshes, a haunting area filled with the remnants of past battles. Each of these locations offers unique experiences and insights into the world of Middle-earth.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"The Shire\",\n            \"endingLocation\": \"Rivendell\",\n            \"startingLocationDescription\": \"A peaceful and idyllic land, home to the Hobbits, characterized by rolling hills and lush greenery.\",\n            \"endingLocationDescription\": \"A hidden valley surrounded by mountains, known for its Elvish architecture and tranquil atmosphere.\",\n            \"credibility\": {\n              \"source\": \"Fantasy Hike app\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"The journey begins in The Shire, where travelers can enjoy the simple pleasures of Hobbit life before heading to the enchanting Rivendell, a place of refuge and wisdom.\"\n          },\n          {\n            \"startingLocation\": \"Rivendell\",\n            \"endingLocation\": \"Lothlórien\",\n            \"startingLocationDescription\": \"A haven of peace and knowledge, where Elrond resides and travelers can rest and gather strength.\",\n            \"endingLocationDescription\": \"A mystical forest filled with golden leaves and the sounds of Elvish song, ruled by Galadriel.\",\n            \"credibility\": {\n              \"source\": \"Fantasy Hike app\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"From Rivendell, the journey continues to Lothlórien, where the beauty of the Elven realm captivates all who enter.\"\n          },\n          {\n            \"startingLocation\": \"Lothlórien\",\n            \"endingLocation\": \"Dead Marshes\",\n            \"startingLocationDescription\": \"A land of beauty and light, where the Elves live in harmony with nature.\",\n            \"endingLocationDescription\": \"A dark and eerie swamp, filled with the memories of the dead and the remnants of ancient battles.\",\n            \"credibility\": {\n              \"source\": \"Fantasy Hike app\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"Leaving the beauty of Lothlórien, travelers must navigate the treacherous Dead Marshes, a stark contrast to the previous leg of the journey.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/lotr/comments/14s6s24/any_lotr_fans_looking_to_get_in_shape_should/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is relevant as it discusses the journey Frodo took, which includes interesting locations along the way.\",\n          \"answer\": \"Interesting places include Rivendell, Lothlórien, and the Dead Marshes.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"It basically takes info from your health app and tracks your distance traveled. It tracks the 1,780 miles Frodo traveled to Mount Doom and has little excerpts about the journey along the way.\",\n          \"content\": \"The Fantasy Hike app tracks Frodo's journey to Mount Doom, highlighting significant locations like Rivendell, Lothlórien, and the Dead Marshes, providing context and excerpts about the journey.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_H4sbUQjAfSi0IkwZS2vZQClJ",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "800e81b5-c152-425d-839d-c3a821358e55"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "The Shire to Bree"
+            },
+            "type": "tool_call",
+            "id": "call_mpN3ctBPrabfvLSYFX0NdcfR"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_mpN3ctBPrabfvLSYFX0NdcfR",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"The Shire to Bree\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 18,
+            "promptTokens": 10030,
+            "totalTokens": 10048
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 10030,
+            "completion_tokens": 18,
+            "total_tokens": 10048,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyTGX6KTQyElfaXu1G3rObCliC7n"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Shire to Bree\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Bree is a fictional village in J.R.R. Tolkien's Middle-earth, located 40 miles east of the Shire. It serves as a significant location where Hobbits and Men coexist, making it an important part of the lore. The distance between these two locations is well-documented, providing a clear understanding of their geographical relationship.\",\n    \"finalAnswer\": {\n      \"distance\": 40,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://en.wikipedia.org/wiki/Bree_(Middle-earth)\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the user's question about the location of Bree in relation to the Shire.\",\n        \"answer\": \"Bree is 40 miles east of the Shire.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Bree is an ancient settlement of men in Eriador, some 40 miles (64 km) east of the Shire.\",\n        \"content\": \"Bree is a fictional village in J. R. R. Tolkien's Middle-earth, east of the Shire. Bree-land, which contains Bree and a few other villages, is the only place where Hobbits and Men lived side by side.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Bree is a fictional village in J.R.R. Tolkien's Middle-earth, located 40 miles east of the Shire. It serves as a significant location where Hobbits and Men coexist, making it an important part of the lore. The distance between these two locations is well-documented, providing a clear understanding of their geographical relationship.\",\n      \"finalAnswer\": {\n        \"distance\": 40,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://en.wikipedia.org/wiki/Bree_(Middle-earth)\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the user's question about the location of Bree in relation to the Shire.\",\n          \"answer\": \"Bree is 40 miles east of the Shire.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Bree is an ancient settlement of men in Eriador, some 40 miles (64 km) east of the Shire.\",\n          \"content\": \"Bree is a fictional village in J. R. R. Tolkien's Middle-earth, east of the Shire. Bree-land, which contains Bree and a few other villages, is the only place where Hobbits and Men lived side by side.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_mpN3ctBPrabfvLSYFX0NdcfR",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "70acc8bb-c5dc-49e6-9b83-aa3cb64a7904"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Bree to Weathertop"
+            },
+            "type": "tool_call",
+            "id": "call_M3fNMxTDJ4j2rCZUYRJqMAwL"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_M3fNMxTDJ4j2rCZUYRJqMAwL",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Bree to Weathertop\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 10721,
+            "totalTokens": 10741
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 10721,
+            "completion_tokens": 20,
+            "total_tokens": 10741,
+            "prompt_tokens_details": {
+              "cached_tokens": 9088
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyTU7y4Kv3en9gU5vg8JykAAKNJi"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Bree to Weathertop\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Aragorn led the hobbits to Weathertop as a strategic move to avoid the Nazgul and to find safety. He believed that if the Nazgul did not find them in the wilderness, they would likely head to Weathertop themselves. This location provided a vantage point for planning their next steps, despite the inherent dangers of being there.\",\n    \"finalAnswer\": {\n      \"distance\": 30,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"7\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/tolkienfans/comments/1dmn21h/why_on_earth_would_aragorn_take_the_hobbits_to/\",\n      \"https://www.reddit.com/r/tolkienfans/comments/quw71z/what_path_did_gandalf_take_from_hobbiton_to/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about Aragorn's decision, providing a relevant explanation.\",\n        \"answer\": \"Aragorn took them to Weathertop to find safety and strategize, despite the risks.\",\n        \"answerQuality\": \"7\",\n        \"snippet\": \"Aragorn definitely knows this. \\\"If the Riders fail to find us in the wilderness, they are likely to make for Weathertop themselves.\\\"\",\n        \"content\": \"Aragorn led the party to Weathertop to avoid the Nazgul in the wilderness and to use it as a strategic point, despite the danger.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Aragorn led the hobbits to Weathertop as a strategic move to avoid the Nazgul and to find safety. He believed that if the Nazgul did not find them in the wilderness, they would likely head to Weathertop themselves. This location provided a vantage point for planning their next steps, despite the inherent dangers of being there.\",\n      \"finalAnswer\": {\n        \"distance\": 30,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"7\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/tolkienfans/comments/1dmn21h/why_on_earth_would_aragorn_take_the_hobbits_to/\",\n        \"https://www.reddit.com/r/tolkienfans/comments/quw71z/what_path_did_gandalf_take_from_hobbiton_to/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about Aragorn's decision, providing a relevant explanation.\",\n          \"answer\": \"Aragorn took them to Weathertop to find safety and strategize, despite the risks.\",\n          \"answerQuality\": \"7\",\n          \"snippet\": \"Aragorn definitely knows this. \\\"If the Riders fail to find us in the wilderness, they are likely to make for Weathertop themselves.\\\"\",\n          \"content\": \"Aragorn led the party to Weathertop to avoid the Nazgul in the wilderness and to use it as a strategic point, despite the danger.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_M3fNMxTDJ4j2rCZUYRJqMAwL",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "feadab03-d9e9-47a9-90b1-3a31261fc598"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Weathertop to Rivendell"
+            },
+            "type": "tool_call",
+            "id": "call_9Qkfwr7j01e9D0p8TLaUMdwD"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_9Qkfwr7j01e9D0p8TLaUMdwD",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Weathertop to Rivendell\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 8814,
+            "totalTokens": 8835
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8814,
+            "completion_tokens": 21,
+            "total_tokens": 8835,
+            "prompt_tokens_details": {
+              "cached_tokens": 4608
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyUHnrbIm3Qb51M7MbNFsVYCtqAK"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Weathertop to Rivendell\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Gandalf's journey from Weathertop to Rivendell is significant in the context of 'The Lord of the Rings'. After the events at Weathertop, where he was pursued by the Nazgul, Gandalf fled north towards Rivendell. The distance between these two locations is approximately 253 miles, and it took him nearly fourteen days to complete this journey. This information is derived from estimates based on Tolkien's works, which detail the geography of Middle-earth and the challenges faced during the journey.\",\n    \"finalAnswer\": {\n      \"distance\": 253,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://forums.signumuniversity.org/index.php?threads/gandalf%E2%80%99s-flight-from-weathertop-could-he-have-made-any-plans-or-choices.4335/\",\n      \"https://sweatingtomordor.wordpress.com/2014/02/22/it-is-a-strange-road-the-impossible-distance-from-weathertop-to-rivendell/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a specific distance from Weathertop to Rivendell, which is relevant to the query.\",\n        \"answer\": \"253 miles\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"So to answer Merry’s question, we’ve got to do some math and some estimating... it’s 253 East Road miles from Weathertop to Rivendell.\",\n        \"content\": \"The content discusses the distance from Weathertop to Rivendell, providing estimates and calculations based on Tolkien's works, ultimately concluding that the distance is 253 miles.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about Gandalf's journey from Weathertop to Rivendell, providing relevant details about the distance and time taken.\",\n        \"answer\": \"Gandalf fled north from Weathertop to Rivendell, pursued by the Nazgul, taking nearly fourteen days to cover about 330 miles.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"I make Gandalf’s journey from Weathertop to Rivendell to be about 330 miles. It took Gandalf 'nearly fourteen days'.\",\n        \"content\": \"The content discusses Gandalf's escape from Weathertop, his pursuit by the Nazgul, and the challenges he faced on his journey to Rivendell, including the distance and time taken.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Gandalf's journey from Weathertop to Rivendell is significant in the context of 'The Lord of the Rings'. After the events at Weathertop, where he was pursued by the Nazgul, Gandalf fled north towards Rivendell. The distance between these two locations is approximately 253 miles, and it took him nearly fourteen days to complete this journey. This information is derived from estimates based on Tolkien's works, which detail the geography of Middle-earth and the challenges faced during the journey.\",\n      \"finalAnswer\": {\n        \"distance\": 253,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://forums.signumuniversity.org/index.php?threads/gandalf%E2%80%99s-flight-from-weathertop-could-he-have-made-any-plans-or-choices.4335/\",\n        \"https://sweatingtomordor.wordpress.com/2014/02/22/it-is-a-strange-road-the-impossible-distance-from-weathertop-to-rivendell/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a specific distance from Weathertop to Rivendell, which is relevant to the query.\",\n          \"answer\": \"253 miles\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"So to answer Merry’s question, we’ve got to do some math and some estimating... it’s 253 East Road miles from Weathertop to Rivendell.\",\n          \"content\": \"The content discusses the distance from Weathertop to Rivendell, providing estimates and calculations based on Tolkien's works, ultimately concluding that the distance is 253 miles.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about Gandalf's journey from Weathertop to Rivendell, providing relevant details about the distance and time taken.\",\n          \"answer\": \"Gandalf fled north from Weathertop to Rivendell, pursued by the Nazgul, taking nearly fourteen days to cover about 330 miles.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"I make Gandalf’s journey from Weathertop to Rivendell to be about 330 miles. It took Gandalf 'nearly fourteen days'.\",\n          \"content\": \"The content discusses Gandalf's escape from Weathertop, his pursuit by the Nazgul, and the challenges he faced on his journey to Rivendell, including the distance and time taken.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_9Qkfwr7j01e9D0p8TLaUMdwD",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "23789c34-2edd-4621-881a-3087b59a1d3e"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Rivendell to Moria distance in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_ZslwuAoUcYf8mfkhycFPt9UK"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ZslwuAoUcYf8mfkhycFPt9UK",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Rivendell to Moria distance in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 24,
+            "promptTokens": 8276,
+            "totalTokens": 8300
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8276,
+            "completion_tokens": 24,
+            "total_tokens": 8300,
+            "prompt_tokens_details": {
+              "cached_tokens": 4608
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyUyKWRuNOEUSr8FUFgli2RQ8TPx"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Rivendell to Moria distance in Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The distance from Rivendell to Moria is not explicitly stated in J.R.R. Tolkien's works, but estimates based on maps and lore suggest it is approximately 150 miles (240 kilometers). This distance is derived from the geographical context of Middle-earth, where Rivendell is located in the eastern foothills of the Misty Mountains and Moria lies deeper within those mountains. The journey would involve navigating through mountainous terrain, which could affect travel time and difficulty.\",\n    \"finalAnswer\": {\n      \"distance\": 150,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a specific distance based on estimates from Middle-earth maps, making it relevant to the user's query.\",\n        \"answer\": \"The distance from Rivendell to Moria is approximately 150 miles.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"The distance from Rivendell to Moria is not explicitly stated in J.R.R. Tolkien's works, but estimates based on maps and lore suggest it is approximately 150 miles.\",\n        \"content\": \"This distance is derived from the geographical context of Middle-earth, where Rivendell is located in the eastern foothills of the Misty Mountains and Moria lies deeper within those mountains.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The distance from Rivendell to Moria is not explicitly stated in J.R.R. Tolkien's works, but estimates based on maps and lore suggest it is approximately 150 miles (240 kilometers). This distance is derived from the geographical context of Middle-earth, where Rivendell is located in the eastern foothills of the Misty Mountains and Moria lies deeper within those mountains. The journey would involve navigating through mountainous terrain, which could affect travel time and difficulty.\",\n      \"finalAnswer\": {\n        \"distance\": 150,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a specific distance based on estimates from Middle-earth maps, making it relevant to the user's query.\",\n          \"answer\": \"The distance from Rivendell to Moria is approximately 150 miles.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"The distance from Rivendell to Moria is not explicitly stated in J.R.R. Tolkien's works, but estimates based on maps and lore suggest it is approximately 150 miles.\",\n          \"content\": \"This distance is derived from the geographical context of Middle-earth, where Rivendell is located in the eastern foothills of the Misty Mountains and Moria lies deeper within those mountains.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_ZslwuAoUcYf8mfkhycFPt9UK",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "95f2d9ce-1b0c-4b19-9891-0b98de708482"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Moria to Mount Doom distance in Middle-earth"
+            },
+            "type": "tool_call",
+            "id": "call_Obwc4M12QAEnafWQI9UL0upE"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Obwc4M12QAEnafWQI9UL0upE",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Moria to Mount Doom distance in Middle-earth\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 8311,
+            "totalTokens": 8333
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8311,
+            "completion_tokens": 22,
+            "total_tokens": 8333,
+            "prompt_tokens_details": {
+              "cached_tokens": 4608
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyVkCbyXKurVVfTyZ2DzYDVd5wRM"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Moria to Mount Doom distance in Middle-earth\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The distance from Moria to Mount Doom is not explicitly stated in the provided content. However, the distance from Hobbiton to Mount Doom is given as 1779 miles (2863 kilometers). Moria is located to the north of Hobbiton, and while the exact distance from Moria to Mount Doom is not provided, it can be inferred that it would be less than the distance from Hobbiton to Mount Doom. Therefore, the distance from Moria to Mount Doom is likely to be somewhat less than 1779 miles.\",\n    \"finalAnswer\": {\n      \"distance\": 1779,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://renaissancedaze.blogspot.com/p/walking-to-mordor-challenge.html\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is relevant to the question as it provides a distance from a related location (Hobbiton) to Mount Doom, which can help infer the distance from Moria.\",\n        \"answer\": \"1779 miles (2863 kilometers)\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Hobbiton to Mount Doom is 1779 miles (2863 kilometers)...\",\n        \"content\": \"The content provides detailed distances between various locations in Middle-earth, including the specific distance from Hobbiton to Mount Doom.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The distance from Moria to Mount Doom is not explicitly stated in the provided content. However, the distance from Hobbiton to Mount Doom is given as 1779 miles (2863 kilometers). Moria is located to the north of Hobbiton, and while the exact distance from Moria to Mount Doom is not provided, it can be inferred that it would be less than the distance from Hobbiton to Mount Doom. Therefore, the distance from Moria to Mount Doom is likely to be somewhat less than 1779 miles.\",\n      \"finalAnswer\": {\n        \"distance\": 1779,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://renaissancedaze.blogspot.com/p/walking-to-mordor-challenge.html\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is relevant to the question as it provides a distance from a related location (Hobbiton) to Mount Doom, which can help infer the distance from Moria.\",\n          \"answer\": \"1779 miles (2863 kilometers)\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"Hobbiton to Mount Doom is 1779 miles (2863 kilometers)...\",\n          \"content\": \"The content provides detailed distances between various locations in Middle-earth, including the specific distance from Hobbiton to Mount Doom.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly derived from the content provided, specifically stating the distance from Hobbiton to Mount Doom.\",\n        \"answer\": \"1779 miles (2863 kilometers)\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Hobbiton to Mount Doom is 1779 miles (2863 kilometers)...\",\n        \"content\": \"The content provides detailed distances between various locations in Middle-earth, including the specific distance from Hobbiton to Mount Doom.\",\n        \"link\": \"https://renaissancedaze.blogspot.com/p/walking-to-mordor-challenge.html\",\n        \"query\": \"Moria to Mount Doom distance in Middle-earth\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_Obwc4M12QAEnafWQI9UL0upE",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "aa6f676c-9a0c-4b1c-bb17-3230387b33d4"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Hiking App for Lord of the Rings Fans",
+      "link": "https://www.thatladyfromeurope.com/en/hiking-app-for-lord-of-the-rings-fans/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Road to Mordor\", which is fictional.\nThe  pitch for this route is \"A journey through the barren and treacherous lands of Middle-earth, leading to the fiery depths of Mount Doom.\".\nSome ideas for steps are: \n\t - The Shire to Bree\n\t - Bree to Weathertop\n\t - Weathertop to Rivendell\n\t - Rivendell to Moria\n\t - Moria to Mount Doom",
+  "itinerary": [
+    {
+      "startingLocation": "The Shire",
+      "endingLocation": "Bree",
+      "startingLocationDescription": "Begin your journey in the idyllic Shire, known for its rolling hills and peaceful hobbit homes.",
+      "endingLocationDescription": "Arrive in Bree, a lively town where hobbits, men, and other creatures gather, famous for the Prancing Pony inn.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Located in the northwest of Middle-earth, the Shire is a region inhabited by hobbits."
+    },
+    {
+      "startingLocation": "Bree",
+      "endingLocation": "Weathertop",
+      "startingLocationDescription": "Leave Bree and head towards the ancient watchtower of Amon Sûl, also known as Weathertop.",
+      "endingLocationDescription": "Reach Weathertop, a hill with a ruined watchtower offering a strategic view of the surrounding lands.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Weathertop is located on the Great East Road, east of Bree."
+    },
+    {
+      "startingLocation": "Weathertop",
+      "endingLocation": "Rivendell",
+      "startingLocationDescription": "Depart from Weathertop and continue your journey towards the hidden valley of Rivendell.",
+      "endingLocationDescription": "Arrive at Rivendell, a sanctuary of peace and beauty, where you can rest and gather wisdom from Elrond.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Rivendell is located in a hidden valley in the foothills of the Misty Mountains."
+    },
+    {
+      "startingLocation": "Rivendell",
+      "endingLocation": "Moria",
+      "startingLocationDescription": "Leave the serene Rivendell, following the path that leads into the Misty Mountains.",
+      "endingLocationDescription": "Enter Moria, the ancient dwarven city, where you will encounter both the beauty and the perils of its dark halls.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Moria is located beneath the Misty Mountains, accessible through the Doors of Durin."
+    },
+    {
+      "startingLocation": "Moria",
+      "endingLocation": "Mount Doom",
+      "startingLocationDescription": "After navigating the depths of Moria, continue your journey towards the dark lands of Mordor.",
+      "endingLocationDescription": "Reach Mount Doom, the fiery mountain where the fate of the One Ring will be decided.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Mount Doom is located in the heart of Mordor, a land of shadow and fire."
+    }
+  ],
+  "route": "The Road to Mount Doom",
+  "steps": [
+    {
+      "startingLocation": "The Shire",
+      "endingLocation": "Bree",
+      "distance": 40,
+      "startingLocationDescription": "Begin your journey in the idyllic Shire, known for its rolling hills and peaceful hobbit homes.",
+      "endingLocationDescription": "Arrive in Bree, a lively town where hobbits, men, and other creatures gather, famous for the Prancing Pony inn.",
+      "credibility": {
+        "source": "https://en.wikipedia.org/wiki/Bree_(Middle-earth)",
+        "reliability": 5,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Bree",
+      "endingLocation": "Weathertop",
+      "distance": 30,
+      "startingLocationDescription": "Leave Bree and head towards the ancient watchtower of Amon Sûl, also known as Weathertop.",
+      "endingLocationDescription": "Reach Weathertop, a hill with a ruined watchtower offering a strategic view of the surrounding lands.",
+      "credibility": {
+        "source": "https://www.reddit.com/r/tolkienfans/comments/1dmn21h/why_on_earth_would_aragorn_take_the_hobbits_to/",
+        "reliability": 7,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Weathertop",
+      "endingLocation": "Rivendell",
+      "distance": 253,
+      "startingLocationDescription": "Depart from Weathertop and continue your journey towards the hidden valley of Rivendell.",
+      "endingLocationDescription": "Arrive at Rivendell, a sanctuary of peace and beauty, where you can rest and gather wisdom from Elrond.",
+      "credibility": {
+        "source": "https://forums.signumuniversity.org/index.php?threads/gandalf%E2%80%99s-flight-from-weathertop-could-he-have-made-any-plans-or-choices.4335/",
+        "reliability": 5,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Rivendell",
+      "endingLocation": "Moria",
+      "distance": 150,
+      "startingLocationDescription": "Leave the serene Rivendell, following the path that leads into the Misty Mountains.",
+      "endingLocationDescription": "Enter Moria, the ancient dwarven city, where you will encounter both the beauty and the perils of its dark halls.",
+      "credibility": {
+        "source": "Estimates based on Middle-earth maps and lore",
+        "reliability": 5,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Moria",
+      "endingLocation": "Mount Doom",
+      "distance": 1300,
+      "startingLocationDescription": "After navigating the depths of Moria, continue your journey towards the dark lands of Mordor.",
+      "endingLocationDescription": "Reach Mount Doom, the fiery mountain where the fate of the One Ring will be decided.",
+      "credibility": {
+        "source": "https://renaissancedaze.blogspot.com/p/walking-to-mordor-challenge.html",
+        "reliability": 5,
+        "guess": true
+      }
+    }
+  ]
+}

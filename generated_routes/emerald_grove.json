@@ -1,0 +1,637 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Sherwood Forest Adventure fictional route"
+            },
+            "type": "tool_call",
+            "id": "call_2Mb7nH8HW5zfSLrxgFvgKciP"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_2Mb7nH8HW5zfSLrxgFvgKciP",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Sherwood Forest Adventure fictional route\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 524,
+            "totalTokens": 544
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 524,
+            "completion_tokens": 20,
+            "total_tokens": 544,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyfPFLoxlsq6z6qnqizURJa6B6Aa"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The fictional route in Sherwood Forest Adventure is primarily explored in the visual novel 'Made Marion', where players navigate through Sherwood and Nottingham, making choices that significantly affect the storyline and character interactions. Additionally, in the game 'Nocked! True Adventures of Robin Hood', Robin Hood's journey leads him to Sherwood Forest, where he faces challenges due to the forest's superstitions and mystical creatures, impacting his followers' loyalty.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Sherwood Forest\",\n        \"endingLocation\": \"Nottingham\",\n        \"startingLocationDescription\": \"Begin your adventure in the mystical Sherwood Forest, known for its enchanting yet eerie atmosphere filled with superstitions and magical creatures.\",\n        \"endingLocationDescription\": \"Arrive in Nottingham, where the choices made in Sherwood will influence your interactions and the unfolding story.\",\n        \"credibility\": {\n          \"source\": \"https://velvet-cupcake-games.itch.io/made-marion\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"In 'Made Marion', players must navigate through Sherwood Forest, making critical choices that lead to different story branches, including romantic options and character developments.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://velvet-cupcake-games.itch.io/made-marion\",\n    \"https://www.geeksundergrace.com/gaming/review-nocked-true-adventures-of-robin-hood/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer is almost perfect for the question as it directly addresses the fictional route in the context of the game mentioned.\",\n      \"answer\": \"The fictional route in Sherwood Forest Adventure is part of the visual novel 'Made Marion', where players navigate through Sherwood and Nottingham, making choices that affect the story and romance options.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"In the full game, you'll make an important choice at the end of the prologue that will lead you to either the Sherwood branch or the Nottingham branch of the game.\",\n      \"content\": \"The game 'Made Marion' features a narrative where players can choose between routes in Sherwood Forest and Nottingham, impacting the storyline and character interactions.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_2Mb7nH8HW5zfSLrxgFvgKciP",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "222e8c20-7b81-4a7b-9ec9-a72b379edcac"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Fictional journey through Sherwood Forest Adventure, exploring stops like Nottingham Castle, Major Oak, Edwinstowe Village, Thieves' Wood, Sherwood Pines, and Clipstone Forest. Focus on fictional elements and avoid real-life filming locations."
+            },
+            "type": "tool_call",
+            "id": "call_g5U63aId699OxciBpS33Ky6B"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_g5U63aId699OxciBpS33Ky6B",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Fictional journey through Sherwood Forest Adventure, exploring stops like Nottingham Castle, Major Oak, Edwinstowe Village, Thieves' Wood, Sherwood Pines, and Clipstone Forest. Focus on fictional elements and avoid real-life filming locations.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 64,
+            "promptTokens": 3999,
+            "totalTokens": 4063
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3999,
+            "completion_tokens": 64,
+            "total_tokens": 4063,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyg2jzyYeNcUw5PtE24c42mwFenC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"This fictional journey through Sherwood Forest takes you on an adventure filled with legendary stops that evoke the spirit of Robin Hood and his merry band. Starting at Nottingham Castle, you can imagine the grandeur of the fortress where the Sheriff of Nottingham plotted against Robin Hood. As you venture into the heart of Sherwood Forest, you will encounter the iconic Major Oak, a massive tree that serves as a hideout for the outlaws. Edwinstowe Village offers a quaint atmosphere, where you can picture villagers sharing tales of Robin's exploits. Thieves' Wood adds an air of mystery, with its dense trees and hidden paths, perfect for a secretive escape. Sherwood Pines provides a serene backdrop for reflection, while Clipstone Forest invites you to explore deeper into the legendary woods, where adventure awaits at every turn.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Nottingham Castle\",\n        \"endingLocation\": \"Major Oak\",\n        \"startingLocationDescription\": \"Begin your journey at the imposing Nottingham Castle, a symbol of power and authority, where you can imagine the Sheriff plotting against Robin Hood.\",\n        \"endingLocationDescription\": \"Arrive at the Major Oak, a legendary tree that serves as a hideout for Robin Hood and his merry men, surrounded by the whispers of history.\",\n        \"credibility\": {\n          \"source\": \"Fictional narrative based on Robin Hood lore\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the journey captures the essence of the conflict between Robin Hood and the Sheriff, setting the stage for your adventure.\"\n      },\n      {\n        \"startingLocation\": \"Major Oak\",\n        \"endingLocation\": \"Edwinstowe Village\",\n        \"startingLocationDescription\": \"Leave the shelter of the Major Oak, feeling the camaraderie of the outlaws as you step into the wider world.\",\n        \"endingLocationDescription\": \"Arrive in Edwinstowe Village, where the locals share stories of Robin Hood, and you can almost hear the laughter of the merry men.\",\n        \"credibility\": {\n          \"source\": \"Fictional narrative based on Robin Hood lore\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This segment highlights the connection between the outlaws and the villagers, showcasing the support Robin Hood receives from the people.\"\n      },\n      {\n        \"startingLocation\": \"Edwinstowe Village\",\n        \"endingLocation\": \"Thieves' Wood\",\n        \"startingLocationDescription\": \"Depart from the friendly village atmosphere, feeling the excitement of adventure as you head towards the mysterious Thieves' Wood.\",\n        \"endingLocationDescription\": \"Enter Thieves' Wood, a dense and shadowy area where secrets are hidden and danger lurks, perfect for a thrilling escapade.\",\n        \"credibility\": {\n          \"source\": \"Fictional narrative based on Robin Hood lore\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This leg emphasizes the thrill of adventure and the risks that come with being an outlaw in Sherwood Forest.\"\n      },\n      {\n        \"startingLocation\": \"Thieves' Wood\",\n        \"endingLocation\": \"Sherwood Pines\",\n        \"startingLocationDescription\": \"Navigate through the winding paths of Thieves' Wood, where every rustle could be a friend or foe.\",\n        \"endingLocationDescription\": \"Arrive at Sherwood Pines, a tranquil area that offers a moment of peace amidst the chaos of the forest.\",\n        \"credibility\": {\n          \"source\": \"Fictional narrative based on Robin Hood lore\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This part of the journey allows for reflection and a brief respite from the adventures, highlighting the beauty of Sherwood Forest.\"\n      },\n      {\n        \"startingLocation\": \"Sherwood Pines\",\n        \"endingLocation\": \"Clipstone Forest\",\n        \"startingLocationDescription\": \"Leave the serene Sherwood Pines, feeling rejuvenated and ready for the next leg of your adventure.\",\n        \"endingLocationDescription\": \"Enter Clipstone Forest, where the trees seem to whisper tales of old, inviting you to explore deeper into the legendary woods.\",\n        \"credibility\": {\n          \"source\": \"Fictional narrative based on Robin Hood lore\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This final leg of the journey encourages exploration and discovery, embodying the spirit of adventure that defines Robin Hood's legacy.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a detailed and imaginative journey through Sherwood Forest, incorporating fictional elements and descriptions that align with the user's query.\",\n      \"answer\": \"This fictional journey through Sherwood Forest takes you on an adventure filled with legendary stops that evoke the spirit of Robin Hood and his merry band.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"This fictional journey through Sherwood Forest takes you on an adventure filled with legendary stops that evoke the spirit of Robin Hood and his merry band.\",\n      \"content\": \"The journey includes stops at Nottingham Castle, Major Oak, Edwinstowe Village, Thieves' Wood, Sherwood Pines, and Clipstone Forest, each with rich descriptions and fictional elements that enhance the adventure.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_g5U63aId699OxciBpS33Ky6B",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "da6051a1-9a5a-4370-a6a0-a83fe1db869f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Nottingham Castle to Major Oak"
+            },
+            "type": "tool_call",
+            "id": "call_HckicysPJAxdF3p8qZTQFU8J"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_HckicysPJAxdF3p8qZTQFU8J",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Nottingham Castle to Major Oak\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 19,
+            "promptTokens": 9175,
+            "totalTokens": 9194
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9175,
+            "completion_tokens": 19,
+            "total_tokens": 9194,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKykRy6KpMYote2F7CJaSwMHCwnLz"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Nottingham Castle to Major Oak\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Major Oak is a historic tree located in Sherwood Forest, near Nottingham. It is famously associated with the legend of Robin Hood and is approximately 1,000 years old. The distance from Nottingham Castle to the Major Oak is about 17 miles, making it a notable landmark for visitors interested in the Robin Hood legend and the natural beauty of Sherwood Forest.\",\n    \"finalAnswer\": {\n      \"distance\": 17,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.nottinghamshire.gov.uk/culture-leisure/country-parks/history-of-sherwood-forest-robin-hood-and-major-oak\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a direct distance and location context relevant to the query.\",\n        \"answer\": \"Nottingham Castle is 17 miles south of Major Oak in Sherwood Forest.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Sherwood Country Park lies just north of Edwinstowe, two miles from Ollerton and 17 miles north of Nottingham on the A614 Nottingham-Doncaster road.\",\n        \"content\": \"The content discusses the history and significance of Sherwood Forest and Major Oak, providing geographical context that helps answer the query about the distance from Nottingham Castle to Major Oak.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Major Oak is a historic tree located in Sherwood Forest, near Nottingham. It is famously associated with the legend of Robin Hood and is approximately 1,000 years old. The distance from Nottingham Castle to the Major Oak is about 17 miles, making it a notable landmark for visitors interested in the Robin Hood legend and the natural beauty of Sherwood Forest.\",\n      \"finalAnswer\": {\n        \"distance\": 17,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.nottinghamshire.gov.uk/culture-leisure/country-parks/history-of-sherwood-forest-robin-hood-and-major-oak\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a direct distance and location context relevant to the query.\",\n          \"answer\": \"Nottingham Castle is 17 miles south of Major Oak in Sherwood Forest.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Sherwood Country Park lies just north of Edwinstowe, two miles from Ollerton and 17 miles north of Nottingham on the A614 Nottingham-Doncaster road.\",\n          \"content\": \"The content discusses the history and significance of Sherwood Forest and Major Oak, providing geographical context that helps answer the query about the distance from Nottingham Castle to Major Oak.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_HckicysPJAxdF3p8qZTQFU8J",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "0b09ad16-3884-4feb-bf85-cd01f0e8f290"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Major Oak to Edwinstowe Village"
+            },
+            "type": "tool_call",
+            "id": "call_vDHdNy8nO5Q40rki69Iy9U0l"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_vDHdNy8nO5Q40rki69Iy9U0l",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Major Oak to Edwinstowe Village\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 9898,
+            "totalTokens": 9919
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9898,
+            "completion_tokens": 21,
+            "total_tokens": 9919,
+            "prompt_tokens_details": {
+              "cached_tokens": 8320
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyl481PSm6BJyCqkw23CgiIFtkEz"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Major Oak to Edwinstowe Village\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Major Oak is a famous tree located in Sherwood Forest, Nottinghamshire, England, and is situated near Edwinstowe Village. It is a significant landmark in the area, making it easily accessible for visitors. The Major Oak is located within Sherwood Country Park, which lies just north of Edwinstowe. To reach the Major Oak from Edwinstowe, visitors can take bus No. 33 from Nottingham, which stops in Edwinstowe, and then it is a short walk to the Major Oak.\",\n    \"finalAnswer\": {\n      \"distance\": 0.5,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"10\",\n    \"relevantLinks\": [\n      \"https://www.nottinghamshire.gov.uk/culture-leisure/country-parks/history-of-sherwood-forest-robin-hood-and-major-oak\",\n      \"https://en.wikipedia.org/wiki/Major_Oak\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the location of Major Oak in relation to Edwinstowe Village.\",\n        \"answer\": \"Major Oak is near Edwinstowe Village.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Major Oak is a large English oak (Quercus robur) near the village of Edwinstowe in the midst of Sherwood Forest, Nottinghamshire, England.\",\n        \"content\": \"The Major Oak is located in Sherwood Forest, Nottinghamshire, close to Edwinstowe Village, making it a significant landmark in the area.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Major Oak is a famous tree located in Sherwood Forest, Nottinghamshire, England, and is situated near Edwinstowe Village. It is a significant landmark in the area, making it easily accessible for visitors. The Major Oak is located within Sherwood Country Park, which lies just north of Edwinstowe. To reach the Major Oak from Edwinstowe, visitors can take bus No. 33 from Nottingham, which stops in Edwinstowe, and then it is a short walk to the Major Oak.\",\n      \"finalAnswer\": {\n        \"distance\": 0.5,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"10\",\n      \"relevantLinks\": [\n        \"https://www.nottinghamshire.gov.uk/culture-leisure/country-parks/history-of-sherwood-forest-robin-hood-and-major-oak\",\n        \"https://en.wikipedia.org/wiki/Major_Oak\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is directly related to the location of Major Oak in relation to Edwinstowe Village.\",\n          \"answer\": \"Major Oak is near Edwinstowe Village.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"The Major Oak is a large English oak (Quercus robur) near the village of Edwinstowe in the midst of Sherwood Forest, Nottinghamshire, England.\",\n          \"content\": \"The Major Oak is located in Sherwood Forest, Nottinghamshire, close to Edwinstowe Village, making it a significant landmark in the area.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the location of Major Oak in relation to Edwinstowe Village.\",\n        \"answer\": \"Major Oak is near Edwinstowe Village.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"The Major Oak is a large English oak (Quercus robur) near the village of Edwinstowe in the midst of Sherwood Forest, Nottinghamshire, England.\",\n        \"content\": \"The Major Oak is located in Sherwood Forest, Nottinghamshire, close to Edwinstowe Village, making it a significant landmark in the area.\",\n        \"link\": \"https://en.wikipedia.org/wiki/Major_Oak\",\n        \"query\": \"Major Oak to Edwinstowe Village\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about transportation from Major Oak to Edwinstowe Village, providing specific bus information.\",\n        \"answer\": \"Take bus No. 33 from Nottingham to Edwinstowe to reach the Major Oak.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"from Nottingham, you take bus No.33 to WORKSOP, and this stops in Edwinstowe, where the Major Oak is found.\",\n        \"content\": \"To visit the Major Oak, take bus No. 33 from Nottingham to Edwinstowe. The Major Oak is a short walk from the bus stop.\",\n        \"link\": \"https://www.tripadvisor.com/ShowTopic-g186356-i560-k2776988-Transportation_from_London_to_Sherwood_Forest_Nottingham-Nottingham_Nottinghamshire_England.html\",\n        \"query\": \"Major Oak to Edwinstowe Village\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_vDHdNy8nO5Q40rki69Iy9U0l",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ab14900c-0d12-4eca-aa01-a5456d49dc21"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Edwinstowe Village to Thieves' Wood"
+            },
+            "type": "tool_call",
+            "id": "call_DgAnIjlQYyRpw3mBC3YXlKQY"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_DgAnIjlQYyRpw3mBC3YXlKQY",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Edwinstowe Village to Thieves' Wood\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 23,
+            "promptTokens": 9422,
+            "totalTokens": 9445
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 9422,
+            "completion_tokens": 23,
+            "total_tokens": 9445,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKylh72lrpgMAeAlq0lozE0wnFUFA"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Edwinstowe Village to Thieves' Wood\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Edwinstowe Village is located adjacent to Thieves' Wood, which is part of the Sherwood Forest National Nature Reserve. This area has historical significance, particularly in relation to the legend of Robin Hood. Thieves' Wood is situated to the west of Edwinstowe, making it easily accessible for visitors exploring the forest.\",\n    \"finalAnswer\": {\n      \"distance\": 1.5,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://en.wikipedia.org/wiki/Sherwood_Forest\",\n      \"https://www.mercian-as.co.uk/hanging.html\",\n      \"http://www.mercian-as.co.uk/lyndhurst.html\",\n      \"https://www.troventrip.com/blog/robin-hood-travel-destination-for-fans\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the query about the location of Edwinstowe Village and Thieves' Wood within Sherwood Forest.\",\n        \"answer\": \"Edwinstowe Village is adjacent to Thieves' Wood in Sherwood Forest.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Sherwood Forest National Nature Reserve encompasses 424.75 hectares (1,049.6 acres), surrounding the village of Edwinstowe and the site of Thoresby Hall.\",\n        \"content\": \"Sherwood Forest is the remnants of an ancient royal forest in Nottinghamshire, England, having a historic association with the legend of Robin Hood. The area has been wooded since the end of the Last Glacial Period. Today, Sherwood Forest National Nature Reserve encompasses 424.75 hectares (1,049.6 acres), surrounding the village of Edwinstowe and the site of Thoresby Hall.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer directly addresses the query about the location of Thieves' Wood in relation to Edwinstowe.\",\n        \"answer\": \"Thieves' Wood is located to the west of Edwinstowe.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Harlow Wood and Thieves Wood can be seen to the west, either side of the post-medieval route of the Mansfield Road.\",\n        \"content\": \"The content provides historical context about Sherwood Forest and mentions the locations of various woods, including Thieves' Wood in relation to Edwinstowe.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Edwinstowe Village is located adjacent to Thieves' Wood, which is part of the Sherwood Forest National Nature Reserve. This area has historical significance, particularly in relation to the legend of Robin Hood. Thieves' Wood is situated to the west of Edwinstowe, making it easily accessible for visitors exploring the forest.\",\n      \"finalAnswer\": {\n        \"distance\": 1.5,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://en.wikipedia.org/wiki/Sherwood_Forest\",\n        \"https://www.mercian-as.co.uk/hanging.html\",\n        \"http://www.mercian-as.co.uk/lyndhurst.html\",\n        \"https://www.troventrip.com/blog/robin-hood-travel-destination-for-fans\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is directly related to the query about the location of Edwinstowe Village and Thieves' Wood within Sherwood Forest.\",\n          \"answer\": \"Edwinstowe Village is adjacent to Thieves' Wood in Sherwood Forest.\",\n          \"answerQuality\": \"10\",\n          \"snippet\": \"Sherwood Forest National Nature Reserve encompasses 424.75 hectares (1,049.6 acres), surrounding the village of Edwinstowe and the site of Thoresby Hall.\",\n          \"content\": \"Sherwood Forest is the remnants of an ancient royal forest in Nottinghamshire, England, having a historic association with the legend of Robin Hood. The area has been wooded since the end of the Last Glacial Period. Today, Sherwood Forest National Nature Reserve encompasses 424.75 hectares (1,049.6 acres), surrounding the village of Edwinstowe and the site of Thoresby Hall.\"\n        },\n        {\n          \"answerQualityExplanation\": \"The answer directly addresses the query about the location of Thieves' Wood in relation to Edwinstowe.\",\n          \"answer\": \"Thieves' Wood is located to the west of Edwinstowe.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Harlow Wood and Thieves Wood can be seen to the west, either side of the post-medieval route of the Mansfield Road.\",\n          \"content\": \"The content provides historical context about Sherwood Forest and mentions the locations of various woods, including Thieves' Wood in relation to Edwinstowe.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the query about the location of Edwinstowe Village and Thieves' Wood within Sherwood Forest.\",\n        \"answer\": \"Edwinstowe Village is adjacent to Thieves' Wood in Sherwood Forest.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Sherwood Forest National Nature Reserve encompasses 424.75 hectares (1,049.6 acres), surrounding the village of Edwinstowe and the site of Thoresby Hall.\",\n        \"content\": \"Sherwood Forest is the remnants of an ancient royal forest in Nottinghamshire, England, having a historic association with the legend of Robin Hood. The area has been wooded since the end of the Last Glacial Period. Today, Sherwood Forest National Nature Reserve encompasses 424.75 hectares (1,049.6 acres), surrounding the village of Edwinstowe and the site of Thoresby Hall.\",\n        \"link\": \"https://en.wikipedia.org/wiki/Sherwood_Forest\",\n        \"query\": \"Edwinstowe Village to Thieves' Wood\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_DgAnIjlQYyRpw3mBC3YXlKQY",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "dd198634-4c44-4fc9-9a38-8617ce453b55"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Thieves' Wood to Sherwood Pines"
+            },
+            "type": "tool_call",
+            "id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Thieves' Wood to Sherwood Pines\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 21,
+            "promptTokens": 8479,
+            "totalTokens": 8500
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8479,
+            "completion_tokens": 21,
+            "total_tokens": 8500,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKymC28uYYZv6RnBGzSqRg92WhNo9"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Thieves' Wood to Sherwood Pines\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Thieves' Wood and Sherwood Pines are both located in Sherwood Forest, known for their natural beauty and historical significance. Thieves' Wood features a Bronze Age burial mound and is a local woodland that welcomes horse riding. Sherwood Pines is notable for its WWI training trenches and offers various outdoor activities. Both locations provide beautiful and isolated spots for a special day out.\",\n    \"finalAnswer\": {\n      \"distance\": 2.5,\n      \"unit\": \"mi\"\n    },\n    \"finalAnswerQuality\": \"5\",\n    \"relevantLinks\": [\n      \"https://www.reddit.com/r/nottingham/comments/11zrtog/anyone_know_of_any_great_trip_spots_in_sherwood/\",\n      \"http://mercian-as.co.uk/sherwoodforestlidar.html\",\n      \"https://www.forestryengland.uk/sherwood-pines/horse-riding-sherwood-pines\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides relevant information about both locations mentioned in the query.\",\n        \"answer\": \"Thieves' Wood is associated with a Bronze Age burial mound, while Sherwood Pines contains WWI training trenches.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"In Thieves Wood, south of Mansfield lies a mound listed on the Nottinghamshire Historic Environment Record (HER) as a Bronze Age Burial Mound... Sherwood Pines, viewed from the west, the trenches formed part of the Clipstone Camp training area.\",\n        \"content\": \"Thieves' Wood features a Bronze Age burial mound interpreted as the location of the medieval town gallows, while Sherwood Pines has remnants of First World War training trenches.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Thieves' Wood and Sherwood Pines are both located in Sherwood Forest, known for their natural beauty and historical significance. Thieves' Wood features a Bronze Age burial mound and is a local woodland that welcomes horse riding. Sherwood Pines is notable for its WWI training trenches and offers various outdoor activities. Both locations provide beautiful and isolated spots for a special day out.\",\n      \"finalAnswer\": {\n        \"distance\": 2.5,\n        \"unit\": \"mi\"\n      },\n      \"finalAnswerQuality\": \"5\",\n      \"relevantLinks\": [\n        \"https://www.reddit.com/r/nottingham/comments/11zrtog/anyone_know_of_any_great_trip_spots_in_sherwood/\",\n        \"http://mercian-as.co.uk/sherwoodforestlidar.html\",\n        \"https://www.forestryengland.uk/sherwood-pines/horse-riding-sherwood-pines\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides relevant information about both locations mentioned in the query.\",\n          \"answer\": \"Thieves' Wood is associated with a Bronze Age burial mound, while Sherwood Pines contains WWI training trenches.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"In Thieves Wood, south of Mansfield lies a mound listed on the Nottinghamshire Historic Environment Record (HER) as a Bronze Age Burial Mound... Sherwood Pines, viewed from the west, the trenches formed part of the Clipstone Camp training area.\",\n          \"content\": \"Thieves' Wood features a Bronze Age burial mound interpreted as the location of the medieval town gallows, while Sherwood Pines has remnants of First World War training trenches.\"\n        }\n      ]\n    },\n    \"answers\": []\n  }\n}",
+        "tool_call_id": "call_Wwa8WM0Uvk4dxQwhBqVqfPn3",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e6efea9f-0c3d-4f9b-b9e3-a1044b244f8c"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_search",
+            "args": {
+              "query": "Sherwood Pines to Clipstone Forest"
+            },
+            "type": "tool_call",
+            "id": "call_lQmtxKRwQS6RQwfHcENdljtO"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_lQmtxKRwQS6RQwfHcENdljtO",
+              "type": "function",
+              "function": {
+                "name": "distance_search",
+                "arguments": "{\"query\":\"Sherwood Pines to Clipstone Forest\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 8639,
+            "totalTokens": 8659
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8639,
+            "completion_tokens": 20,
+            "total_tokens": 8659,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_45c6de4934"
+        },
+        "id": "chatcmpl-AKyn3JUDdoVeNhno7NrfZ5CUFDroJ"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Sherwood Pines to Clipstone Forest\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"Sherwood Pines Forest Park is located near Kings Clipstone in Nottinghamshire, England, and is part of the ancient Sherwood Forest. Clipstone Forest is situated to the east of Mansfield and is also known as Sherwood Pines Forest Park. There is a 9.7 km circular trail that connects Sherwood Pines to Clipstone Forest, which is generally considered a moderately challenging route. This trail offers scenic paths and opportunities for wildlife observation.\",\n    \"finalAnswer\": {\n      \"distance\": 9.7,\n      \"unit\": \"km\"\n    },\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://en.wikipedia.org/wiki/Sherwood_Pines_Forest_Park\",\n      \"https://www.alltrails.com/en-gb/trail/england/nottinghamshire/sherwood-pines-and-clipstone-forest-circular\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific information about the trail from Sherwood Pines to Clipstone Forest, including its length, difficulty, and activities, making it highly relevant.\",\n        \"answer\": \"9.7 km circular trail from Sherwood Pines to Clipstone Forest.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Check out this 9.7-km circular trail near Mansfield, Nottinghamshire. Generally considered a moderately challenging route...\",\n        \"content\": \"This is a pleasant trail taking you around Clipstone Forest and past Vicar Pond, with a pub along the route for refreshments. Enjoy scenic paths and keep an eye out for wildlife, but take care on the rougher sections, especially in wetter conditions.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"Sherwood Pines Forest Park is located near Kings Clipstone in Nottinghamshire, England, and is part of the ancient Sherwood Forest. Clipstone Forest is situated to the east of Mansfield and is also known as Sherwood Pines Forest Park. There is a 9.7 km circular trail that connects Sherwood Pines to Clipstone Forest, which is generally considered a moderately challenging route. This trail offers scenic paths and opportunities for wildlife observation.\",\n      \"finalAnswer\": {\n        \"distance\": 9.7,\n        \"unit\": \"km\"\n      },\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://en.wikipedia.org/wiki/Sherwood_Pines_Forest_Park\",\n        \"https://www.alltrails.com/en-gb/trail/england/nottinghamshire/sherwood-pines-and-clipstone-forest-circular\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides specific information about the trail from Sherwood Pines to Clipstone Forest, including its length, difficulty, and activities, making it highly relevant.\",\n          \"answer\": \"9.7 km circular trail from Sherwood Pines to Clipstone Forest.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"Check out this 9.7-km circular trail near Mansfield, Nottinghamshire. Generally considered a moderately challenging route...\",\n          \"content\": \"This is a pleasant trail taking you around Clipstone Forest and past Vicar Pond, with a pub along the route for refreshments. Enjoy scenic paths and keep an eye out for wildlife, but take care on the rougher sections, especially in wetter conditions.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is directly related to the query about the location of Sherwood Pines in relation to Clipstone Forest.\",\n        \"answer\": \"Sherwood Pines is located near Kings Clipstone, Nottinghamshire, England.\",\n        \"answerQuality\": \"10\",\n        \"snippet\": \"Sherwood Pines Forest Park is a forest park located near the village of Kings Clipstone, Nottinghamshire, England.\",\n        \"content\": \"Sherwood Pines Forest Park, originally called Clipstone Heath, is located near Kings Clipstone in Nottinghamshire, England. It was acquired by Forestry England in 1925 and is part of the ancient Sherwood Forest.\",\n        \"link\": \"https://en.wikipedia.org/wiki/Sherwood_Pines_Forest_Park\",\n        \"query\": \"Sherwood Pines to Clipstone Forest\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer provides specific information about the trail from Sherwood Pines to Clipstone Forest, including its length, difficulty, and activities, making it highly relevant.\",\n        \"answer\": \"9.7 km circular trail from Sherwood Pines to Clipstone Forest.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"Check out this 9.7-km circular trail near Mansfield, Nottinghamshire. Generally considered a moderately challenging route...\",\n        \"content\": \"This is a pleasant trail taking you around Clipstone Forest and past Vicar Pond, with a pub along the route for refreshments. Enjoy scenic paths and keep an eye out for wildlife, but take care on the rougher sections, especially in wetter conditions.\",\n        \"link\": \"https://www.alltrails.com/en-gb/trail/england/nottinghamshire/sherwood-pines-and-clipstone-forest-circular\",\n        \"query\": \"Sherwood Pines to Clipstone Forest\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_lQmtxKRwQS6RQwfHcENdljtO",
+        "name": "distance_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "67d9b9d9-dcae-428d-baea-6864223a62a9"
+      }
+    }
+  ],
+  "fictional": true,
+  "references": [
+    {
+      "name": "Made Marion",
+      "link": "https://velvet-cupcake-games.itch.io/made-marion"
+    },
+    {
+      "name": "Nocked! True Adventures of Robin Hood",
+      "link": "https://www.geeksundergrace.com/gaming/review-nocked-true-adventures-of-robin-hood/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Sherwood Forest Adventure\", which is fictional.\nThe  pitch for this route is \"Embark on a journey through the legendary Sherwood Forest, home of Robin Hood. Traverse the lush, green landscape filled with towering oaks and hidden glades, where folklore and nature intertwine.\".\nSome ideas for steps are: \n\t - Nottingham Castle to Major Oak\n\t - Major Oak to Edwinstowe Village\n\t - Edwinstowe Village to Thieves' Wood\n\t - Thieves' Wood to Sherwood Pines\n\t - Sherwood Pines to Clipstone Forest",
+  "itinerary": [
+    {
+      "startingLocation": "Nottingham Castle",
+      "endingLocation": "Major Oak",
+      "startingLocationDescription": "Begin your journey at the historic Nottingham Castle, a symbol of medieval history and legend.",
+      "endingLocationDescription": "Arrive at the Major Oak, a legendary tree in Sherwood Forest, said to be the hideout of Robin Hood.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Located in the heart of Sherwood Forest, follow the marked trails."
+    },
+    {
+      "startingLocation": "Major Oak",
+      "endingLocation": "Edwinstowe Village",
+      "startingLocationDescription": "The Major Oak stands as a testament to the rich folklore of Sherwood Forest.",
+      "endingLocationDescription": "Edwinstowe Village is a quaint settlement known for its connections to the Robin Hood legend.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the forest path leading to the village outskirts."
+    },
+    {
+      "startingLocation": "Edwinstowe Village",
+      "endingLocation": "Thieves' Wood",
+      "startingLocationDescription": "Explore the charming streets of Edwinstowe, steeped in history and myth.",
+      "endingLocationDescription": "Enter Thieves' Wood, a dense and mysterious part of Sherwood Forest.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Head north from the village center, following the woodland trails."
+    },
+    {
+      "startingLocation": "Thieves' Wood",
+      "endingLocation": "Sherwood Pines",
+      "startingLocationDescription": "Thieves' Wood is known for its dense canopy and hidden paths.",
+      "endingLocationDescription": "Sherwood Pines offers a more open landscape, perfect for exploration.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Continue through the forest trails leading to the pines."
+    },
+    {
+      "startingLocation": "Sherwood Pines",
+      "endingLocation": "Clipstone Forest",
+      "startingLocationDescription": "Sherwood Pines is a popular spot for outdoor activities and nature walks.",
+      "endingLocationDescription": "Clipstone Forest marks the end of your journey, with its serene and expansive woodland.",
+      "fictionalLocation": true,
+      "possibleAddressInfo": [],
+      "anyExtraInformationOnHowToFind": "Follow the main path through the pines to reach Clipstone Forest."
+    }
+  ],
+  "route": "Sherwood Forest Adventure Route",
+  "steps": [
+    {
+      "startingLocation": "Nottingham Castle",
+      "endingLocation": "Major Oak",
+      "distance": 17,
+      "startingLocationDescription": "Begin your journey at the historic Nottingham Castle, a symbol of medieval history and legend.",
+      "endingLocationDescription": "Arrive at the Major Oak, a legendary tree in Sherwood Forest, said to be the hideout of Robin Hood.",
+      "credibility": {
+        "source": "https://www.nottinghamshire.gov.uk/culture-leisure/country-parks/history-of-sherwood-forest-robin-hood-and-major-oak",
+        "reliability": 5,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Major Oak",
+      "endingLocation": "Edwinstowe Village",
+      "distance": 0.5,
+      "startingLocationDescription": "The Major Oak stands as a testament to the rich folklore of Sherwood Forest.",
+      "endingLocationDescription": "Edwinstowe Village is a quaint settlement known for its connections to the Robin Hood legend.",
+      "credibility": {
+        "source": "https://www.nottinghamshire.gov.uk/culture-leisure/country-parks/history-of-sherwood-forest-robin-hood-and-major-oak",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Edwinstowe Village",
+      "endingLocation": "Thieves' Wood",
+      "distance": 1.5,
+      "startingLocationDescription": "Explore the charming streets of Edwinstowe, steeped in history and myth.",
+      "endingLocationDescription": "Enter Thieves' Wood, a dense and mysterious part of Sherwood Forest.",
+      "credibility": {
+        "source": "https://en.wikipedia.org/wiki/Sherwood_Forest",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Thieves' Wood",
+      "endingLocation": "Sherwood Pines",
+      "distance": 2.5,
+      "startingLocationDescription": "Thieves' Wood is known for its dense canopy and hidden paths.",
+      "endingLocationDescription": "Sherwood Pines offers a more open landscape, perfect for exploration.",
+      "credibility": {
+        "source": "http://mercian-as.co.uk/sherwoodforestlidar.html",
+        "reliability": 5,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Sherwood Pines",
+      "endingLocation": "Clipstone Forest",
+      "distance": 9.7,
+      "startingLocationDescription": "Sherwood Pines is a popular spot for outdoor activities and nature walks.",
+      "endingLocationDescription": "Clipstone Forest marks the end of your journey, with its serene and expansive woodland.",
+      "credibility": {
+        "source": "https://www.alltrails.com/en-gb/trail/england/nottinghamshire/sherwood-pines-and-clipstone-forest-circular",
+        "reliability": 8,
+        "guess": false
+      }
+    }
+  ]
+}
