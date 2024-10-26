@@ -1,0 +1,648 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Hawaiian Island Hop itinerary for real locations"
+            },
+            "type": "tool_call",
+            "id": "call_EuVjtZb9ohffroGCqR9nC2xF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_EuVjtZb9ohffroGCqR9nC2xF",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Hawaiian Island Hop itinerary for real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 22,
+            "promptTokens": 542,
+            "totalTokens": 564
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 542,
+            "completion_tokens": 22,
+            "total_tokens": 564,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3q4o9AZDR3L5YNfsJfFjEmlwLm"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"For a well-rounded Hawaiian experience, it is recommended to visit Maui, Oahu, and Kauai. Maui offers beautiful beaches and the scenic Road to Hana, Oahu is known for its vibrant culture and surfing spots, and Kauai is famous for its lush landscapes and hiking opportunities. This itinerary allows for a mix of relaxation, adventure, and cultural experiences across the islands.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Maui\",\n        \"endingLocation\": \"Oahu\",\n        \"startingLocationDescription\": \"Begin your journey in Maui, known for its stunning beaches and the scenic Road to Hana.\",\n        \"endingLocationDescription\": \"Arrive in Oahu, where you can explore the famous Waikiki Beach and visit Pearl Harbor.\",\n        \"credibility\": {\n          \"source\": \"https://apassionandapassport.com/hawaii-island-hopping-itinerary-10-days/\",\n          \"reliability\": 5,\n          \"guess\": false\n        },\n        \"description\": \"Travel from Maui to Oahu to experience the vibrant culture and beautiful beaches.\"\n      },\n      {\n        \"startingLocation\": \"Oahu\",\n        \"endingLocation\": \"Kauai\",\n        \"startingLocationDescription\": \"Enjoy your time in Oahu, taking part in activities like surfing and visiting historical sites.\",\n        \"endingLocationDescription\": \"Fly to Kauai, known as the 'Garden Isle' for its lush greenery and stunning landscapes.\",\n        \"credibility\": {\n          \"source\": \"https://apassionandapassport.com/hawaii-island-hopping-itinerary-10-days/\",\n          \"reliability\": 5,\n          \"guess\": false\n        },\n        \"description\": \"Travel from Oahu to Kauai to enjoy the natural beauty and outdoor activities.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"5\",\n  \"relevantLinks\": [\n    \"https://apassionandapassport.com/hawaii-island-hopping-itinerary-10-days/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a clear and relevant itinerary suggestion based on the content provided.\",\n      \"answer\": \"Visit Maui, Oahu, and Kauai for a typical Hawaiian experience in 10 days.\",\n      \"answerQuality\": 5,\n      \"snippet\": \"THE TYPICAL HAWAIIAN EXPERIENCE: GET INTO THE ALOHA SPIRIT ON MAUI, OAHU, AND KAUAI (IF TIME ALLOWS)\",\n      \"content\": \"The itinerary suggests visiting Maui, Oahu, and Kauai for a well-rounded Hawaiian experience, highlighting popular activities and sights on each island.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 5,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_EuVjtZb9ohffroGCqR9nC2xF",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ccdf4d60-77f9-42a6-8d79-0eaf5a36de36"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Hawaiian Island Hop: A journey across the Hawaiian Islands, exploring diverse landscapes from volcanic craters to lush rainforests and pristine beaches. Real places only, no fictional locations."
+            },
+            "type": "tool_call",
+            "id": "call_Rv5aXW3QHkHBX4CA5LM2Bg89"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Rv5aXW3QHkHBX4CA5LM2Bg89",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Hawaiian Island Hop: A journey across the Hawaiian Islands, exploring diverse landscapes from volcanic craters to lush rainforests and pristine beaches. Real places only, no fictional locations.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 50,
+            "promptTokens": 4187,
+            "totalTokens": 4237
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4187,
+            "completion_tokens": 50,
+            "total_tokens": 4237,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP4b997BnzcfzwUebeNQdfcxUTLD"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Hawaiian Island Hop: A journey across the Hawaiian Islands, exploring diverse landscapes from volcanic craters to lush rainforests and pristine beaches. Real places only, no fictional locations.\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Hawaiian Islands offer a rich tapestry of landscapes, from volcanic craters to lush rainforests and pristine beaches. Notable locations include the historic town of Honokaa on the Big Island, which is near Waipio Valley and Parker Ranch, both known for their stunning natural beauty. The islands are characterized by diverse ecosystems and breathtaking scenery, making them ideal for exploration.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Honokaa, Hawaii\",\n          \"endingLocation\": \"Waipio Valley\",\n          \"startingLocationDescription\": \"Begin your journey in the historic town of Honokaa, known for its rich cultural history and proximity to beautiful landscapes.\",\n          \"endingLocationDescription\": \"Travel to Waipio Valley, famous for its dramatic cliffs and lush greenery, offering stunning views and hiking opportunities.\",\n          \"credibility\": {\n            \"source\": \"Community travel forum\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"This leg of the journey takes you from the charming town of Honokaa to the breathtaking Waipio Valley, where you can experience the natural beauty of Hawaii.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://community.ricksteves.com/travel-forum/general-europe/traveling-through-the-alphabet\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the user's query about real places in Hawaii, specifically mentioning Honokaa and its surroundings.\",\n        \"answer\": \"Honokaa, Hawaii.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"hey hey all HONOKAA is a small town north of hilo or kona hawaii. it is listed as historic.\",\n        \"content\": \"Honokaa is a small town on the Big Island of Hawaii, known for its historic significance and proximity to Waipio Valley and Parker Ranch. It features a rich cultural history related to the former sugar plantation industry.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Hawaiian Islands offer a rich tapestry of landscapes, from volcanic craters to lush rainforests and pristine beaches. Notable locations include the historic town of Honokaa on the Big Island, which is near Waipio Valley and Parker Ranch, both known for their stunning natural beauty. The islands are characterized by diverse ecosystems and breathtaking scenery, making them ideal for exploration.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Honokaa, Hawaii\",\n            \"endingLocation\": \"Waipio Valley\",\n            \"startingLocationDescription\": \"Begin your journey in the historic town of Honokaa, known for its rich cultural history and proximity to beautiful landscapes.\",\n            \"endingLocationDescription\": \"Travel to Waipio Valley, famous for its dramatic cliffs and lush greenery, offering stunning views and hiking opportunities.\",\n            \"credibility\": {\n              \"source\": \"Community travel forum\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"This leg of the journey takes you from the charming town of Honokaa to the breathtaking Waipio Valley, where you can experience the natural beauty of Hawaii.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://community.ricksteves.com/travel-forum/general-europe/traveling-through-the-alphabet\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the user's query about real places in Hawaii, specifically mentioning Honokaa and its surroundings.\",\n          \"answer\": \"Honokaa, Hawaii.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"hey hey all HONOKAA is a small town north of hilo or kona hawaii. it is listed as historic.\",\n          \"content\": \"Honokaa is a small town on the Big Island of Hawaii, known for its historic significance and proximity to Waipio Valley and Parker Ranch. It features a rich cultural history related to the former sugar plantation industry.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is highly relevant as it directly addresses the user's query about real places in Hawaii, specifically mentioning Honokaa and its surroundings.\",\n        \"answer\": \"Honokaa, Hawaii.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"hey hey all HONOKAA is a small town north of hilo or kona hawaii. it is listed as historic.\",\n        \"content\": \"Honokaa is a small town on the Big Island of Hawaii, known for its historic significance and proximity to Waipio Valley and Parker Ranch. It features a rich cultural history related to the former sugar plantation industry.\",\n        \"link\": \"https://community.ricksteves.com/travel-forum/general-europe/traveling-through-the-alphabet\",\n        \"query\": \"The Hawaiian Island Hop: A journey across the Hawaiian Islands, exploring diverse landscapes from volcanic craters to lush rainforests and pristine beaches. Real places only, no fictional locations.\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is almost perfect for the question as it directly addresses the user's interest in the diverse landscapes of the Hawaiian Islands by referencing specific locations on São Miguel Island that match the described features.\",\n        \"answer\": \"São Miguel Island features diverse landscapes including volcanic craters, lush rainforests, and pristine beaches, particularly in areas like Sete Cidades and Furnas.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The Hawaiian Island Hop: A journey across the Hawaiian Islands, exploring diverse landscapes from volcanic craters to lush rainforests and pristine beaches.\",\n        \"content\": \"The content discusses the volcanic landscapes of São Miguel Island, which includes features like the Sete Cidades caldera and Furnas, both known for their stunning natural beauty and diverse ecosystems, similar to what one might find across the Hawaiian Islands.\",\n        \"link\": \"https://www.volcanocafe.org/a-whole-volcano-tourist-mega-tour-of-sao-miguel-island-part-ii/comment-page-1/\",\n        \"query\": \"The Hawaiian Island Hop: A journey across the Hawaiian Islands, exploring diverse landscapes from volcanic craters to lush rainforests and pristine beaches. Real places only, no fictional locations.\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_Rv5aXW3QHkHBX4CA5LM2Bg89",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "7d7585ae-4e14-43e5-9b7a-5a5dcc2e6eb0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Hilo, Hawaii, USA",
+              "to": "Kailua-Kona, Hawaii, USA"
+            },
+            "type": "tool_call",
+            "id": "call_Tfj0Oivc2PAM7Z5wn7X6zOiV"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Tfj0Oivc2PAM7Z5wn7X6zOiV",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Hilo, Hawaii, USA\",\"to\":\"Kailua-Kona, Hawaii, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 33,
+            "promptTokens": 7840,
+            "totalTokens": 7873
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7840,
+            "completion_tokens": 33,
+            "total_tokens": 7873,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP5KnaU6NGIy7kZbGUrw1pgoOQX8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Hilo, Hawaii, USA\",\n  \"to\": \"Kailua-Kona, Hawaii, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Kailua-Kona, HI, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Hilo, HI 96720, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"122 km\",\n              \"value\": 122494\n            },\n            \"duration\": {\n              \"text\": \"1 day 4 hours\",\n              \"value\": 101051\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_Tfj0Oivc2PAM7Z5wn7X6zOiV",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "661cfd37-2614-404a-88a8-78c60d7d2fb5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Kailua-Kona, Hawaii, USA",
+              "to": "Haleakalā National Park, Maui, USA"
+            },
+            "type": "tool_call",
+            "id": "call_018LFu1PLJmgtVfFBGrvKdc8"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_018LFu1PLJmgtVfFBGrvKdc8",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Kailua-Kona, Hawaii, USA\",\"to\":\"Haleakalā National Park, Maui, USA\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 37,
+            "promptTokens": 8068,
+            "totalTokens": 8105
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8068,
+            "completion_tokens": 37,
+            "total_tokens": 8105,
+            "prompt_tokens_details": {
+              "cached_tokens": 6784
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP5OcR99Mhn5v014i0iKO8cfbNkI"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Kailua-Kona, Hawaii, USA\",\n  \"to\": \"Haleakalā National Park, Maui, USA\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Haleakalā, Hawaii 96790, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Kailua-Kona, HI, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_018LFu1PLJmgtVfFBGrvKdc8",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ba640ec7-60ba-447a-85da-860a6ec4e31f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Haleakalā National Park, Maui",
+              "to": "Lahaina, Maui"
+            },
+            "type": "tool_call",
+            "id": "call_9nKMZ0tejfw9e0pegtTcIUKr"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_9nKMZ0tejfw9e0pegtTcIUKr",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Haleakalā National Park, Maui\",\"to\":\"Lahaina, Maui\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 6455,
+            "totalTokens": 6486
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6455,
+            "completion_tokens": 31,
+            "total_tokens": 6486,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP5SnJEOlqzSDhd3CXNyACinvs6y"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Haleakalā National Park, Maui\",\n  \"to\": \"Lahaina, Maui\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Lahaina, HI, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Haleakalā, Hawaii 96790, USA\",\n      \"Haleakalā National Park, Hawaii, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"92.8 km\",\n              \"value\": 92794\n            },\n            \"duration\": {\n              \"text\": \"20 hours 33 mins\",\n              \"value\": 73950\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      },\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"78.1 km\",\n              \"value\": 78146\n            },\n            \"duration\": {\n              \"text\": \"17 hours 32 mins\",\n              \"value\": 63139\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_9nKMZ0tejfw9e0pegtTcIUKr",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4c9ddb86-94d3-4a7b-be72-c9169adf2bdf"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Lahaina, Maui",
+              "to": "Waikiki, Oahu"
+            },
+            "type": "tool_call",
+            "id": "call_ty3hF8yyf1MAdMxpBav80ZbJ"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ty3hF8yyf1MAdMxpBav80ZbJ",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Lahaina, Maui\",\"to\":\"Waikiki, Oahu\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 5200,
+            "totalTokens": 5229
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5200,
+            "completion_tokens": 29,
+            "total_tokens": 5229,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP5WYqPaacg2ogbtKarypa65yNE4"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Lahaina, Maui\",\n  \"to\": \"Waikiki, Oahu\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Waikiki, Honolulu, HI 96815, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Lahaina, HI, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_ty3hF8yyf1MAdMxpBav80ZbJ",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d00ea261-4a73-4a17-a3c8-28140ff97fe0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Waikiki, Oahu",
+              "to": "Na Pali Coast, Kauai"
+            },
+            "type": "tool_call",
+            "id": "call_fvbkYBDVmDT2zNaveAighmDM"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_fvbkYBDVmDT2zNaveAighmDM",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Waikiki, Oahu\",\"to\":\"Na Pali Coast, Kauai\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 5158,
+            "totalTokens": 5189
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5158,
+            "completion_tokens": 31,
+            "total_tokens": 5189,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP5Zbv8FqMPExmAP5VvHBaSsERuT"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Waikiki, Oahu\",\n  \"to\": \"Na Pali Coast, Kauai\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Nā Pali Coast State Wilderness Park, Hawaii, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Waikiki, Honolulu, HI 96815, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"status\": \"ZERO_RESULTS\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_fvbkYBDVmDT2zNaveAighmDM",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3977c875-a8a9-470a-bce1-178b6989f0a5"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Hawaii Island Hopping Itinerary",
+      "link": "https://apassionandapassport.com/hawaii-island-hopping-itinerary-10-days/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Hawaiian Island Hop\", which is real world.\nThe  pitch for this route is \"A journey across the Hawaiian Islands, exploring the diverse landscapes from volcanic craters to lush rainforests and pristine beaches.\".\nSome ideas for steps are: \n\t - Hilo, Hawaii (Big Island) to Kailua-Kona, Hawaii (Big Island)\n\t - Kailua-Kona, Hawaii (Big Island) to Haleakalā National Park, Maui\n\t - Haleakalā National Park, Maui to Lahaina, Maui\n\t - Lahaina, Maui to Waikiki, Oahu\n\t - Waikiki, Oahu to Na Pali Coast, Kauai",
+  "itinerary": [
+    {
+      "startingLocation": "Hilo, Hawaii (Big Island)",
+      "endingLocation": "Kailua-Kona, Hawaii (Big Island)",
+      "startingLocationDescription": "Begin your journey in Hilo, known for its lush rainforests and proximity to Hawaii Volcanoes National Park.",
+      "endingLocationDescription": "Travel to Kailua-Kona, famous for its sunny weather and historic sites.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Hilo, HI 96720, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the Mamalahoa Highway (Route 19) for a scenic drive along the coast."
+    },
+    {
+      "startingLocation": "Kailua-Kona, Hawaii (Big Island)",
+      "endingLocation": "Haleakalā National Park, Maui",
+      "startingLocationDescription": "Explore the vibrant town of Kailua-Kona, with its beautiful beaches and coffee farms.",
+      "endingLocationDescription": "Fly to Maui and visit Haleakalā National Park, known for its stunning volcanic landscapes.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Kailua-Kona, HI 96740, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Flights available from Kona International Airport to Kahului Airport in Maui."
+    },
+    {
+      "startingLocation": "Haleakalā National Park, Maui",
+      "endingLocation": "Lahaina, Maui",
+      "startingLocationDescription": "Discover the breathtaking views from the summit of Haleakalā, a dormant volcano.",
+      "endingLocationDescription": "Drive to Lahaina, a historic town with a vibrant arts scene and waterfront dining.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Haleakalā National Park, HI 96768, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Take the Hana Highway (Route 36) and then the Honoapiilani Highway (Route 30) to reach Lahaina."
+    },
+    {
+      "startingLocation": "Lahaina, Maui",
+      "endingLocation": "Waikiki, Oahu",
+      "startingLocationDescription": "Enjoy the charming streets of Lahaina, with its art galleries and historic sites.",
+      "endingLocationDescription": "Fly to Oahu and explore Waikiki, famous for its iconic beach and vibrant nightlife.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Lahaina, HI 96761, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Flights available from Kahului Airport in Maui to Honolulu International Airport in Oahu."
+    },
+    {
+      "startingLocation": "Waikiki, Oahu",
+      "endingLocation": "Na Pali Coast, Kauai",
+      "startingLocationDescription": "Experience the bustling atmosphere of Waikiki, with its shopping and dining options.",
+      "endingLocationDescription": "Fly to Kauai and visit the Na Pali Coast, known for its dramatic cliffs and hiking trails.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Waikiki, Honolulu, HI 96815, USA"
+      ],
+      "anyExtraInformationOnHowToFind": "Flights available from Honolulu International Airport to Lihue Airport in Kauai."
+    }
+  ],
+  "route": "Hawaiian Island Hop",
+  "steps": [
+    {
+      "startingLocation": "Hilo, Hawaii (Big Island)",
+      "endingLocation": "Kailua-Kona, Hawaii (Big Island)",
+      "distance": 122,
+      "startingLocationDescription": "Begin your journey in Hilo, known for its lush rainforests and proximity to Hawaii Volcanoes National Park.",
+      "endingLocationDescription": "Travel to Kailua-Kona, famous for its sunny weather and historic sites.",
+      "credibility": {
+        "source": "Google Maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Kailua-Kona, Hawaii (Big Island)",
+      "endingLocation": "Haleakalā National Park, Maui",
+      "distance": 150,
+      "startingLocationDescription": "Explore the vibrant town of Kailua-Kona, with its beautiful beaches and coffee farms.",
+      "endingLocationDescription": "Fly to Maui and visit Haleakalā National Park, known for its stunning volcanic landscapes.",
+      "credibility": {
+        "source": "Estimated based on typical flight routes and distances between islands",
+        "reliability": 7,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Haleakalā National Park, Maui",
+      "endingLocation": "Lahaina, Maui",
+      "distance": 92.8,
+      "startingLocationDescription": "Discover the breathtaking views from the summit of Haleakalā, a dormant volcano.",
+      "endingLocationDescription": "Drive to Lahaina, a historic town with a vibrant arts scene and waterfront dining.",
+      "credibility": {
+        "source": "Distance data from previous research",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Lahaina, Maui",
+      "endingLocation": "Waikiki, Oahu",
+      "distance": 150,
+      "startingLocationDescription": "Enjoy the charming streets of Lahaina, with its art galleries and historic sites.",
+      "endingLocationDescription": "Fly to Oahu and explore Waikiki, famous for its iconic beach and vibrant nightlife.",
+      "credibility": {
+        "source": "Estimated based on typical flight distance between Maui and Oahu",
+        "reliability": 7,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Waikiki, Oahu",
+      "endingLocation": "Na Pali Coast, Kauai",
+      "distance": 160,
+      "startingLocationDescription": "Experience the bustling atmosphere of Waikiki, with its shopping and dining options.",
+      "endingLocationDescription": "Fly to Kauai and visit the Na Pali Coast, known for its dramatic cliffs and hiking trails.",
+      "credibility": {
+        "source": "Estimated based on typical flight routes and distances between islands",
+        "reliability": 7,
+        "guess": true
+      }
+    }
+  ]
+}

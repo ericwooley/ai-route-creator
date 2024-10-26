@@ -1,0 +1,1045 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "The Silk Road Journey real world"
+            },
+            "type": "tool_call",
+            "id": "call_KySYXTr3P85A1Krm77B9TTkd"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_KySYXTr3P85A1Krm77B9TTkd",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"The Silk Road Journey real world\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 20,
+            "promptTokens": 517,
+            "totalTokens": 537
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 517,
+            "completion_tokens": 20,
+            "total_tokens": 537,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP23Jg6lUCeq8x3MPxJMaJAbstx1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Silk Road Journey real world\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Silk Road was a significant network of trade routes that connected the East and West, facilitating the exchange of goods, ideas, and cultures for over 1,500 years. It extended approximately 6,437 kilometers (4,000 miles) across challenging terrains, including deserts and mountains, and played a crucial role in the development of the civilizations along its path.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"China\",\n          \"endingLocation\": \"Europe\",\n          \"startingLocationDescription\": \"Begin your journey in China, where the Silk Road starts, known for its rich history and cultural heritage.\",\n          \"endingLocationDescription\": \"Conclude your journey in Europe, where the influences of the East can be seen in art, architecture, and trade.\",\n          \"credibility\": {\n            \"source\": \"National Geographic\",\n            \"reliability\": 9,\n            \"guess\": false\n          },\n          \"description\": \"The journey along the Silk Road involves traversing various regions, experiencing diverse cultures, and witnessing the historical significance of trade and exchange.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"9\",\n    \"relevantLinks\": [\n      \"https://education.nationalgeographic.org/resource/silk-road/\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer succinctly captures the essence of the Silk Road's significance in trade and cultural exchange.\",\n        \"answer\": \"The Silk Road was a network of trade routes connecting East and West, facilitating the exchange of goods and ideas for over 1,500 years.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The Silk Road is neither an actual road nor a single route. The term instead refers to a network of routes used by traders for more than 1,500 years...\",\n        \"content\": \"The Silk Road extended approximately 6,437 kilometers (4,000 miles) across some of the world’s most formidable landscapes, including the Gobi Desert and the Pamir Mountains. It facilitated the exchange of goods such as silk, spices, and ideas, significantly impacting history.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Silk Road was a significant network of trade routes that connected the East and West, facilitating the exchange of goods, ideas, and cultures for over 1,500 years. It extended approximately 6,437 kilometers (4,000 miles) across challenging terrains, including deserts and mountains, and played a crucial role in the development of the civilizations along its path.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"China\",\n            \"endingLocation\": \"Europe\",\n            \"startingLocationDescription\": \"Begin your journey in China, where the Silk Road starts, known for its rich history and cultural heritage.\",\n            \"endingLocationDescription\": \"Conclude your journey in Europe, where the influences of the East can be seen in art, architecture, and trade.\",\n            \"credibility\": {\n              \"source\": \"National Geographic\",\n              \"reliability\": 9,\n              \"guess\": false\n            },\n            \"description\": \"The journey along the Silk Road involves traversing various regions, experiencing diverse cultures, and witnessing the historical significance of trade and exchange.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"9\",\n      \"relevantLinks\": [\n        \"https://education.nationalgeographic.org/resource/silk-road/\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer succinctly captures the essence of the Silk Road's significance in trade and cultural exchange.\",\n          \"answer\": \"The Silk Road was a network of trade routes connecting East and West, facilitating the exchange of goods and ideas for over 1,500 years.\",\n          \"answerQuality\": \"9\",\n          \"snippet\": \"The Silk Road is neither an actual road nor a single route. The term instead refers to a network of routes used by traders for more than 1,500 years...\",\n          \"content\": \"The Silk Road extended approximately 6,437 kilometers (4,000 miles) across some of the world’s most formidable landscapes, including the Gobi Desert and the Pamir Mountains. It facilitated the exchange of goods such as silk, spices, and ideas, significantly impacting history.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer is almost perfect for the question as it succinctly captures the essence of the content related to the Silk Road journey in a metaphorical context.\",\n        \"answer\": \"The Silk Road by Kathryn Davis is a metaphorical exploration of life and death, depicting a journey filled with cultural and philosophical reflections.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The Silk Road is first and foremost a repository, a mosh pit of cultures and religions and philosophies on the subject of death … or living, because dying, of course, starts before one is even here!\",\n        \"content\": \"The review discusses how Kathryn Davis's novel 'The Silk Road' intertwines themes of life and death through a metaphorical journey, emphasizing the complexity of existence and the various cultural interpretations of mortality.\",\n        \"link\": \"https://lareviewofbooks.org/article/journey-to-death-on-kathryn-daviss-the-silk-road\",\n        \"query\": \"The Silk Road Journey real world\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer is almost perfect as it succinctly captures the essence of the Silk Road's significance in trade and cultural exchange.\",\n        \"answer\": \"The Silk Road was a network of trade routes connecting East and West, facilitating the exchange of goods and ideas for over 1,500 years.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The Silk Road is neither an actual road nor a single route. The term instead refers to a network of routes used by traders for more than 1,500 years...\",\n        \"content\": \"The Silk Road extended approximately 6,437 kilometers (4,000 miles) across some of the world’s most formidable landscapes, including the Gobi Desert and the Pamir Mountains. It facilitated the exchange of goods such as silk, spices, and ideas, significantly impacting history.\",\n        \"link\": \"https://education.nationalgeographic.org/resource/silk-road/\",\n        \"query\": \"The Silk Road Journey real world\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_KySYXTr3P85A1Krm77B9TTkd",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e638bf9b-0c28-48e2-8d4a-f8eeba4fe7ea"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling on the Silk Road, real world"
+            },
+            "type": "tool_call",
+            "id": "call_9INkEmJTY0jMwPAY8eeGDrc3"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_9INkEmJTY0jMwPAY8eeGDrc3",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling on the Silk Road, real world\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 3620,
+            "totalTokens": 3648
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3620,
+            "completion_tokens": 28,
+            "total_tokens": 3648,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP2m723aJLSM7ouy8sAoRUemh8Sh"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"Most interesting places to stop while traveling on the Silk Road, real world\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Silk Road is rich in history and culture, featuring numerous significant cities. Key highlights include Samarkand and Bukhara in Uzbekistan, known for their stunning architecture and cultural heritage, as well as Xi'an in China, recognized as the starting point of the Silk Road. Other notable locations include Tashkent, Khiva, and the mountainous regions of Tajikistan, which offer a blend of natural beauty and historical significance.\",\n    \"finalAnswer\": [\n      [\n        {\n          \"startingLocation\": \"Xi'an, China\",\n          \"endingLocation\": \"Samarkand, Uzbekistan\",\n          \"startingLocationDescription\": \"Begin your journey in Xi'an, where you can explore the ancient city walls and the famous Terracotta Army.\",\n          \"endingLocationDescription\": \"Arrive in Samarkand, a city known for its stunning Registan Square and rich history as a trading hub.\",\n          \"credibility\": {\n            \"source\": \"https://www.youtube.com/@vagabrothers\",\n            \"reliability\": 8,\n            \"guess\": false\n          },\n          \"description\": \"Traveling from Xi'an to Samarkand offers a glimpse into the historical significance of the Silk Road, showcasing the architectural marvels and cultural exchanges that took place along this ancient trade route.\"\n        }\n      ]\n    ],\n    \"finalAnswerQuality\": \"8\",\n    \"relevantLinks\": [\n      \"https://www.youtube.com/@vagabrothers\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides relevant and specific locations along the Silk Road.\",\n        \"answer\": \"Key stops include Samarkand, Bukhara, and Xi'an.\",\n        \"answerQuality\": \"5\",\n        \"snippet\": \"Most interesting places to stop while traveling on the Silk Road, real world\",\n        \"content\": \"The Silk Road features many historically significant cities, with Samarkand and Bukhara in Uzbekistan being renowned for their rich cultural heritage, and Xi'an in China known as the starting point of the Silk Road.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Silk Road is rich in history and culture, featuring numerous significant cities. Key highlights include Samarkand and Bukhara in Uzbekistan, known for their stunning architecture and cultural heritage, as well as Xi'an in China, recognized as the starting point of the Silk Road. Other notable locations include Tashkent, Khiva, and the mountainous regions of Tajikistan, which offer a blend of natural beauty and historical significance.\",\n      \"finalAnswer\": [\n        [\n          {\n            \"startingLocation\": \"Xi'an, China\",\n            \"endingLocation\": \"Samarkand, Uzbekistan\",\n            \"startingLocationDescription\": \"Begin your journey in Xi'an, where you can explore the ancient city walls and the famous Terracotta Army.\",\n            \"endingLocationDescription\": \"Arrive in Samarkand, a city known for its stunning Registan Square and rich history as a trading hub.\",\n            \"credibility\": {\n              \"source\": \"https://www.youtube.com/@vagabrothers\",\n              \"reliability\": 8,\n              \"guess\": false\n            },\n            \"description\": \"Traveling from Xi'an to Samarkand offers a glimpse into the historical significance of the Silk Road, showcasing the architectural marvels and cultural exchanges that took place along this ancient trade route.\"\n          }\n        ]\n      ],\n      \"finalAnswerQuality\": \"8\",\n      \"relevantLinks\": [\n        \"https://www.youtube.com/@vagabrothers\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides relevant and specific locations along the Silk Road.\",\n          \"answer\": \"Key stops include Samarkand, Bukhara, and Xi'an.\",\n          \"answerQuality\": \"5\",\n          \"snippet\": \"Most interesting places to stop while traveling on the Silk Road, real world\",\n          \"content\": \"The Silk Road features many historically significant cities, with Samarkand and Bukhara in Uzbekistan being renowned for their rich cultural heritage, and Xi'an in China known as the starting point of the Silk Road.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides specific locations that are significant along the Silk Road, making it highly relevant.\",\n        \"answer\": \"Key places include Tashkent, Samarkand, Bukhara, Khiva, and the mountains of Tajikistan.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"The highlights of the trip are too many to mention all but to name a few are the following: 1. Meeting and having lunch with Zulya’s family 2. My guides Bek and Aisha 3. Learning about the Persian, Greek, Mongol, Turcic, Arabic, Soviet influences of the region. 4. Registan Square in Samarkand 5. Learning about the great astronomer Ulugh Beg and seeing his museum and observatory in Samarkand. 6. The dance and fashion show in Bukhara 7. The city of Khiva, the first UNESCO site in Central Asia. 8. The mountains of Tajikistan.\",\n        \"content\": \"Travelers highlighted cities like Tashkent, Samarkand, Bukhara, and Khiva as must-visit locations on the Silk Road, along with cultural experiences and natural beauty in Tajikistan.\",\n        \"link\": \"https://www.wendyperrin.com/reviews/zulya-rajabova/\",\n        \"query\": \"Most interesting places to stop while traveling on the Silk Road, real world\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_9INkEmJTY0jMwPAY8eeGDrc3",
+        "name": "itinerary_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "6b1489f3-ae14-452a-a254-be0316927f9d"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Xi'an, China",
+              "to": "Dunhuang, China"
+            },
+            "type": "tool_call",
+            "id": "call_yu0ZYstxvXLAgHe7JgbbZOHJ"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_yu0ZYstxvXLAgHe7JgbbZOHJ",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Xi'an, China\",\"to\":\"Dunhuang, China\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 7163,
+            "totalTokens": 7190
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7163,
+            "completion_tokens": 27,
+            "total_tokens": 7190,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3KVGPyPPEw07umX9bAY1nFMUPV"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Xi'an, China\",\n  \"to\": \"Dunhuang, China\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Dunhuang, Jiuquan, Gansu, China\"\n    ],\n    \"origin_addresses\": [\n      \"Xi'An, Shaanxi, China\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"1,706 km\",\n              \"value\": 1706491\n            },\n            \"duration\": {\n              \"text\": \"16 days 14 hours\",\n              \"value\": 1431066\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_yu0ZYstxvXLAgHe7JgbbZOHJ",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "008f548b-e109-473d-bd74-80c3ded530f1"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Dunhuang, China",
+              "to": "Turpan, China"
+            },
+            "type": "tool_call",
+            "id": "call_8CW1ef2S0NmjsX8GUGcAa3ok"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8CW1ef2S0NmjsX8GUGcAa3ok",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Dunhuang, China\",\"to\":\"Turpan, China\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 7381,
+            "totalTokens": 7408
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7381,
+            "completion_tokens": 27,
+            "total_tokens": 7408,
+            "prompt_tokens_details": {
+              "cached_tokens": 5760
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3PXzetqGTay960rFxwinRLg8uF"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Dunhuang, China\",\n  \"to\": \"Turpan, China\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Turpan, Xinjiang, China\"\n    ],\n    \"origin_addresses\": [\n      \"Dunhuang, Jiuquan, Gansu, China\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"890 km\",\n              \"value\": 889760\n            },\n            \"duration\": {\n              \"text\": \"8 days 7 hours\",\n              \"value\": 715504\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_8CW1ef2S0NmjsX8GUGcAa3ok",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "b82a3f9e-a7fe-45a3-a366-30a537536e3c"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Turpan, China",
+              "to": "Samarkand, Uzbekistan"
+            },
+            "type": "tool_call",
+            "id": "call_8CW1ef2S0NmjsX8GUGcAa3ok"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8CW1ef2S0NmjsX8GUGcAa3ok",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Turpan, China\",\"to\":\"Samarkand, Uzbekistan\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 6078,
+            "totalTokens": 6105
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 6078,
+            "completion_tokens": 27,
+            "total_tokens": 6105,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3SqxbYosExY4V0TsFsGKyqFCDW"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Turpan, China\",\n  \"to\": \"Samarkand, Uzbekistan\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Samarkand, Samarqand Region, Uzbekistan\"\n    ],\n    \"origin_addresses\": [\n      \"Turpan, Xinjiang, China\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"11,118 km\",\n              \"value\": 11117999\n            },\n            \"duration\": {\n              \"text\": \"108 days 20 hours\",\n              \"value\": 9403971\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_8CW1ef2S0NmjsX8GUGcAa3ok",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "e70fcd05-d225-41e7-b783-69cf0d26c3d3"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Samarkand, Uzbekistan",
+              "to": "Bukhara, Uzbekistan"
+            },
+            "type": "tool_call",
+            "id": "call_MvZuJ32SWuFJ1Dp1zFkvZhwS"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_MvZuJ32SWuFJ1Dp1zFkvZhwS",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Samarkand, Uzbekistan\",\"to\":\"Bukhara, Uzbekistan\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 4936,
+            "totalTokens": 4964
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4936,
+            "completion_tokens": 28,
+            "total_tokens": 4964,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3XkNfZGuRcDKoyhD5RbUuZcOK5"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Samarkand, Uzbekistan\",\n  \"to\": \"Bukhara, Uzbekistan\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Bukhara, Bukhara Region, Uzbekistan\"\n    ],\n    \"origin_addresses\": [\n      \"Samarkand, Samarqand Region, Uzbekistan\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"253 km\",\n              \"value\": 252522\n            },\n            \"duration\": {\n              \"text\": \"2 days 8 hours\",\n              \"value\": 203044\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_MvZuJ32SWuFJ1Dp1zFkvZhwS",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ee5ca60d-f8df-4c44-ae8f-2b39e771ca30"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Bukhara, Uzbekistan",
+              "to": "Tehran, Iran"
+            },
+            "type": "tool_call",
+            "id": "call_VMUhF54i8do5JGRFmQxiPgRY"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_VMUhF54i8do5JGRFmQxiPgRY",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Bukhara, Uzbekistan\",\"to\":\"Tehran, Iran\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 4948,
+            "totalTokens": 4975
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4948,
+            "completion_tokens": 27,
+            "total_tokens": 4975,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3ayo9EKmPsZrHl82bn4M4owJz6"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Bukhara, Uzbekistan\",\n  \"to\": \"Tehran, Iran\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Tehran, Tehran Province, Iran\"\n    ],\n    \"origin_addresses\": [\n      \"Bukhara, Bukhara Region, Uzbekistan\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"1,577 km\",\n              \"value\": 1576894\n            },\n            \"duration\": {\n              \"text\": \"14 days 20 hours\",\n              \"value\": 1282997\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_VMUhF54i8do5JGRFmQxiPgRY",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "58c57ca4-0940-4cc8-a31c-f75eb37a3a9f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Tehran, Iran",
+              "to": "Tabriz, Iran"
+            },
+            "type": "tool_call",
+            "id": "call_smg85TmZdDRQY0CjQu4UNYS3"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_smg85TmZdDRQY0CjQu4UNYS3",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Tehran, Iran\",\"to\":\"Tabriz, Iran\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 4963,
+            "totalTokens": 4989
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4963,
+            "completion_tokens": 26,
+            "total_tokens": 4989,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3dT8uXBuCi6k3r6xGEEjsWLCP7"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Tehran, Iran\",\n  \"to\": \"Tabriz, Iran\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Tabriz, East Azerbaijan Province, Iran\"\n    ],\n    \"origin_addresses\": [\n      \"Tehran, Tehran Province, Iran\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"611 km\",\n              \"value\": 611069\n            },\n            \"duration\": {\n              \"text\": \"5 days 18 hours\",\n              \"value\": 497211\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_smg85TmZdDRQY0CjQu4UNYS3",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3e3a3a4a-bbb5-4bb8-998d-bc0fca810994"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Tabriz, Iran",
+              "to": "Istanbul, Turkey"
+            },
+            "type": "tool_call",
+            "id": "call_FWtF9G4jysuDPysUStJKeOuA"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_FWtF9G4jysuDPysUStJKeOuA",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Tabriz, Iran\",\"to\":\"Istanbul, Turkey\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 4973,
+            "totalTokens": 4999
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4973,
+            "completion_tokens": 26,
+            "total_tokens": 4999,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3gHwa82Qkqm7sBwgnHokEoPRXK"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Tabriz, Iran\",\n  \"to\": \"Istanbul, Turkey\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"İstanbul, Türkiye\"\n    ],\n    \"origin_addresses\": [\n      \"Tabriz, East Azerbaijan Province, Iran\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"1,785 km\",\n              \"value\": 1784609\n            },\n            \"duration\": {\n              \"text\": \"16 days 17 hours\",\n              \"value\": 1445361\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_FWtF9G4jysuDPysUStJKeOuA",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "f44f4488-4f2b-4303-8ed8-71fb0d6760fd"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Istanbul, Turkey",
+              "to": "Thessaloniki, Greece"
+            },
+            "type": "tool_call",
+            "id": "call_MfKmg2d5j79A31Q5WYdoBwoV"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_MfKmg2d5j79A31Q5WYdoBwoV",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Istanbul, Turkey\",\"to\":\"Thessaloniki, Greece\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 4979,
+            "totalTokens": 5007
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4979,
+            "completion_tokens": 28,
+            "total_tokens": 5007,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3jWDOi1CcT3qyIZJcbzwC5CgT8"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Istanbul, Turkey\",\n  \"to\": \"Thessaloniki, Greece\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Thessaloniki, Greece\"\n    ],\n    \"origin_addresses\": [\n      \"İstanbul, Türkiye\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"642 km\",\n              \"value\": 642402\n            },\n            \"duration\": {\n              \"text\": \"6 days 3 hours\",\n              \"value\": 528524\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_MfKmg2d5j79A31Q5WYdoBwoV",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2081caac-44ff-428b-8348-db574a525414"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Thessaloniki, Greece",
+              "to": "Venice, Italy"
+            },
+            "type": "tool_call",
+            "id": "call_xn7XpU7t9RshwpT8T1AUIfU2"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_xn7XpU7t9RshwpT8T1AUIfU2",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Thessaloniki, Greece\",\"to\":\"Venice, Italy\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 4986,
+            "totalTokens": 5014
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4986,
+            "completion_tokens": 28,
+            "total_tokens": 5014,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP3mgKcwuwHqAb7B7MJ2EhaN3Nnr"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Thessaloniki, Greece\",\n  \"to\": \"Venice, Italy\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Venice, Metropolitan City of Venice, Italy\"\n    ],\n    \"origin_addresses\": [\n      \"Thessaloniki, Greece\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"1,278 km\",\n              \"value\": 1278400\n            },\n            \"duration\": {\n              \"text\": \"9 days 21 hours\",\n              \"value\": 854053\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_xn7XpU7t9RshwpT8T1AUIfU2",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "8c57441c-673b-48d2-86d7-24cbee0ba5ea"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "National Geographic",
+      "link": "https://education.nationalgeographic.org/resource/silk-road/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Silk Road Journey\", which is real world.\nThe  pitch for this route is \"Travel along the ancient Silk Road, a network of trade routes that connected the East and West, facilitating not only commerce but also cultural exchange.\".\nSome ideas for steps are: \n\t - Xi'an, China to Dunhuang, China\n\t - Dunhuang, China to Samarkand, Uzbekistan\n\t - Samarkand, Uzbekistan to Tehran, Iran\n\t - Tehran, Iran to Istanbul, Turkey\n\t - Istanbul, Turkey to Venice, Italy",
+  "itinerary": [
+    {
+      "startingLocation": "Xi'an, China",
+      "endingLocation": "Dunhuang, China",
+      "startingLocationDescription": "Begin your journey in Xi'an, the historical starting point of the Silk Road, known for its ancient city walls and the Terracotta Army.",
+      "endingLocationDescription": "Travel to Dunhuang, famous for the Mogao Caves and its role as a major stop on the Silk Road.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Xi'an, Shaanxi, China",
+        "Dunhuang, Gansu, China"
+      ],
+      "anyExtraInformationOnHowToFind": "Xi'an is well-connected by train and flights from major Chinese cities."
+    },
+    {
+      "startingLocation": "Dunhuang, China",
+      "endingLocation": "Turpan, China",
+      "startingLocationDescription": "Explore the desert landscapes and cultural heritage of Dunhuang.",
+      "endingLocationDescription": "Arrive in Turpan, known for its ancient ruins and the Flaming Mountains.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Dunhuang, Gansu, China",
+        "Turpan, Xinjiang, China"
+      ],
+      "anyExtraInformationOnHowToFind": "Travel by road or train from Dunhuang to Turpan."
+    },
+    {
+      "startingLocation": "Turpan, China",
+      "endingLocation": "Samarkand, Uzbekistan",
+      "startingLocationDescription": "Depart from Turpan, a city with a rich Silk Road history.",
+      "endingLocationDescription": "Enter Samarkand, a city renowned for its Islamic architecture and historical significance.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Turpan, Xinjiang, China",
+        "Samarkand, Uzbekistan"
+      ],
+      "anyExtraInformationOnHowToFind": "Cross the border into Uzbekistan, ensuring all travel documents are in order."
+    },
+    {
+      "startingLocation": "Samarkand, Uzbekistan",
+      "endingLocation": "Bukhara, Uzbekistan",
+      "startingLocationDescription": "Explore the historic sites of Samarkand, including Registan Square.",
+      "endingLocationDescription": "Travel to Bukhara, another key city on the Silk Road, known for its well-preserved medieval architecture.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Samarkand, Uzbekistan",
+        "Bukhara, Uzbekistan"
+      ],
+      "anyExtraInformationOnHowToFind": "Bukhara is accessible by road or train from Samarkand."
+    },
+    {
+      "startingLocation": "Bukhara, Uzbekistan",
+      "endingLocation": "Tehran, Iran",
+      "startingLocationDescription": "Depart from Bukhara, a city with a rich history of trade and culture.",
+      "endingLocationDescription": "Arrive in Tehran, the capital of Iran, known for its museums and vibrant culture.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Bukhara, Uzbekistan",
+        "Tehran, Iran"
+      ],
+      "anyExtraInformationOnHowToFind": "Ensure you have the necessary visas for entry into Iran."
+    },
+    {
+      "startingLocation": "Tehran, Iran",
+      "endingLocation": "Tabriz, Iran",
+      "startingLocationDescription": "Explore Tehran's cultural landmarks before heading northwest.",
+      "endingLocationDescription": "Reach Tabriz, a historical city with a significant role in Silk Road trade.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Tehran, Iran",
+        "Tabriz, Iran"
+      ],
+      "anyExtraInformationOnHowToFind": "Travel by road or domestic flight to Tabriz."
+    },
+    {
+      "startingLocation": "Tabriz, Iran",
+      "endingLocation": "Istanbul, Turkey",
+      "startingLocationDescription": "Depart from Tabriz, a city known for its bazaars and historical sites.",
+      "endingLocationDescription": "Arrive in Istanbul, a city that bridges Europe and Asia, rich in history and culture.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Tabriz, Iran",
+        "Istanbul, Turkey"
+      ],
+      "anyExtraInformationOnHowToFind": "Cross the border into Turkey, ensuring all travel documents are in order."
+    },
+    {
+      "startingLocation": "Istanbul, Turkey",
+      "endingLocation": "Thessaloniki, Greece",
+      "startingLocationDescription": "Explore the historic sites of Istanbul, including the Hagia Sophia and the Grand Bazaar.",
+      "endingLocationDescription": "Travel to Thessaloniki, a city with a rich Byzantine history.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Istanbul, Turkey",
+        "Thessaloniki, Greece"
+      ],
+      "anyExtraInformationOnHowToFind": "Travel by road or train from Istanbul to Thessaloniki."
+    },
+    {
+      "startingLocation": "Thessaloniki, Greece",
+      "endingLocation": "Venice, Italy",
+      "startingLocationDescription": "Depart from Thessaloniki, a city known for its vibrant culture and history.",
+      "endingLocationDescription": "Conclude your journey in Venice, a city renowned for its canals and Renaissance art.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Thessaloniki, Greece",
+        "Venice, Italy"
+      ],
+      "anyExtraInformationOnHowToFind": "Travel by ferry or flight to reach Venice from Greece."
+    }
+  ],
+  "route": "The Silk Road",
+  "steps": [
+    {
+      "startingLocation": "Xi'an, China",
+      "endingLocation": "Dunhuang, China",
+      "distance": 1706,
+      "startingLocationDescription": "Begin your journey in Xi'an, the historical starting point of the Silk Road, known for its ancient city walls and the Terracotta Army.",
+      "endingLocationDescription": "Travel to Dunhuang, famous for the Mogao Caves and its role as a major stop on the Silk Road.",
+      "credibility": {
+        "source": "Google Maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Dunhuang, China",
+      "endingLocation": "Turpan, China",
+      "distance": 890,
+      "startingLocationDescription": "Explore the desert landscapes and cultural heritage of Dunhuang.",
+      "endingLocationDescription": "Arrive in Turpan, known for its ancient ruins and the Flaming Mountains.",
+      "credibility": {
+        "source": "Route data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Turpan, China",
+      "endingLocation": "Samarkand, Uzbekistan",
+      "distance": 3500,
+      "startingLocationDescription": "Depart from Turpan, a city with a rich Silk Road history.",
+      "endingLocationDescription": "Enter Samarkand, a city renowned for its Islamic architecture and historical significance.",
+      "credibility": {
+        "source": "Estimated based on typical Silk Road routes",
+        "reliability": 6,
+        "guess": true
+      }
+    },
+    {
+      "startingLocation": "Samarkand, Uzbekistan",
+      "endingLocation": "Bukhara, Uzbekistan",
+      "distance": 253,
+      "startingLocationDescription": "Explore the historic sites of Samarkand, including Registan Square.",
+      "endingLocationDescription": "Travel to Bukhara, another key city on the Silk Road, known for its well-preserved medieval architecture.",
+      "credibility": {
+        "source": "Route data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Bukhara, Uzbekistan",
+      "endingLocation": "Tehran, Iran",
+      "distance": 1577,
+      "startingLocationDescription": "Depart from Bukhara, a city with a rich history of trade and culture.",
+      "endingLocationDescription": "Arrive in Tehran, the capital of Iran, known for its museums and vibrant culture.",
+      "credibility": {
+        "source": "Route data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Tehran, Iran",
+      "endingLocation": "Tabriz, Iran",
+      "distance": 611,
+      "startingLocationDescription": "Explore Tehran's cultural landmarks before heading northwest.",
+      "endingLocationDescription": "Reach Tabriz, a historical city with a significant role in Silk Road trade.",
+      "credibility": {
+        "source": "Route data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Tabriz, Iran",
+      "endingLocation": "Istanbul, Turkey",
+      "distance": 1785,
+      "startingLocationDescription": "Depart from Tabriz, a city known for its bazaars and historical sites.",
+      "endingLocationDescription": "Arrive in Istanbul, a city that bridges Europe and Asia, rich in history and culture.",
+      "credibility": {
+        "source": "Calculated from previous data",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Istanbul, Turkey",
+      "endingLocation": "Thessaloniki, Greece",
+      "distance": 642,
+      "startingLocationDescription": "Explore the historic sites of Istanbul, including the Hagia Sophia and the Grand Bazaar.",
+      "endingLocationDescription": "Travel to Thessaloniki, a city with a rich Byzantine history.",
+      "credibility": {
+        "source": "Route data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Thessaloniki, Greece",
+      "endingLocation": "Venice, Italy",
+      "distance": 1278,
+      "startingLocationDescription": "Depart from Thessaloniki, a city known for its vibrant culture and history.",
+      "endingLocationDescription": "Conclude your journey in Venice, a city renowned for its canals and Renaissance art.",
+      "credibility": {
+        "source": "Google Maps",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}

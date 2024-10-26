@@ -1,0 +1,1137 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Route 66 itinerary from Chicago to Santa Monica, real locations"
+            },
+            "type": "tool_call",
+            "id": "call_UWLNp5mJ30lB9a47D1DNJII7"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_UWLNp5mJ30lB9a47D1DNJII7",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Route 66 itinerary from Chicago to Santa Monica, real locations\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 543,
+            "totalTokens": 569
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 543,
+            "completion_tokens": 26,
+            "total_tokens": 569,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOzhbP6mqBCJhyk6JCKDYNK4rXH9"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"Route 66, also known as the 'Mother Road', is a historic highway that stretches from Chicago to Santa Monica, California. The journey involves following the original route, which is mostly driveable today, and utilizing guides for navigation. Key locations along the route include Chicago, Joliet, St. Louis, Tulsa, Amarillo, Albuquerque, Flagstaff, and Santa Monica.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Chicago, Illinois\",\n        \"endingLocation\": \"Santa Monica, California\",\n        \"startingLocationDescription\": \"Begin your journey in Chicago, where Route 66 officially starts. Look for the iconic Route 66 sign at Adams and Michigan.\",\n        \"endingLocationDescription\": \"End your trip at the Santa Monica Pier, where Route 66 concludes at the Pacific Ocean.\",\n        \"credibility\": {\n          \"source\": \"https://www.route66roadtrip.com/route-66-maps.htm\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"The route travels through several states, including Illinois, Missouri, Kansas, Oklahoma, Texas, New Mexico, Arizona, and California, with notable cities along the way.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://www.americanroadtrips.net/route-66/\",\n    \"https://www.route66roadtrip.com/route-66-maps.htm\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a concise list of key locations along Route 66 from Chicago to Santa Monica, making it highly relevant to the query.\",\n      \"answer\": \"Route 66 travels through Chicago, Joliet, St. Louis, Tulsa, Amarillo, Albuquerque, Flagstaff, and ends in Santa Monica, California.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"The route was later extended to the intersection of Lincoln and Olympic boulevards in Santa Monica, about one mile from the Pacific Ocean.\",\n      \"content\": \"Route 66, also known as 'The Mother Road', is a historic highway that stretches from Chicago to Santa Monica, California. It passes through several states including Illinois, Missouri, Kansas, Oklahoma, Texas, New Mexico, Arizona, and California, with notable cities along the way.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_UWLNp5mJ30lB9a47D1DNJII7",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "3e08d5c5-ff50-4daf-9935-a37b1b20b1ca"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling on Route 66 from Chicago to Santa Monica, focusing on real-world locations."
+            },
+            "type": "tool_call",
+            "id": "call_RjxCWe6nG00I7bOzRSdb3ZPE"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_RjxCWe6nG00I7bOzRSdb3ZPE",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling on Route 66 from Chicago to Santa Monica, focusing on real-world locations.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 37,
+            "promptTokens": 4018,
+            "totalTokens": 4055
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 4018,
+            "completion_tokens": 37,
+            "total_tokens": 4055,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP0Xkyj0La1Y133vVdItJab3k2cI"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"Traveling along Route 66 offers a unique glimpse into American history and culture, with numerous interesting stops that highlight the charm and nostalgia of this iconic highway. Key locations include quirky roadside attractions, historical landmarks, and natural wonders, making the journey memorable.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Chicago, IL\",\n        \"endingLocation\": \"Santa Monica, CA\",\n        \"startingLocationDescription\": \"Begin your journey in Chicago, the starting point of Route 66, known for its vibrant city life and historical significance.\",\n        \"endingLocationDescription\": \"Conclude your trip at Santa Monica Pier, a famous landmark that marks the end of Route 66 and offers beautiful ocean views.\",\n        \"credibility\": {\n          \"source\": \"https://www.greetingstour.com/travel/route66\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"Along the way, make sure to stop at notable attractions such as the Gemini Giant in Wilmington, the Route 66 Museum in Pontiac, the Cozy Dog Drive In in Springfield, the Gateway Arch in St. Louis, the Blue Whale in Catoosa, Cadillac Ranch in Amarillo, Petrified Forest National Park in Arizona, and the Bottle Tree Ranch in California.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"10\",\n  \"relevantLinks\": [\n    \"https://www.greetingstour.com/travel/route66\",\n    \"https://www.travellingwithnikki.com/2024/06/how-to-plan-an-epic-route-66-road-trip/\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a concise list of notable real-world locations along Route 66, directly addressing the user's query.\",\n      \"answer\": \"Key stops include: Gemini Giant (Wilmington, IL), Route 66 Museum (Pontiac, IL), Cozy Dog Drive In (Springfield, IL), Gateway Arch (St. Louis, MO), Blue Whale (Catoosa, OK), Cadillac Ranch (Amarillo, TX), Petrified Forest National Park (AZ), Grand Canyon (AZ), Bottle Tree Ranch (CA), Santa Monica Pier (CA).\",\n      \"answerQuality\": 10,\n      \"snippet\": \"Most interesting places to stop while traveling on Route 66 from Chicago to Santa Monica, focusing on real-world locations.\",\n      \"content\": \"The content describes various interesting stops along Route 66, detailing unique landmarks and attractions that travelers can visit, making it highly relevant to the query.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_RjxCWe6nG00I7bOzRSdb3ZPE",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2fcfd4c5-7cb3-4cc8-87a7-78beef871066"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Chicago, Illinois",
+              "to": "Joliet, Illinois"
+            },
+            "type": "tool_call",
+            "id": "call_vsSH5X5TwJfH8A6OjBPOvlmF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_vsSH5X5TwJfH8A6OjBPOvlmF",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Chicago, Illinois\",\"to\":\"Joliet, Illinois\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 8315,
+            "totalTokens": 8341
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8315,
+            "completion_tokens": 26,
+            "total_tokens": 8341,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1THdhOQbhQ5zQq4SSmvsVS4W8Z"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Chicago, Illinois\",\n  \"to\": \"Joliet, Illinois\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Joliet, IL, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Chicago, IL, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"61.6 km\",\n              \"value\": 61622\n            },\n            \"duration\": {\n              \"text\": \"14 hours 11 mins\",\n              \"value\": 51057\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_vsSH5X5TwJfH8A6OjBPOvlmF",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "00a0e7ba-3f29-4f7c-8c69-a676116abeff"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Joliet, Illinois",
+              "to": "Springfield, Illinois"
+            },
+            "type": "tool_call",
+            "id": "call_aVhBFrRKBIBlplHktfacwgoE"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_aVhBFrRKBIBlplHktfacwgoE",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Joliet, Illinois\",\"to\":\"Springfield, Illinois\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 8522,
+            "totalTokens": 8549
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8522,
+            "completion_tokens": 27,
+            "total_tokens": 8549,
+            "prompt_tokens_details": {
+              "cached_tokens": 6912
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1XZNlAZ3MNyfk5RKNA4QMuDs1w"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Joliet, Illinois\",\n  \"to\": \"Springfield, Illinois\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Springfield, IL, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Joliet, IL, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"247 km\",\n              \"value\": 247397\n            },\n            \"duration\": {\n              \"text\": \"2 days 8 hours\",\n              \"value\": 200580\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_aVhBFrRKBIBlplHktfacwgoE",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "c78d8080-a12c-4154-b6e6-9d13aba6de83"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Springfield, Illinois",
+              "to": "St. Louis, Missouri"
+            },
+            "type": "tool_call",
+            "id": "call_SUJeyV7WLgY6V2Vng4tGdFna"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_SUJeyV7WLgY6V2Vng4tGdFna",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Springfield, Illinois\",\"to\":\"St. Louis, Missouri\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 7025,
+            "totalTokens": 7052
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7025,
+            "completion_tokens": 27,
+            "total_tokens": 7052,
+            "prompt_tokens_details": {
+              "cached_tokens": 3584
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1beUP8O5ayGzA80RHdPd1Y6kNN"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Springfield, Illinois\",\n  \"to\": \"St. Louis, Missouri\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"St. Louis, MO, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Springfield, IL, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"154 km\",\n              \"value\": 154023\n            },\n            \"duration\": {\n              \"text\": \"1 day 11 hours\",\n              \"value\": 124568\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_SUJeyV7WLgY6V2Vng4tGdFna",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "9fd86a8a-3181-437a-b345-b7bda1a08bb6"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "St. Louis, Missouri",
+              "to": "Springfield, Missouri"
+            },
+            "type": "tool_call",
+            "id": "call_K6OmEUiSxx4TCa6bGFRCB0do"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_K6OmEUiSxx4TCa6bGFRCB0do",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"St. Louis, Missouri\",\"to\":\"Springfield, Missouri\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 5488,
+            "totalTokens": 5515
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5488,
+            "completion_tokens": 27,
+            "total_tokens": 5515,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1e6ffKI0QOLgg6DZ5R5FmJRRMC"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"St. Louis, Missouri\",\n  \"to\": \"Springfield, Missouri\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Springfield, MO, USA\"\n    ],\n    \"origin_addresses\": [\n      \"St. Louis, MO, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"366 km\",\n              \"value\": 365875\n            },\n            \"duration\": {\n              \"text\": \"3 days 11 hours\",\n              \"value\": 298948\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_K6OmEUiSxx4TCa6bGFRCB0do",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "db6dcd27-dfd1-479f-89ee-f6102e8daa60"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Springfield, Missouri",
+              "to": "Tulsa, Oklahoma"
+            },
+            "type": "tool_call",
+            "id": "call_EX9HVCc8WJFcB0rxI9oEFQfS"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_EX9HVCc8WJFcB0rxI9oEFQfS",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Springfield, Missouri\",\"to\":\"Tulsa, Oklahoma\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 5500,
+            "totalTokens": 5526
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5500,
+            "completion_tokens": 26,
+            "total_tokens": 5526,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1ijHZp2SMJYxhdzgf94HJrhamm"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Springfield, Missouri\",\n  \"to\": \"Tulsa, Oklahoma\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Tulsa, OK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Springfield, MO, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"301 km\",\n              \"value\": 301148\n            },\n            \"duration\": {\n              \"text\": \"2 days 20 hours\",\n              \"value\": 243705\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_EX9HVCc8WJFcB0rxI9oEFQfS",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5f0042ee-0496-4f44-9770-b66368d306b0"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Tulsa, Oklahoma",
+              "to": "Oklahoma City, Oklahoma"
+            },
+            "type": "tool_call",
+            "id": "call_NufNCvNnS2rKzqbR7Pfr9w2Q"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_NufNCvNnS2rKzqbR7Pfr9w2Q",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Tulsa, Oklahoma\",\"to\":\"Oklahoma City, Oklahoma\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 5511,
+            "totalTokens": 5538
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5511,
+            "completion_tokens": 27,
+            "total_tokens": 5538,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1lLhDYX38J3y4Fso2mVxKO1g7Z"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Tulsa, Oklahoma\",\n  \"to\": \"Oklahoma City, Oklahoma\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Oklahoma City, OK, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Tulsa, OK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"184 km\",\n              \"value\": 183560\n            },\n            \"duration\": {\n              \"text\": \"1 day 18 hours\",\n              \"value\": 149475\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_NufNCvNnS2rKzqbR7Pfr9w2Q",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "129860a9-d896-4469-a01a-bd8d4c62ba62"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Oklahoma City, Oklahoma",
+              "to": "Amarillo, Texas"
+            },
+            "type": "tool_call",
+            "id": "call_B0S2nek2ozagS7HLNm1CC9iT"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_B0S2nek2ozagS7HLNm1CC9iT",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Oklahoma City, Oklahoma\",\"to\":\"Amarillo, Texas\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 5526,
+            "totalTokens": 5554
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5526,
+            "completion_tokens": 28,
+            "total_tokens": 5554,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1pZuuLjGOaEaBYZWMCxccX4ocb"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Oklahoma City, Oklahoma\",\n  \"to\": \"Amarillo, Texas\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Amarillo, TX, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Oklahoma City, OK, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"422 km\",\n              \"value\": 421700\n            },\n            \"duration\": {\n              \"text\": \"3 days 23 hours\",\n              \"value\": 342938\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_B0S2nek2ozagS7HLNm1CC9iT",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "43b0006b-586e-485e-8e32-a5336eecd8ab"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Amarillo, Texas",
+              "to": "Albuquerque, New Mexico"
+            },
+            "type": "tool_call",
+            "id": "call_ZkOjrnXLfGdFO7hC5r6paFG5"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_ZkOjrnXLfGdFO7hC5r6paFG5",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Amarillo, Texas\",\"to\":\"Albuquerque, New Mexico\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 5543,
+            "totalTokens": 5571
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5543,
+            "completion_tokens": 28,
+            "total_tokens": 5571,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1tsUtuVnioetFjYNePAlzAmmYD"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Amarillo, Texas\",\n  \"to\": \"Albuquerque, New Mexico\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Albuquerque, NM, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Amarillo, TX, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"527 km\",\n              \"value\": 526892\n            },\n            \"duration\": {\n              \"text\": \"4 days 23 hours\",\n              \"value\": 427333\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_ZkOjrnXLfGdFO7hC5r6paFG5",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "9130c6c2-20e9-49ee-a122-42b33ca89696"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Albuquerque, New Mexico",
+              "to": "Flagstaff, Arizona"
+            },
+            "type": "tool_call",
+            "id": "call_1NTYW5HOkNe1YMlS4vUSRZ6N"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1NTYW5HOkNe1YMlS4vUSRZ6N",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Albuquerque, New Mexico\",\"to\":\"Flagstaff, Arizona\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 5561,
+            "totalTokens": 5588
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5561,
+            "completion_tokens": 27,
+            "total_tokens": 5588,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1wzqNtFAoRhMsL11dE2QczvJJv"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Albuquerque, New Mexico\",\n  \"to\": \"Flagstaff, Arizona\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Flagstaff, AZ, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Albuquerque, NM, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"543 km\",\n              \"value\": 542960\n            },\n            \"duration\": {\n              \"text\": \"5 days 3 hours\",\n              \"value\": 442645\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_1NTYW5HOkNe1YMlS4vUSRZ6N",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4ff82efb-2c54-4b8f-91cc-0f031c26b7ea"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Flagstaff, Arizona",
+              "to": "Santa Monica, California"
+            },
+            "type": "tool_call",
+            "id": "call_5Vg4KUQ2f3GhP7T7siqpPfNf"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_5Vg4KUQ2f3GhP7T7siqpPfNf",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Flagstaff, Arizona\",\"to\":\"Santa Monica, California\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 26,
+            "promptTokens": 5575,
+            "totalTokens": 5601
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5575,
+            "completion_tokens": 26,
+            "total_tokens": 5601,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP1zrvFSlbzDuq6xSG4e6jTuzJ33"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Flagstaff, Arizona\",\n  \"to\": \"Santa Monica, California\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Santa Monica, CA, USA\"\n    ],\n    \"origin_addresses\": [\n      \"Flagstaff, AZ, USA\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"787 km\",\n              \"value\": 787375\n            },\n            \"duration\": {\n              \"text\": \"7 days 10 hours\",\n              \"value\": 640202\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_5Vg4KUQ2f3GhP7T7siqpPfNf",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "fbca58a1-f678-4f01-9c0d-c9175dea68f8"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Route 66 Road Trip",
+      "link": "https://www.route66roadtrip.com/route-66-maps.htm"
+    },
+    {
+      "name": "American Road Trips",
+      "link": "https://www.americanroadtrips.net/route-66/"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"Route 66: The Mother Road\", which is real world.\nThe  pitch for this route is \"Travel the iconic Route 66, known as the 'Main Street of America', stretching from Chicago to Santa Monica. This historic highway offers a journey through the heart of the United States, passing through small towns, deserts, and vast open landscapes.\".\nSome ideas for steps are: \n\t - Chicago, Illinois to St. Louis, Missouri\n\t - St. Louis, Missouri to Tulsa, Oklahoma\n\t - Tulsa, Oklahoma to Amarillo, Texas\n\t - Amarillo, Texas to Albuquerque, New Mexico\n\t - Albuquerque, New Mexico to Santa Monica, California",
+  "itinerary": [
+    {
+      "startingLocation": "Chicago, Illinois",
+      "endingLocation": "Joliet, Illinois",
+      "startingLocationDescription": "Begin your journey in Chicago, where Route 66 officially starts. Look for the iconic Route 66 sign at Adams and Michigan.",
+      "endingLocationDescription": "Travel to Joliet, known for its historic Rialto Square Theatre and the Joliet Area Historical Museum.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Adams St & Michigan Ave, Chicago, IL 60603"
+      ],
+      "anyExtraInformationOnHowToFind": "Look for the Route 66 Begin sign in downtown Chicago."
+    },
+    {
+      "startingLocation": "Joliet, Illinois",
+      "endingLocation": "Springfield, Illinois",
+      "startingLocationDescription": "Depart from Joliet, a city rich in history and culture.",
+      "endingLocationDescription": "Arrive in Springfield, the capital of Illinois, known for the Abraham Lincoln Presidential Library and Museum.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Joliet, IL"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the Route 66 signs south from Joliet."
+    },
+    {
+      "startingLocation": "Springfield, Illinois",
+      "endingLocation": "St. Louis, Missouri",
+      "startingLocationDescription": "Leave Springfield, a city with deep ties to Abraham Lincoln.",
+      "endingLocationDescription": "Enter St. Louis, famous for the Gateway Arch and its vibrant music scene.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Springfield, IL"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Route 66 towards St. Louis."
+    },
+    {
+      "startingLocation": "St. Louis, Missouri",
+      "endingLocation": "Springfield, Missouri",
+      "startingLocationDescription": "Depart from St. Louis, crossing the Mississippi River.",
+      "endingLocationDescription": "Arrive in Springfield, Missouri, known for its Route 66 Car Museum.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "St. Louis, MO"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow Route 66 southwest from St. Louis."
+    },
+    {
+      "startingLocation": "Springfield, Missouri",
+      "endingLocation": "Tulsa, Oklahoma",
+      "startingLocationDescription": "Leave Springfield, Missouri, a city with a rich Route 66 history.",
+      "endingLocationDescription": "Reach Tulsa, known for its art deco architecture and vibrant arts scene.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Springfield, MO"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Route 66 heading west."
+    },
+    {
+      "startingLocation": "Tulsa, Oklahoma",
+      "endingLocation": "Oklahoma City, Oklahoma",
+      "startingLocationDescription": "Depart from Tulsa, a city with a rich cultural heritage.",
+      "endingLocationDescription": "Arrive in Oklahoma City, known for its cowboy culture and the National Cowboy & Western Heritage Museum.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Tulsa, OK"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow Route 66 southwest to Oklahoma City."
+    },
+    {
+      "startingLocation": "Oklahoma City, Oklahoma",
+      "endingLocation": "Amarillo, Texas",
+      "startingLocationDescription": "Leave Oklahoma City, a city with a vibrant downtown area.",
+      "endingLocationDescription": "Arrive in Amarillo, famous for the Cadillac Ranch and its cowboy culture.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Oklahoma City, OK"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Route 66 heading west."
+    },
+    {
+      "startingLocation": "Amarillo, Texas",
+      "endingLocation": "Albuquerque, New Mexico",
+      "startingLocationDescription": "Depart from Amarillo, a city known for its Route 66 attractions.",
+      "endingLocationDescription": "Reach Albuquerque, known for its historic Old Town and vibrant cultural scene.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Amarillo, TX"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow Route 66 west into New Mexico."
+    },
+    {
+      "startingLocation": "Albuquerque, New Mexico",
+      "endingLocation": "Flagstaff, Arizona",
+      "startingLocationDescription": "Leave Albuquerque, a city with a rich Native American heritage.",
+      "endingLocationDescription": "Arrive in Flagstaff, known for its proximity to the Grand Canyon and its historic downtown.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Albuquerque, NM"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue on Route 66 heading west."
+    },
+    {
+      "startingLocation": "Flagstaff, Arizona",
+      "endingLocation": "Santa Monica, California",
+      "startingLocationDescription": "Depart from Flagstaff, a city surrounded by natural beauty.",
+      "endingLocationDescription": "End your journey at the Santa Monica Pier, where Route 66 concludes at the Pacific Ocean.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Flagstaff, AZ"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow Route 66 to its terminus at the Santa Monica Pier."
+    }
+  ],
+  "route": "Route 66: Chicago to Santa Monica",
+  "steps": [
+    {
+      "startingLocation": "Chicago, Illinois",
+      "endingLocation": "Joliet, Illinois",
+      "distance": 61.6,
+      "startingLocationDescription": "Begin your journey in Chicago, where Route 66 officially starts. Look for the iconic Route 66 sign at Adams and Michigan.",
+      "endingLocationDescription": "Travel to Joliet, known for its historic Rialto Square Theatre and the Joliet Area Historical Museum.",
+      "credibility": {
+        "source": "https://www.route66roadtrip.com/route-66-maps.htm",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Joliet, Illinois",
+      "endingLocation": "Springfield, Illinois",
+      "distance": 247,
+      "startingLocationDescription": "Depart from Joliet, a city rich in history and culture.",
+      "endingLocationDescription": "Arrive in Springfield, the capital of Illinois, known for the Abraham Lincoln Presidential Library and Museum.",
+      "credibility": {
+        "source": "https://www.route66roadtrip.com/route-66-maps.htm",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Springfield, Illinois",
+      "endingLocation": "St. Louis, Missouri",
+      "distance": 154,
+      "startingLocationDescription": "Leave Springfield, a city with deep ties to Abraham Lincoln.",
+      "endingLocationDescription": "Enter St. Louis, famous for the Gateway Arch and its vibrant music scene.",
+      "credibility": {
+        "source": "https://www.google.com/maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "St. Louis, Missouri",
+      "endingLocation": "Springfield, Missouri",
+      "distance": 366,
+      "startingLocationDescription": "Depart from St. Louis, crossing the Mississippi River.",
+      "endingLocationDescription": "Arrive in Springfield, Missouri, known for its Route 66 Car Museum.",
+      "credibility": {
+        "source": "Provided data",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Springfield, Missouri",
+      "endingLocation": "Tulsa, Oklahoma",
+      "distance": 301,
+      "startingLocationDescription": "Leave Springfield, Missouri, a city with a rich Route 66 history.",
+      "endingLocationDescription": "Reach Tulsa, known for its art deco architecture and vibrant arts scene.",
+      "credibility": {
+        "source": "https://www.google.com/maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Tulsa, Oklahoma",
+      "endingLocation": "Oklahoma City, Oklahoma",
+      "distance": 184,
+      "startingLocationDescription": "Depart from Tulsa, a city with a rich cultural heritage.",
+      "endingLocationDescription": "Arrive in Oklahoma City, known for its cowboy culture and the National Cowboy & Western Heritage Museum.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Oklahoma City, Oklahoma",
+      "endingLocation": "Amarillo, Texas",
+      "distance": 422,
+      "startingLocationDescription": "Leave Oklahoma City, a city with a vibrant downtown area.",
+      "endingLocationDescription": "Arrive in Amarillo, famous for the Cadillac Ranch and its cowboy culture.",
+      "credibility": {
+        "source": "User-provided data",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Amarillo, Texas",
+      "endingLocation": "Albuquerque, New Mexico",
+      "distance": 527,
+      "startingLocationDescription": "Depart from Amarillo, a city known for its Route 66 attractions.",
+      "endingLocationDescription": "Reach Albuquerque, known for its historic Old Town and vibrant cultural scene.",
+      "credibility": {
+        "source": "https://www.google.com/maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Albuquerque, New Mexico",
+      "endingLocation": "Flagstaff, Arizona",
+      "distance": 543,
+      "startingLocationDescription": "Leave Albuquerque, a city with a rich Native American heritage.",
+      "endingLocationDescription": "Arrive in Flagstaff, known for its proximity to the Grand Canyon and its historic downtown.",
+      "credibility": {
+        "source": "https://www.google.com/maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Flagstaff, Arizona",
+      "endingLocation": "Santa Monica, California",
+      "distance": 787,
+      "startingLocationDescription": "Depart from Flagstaff, a city surrounded by natural beauty.",
+      "endingLocationDescription": "End your journey at the Santa Monica Pier, where Route 66 concludes at the Pacific Ocean.",
+      "credibility": {
+        "source": "https://www.google.com/maps",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}

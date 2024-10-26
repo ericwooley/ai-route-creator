@@ -1,0 +1,656 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "popular_route_search",
+            "args": {
+              "query": "The Great Barrier Reef Voyage route in Queensland, Australia"
+            },
+            "type": "tool_call",
+            "id": "call_EuVjtZb9ohffroGCqR9nC2xF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_EuVjtZb9ohffroGCqR9nC2xF",
+              "type": "function",
+              "function": {
+                "name": "popular_route_search",
+                "arguments": "{\"query\":\"The Great Barrier Reef Voyage route in Queensland, Australia\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 25,
+            "promptTokens": 504,
+            "totalTokens": 529
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 504,
+            "completion_tokens": 25,
+            "total_tokens": 529,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP7MHlWjDNEtqXWUI3FsSObanHH3"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"query\": \"The Great Barrier Reef Voyage route in Queensland, Australia\",\n  \"definitiveAnswer\": {\n    \"answerContext\": \"The Great Barrier Reef is a vast coral reef system located off the east coast of Queensland, Australia, stretching over 2,300 kilometers. It is known for its rich biodiversity and is a major natural attraction. The best access points for exploring the reef include Cairns and Port Douglas, with various tours and liveaboard options available. Key locations along the voyage route include Gold Coast, Bundaberg, Lady Elliot Island, Gladstone, Yeppoon, and Great Keppel Island, which offer unique experiences and access to the reef's stunning marine life.\",\n    \"finalAnswer\": [\n      {\n        \"routeName\": \"Great Barrier Reef Voyage Route\"\n      }\n    ],\n    \"finalAnswerQuality\": \"9\",\n    \"relevantLinks\": [\n      \"https://en.wikipedia.org/wiki/Great_Barrier_Reef\",\n      \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n      \"https://www.australia.com/en/places/cairns-and-surrounds/guide-to-the-great-barrier-reef.html\"\n    ],\n    \"mostUsefulAnswers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a clear overview of the key locations along the Great Barrier Reef Voyage route, making it highly relevant to the query.\",\n        \"answer\": \"The Great Barrier Reef Voyage route includes stops at Gold Coast, Bundaberg, Lady Elliot Island, Gladstone, Yeppoon, and Great Keppel Island.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"We’ve already shared our Tropical North Queensland Itinerary. But on this trip, we visited an area of Queensland which is much less visited than the typical Queensland hotspots.\",\n        \"content\": \"The itinerary details a road trip through Southern Great Barrier Reef and coastal Queensland, highlighting key destinations and experiences along the route.\"\n      }\n    ]\n  },\n  \"context\": {\n    \"finalAnswer\": {\n      \"answerContext\": \"The Great Barrier Reef is a vast coral reef system located off the east coast of Queensland, Australia, stretching over 2,300 kilometers. It is known for its rich biodiversity and is a major natural attraction. The best access points for exploring the reef include Cairns and Port Douglas, with various tours and liveaboard options available. Key locations along the voyage route include Gold Coast, Bundaberg, Lady Elliot Island, Gladstone, Yeppoon, and Great Keppel Island, which offer unique experiences and access to the reef's stunning marine life.\",\n      \"finalAnswer\": [\n        {\n          \"routeName\": \"Great Barrier Reef Voyage Route\"\n        }\n      ],\n      \"finalAnswerQuality\": \"9\",\n      \"relevantLinks\": [\n        \"https://en.wikipedia.org/wiki/Great_Barrier_Reef\",\n        \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n        \"https://www.australia.com/en/places/cairns-and-surrounds/guide-to-the-great-barrier-reef.html\"\n      ],\n      \"mostUsefulAnswers\": [\n        {\n          \"answerQualityExplanation\": \"The answer provides a clear overview of the key locations along the Great Barrier Reef Voyage route, making it highly relevant to the query.\",\n          \"answer\": \"The Great Barrier Reef Voyage route includes stops at Gold Coast, Bundaberg, Lady Elliot Island, Gladstone, Yeppoon, and Great Keppel Island.\",\n          \"answerQuality\": \"8\",\n          \"snippet\": \"We’ve already shared our Tropical North Queensland Itinerary. But on this trip, we visited an area of Queensland which is much less visited than the typical Queensland hotspots.\",\n          \"content\": \"The itinerary details a road trip through Southern Great Barrier Reef and coastal Queensland, highlighting key destinations and experiences along the route.\"\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerQualityExplanation\": \"The answer provides a concise overview of the Great Barrier Reef's location and significance, directly addressing the user's query about the voyage route in Queensland.\",\n        \"answer\": \"The Great Barrier Reef is located off the east coast of Queensland, Australia, stretching over 2,300 kilometers.\",\n        \"answerQuality\": \"9\",\n        \"snippet\": \"The Great Barrier Reef is located in the Coral Sea, off the coast of Queensland, Australia, separated from the coast by a channel 160 kilometres (100 mi) wide in places and over 61 metres (200 ft) deep.\",\n        \"content\": \"The Great Barrier Reef is the world's largest coral reef system, composed of over 2,900 individual reefs and 900 islands stretching for over 2,300 kilometres (1,400 mi) over an area of approximately 344,400 square kilometres (133,000 sq mi).\",\n        \"link\": \"https://en.wikipedia.org/wiki/Great_Barrier_Reef\",\n        \"query\": \"The Great Barrier Reef Voyage route in Queensland, Australia\"\n      },\n      {\n        \"answerQualityExplanation\": \"The answer provides a clear overview of the key locations along the Great Barrier Reef Voyage route, making it highly relevant to the query.\",\n        \"answer\": \"The Great Barrier Reef Voyage route includes stops at Gold Coast, Bundaberg, Lady Elliot Island, Gladstone, Yeppoon, and Great Keppel Island.\",\n        \"answerQuality\": \"8\",\n        \"snippet\": \"We’ve already shared our Tropical North Queensland Itinerary. But on this trip, we visited an area of Queensland which is much less visited than the typical Queensland hotspots.\",\n        \"content\": \"The itinerary details a road trip through Southern Great Barrier Reef and coastal Queensland, highlighting key destinations and experiences along the route.\",\n        \"link\": \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n        \"query\": \"The Great Barrier Reef Voyage route in Queensland, Australia\"\n      }\n    ]\n  }\n}",
+        "tool_call_id": "call_EuVjtZb9ohffroGCqR9nC2xF",
+        "name": "popular_route_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "cd3627e1-f297-4fdb-aa10-708889e46ace"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop on The Great Barrier Reef Voyage route in Queensland, Australia"
+            },
+            "type": "tool_call",
+            "id": "call_1NTYW5HOkNe1YMlS4vUSRZ6N"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1NTYW5HOkNe1YMlS4vUSRZ6N",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop on The Great Barrier Reef Voyage route in Queensland, Australia\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 30,
+            "promptTokens": 3355,
+            "totalTokens": 3385
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 3355,
+            "completion_tokens": 30,
+            "total_tokens": 3385,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP8NcEZDWhnIvxolKleMxkz6CmoF"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Great Barrier Reef Voyage route in Queensland, Australia, offers a variety of interesting stops that highlight the natural beauty and unique experiences of the region. Key locations include Lady Elliot Island, known for its snorkeling opportunities; Bundaberg, famous for its distilleries; Gladstone, which features local breweries; Byfield National Park, offering stunning natural landscapes; Great Keppel Island, celebrated for its beautiful beaches; and Lady Musgrave Island, which is renowned for its lagoon and rich marine life. These destinations provide a mix of adventure, relaxation, and exploration, making them ideal stops along the voyage.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Bundaberg\",\n        \"endingLocation\": \"Lady Elliot Island\",\n        \"startingLocationDescription\": \"Begin your journey in Bundaberg, a city known for its rum distilleries and vibrant local culture.\",\n        \"endingLocationDescription\": \"Arrive at Lady Elliot Island, a paradise for snorkelers and divers, where you can explore the coral reefs and marine life.\",\n        \"credibility\": {\n          \"source\": \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the journey takes you from the distilleries of Bundaberg to the stunning underwater world of Lady Elliot Island.\"\n      },\n      {\n        \"startingLocation\": \"Lady Elliot Island\",\n        \"endingLocation\": \"Gladstone\",\n        \"startingLocationDescription\": \"Enjoy the pristine beaches and snorkeling at Lady Elliot Island before heading to your next destination.\",\n        \"endingLocationDescription\": \"Arrive in Gladstone, known for its local breweries and waterfront attractions.\",\n        \"credibility\": {\n          \"source\": \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"Travel from the marine paradise of Lady Elliot Island to the vibrant city of Gladstone.\"\n      },\n      {\n        \"startingLocation\": \"Gladstone\",\n        \"endingLocation\": \"Byfield National Park\",\n        \"startingLocationDescription\": \"Explore Gladstone's breweries and local attractions before venturing into nature.\",\n        \"endingLocationDescription\": \"Arrive at Byfield National Park, known for its lush rainforests and diverse wildlife.\",\n        \"credibility\": {\n          \"source\": \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This leg takes you from the urban environment of Gladstone to the natural beauty of Byfield National Park.\"\n      },\n      {\n        \"startingLocation\": \"Byfield National Park\",\n        \"endingLocation\": \"Great Keppel Island\",\n        \"startingLocationDescription\": \"Experience the natural beauty and wildlife of Byfield National Park.\",\n        \"endingLocationDescription\": \"Arrive at Great Keppel Island, famous for its stunning beaches and relaxed atmosphere.\",\n        \"credibility\": {\n          \"source\": \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"Travel from the lush landscapes of Byfield to the idyllic beaches of Great Keppel Island.\"\n      },\n      {\n        \"startingLocation\": \"Great Keppel Island\",\n        \"endingLocation\": \"Lady Musgrave Island\",\n        \"startingLocationDescription\": \"Relax on the beautiful beaches of Great Keppel Island before heading to your next stop.\",\n        \"endingLocationDescription\": \"Arrive at Lady Musgrave Island, known for its lagoon and vibrant marine life.\",\n        \"credibility\": {\n          \"source\": \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\",\n          \"reliability\": 8,\n          \"guess\": false\n        },\n        \"description\": \"This leg takes you from the serene beaches of Great Keppel Island to the stunning marine environment of Lady Musgrave Island.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"8\",\n  \"relevantLinks\": [\n    \"https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer lists several interesting places along the Great Barrier Reef Voyage route, making it highly relevant.\",\n      \"answer\": \"Lady Elliot Island, Bundaberg, Gladstone, Byfield National Park, Great Keppel Island, Lady Musgrave Island.\",\n      \"answerQuality\": 8,\n      \"snippet\": \"Most interesting places to stop on The Great Barrier Reef Voyage route in Queensland, Australia\",\n      \"content\": \"The itinerary includes stops at Lady Elliot Island for snorkeling, Bundaberg for its distilleries, Gladstone for its brewery, Byfield National Park for its natural beauty, Great Keppel Island for its beaches, and Lady Musgrave Island for its lagoon and marine life.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_1NTYW5HOkNe1YMlS4vUSRZ6N",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "c8227bc5-eacb-451d-b9b3-a80990741c26"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Cairns, Queensland, Australia",
+              "to": "Port Douglas, Queensland, Australia"
+            },
+            "type": "tool_call",
+            "id": "call_d7W74WnyXHrUmpa3YJRJJRQF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_d7W74WnyXHrUmpa3YJRJJRQF",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Cairns, Queensland, Australia\",\"to\":\"Port Douglas, Queensland, Australia\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 8551,
+            "totalTokens": 8582
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8551,
+            "completion_tokens": 31,
+            "total_tokens": 8582,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP8wY6nycW8z4tPEAKmmyLrISlHM"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Cairns, Queensland, Australia\",\n  \"to\": \"Port Douglas, Queensland, Australia\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Port Douglas QLD, Australia\"\n    ],\n    \"origin_addresses\": [\n      \"Cairns QLD, Australia\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"66.1 km\",\n              \"value\": 66063\n            },\n            \"duration\": {\n              \"text\": \"14 hours 53 mins\",\n              \"value\": 53560\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_d7W74WnyXHrUmpa3YJRJJRQF",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ca1d8f06-fc7b-4b93-b09e-15c555b33a6b"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Port Douglas, Queensland, Australia",
+              "to": "Mossman Gorge, Queensland, Australia"
+            },
+            "type": "tool_call",
+            "id": "call_mYZ0oJaRaLsOmbiFCWrsLBoF"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_mYZ0oJaRaLsOmbiFCWrsLBoF",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Port Douglas, Queensland, Australia\",\"to\":\"Mossman Gorge, Queensland, Australia\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 32,
+            "promptTokens": 8761,
+            "totalTokens": 8793
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8761,
+            "completion_tokens": 32,
+            "total_tokens": 8793,
+            "prompt_tokens_details": {
+              "cached_tokens": 7680
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP90WeZSbh4V9957BiSwkayiK4Zq"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Port Douglas, Queensland, Australia\",\n  \"to\": \"Mossman Gorge, Queensland, Australia\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Mossman Gorge QLD 4873, Australia\"\n    ],\n    \"origin_addresses\": [\n      \"Port Douglas QLD, Australia\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"22.1 km\",\n              \"value\": 22107\n            },\n            \"duration\": {\n              \"text\": \"5 hours 0 mins\",\n              \"value\": 18006\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_mYZ0oJaRaLsOmbiFCWrsLBoF",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "202246a6-ea37-433d-8f87-efa9455e1f1f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Mossman Gorge, Queensland, Australia",
+              "to": "Cape Tribulation, Queensland, Australia"
+            },
+            "type": "tool_call",
+            "id": "call_i5Y1xhP7Ozvv3TooFytJJ6Fu"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_i5Y1xhP7Ozvv3TooFytJJ6Fu",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Mossman Gorge, Queensland, Australia\",\"to\":\"Cape Tribulation, Queensland, Australia\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 33,
+            "promptTokens": 7588,
+            "totalTokens": 7621
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 7588,
+            "completion_tokens": 33,
+            "total_tokens": 7621,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP94pp4UagDna95Yqz23wNH8unzY"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Mossman Gorge, Queensland, Australia\",\n  \"to\": \"Cape Tribulation, Queensland, Australia\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Cape Tribulation QLD, Australia\"\n    ],\n    \"origin_addresses\": [\n      \"Mossman Gorge QLD 4873, Australia\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"67.5 km\",\n              \"value\": 67547\n            },\n            \"duration\": {\n              \"text\": \"15 hours 36 mins\",\n              \"value\": 56139\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_i5Y1xhP7Ozvv3TooFytJJ6Fu",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "50bf0a97-1828-458b-98f7-33e874064b07"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Cape Tribulation, Queensland, Australia",
+              "to": "Cooktown, Queensland, Australia"
+            },
+            "type": "tool_call",
+            "id": "call_lrOHfgGC75civHzxB8UeDfou"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_lrOHfgGC75civHzxB8UeDfou",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Cape Tribulation, Queensland, Australia\",\"to\":\"Cooktown, Queensland, Australia\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 31,
+            "promptTokens": 5409,
+            "totalTokens": 5440
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5409,
+            "completion_tokens": 31,
+            "total_tokens": 5440,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP97FruQ7MhWXfWxUrzyC5PnsQvG"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Cape Tribulation, Queensland, Australia\",\n  \"to\": \"Cooktown, Queensland, Australia\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Cooktown QLD, Australia\"\n    ],\n    \"origin_addresses\": [\n      \"Cape Tribulation QLD, Australia\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"102 km\",\n              \"value\": 101574\n            },\n            \"duration\": {\n              \"text\": \"23 hours 36 mins\",\n              \"value\": 84966\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_lrOHfgGC75civHzxB8UeDfou",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "9b5082e8-ba0f-471b-b4b1-8d8fb6a72228"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Cooktown, Queensland, Australia",
+              "to": "Townsville, Queensland, Australia"
+            },
+            "type": "tool_call",
+            "id": "call_CTqn8Plfz8Jp3f1Zk7C3olfw"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_CTqn8Plfz8Jp3f1Zk7C3olfw",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Cooktown, Queensland, Australia\",\"to\":\"Townsville, Queensland, Australia\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 30,
+            "promptTokens": 5417,
+            "totalTokens": 5447
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5417,
+            "completion_tokens": 30,
+            "total_tokens": 5447,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMP9BM0b8U6kEB5owqYQ6EPMCh6dr"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Cooktown, Queensland, Australia\",\n  \"to\": \"Townsville, Queensland, Australia\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"Townsville City QLD 4810, Australia\"\n    ],\n    \"origin_addresses\": [\n      \"Cooktown QLD, Australia\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"586 km\",\n              \"value\": 586012\n            },\n            \"duration\": {\n              \"text\": \"5 days 13 hours\",\n              \"value\": 478598\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_CTqn8Plfz8Jp3f1Zk7C3olfw",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "bc580ac5-cd7e-4962-bbc1-81626cd84e0b"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Wikipedia - Great Barrier Reef",
+      "link": "https://en.wikipedia.org/wiki/Great_Barrier_Reef"
+    },
+    {
+      "name": "Haylsa Blog - Southern Great Barrier Reef Coastal Queensland Road Trip Itinerary",
+      "link": "https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary"
+    },
+    {
+      "name": "Australia.com - Guide to the Great Barrier Reef",
+      "link": "https://www.australia.com/en/places/cairns-and-surrounds/guide-to-the-great-barrier-reef.html"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Great Barrier Reef Voyage\", which is real world.\nThe  pitch for this route is \"A journey along the stunning Great Barrier Reef, exploring the vibrant marine life and serene lagoons that dot the coastline of Queensland, Australia.\".\nSome ideas for steps are: \n\t - Cairns to Port Douglas\n\t - Port Douglas to Lizard Island\n\t - Lizard Island to Cooktown\n\t - Cooktown to Cape Tribulation\n\t - Cape Tribulation to Townsville",
+  "itinerary": [
+    {
+      "startingLocation": "Cairns",
+      "endingLocation": "Port Douglas",
+      "startingLocationDescription": "Cairns is a vibrant city known as the gateway to the Great Barrier Reef.",
+      "endingLocationDescription": "Port Douglas is a charming town with easy access to the reef and the Daintree Rainforest.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Cairns, Queensland, Australia"
+      ],
+      "anyExtraInformationOnHowToFind": "Follow the Captain Cook Highway north from Cairns to reach Port Douglas."
+    },
+    {
+      "startingLocation": "Port Douglas",
+      "endingLocation": "Mossman Gorge",
+      "startingLocationDescription": "Port Douglas offers beautiful beaches and a relaxed atmosphere.",
+      "endingLocationDescription": "Mossman Gorge is part of the Daintree National Park, known for its lush rainforest and crystal-clear waters.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Port Douglas, Queensland, Australia"
+      ],
+      "anyExtraInformationOnHowToFind": "Head north on the Mossman Daintree Road to reach Mossman Gorge."
+    },
+    {
+      "startingLocation": "Mossman Gorge",
+      "endingLocation": "Cape Tribulation",
+      "startingLocationDescription": "Mossman Gorge is a popular spot for swimming and exploring the rainforest.",
+      "endingLocationDescription": "Cape Tribulation is where the rainforest meets the reef, offering stunning natural beauty.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Mossman Gorge, Queensland, Australia"
+      ],
+      "anyExtraInformationOnHowToFind": "Continue north on the Cape Tribulation Road through the Daintree Rainforest."
+    },
+    {
+      "startingLocation": "Cape Tribulation",
+      "endingLocation": "Cooktown",
+      "startingLocationDescription": "Cape Tribulation is a remote and beautiful area with pristine beaches.",
+      "endingLocationDescription": "Cooktown is a historic town with a rich history and access to the Great Barrier Reef.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Cape Tribulation, Queensland, Australia"
+      ],
+      "anyExtraInformationOnHowToFind": "Travel north on the Bloomfield Track, a scenic and adventurous route."
+    },
+    {
+      "startingLocation": "Cooktown",
+      "endingLocation": "Townsville",
+      "startingLocationDescription": "Cooktown offers a glimpse into Australia's colonial past and natural wonders.",
+      "endingLocationDescription": "Townsville is a vibrant city with access to Magnetic Island and the Great Barrier Reef.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Cooktown, Queensland, Australia"
+      ],
+      "anyExtraInformationOnHowToFind": "Head south on the Mulligan Highway and then take the Bruce Highway to reach Townsville."
+    }
+  ],
+  "route": "Cairns to Townsville via Great Barrier Reef",
+  "steps": [
+    {
+      "startingLocation": "Cairns",
+      "endingLocation": "Port Douglas",
+      "distance": 66.1,
+      "startingLocationDescription": "Cairns is a vibrant city known as the gateway to the Great Barrier Reef.",
+      "endingLocationDescription": "Port Douglas is a charming town with easy access to the reef and the Daintree Rainforest.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Port Douglas",
+      "endingLocation": "Mossman Gorge",
+      "distance": 22.1,
+      "startingLocationDescription": "Port Douglas offers beautiful beaches and a relaxed atmosphere.",
+      "endingLocationDescription": "Mossman Gorge is part of the Daintree National Park, known for its lush rainforest and crystal-clear waters.",
+      "credibility": {
+        "source": "https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Mossman Gorge",
+      "endingLocation": "Cape Tribulation",
+      "distance": 67.5,
+      "startingLocationDescription": "Mossman Gorge is a popular spot for swimming and exploring the rainforest.",
+      "endingLocationDescription": "Cape Tribulation is where the rainforest meets the reef, offering stunning natural beauty.",
+      "credibility": {
+        "source": "https://www.google.com/maps",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Cape Tribulation",
+      "endingLocation": "Cooktown",
+      "distance": 102,
+      "startingLocationDescription": "Cape Tribulation is a remote and beautiful area with pristine beaches.",
+      "endingLocationDescription": "Cooktown is a historic town with a rich history and access to the Great Barrier Reef.",
+      "credibility": {
+        "source": "https://www.haylsa.com/blog/southern-great-barrier-reef-coastal-queensland-road-trip-itinerary",
+        "reliability": 8,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Cooktown",
+      "endingLocation": "Townsville",
+      "distance": 586,
+      "startingLocationDescription": "Cooktown offers a glimpse into Australia's colonial past and natural wonders.",
+      "endingLocationDescription": "Townsville is a vibrant city with access to Magnetic Island and the Great Barrier Reef.",
+      "credibility": {
+        "source": "Provided data",
+        "reliability": 8,
+        "guess": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "A journey through the dense, dark woods of the Black Forest in Germany, known for its mysterious atmosphere and folklore of haunted tales. Route: Baden-Baden to Freudenstadt, Freudenstadt to Triberg, Triberg to Freiburg, Freiburg to Titisee, Titisee to Schluchsee. Real places."
+            },
+            "type": "tool_call",
+            "id": "call_Rv5aXW3QHkHBX4CA5LM2Bg89"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_Rv5aXW3QHkHBX4CA5LM2Bg89",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"A journey through the dense, dark woods of the Black Forest in Germany, known for its mysterious atmosphere and folklore of haunted tales. Route: Baden-Baden to Freudenstadt, Freudenstadt to Triberg, Triberg to Freiburg, Freiburg to Titisee, Titisee to Schluchsee. Real places.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 77,
+            "promptTokens": 501,
+            "totalTokens": 578
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 501,
+            "completion_tokens": 77,
+            "total_tokens": 578,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOxy9iVMzmiiy1CrACiAhiAbxbEw"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"The Black Forest, known for its dense woods and rich folklore, offers a beautiful journey through various picturesque towns and natural landscapes. The route from Baden-Baden to Schluchsee includes several notable stops, each with its own charm and attractions. The area is famous for its myths and legends, contributing to its mysterious atmosphere, but it is also a popular destination for hiking and outdoor activities.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Baden-Baden\",\n        \"endingLocation\": \"Freudenstadt\",\n        \"startingLocationDescription\": \"Begin your journey in Baden-Baden, a spa town known for its thermal baths and elegant architecture.\",\n        \"endingLocationDescription\": \"Arrive in Freudenstadt, famous for its large market square and beautiful Black Forest scenery.\",\n        \"credibility\": {\n          \"source\": \"https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"This leg of the journey takes you through scenic routes with opportunities to explore the charming town of Freudenstadt.\"\n      },\n      {\n        \"startingLocation\": \"Freudenstadt\",\n        \"endingLocation\": \"Triberg\",\n        \"startingLocationDescription\": \"Leave Freudenstadt, enjoying the lush greenery and rolling hills of the Black Forest.\",\n        \"endingLocationDescription\": \"Reach Triberg, known for its stunning waterfalls and cuckoo clocks.\",\n        \"credibility\": {\n          \"source\": \"https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"This segment features beautiful forested areas and the chance to visit the famous Triberg Waterfalls.\"\n      },\n      {\n        \"startingLocation\": \"Triberg\",\n        \"endingLocation\": \"Freiburg\",\n        \"startingLocationDescription\": \"Depart from Triberg, where you can explore the local shops and the waterfall.\",\n        \"endingLocationDescription\": \"Arrive in Freiburg, a vibrant university city with a historic old town.\",\n        \"credibility\": {\n          \"source\": \"https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"This leg offers a mix of nature and culture as you transition from the quiet of the forest to the lively atmosphere of Freiburg.\"\n      },\n      {\n        \"startingLocation\": \"Freiburg\",\n        \"endingLocation\": \"Titisee\",\n        \"startingLocationDescription\": \"Leave Freiburg, enjoying the sights of the old town and the cathedral.\",\n        \"endingLocationDescription\": \"Arrive at Titisee, a picturesque lake surrounded by mountains.\",\n        \"credibility\": {\n          \"source\": \"https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"This leg is perfect for those who enjoy lakeside views and outdoor activities like swimming or hiking.\"\n      },\n      {\n        \"startingLocation\": \"Titisee\",\n        \"endingLocation\": \"Schluchsee\",\n        \"startingLocationDescription\": \"Depart from Titisee, taking in the serene lake views.\",\n        \"endingLocationDescription\": \"Arrive at Schluchsee, the largest lake in the Black Forest, ideal for water sports.\",\n        \"credibility\": {\n          \"source\": \"https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape\",\n          \"reliability\": 10,\n          \"guess\": false\n        },\n        \"description\": \"The final leg of your journey leads you to Schluchsee, where you can relax by the water or engage in various recreational activities.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"10\",\n  \"relevantLinks\": [\n    \"https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer provides a clear and direct response to the user's query about the journey route through the Black Forest.\",\n      \"answer\": \"The journey route is: Baden-Baden to Freudenstadt, Freudenstadt to Triberg, Triberg to Freiburg, Freiburg to Titisee, Titisee to Schluchsee.\",\n      \"answerQuality\": 10,\n      \"snippet\": \"A journey through the dense, dark woods of the Black Forest in Germany, known for its mysterious atmosphere and folklore of haunted tales. Route: Baden-Baden to Freudenstadt, Freudenstadt to Triberg, Triberg to Freiburg, Freiburg to Titisee, Titisee to Schluchsee.\",\n      \"content\": \"The content describes a journey through the Black Forest, listing the specific route from Baden-Baden to Schluchsee, which is exactly what the user asked for.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 10,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_Rv5aXW3QHkHBX4CA5LM2Bg89",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "0b19418f-1b07-404d-9370-528ae2e77fc9"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "itinerary_search",
+            "args": {
+              "query": "Most interesting places to stop while traveling through the Black Forest in Germany, from Baden-Baden to Schluchsee. Real locations only."
+            },
+            "type": "tool_call",
+            "id": "call_8hSmtIB4X4jnyajTCDLznpOI"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_8hSmtIB4X4jnyajTCDLznpOI",
+              "type": "function",
+              "function": {
+                "name": "itinerary_search",
+                "arguments": "{\"query\":\"Most interesting places to stop while traveling through the Black Forest in Germany, from Baden-Baden to Schluchsee. Real locations only.\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 41,
+            "promptTokens": 5346,
+            "totalTokens": 5387
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 5346,
+            "completion_tokens": 41,
+            "total_tokens": 5387,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOyiqKui7jSkqquEwRg8jyqiHakA"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Error: Failed to parse. Text: \"```json\n{\n  \"answerContext\": \"Traveling through the Black Forest from Baden-Baden to Schluchsee offers a variety of picturesque towns and attractions. Notable stops include Freiburg im Breisgau, known for its historic architecture and vibrant atmosphere; Triberg, famous for its waterfalls and cuckoo clocks; and Schluchsee, a serene lakeside destination. Other interesting locations include Gengenbach, a charming town with half-timbered houses; Titisee, a popular lake for water activities; and the Rothaus Brewery, where visitors can enjoy local beer. The Freilichtmuseum Vogtsbauernhof showcases traditional Black Forest life, while Mummelsee offers stunning views and hiking opportunities.\",\n  \"finalAnswer\": [\n    [\n      {\n        \"startingLocation\": \"Baden-Baden\",\n        \"endingLocation\": \"Schluchsee\",\n        \"startingLocationDescription\": \"Begin your journey in Baden-Baden, a spa town known for its thermal baths and elegant architecture.\",\n        \"endingLocationDescription\": \"Arrive at Schluchsee, a picturesque lake surrounded by mountains, perfect for relaxation and outdoor activities.\",\n        \"credibility\": {\n          \"source\": \"https://www.tripadvisor.com/ShowTopic-g5796433-i30163-k11363435-Itinerary_for_4_days_in_black_forest-Black_Forest_Baden_Wurttemberg.html\",\n          \"reliability\": 9,\n          \"guess\": false\n        },\n        \"description\": \"This route takes you through some of the most beautiful and interesting locations in the Black Forest, allowing for a mix of cultural experiences and natural beauty.\"\n      }\n    ]\n  ],\n  \"finalAnswerQuality\": \"9\",\n  \"relevantLinks\": [\n    \"https://www.reddit.com/r/TravelNoPics/comments/r0buji/my_experiencetips_for_the_black_forest/\",\n    \"https://community.ricksteves.com/travel-forum/germany/seeking-quaint-villages-towns-in-the-black-forest-de\",\n    \"https://www.tripadvisor.com/ShowTopic-g5796433-i30163-k11363435-Itinerary_for_4_days_in_black_forest-Black_Forest_Baden_Wurttemberg.html\"\n  ],\n  \"mostUsefulAnswers\": [\n    {\n      \"answerQualityExplanation\": \"The answer lists specific real locations of interest in the Black Forest, directly addressing the user's query.\",\n      \"answer\": \"Freiburg im Breisgau, Titisee, Feldberg, Schluchsee, Ravenna Gorge, Baden-Baden, Triberg, Freilichtmuseum Vogtsbauernhof, Baiersbronn, Mummelsee.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"The standard/most promoted tourist destinations are: Freiburg im Breisgau... Schluchsee... Triberg... Baiersbronn...\",\n      \"content\": \"The response includes several recommended towns and attractions in the Black Forest region, providing a concise list of interesting places to stop while traveling from Baden-Baden to Schluchsee.\"\n    },\n    {\n      \"answerQualityExplanation\": \"The answer lists specific quaint towns and attractions in the Black Forest, directly addressing the user's query for real locations to visit.\",\n      \"answer\": \"Gengenbach, Schluchsee, Staufen, Triberg, Vogtsbauernhof, Löffingen, Sankt Blasien.\",\n      \"answerQuality\": 8,\n      \"snippet\": \"Gengenbach is a great place to stay in the north... Schluchsee is a tidy little lakeside town...\",\n      \"content\": \"The response includes several recommended towns and attractions in the Black Forest region, providing a concise list of interesting places to stop while traveling from Baden-Baden to Schluchsee.\"\n    },\n    {\n      \"answerQualityExplanation\": \"The answer lists specific real locations of interest in the Black Forest, directly addressing the user's query.\",\n      \"answer\": \"Gengenbach, Freiburg, Staufen, Triberg, Schluchsee, Titisee, Menzenschwand, Rothaus Brewery, Hexenlochmühle, St. Peter.\",\n      \"answerQuality\": 9,\n      \"snippet\": \"your first stop may be the picturesque historical town Gengenbach...\",\n      \"content\": \"The content provides a detailed itinerary suggestion for traveling through the Black Forest, highlighting various towns and attractions that are interesting and relevant to the user's travel plans.\"\n    }\n  ]\n}\n```\". Error: [\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              0,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      0,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  },\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 8,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              1,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      1,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  },\n  {\n    \"code\": \"invalid_union\",\n    \"unionErrors\": [\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"1\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"1\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"2\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"2\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"3\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"3\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"4\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"4\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"5\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"5\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"6\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"6\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"7\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"7\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"8\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"8\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"9\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"9\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      },\n      {\n        \"issues\": [\n          {\n            \"received\": 9,\n            \"code\": \"invalid_literal\",\n            \"expected\": \"10\",\n            \"path\": [\n              \"mostUsefulAnswers\",\n              2,\n              \"answerQuality\"\n            ],\n            \"message\": \"Invalid literal value, expected \\\"10\\\"\"\n          }\n        ],\n        \"name\": \"ZodError\"\n      }\n    ],\n    \"path\": [\n      \"mostUsefulAnswers\",\n      2,\n      \"answerQuality\"\n    ],\n    \"message\": \"Invalid input\"\n  }\n]\n Please fix your mistakes.",
+        "name": "itinerary_search",
+        "tool_call_id": "call_8hSmtIB4X4jnyajTCDLznpOI",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4300718b-5c57-476f-af8f-a415d57cfc10"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Baden-Baden, Germany",
+              "to": "Freudenstadt, Germany"
+            },
+            "type": "tool_call",
+            "id": "call_RRn0Pt7GyxaVVbK1zW8hhOMB"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_RRn0Pt7GyxaVVbK1zW8hhOMB",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Baden-Baden, Germany\",\"to\":\"Freudenstadt, Germany\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 29,
+            "promptTokens": 14457,
+            "totalTokens": 14486
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 14457,
+            "completion_tokens": 29,
+            "total_tokens": 14486,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOzKpvjKtgH5axt6hC61hdmvmgWh"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Baden-Baden, Germany\",\n  \"to\": \"Freudenstadt, Germany\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"72250 Freudenstadt, Germany\"\n    ],\n    \"origin_addresses\": [\n      \"Baden-Baden, Germany\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"46.6 km\",\n              \"value\": 46556\n            },\n            \"duration\": {\n              \"text\": \"11 hours 25 mins\",\n              \"value\": 41076\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_RRn0Pt7GyxaVVbK1zW8hhOMB",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4549067a-7955-4af7-a5de-498ddb7b8821"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Freudenstadt, Germany",
+              "to": "Triberg, Germany"
+            },
+            "type": "tool_call",
+            "id": "call_tviwIVEOFTfuzqt2haGYb6jW"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_tviwIVEOFTfuzqt2haGYb6jW",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Freudenstadt, Germany\",\"to\":\"Triberg, Germany\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 14667,
+            "totalTokens": 14694
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 14667,
+            "completion_tokens": 27,
+            "total_tokens": 14694,
+            "prompt_tokens_details": {
+              "cached_tokens": 13568
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOzQ3Fj37YufGwX7Rue54vEjKX7Y"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Freudenstadt, Germany\",\n  \"to\": \"Triberg, Germany\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"78098 Triberg, Germany\"\n    ],\n    \"origin_addresses\": [\n      \"72250 Freudenstadt, Germany\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"49.0 km\",\n              \"value\": 49017\n            },\n            \"duration\": {\n              \"text\": \"12 hours 5 mins\",\n              \"value\": 43522\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_tviwIVEOFTfuzqt2haGYb6jW",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "ff5050e1-f53b-4170-a260-94821da976ef"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Triberg, Germany",
+              "to": "Freiburg, Germany"
+            },
+            "type": "tool_call",
+            "id": "call_hsjiFoU4BaAHRogHTCz3GHD1"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_hsjiFoU4BaAHRogHTCz3GHD1",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Triberg, Germany\",\"to\":\"Freiburg, Germany\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 12484,
+            "totalTokens": 12511
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 12484,
+            "completion_tokens": 27,
+            "total_tokens": 12511,
+            "prompt_tokens_details": {
+              "cached_tokens": 6784
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOzWCvYMmAYZNAZjIgv9LQnqtQKO"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Triberg, Germany\",\n  \"to\": \"Freiburg, Germany\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"79 Freiburg im Breisgau, Germany\"\n    ],\n    \"origin_addresses\": [\n      \"78098 Triberg, Germany\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"43.6 km\",\n              \"value\": 43577\n            },\n            \"duration\": {\n              \"text\": \"10 hours 18 mins\",\n              \"value\": 37075\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_hsjiFoU4BaAHRogHTCz3GHD1",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "4473a657-fdd5-487e-961d-1d57e05f984b"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Freiburg, Germany",
+              "to": "Titisee, Germany"
+            },
+            "type": "tool_call",
+            "id": "call_CxrHXILzhc1Lf9xojRxJNfsr"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_CxrHXILzhc1Lf9xojRxJNfsr",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Freiburg, Germany\",\"to\":\"Titisee, Germany\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 27,
+            "promptTokens": 8316,
+            "totalTokens": 8343
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8316,
+            "completion_tokens": 27,
+            "total_tokens": 8343,
+            "prompt_tokens_details": {
+              "cached_tokens": 6784
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOzaekdCqelXR1yRwzXRaAARcuQ3"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Freiburg, Germany\",\n  \"to\": \"Titisee, Germany\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"79822 Titisee-Neustadt, Germany\"\n    ],\n    \"origin_addresses\": [\n      \"79 Freiburg im Breisgau, Germany\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"31.5 km\",\n              \"value\": 31535\n            },\n            \"duration\": {\n              \"text\": \"7 hours 51 mins\",\n              \"value\": 28240\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_CxrHXILzhc1Lf9xojRxJNfsr",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "2f1060ed-cb84-46d3-b08a-afd5a966b187"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "distance_google_maps_search",
+            "args": {
+              "from": "Titisee, Germany",
+              "to": "Schluchsee, Germany"
+            },
+            "type": "tool_call",
+            "id": "call_D8Sd5qu09FbyBmAbFe39g9as"
+          }
+        ],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_D8Sd5qu09FbyBmAbFe39g9as",
+              "type": "function",
+              "function": {
+                "name": "distance_google_maps_search",
+                "arguments": "{\"from\":\"Titisee, Germany\",\"to\":\"Schluchsee, Germany\"}"
+              }
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "completionTokens": 28,
+            "promptTokens": 8332,
+            "totalTokens": 8360
+          },
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 8332,
+            "completion_tokens": 28,
+            "total_tokens": 8360,
+            "prompt_tokens_details": {
+              "cached_tokens": 6784
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_72bbfa6014"
+        },
+        "id": "chatcmpl-AMOzeijF5YRgJhbgyrG8y6GX1YAzm"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "{\n  \"from\": \"Titisee, Germany\",\n  \"to\": \"Schluchsee, Germany\",\n  \"results\": {\n    \"destination_addresses\": [\n      \"79 Schluchsee, Germany\"\n    ],\n    \"origin_addresses\": [\n      \"79822 Titisee-Neustadt, Germany\"\n    ],\n    \"rows\": [\n      {\n        \"elements\": [\n          {\n            \"distance\": {\n              \"text\": \"15.5 km\",\n              \"value\": 15546\n            },\n            \"duration\": {\n              \"text\": \"3 hours 52 mins\",\n              \"value\": 13910\n            },\n            \"status\": \"OK\"\n          }\n        ]\n      }\n    ],\n    \"status\": \"OK\"\n  }\n}",
+        "tool_call_id": "call_D8Sd5qu09FbyBmAbFe39g9as",
+        "name": "distance_google_maps_search",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "5a0dfda7-de47-4516-bc06-02fd979f1429"
+      }
+    }
+  ],
+  "fictional": false,
+  "references": [
+    {
+      "name": "Secrets of the Black Forest: Germany's Most Mysterious Landscape",
+      "link": "https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape"
+    }
+  ],
+  "routeIdea": "My idea is a route for \"The Black Forest of Germany\", which is real world.\nThe  pitch for this route is \"A journey through the dense, dark woods of the Black Forest in Germany, known for its mysterious atmosphere and folklore of haunted tales.\".\nSome ideas for steps are: \n\t - Baden-Baden to Freudenstadt\n\t - Freudenstadt to Triberg\n\t - Triberg to Freiburg\n\t - Freiburg to Titisee\n\t - Titisee to Schluchsee",
+  "itinerary": [
+    {
+      "startingLocation": "Baden-Baden",
+      "endingLocation": "Freudenstadt",
+      "startingLocationDescription": "Begin your journey in Baden-Baden, a spa town known for its thermal baths and elegant architecture.",
+      "endingLocationDescription": "Arrive in Freudenstadt, famous for its large market square and beautiful Black Forest scenery.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Baden-Baden, Germany"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in southwestern Germany, near the border with France."
+    },
+    {
+      "startingLocation": "Freudenstadt",
+      "endingLocation": "Triberg",
+      "startingLocationDescription": "Leave Freudenstadt, enjoying the lush greenery and rolling hills of the Black Forest.",
+      "endingLocationDescription": "Reach Triberg, known for its stunning waterfalls and cuckoo clocks.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Freudenstadt, Germany"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in the northern Black Forest region."
+    },
+    {
+      "startingLocation": "Triberg",
+      "endingLocation": "Freiburg",
+      "startingLocationDescription": "Depart from Triberg, where you can explore the local shops and the waterfall.",
+      "endingLocationDescription": "Arrive in Freiburg, a vibrant university city with a historic old town.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Triberg, Germany"
+      ],
+      "anyExtraInformationOnHowToFind": "Famous for the Triberg Waterfalls, one of the highest in Germany."
+    },
+    {
+      "startingLocation": "Freiburg",
+      "endingLocation": "Titisee",
+      "startingLocationDescription": "Leave Freiburg, enjoying the sights of the old town and the cathedral.",
+      "endingLocationDescription": "Arrive at Titisee, a picturesque lake surrounded by mountains.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Freiburg, Germany"
+      ],
+      "anyExtraInformationOnHowToFind": "Located in the southwestern part of Germany, known for its medieval architecture."
+    },
+    {
+      "startingLocation": "Titisee",
+      "endingLocation": "Schluchsee",
+      "startingLocationDescription": "Depart from Titisee, taking in the serene lake views.",
+      "endingLocationDescription": "Arrive at Schluchsee, the largest lake in the Black Forest, ideal for water sports.",
+      "fictionalLocation": false,
+      "possibleAddressInfo": [
+        "Titisee, Germany"
+      ],
+      "anyExtraInformationOnHowToFind": "A popular destination for outdoor activities like swimming and hiking."
+    }
+  ],
+  "route": "Baden-Baden to Schluchsee",
+  "steps": [
+    {
+      "startingLocation": "Baden-Baden",
+      "endingLocation": "Freudenstadt",
+      "distance": 46.6,
+      "startingLocationDescription": "Begin your journey in Baden-Baden, a spa town known for its thermal baths and elegant architecture.",
+      "endingLocationDescription": "Arrive in Freudenstadt, famous for its large market square and beautiful Black Forest scenery.",
+      "credibility": {
+        "source": "https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Freudenstadt",
+      "endingLocation": "Triberg",
+      "distance": 49,
+      "startingLocationDescription": "Leave Freudenstadt, enjoying the lush greenery and rolling hills of the Black Forest.",
+      "endingLocationDescription": "Reach Triberg, known for its stunning waterfalls and cuckoo clocks.",
+      "credibility": {
+        "source": "https://www.tripadvisor.com/ShowTopic-g5796433-i30163-k11363435-Itinerary_for_4_days_in_black_forest-Black_Forest_Baden_Wurttemberg.html",
+        "reliability": 9,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Triberg",
+      "endingLocation": "Freiburg",
+      "distance": 43.6,
+      "startingLocationDescription": "Depart from Triberg, where you can explore the local shops and the waterfall.",
+      "endingLocationDescription": "Arrive in Freiburg, a vibrant university city with a historic old town.",
+      "credibility": {
+        "source": "https://www.loveexploring.com/gallerylist/235935/secrets-of-the-black-forest-germanys-most-mysterious-landscape",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Freiburg",
+      "endingLocation": "Titisee",
+      "distance": 31.5,
+      "startingLocationDescription": "Leave Freiburg, enjoying the sights of the old town and the cathedral.",
+      "endingLocationDescription": "Arrive at Titisee, a picturesque lake surrounded by mountains.",
+      "credibility": {
+        "source": "https://www.google.com/maps",
+        "reliability": 10,
+        "guess": false
+      }
+    },
+    {
+      "startingLocation": "Titisee",
+      "endingLocation": "Schluchsee",
+      "distance": 15.5,
+      "startingLocationDescription": "Depart from Titisee, taking in the serene lake views.",
+      "endingLocationDescription": "Arrive at Schluchsee, the largest lake in the Black Forest, ideal for water sports.",
+      "credibility": {
+        "source": "https://maps.google.com",
+        "reliability": 9,
+        "guess": false
+      }
+    }
+  ]
+}
